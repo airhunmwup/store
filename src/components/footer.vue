@@ -12,9 +12,6 @@
                                     <p class="logo-footer">
                                         <img src="img/home/logo.png" alt="img">
                                     </p>
-                                    <p class="content-logo">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt
-                                        ut labore et dolore magna aliqua. Ut enim ad minim
-                                    </p>
                                 </div>
                             </div>
                             <div class="block">
@@ -38,6 +35,16 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="block m-top1">
+                                <div class="block-content">
+                                    <div class="payment-content">
+                                        <div class="payment-image">
+                                            <img class="img-fluid" src="img/home/payment.png" alt="img">
+                                        </div>
+                                    </div>
+                                    <!-- Popup newsletter -->
+                                </div>
+                            </div>
                         </div>
                         <div class="tiva-html col-lg-4 col-md-6">
                             <div class="block m-top">
@@ -51,35 +58,16 @@
                                             <span>Address :</span>
                                         </div>
                                         <div class="content-contact address-contact">
-                                            <p>123 Suspendis matti, Visaosang Building VST District NY Accums, North American</p>
+                                            <p>1650 High Road Leyton, Downstairs Shop, London, England, E10 6RN</p>
                                         </div>
                                     </div>
                                     <div class="contact-us">
                                         <div class="title-content">
                                             <i class="fa fa-envelope" aria-hidden="true"></i>
-                                            <span>Email :</span>
+                                            <span>Email:</span>
                                         </div>
                                         <div class="content-contact mail-contact">
-                                            <p>support@domain.com</p>
-                                        </div>
-                                    </div>
-                                    <div class="contact-us">
-                                        <div class="title-content">
-                                            <i class="fa fa-phone" aria-hidden="true"></i>
-                                            <span>Hotline :</span>
-                                        </div>
-                                        <div class="content-contact phone-contact">
-                                            <p>+0012-345-67890</p>
-                                        </div>
-                                    </div>
-                                    <div class="contact-us">
-                                        <div class="title-content">
-                                            <i class="fa fa-clock-o" aria-hidden="true"></i>
-                                            <span>Opening Hours :</span>
-                                        </div>
-                                        <div class="content-contact hours-contact">
-                                            <p>Monday - Sunday / 08.00AM - 19.00</p>
-                                            <span>(Except Holidays)</span>
+                                            <p>support@</p>
                                         </div>
                                     </div>
                                 </div>
@@ -89,7 +77,7 @@
                             <div class="block m-top">
                                 <div class="block-content">
                                     <div class="title-block">Newsletter</div>
-                                    <div class="sub-title">Sign up to our newsletter to get the latest articles, lookbooks voucher codes direct
+                                    <div class="sub-title">Sign up to our newsletter to get the latest ,direct
                                         to your inbox
                                     </div>
                                     <div class="block-newsletter">
@@ -123,16 +111,6 @@
                                                     </li>
                                                     <li class="list-inline-item mb-0">
                                                         <a href="#" target="_blank">
-                                                            <i class="fa fa-twitter"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-inline-item mb-0">
-                                                        <a href="#" target="_blank">
-                                                            <i class="fa fa-google"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-inline-item mb-0">
-                                                        <a href="#" target="_blank">
                                                             <i class="fa fa-instagram"></i>
                                                         </a>
                                                     </li>
@@ -140,19 +118,6 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="block m-top1">
-                                <div class="block-content">
-                                    <div class="payment-content">
-                                        <div class="title-block">
-                                            Payment accept
-                                        </div>
-                                        <div class="payment-image">
-                                            <img class="img-fluid" src="img/home/payment.png" alt="img">
-                                        </div>
-                                    </div>
-                                    <!-- Popup newsletter -->
                                 </div>
                             </div>
                         </div>
