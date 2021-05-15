@@ -1,6 +1,7 @@
 <template>
     <!-- main content -->
     <div class="main-content">
+        
         <div id="wrapper-site">
             <div id="content-wrapper">
                 <div id="main">
@@ -18,7 +19,7 @@
                                         </li>
                                         <li>
                                             <a href="#">
-                                                <span>Living Room</span>
+                                                <span>category listing page</span>
                                             </a>
                                         </li>
                                     </ol>
@@ -29,7 +30,7 @@
                             <div class="content">
                                 <div class="row">
                                     <div class="col-sm-8 col-lg-9 col-md-8 product-container">
-                                        <h1>Lingving Room</h1>
+                                        <h1>Category listing name</h1>
                                         <div class="js-product-list-top firt nav-top">
                                             <div class="d-flex justify-content-around row">
                                                 <div class="col col-xs-12 ">
@@ -1766,119 +1767,8 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="sidebar-block by-color">
-                                                <h3 class="title-product">By Color</h3>
-                                                <div>
-                                                    <span class="left">
-                                                        <label class="color-item1"></label>
-                                                        <a href="#">
-                                                            <span>Blue
-                                                                <span>(30)</span>
-                                                            </span>
-                                                        </a>
-                                                    </span>
-                                                    <span class="right">
-                                                        <label class="color-item2"></label>
-                                                        <a href="#">
-                                                            <span>Green
-                                                                <span>(30)</span>
-                                                            </span>
-                                                        </a>
-                                                    </span>
-                                                </div>
-                                                <div>
-                                                    <span class="left">
-                                                        <label class="color-item3"></label>
-                                                        <a href="#">
-                                                            <span>Yellow
-                                                                <span>(30)</span>
-                                                            </span>
-                                                        </a>
-                                                    </span>
-                                                    <span class="right">
-                                                        <label class="color-item4"></label>
-                                                        <a href="#">
-                                                            <span>Brown
-                                                                <span>(30)</span>
-                                                            </span>
-                                                        </a>
-                                                    </span>
-
-                                                </div>
-                                                <div>
-                                                    <span class="left">
-                                                        <label class="color-item5"></label>
-                                                        <a href="#">
-                                                            <span>Pink
-                                                                <span>(30)</span>
-                                                            </span>
-                                                        </a>
-                                                    </span>
-                                                    <span class="right">
-                                                        <label class="color-item6"></label>
-                                                        <a href="#">
-                                                            <span>Red
-                                                                <span>(30)</span>
-                                                            </span>
-                                                        </a>
-                                                    </span>
-                                                </div>
-                                            </div>
                                         </div>
 
-                                        <!-- product tag -->
-                                        <div class="sidebar-block product-tags">
-                                            <div class="title-block">
-                                                Product Tags
-                                            </div>
-                                            <div class="block-content">
-                                                <ul class="listSidebarBlog list-unstyled">
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag Hot Trend">Hot Trend</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag Jewelry">Jewelry</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="man.html" title="Show products matching tag Man">Man</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag Party">Party</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag SamSung">SamSung</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag Shirt Dresses">Shirt Dresses</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag Shoes">Shoes</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag Summer">Summer</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag Sweaters">Sweaters</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag Winter">Winter</a>
-                                                    </li>
-
-                                                    <li>
-                                                        <a href="#" title="Show products matching tag Woman">Woman</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
                                     </div>
                                 </div>
                             </div>

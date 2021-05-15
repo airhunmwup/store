@@ -12,9 +12,9 @@
                 <!-- logo -->
                 <div class="mobile-logo">
                     <a href="index-2.html">
-                        <img class="logo-mobile img-fluid" src="img/home/logo-mobie.png" alt="Prestashop_Furnitica">
+                        <img class="logo-mobile img-fluid" src="img/home/logo.png" width="30%" alt="Prestashop_Furnitica">
                     </a>
-                </div>
+                </div> 
 
                 <!-- menu right -->
                 <div class="mobile-menutop" data-target="#mobile-pagemenu">
@@ -239,6 +239,7 @@
                 </div>
             </div>
         </div>
+        
     </header>
 
     
