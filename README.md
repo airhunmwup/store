@@ -1,4 +1,9 @@
 # rejee
+<html>
+  <body>
+<image src="src/assets/logo.png"width="20%"/>
+  </body>
+  </html>
 
 ## Project setup
 ```
