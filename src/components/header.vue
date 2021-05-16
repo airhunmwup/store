@@ -157,8 +157,8 @@
                         <div id="block_myaccount_infos" class="hidden-sm-down dropdown">
                             <div class="myaccount-title">
                                 <a href="#acount" data-toggle="collapse" class="acount">
-                                    <i class="fa fa-user" aria-hidden="true"></i>
-                                    <span>Account</span>
+                                    <i class="fa fa-user" aria-hidden="true"> </i>
+                                    <span>My Account</span>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -167,31 +167,55 @@
                                     <div>
                                         <a class="login" href="user-acount.html" rel="nofollow" title="Log in to your customer account">
                                             <i class="fa fa-cog"></i>
-                                            <span>My Account</span>
+                                            <span>My Orders</span>
                                         </a>
                                     </div>
                                     <div>
                                         <a class="login" href="user-login.html" rel="nofollow" title="Log in to your customer account">
-                                            <i class="fa fa-sign-in"></i>
-                                            <span>Sign in</span>
+                                            <i class="fa fa-shopping-bag"></i>
+                                            <span>Wishlist</span>
                                         </a>
                                     </div>
                                     <div>
                                         <a class="register" href="user-register.html" rel="nofollow" title="Register Account">
-                                            <i class="fa fa-user"></i>
-                                            <span>Register Account</span>
+                                            <i class="fa fa-address-book"></i>
+                                            <span>My Details</span>
                                         </a>
                                     </div>
                                     <div>
                                         <a class="check-out" href="product-checkout.html" rel="nofollow" title="Checkout">
-                                            <i class="fa fa-check" aria-hidden="true"></i>
-                                            <span>Checkout</span>
+                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                                            <span>Change Password</span>
                                         </a>
                                     </div>
                                     <div>
                                         <a href="user-wishlist.html" title="My Wishlists">
                                             <i class="fa fa-heart"></i>
-                                            <span>My Wishlists</span>
+                                            <span>Address Book</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="user-wishlist.html" title="My Wishlists">
+                                            <i class="fa fa-credit-card"></i>
+                                            <span>Payment Methods</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="user-wishlist.html" title="My Wishlists">
+                                            <i class="fa fa-bell"></i>
+                                            <span>Notificatons</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="user-wishlist.html" title="My Wishlists">
+                                            <i class="fa fa-question-circle"></i>
+                                            <span>Need Help</span>
+                                        </a>
+                                    </div>
+                                    <div>
+                                        <a href="user-wishlist.html" title="My Wishlists">
+                                            <i class="fa fa-sign-out"></i>
+                                            <span>Sign Out</span>
                                         </a>
                                     </div>
                                 </div>

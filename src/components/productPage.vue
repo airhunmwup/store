@@ -32,7 +32,7 @@
                                 <div class="row">
                                     <div class="col-lg-9">
 
-                                        <h2>MEN's FASHION</h2>
+                                        <h4>MEN's FASHION</h4>
                                     <hr>
                         <!-- FEATURED CATEGORIES -->
                         <div class="featured-category">
@@ -129,7 +129,7 @@
                         </div>
 
                                     <div class="col-sm-8 col-lg-12 col-md-8 product-container">
-                                        <h4>SpotLight</h4>
+                                        <h4><b>SpotLight</b></h4>
                                         <div class="js-product-list-top firt nav-top">
                                             <div class="d-flex justify-content-around row">
                                                 <div class="col col-xs-12">
