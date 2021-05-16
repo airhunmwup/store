@@ -150,6 +150,7 @@
         </button>
         <div id="desktop_verticalmenu" class="tiva-verticalmenu block" data-count_showmore="17">
             <div class="box-content block-content">
+                <p><b>All Categories</b></p>
                 <div class="verticalmenu" role="navigation">
                     <ul class="menu level1">
                         <li class="item  parent">
@@ -621,7 +622,7 @@
                             </li>
                             <li class="item has-sub">
                                 <a href="contact.html" title="Contact us">
-                                    <i class="far fa-question-circle" aria-hidden="true"></i>Need Help?</a>
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>Need Help?</a>
                             </li>
                             <li class="item has-sub">
                                 <a href="contact.html" title="Contact us">
