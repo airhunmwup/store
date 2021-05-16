@@ -10,10 +10,8 @@
                 </div>
 
                 <!-- logo -->
-                <div class="mobile-logo">
-                    <a href="index-2.html">
+                <div class="mobile-logo align-items-center">
                         <img class="logo-mobile img-fluid" src="img/home/logo.png" width="30%" alt="Prestashop_Furnitica">
-                    </a>
                 </div> 
 
                 <!-- menu right -->
