@@ -129,16 +129,7 @@
                                 </li>
                                 <li class="nav-link">
                                     <a href="#" class="parent">SELL ITERMS</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li class="item">
-                                                <a href="blog-list-sidebar-left.html" title="Blog List (Sidebar Left)">Blog List (Sidebar Left)</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-list-sidebar-left2.html" title="Blog List (Sidebar Left) 2">Blog List (Sidebar Left) 2</a>
-                                            </li>
-                                        </ul>
-                                    </div>
+                                    
                                 </li>
                             </ul>
                         </div>
@@ -158,7 +149,7 @@
                             <div class="myaccount-title">
                                 <a href="#acount" data-toggle="collapse" class="acount">
                                     <i class="fa fa-user" aria-hidden="true"> </i>
-                                    <span>My Account</span>
+                                    <span> My Account </span>
                                     <i class="fa fa-angle-down" aria-hidden="true"></i>
                                 </a>
                             </div>
@@ -166,7 +157,7 @@
                                 <div class="account-list-content">
                                     <div>
                                         <a class="login" href="user-acount.html" rel="nofollow" title="Log in to your customer account">
-                                            <i class="fa fa-cog"></i>
+                                            <i class="fa fa-file-text-o"></i>
                                             <span>My Orders</span>
                                         </a>
                                     </div>
