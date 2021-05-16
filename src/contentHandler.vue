@@ -1,8 +1,6 @@
 <template>
-<div class="main-content">
   <webapp-productPage/>
 
-</div>
 </template>
 
 <script>

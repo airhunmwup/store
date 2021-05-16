@@ -1,9 +1,10 @@
 <template>
-<div>
+  <div>
   <webapp-header/>
   <webapp-contentHandler/>
   <webapp-footer/>
-</div>
+  </div>
+  
 </template>
 
 <script>

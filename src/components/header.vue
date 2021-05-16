@@ -12,9 +12,9 @@
                 <!-- logo -->
                 <div class="mobile-logo">
                     <a href="index-2.html">
-                        <img class="logo-mobile img-fluid" src="img/home/logo-mobie.png" alt="Prestashop_Furnitica">
+                        <img class="logo-mobile img-fluid" src="img/home/logo.png" width="30%" alt="Prestashop_Furnitica">
                     </a>
-                </div>
+                </div> 
 
                 <!-- menu right -->
                 <div class="mobile-menutop" data-target="#mobile-pagemenu">
@@ -103,7 +103,7 @@
                         <div class="menu navbar collapse navbar-collapse">
                             <ul class="menu-top navbar-nav">
                                 <li class="nav-link">
-                                    <a href="#" class="parent">Shop All Category</a>
+                                    <a href="#" class="parent">All Categor</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li class="item">
@@ -123,6 +123,19 @@
                                             </li>
                                             <li class="item">
                                                 <a href="blog-detail.html" title="Blog Detail">Blog Detail</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#" class="parent">SELL ITERMS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li class="item">
+                                                <a href="blog-list-sidebar-left.html" title="Blog List (Sidebar Left)">Blog List (Sidebar Left)</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="blog-list-sidebar-left2.html" title="Blog List (Sidebar Left) 2">Blog List (Sidebar Left) 2</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -239,6 +252,7 @@
                 </div>
             </div>
         </div>
+        
     </header>
 
     
