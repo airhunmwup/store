@@ -103,7 +103,7 @@
                         <div class="menu navbar collapse navbar-collapse">
                             <ul class="menu-top navbar-nav">
                                 <li class="nav-link">
-                                    <a href="#" class="parent">Shop All Category</a>
+                                    <a href="#" class="parent">All Categor</a>
                                     <div class="dropdown-menu">
                                         <ul>
                                             <li class="item">
@@ -123,6 +123,19 @@
                                             </li>
                                             <li class="item">
                                                 <a href="blog-detail.html" title="Blog Detail">Blog Detail</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </li>
+                                <li class="nav-link">
+                                    <a href="#" class="parent">SELL ITERMS</a>
+                                    <div class="dropdown-menu">
+                                        <ul>
+                                            <li class="item">
+                                                <a href="blog-list-sidebar-left.html" title="Blog List (Sidebar Left)">Blog List (Sidebar Left)</a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="blog-list-sidebar-left2.html" title="Blog List (Sidebar Left) 2">Blog List (Sidebar Left) 2</a>
                                             </li>
                                         </ul>
                                     </div>
