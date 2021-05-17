@@ -30,6 +30,7 @@
                                             <div class="d-flex justify-content-around row">
                                                 <div class="col col-xs-12 ">
                                                     <div class="hidden-sm-down total-products">
+                                                        <!--banner area-->
                                                         <hr>
                                                     </div>
                                                 </div>
@@ -38,7 +39,6 @@
                                         
                                     <div class="col-sm-12 col-lg-12 col-md-12">
                                         <div class="main-product-detail">
-                                            <h2>Lorem ipsum dolor</h2>
                                             <div class="product-single row">
                                                 <div class="product-detail col-xs-12 col-md-5 col-sm-5">
                                                     <div class="page-content" id="content">
@@ -55,9 +55,6 @@
                                                                 </div>
                                                                 <div id="item4" class="tab-pane fade">
                                                                     <img src="img/product/5.jpg" alt="img">
-                                                                </div>
-                                                                <div class="layer hidden-sm-down" data-toggle="modal" data-target="#product-modal">
-                                                                    <i class="fa fa-expand"></i>
                                                                 </div>
                                                             </div>
                                                             <ul class="product-tab nav nav-tabs d-flex">
@@ -87,6 +84,7 @@
                                                 </div>
                                                 <div class="product-info col-xs-12 col-md-7 col-sm-7">
                                                     <div class="detail-description">
+                                                        <h2>Product name here</h2>
                                                         <div class="price-del">
                                                             <span class="price">£150.00</span>
                                                             <span class="float-right">
@@ -123,16 +121,8 @@
                                                                     <div class="input-group">
                                                                         <div class="quantity">
                                                                             <span class="control-label">QTY : </span>
-                                                                            <input type="text" name="qty"  max="4" min="1"  value="1" class="input-group form-control">
+                                                                            <input type="number" name="qty"  max="4" min="1"  value="1" class="input-group form-control">
 
-                                                                            <span class="input-group-btn-vertical">
-                                                                                <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-up" type="button">
-                                                                                    +
-                                                                                </button>
-                                                                                <button class="btn btn-touchspin js-touchspin bootstrap-touchspin-down" type="button">
-                                                                                    -
-                                                                                </button>
-                                                                            </span>
                                                                         </div>
                                                                         <span class="add">
                                                                             <button class="btn btn-primary add-to-cart add-item" data-button-action="add-to-cart" type="submit">
@@ -161,8 +151,8 @@
                                                                     <span>SEN TO A FRIEND</span>
                                                                 </a>
                                                                 <a href="#" class="print">
-                                                                    <i class="zmdi zmdi-print"></i>
-                                                                    <span>Print</span>
+                                                                    <i class="zmdi zmdi-save"></i>
+                                                                    <span>save supplier</span>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -202,6 +192,21 @@
                                                                 <span class="content2">
                                                                     <a href="#">Clothing</a>,
                                                                     <a href="#">Men's Jackets</a>
+                                                                </span>
+                                                            </p>
+                                                            <p>tags :
+                                                                <span class="content2">
+                                                                    <a href="#">Jacket</a>,
+                                                                    <a href="#">Overcoat</a>,
+                                                                    <a href="#">Luxury</a>,
+                                                                    <a href="#">men</a>,
+                                                                    <a href="#">summer</a>,
+                                                                    <a href="#">autumn</a>
+                                                                </span>
+                                                            </p>
+                                                            <p>Payment methods:
+                                                                <span class="content2">
+                                                                    <image src="#" class=""/>
                                                                 </span>
                                                             </p>
                                                             <p>tags :
@@ -362,14 +367,14 @@
                                                 </div>
                                             </div>
                                             <div class="related">
-                                                <div class="title-tab-content  text-center">
+                                                <div class="title-tab-content">
                                                     <div class="title-product justify-content-start">
-                                                        <h2>Related Products</h2>
+                                                        <h4 class="text-left">Related Products</h4>
                                                     </div>
                                                 </div>
                                                 <div class="tab-content">
                                                     <div class="row">
-                                                        <div class="item text-center col-md-4">
+                                                        <div class="item text-center col-md-3">
                                                             <div class="product-miniature js-product-miniature item-one first-item">
                                                                 <div class="thumbnail-container border border">
                                                                     <a href="product-detail.html">
@@ -420,7 +425,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="item text-center col-md-4">
+                                                        <div class="item text-center col-md-3">
                                                             <div class="product-miniature js-product-miniature item-one first-item">
                                                                 <div class="thumbnail-container border">
                                                                     <a href="product-detail.html">
@@ -471,7 +476,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="item text-center col-md-4">
+                                                        <div class="item text-center col-md-3">
                                                             <div class="product-miniature js-product-miniature item-one first-item">
                                                                 <div class="thumbnail-container border">
                                                                     <a href="product-detail.html">
@@ -503,6 +508,57 @@
                                                                         <div class="product-group-price">
                                                                             <div class="product-price-and-shipping">
                                                                                 <span class="price">£20.08</span>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="product-buttons d-flex justify-content-center">
+                                                                        <form action="#" method="post" class="formAddToCart">
+                                                                            <a class="add-to-cart" href="#" data-button-action="add-to-cart">
+                                                                                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                                                                            </a>
+                                                                        </form>
+                                                                        <a class="addToWishlist" href="#" data-rel="1" onclick="">
+                                                                            <i class="fa fa-heart" aria-hidden="true"></i>
+                                                                        </a>
+                                                                        <a href="#" class="quick-view hidden-sm-down" data-link-action="quickview">
+                                                                            <i class="fa fa-eye" aria-hidden="true"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="item text-center col-md-3">
+                                                            <div class="product-miniature js-product-miniature item-one first-item">
+                                                                <div class="thumbnail-container border border">
+                                                                    <a href="product-detail.html">
+                                                                        <img class="img-fluid image-cover" src="img/product/1.jpg" alt="img">
+                                                                        <img class="img-fluid image-secondary" src="img/product/22.jpg" alt="img">
+                                                                    </a>
+                                                                    <div class="highlighted-informations">
+                                                                        <div class="variant-links">
+                                                                            <a href="#" class="color beige" title="Beige"></a>
+                                                                            <a href="#" class="color orange" title="Orange"></a>
+                                                                            <a href="#" class="color green" title="Green"></a>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="product-description">
+                                                                    <div class="product-groups">
+                                                                        <div class="product-title">
+                                                                            <a href="product-detail.html">Nulla et justo non augue</a>
+                                                                        </div>
+                                                                        <div class="rating">
+                                                                            <div class="star-content">
+                                                                                <div class="star"></div>
+                                                                                <div class="star"></div>
+                                                                                <div class="star"></div>
+                                                                                <div class="star"></div>
+                                                                                <div class="star"></div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="product-group-price">
+                                                                            <div class="product-price-and-shipping">
+                                                                                <span class="price">£28.08</span>
                                                                             </div>
                                                                         </div>
                                                                     </div>

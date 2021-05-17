@@ -1,15 +1,15 @@
 <template>
-  <webapp-productDetails/>
+  <webapp-checkOutPage/>
 
 </template>
 
 <script>
-import productDetails from './components/productDetails.vue'
+import checkOutPage from './components/checkOutPage.vue'
 
 export default {
   name: 'App',
   components: {
-    'webapp-productDetails':productDetails,
+    'webapp-checkOutPage':checkOutPage,
   }
 }
 </script>
