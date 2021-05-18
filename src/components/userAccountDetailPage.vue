@@ -29,8 +29,7 @@
                 <div class="container">
                     <div id="main">
                         <h1 class="title-page">My Account</h1>
-                        <div class="content" id="block-history">
-                            <table class="std table">
+                            <table class="std table" id="block-history">
                                 <tbody>
                                     <tr>
                                         <th class="first_item">My Name :</th>
@@ -59,7 +58,6 @@
                                 </tbody>
                             </table>
 
-                        </div>
                         <button class="btn btn-primary" data-link-action="sign-in" type="submit">
                             view Address
                         </button>

@@ -1,15 +1,15 @@
 <template>
-  <webapp-userAccountDetailPage/>
+  <webapp-wishlist/>
 
 </template>
 
 <script>
-import userAccountDetailPage from './components/userAccountDetailPage.vue'
+import wishlist from './components/wishlist.vue'
 
 export default {
   name: 'App',
   components: {
-    'webapp-userAccountDetailPage':userAccountDetailPage,
+    'webapp-wishlist':wishlist,
   }
 }
 </script>
