@@ -1,7 +1,7 @@
 # rejee
 <html>
   <body>
-<image src="src/assets/logo.png"width="50%"/>
+    <span><image src="src/assets/logo.png"width="20%"/>V 0.1</span>
   </body>
   </html>
 
