@@ -1,15 +1,15 @@
 <template>
-  <webapp-wishlist/>
+  <webapp-changeUserPasswordPage/>
 
 </template>
 
 <script>
-import wishlist from './components/wishlist.vue'
+import changeUserPasswordPage from './components/changeUserPasswordPage.vue'
 
 export default {
   name: 'App',
   components: {
-    'webapp-wishlist':wishlist,
+    'webapp-changeUserPasswordPage':changeUserPasswordPage,
   }
 }
 </script>
