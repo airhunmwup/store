@@ -1,15 +1,15 @@
 <template>
-  <webapp-checkOutPageAddress/>
+  <webapp-userAccountDetailPage/>
 
 </template>
 
 <script>
-import checkOutPageAddress from './components/checkOutPageAddress.vue'
+import userAccountDetailPage from './components/userAccountDetailPage.vue'
 
 export default {
   name: 'App',
   components: {
-    'webapp-checkOutPageAddress':checkOutPageAddress,
+    'webapp-userAccountDetailPage':userAccountDetailPage,
   }
 }
 </script>
