@@ -4,7 +4,7 @@
 </template>
 
 <script>
-import changeUserPasswordPage from './components/changeUserPasswordPage.vue'
+import changeUserPasswordPage from './components/wishlist.vue'
 
 export default {
   name: 'App',

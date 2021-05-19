@@ -35,8 +35,8 @@
                                         <h3>My Wishlist</h3>
                                         <div class="js-product-list-top firt nav-top">
                                             <div class="d-flex justify-content-around row">
-                                                
                                                 <div class="col col-xs-12">
+                                                <hr>
                                                     <div class="d-flex sort-by-row justify-content-end">
                                                         <div class="products-sort-order dropdown">
                                                             <select class="select-title">
@@ -56,25 +56,33 @@
 
                                                 <div class="table container" id="block-history">
                                                     <div class="content box">
+                                                        <div class="content">
                                                         <div class="row col-12">
                                                             <div class="col-4">
-                                                                <div class="product description">
                                                                    <a href="product-detail.html">
                                                                 <img width="100%" src="img/product/1.jpg" alt="img">
-                                                            </a></div>
+                                                            </a>
                                                             </div>
                                                             <div class="col-5">
+                                                                <div class="text-bottom">
+                                                                    <br>
                                                                    <a href="product-detail.html">
-                                                                                <p class="info-stock">
+                                                                                <h5 class="bvb">
                                                                                     Nulla et justo non augue
-                                                                                    <br><i class="fa fa-check-square-o" aria-hidden="true"></i>
+                                                                                    <br>
+                                                                                </h5> 
+                                                                                <i class="fa fa-check-square-o text-success" aria-hidden="true"></i>
                                                                                     In Stock
-                                                                                </p> 
-                                                                                <p class="info-stock">
-                                                                                    £150.00
-                                                                                </p></a>
+                                                                                    <hr>
+                                                                                <p class="price"><b>
+                                                                                    £150.00</b>
+                                                                                </p>
+                                                                    </a>
+                                                                </div>
                                                             </div>
-                                                            <div class="col-3 medium"><p>
+                                                            <div class="col-3 medium">
+                                                                    <br>
+                                                                <p>
                                                                                 <span class="info-stock">
                                                                                     <i class="fa fa-trash" aria-hidden="true"></i>
                                                                                     
@@ -87,6 +95,99 @@
                                                                                 </span> <span>Add to Basket</span>
                                                                 </p>
                                                             </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="table container" id="block-history">
+                                                    <div class="content box">
+                                                        <div class="content">
+                                                        <div class="row col-12">
+                                                            <div class="col-4">
+                                                                   <a href="product-detail.html">
+                                                                <img width="100%" src="img/product/1.jpg" alt="img">
+                                                            </a>
+                                                            </div>
+                                                            <div class="col-5">
+                                                                <div class="text-bottom">
+                                                                    <br>
+                                                                   <a href="product-detail.html">
+                                                                                <h5 class="bvb">
+                                                                                    Nulla et justo non augue
+                                                                                    <br>
+                                                                                </h5> 
+                                                                                <i class="fa fa-check-square-o text-success" aria-hidden="true"></i>
+                                                                                    In Stock
+                                                                                    <hr>
+                                                                                <p class="price"><b>
+                                                                                    £150.00</b>
+                                                                                </p>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 medium">
+                                                                    <br>
+                                                                <p>
+                                                                                <span class="info-stock">
+                                                                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                                    
+                                                                                </span> <span>Delete</span>
+                                                                </p>
+                                                                <p>
+                                                                                <span class="info-stock">
+                                                                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                                                                    
+                                                                                </span> <span>Add to Basket</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="table container" id="block-history">
+                                                    <div class="content box">
+                                                        <div class="content">
+                                                        <div class="row col-12">
+                                                            <div class="col-4">
+                                                                   <a href="product-detail.html">
+                                                                <img width="100%" src="img/product/1.jpg" alt="img">
+                                                            </a>
+                                                            </div>
+                                                            <div class="col-5">
+                                                                <div class="text-bottom">
+                                                                    <br>
+                                                                   <a href="product-detail.html">
+                                                                                <h5 class="bvb">
+                                                                                    Nulla et justo non augue
+                                                                                    <br>
+                                                                                </h5> 
+                                                                                <i class="fa fa-check-square-o text-success" aria-hidden="true"></i>
+                                                                                    In Stock
+                                                                                    <hr>
+                                                                                <p class="price"><b>
+                                                                                    £150.00</b>
+                                                                                </p>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-3 medium">
+                                                                    <br>
+                                                                <p>
+                                                                                <span class="info-stock">
+                                                                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                                                                    
+                                                                                </span> <span>Delete</span>
+                                                                </p>
+                                                                <p>
+                                                                                <span class="info-stock">
+                                                                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
+                                                                                    
+                                                                                </span> <span>Add to Basket</span>
+                                                                </p>
+                                                            </div>
+                                                        </div>
                                                         </div>
                                                     </div>
                                                 </div>

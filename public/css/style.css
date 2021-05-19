@@ -13,11 +13,14 @@
 .box {
   background: rgba(238, 237, 237, 0.8);
   border-color: rgba(207, 194, 194, 0.8);
-  border: 1px;
   border-radius: 5px;
+  
+}
+.bvb {
   padding: 2px;
   
 }
+
 .header-top {
   background: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.15);

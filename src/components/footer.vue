@@ -5,48 +5,64 @@
         <div class="inner-footer">
             <div class="container">
                 <div class="footer-top col-lg-12 col-xs-12">
-                    <div class="row">
-                        <div class="tiva-html col-lg-4 col-md-12 col-xs-12">
-                            <div class="block">
+                        <div class="block">
                                 <div class="block-content">
                                     <p class="logo-footer">
-                                        <img src="img/home/logo.png" width="30%" alt="img">
+                                        <img src="img/home/logo.png" width="20%" alt="img"> Limited&copy;
                                     </p>
                                 </div>
                             </div>
+                    <div class="row">
+                        <div class="tiva-html col-lg-3 col-md-12 col-xs-12">
                             <div class="block">
+                                <div class="title-block">
+                                    Buy
+                                </div>
                                 <div class="block-content">
                                     <ul>
                                         <li>
-                                            <a href="#">About Us</a>
+                                            <a href="#">Registration</a>
                                         </li>
                                         <li>
-                                            <a href="#">Reasons to shop</a>
+                                            <a href="#">Store</a>
                                         </li>
                                         <li>
-                                            <a href="#">What our customers say</a>
+                                            <a href="#">Privacy Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#">Meet the teaml</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Contact our buyers</a>
+                                            <a href="#">Create Sellers Account</a>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="block m-top1">
+                        </div>
+                        <div class="tiva-html col-lg-3 col-md-12 col-xs-12">
+                            <div class="block">
+                                <div class="title-block">
+                                    Sell
+                                </div>
                                 <div class="block-content">
-                                    <div class="payment-content">
-                                        <div class="payment-image">
-                                            <img class="img-fluid" src="img/home/payment.png" alt="img">
-                                        </div>
-                                    </div>
-                                    <!-- Popup newsletter -->
+                                    <ul>
+                                        <li>
+                                            <a href="#">Start Selling</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">How to sell</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Business Sellers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Privacy Policy</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Create Sellers Account</a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <div class="tiva-html col-lg-4 col-md-6">
+                        <div class="tiva-html col-lg-3 col-md-6">
                             <div class="block m-top">
                                 <div class="title-block">
                                     Contact Us
@@ -70,10 +86,31 @@
                                             <p>support@rejee.co.uk</p>
                                         </div>
                                     </div>
+                                    <div class="contact-us">
+                                        <div class="title-block">
+                                            Follow us
+                                        </div>
+                                        <div id="social-block">
+                                            <div class="social">
+                                                <ul class="list-inline mb-0 justify-content-end">
+                                                    <li class="list-inline-item mb-0">
+                                                        <a href="#" target="_blank">
+                                                            <i class="fa fa-facebook"></i>
+                                                        </a>
+                                                    </li>
+                                                    <li class="list-inline-item mb-0">
+                                                        <a href="#" target="_blank">
+                                                            <i class="fa fa-instagram"></i>
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="tiva-modules col-lg-4 col-md-6">
+                        <div class="tiva-modules col-lg-3 col-md-6">
                             <div class="block m-top">
                                 <div class="block-content">
                                     <div class="title-block">Newsletter</div>
@@ -95,31 +132,16 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="block m-top1">
-                                <div class="block-content">
-                                    <div class="social-content">
-                                        <div class="title-block">
-                                            Follow us on
-                                        </div>
-                                        <div id="social-block">
-                                            <div class="social">
-                                                <ul class="list-inline mb-0 justify-content-end">
-                                                    <li class="list-inline-item mb-0">
-                                                        <a href="#" target="_blank">
-                                                            <i class="fa fa-facebook"></i>
-                                                        </a>
-                                                    </li>
-                                                    <li class="list-inline-item mb-0">
-                                                        <a href="#" target="_blank">
-                                                            <i class="fa fa-instagram"></i>
-                                                        </a>
-                                                    </li>
-                                                </ul>
+                                    <div class="block m-top1">
+                                        <div class="block-content">
+                                            <div class="payment-content">
+                                                <div class="payment-image">
+                                                    <img class="img-fluid" src="img/home/payment.png" alt="img">
+                                                </div>
                                             </div>
+                                            <!-- Popup newsletter -->
                                         </div>
                                     </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
