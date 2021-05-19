@@ -25,7 +25,7 @@
                         <div class="container">
                             <div class="content">
                                 <div class="row">
-                                    <div class="col-sm-8 col-lg-11 col-md-8 product-container">
+                                    <div class="col-sm-8 col-lg-11 col-md-11 product-container">
                                         <div class="js-product-list-top firt nav-top">
                                             <div class="d-flex justify-content-around row">
                                                 <div class="col col-xs-12 ">
