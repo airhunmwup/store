@@ -1,5 +1,6 @@
 <template>  
     <header>
+        <div>
         <!-- header left mobie -->
         <div class="header-mobile d-md-none">
             <div class="mobile hidden-md-up text-xs-center d-flex align-items-center justify-content-around">
@@ -264,6 +265,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
         
     </header>

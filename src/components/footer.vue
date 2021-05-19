@@ -30,7 +30,7 @@
                                             <a href="#">Privacy Policy</a>
                                         </li>
                                         <li>
-                                            <a href="#">Create Sellers Account</a>
+                                            <a href="#">Term of Use</a>
                                         </li>
                                     </ul>
                                 </div>

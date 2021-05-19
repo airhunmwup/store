@@ -1,7 +1,5 @@
 <template>
 <div id="product-detail-center">
-
-    
     <!-- main content -->
     <div class="main-content">
         <div id="wrapper-site">
@@ -36,7 +34,6 @@
                                         <div class="js-product-list-top firt nav-top">
                                             <div class="d-flex justify-content-around row">
                                                 <div class="col col-xs-12">
-                                                <hr>
                                                     <div class="d-flex sort-by-row justify-content-end">
                                                         <div class="products-sort-order dropdown">
                                                             <select class="select-title">
@@ -50,6 +47,7 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                                <hr>
                                         </div>
                                         <div class="tab-content product-items">
                                             <div id="list" class="related tab-pane active show">

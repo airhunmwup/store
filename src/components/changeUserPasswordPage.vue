@@ -1,9 +1,11 @@
 <template>
 <div class="user-acount">
 
+
+            <div class="home-page">
     <!-- main content -->
     <div class="main-content">
-        <div class="wrap-banner">
+           <div class="wrap-banner">
 
             <!-- breadcrumb -->
             <nav class="breadcrumb-bg">
@@ -67,8 +69,10 @@
                         </div>
                     </div>
 
-                </div>
+            </div>
+
             </div>
         </div>
+            </div>
     </div>
 </template>
