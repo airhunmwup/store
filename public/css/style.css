@@ -2132,6 +2132,11 @@ li {
     margin-bottom: 3.75pt;
 }
 
+.fmz {
+    max-width: 50%;
+    object-position: center;
+}
+
 @-moz-keyframes load_page {
     0% {
         transform: scale(1);
@@ -5215,7 +5220,7 @@ footer [class~=title-block],
 }
 
 [class~=block-newsletter] [class~=input-group] [class~=input-group-btn] [class~=btn-secondary] {
-    border-radius: 0 23px 17.25pt 0 !important;
+    border-radius: 0 !important;
 }
 
 #home2 [class~=item-lookbook][class~=item3] [class~=content-lookbook],
@@ -8649,6 +8654,7 @@ footer [class~=title-block],
 
 .user-login .input-group.js-parent-focus .btn {
     padding-left: .8125pc;
+    position: center;
 }
 
 [class~=menu-banner] [class~=verticalmenu] [class~=parent]:before {
@@ -11077,7 +11083,7 @@ footer [class~=title-block],
 }
 
 [class~=menu-banner] [class~=verticalmenu] [class~=menu] li [class~=dropdown-menu] [class~=menu-items] [class~=item] [class~=menu-content] [class~=group-category] [class~=mt-20] [class~=d-flex] [class~=col] ul li {
-    border-left-color: currentColor;
+    border-left-color: white;
 }
 
 #home3 [class~=slideshow] [class~=caption-1] span {
