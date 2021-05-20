@@ -41,7 +41,7 @@
                                     <div class="text-left no-gutters">
                                         <input type="hidden" name="submitLogin" value="1">
                                         <button class="btn btn-default" data-link-action="sign-in" type="submit">
-                                            Sign in
+                                            Submit
                                         </button>
                                     </div>
                                 </div>
@@ -59,6 +59,20 @@
         </div>
     </div>
 
+                        <!-- breadcrumb -->
+                        <nav class="breadcrumb-bg">
+                            <div class="container no-index">
+                                <div class="breadcrumb">
+                                    <ol>
+                                        <li>
+                                            <a href="#">
+                                                <span>All rights reserved <b>REJEE COMPANY LIMITED &trade;</b></span>
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </nav>
     </div>
 
 </template>
