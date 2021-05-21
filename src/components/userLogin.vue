@@ -11,7 +11,7 @@
                         <div class="row center">
                             <div class="content-404 col-lg-6 col-sm-6 text-center">
                                 <a href="#">
-                                    <img class="img-fluid" src="img/home/logo.png" alt="image 404 right">
+                                    <img class="img-fluid" src="img/home/logo.png" width="50%" alt="image 404 right">
                                 </a>
                             </div>
                             <div class="content-right-404 col-lg-5 col-sm-6 text-center">

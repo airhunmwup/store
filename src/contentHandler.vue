@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import changeUserPasswordPage from './components/userRegistrationPage.vue'
+import changeUserPasswordPage from './components/registerBusinessAccount.vue'
 
 export default {
   name: 'App',

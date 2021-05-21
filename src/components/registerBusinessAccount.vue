@@ -18,27 +18,32 @@
                                 
                             <div id="content" class="page-content">
                                 <div class="register-form text-center">
-                                    <h1 class="text-center title-page">Create Account</h1>
+                                    <h1 class="text-center title-page">Create Business Account</h1>
                                     <form action="#" id="customer-form" class="js-customer-form" method="post">
                                         <div>
                                             <div class="form-group">
                                                 <div>
-                                                    <input class="form-control" name="firstname" type="text" placeholder="First name">
+                                                    <input class="form-control" name="firstname" type="text" placeholder="Full name">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div>
-                                                    <input class="form-control" name="lastname" type="text" placeholder="Last name">
+                                                    <input class="form-control" name="lastname" type="text" placeholder="Business name">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div>
-                                                    <input class="form-control" name="email" type="email" placeholder="Email">
+                                                    <input class="form-control" name="email" type="email" placeholder="Business email">
                                                 </div>
                                             </div>
                                             <div class="form-group">
                                                 <div>
-                                                    <input class="form-control" name="Phonenumber" type="text" placeholder="Phone number">
+                                                    <input class="form-control" name="regnumber" type="text" placeholder="Business reg number">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <input class="form-control" name="Phonenumber" type="text" placeholder="Business Phone number">
                                                 </div>
                                             </div>
                                             <div class="form-group">
@@ -57,6 +62,7 @@
                                             </div>
                                         </div>
                                         <div class="clearfix">
+                                            <br>
                                             <div>
                                                 <button class="btn btn-primary" data-link-action="sign-in" type="submit">
                                                     Create Account
