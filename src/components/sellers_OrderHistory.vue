@@ -46,6 +46,7 @@
                                     <hr>
                                 <div id="mywishlist">
                                     <h1 class="title-page">Order History</h1>
+                                    <i class="fa fa-recycle"></i>
                                     <div id="block-history" class="block-center">
                                         <table class="std table table-fixed">
                                             <thead>
@@ -55,7 +56,6 @@
                                                     <th class="item mywishlist_first"></th>
                                                     <th class="item mywishlist_second">Progress</th>
                                                     <th class="item mywishlist_second"></th>
-                                                    <th class="last_item mywishlist_first"><i class="btn fa fa-refresh"></i></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
