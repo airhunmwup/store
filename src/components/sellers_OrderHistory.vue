@@ -46,7 +46,6 @@
                                     <hr>
                                 <div id="mywishlist">
                                     <h1 class="title-page">Order History</h1>
-                                    <i class="fa fa-recycle"></i>
                                     <div id="block-history" class="block-center">
                                         <table class="std table table-fixed">
                                             <thead>
@@ -54,8 +53,9 @@
                                                     <th class="first_item">#</th>
                                                     <th class="item mywishlist_first">Product</th>
                                                     <th class="item mywishlist_first"></th>
-                                                    <th class="item mywishlist_second">Progress</th>
                                                     <th class="item mywishlist_second"></th>
+                                                    <th class="item mywishlist_second">Progress</th>
+                                                    <th class="last_item mywishlist_first"><i class="btn fa fa-refresh"></i></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
@@ -70,11 +70,11 @@
                                                     <td class="bold align_center">
                                                         White chair red leather faux
                                                     </td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-info">Pending</b> </a>
-                                                    </td>
                                                     <td class="wishlist_default text-right">
                                                       
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-info">Pending</b> </a>
                                                     </td>
                                                     <td class="wishlist_delete text-center">
                                                         <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-eye"> View</i></a>
@@ -91,11 +91,11 @@
                                                     <td class="bold align_center">
                                                         Lamp
                                                     </td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-success">Processed</b> </a>
-                                                    </td>
                                                     <td class="wishlist_default text-right">
                                                         
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-success">Processed</b> </a>
                                                     </td>
                                                     <td class="wishlist_delete text-center">
                                                         <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-eye"> View</i></a>
@@ -112,11 +112,11 @@
                                                     <td class="bold align_center">
                                                         Bag of Rice
                                                     </td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-danger">Refunded</b> </a>
-                                                    </td>
                                                     <td class="wishlist_default text-right">
                                                         
+                                                    </td>
+                                                    <td>
+                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-danger">Refunded</b> </a>
                                                     </td>
                                                     <td class="wishlist_delete text-center">
                                                         <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-eye"> View</i></a>
