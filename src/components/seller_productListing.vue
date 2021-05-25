@@ -50,7 +50,7 @@
                                         <table class="std table table-fixed">
                                             <thead>
                                                 <tr>
-                                                    <th class="first_item">#</th>
+                                                    <th class="first_item"></th>
                                                     <th class="item mywishlist_first">Product name</th>
                                                     <th class="item mywishlist_second">quantity</th>
                                                     <th class="item mywishlist_second">Price</th>
