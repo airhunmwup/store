@@ -1,4 +1,5 @@
 <template>  
+<div id="product-detail">
     <header>
         <div>
         <!-- header left mobie -->
@@ -270,7 +271,7 @@
         
     </header>
 
-    
+</div>   
 </template>
 
 <script>

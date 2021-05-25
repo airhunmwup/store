@@ -1,4 +1,5 @@
 <template>  
+<div id="product-detail">
     <header>
         <div>
 
@@ -293,7 +294,7 @@
     </div>
     </header>
 
-    
+</div> 
 </template>
 
 <script>

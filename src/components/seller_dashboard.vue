@@ -35,8 +35,8 @@
                             <div id="content" class="page-content">
                                     <form method="post" class="std" id="customer-form">
                                         <fieldset>
-                                            <div class="input-group col-xs-12 col-sm-12 col-md-8 col-lg-6">
-                                                <input type="text" id="name" name="name" placeholder="Search Order History" class="form-control" value="">
+                                            <div class="input-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                                                <input type="text" id="name" name="name" placeholder="Search" class="form-control" value="">
                                                 <button class="btn btn-dark" type="submit" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
                                                     Submit
                                                 </button>
@@ -45,81 +45,102 @@
                                     </form>
                                     <hr>
                                 <div id="mywishlist">
-                                    <h1 class="title-page">Order History</h1>
+                                    <h1 class="title-page">Product Listing</h1>
                                     <div id="block-history" class="block-center">
                                         <table class="std table table-fixed">
                                             <thead>
                                                 <tr>
                                                     <th class="first_item">#</th>
-                                                    <th class="item mywishlist_first">Product</th>
+                                                    <th class="item mywishlist_first">Product name</th>
+                                                    <th class="item mywishlist_second">quantity</th>
+                                                    <th class="item mywishlist_second">Price</th>
                                                     <th class="item mywishlist_first"></th>
-                                                    <th class="item mywishlist_second"></th>
-                                                    <th class="item mywishlist_second">Progress</th>
-                                                    <th class="last_item mywishlist_first"><i class="btn fa fa-refresh"></i></th>
+                                                    <th class="last_item mywishlist_first"><i class="btn btn-dark fa fa-plus"> Add</i></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr id="wishlist_1">
-                                                    <td><i>2018-06-14.4:34</i></td>
                                                     <td>
                                                         <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');">
                                                             
-                                                    <img src="img/product/3.jpg" alt="Product">
-                                                            </a>
-                                                    </td>
-                                                    <td class="bold align_center">
-                                                        White chair red leather faux
-                                                    </td>
-                                                    <td class="wishlist_default text-right">
-                                                      
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-info">Pending</b> </a>
-                                                    </td>
-                                                    <td class="wishlist_delete text-center">
-                                                        <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-eye"> View</i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr id="wishlist_1">
-                                                    <td><i>2018-06-14.4:34</i></td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');">
-                                                            
-                                                    <img src="img/product/11.jpg" alt="Product">
-                                                            </a>
-                                                    </td>
-                                                    <td class="bold align_center">
-                                                        Lamp
-                                                    </td>
-                                                    <td class="wishlist_default text-right">
-                                                        
-                                                    </td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-success">Processed</b> </a>
-                                                    </td>
-                                                    <td class="wishlist_delete text-center">
-                                                        <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-eye"> View</i></a>
-                                                    </td>
-                                                </tr>
-                                                <tr id="wishlist_1">
-                                                    <td><i>2018-06-14.4:34</i></td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');">
-                                                            
-                                                    <img src="img/product/3.jpg" alt="Product">
+                                                    <img src="img/product/7.jpg" alt="Product">
                                                             </a>
                                                     </td>
                                                     <td class="bold align_center">
                                                         Bag of Rice
                                                     </td>
-                                                    <td class="wishlist_default text-right">
-                                                        
+                                                    <td class="">
+                                                        <input class="focus:underline ..." value="5">
                                                     </td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-danger">Refunded</b> </a>
+                                                    <td class="text-center">
+                                                        <input class="focus:underline ..." value="500">
+                                                    </td>
+                                                    <td class="wishlist_default text-right">
+                                                        <p class="is_wish_list_default">
+                                                            <i class="btn fa fa-edit"> edit</i>
+                                                        </p>
+                                                        <p class="is_wish_list_default">
+                                                            <i class="btn text-success fa fa-refresh"> update</i>
+                                                        </p>
                                                     </td>
                                                     <td class="wishlist_delete text-center">
-                                                        <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-eye"> View</i></a>
+                                                        <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-trash"> delete</i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr id="wishlist_1">
+                                                    <td>
+                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');">
+                                                            
+                                                    <img src="img/product/7.jpg" alt="Product">
+                                                            </a>
+                                                    </td>
+                                                    <td class="bold align_center">
+                                                        Bag of Rice
+                                                    </td>
+                                                    <td class="">
+                                                        <input class="focus:underline ..." value="5">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="focus:underline ..." value="500">
+                                                    </td>
+                                                    <td class="wishlist_default text-right">
+                                                        <p class="is_wish_list_default">
+                                                            <i class="btn fa fa-edit"> edit</i>
+                                                        </p>
+                                                        <p class="is_wish_list_default">
+                                                            <i class="btn text-success fa fa-refresh"> update</i>
+                                                        </p>
+                                                    </td>
+                                                    <td class="wishlist_delete text-center">
+                                                        <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-trash"> delete</i></a>
+                                                    </td>
+                                                </tr>
+                                                <tr id="wishlist_1">
+                                                    <td>
+                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');">
+                                                            
+                                                    <img src="img/product/9.jpg" alt="Product">
+                                                            </a>
+                                                    </td>
+                                                    <td class="bold align_center">
+                                                        Bag of Rice
+                                                    </td>
+                                                    <td class="">
+                                                        <input class="focus:underline ..." value="5">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="focus:underline ..." value="500">
+                                                    </td>
+                                                    <td class="wishlist_default text-right">
+                                                        <p class="is_wish_list_default">
+                                                            <i class="btn fa fa-edit"> edit</i>
+                                                        </p>
+                                                        <p class="is_wish_list_default">
+                                                            <i class="btn text-success fa fa-refresh"> update</i>
+                                                        </p>
+                                                    </td>
+                                                    <td class="wishlist_delete text-center">
+                                                        <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-trash"> delete</i></a>
                                                     </td>
                                                 </tr>
                                             </tbody>

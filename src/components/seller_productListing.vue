@@ -51,16 +51,15 @@
                                             <thead>
                                                 <tr>
                                                     <th class="first_item">#</th>
-                                                    <th class="item mywishlist_first">Product</th>
+                                                    <th class="item mywishlist_first">Product name</th>
+                                                    <th class="item mywishlist_second">quantity</th>
+                                                    <th class="item mywishlist_second">Price</th>
                                                     <th class="item mywishlist_first"></th>
-                                                    <th class="item mywishlist_second">quantity available</th>
-                                                    <th class="item mywishlist_second"></th>
-                                                    <th class="last_item mywishlist_first"><i class="btn btn-dark fa fa-plus"> Add Product</i></th>
+                                                    <th class="last_item mywishlist_first"><i class="btn btn-dark fa fa-plus"> Add</i></th>
                                                 </tr>
                                             </thead>
                                             <tbody>
                                                 <tr id="wishlist_1">
-                                                    <td><i>2018-06-14.4:34</i></td>
                                                     <td>
                                                         <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');">
                                                             
@@ -70,12 +69,18 @@
                                                     <td class="bold align_center">
                                                         Bag of Rice
                                                     </td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b>15</b> available in stock</a>
+                                                    <td class="">
+                                                        <input class="focus:underline ..." value="5">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="focus:underline ..." value="500">
                                                     </td>
                                                     <td class="wishlist_default text-right">
                                                         <p class="is_wish_list_default">
-                                                            <i class="fa fa-edit"> edit</i>
+                                                            <i class="btn fa fa-edit"> edit</i>
+                                                        </p>
+                                                        <p class="is_wish_list_default">
+                                                            <i class="btn text-success fa fa-refresh"> update</i>
                                                         </p>
                                                     </td>
                                                     <td class="wishlist_delete text-center">
@@ -83,7 +88,6 @@
                                                     </td>
                                                 </tr>
                                                 <tr id="wishlist_1">
-                                                    <td><i>2018-06-14.4:34</i></td>
                                                     <td>
                                                         <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');">
                                                             
@@ -93,12 +97,18 @@
                                                     <td class="bold align_center">
                                                         Bag of Rice
                                                     </td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b>15</b> available in stock</a>
+                                                    <td class="">
+                                                        <input class="focus:underline ..." value="5">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="focus:underline ..." value="500">
                                                     </td>
                                                     <td class="wishlist_default text-right">
                                                         <p class="is_wish_list_default">
-                                                            <i class="fa fa-edit"> edit</i>
+                                                            <i class="btn fa fa-edit"> edit</i>
+                                                        </p>
+                                                        <p class="is_wish_list_default">
+                                                            <i class="btn text-success fa fa-refresh"> update</i>
                                                         </p>
                                                     </td>
                                                     <td class="wishlist_delete text-center">
@@ -106,7 +116,6 @@
                                                     </td>
                                                 </tr>
                                                 <tr id="wishlist_1">
-                                                    <td><i>2018-06-14.4:34</i></td>
                                                     <td>
                                                         <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');">
                                                             
@@ -116,12 +125,18 @@
                                                     <td class="bold align_center">
                                                         Bag of Rice
                                                     </td>
-                                                    <td>
-                                                        <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b>15</b> available in stock</a>
+                                                    <td class="">
+                                                        <input class="focus:underline ..." value="5">
+                                                    </td>
+                                                    <td class="text-center">
+                                                        <input class="focus:underline ..." value="500">
                                                     </td>
                                                     <td class="wishlist_default text-right">
                                                         <p class="is_wish_list_default">
-                                                            <i class="fa fa-edit"> edit</i>
+                                                            <i class="btn fa fa-edit"> edit</i>
+                                                        </p>
+                                                        <p class="is_wish_list_default">
+                                                            <i class="btn text-success fa fa-refresh"> update</i>
                                                         </p>
                                                     </td>
                                                     <td class="wishlist_delete text-center">
