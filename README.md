@@ -1,4 +1,4 @@
-# rejee
+# REJEE
 <html>
   <body>
     <span><image src="src/assets/logo.png"width="20%"/>V 0.1</span>
