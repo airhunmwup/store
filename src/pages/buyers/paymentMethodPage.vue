@@ -59,7 +59,7 @@
                                         <th class="first_item">
                                             <p>You'll need to enter your login details when you place your order.</p>
                                         </th>
-                                        <td class="item"><b><i class="text-info fa fa-paypal"></i></b></td>
+                                        <td class="item"><b><i class="text-primary fa fa-paypal"></i></b></td>
                                     </tr>
                                     <tr class="btn">
                                         <th class="first_item text-success">Set as default payment method</th>
