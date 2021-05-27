@@ -9,18 +9,6 @@
             <nav class="breadcrumb-bg">
                 <div class="container no-index">
                     <div class="breadcrumb">
-                        <ol>
-                            <li>
-                                <a href="#">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>My Account</span>
-                                </a>
-                            </li>
-                        </ol>
                     </div>
                 </div>
             </nav>
@@ -28,11 +16,11 @@
             <div class="acount head-acount  container">
                 <div class="container">
                     <div id="main">
-                        <h1 class="title-page">My Account</h1>
+                        <h1 class="title-page">My Details</h1>
                             <table class="std table" id="block-history">
                                 <tbody>
                                     <tr>
-                                        <th class="first_item">My Name :</th>
+                                        <th class="first_item">Name :</th>
                                         <td>David James</td>
                                     </tr>
                                     <tr>
@@ -58,8 +46,8 @@
                                 </tbody>
                             </table>
 
-                        <button class="btn btn-primary" data-link-action="sign-in" type="submit">
-                            view Address
+                        <button class="btn item" data-link-action="sign-in" type="submit">
+                            Update
                         </button>
                     </div>
 

@@ -30,9 +30,9 @@
                         <div class="container">
                             <div class="content">
                                 <div class="row">
-                                    <div class="col-lg-9">
+                                    <div class=" title-product col-lg-9">
 
-                                        <h4>MEN's FASHION</h4>
+                                        <h2>MEN's FASHION</h2>
                                     <hr>
                         <!-- FEATURED CATEGORIES -->
                         <div class="featured-category">
@@ -129,13 +129,13 @@
                         </div>
 
                                     <div class="col-sm-8 col-lg-12 col-md-8 product-container">
-                                        <h4><b>SpotLight</b></h4>
+                                        <h2>SpotLight</h2>
                                         <div class="js-product-list-top firt nav-top">
                                             <div class="d-flex justify-content-around row">
                                                 <div class="col col-xs-12">
                                                     <div class="d-flex sort-by-row justify-content-end">
                                                         <div class="products-sort-order dropdown">
-                                                            <a href="#"><p><b>See all ></b></p></a>
+                                                            <a href="#" class="btn"><p><b>See all ></b></p></a>
                                                         </div>
                                                     </div>
                                                 </div>

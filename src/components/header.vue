@@ -8,9 +8,7 @@
                                 <div class="breadcrumb">
                                     <ol>
                                         <li>
-                                            <a href="#">
-                                                <span><b> &trade;</b></span>
-                                            </a>
+                                            
                                         </li>
                                     </ol>
                                 </div>
