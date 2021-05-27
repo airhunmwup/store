@@ -7,7 +7,7 @@
 </template>
 
 <script>
-import changeUserPasswordPage from './pages/seller_dashboard.vue'
+import changeUserPasswordPage from './pages/sellers/seller_dashboard.vue'
 import headerseller from './components/header.vue'
 
 export default {
