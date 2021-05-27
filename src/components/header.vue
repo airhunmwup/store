@@ -67,10 +67,6 @@
                             </li>
                             <li class="item has-sub">
                                 <a href="contact.html" title="Contact us">
-                                    <b class="fa fa-bell" aria-hidden="true"></b> Notifications</a>
-                            </li>
-                            <li class="item has-sub">
-                                <a href="contact.html" title="Contact us">
                                     <b class="fa fa-question-circle" aria-hidden="true"></b> Need Help?</a>
                             </li>
                             <li class="item has-sub">
@@ -197,7 +193,7 @@
                                     </div>
                                     <div>
                                         <a class="register" href="user-register.html" rel="nofollow" title="Register Account">
-                                            <i class="fa fa-address-book"></i>
+                                            <i class="fa fa-user"></i>
                                             <span>My Details</span>
                                         </a>
                                     </div>
@@ -209,7 +205,7 @@
                                     </div>
                                     <div>
                                         <a href="user-wishlist.html" title="My Wishlists">
-                                            <i class="fa fa-heart"></i>
+                                            <i class="fa fa-address-book"></i>
                                             <span>Address Book</span>
                                         </a>
                                     </div>
@@ -217,12 +213,6 @@
                                         <a href="user-wishlist.html" title="My Wishlists">
                                             <i class="fa fa-credit-card"></i>
                                             <span>Payment Methods</span>
-                                        </a>
-                                    </div>
-                                    <div>
-                                        <a href="user-wishlist.html" title="My Wishlists">
-                                            <i class="fa fa-bell"></i>
-                                            <span>Notificatons</span>
                                         </a>
                                     </div>
                                     <div>

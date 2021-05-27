@@ -9,18 +9,6 @@
             <nav class="breadcrumb-bg">
                 <div class="container no-index">
                     <div class="breadcrumb">
-                        <ol>
-                            <li>
-                                <a href="#">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Products</span>
-                                </a>
-                            </li>
-                        </ol>
                     </div>
                 </div>
             </nav>
@@ -33,11 +21,12 @@
                     <div id="content-wrapper" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onecol">
                         <div id="main">
                             <div id="content" class="page-content">
+                                    <h1 class="title-page">Order History</h1>
                                     <form method="post" class="std" id="customer-form">
                                         <fieldset>
-                                            <div class="input-group col-xs-12 col-sm-12 col-md-8 col-lg-6">
+                                            <div class="input-group col-xs-12 col-sm-12 col-md-8 col-lg-10">
                                                 <input type="text" id="name" name="name" placeholder="Search Order History" class="form-control" value="">
-                                                <button class="btn btn-dark" type="submit" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
+                                                <button class="btn item" type="submit" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
                                                     Submit
                                                 </button>
                                             </div>
@@ -45,19 +34,8 @@
                                     </form>
                                     <hr>
                                 <div id="mywishlist">
-                                    <h1 class="title-page">Order History</h1>
                                     <div id="block-history" class="block-center">
                                         <table class="std table table-fixed">
-                                            <thead>
-                                                <tr>
-                                                    <th class="first_item">#</th>
-                                                    <th class="item mywishlist_first">Product</th>
-                                                    <th class="item mywishlist_first"></th>
-                                                    <th class="item mywishlist_second"></th>
-                                                    <th class="item mywishlist_second">Progress</th>
-                                                    <th class="last_item mywishlist_first"><i class="btn fa fa-refresh"></i></th>
-                                                </tr>
-                                            </thead>
                                             <tbody>
                                                 <tr id="wishlist_1">
                                                     <td><i>2018-06-14.4:34</i></td>
@@ -76,7 +54,7 @@
                                                     <td>
                                                         <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-info">Pending</b> </a>
                                                     </td>
-                                                    <td class="wishlist_delete text-center">
+                                                    <td class="wishlist_delete btn text-center">
                                                         <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-eye"> View</i></a>
                                                     </td>
                                                 </tr>
@@ -97,7 +75,7 @@
                                                     <td>
                                                         <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-success">Processed</b> </a>
                                                     </td>
-                                                    <td class="wishlist_delete text-center">
+                                                    <td class="wishlist_delete btn text-center">
                                                         <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-eye"> View</i></a>
                                                     </td>
                                                 </tr>
@@ -118,7 +96,7 @@
                                                     <td>
                                                         <a href="javascript:;" onclick="javascript:WishlistManage('block-order-detail', '1');"><b class="text-danger">Refunded</b> </a>
                                                     </td>
-                                                    <td class="wishlist_delete text-center">
+                                                    <td class="wishlist_delete btn text-center">
                                                         <a href="javascript:;" onclick="return (WishlistDelete('wishlist_1', '1', 'Do you really want to delete this wishlist ?'));"><i class="fa fa-eye"> View</i></a>
                                                     </td>
                                                 </tr>
