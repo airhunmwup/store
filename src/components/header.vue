@@ -164,14 +164,9 @@
                         </div>
                     </div>
 
-                    <!-- menu -->
-                    <div class="main-menu col-sm-4 col-md-4 align-items-center justify-content-center navbar-expand-md">
-                        <div class="menu navbar collapse navbar-collapse">
-                        </div>
-                    </div>
 
                     <!-- search-->
-                    <div id="search_widget" class="col-sm-6 col-md-6 align-items-center justify-content-end d-flex">
+                    <div id="search_widget" class="col-sm-6 col-md-10 align-items-center justify-content-end d-flex">
                         <form method="get" action="#">
                             <input type="text" name="s" value="" placeholder="Search ..." class="ui-autocomplete-input large" autocomplete="off">
                             <button type="submit">
