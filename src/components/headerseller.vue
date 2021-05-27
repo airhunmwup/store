@@ -54,20 +54,20 @@
                                 <div class="account-list-content">
                                     <div>
                                         <a class="login" href="user-acount.html" rel="nofollow" title="Log in to your customer account">
-                                            <i class="fa fa-file-text-o"></i>
-                                            <span>My Orders</span>
+                                            <i class="fa fa-address-book"></i>
+                                            <span>My Store</span>
                                         </a>
                                     </div>
                                     <div>
                                         <a class="login" href="user-login.html" rel="nofollow" title="Log in to your customer account">
-                                            <i class="fa fa-shopping-bag"></i>
-                                            <span>Listing</span>
+                                            <i class="fa fa-shopping-basket"></i>
+                                            <span>Product Listing</span>
                                         </a>
                                     </div>
                                     <div>
                                         <a class="register" href="user-register.html" rel="nofollow" title="Register Account">
-                                            <i class="fa fa-address-book"></i>
-                                            <span>Seller Details</span>
+                                            <i class="fa fa-file-text-o"></i>
+                                            <span>Order History</span>
                                         </a>
                                     </div>
                                     <div>
@@ -252,15 +252,15 @@
                         <ul class="menu level1">
                             <li class="item has-sub">
                                 <a href="index-2.html" title="Home">
-                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>My Orders</a>
+                                    <i class="fa fa-address-book" aria-hidden="true"></i>My Store</a>
                             </li>
                             <li class="item has-sub">
                                 <a href="index-2.html" title="Home">
-                                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>Wishlist</a>
+                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>Product Listing</a>
                             </li>
                             <li class="item has-sub">
                                 <a href="#" title="Blog">
-                                    <i class="fa fa-address-book" aria-hidden="true"></i>My details</a>
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</a>
                             </li>
                             <li class="item has-sub">
                                 <a href="#" title="Page">

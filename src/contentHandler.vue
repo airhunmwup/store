@@ -1,20 +1,23 @@
 <template>
 <div>
   <webapp-headerseller/>
+  <webapp-headerFooter/>
   <webapp-changeUserPasswordPage/>
 </div>
 
 </template>
 
 <script>
-import changeUserPasswordPage from './components/seller_dashboard.vue'
-import headerseller from './components/headerseller.vue'
+import changeUserPasswordPage from './pages/seller_dashboard.vue'
+import headerseller from './components/header.vue'
+import headerFooter from './components/headerFooter.vue'
 
 export default {
   name: 'App',
   components: {
     'webapp-changeUserPasswordPage':changeUserPasswordPage,
     'webapp-headerseller':headerseller,
+    'webapp-headerFooter':headerFooter,
   }
 }
 </script>

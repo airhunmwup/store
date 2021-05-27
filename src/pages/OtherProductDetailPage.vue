@@ -1,7 +1,7 @@
 <template>
     
     <!-- main content -->
-    <div class="main-content">
+    <div class="main-content" id="product-detail">
         <div id="wrapper-site">
             <div id="content-wrapper">
                 <div id="main">
@@ -95,26 +95,7 @@
                                                         </div>
                                                         <p class="description">Proin gravida nibh vel velit auctor aliquet. Aenean lorem quis bibendum
                                                             auctor, nisi elit consequat etiam non auctor.</p>
-                                                        <div class="option has-border d-lg-flex size-color">
-                                                            <div class="size">
-                                                                <span class="size">size :</span>
-                                                                <select>
-                                                                    <option value="">Choose your size</option>
-                                                                    <option value="">M</option>
-                                                                    <option value="">l</option>
-                                                                    <option value="">xl</option>
-                                                                </select>
-                                                            </div>
-                                                            <div class="colors">
-                                                                <b class="title">Color : </b>
-                                                                <span class="blue"></span>
-                                                                <span class="yellow"></span>
-                                                                <span class="pink"></span>
-                                                                <span class="green"></span>
-                                                                <span class="brown"></span>
-                                                                <span class="red"></span>
-                                                            </div>
-                                                        </div>
+                                                        
                                                         <div class="has-border cart-area">
                                                             <div class="product-quantity">
                                                                 <div class="qty">
@@ -127,7 +108,7 @@
                                                                         <span class="add">
                                                                             <button class="btn btn-primary add-to-cart add-item" data-button-action="add-to-cart" type="submit">
                                                                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
-                                                                                <span>Add to cart</span>
+                                                                                
                                                                             </button>
                                                                             <a class="addToWishlist" href="#">
                                                                                 <i class="fa fa-heart" aria-hidden="true"></i>
@@ -148,11 +129,11 @@
                                                                 </a>
                                                                 <a href="#" class="email">
                                                                     <i class="fa fa-envelope" aria-hidden="true"></i>
-                                                                    <span>SEN TO A FRIEND</span>
+                                                                    <span>Message seller</span>
                                                                 </a>
                                                                 <a href="#" class="print">
                                                                     <i class="zmdi zmdi-save"></i>
-                                                                    <span>save supplier</span>
+                                                                    <span>save</span>
                                                                 </a>
                                                             </div>
                                                         </div>
@@ -168,18 +149,6 @@
                                                                         <div class="star"></div>
                                                                     </div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="read after-has-border">
-                                                                <a href="#review">
-                                                                    <i class="fa fa-commenting-o color" aria-hidden="true"></i>
-                                                                    <span>READ REVIEWS (3)</span>
-                                                                </a>
-                                                            </div>
-                                                            <div class="apen after-has-border">
-                                                                <a href="#review">
-                                                                    <i class="fa fa-pencil color" aria-hidden="true"></i>
-                                                                    <span>WRITE A REVIEW</span>
-                                                                </a>
                                                             </div>
                                                         </div>
                                                         <div class="content">
@@ -209,14 +178,9 @@
                                                                     <image src="#" class=""/>
                                                                 </span>
                                                             </p>
-                                                            <p>tags :
+                                                            <p>Seller :
                                                                 <span class="content2">
-                                                                    <a href="#">Jacket</a>,
-                                                                    <a href="#">Overcoat</a>,
-                                                                    <a href="#">Luxury</a>,
-                                                                    <a href="#">men</a>,
-                                                                    <a href="#">summer</a>,
-                                                                    <a href="#">autumn</a>
+                                                                    <a href="#">Jacket Store</a>,
                                                                 </span>
                                                             </p>
                                                         </div>

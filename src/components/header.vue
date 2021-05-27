@@ -1,15 +1,24 @@
 <template>  
-<div id="product-detail">
     <header>
         <div>
+             <!-- breadcrumb -->
+                         <!-- breadcrumb -->
+                        <nav class="breadcrumb-bg">
+                            <div class="container no-index">
+                                <div class="breadcrumb">
+                                    <ol>
+                                        <li>
+                                            <a href="#">
+                                                <span><b> &trade;</b></span>
+                                            </a>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </nav>
         <!-- header left mobie -->
         <div class="header-mobile d-md-none">
             <div class="mobile hidden-md-up text-xs-center d-flex align-items-center justify-content-around">
-
-                <!-- menu left -->
-                <div id="mobile_mainmenu" class="item-mobile-top">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
 
                 <!-- logo -->
                 <div class="mobile-logo align-items-center">
@@ -18,8 +27,65 @@
 
                 <!-- menu right -->
                 <div class="mobile-menutop" data-target="#mobile-pagemenu">
-                    <i class="zmdi zmdi-more"></i>
+                    <i class="fa fa-user"></i>
                 </div>
+
+    <!-- menu mobie right -->
+    <div id="mobile-pagemenu" class="mobile-boxpage d-flex hidden-md-up active d-md-none">
+        <div class="content-boxpage col">
+            <div class="box-header d-flex justify-content-between align-items-center">
+                <div class="title-box"><b class="fa fa-user-o h1"></b>  <small> RejeeStores@rejee.co.uk</small>
+                </div>
+                <div class="close-box">Close</div>
+            </div>
+            <div class="box-content">
+                <nav>
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div id="megamenu" class="clearfix">
+                        <ul class="menu level1">
+                            <li class="item has-sub">
+                                <a href="index-2.html" title="Home">
+                                    <b class="fa fa-file-text-o" aria-hidden="true"></b> My Orders</a>
+                            </li>
+                            <li class="item has-sub">
+                                <a href="index-2.html" title="Home">
+                                    <b class="fa fa-shopping-basket" aria-hidden="true"></b> Wishlist</a>
+                            </li>
+                            <li class="item has-sub">
+                                <a href="#" title="Blog">
+                                    <b class="fa fa-user" aria-hidden="true"></b> My details</a>
+                            </li>
+                            <li class="item has-sub">
+                                <a href="#" title="Page">
+                                    <b class="fa fa-lock" aria-hidden="true"></b> Change Password</a>
+                            </li>
+                            <li class="item has-sub">
+                                <a href="contact.html" title="Contact us">
+                                    <b class="fa fa-address-book" aria-hidden="true"></b> Address book</a>
+                            </li>
+                            <li class="item has-sub">
+                                <a href="contact.html" title="Contact us">
+                                    <b class="fa fa-credit-card" aria-hidden="true"></b> Payment methods</a>
+                            </li>
+                            <li class="item has-sub">
+                                <a href="contact.html" title="Contact us">
+                                    <b class="fa fa-bell" aria-hidden="true"></b> Notifications</a>
+                            </li>
+                            <li class="item has-sub">
+                                <a href="contact.html" title="Contact us">
+                                    <b class="fa fa-question-circle" aria-hidden="true"></b> Need Help?</a>
+                            </li>
+                            <li class="item has-sub">
+                                <a href="contact.html" title="Contact us">
+                                    <b class="fa fa-sign-out" aria-hidden="true"></b> Sign out</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+
             </div>
 
             <!-- search -->
@@ -101,37 +167,6 @@
                     <!-- menu -->
                     <div class="main-menu col-sm-4 col-md-4 align-items-center justify-content-center navbar-expand-md">
                         <div class="menu navbar collapse navbar-collapse">
-                            <ul class="menu-top navbar-nav">
-                                <li class="nav-link">
-                                    <a href="#" class="parent">All Categor</a>
-                                    <div class="dropdown-menu">
-                                        <ul>
-                                            <li class="item">
-                                                <a href="blog-list-sidebar-left.html" title="Blog List (Sidebar Left)">Blog List (Sidebar Left)</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-list-sidebar-left2.html" title="Blog List (Sidebar Left) 2">Blog List (Sidebar Left) 2</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-list-sidebar-right.html" title="Category Blog (Right column)">Blog List (Sidebar Right)</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-list-no-sidebar.html" title="Blog List (No Sidebar)">Blog List (No Sidebar)</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-grid-no-sidebar.html" title="Blog Grid (No Sidebar)">Blog Grid (No Sidebar)</a>
-                                            </li>
-                                            <li class="item">
-                                                <a href="blog-detail.html" title="Blog Detail">Blog Detail</a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </li>
-                                <li class="nav-link">
-                                    <a href="#" class="parent">SELL ITERMS</a>
-                                    
-                                </li>
-                            </ul>
                         </div>
                     </div>
 
@@ -271,7 +306,7 @@
         
     </header>
 
-</div>   
+    
 </template>
 
 <script>
