@@ -1,14 +1,20 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import LandingPage from '../views/buyers/landingPage.vue'
+import UserOrderPage from '../views/buyers/userOrderPage.vue'
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    name: 'LandingPage',
+    name: 'Landingpage',
     component: LandingPage,
+  },
+  {
+    path: '/orderpage',
+    name: 'Orderpage',
+    component: UserOrderPage,
   },
   {
     path: '/about',
