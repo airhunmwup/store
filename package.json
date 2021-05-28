@@ -7,7 +7,6 @@
         "build": "vue-cli-service build",
         "lint": "vue-cli-service lint",
         "build-css": "tailwindcss build src/assets/tailwind.css -o public/css/styles.css"
-
     },
     "dependencies": {
         "core-js": "^3.6.5",
