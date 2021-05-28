@@ -3,12 +3,11 @@
   <webapp-headerseller/>
   <webapp-changeUserPasswordPage/>
 </div>
-
 </template>
 
 <script>
-import changeUserPasswordPage from './pages/sellers/seller_dashboard.vue'
-import headerseller from './components/header.vue'
+import changeUserPasswordPage from './views/sellers/seller_dashboard.vue'
+import headerseller from './components/header'
 
 export default {
   name: 'App',
