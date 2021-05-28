@@ -16,7 +16,7 @@
             <div class="acount head-acount  container">
                 <div class="container">
                     <div id="main">
-                        <h1 class="title-page">EDIT ADDRESS</h1>
+                        <h1 class="title-page">ADD ADDRESS</h1>
                             <table class="std table" id="block-history">
                                 <tbody>
                                     <tr class="bg-grey">
@@ -99,22 +99,33 @@
                                     <tr>
                                        
                                         <th class="first_item">
+                      <router-link
+                        to="/Address Book"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Address Book"
+                      >
                         <button class="btn item" data-link-action="sign-in" type="submit">
-                            Save Address
+                            Save 
                         </button>
+                        </router-link>
                                         </th>
                                         <td>
+                      <router-link
+                        to="/Address Book"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Address Book"
+                      >
                         <button class="btn item" data-link-action="sign-in" type="submit">
-                            Delete Address
+                            Cancel
                         </button>
+                        </router-link>
                         </td>
                                     </tr>
                                 </tbody>
                             </table>
 
-                         <p class="h7 text-center">
-                            Want to delete this address? choose a different dafault billing and delivery address first.
-                         </p>
 
                     </div>
 

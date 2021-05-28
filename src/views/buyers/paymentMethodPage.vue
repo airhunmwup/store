@@ -14,9 +14,16 @@
             </nav>
 
             <div class="acount head-acount  container">
+                      <router-link
+                        to="/ADD Payment Method"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="ADD Payment Method"
+                      >
                         <button class="btn item" data-link-action="sign-in" type="submit">
                             Add new Payment Method
                         </button>
+                        </router-link>
                 <div class="container">
                     <div id="main">
                         <h1 class="title-page">Payment Methods</h1>

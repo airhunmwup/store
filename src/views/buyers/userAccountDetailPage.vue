@@ -46,9 +46,6 @@
                                 </tbody>
                             </table>
 
-                        <button class="btn item" data-link-action="sign-in" type="submit">
-                            Update
-                        </button>
                     </div>
 
                 </div>

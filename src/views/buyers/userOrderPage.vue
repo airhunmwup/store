@@ -33,7 +33,14 @@
                                             <p>Order No: <span class="text-small"> 567328996</span></p>
                                             <p>Shipping date: <span class="text-small"> 11 MAR 2021</span></p>
                                         </th>
+                        <router-link
+                          to="/Order Details"
+                          data-toggle="collapse"
+                          data-target=".navbar-collapse"
+                          title="Home"
+                          >
                                         <td class="btn item"><b><i class="fa fa-angle-right"></i></b></td>
+                        </router-link>
                                     </tr>
                                     <tr>
                                         <th class="btn form-control text-success first_item">Track Order</th>
@@ -61,7 +68,14 @@
                                             <p>Order No: <span class="text-small"> 567328996</span></p>
                                             <p>Shipping date: <span class="text-small"> 11 MAR 2021</span></p>
                                         </th>
+                        <router-link
+                          to="/Order Details"
+                          data-toggle="collapse"
+                          data-target=".navbar-collapse"
+                          title="Home"
+                          >
                                         <td class="btn item"><b><i class="fa fa-angle-right"></i></b></td>
+                        </router-link>
                                     </tr>
                                     <tr>
                                         <th class="btn text-success form-control first_item">Track Order</th>
