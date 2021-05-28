@@ -1,17 +1,26 @@
 <template>
-  <div>
-  <webapp-contentHandler/>
+  <div id="app">
+    <Header/>
+    <router-view />
+    <Footer/>
   </div>
-  
 </template>
 
+
 <script>
-import contentHandler from './contentHandler.vue'
+import Header from './components/header';
+import Footer from './components/footer';
 
 export default {
-  name: 'App',
-  components: {
-    'webapp-contentHandler':contentHandler,
-  }
+  components:{
+    Header,
+    Footer
+  },
+  
 }
 </script>
+
+<style>
+
+</style>
+
