@@ -26,13 +26,12 @@
                                         <fieldset>
                                             <div class="input-group col-xs-12 col-sm-12 col-md-8 col-lg-10">
                                                 <input type="text" id="name" name="name" placeholder="Search Order History" class="form-control" value="">
-                                                <button class="btn item" type="submit" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
+                                                <button class="btn item text-dark" type="submit" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
                                                     Submit
                                                 </button>
                                             </div>
                                         </fieldset>
                                     </form>
-                                    <hr>
                                 <div id="mywishlist">
                                     <div id="block-history" class="block-center">
                                         <table class="std table table-fixed">
