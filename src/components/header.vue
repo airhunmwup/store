@@ -17,10 +17,6 @@
         <div
           class="mobile hidden-md-up text-xs-center d-flex align-items-center justify-content-around"
         >
-                <!-- menu left -->
-                <div id="mobile_mainmenu" class="item-mobile-top">
-                    <i class="fa fa-bars" aria-hidden="true"></i>
-                </div>
           <!-- logo -->
           <div class="mobile-logo align-items-center">
             <img
@@ -32,46 +28,130 @@
           </div>
 
           <!-- menu right -->
-          
-                
-              <div class="desktop_cart">
-                <div class="blockcart block-cart cart-preview tiva-toggle">
-                  <div class="header-cart tiva-toggle-btn">
-                    <span class="cart-products-count">1</span>
-                    <i class="fa fa-user" aria-hidden="true"></i>
-                  </div>
-                  <div class="dropdown-content">
-                    <div class="cart-content">
 
-
-                            <table class="std table" >
-                                <tbody>
-
-                                    <tr>
-                                        <th class="first_item">PAYMENT DETAIL</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item">
-                                            <p class="col text"><i class="fa fa-cc-visa"> VISA Debit</i></p>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item box">ORDER TOTAL</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item box">NEED HELP WITH YOUR ORDER?</th>
-                                    </tr>
-                                </tbody>
-
-                            </table>
-                    </div>
+          <div class="desktop_cart">
+            <div class="blockcart block-cart cart-preview tiva-toggle">
+              <div class="header-cart tiva-toggle-btn">
+                <i class="fa fa-user" aria-hidden="true"></i>
+              </div>
+              <div class="dropdown-content">
+                <div class="cart-content">
+                  <div class="">
+                    <ul>
+                      <li class="col-md-4">
+                        <span class="menu-title h3"
+                          ><b class="fa fa-user-o text-dark"></b></span
+                        ><small> User@email.com</small> <br /><small>
+                          12093874</small
+                        >
+                        <hr />
+                        <br />
+                        <div class="menu-content">
+                          <ul class="col">
+                            <li class="item-left">
+                              <router-link
+                                to="/orderpage"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Home"
+                              >
+                                <b class="fa fa-file-text-o"></b>
+                                <span> My Orders</span></router-link
+                              >
+                            </li>
+                            <hr />
+                            <br />
+                            <li class="item-left">
+                              <router-link
+                                to="/Wish list"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Wish list"
+                              >
+                                <b class="fa fa-shopping-bag"></b>
+                                <span> Wishlist</span>
+                              </router-link>
+                            </li>
+                            <hr />
+                            <br />
+                            <li class="item-left">
+                              <router-link
+                                to="/User Detail"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="User detail"
+                              >
+                                <b class="fa fa-user"></b>
+                                <span> My Details</span>
+                              </router-link>
+                            </li>
+                            <hr />
+                            <br />
+                            <li class="item-left">
+                              <router-link
+                                to="/Change Password"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Change Password"
+                              >
+                                <b class="fa fa-lock" aria-hidden="true"></b>
+                                <span> Change Password</span>
+                              </router-link>
+                            </li>
+                            <hr />
+                            <br />
+                            <li class="item-left">
+                              <router-link
+                                to="/Address Book"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Address Book"
+                              >
+                                <b class="fa fa-address-book"></b>
+                                <span> Address Book</span>
+                              </router-link>
+                            </li>
+                            <hr />
+                            <br />
+                            <li class="item-left">
+                              <router-link
+                                to="/Payment Method"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Payment Method"
+                              >
+                                <b class="fa fa-credit-card"></b>
+                                <span> Payment Methods</span>
+                              </router-link>
+                            </li>
+                          </ul>
+                        </div>
+                      </li>
+                      <hr>
+                      <li class="item col-md-4">
+                        <div class="box form-group">
+                          <a href="user-wishlist.html" title="My Wishlists">
+                            <b class="fa fa-question-circle"></b>
+                            <span> Need Help</span>
+                          </a>
+                        </div>
+                        <div class="form-control">
+                          <a href="user-wishlist.html" title="My Wishlists">
+                            <b class="fa fa-sign-out"></b>
+                            <span> Sign Out</span>
+                          </a>
+                        </div>
+                      </li>
+                    </ul>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
         </div>
 
         <!-- search -->
-        
+
         <div id="mobile_search" class="d-flex">
           <div id="mobile_search_content">
             <form method="get" action="#">
@@ -99,7 +179,9 @@
                         </td>
                         <td>
                           <div class="product-name">
-                            <a href="product-detail.html">Organic Strawberry Fruits</a>
+                            <a href="product-detail.html"
+                              >Organic Strawberry Fruits</a
+                            >
                           </div>
                           <div>
                             2 x
@@ -194,61 +276,58 @@
                     </div>
                     <div>
                       <router-link
-                          to="/Wish list"
-                          data-toggle="collapse"
-                          data-target=".navbar-collapse"
-                          title="Wish list"
-                          >
+                        to="/Wish list"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Wish list"
+                      >
                         <i class="fa fa-shopping-bag"></i>
                         <span>Wishlist</span>
-                      </router-link
-                      >
+                      </router-link>
                     </div>
                     <div>
                       <router-link
-                          to="/User Detail"
-                          data-toggle="collapse"
-                          data-target=".navbar-collapse"
-                          title="User detail"
-                          >
+                        to="/User Detail"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="User detail"
+                      >
                         <i class="fa fa-user"></i>
                         <span>My Details</span>
-                      </router-link
-                      >
+                      </router-link>
                     </div>
                     <div>
                       <router-link
-                          to="/Change Password"
-                          data-toggle="collapse"
-                          data-target=".navbar-collapse"
-                          title="Change Password"
-                          >
+                        to="/Change Password"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Change Password"
+                      >
                         <i class="fa fa-lock" aria-hidden="true"></i>
                         <span>Change Password</span>
-                      </router-link
+                      </router-link>
+                    </div>
+                    <div>
+                      <router-link
+                        to="/Address Book"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Address Book"
                       >
-                    </div>
-                    <div>
-                      <router-link
-                          to="/Address Book"
-                          data-toggle="collapse"
-                          data-target=".navbar-collapse"
-                          title="Address Book"
-                          >
-                           <i class="fa fa-address-book"></i>
+                        <i class="fa fa-address-book"></i>
                         <span>Address Book</span>
-                      </router-link >
+                      </router-link>
                     </div>
                     <div>
                       <router-link
-                          to="/Payment Method"
-                          data-toggle="collapse"
-                          data-target=".navbar-collapse"
-                          title="Payment Method"
-                          >
-                          <i class="fa fa-credit-card"></i>
+                        to="/Payment Method"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Payment Method"
+                      >
+                        <i class="fa fa-credit-card"></i>
                         <span>Payment Methods</span>
-                      </router-link >
+                      </router-link>
                     </div>
                     <div>
                       <a href="user-wishlist.html" title="My Wishlists">

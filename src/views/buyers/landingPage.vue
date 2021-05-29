@@ -1,7 +1,6 @@
 <template>
   <!-- main content -->
   <div id="home3" class="main-content">
-    
     <!-- main -->
     <div id="wrapper-site">
       <div id="content-wrapper" class="full-width">
@@ -2163,12 +2162,3 @@
       </div>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      footerText: "Copyright REJEE.co.uk 2021",
-    };
-  },
-};
-</script>
