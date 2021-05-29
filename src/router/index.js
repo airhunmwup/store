@@ -12,6 +12,8 @@ import editAddressPage from '../views/buyers/editAddressPage.vue'
 import addUserAddressPage from '../views/buyers/addUserAddressPage.vue'
 import addCardPage from '../views/buyers/addCardPage.vue'
 import addPaymentMethod from '../views/buyers/addPaymentMethod.vue'
+import userRegistrationPage from '../views/buyers/userRegistrationPage.vue'
+import userLogin from '../views/buyers/userLogin.vue'
 
 Vue.use(VueRouter)
 
@@ -19,6 +21,16 @@ const routes = [{
         path: '/',
         name: 'Landingpage',
         component: LandingPage,
+    },
+    {
+        path: '/Register buyers',
+        name: 'userRegistrationPage',
+        component: userRegistrationPage,
+    },
+    {
+        path: '/Login buyers',
+        name: 'userAccountDetailPage',
+        component: userLogin,
     },
     {
         path: '/orderpage',

@@ -1,9 +1,30 @@
 <template>
   <!-- main content -->
   <div id="home3" class="main-content">
+
     <!-- main -->
     <div id="wrapper-site">
+
       <div id="content-wrapper" class="full-width">
+    <div class="appion"> <!-- breadcrumb -->
+                <ul class="hs full">
+                    <li class="item btn text-dark">Categories 1</li>
+                    <li class="item btn text-dark">Categories 2</li>
+                    <li class="item btn text-dark">Categories 3</li>
+                    <li class="item btn text-dark">Categories 4</li>
+                    <li class="item btn text-dark">Categories 5</li>
+                    <li class="item btn text-dark">Categories 1</li>
+                    <li class="item btn text-dark">Categories 2</li>
+                    <li class="item btn text-dark">Categories 3</li>
+                    <li class="item btn text-dark">Categories 4</li>
+                    <li class="item btn text-dark">Categories 5</li>
+                    <li class="item btn text-dark">Categories 1</li>
+                    <li class="item btn text-dark">Categories 2</li>
+                    <li class="item btn text-dark">Categories 3</li>
+                    <li class="item btn text-dark">Categories 4</li>
+                    <li class="item btn text-dark">Categories 5</li>
+                </ul>
+</div>
         <div id="main" class="page-home">
           <!-- PRODUCT LISTINGS -->
           <div class="section product-living-room">
@@ -2003,26 +2024,30 @@
         </div>
       </div>
     </div>
-    
       <div class="inner-footer">
         <div class="container">
           <div class="footer-top col-lg-12 col-xs-12">
             <div class="block">
-              <div class="block-content">
-                <p class="logo-footer">
                   <img src="img/home/logo.png" width="20%" alt="img" />
-                  Limited&copy;
-                </p>
+              <div class="block-content">
+                  <span><b>REJEE Company Limited&copy;</b></span>
               </div>
+              <hr>
+              <br>
             </div>
             <div class="row">
               <div class="tiva-html col-lg-3 col-md-12 col-xs-12">
                 <div class="block">
-                  <div class="title-block">Buy</div>
+                  <div class="h4 text-left">Buy</div>
                   <div class="block-content">
                     <ul>
                       <li>
-                        <a href="#">Registration</a>
+                              <router-link
+                                to="/Register buyers"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Register buyers"
+                              >Registration</router-link>
                       </li>
                       <li>
                         <a href="#">Store</a>
@@ -2038,8 +2063,8 @@
                 </div>
               </div>
               <div class="tiva-html col-lg-3 col-md-12 col-xs-12">
-                <div class="block">
-                  <div class="title-block">Sell</div>
+                <div class="block m-top">
+                  <div class="h4 text-left">Sell</div>
                   <div class="block-content">
                     <ul>
                       <li>
@@ -2055,7 +2080,12 @@
                         <a href="#">Privacy Policy</a>
                       </li>
                       <li>
-                        <a href="#">Create Sellers Account</a>
+                              <router-link
+                                to="/Register Seller"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Register Seller"
+                              >Create Sellers Account</router-link>
                       </li>
                     </ul>
                   </div>
@@ -2063,31 +2093,33 @@
               </div>
               <div class="tiva-html col-lg-3 col-md-6">
                 <div class="block m-top">
-                  <div class="title-block">Contact Us</div>
+                  <div class="h4 text-left">Contact Us</div>
                   <div class="block-content">
                     <div class="contact-us">
-                      <div class="title-content">
-                        <i class="fa fa-home" aria-hidden="true"></i>
-                        <span>Address :</span>
-                      </div>
                       <div class="content-contact address-contact">
                         <p>
+                        <b><i class="fa fa-home" aria-hidden="true"></i>
+                        <span>Address : </span></b>
                           1650 High Road Leyton, Downstairs Shop, London,
                           England, E10 6RN
                         </p>
                       </div>
                     </div>
                     <div class="contact-us">
-                      <div class="title-content">
-                        <i class="fa fa-envelope" aria-hidden="true"></i>
-                        <span>Email:</span>
-                      </div>
                       <div class="content-contact mail-contact">
-                        <p>support@rejee.co.uk</p>
+                        <p>
+                        <b><i class="fa fa-envelope" aria-hidden="true"></i>
+                        <span>Email: </span></b>support@rejee.co.uk</p>
                       </div>
                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="tiva-modules col-lg-3 col-md-6">
+                <div class="block m-top">
+                  <div class="block-content">
                     <div class="contact-us">
-                      <div class="title-block">Follow us</div>
+                      <div class="h5 text-left block">Follow us</div>
                       <div id="social-block">
                         <div class="social">
                           <ul class="list-inline mb-0 justify-content-end">
@@ -2107,40 +2139,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="tiva-modules col-lg-3 col-md-6">
-                <div class="block m-top">
-                  <div class="block-content">
-                    <div class="title-block">Newsletter</div>
-                    <div class="sub-title">
-                      Sign up to our newsletter to get the latest products
-                      direct to your inbox
-                    </div>
-                    <div class="block-newsletter">
-                      <form action="#" method="post">
-                        <div class="input-group">
-                          <input
-                            type="text"
-                            class="form-control"
-                            name="email"
-                            value=""
-                            placeholder="Enter Your Email"
-                          />
-                          <span class="input-group-btn">
-                            <button
-                              class="effect-btn btn btn-secondary"
-                              name="submitNewsletter"
-                              type="submit"
-                            >
-                              <span>subscribe</span>
-                            </button>
-                          </span>
-                        </div>
-                        <input type="hidden" name="action" value="0" />
-                      </form>
-                    </div>
-                  </div>
-                </div>
+                <br>
                 <div class="block m-top1">
                   <div class="block-content">
                     <div class="payment-content">
@@ -2157,8 +2156,16 @@
                 </div>
               </div>
             </div>
+            <p class="box"></p>
           </div>
         </div>
       </div>
+
+        <div class="container">
+            <div class="footer-list">
+                <div class="row">
+                </div>
+            </div>
+        </div>
   </div>
 </template>

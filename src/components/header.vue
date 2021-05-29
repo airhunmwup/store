@@ -68,6 +68,20 @@
                                 data-target=".navbar-collapse"
                                 title="Wish list"
                               >
+                                <b class="fa fa-envelope"> 
+                <span class="btn-danger cart-products-count"> 1</span></b>
+                                <span> Message</span>
+                              </router-link>
+                            </li>
+                            <hr />
+                            <br />
+                            <li class="item-left">
+                              <router-link
+                                to="/Wish list"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Wish list"
+                              >
                                 <b class="fa fa-shopping-bag"></b>
                                 <span> Wishlist</span>
                               </router-link>
@@ -274,6 +288,18 @@
                         <span>My Orders</span></router-link
                       >
                     </div>
+               <div class="">
+                              <router-link
+                                to="/Wish list"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Wish list"
+                              >
+                                <b class="fa fa-envelope">  
+                <span class="btn-danger cart-products-count">1</span></b>
+                                <span> Message</span>
+                              </router-link>
+                            </div>
                     <div>
                       <router-link
                         to="/Wish list"
@@ -403,6 +429,8 @@
                   </div>
                 </div>
               </div>
+              
+                           
             </div>
           </div>
         </div>

@@ -19,7 +19,7 @@
                             <div id="content" class="page-content">
                                 <div class="register-form text-center">
                                     <h1 class="text-center title-page">Create Account</h1>
-                                    <form action="#" id="customer-form" class="js-customer-form" method="post">
+                                    <form action="#" id="customer-form" class="" method="post">
                                         <div>
                                             <div class="form-group">
                                                 <div>
@@ -58,7 +58,7 @@
                                         </div>
                                         <div class="clearfix">
                                             <div>
-                                                <button class="btn btn-primary" data-link-action="sign-in" type="submit">
+                                                <button class="text-left item btn" data-link-action="sign-in" type="submit">
                                                     Create Account
                                                 </button>
                                             </div>
