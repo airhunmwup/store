@@ -19,12 +19,13 @@
         >
           <!-- logo -->
           <div class="mobile-logo align-items-center">
+                <a href="index.html">
             <img
               class="logo-mobile img-fluid"
               src="img/home/logo.png"
               width="30%"
               alt="Prestashop_Furnitica"
-            />
+            /></a>
           </div>
 
           <!-- menu right -->
@@ -241,7 +242,7 @@
             <!-- logo -->
             <div class="col-sm-2 col-md-2 d-flex align-items-center">
               <div id="logo">
-                <a href="index-2.html">
+                <a href="index.html">
                   <img class="img-fluid" src="img/home/logo.png" alt="logo" />
                 </a>
               </div>

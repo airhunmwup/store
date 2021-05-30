@@ -18,6 +18,18 @@
     grid-column: 2 / -2;
 }
 
+.hax {
+    padding-top: 0px;
+    height: 185px;
+    width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(50% - var(--gutter) * auto);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-top: 0px
+}
+
 .hs {
     display: grid;
     grid-template-columns: 4px;
@@ -25,7 +37,7 @@
     grid-auto-columns: calc(50% - var(--gutter) * auto);
     overflow-x: scroll;
     scroll-snap-type: x proximity;
-    padding-top: 25px;
+    padding-top: 0px;
 }
 
 .hs:before,
@@ -37,13 +49,11 @@
 /* Demo styles */
 
 html,
-body {
-    height: 100%;
-}
-
 ul {
     list-style: none;
     padding: 0;
+    padding-right: 1px;
+    padding-left: 1px;
 }
 
 .li,
@@ -52,11 +62,10 @@ ul {
     padding: calc(var(--gutter) / 3 * 1.5);
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    font-size: small;
     align-items: center;
     background: #fff;
-    border-radius: 8px;
-    border-color: rgb(231, 229, 229);
+    border-color: rgb(233, 224, 212);
 }
 
 .no-scrollbar {

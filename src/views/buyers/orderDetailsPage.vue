@@ -69,12 +69,12 @@
                                     <tr>
                                         <th class="first_item">
                                             <div class="row content col-12">
-                                                    <span class="col-3">
+                                                    <span class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                         <img src="img/product/6.jpg" class="" alt="Product">
                                                         <p><span class="text-small"> 567328996</span></p>
                                                         <p><span class="text-small"> 11 MAR 2021</span></p>
                                                     </span>
-                                                    <span class="col-3">
+                                                    <span class="col-6 col-sm-6 col-md-4 col-lg-3">
                                                         <img src="img/product/6.jpg" class="" alt="Product">
                                                         <p><span class="text-small"> 567328996</span></p>
                                                         <p><span class="text-small"> 11 MAR 2021</span></p>
