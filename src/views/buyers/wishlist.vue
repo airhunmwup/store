@@ -1,246 +1,251 @@
 <template>
-<div id="product-detail-center">
+<div class="product-cart checkout-cart blog">
     <!-- main content -->
-    <div class="main-content">
+    <div class="main-content" id="cart">
+        <!-- main -->
         <div id="wrapper-site">
-            <div id="content-wrapper">
-                <div id="main">
-                    <div class="page-home">
-
-                        <!-- breadcrumb -->
-                        <nav class="breadcrumb-bg">
-                            <div class="container no-index">
-                                <div class="breadcrumb">
-                                    <ol>
-                                        <li>
-                                            <a href="#">
-                                                <span>Home</span>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <span>Living Room</span>
-                                            </a>
-                                        </li>
-                                    </ol>
+            <!-- breadcrumb -->
+            <div class="container">
+                <div class="row">
+                    <div id="content-wrapper" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onecol">
+                        <section id="main">
+                            <div class="cart-grid row">
+                                <div class="col-md-9 col-xs-12 col-sm-12 check-info">
+                                    <h1 class="title-page">Shopping Cart</h1>
+                                    <div class="cart-container">
+                                        <div class="cart-overview js-cart">
+                                            <ul class="cart-items">
+                                                <li class="cart-item">
+                                                    <div class="product-line-grid row justify-content-between">
+                                                        <!--  product left content: image-->
+                                                        <div class="product-line-grid-center col-md-2 col-sm-6 col-xs-6">
+                                                            <span class="product-image media-middle">
+                                                                <a href="product-detail.html">
+                                                                    <img class="img-fluid" src="img/product/3.jpg" alt="Organic Strawberry Fruits">
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="product-line-grid-body col-md-6 col-sm-6 col-xs-6">
+                                                            <div class="product-line-info">
+                                                                <a class="label" href="product-detail.html" data-id_customization="0">Organic Strawberry Fruits</a>
+                                                            </div>
+                                                            <div class="product-line-info product-price">
+                                                                <span class="value">£20.00</span>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">Size:</span>
+                                                                <span class="value">S</span>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">Color:</span>
+                                                                <span class="value">Blue</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-line-grid-center text-center product-line-actions col-md-4">
+                                                            <div class="row">
+                                                                <div class="col-md-5 col qty">
+                                                                    <div class="label">Qty:</div>
+                                                                    <div class="quantity">
+                                                                        <input type="number" name="qty" value="3" max="5" min="1" class="input-group form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-4 col price">
+                                                                    <div class="label">Total:</div>
+                                                                    <div class="product-price total">
+                                                                        £20.00
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2 col text-xs-right align-self-end">
+                                                                    <div class="cart-line-product-actions ">
+                                                                        <a class="remove-from-cart" rel="nofollow" href="#" data-link-action="delete-from-cart" data-id-product="1">
+                                                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cart-item">
+                                                    <div class="product-line-grid row justify-content-between">
+                                                        <!--  product left content: image-->
+                                                        <div class="product-line-grid-left col-md-2 col-sm-6 col-xs-6">
+                                                            <span class="product-image media-middle">
+                                                                <a href="product-detail.html">
+                                                                    <img class="img-fluid" src="img/product/2.jpg" alt="Organic Strawberry Fruits">
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="product-line-grid-body col-md-6 col-sm-6 col-xs-6">
+                                                            <div class="product-line-info">
+                                                                <a class="label" href="product-detail.html" data-id_customization="0">
+                                                                    Etiam Congue Nisl Nec</a>
+                                                            </div>
+                                                            <div class="product-line-info product-price">
+                                                                <span class="value">£30.00</span>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">Size:</span>
+                                                                <span class="value">S</span>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">Color:</span>
+                                                                <span class="value">Blue</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-line-grid-right text-center product-line-actions  col-md-4 col-sm-4 col-xs-4">
+                                                            <div class="row">
+                                                                <div class="col-md-5 col qty">
+                                                                    <div class="label">Qty:</div>
+                                                                    <div class="quantity">
+                                                                        <input type="number" name="qty" value="3" max="5" min="1" class="input-group form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-5 price col">
+                                                                    <div class="label">Total:</div>
+                                                                    <div class="product-price total">
+                                                                        £60.00
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2 text-xs-right align-self-end col">
+                                                                    <div class="cart-line-product-actions ">
+                                                                        <a class="remove-from-cart" rel="nofollow" href="#" data-link-action="delete-from-cart" data-id-product="1">
+                                                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="cart-item">
+                                                    <div class="product-line-grid row justify-content-between">
+                                                        <!--  product left content: image-->
+                                                        <div class="product-line-grid-left col-md-2 col-sm-6 col-xs-6">
+                                                            <span class="product-image media-middle">
+                                                                <a href="product-detail.html">
+                                                                    <img class="img-fluid" src="img/product/1.jpg" alt="Organic Strawberry Fruits">
+                                                                </a>
+                                                            </span>
+                                                        </div>
+                                                        <div class="product-line-grid-body col-md-6 col-sm-6 col-xs-6">
+                                                            <div class="product-line-info">
+                                                                <a class="label" href="product-detail.html" data-id_customization="0">Nulla Et Justo Non Augue</a>
+                                                            </div>
+                                                            <div class="product-line-info product-price">
+                                                                <span class="value">£40.00</span>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">Size:</span>
+                                                                <span class="value">S</span>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">Color:</span>
+                                                                <span class="value">Blue</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-line-grid-right text-center product-line-actions col-md-4 col-sm-6 col-xs-6">
+                                                            <div class="row">
+                                                                <div class="col-md-5 col qty">
+                                                                    <div class="label">Qty:</div>
+                                                                    <div class="quantity">
+                                                                        <input type="number" name="qty" value="3" max="5" min="1" class="input-group form-control">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-5 col price">
+                                                                    <div class="label">Total:</div>
+                                                                    <div class="product-price total">
+                                                                        £120.00
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-2 col text-xs-right align-self-end">
+                                                                    <div class="cart-line-product-actions ">
+                                                                        <a class="remove-from-cart" rel="nofollow" href="#" data-link-action="delete-from-cart" data-id-product="1">
+                                                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <a href="product-checkout.html" class="continue btn btn-default box pull-xs-right">
+                                        Continue Shopping
+                                    </a>
                                 </div>
-                            </div>
-                        </nav>
-                        <div class="container">
-                            <div class="content">
-                                <div class="row">
-                                    <div class="col-sm-8 col-lg-9 col-md-8 col-xs-8 product-container">
-                                        <h3>My Wishlist</h3>
-                                        <div class="js-product-list-top firt nav-top">
-                                            <div class="d-flex justify-content-around row">
-                                                <div class="col col-xs-12">
-                                                    <div class="d-flex sort-by-row justify-content-end">
-                                                        <div class="products-sort-order dropdown">
-                                                            <select class="select-title">
-                                                                <option value="">Sort by</option>
-                                                                <option value="">Name, A to Z</option>
-                                                                <option value="">Name, Z to A</option>
-                                                                <option value="">Price, low to high</option>
-                                                                <option value="">Price, high to low</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
+                                <div class="cart-grid-right col-xs-12 col-lg-3">
+                                    <div class="cart-summary">
+                                        <div class="cart-detailed-totals">
+                                            <div class="cart-summary-products">
+                                                <div class="summary-label">There are 3 item in your cart</div>
+                                            </div>
+                                            <div class="cart-summary-line" id="cart-subtotal-products">
+                                                <span class="label js-subtotal">
+                                                    Total products:
+                                                </span>
+                                                <span class="value">£200.00</span>
+                                            </div>
+                                            <div class="cart-summary-line" id="cart-subtotal-shipping">
+                                                <span class="label">
+                                                    Total Shipping:
+                                                </span>
+                                                <span class="value">Free</span>
+                                                <div>
+                                                    <small class="value"></small>
                                                 </div>
                                             </div>
-                                                <hr>
-                                        </div>
-                                        <div class="tab-content product-items">
-                                            <div id="list" class="related tab-pane active show">
-
-                                                <div class="table container" id="block-history">
-                                                    <div class="content box">
-                                                        <div class="content">
-                                                        <div class="row col-12">
-                                                            <div class="col-4">
-                                                                   <a href="product-detail.html">
-                                                                <img width="100%" src="img/product/1.jpg" alt="img">
-                                                            </a>
-                                                            </div>
-                                                            <div class="col-5">
-                                                                <div class="text-bottom">
-                                                                    <br>
-                                                                   <a href="product-detail.html">
-                                                                                <h5 class="bvb">
-                                                                                    Nulla et justo non augue
-                                                                                    <br>
-                                                                                </h5> 
-                                                                                <i class="fa fa-check-square-o text-success" aria-hidden="true"></i>
-                                                                                    In Stock
-                                                                                    <hr>
-                                                                                <p class="price"><b>
-                                                                                    £150.00</b>
-                                                                                </p>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-3 medium">
-                                                                    <br>
-                                                                <p>
-                                                                                <span class="info-stock">
-                                                                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                                                                    
-                                                                                </span> <span>Delete</span>
-                                                                </p>
-                                                                <p>
-                                                                                <span class="info-stock">
-                                                                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                                                                                    
-                                                                                </span> <span>Add to Basket</span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="table container" id="block-history">
-                                                    <div class="content box">
-                                                        <div class="content">
-                                                        <div class="row col-12">
-                                                            <div class="col-4">
-                                                                   <a href="product-detail.html">
-                                                                <img width="100%" src="img/product/1.jpg" alt="img">
-                                                            </a>
-                                                            </div>
-                                                            <div class="col-5">
-                                                                <div class="text-bottom">
-                                                                    <br>
-                                                                   <a href="product-detail.html">
-                                                                                <h5 class="bvb">
-                                                                                    Nulla et justo non augue
-                                                                                    <br>
-                                                                                </h5> 
-                                                                                <i class="fa fa-check-square-o text-success" aria-hidden="true"></i>
-                                                                                    In Stock
-                                                                                    <hr>
-                                                                                <p class="price"><b>
-                                                                                    £150.00</b>
-                                                                                </p>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-3 medium">
-                                                                    <br>
-                                                                <p>
-                                                                                <span class="info-stock">
-                                                                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                                                                    
-                                                                                </span> <span>Delete</span>
-                                                                </p>
-                                                                <p>
-                                                                                <span class="info-stock">
-                                                                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                                                                                    
-                                                                                </span> <span>Add to Basket</span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="table container" id="block-history">
-                                                    <div class="content box">
-                                                        <div class="content">
-                                                        <div class="row col-12">
-                                                            <div class="col-4">
-                                                                   <a href="product-detail.html">
-                                                                <img width="100%" src="img/product/1.jpg" alt="img">
-                                                            </a>
-                                                            </div>
-                                                            <div class="col-5">
-                                                                <div class="text-bottom">
-                                                                    <br>
-                                                                   <a href="product-detail.html">
-                                                                                <h5 class="bvb">
-                                                                                    Nulla et justo non augue
-                                                                                    <br>
-                                                                                </h5> 
-                                                                                <i class="fa fa-check-square-o text-success" aria-hidden="true"></i>
-                                                                                    In Stock
-                                                                                    <hr>
-                                                                                <p class="price"><b>
-                                                                                    £150.00</b>
-                                                                                </p>
-                                                                    </a>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-3 medium">
-                                                                    <br>
-                                                                <p>
-                                                                                <span class="info-stock">
-                                                                                    <i class="fa fa-trash" aria-hidden="true"></i>
-                                                                                    
-                                                                                </span> <span>Delete</span>
-                                                                </p>
-                                                                <p>
-                                                                                <span class="info-stock">
-                                                                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>
-                                                                                    
-                                                                                </span> <span>Add to Basket</span>
-                                                                </p>
-                                                            </div>
-                                                        </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <div class="cart-summary-line cart-total">
+                                                <span class="label">Total:</span>
+                                                <span class="value">£200.00 (tax incl.)</span>
                                             </div>
+                                            <router-link
+                                to="/Checkout"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Home"
+                              >
+                                <button
+                                  class="col-lg-12 col-md-12 col-sm-12 btn btn-warning form-control add-to-cart"
+                                  data-button-action="add-to-cart"
+                                  type="submit"
+                                >
+                                  Pay
+                                </button></router-link
+                              >
                                         </div>
-
-                                        <!-- pagination -->
-                                        <div class="pagination">
-                                            <div class="js-product-list-top ">
-                                                <div class="d-flex justify-content-around row">
-                                                    <div class="showing col col-xs-12">
-                                                        <span>SHOWING 1-3 OF 3 ITEM(S)</span>
-                                                    </div>
-                                                    <div class="page-list col col-xs-12">
-                                                        <ul>
-                                                            <li>
-                                                                <a rel="prev" href="#" class="previous disabled js-search-link">
-                                                                    Previous
-                                                                </a>
-                                                            </li>
-                                                            <li class="current active">
-                                                                <a rel="nofollow" href="#" class="disabled js-search-link">
-                                                                    1
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a rel="nofollow" href="#" class="disabled js-search-link">
-                                                                    2
-                                                                </a>
-                                                            </li>
-                                                            <li>
-                                                                <a rel="nofollow" href="#" class="disabled js-search-link">
-                                                                    3
-                                                                </a>
-                                                            </li>
-
-                                                            <li>
-                                                                <a rel="next" href="#" class="next disabled js-search-link">
-                                                                    Next
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                    </div>
+                                    <div id="block-reassurance">
+                                        <ul>
+                                            <li>
+                                                <div class="block-reassurance-item">
+                                                    <img src="img/product/check1.png" alt="Security policy (edit with Customer reassurance module)">
+                                                    <span>Security policy (edit with Customer reassurance module)</span>
                                                 </div>
-                                            </div>
-                                        </div>
+                                            </li>
+                                            <li>
+                                                <div class="block-reassurance-item">
+                                                    <img src="img/product/check2.png" alt="Delivery policy (edit with Customer reassurance module)">
+                                                    <span>Delivery policy (edit with Customer reassurance module)</span>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div class="block-reassurance-item">
+                                                    <img src="img/product/check3.png" alt="Return policy (edit with Customer reassurance module)">
+                                                    <span>Return policy (edit with Customer reassurance module)</span>
+                                                </div>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-
 </div>
 </template>

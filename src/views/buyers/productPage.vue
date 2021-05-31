@@ -1,30 +1,501 @@
 <template>
   <!-- main content -->
   <div id="home4">
-    <div class="main-content">
+    <div class="main-content pt-4">
       <div id="wrapper-site">
         <div id="content-wrapper">
           <div id="main">
             <div class="page-home">
               <!-- breadcrumb -->
-              <nav class="breadcrumb-bg">
-                <div class="container no-index">
-                  <div class="breadcrumb">
-                    <ol></ol>
-                  </div>
-                </div>
-              </nav>
               <div class="container">
                 <div class="content">
+                    
                   <div class="row">
                     <div class="title-product col-lg-9 col-md-9 col-sm-9">
+
+                          <div class="text-dark">
+                              <div class="text-right">
+                                  <span class="pr-2 pt-2"><b>filter</b></span>
+                            <span href="#"
+                              class="arrow collapse-icons"
+                              data-toggle="collapse"
+                              data-target="#filter"
+                              aria-expanded="false"
+                              role="status">
+                              <i class="zmdi zmdi-minus"></i>
+                              <i class="zmdi zmdi-plus"></i></span>
+                              </div>
+                            <div
+                              class="subCategory collapse"
+                              id="filter"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                
+                                <div class="row product-container">
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
+                                    >
+                                    <div class="content">
+                                        
+                                            <div class="new-item-content">
+                                                <h3 class="title-product"><b>Make</b></h3>
+                                                <ul class="scroll-product">
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Any
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Dell
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Polygon
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Newment
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           Asus
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Mac
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Vaio
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           Lettuce
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
+                                    >
+                                    <div class="content">
+                                        
+                                            <div class="new-item-content">
+                                                <h3 class="title-product"><b>Model</b></h3>
+                                                <ul class="scroll-product">
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Any
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Dell
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Polygon
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Newment
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           Asus
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Mac
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Vaio
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           Lettuce
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
+                                    >
+                                    <div class="content">
+                                        
+                                            <div class="new-item-content">
+                                                <h3 class="title-product"><b>Body Style</b></h3>
+                                                <ul class="scroll-product">
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Any
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Convertible
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Hatchback
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            MPV/People carrier
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           Saloon
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Estate
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            4x4
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           Pick-up
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           Small car
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           Other
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
+                                    >
+                                    <div class="content">
+                                            <div class="new-item-content">
+                                                <h3 class="title-product"><b>Transmission type</b></h3>
+                                                <ul class="scroll-product">
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Any
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Automatic
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Manual
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container"
+                                    >
+                                    <div class="content">
+                                            <div class="new-item-content">
+                                                <h3 class="title-product"><b>Conditon</b></h3>
+                                                <ul class="scroll-product">
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Any
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            New
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Used
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
+                                    >
+                                    <div class="content pb-2">
+                                                <h3 class="title-product"><b>By Price</b></h3>
+                                                <span>Min </span><input name="price" class="border form-control col-6" type="number" min="10"/>
+                                                
+                                                <span>max </span><input name="price" class="border form-control  col-6" type="number" min="10"/>
+                                    </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
+                                    >
+                                    <div class="content pb-2">
+                                                <h3 class="title-product"><b>Year</b></h3>
+                                                <span>Min </span><input name="price" class="border form-control col-6" max="2021" type="number" min="2001"/>
+                                                
+                                                <span>max </span><input name="price" class="border form-control  col-6" max="2021" type="number" min="2001"/>
+                                    </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
+                                    >
+                                    <div class="content pb-2">
+                                                <h3 class="title-product"><b>Mileage</b></h3>
+                                                <span>Min </span><input name="price" class="border form-control col-6" type="number" min="10"/>
+                                                
+                                                <span>max </span><input name="price" class="border form-control  col-6" type="number" min="10"/>
+                                    </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
+                                    >
+                                    <div class="content">
+                                            <div class="new-item-content">
+                                                <h3 class="title-product"><b>Fuel type</b></h3>
+                                                <ul class="scroll-product">
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Any
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Diesel
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Electric
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Petrol
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Flex
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Hybrid
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Plug-in hybrid
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <hr>
+                              </div>
+                            </div>
+                          </div>
                       <h2 class=""></h2>
                       <br>
                                         <!-- FEATURED CATEGORIES -->
                                 <div class="title-product">
                                 <div class="row product-container">
                                     <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                                    class="thumbnail-container col-6 pb-3 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
                                         <img src="img/product/4.jpg" class="border" alt="Product" />
@@ -34,7 +505,7 @@
                                     </div>
                                     </div>
                                     <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
                                         <img src="img/product/4.jpg" class="border" alt="Product" />
@@ -44,7 +515,7 @@
                                     </div>
                                     </div>
                                     <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
                                         <img src="img/product/4.jpg" class="border" alt="Product" />
@@ -54,7 +525,7 @@
                                     </div>
                                     </div>
                                     <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
                                         <img src="img/product/1.jpg" class="border" alt="Product" />
@@ -64,7 +535,7 @@
                                     </div>
                                     </div>
                                     <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
                                         <img src="img/product/4.jpg" class="border" alt="Product" />
@@ -74,7 +545,7 @@
                                     </div>
                                     </div>
                                     <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
                                         <img src="img/product/24.jpg" class="border" alt="Product" />
@@ -84,7 +555,7 @@
                                     </div>
                                     </div>
                                     <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
                                         <img src="img/product/14.jpg" class="border" alt="Product" />
@@ -94,13 +565,13 @@
                                     </div>
                                     </div>
                                     <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
                                         <img src="img/product/11.jpg" class="border" alt="Product" />
                                         <p class="text-dark">Product name</p>
                                         <p class="text-dark"><b>£12.00</b></p>
-                                        <p class="text-dark">location</p>
+                                        <p class="text-dark"> location</p>
                                     </div>
                                     </div>
                                 </div>

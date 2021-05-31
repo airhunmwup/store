@@ -155,7 +155,7 @@
                                     value="1"
                                   />
                                   <router-link
-                                    to="/Product Cart"
+                                    to="/Checkout Address"
                                     data-toggle="collapse"
                                     data-target=".navbar-collapse"
                                     title="Home"
