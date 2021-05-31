@@ -18,6 +18,7 @@ import userCategoriePage from '../views/buyers/userCategoriePage.vue'
 import productPage from '../views/buyers/productPage.vue'
 import productDetails from '../views/buyers/productDetails.vue'
 import checkOutPage from '../views/buyers/checkOutPage.vue'
+import productcart from '../views/buyers/productCart.vue'
 
 Vue.use(VueRouter)
 
@@ -60,6 +61,11 @@ const routes = [{
         path: '/Product Detail',
         name: 'ProductDetail',
         component: productDetails,
+    },
+    {
+        path: '/Product Cart',
+        name: 'ProductCart',
+        component: productcart,
     },
     {
         path: '/Checkout',

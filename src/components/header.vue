@@ -415,12 +415,21 @@
                               class="d-flex justify-content-center"
                             >
                               <div class="cart-button">
-                                <a href="product-cart.html" title="View Cart"
-                                  >View Cart</a
-                                >
-                                <a href="product-checkout.html" title="Checkout"
-                                  >Checkout</a
-                                >
+                                  <router-link
+                                    to="/Product Cart"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
+                                    title="Home"
+                                  >
+                                View Cart</router-link>
+                                  <router-link
+                                    to="/Checkout"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
+                                    title="Home"
+                                  >
+                                Checkout
+                                </router-link>
                               </div>
                             </td>
                           </tr>
