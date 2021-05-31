@@ -5,33 +5,15 @@
     <div id="checkout" class="main-content">
         <div class="wrap-banner">
             <!-- breadcrumb -->
-            <nav class="breadcrumb-bg">
-                <div class="container no-index">
-                    <div class="breadcrumb">
-                        <ol>
-                            <li>
-                                <a href="#">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Checkout</span>
-                                </a>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </nav>
 			
             <!-- main -->
             <div id="wrapper-site">
                 <div class="container">
                     <div class="row container">
-                        <div id="content-wrapper" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onecol">
+                        <div id="content-wrapper" class="onecol">
                             <div id="main">
-                                <div class="cart-grid row">
-                                    <div class="col-md-9 check-info">
+                                <div class="row">
+                                    <div class="col-md-9 check-info  justify-content-end">
                                         <div class="checkout-personal-step">
                                             <h3 class="step-title h3 info">
                                                 <span class="step-number">1</span>PERSONAL INFORMATION
@@ -51,7 +33,7 @@
                                                 </li>
                                             </ul>
                                             <div class="tab-content">
-                                                <div class="tab-pane fade in active show" id="checkout-guest-form" role="tabpanel">
+                                                <div class="tab-pane fade in active show col-md-8 col-lg-8 col-sm-8" id="checkout-guest-form" role="tabpanel">
                                                     <form action="#" id="customer-form" class="js-customer-form" method="post">
                                                         <div>
                                                             <input type="hidden" name="id_customer" value="">
@@ -110,7 +92,7 @@
                                                         </div>
                                                     </form>
                                                 </div>
-                                                <div class="tab-pane fade" id="checkout-login-form" role="tabpanel">
+                                                <div class="tab-pane fade  col-md-8 col-lg-8 col-sm-8" id="checkout-login-form" role="tabpanel">
                                                     <form id="login-form" action="#" method="post" class="customer-form">
                                                         <div>
                                                             <input type="hidden" name="back" value="">
@@ -140,7 +122,6 @@
                                                     </form>
                                                 </div>
                                             </div>
-                                        </div>
                                         <div class="checkout-personal-step">
                                             <h3 class="step-title h3">
                                                 <span class="step-number">2</span>Addresses
@@ -157,9 +138,9 @@
                                             </h3>
                                         </div>
                                     </div>
-                                    <div class="cart-grid-right col-xs-12 col-lg-3">
+                                        </div>
+                                    <div class="cart-grid-right col-md-12 col-lg-3">
                                         <div class="cart-summary">
-                                            <div class="cart-detailed-totals">
                                                 <div class="cart-summary-products">
                                                     <div class="summary-label">There are 3 item in your cart</div>
                                                 </div>
@@ -182,7 +163,6 @@
                                                     <span class="label">Total:</span>
                                                     <span class="value">£200.00 (tax incl.)</span>
                                                 </div>
-                                            </div>
                                         </div>
                                         <div id="block-reassurance">
                                             <ul>

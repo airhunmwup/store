@@ -112,9 +112,9 @@
                 </p>
               </div>
               <br />
-              <div class="row product-container">
+              <div class="row product-container  col-lg-12 col-md-12 col-sm-12">
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -129,7 +129,7 @@
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -144,7 +144,7 @@
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -159,7 +159,7 @@
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -194,7 +194,7 @@
               <br />
               <div class="row product-container">
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -209,7 +209,7 @@
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -224,7 +224,7 @@
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -239,7 +239,7 @@
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -274,7 +274,7 @@
               <br />
               <div class="row product-container">
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -289,7 +289,7 @@
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -304,7 +304,7 @@
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -319,7 +319,7 @@
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"

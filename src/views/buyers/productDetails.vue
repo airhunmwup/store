@@ -84,6 +84,7 @@
                       quis bibendum auctor, nisi elit consequat etiam non
                       auctor.
                     </p>
+                    <!--the option below is suppose to show if the category has size, e.g shoes and cloths only sizes available displays-->
                     <div class="option has-border d-lg-flex size-color">
                       <div class="size">
                         <span class="size">size :</span>
@@ -112,10 +113,10 @@
                             </div>
                             <span class="add">
                               <a class="addToWishlist" href="#">
-                                <i class="fa fa-heart" aria-hidden="true"></i>
+                                <i class="fa fa-heart" aria-hidden="true"></i> 
                               </a>
                             </span>
-                            <span class="add"
+                            <span class="justify-content-end"
                               ><router-link
                                 to="/Checkout"
                                 data-toggle="collapse"
@@ -123,7 +124,7 @@
                                 title="Home"
                               >
                                 <button
-                                  class="btn add-to-cart"
+                                  class="col-lg-3 col-md-3 col-sm-12 btn btn-warning form-control add-to-cart"
                                   data-button-action="add-to-cart"
                                   type="submit"
                                 >
@@ -458,9 +459,9 @@
           </div>
         </div>
 
-        <!-- end col-md-9-1 -->
       </div>
-      <section>
+
+        <!-- Related Products -->
         <div class="container">
           <div class="content">
             <div class="title-product col-12">
@@ -471,7 +472,7 @@
               <br />
               <div class="row product-container">
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                     to="/Product Detail"
@@ -479,7 +480,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="content">
+                    <div class="">
                       <img
                         src="img/product/4.jpg"
                         class="border"
@@ -492,7 +493,7 @@
                   >
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                     to="/Product Detail"
@@ -500,7 +501,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="content">
+                    <div class="">
                       <img
                         src="img/product/4.jpg"
                         class="border"
@@ -513,7 +514,7 @@
                   >
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                     to="/Product Detail"
@@ -521,7 +522,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="content">
+                    <div class="">
                       <img
                         src="img/product/4.jpg"
                         class="border"
@@ -534,7 +535,7 @@
                   >
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                     to="/Product Detail"
@@ -542,7 +543,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="content">
+                    <div class="">
                       <img
                         src="img/product/1.jpg"
                         class="border"
@@ -558,7 +559,6 @@
             </div>
           </div>
         </div>
-      </section>
     </div>
   </div>
 </template>
