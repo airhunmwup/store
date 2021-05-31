@@ -17,99 +17,202 @@
               <div class="container">
                 <div class="content">
                   <div class="row">
-                    <div class="title-product col-lg-9 col-md-9 col-sm-9">
-                      <h2 class=""></h2>
+                    <div class="title-product col-lg-9">
+                      <h2 class="">Featured categories</h2>
                       <br>
-                                        <!-- FEATURED CATEGORIES -->
-                                <div class="title-product">
-                                <div class="row product-container">
-                                    <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                                    >
-                                    <div class="content">
-                                        <img src="img/product/4.jpg" class="border" alt="Product" />
-                                        <p class="text-dark">Product name</p>
-                                        <p class="text-dark"><b>£12.00</b></p>
-                                        <p class="text-dark">location</p>
-                                    </div>
-                                    </div>
-                                    <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                                    >
-                                    <div class="content">
-                                        <img src="img/product/4.jpg" class="border" alt="Product" />
-                                        <p class="text-dark">Product name</p>
-                                        <p class="text-dark"><b>£12.00</b></p>
-                                        <p class="text-dark">location</p>
-                                    </div>
-                                    </div>
-                                    <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                                    >
-                                    <div class="content">
-                                        <img src="img/product/4.jpg" class="border" alt="Product" />
-                                        <p class="text-dark">Product name</p>
-                                        <p class="text-dark"><b>£12.00</b></p>
-                                        <p class="text-dark">location</p>
-                                    </div>
-                                    </div>
-                                    <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                                    >
-                                    <div class="content">
-                                        <img src="img/product/1.jpg" class="border" alt="Product" />
-                                        <p class="text-dark">Product name</p>
-                                        <p class="text-dark"><b>£12.00</b></p>
-                                        <p class="text-dark">location</p>
-                                    </div>
-                                    </div>
-                                    <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                                    >
-                                    <div class="content">
-                                        <img src="img/product/4.jpg" class="border" alt="Product" />
-                                        <p class="text-dark">Product name</p>
-                                        <p class="text-dark"><b>£12.00</b></p>
-                                        <p class="text-dark">location</p>
-                                    </div>
-                                    </div>
-                                    <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                                    >
-                                    <div class="content">
-                                        <img src="img/product/24.jpg" class="border" alt="Product" />
-                                        <p class="text-dark">Product name</p>
-                                        <p class="text-dark"><b>£12.00</b></p>
-                                        <p class="text-dark">location</p>
-                                    </div>
-                                    </div>
-                                    <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                                    >
-                                    <div class="content">
-                                        <img src="img/product/14.jpg" class="border" alt="Product" />
-                                        <p class="text-dark">Product name</p>
-                                        <p class="text-dark"><b>£12.00</b></p>
-                                        <p class="text-dark">location</p>
-                                    </div>
-                                    </div>
-                                    <div
-                                    class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                                    >
-                                    <div class="content">
-                                        <img src="img/product/11.jpg" class="border" alt="Product" />
-                                        <p class="text-dark">Product name</p>
-                                        <p class="text-dark"><b>£12.00</b></p>
-                                        <p class="text-dark">location</p>
-                                    </div>
-                                    </div>
+                      <!-- FEATURED CATEGORIES -->
+                      <div class="container">
+                      <div class="row content col-12">
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                        >
+                          <div class="content">
+                            <p>
+                              <img
+                                src="img/product/6.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            </p>
+                            <p class="text-center h4 item text-dark">Category name</p>
+                          </div>
+                        </div>
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                        >
+                          <div class="content">
+                            <p>
+                              <img
+                                src="img/product/4.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            </p>
+                            <p class="text-center h4 item text-dark">Category name</p>
+                          </div>
+                        </div>
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                        >
+                          <div class="content">
+                            <p>
+                              <img
+                                src="img/product/9.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            </p>
+                            <p class="text-center h4 item text-dark">Category name</p>
+                          </div>
+                        </div>
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
+                        >
+                          <div class="content">
+                            <p>
+                              <img
+                                src="img/product/10.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            </p>
+                            <p class="text-center h4 item text-dark">Category name</p>
+                          </div>
+                        </div>
+                      </div>
+                      </div>
+<hr>
+                      <div
+                        class="col-sm-8 col-lg-12 col-md-8"
+                      >
+                        <h2>SpotLight</h2>
+                        <div class="js-product-list-top firt nav-top">
+                          <div class="d-flex justify-content-around row">
+                            <div class="col col-xs-12">
+                              <div
+                                class="d-flex sort-by-row justify-content-end"
+                              >
+                                <div class="products-sort-order dropdown">
                                 </div>
-                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <br>
+                      <div class="row col-12">
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
+                        >
+                          <div class="content">
+                              <img
+                                src="img/product/4.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            <p class="h4 text-dark">Product name
+                            </p>
+                            <p class="h4 text-dark"><b>£12.00</b>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
+                        >
+                          <div class="content">
+                              <img
+                                src="img/product/4.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            <p class="h4 text-dark">Product name
+                            </p>
+                            <p class="h4 text-dark"><b>£12.00</b>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
+                        >
+                          <div class="content">
+                              <img
+                                src="img/product/4.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            <p class="h4 text-dark">Product name
+                            </p>
+                            <p class="h4 text-dark"><b>£12.00</b>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
+                        >
+                          <div class="content">
+                              <img
+                                src="img/product/1.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            <p class="h4 text-dark">Product name
+                            </p>
+                            <p class="h4 text-dark"><b>£12.00</b>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
+                        >
+                          <div class="content">
+                              <img
+                                src="img/product/5.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            <p class="h4 text-dark">Product name
+                            </p>
+                            <p class="h4 text-dark"><b>£12.00</b>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
+                        >
+                          <div class="content">
+                              <img
+                                src="img/product/7.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            <p class="h4 text-dark">Product name
+                            </p>
+                            <p class="h4 text-dark"><b>£12.00</b>
+                            </p>
+                          </div>
+                        </div>
+                        <div
+                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
+                        >
+                          <div class="content">
+                              <img
+                                src="img/product/8.jpg"
+                                class="border"
+                                alt="Product"
+                              />
+                            <p class="h4 text-dark">Product name
+                            </p>
+                            <p class="h4 text-dark"><b>£12.00</b>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+
+                      </div>
                     </div>
 
                     <!-- Side bar Cataloge starts here-->
                     <div
-                      class="sidebar-3 sidebar-collection col-lg-3 col-md-3 col-sm-3"
+                      class="sidebar-3 sidebar-collection col-lg-3 col-md-4 col-sm-4"
                     >
                       <!-- category menu -->
                       <div class="sidebar-block">

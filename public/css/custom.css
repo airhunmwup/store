@@ -30,6 +30,13 @@
     padding-top: 0px
 }
 
+.gfv {
+    border: 2px;
+    border-color: rgb(17, 17, 17);
+    padding: 10px;
+    background-color: rgb(226, 221, 221);
+}
+
 .hs {
     display: grid;
     grid-template-columns: 4px;

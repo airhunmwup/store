@@ -14,6 +14,8 @@ import addCardPage from '../views/buyers/addCardPage.vue'
 import addPaymentMethod from '../views/buyers/addPaymentMethod.vue'
 import userRegistrationPage from '../views/buyers/userRegistrationPage.vue'
 import userLogin from '../views/buyers/userLogin.vue'
+import userCategoriePage from '../views/buyers/userCategoriePage.vue'
+import productPage from '../views/buyers/productPage.vue'
 
 Vue.use(VueRouter)
 
@@ -33,14 +35,24 @@ const routes = [{
         component: userLogin,
     },
     {
+        path: '/Order Details',
+        name: 'orderDetailsPage',
+        component: orderDetailsPage,
+    },
+    {
+        path: '/Categorie Page',
+        name: 'UserCategoriePage',
+        component: userCategoriePage,
+    },
+    {
         path: '/orderpage',
         name: 'Orderpage',
         component: UserOrderPage,
     },
     {
-        path: '/Order Details',
-        name: 'orderDetailsPage',
-        component: orderDetailsPage,
+        path: '/Product Page',
+        name: 'ProductPage',
+        component: productPage,
     },
     {
         path: '/Wish list',
