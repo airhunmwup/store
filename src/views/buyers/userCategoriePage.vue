@@ -17,7 +17,7 @@
               <div class="container">
                 <div class="content">
                   <div class="row">
-                    <div class="title-product col-lg-9">
+                    <div class="title-product col-lg-9 col-md-9">
                       <h2 class="">Featured categories</h2>
                       <br>
                       <!-- FEATURED CATEGORIES -->
@@ -82,8 +82,9 @@
                       </div>
                       </div>
 <hr>
+                      <!-- spot light'any random product under the selected category -->
                       <div
-                        class="col-sm-8 col-lg-12 col-md-8"
+                        class=""
                       >
                         <h2>SpotLight</h2>
                         <div class="js-product-list-top firt nav-top">
@@ -212,7 +213,7 @@
 
                     <!-- Side bar Cataloge starts here-->
                     <div
-                      class="sidebar-3 sidebar-collection col-lg-3 col-md-4 col-sm-4"
+                      class="sidebar-3 sidebar-collection col-lg-3 col-md-3"
                     >
                       <!-- category menu -->
                       <div class="sidebar-block">

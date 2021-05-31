@@ -115,43 +115,63 @@
               <div class="row product-container">
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/4.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/4.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/4.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/1.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
               </div>
             </div>
@@ -175,43 +195,63 @@
               <div class="row product-container">
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/4.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/4.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/4.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/1.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
               </div>
             </div>
@@ -235,43 +275,63 @@
               <div class="row product-container">
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/4.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/4.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/4.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
                 <div
                   class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                >
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
                   <div class="content">
                     <img src="img/product/1.jpg" class="border" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
-                  </div>
+                  </div></router-link>
                 </div>
               </div>
             </div>

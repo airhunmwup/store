@@ -16,6 +16,8 @@ import userRegistrationPage from '../views/buyers/userRegistrationPage.vue'
 import userLogin from '../views/buyers/userLogin.vue'
 import userCategoriePage from '../views/buyers/userCategoriePage.vue'
 import productPage from '../views/buyers/productPage.vue'
+import productDetails from '../views/buyers/productDetails.vue'
+import checkOutPage from '../views/buyers/checkOutPage.vue'
 
 Vue.use(VueRouter)
 
@@ -53,6 +55,16 @@ const routes = [{
         path: '/Product Page',
         name: 'ProductPage',
         component: productPage,
+    },
+    {
+        path: '/Product Detail',
+        name: 'ProductDetail',
+        component: productDetails,
+    },
+    {
+        path: '/Checkout',
+        name: 'CheckOut',
+        component: checkOutPage,
     },
     {
         path: '/Wish list',
