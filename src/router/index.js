@@ -20,6 +20,7 @@ import productDetails from '../views/buyers/productDetails.vue'
 import checkOutPage from '../views/buyers/checkOutPage.vue'
 import productcart from '../views/buyers/productCart.vue'
 import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
+import userAgreementPage from '../views/userAgreementPage.vue'
 
 Vue.use(VueRouter)
 
@@ -32,6 +33,16 @@ const routes = [{
         path: '/Register buyers',
         name: 'userRegistrationPage',
         component: userRegistrationPage,
+    },
+    {
+        path: '/User Agreement',
+        name: 'UserAgreementPage',
+        component: userAgreementPage,
+    },
+    {
+        path: '/Categorie Page',
+        name: 'UserCategoriePage',
+        component: userCategoriePage,
     },
     {
         path: '/Login buyers',

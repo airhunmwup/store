@@ -30,7 +30,7 @@
 
           <!-- menu right -->
 
-          <div class="desktop_cart">
+          <div class="pr-4 desktop_cart">
             <div class="blockcart block-cart cart-preview tiva-toggle">
               <div class="header-cart tiva-toggle-btn">
                 <i class="fa fa-user" aria-hidden="true"></i>
@@ -163,19 +163,7 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- search -->
-
-        <div id="mobile_search" class="d-flex">
-          <div id="mobile_search_content">
-            <form method="get" action="#">
-              <input type="text" name="s" value="" placeholder="Search" />
-              <button type="submit">
-                <i class="fa fa-search"></i>
-              </button>
-            </form>
-          </div>
+          
           <div class="desktop_cart">
             <div class="blockcart block-cart cart-preview tiva-toggle">
               <div class="header-cart tiva-toggle-btn">
@@ -233,6 +221,19 @@
             </div>
           </div>
         </div>
+
+        <!-- search -->
+
+        <div id="mobile_search" class="d-flex">
+          <div id="mobile_search_content">
+            <form method="get" action="#">
+              <input type="text" name="s" value="" placeholder="Search" />
+              <button type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
 
       <!-- header desktop -->
@@ -268,7 +269,7 @@
               </form>
 
               <!-- acount  -->
-              <div id="block_myaccount_infos" class="hidden-sm-down dropdown">
+              <div id="block_myaccount_infos" class="pr-4 hidden-sm-down dropdown">
                 <div class="myaccount-title">
                   <a href="#acount" data-toggle="collapse" class="acount">
                     <i class="fa fa-user" aria-hidden="true"> </i>
@@ -371,7 +372,7 @@
                   </div>
                 </div>
               </div>
-              <div class="desktop_cart">
+              <div class="desktop_cart pl-3">
                 <div class="blockcart block-cart cart-preview tiva-toggle">
                   <div class="header-cart tiva-toggle-btn">
                     <span class="cart-products-count">1</span>

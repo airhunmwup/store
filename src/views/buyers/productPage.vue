@@ -11,20 +11,189 @@
                 <div class="content">
                     
                   <div class="row">
-                    <div class="title-product col-lg-9 col-md-9 col-sm-9">
-
-                          <div class="text-dark">
+                    <div class="title-product  col-lg-9 col-md-9 col-sm-9">
+                        <h2>The link name here</h2>
+                          <div class="cateTitle hasSubCategory open level1 text-dark">
+                              <div class="row justify-end">
                               <div class="text-right">
-                                  <span class="pr-2 pt-2"><b>filter</b></span>
-                            <span href="#"
-                              class="arrow collapse-icons"
-                              data-toggle="collapse"
-                              data-target="#filter"
-                              aria-expanded="false"
-                              role="status">
-                              <i class="zmdi zmdi-minus"></i>
-                              <i class="zmdi zmdi-plus"></i></span>
+                      <router-link
+                        to="/Location"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Location"
+                      >
+                                  <span class="pr-2 pt-2"><b>filter <i class="fa fa-th"></i></b></span></router-link>
                               </div>
+                              <div class="text-right">
+                                  <span class="pr-2 pt-2"><b><i class="fa fa-exchange fa-rotate-90"></i></b><select class="select-title">
+                                                                <option value="">Sort by</option>
+                                                                <option value="">Name, A to Z</option>
+                                                                <option value="">Name, Z to A</option>
+                                                                <option value="">Price, low to high</option>
+                                                                <option value="">Price, high to low</option>
+                                                            </select></span>
+                              </div>
+                              <div class="text-right">
+                            <a class="cateItem" 
+                              data-toggle="collapse"
+                              data-target="#filter" href="#">
+                                  <span class="pr-2 pt-2"><b>filter <i class="fa fa-th"></i></b></span></a>
+                              </div>
+                              </div>
+
+                              <!--sort section-->
+                              
+                            <div
+                              class="subCategory collapse"
+                              id="sort"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                
+                                <div class="row product-container">
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
+                                    >
+                                    <div class="content">
+                                        
+                                            <div class="new-item-content">
+                                                <h3 class="title-product"><b></b></h3>
+                                                <ul class="scroll-product">
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox" checked>
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                            Recommended
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Price</b> - lowest first
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Price</b> - Highest first
+                                                        </a>
+                                                    </li>
+                                                    
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Year</b> - Newest first
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Year</b> - Oldest first
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-4"
+                                    >
+                                    <div class="content">
+                                        
+                                            <div class="new-item-content">
+                                                <h3 class="title-product"><b></b></h3>
+                                                <ul class="scroll-product">
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Distance</b> - lowest first
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Distance</b> - Nearest first
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Date listed</b> - Newest first
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Date listed</b> - Oldest first
+                                                        </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-4"
+                                    >
+                                    <div class="content">
+                                        
+                                            <div class="new-item-content">
+                                                <h3 class="title-product"><b></b></h3>
+                                                <ul class="scroll-product">
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Mileage</b> - lowest first
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <label class="check">
+                                                            <input type="checkbox">
+                                                            <span class="checkmark"></span>
+                                                        </label>
+                                                        <a href="#">
+                                                           <b> Mileage</b> - Highest first
+                                                        </a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </div>
+                                    </div>
+                                    </div>
+                                </div>
+                                <hr>
+                              </div>
+                            </div>
+                              <!--filter section-->
                             <div
                               class="subCategory collapse"
                               id="filter"
@@ -489,8 +658,6 @@
                               </div>
                             </div>
                           </div>
-                      <h2 class=""></h2>
-                      <br>
                                         <!-- FEATURED CATEGORIES -->
                                 <div class="title-product">
                                 <div class="row product-container">
@@ -576,7 +743,7 @@
                                     </div>
                                 </div>
                                 </div>
-                    </div>
+                        </div>
 
                     <!-- Side bar Cataloge starts here-->
                     <div
