@@ -84,3 +84,8 @@ ul {
 .no-scrollbar::-webkit-scrollbar {
     display: none;
 }
+
+.v-ul {
+    list-style-type: circle;
+    padding-left: 3;
+}

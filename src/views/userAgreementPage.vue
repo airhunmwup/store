@@ -41,6 +41,29 @@
                                     </button>
                                   </form>
                                 </div>
+                                <ul class="pt-3">
+                                    <li class="text-info"><a href="#Introduction">1. Introduction</a></li>
+                                    <li class="text-info"><a href="#About REJEE">2. About eBay</a></li>
+                                    <li class="text-info"><a href="#Using REJEE">3. Using eBay</a></li>
+                                    <li class="text-info"><a href="#Policy Enforcement">4. Policy Enforcement</a></li>
+                                    <li class="text-info"><a href="#Fees and Taxes">5. Fees and Taxes</a></li>
+                                    <li class="text-info"><a href="#Listing Conditions">6. Listing Conditions</a></li>
+                                    <li class="text-info"><a href="#Purchase Conditions">7. Purchase Conditions</a></li>
+                                    <li class="text-info"><a href="#International Buying">8. International Buying, Selling, and Shipping; Translation</a></li>
+                                    <li class="text-info"><a href="#Content">9. Content</a></li>
+                                    <li class="text-info"><a href="#Notice for Claims">10. Notice for Claims of Intellectual Property Violations and Copyright Infringement Pursuant to Section 512(c) of Title 17 of the United States Code</a></li>
+                                    <li class="text-info"><a href="#Holds and Restricted Funds">11. Holds and Restricted Funds</a></li>
+                                    <li class="text-info"><a href="#Authorization">12. Authorization to Contact You; Recording Calls</a></li>
+                                    <li class="text-info"><a href="#Additional Terms">13. Additional Terms
+                                Returns and Cancellations
+                                eBay Money Back Guarantee</a></li>
+                                    <li class="text-info"><a href="#Managed Payments">14. Managed Payments</a></li>
+                                    <li class="text-info"><a href="#Disclaimer">15. Disclaimer of Warranties; Limitation of Liability</a></li>
+                                    <li class="text-info"><a href="#Release">16. Release</a></li>
+                                    <li class="text-info"><a href="#Indemnity">17. Indemnity</a></li>
+                                    <li class="text-info"><a href="#Legal Disputes">18. Legal Disputes</a></li>
+                                    <li class="text-info"><a href="#General">19. General</a></li>
+                                </ul>
                               </div>
                               <div class="col-lg-8 col-sm-8">
                                 <div
@@ -56,7 +79,7 @@
                                 </div>
 
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Introduction" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       1. Introduction
                                     </h3>
@@ -115,7 +138,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="About REJEE" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       2. About REJEE
                                     </h3>
@@ -149,7 +172,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Using REJEE" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       3. Using REJEE
                                     </h3>
@@ -160,7 +183,7 @@
                                       and all applicable laws, rules, and
                                       regulations, and you will not:
                                     </p>
-                                    <ul class="p-3 ul list-group">
+                                    <ul class="pt-3 pl-3 pb-3" >
                                       <li>
                                         post, list or upload content or items in
                                         inappropriate categories or areas on our
@@ -347,7 +370,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Policy Enforcement" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       4. Policy Enforcement
                                     </h3>
@@ -368,7 +391,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Fees and Taxes" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       5. Fees and Taxes
                                     </h3>
@@ -456,7 +479,7 @@
                                     </p>
                                   </div>
                                 </div>
-                                <div class="row product-container pb-3 pt-3">
+                                <div id="Listing Conditions" class="row product-container pb-3 pt-3">
                                   <div class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       6. Listing Conditions
@@ -627,7 +650,7 @@
                                     </ul>
                                   </div>
                                 </div>
-                                <div class="row product-container pb-3 pt-3">
+                                <div id="Purchase Conditions" class="row product-container pb-3 pt-3">
                                   <div class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       7. Purchase Conditions
@@ -654,7 +677,7 @@
                                     </p>
                                   </div>
                                 </div>
-                                <div class="row product-container pb-3 pt-3">
+                                <div id="International Buying" class="row product-container pb-3 pt-3">
                                   <div class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       8. International Buying and Selling; Translation
@@ -674,7 +697,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Content" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       9. Content
                                     </h3>
@@ -692,7 +715,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Notice for Claims" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                       10. Notice for Claims of Intellectual Property Violations and Copyright Infringement Pursuant to Section 512(c) of Title 17 of the United Kingdom Code
                                     </h3>
@@ -705,7 +728,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Holds and Restricted" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                      11. Holds and Restricted Funds
                                     </h3>
@@ -717,7 +740,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Authorization" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                      12. Authorization to Contact You; Recording Calls; Analyzing Message Content
                                     </h3>
@@ -744,7 +767,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Additional Terms" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                      REJEE Money Back Guarantee
                                     </h3>
@@ -754,7 +777,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Managed Payments" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                      14. Managed Payments
                                     </h3>
@@ -784,7 +807,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Disclaimer" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                      15. Disclaimer of Warranties; Limitation of Liability
                                     </h3>
@@ -811,7 +834,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Release" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                      16. Release
                                     </h3>
@@ -820,7 +843,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Indemnity" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                      17. Indemnity
                                     </h3>
@@ -829,7 +852,7 @@
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="Legal Disputes" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                      18. Legal Disputes
                                     </h3>
@@ -895,7 +918,7 @@ A party who intends to seek arbitration must first send to the other, by certifi
                                   </div>
                                 </div>
                                 <div class="row product-container pb-3 pt-3">
-                                  <div class="content text-dark">
+                                  <div id="General" class="content text-dark">
                                     <h3 class="text-lg font-weight-bold">
                                      19. General
                                     </h3>
