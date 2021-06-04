@@ -22,6 +22,7 @@ import productcart from '../views/buyers/productCart.vue'
 import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
 import userAgreementPage from '../views/userAgreementPage.vue'
 import userPrivacy from '../views/userPrivacy.vue'
+import cookiePolicy from '../views/cookiePolicy.vue'
 
 Vue.use(VueRouter)
 
@@ -44,6 +45,11 @@ const routes = [{
         path: '/User Privacy',
         name: 'UserPrivacy',
         component: userPrivacy,
+    },
+    {
+        path: '/Cookie Policy',
+        name: 'CookiePolicy',
+        component: cookiePolicy,
     },
     {
         path: '/Categorie Page',

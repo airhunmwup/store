@@ -742,15 +742,6 @@
                               </div>
                               </div>
 
-                              <div class="row justify-start pl-3 pt-3">
-                              <div class="">
-                            <a class="cateItem" 
-                              data-toggle="collapse"
-                              data-target="#sort8" href="#">
-                                  <span class="pr-2 pt-3"><b><i class="fa fa-angle-down"></i> Your choices regarding cookies</b></span></a>
-                              </div>
-                              </div>
-
                             <div
                               class="subCategory collapse"
                               id="sort7"
@@ -787,6 +778,15 @@
                                 <hr>
                               </div>
                               </div>
+                              <div class="row justify-start pl-3 pt-3">
+                              <div class="">
+                            <a class="cateItem" 
+                              data-toggle="collapse"
+                              data-target="#sort8" href="#">
+                                  <span class="pr-2 pt-3"><b><i class="fa fa-angle-down"></i> Your choices regarding cookies</b></span></a>
+                              </div>
+                              </div>
+
 
 
                             <div

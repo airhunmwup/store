@@ -18,14 +18,14 @@
           class="mobile hidden-md-up text-xs-center d-flex align-items-center justify-content-around"
         >
           <!-- logo -->
-          <div class="mobile-logo align-items-center">
-                <a href="index.html">
+          <div class="mobile-logo ">
+                
             <img
               class="logo-mobile img-fluid"
               src="img/home/logo.png"
               width="30%"
-              alt="Prestashop_Furnitica"
-            /></a>
+              alt="REJEE COMPANY"
+            />
           </div>
 
           <!-- menu right -->

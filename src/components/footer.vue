@@ -22,7 +22,7 @@
                         title="User Privacy"
                       >Privacy,</router-link>
                       <router-link
-                        to="/Cookies"
+                        to="/Cookie Policy"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
                         title="Cookies"

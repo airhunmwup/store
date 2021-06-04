@@ -13,6 +13,7 @@
                   <div class="row">
                     <div class="title-product  col-lg-9 col-md-9 col-sm-9">
                         <h2>The link name here</h2>
+                        <br>
                           <div class="cateTitle hasSubCategory open level1 text-dark">
                               <div class="row justify-end">
                               <div class="text-right">
