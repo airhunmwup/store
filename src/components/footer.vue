@@ -16,10 +16,10 @@
                         title="User Agreement"
                       >User Agreement,</router-link>
                       <router-link
-                        to="/Privacy"
+                        to="/User Privacy"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
-                        title="Privacy"
+                        title="User Privacy"
                       >Privacy,</router-link>
                       <router-link
                         to="/Cookies"

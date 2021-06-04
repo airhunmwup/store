@@ -43,8 +43,8 @@
                                 </div>
                                 <ul class="pt-3">
                                     <li class="text-info"><a href="#Introduction">1. Introduction</a></li>
-                                    <li class="text-info"><a href="#About REJEE">2. About eBay</a></li>
-                                    <li class="text-info"><a href="#Using REJEE">3. Using eBay</a></li>
+                                    <li class="text-info"><a href="#About REJEE">2. About REJEE</a></li>
+                                    <li class="text-info"><a href="#Using REJEE">3. Using REJEE</a></li>
                                     <li class="text-info"><a href="#Policy Enforcement">4. Policy Enforcement</a></li>
                                     <li class="text-info"><a href="#Fees and Taxes">5. Fees and Taxes</a></li>
                                     <li class="text-info"><a href="#Listing Conditions">6. Listing Conditions</a></li>
@@ -56,7 +56,7 @@
                                     <li class="text-info"><a href="#Authorization">12. Authorization to Contact You; Recording Calls</a></li>
                                     <li class="text-info"><a href="#Additional Terms">13. Additional Terms
                                 Returns and Cancellations
-                                eBay Money Back Guarantee</a></li>
+                                REJEE Money Back Guarantee</a></li>
                                     <li class="text-info"><a href="#Managed Payments">14. Managed Payments</a></li>
                                     <li class="text-info"><a href="#Disclaimer">15. Disclaimer of Warranties; Limitation of Liability</a></li>
                                     <li class="text-info"><a href="#Release">16. Release</a></li>

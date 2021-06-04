@@ -16,15 +16,6 @@
                           <div class="cateTitle hasSubCategory open level1 text-dark">
                               <div class="row justify-end">
                               <div class="text-right">
-                      <router-link
-                        to="/Location"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Location"
-                      >
-                                  <span class="pr-2 pt-2"><b>filter <i class="fa fa-th"></i></b></span></router-link>
-                              </div>
-                              <div class="text-right">
                                   <span class="pr-2 pt-2"><b><i class="fa fa-exchange fa-rotate-90"></i></b><select class="select-title">
                                                                 <option value="">Sort by</option>
                                                                 <option value="">Name, A to Z</option>

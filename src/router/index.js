@@ -21,6 +21,7 @@ import checkOutPage from '../views/buyers/checkOutPage.vue'
 import productcart from '../views/buyers/productCart.vue'
 import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
 import userAgreementPage from '../views/userAgreementPage.vue'
+import userPrivacy from '../views/userPrivacy.vue'
 
 Vue.use(VueRouter)
 
@@ -38,6 +39,11 @@ const routes = [{
         path: '/User Agreement',
         name: 'UserAgreementPage',
         component: userAgreementPage,
+    },
+    {
+        path: '/User Privacy',
+        name: 'UserPrivacy',
+        component: userPrivacy,
     },
     {
         path: '/Categorie Page',
