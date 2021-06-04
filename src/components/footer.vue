@@ -28,11 +28,11 @@
                         title="Cookies"
                       >Cookies,</router-link>
                       <router-link
-                        to="/AdChoice"
+                        to="/Ad Choice"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
-                        title="AdChoice"
-                      >Do not sell my personal information and AdChoice</router-link>
+                        title="Ad Choice"
+                      >and AdChoice</router-link>
                         </span>
                     </div>
                     <div class="col-md-4 col-xs-12 align-items-center justify-content-md-end d-flex justify-content-xs-center">

@@ -23,6 +23,7 @@ import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
 import userAgreementPage from '../views/userAgreementPage.vue'
 import userPrivacy from '../views/userPrivacy.vue'
 import cookiePolicy from '../views/cookiePolicy.vue'
+import adChoice from '../views/adChoice.vue'
 
 Vue.use(VueRouter)
 
@@ -50,6 +51,11 @@ const routes = [{
         path: '/Cookie Policy',
         name: 'CookiePolicy',
         component: cookiePolicy,
+    },
+    {
+        path: '/Ad Choice',
+        name: 'AdChoice',
+        component: adChoice,
     },
     {
         path: '/Categorie Page',
