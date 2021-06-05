@@ -24,6 +24,7 @@ import userAgreementPage from '../views/userAgreementPage.vue'
 import userPrivacy from '../views/userPrivacy.vue'
 import cookiePolicy from '../views/cookiePolicy.vue'
 import adChoice from '../views/adChoice.vue'
+import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vue'
 
 Vue.use(VueRouter)
 
@@ -150,6 +151,23 @@ const routes = [{
         component: addPaymentMethod,
     },
 
+    {
+        path: '/Login',
+        name: 'userLogin',
+        component: userLogin,
+    },
+
+    {
+        path: '/Register Personal Account',
+        name: 'userRegistrationPage',
+        component: userRegistrationPage,
+    },
+
+    {
+        path: '/Register Business Account',
+        name: 'registerBusinessAccount',
+        component: registerBusinessAccount,
+    },
     {
         path: '/Add New Card',
         name: 'addCardPage',

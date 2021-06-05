@@ -339,6 +339,157 @@
         </div>
       </section>
     </div>
-    <hr />
+  <div id="home3" class="pt-3">
+<footer  class="footer-one">
+        <div class="inner-footer">
+            <div class="container">
+                <div class="footer-top">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-12 col-xs-12">
+                            
+                            <div class="block">
+                                <div class="block-content">
+                                    <div class="title-block">
+                                        Buy
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Registration</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">REJEE Money back Guarantee</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Stores</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+						
+                        <div class="col-lg-3 col-md-4 col-xs-12">
+                            <div class="block">
+                                <div class="block-content">
+                                    <div class="title-block">
+                                        Sell
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Start Selling</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">How to sell</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Business Seller</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Affiliates</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+						
+                        <div class="col-lg-3 col-md-4">
+                            <div class="block">
+                                <div class="block-content">
+                                    <div class="title-block">
+                                        About REJEE
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Company info</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Policies</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">User Agreement</a>
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+						
+                        <div class="col-lg-3 col-md-4">
+                            
+                            <div class="block">
+                                <div class="block-content">
+                                    <div class="title-block">
+                                        Help & Contact
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Resolution Center</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Seller Center</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Contact Us</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">REJEE Returns</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+						
+                        <div class="col-lg-3 col-md-4 col-xs-12">
+                            <div class="block">
+                                
+                                <div class="block-content pt-3">
+                                    <div class="title-block">
+                                        Tools & Tips
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">Developers</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Security Center</a>
+                                        </li>
+                                        <li>
+                                            <a href="#">Site Map</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+						
+                        <div class="col-lg-3 col-md-4">
+                            <div class="block">
+                              
+
+                                <div class="block-content pt-3">
+                                    <div class="title-block">
+                                        Stay Connected
+                                    </div>
+                                    <ul>
+                                        <li>
+                                            <a href=""><i class="fa fa-facebook"></i> Facebook</a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fa fa-instagram"></i> Instagram</a>
+                                        </li>
+                                        <li>
+                                            <a href=""><i class="fa fa-twitter"></i> Twitter</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+						
+                    </div>
+                </div>
+            </div>
+        </div>
+</footer>
+  </div>
   </div>
 </template>

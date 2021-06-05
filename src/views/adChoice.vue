@@ -11,16 +11,16 @@
                             <div class="col-lg-10 col-sm-12 text-left">
 
                         <div class="content pb-3">
-                                <h1 class="title-page">AdChoice - eBay Advertising Preferences</h1>
+                                <h1 class="title-page">AdChoice - REJEE Advertising Preferences</h1>
                                 <h1 class="title-page">What is AdChoice?</h1>
-                                <p class="font-weight-bold text-dark">In order to show customized ads we think you'll find interesting on and off our affiliated properties, we may use information you make available to us when you interact with our sites, content or services. You have the ability to opt out of these customized ads at any time. Please keep in mind if you opt out, you'll still see ads, but they won't be tailored to your interests based on your eBay activity.</p>
+                                <p class="font-weight-bold text-dark">In order to show customized ads we think you'll find interesting on and off our affiliated properties, we may use information you make available to us when you interact with our sites, content or services. You have the ability to opt out of these customized ads at any time. Please keep in mind if you opt out, you'll still see ads, but they won't be tailored to your interests based on your REJEE activity.</p>
                                
                         </div>
 
                         <div class="content pb-3">
                                 <p class="font-weight-bold text-dark h4 pb-2">How we bring these ads to you</p>
                                 <p class="font-weight-bold text-dark h5">How we use the information</p>
-                                <p class="font-weight-bold text-dark">We use that information to help us figure out what you might be interested in seeing. This lets us tailor and improve your online experience - both on websites of the eBay corporate family and elsewhere on the web.</p>
+                                <p class="font-weight-bold text-dark">We use that information to help us figure out what you might be interested in seeing. This lets us tailor and improve your online experience - both on websites of the REJEE corporate family and elsewhere on the web.</p>
                                
                         </div>
                         <div class="content pb-3">
@@ -30,7 +30,7 @@
                         </div>
                         <div class="content pb-3">
                                 <p class="font-weight-bold text-dark h5">How you can control your information</p>
-                                <p class="font-weight-bold text-dark">But you can tell us not to use your eBay activity to customize advertising we show you, whether on eBay or anywhere else on the web. Whenever you see the "About" or "Adchoice" link next to or in one of the ads we serve, or in the footer of one of our websites, click it to check and change your advertising preferences. Also, we support the Self-Regulatory Principles for Online Behavioral Advertising developed by the Digital Advertising Alliance (DAA), and have integrated our opt-out platform with the DAA choice tool available here. Remember, when you opt out, you'll still see ads, but they won't be tailored to your interests based on your eBay activity.</p>
+                                <p class="font-weight-bold text-dark">But you can tell us not to use your REJEE activity to customize advertising we show you, whether on REJEE or anywhere else on the web. Whenever you see the "About" or "Adchoice" link next to or in one of the ads we serve, or in the footer of one of our websites, click it to check and change your advertising preferences. Also, we support the Self-Regulatory Principles for Online Behavioral Advertising developed by the Digital Advertising Alliance (DAA), and have integrated our opt-out platform with the DAA choice tool available here. Remember, when you opt out, you'll still see ads, but they won't be tailored to your interests based on your REJEE activity.</p>
                                
                         </div>
                             </div>
