@@ -59,91 +59,117 @@
                                         </a>
                                     </div>
                                     <div>
-                                        <a class="login" href="user-login.html" rel="nofollow" title="Log in to your customer account">
-                                            <i class="fa fa-shopping-basket"></i>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      ><i class="fa fa-shopping-basket"></i>
                                             <span>Product Listing</span>
-                                        </a>
+                      </router-link>
                                     </div>
                                     <div>
-                                        <a class="register" href="user-register.html" rel="nofollow" title="Register Account">
-                                            <i class="fa fa-file-text-o"></i>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      > <i class="fa fa-file-text-o"></i>
                                             <span>Order History</span>
-                                        </a>
+                      </router-link>
                                     </div>
                                     <div>
-                                        <a class="check-out" href="product-checkout.html" rel="nofollow" title="Checkout">
-                                            <i class="fa fa-lock" aria-hidden="true"></i>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      ><i class="fa fa-lock" aria-hidden="true"></i>
                                             <span>Change Password</span>
-                                        </a>
+                      </router-link>
                                     </div>
                                     <div>
-                                        <a href="user-wishlist.html" title="My Wishlists">
-                                            <i class="fa fa-credit-card"></i>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      ><i class="fa fa-credit-card"></i>
                                             <span>Payment Methods</span>
-                                        </a>
+                      </router-link>
                                     </div>
                                     <div>
-                                        <a href="user-wishlist.html" title="My Wishlists">
-                                            <i class="fa fa-bell"></i>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      ><i class="fa fa-bell"></i>
                                             <span>Notificatons</span>
-                                        </a>
+                      </router-link>
                                     </div>
                                     <div>
-                                        <a href="user-wishlist.html" title="My Wishlists">
-                                            <i class="fa fa-question-circle"></i>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      ><i class="fa fa-question-circle"></i>
                                             <span>Need Help</span>
-                                        </a>
+                      </router-link>
                                     </div>
                                     <div>
-                                        <a href="user-wishlist.html" title="My Wishlists">
-                                            <i class="fa fa-sign-out"></i>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      > <i class="fa fa-sign-out"></i>
                                             <span>Sign Out</span>
-                                        </a>
+                      </router-link>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="desktop_cart">
+                        <div class="desktop_cart pl-5">
                             <div class="blockcart block-cart cart-preview tiva-toggle">
                                 <div class="header-cart tiva-toggle-btn">
                                     <span class="cart-products-count">1</span>
-                                    <i class="fa fa-bell" aria-hidden="true"></i>
+                                    <i class="fa fa-envelope" aria-hidden="true"></i>
                                 </div>
                                 <div class="dropdown-content">
                                     <div class="cart-content">
                                         <table>
                                             <tbody>
                                                 <tr>
-                                                    <td class="product-image">
-                                                        <a href="product-detail.html">
-                                                            <img src="img/product/5.jpg" alt="Product">
-                                                        </a>
-                                                    </td>
+                                                    <th> 
+                                                        <div class="" href="#">
+                                                            You have a new Order  
+                                                        </div>
+                                                    </th>
                                                     <td>
-                                                        <div class="product-name">
-                                                            <a href="product-detail.html">Organic Strawberry Fruits</a>
-                                                        </div>
-                                                        <div>
-                                                            2 x
-                                                            <span class="product-price">£28.98</span>
-                                                        </div>
-                                                    </td>
-                                                    <td class="action">
-                                                        <a class="remove" href="#">
+                                                        <div class="remove justify-content-end" href="#">
                                                             <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                                        </a>
+                                                        </div>
                                                     </td>
                                                 </tr>
-                                                <tr class="total">
-                                                    <td colspan="2">Total:</td>
-                                                    <td>£92.96</td>
+                                                <tr>
+                                                    <th> 
+                                                        <div class="" href="#">
+                                                            You have a new Order  
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div class="remove justify-content-end" href="#">
+                                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                        </div>
+                                                    </td>
                                                 </tr>
 
                                                 <tr>
-                                                    <td colspan="3" class="d-flex justify-content-center">
+                                                    <td>
                                                         <div class="cart-button">
-                                                            <a href="product-cart.html" title="View Cart">View Cart</a>
-                                                            <a href="product-checkout.html" title="Checkout">Checkout</a>
+                                                            <a href="product-checkout.html" title="Checkout">Go to Message</a>
                                                         </div>
                                                     </td>
                                                 </tr>
@@ -251,40 +277,86 @@
                     <div id="megamenu" class="clearfix">
                         <ul class="menu level1">
                             <li class="item has-sub">
-                                <a href="index-2.html" title="Home">
-                                    <i class="fa fa-address-book" aria-hidden="true"></i>My Store</a>
+                                
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      >
+                                    <i class="fa fa-address-book" aria-hidden="true"></i>My Store</router-link>
                             </li>
                             <li class="item has-sub">
-                                <a href="index-2.html" title="Home">
-                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>Product Listing</a>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      >
+                                    <i class="fa fa-shopping-basket" aria-hidden="true"></i>Product Listing</router-link>
                             </li>
                             <li class="item has-sub">
-                                <a href="#" title="Blog">
-                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</a>
+                      <router-link
+                        to="/Order History"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Order History"
+                      >
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>Order History</router-link>
                             </li>
                             <li class="item has-sub">
-                                <a href="#" title="Page">
-                                    <i class="fa fa-lock" aria-hidden="true"></i>Change Password</a>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      >
+                                    <i class="fa fa-lock" aria-hidden="true"></i>Change Password</router-link>
                             </li>
                             <li class="item has-sub">
-                                <a href="contact.html" title="Contact us">
-                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>Address book</a>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      >
+                                    <i class="fa fa-file-text-o" aria-hidden="true"></i>Address book</router-link>
                             </li>
                             <li class="item has-sub">
-                                <a href="contact.html" title="Contact us">
-                                    <i class="fa fa-credit-card" aria-hidden="true"></i>Payment methods</a>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      >
+                                    <i class="fa fa-credit-card" aria-hidden="true"></i>Payment methods</router-link>
                             </li>
                             <li class="item has-sub">
-                                <a href="contact.html" title="Contact us">
-                                    <i class="fa fa-bell" aria-hidden="true"></i>Notifications</a>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      >
+                                    <i class="fa fa-bell" aria-hidden="true"></i>Notifications</router-link>
                             </li>
                             <li class="item has-sub">
-                                <a href="contact.html" title="Contact us">
-                                    <i class="fa fa-question-circle" aria-hidden="true"></i>Need Help?</a>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      >
+                                    <i class="fa fa-question-circle" aria-hidden="true"></i>Need Help?</router-link>
                             </li>
                             <li class="item has-sub">
-                                <a href="contact.html" title="Contact us">
-                                    <i class="fa fa-sign-out" aria-hidden="true"></i>Sign out</a>
+                      <router-link
+                        to="/orderpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                      >
+                                    <i class="fa fa-sign-out" aria-hidden="true"></i>Sign out</router-link>
                             </li>
                         </ul>
                     </div>

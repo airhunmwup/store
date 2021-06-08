@@ -8,8 +8,8 @@
             <div id="content-wrapper">
                 <section class="page-home">
                     <div class="container">
-                        <label for="formFileMultiple" class="h4 form-label">Add Product Images</label>
                     <div class="content border p-5">
+                        <label for="formFileMultiple" class="form-label">Add Product Images</label>
                     <div class="content box text-center border p-5">
                         <label for="formFileMultiple" class="form-label">input image file in JPG format only </label>
 <input class="form-control " type="file" id="formFileMultiple" multiple />

@@ -8,7 +8,7 @@
 
 
 <script>
-import Header from './components/notloginHeader';
+import Header from './components/headerseller';
 import Footer from './components/footer';
 
 export default {

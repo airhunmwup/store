@@ -6,24 +6,6 @@
         <div class="wrap-banner">
 
             <!-- breadcrumb -->
-            <nav class="breadcrumb-bg">
-                <div class="container no-index">
-                    <div class="breadcrumb">
-                        <ol>
-                            <li>
-                                <a href="#">
-                                    <span>Home</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#">
-                                    <span>Products</span>
-                                </a>
-                            </li>
-                        </ol>
-                    </div>
-                </div>
-            </nav>
         </div>
 
         <!-- main -->
@@ -33,31 +15,34 @@
                     <div id="content-wrapper" class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onecol">
                         <div id="main">
                             <div id="content" class="page-content">
+                                    <hr>
+                                <div id="mywishlist">
+                                    <h1 class="title-page">Product Listing</h1>
                                     <form method="post" class="std" id="customer-form">
                                         <fieldset>
                                             <div class="input-group col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                                 <input type="text" id="name" name="name" placeholder="Search" class="form-control" value="">
-                                                <button class="btn btn-dark" type="submit" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
+                                                <button class="btn border btn-warning" type="submit" data-action="show-password" data-text-show="Show" data-text-hide="Hide">
                                                     Submit
                                                 </button>
                                             </div>
+                                            <br>
                                         </fieldset>
                                     </form>
-                                    <hr>
-                                <div id="mywishlist">
-                                    <h1 class="title-page">Product Listing</h1>
                                     <div id="block-history" class="block-center">
-                                        <table class="std table table-fixed">
-                                            <thead>
-                                                <tr>
-                                                    <th class="first_item"></th>
-                                                    <th class="item mywishlist_first">Product name</th>
-                                                    <th class="item mywishlist_second">quantity</th>
-                                                    <th class="item mywishlist_second">Price</th>
-                                                    <th class="item mywishlist_first"></th>
-                                                    <th class="last_item mywishlist_first"><i class="btn btn-dark fa fa-plus"> Add</i></th>
+                                        <table class="std table table-fixed ">
+                                            <tbody>
+                                                <tr id="wishlist_1">
+                                                    <td></td>
+                                                    <td>Product name</td>
+                                                    <td>quantity</td>
+                                                    <td>Price</td>
+                                                    <td></td>
+                                                    <td><i class="btn btn-dark fa fa-plus"> Add</i></td>
                                                 </tr>
-                                            </thead>
+                                            </tbody>
+                                        </table>
+                                        <table class="std table table-fixed">
                                             <tbody>
                                                 <tr id="wishlist_1">
                                                     <td>

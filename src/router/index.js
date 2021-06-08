@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import LandingPage from '../views/buyers/landingPage.vue'
+import LandingPage from '../views/sellers/seller_dashboard.vue'
 import UserOrderPage from '../views/buyers/userOrderPage.vue'
 import orderDetailsPage from '../views/buyers/orderDetailsPage.vue'
 import wishlist from '../views/buyers/wishlist.vue'
@@ -25,6 +25,11 @@ import userPrivacy from '../views/userPrivacy.vue'
 import cookiePolicy from '../views/cookiePolicy.vue'
 import adChoice from '../views/adChoice.vue'
 import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vue'
+import seller_dashboard from '../views/sellers/seller_dashboard.vue'
+import seller_productListing from '../views/sellers/seller_productListing.vue'
+import seller_OrderHistory from '../views/sellers/sellers_OrderHistory.vue'
+import uploadproductimage from '../views/sellers/uploadproductimage.vue'
+import createnewlisting from '../views/sellers/createnewlisting.vue'
 
 Vue.use(VueRouter)
 
@@ -34,9 +39,29 @@ const routes = [{
         component: LandingPage,
     },
     {
-        path: '/Register buyers',
-        name: 'userRegistrationPage',
-        component: userRegistrationPage,
+        path: '/Dashboard',
+        name: 'seller_dashboard',
+        component: seller_dashboard,
+    },
+    {
+        path: '/Product Listing',
+        name: 'seller_productListing',
+        component: seller_productListing,
+    },
+    {
+        path: '/Order History',
+        name: 'seller_OrderHistory',
+        component: seller_OrderHistory,
+    },
+    {
+        path: '/Create New Listing',
+        name: 'createnewlisting',
+        component: createnewlisting,
+    },
+    {
+        path: '/Upload Product Image',
+        name: 'uploadproductimage',
+        component: uploadproductimage,
     },
     {
         path: '/User Agreement',

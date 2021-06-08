@@ -14,7 +14,7 @@
                     <div class="title-product  col-lg-9 col-md-9 col-sm-9">
                         <h2>The link name here</h2>
                         <br>
-                          <div class="cateTitle hasSubCategory open level1 text-dark">
+                          <div class="cateTitle pb-3 hasSubCategory open level1 text-dark">
                               <div class="row justify-end">
                               <div class="text-right">
                                   <span class="pr-2 pt-2"><b><i class="fa fa-exchange fa-rotate-90"></i></b><select class="select-title">
