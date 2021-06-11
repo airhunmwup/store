@@ -3,20 +3,7 @@
     <header>
         <div>
 
-                        <!-- breadcrumb -->
-                        <nav class="breadcrumb-bg">
-                            <div class="container no-index">
-                                <div class="breadcrumb">
-                                    <ol>
-                                        <li>
-                                            <a href="#">
-                                                <span><b>SELLERS ACCOUNT &trade;</b></span>
-                                            </a>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </nav>
+                       
 
         <!-- header desktop -->
         <div class="header-top d-xs-none ">
@@ -42,95 +29,7 @@
                         
 
                         <!-- acount  -->
-                        <div id="block_myaccount_infos" class="hidden-sm-down dropdown">
-                            <div class="myaccount-title">
-                                <a href="#acount" data-toggle="collapse" class="acount">
-                                    <i class="fa fa-user" aria-hidden="true"> </i>
-                                    <span> Sellers Account </span>
-                                    <i class="fa fa-angle-down" aria-hidden="true"></i>
-                                </a>
-                            </div>
-                            <div id="acount" class="collapse">
-                                <div class="account-list-content">
-                                    <div>
-                                        <a class="login" href="user-acount.html" rel="nofollow" title="Log in to your customer account">
-                                            <i class="fa fa-address-book"></i>
-                                            <span>My Store</span>
-                                        </a>
-                                    </div>
-                                    <div>
-                      <router-link
-                        to="/orderpage"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Home"
-                      ><i class="fa fa-shopping-basket"></i>
-                                            <span>Product Listing</span>
-                      </router-link>
-                                    </div>
-                                    <div>
-                      <router-link
-                        to="/orderpage"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Home"
-                      > <i class="fa fa-file-text-o"></i>
-                                            <span>Order History</span>
-                      </router-link>
-                                    </div>
-                                    <div>
-                      <router-link
-                        to="/orderpage"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Home"
-                      ><i class="fa fa-lock" aria-hidden="true"></i>
-                                            <span>Change Password</span>
-                      </router-link>
-                                    </div>
-                                    <div>
-                      <router-link
-                        to="/orderpage"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Home"
-                      ><i class="fa fa-credit-card"></i>
-                                            <span>Payment Methods</span>
-                      </router-link>
-                                    </div>
-                                    <div>
-                      <router-link
-                        to="/orderpage"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Home"
-                      ><i class="fa fa-bell"></i>
-                                            <span>Notificatons</span>
-                      </router-link>
-                                    </div>
-                                    <div>
-                      <router-link
-                        to="/orderpage"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Home"
-                      ><i class="fa fa-question-circle"></i>
-                                            <span>Need Help</span>
-                      </router-link>
-                                    </div>
-                                    <div>
-                      <router-link
-                        to="/orderpage"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Home"
-                      > <i class="fa fa-sign-out"></i>
-                                            <span>Sign Out</span>
-                      </router-link>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    
                         <div class="desktop_cart pl-5">
                             <div class="blockcart block-cart cart-preview tiva-toggle">
                                 <div class="header-cart tiva-toggle-btn">
@@ -329,7 +228,7 @@
                         data-target=".navbar-collapse"
                         title="Home"
                       >
-                                    <i class="fa fa-credit-card" aria-hidden="true"></i>Payment methods</router-link>
+                                    <i class="fa fa-credit-card" aria-hidden="true"></i>Account</router-link>
                             </li>
                             <li class="item has-sub">
                       <router-link

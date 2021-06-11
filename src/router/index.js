@@ -30,6 +30,10 @@ import seller_productListing from '../views/sellers/seller_productListing.vue'
 import seller_OrderHistory from '../views/sellers/sellers_OrderHistory.vue'
 import uploadproductimage from '../views/sellers/uploadproductimage.vue'
 import createnewlisting from '../views/sellers/createnewlisting.vue'
+import seller_orderdetails from '../views/sellers/seller_orderdetails.vue'
+import seller_changepassword from '../views/sellers/seller_changepassword.vue'
+import seller_accountsettings from '../views/sellers/seller_accountsettings.vue'
+import seller_supportservice from '../views/sellers/seller_supportservice.vue'
 
 Vue.use(VueRouter)
 
@@ -39,7 +43,7 @@ const routes = [{
         component: LandingPage,
     },
     {
-        path: '/Dashboard',
+        path: '/seller_dashboard',
         name: 'seller_dashboard',
         component: seller_dashboard,
     },
@@ -52,6 +56,26 @@ const routes = [{
         path: '/Order History',
         name: 'seller_OrderHistory',
         component: seller_OrderHistory,
+    },
+    {
+        path: '/Seller Orderdetails',
+        name: 'seller_orderdetails',
+        component: seller_orderdetails,
+    },
+    {
+        path: '/Seller change password',
+        name: 'seller_changepassword',
+        component: seller_changepassword,
+    },
+    {
+        path: '/Seller account settings',
+        name: 'seller_accountsettings',
+        component: seller_accountsettings,
+    },
+    {
+        path: '/Seller support service',
+        name: 'seller_supportservice',
+        component: seller_supportservice,
     },
     {
         path: '/Create New Listing',
