@@ -8,13 +8,6 @@
            <div class="wrap-banner">
 
             <!-- breadcrumb -->
-            <nav class="breadcrumb-bg">
-                <div class="container no-index">
-                    <div class="breadcrumb">
-                        
-                    </div>
-                </div>
-            </nav>
 
             <div class="acount head-acount  container-center">
                 <div class="container">

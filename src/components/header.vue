@@ -18,18 +18,19 @@
           class="mobile hidden-md-up text-xs-center d-flex align-items-center justify-content-around"
         >
           <!-- logo -->
-          <div class="mobile-logo align-items-center">
+          <div class="mobile-logo ">
+                
             <img
               class="logo-mobile img-fluid"
               src="img/home/logo.png"
               width="30%"
-              alt="Prestashop_Furnitica"
+              alt="REJEE COMPANY"
             />
           </div>
 
           <!-- menu right -->
 
-          <div class="desktop_cart">
+          <div class="pr-4 desktop_cart">
             <div class="blockcart block-cart cart-preview tiva-toggle">
               <div class="header-cart tiva-toggle-btn">
                 <i class="fa fa-user" aria-hidden="true"></i>
@@ -162,19 +163,7 @@
               </div>
             </div>
           </div>
-        </div>
-
-        <!-- search -->
-
-        <div id="mobile_search" class="d-flex">
-          <div id="mobile_search_content">
-            <form method="get" action="#">
-              <input type="text" name="s" value="" placeholder="Search" />
-              <button type="submit">
-                <i class="fa fa-search"></i>
-              </button>
-            </form>
-          </div>
+          
           <div class="desktop_cart">
             <div class="blockcart block-cart cart-preview tiva-toggle">
               <div class="header-cart tiva-toggle-btn">
@@ -232,6 +221,19 @@
             </div>
           </div>
         </div>
+
+        <!-- search -->
+
+        <div id="mobile_search" class="d-flex">
+          <div id="mobile_search_content">
+            <form method="get" action="#">
+              <input type="text" name="s" value="" placeholder="Search" />
+              <button type="submit">
+                <i class="fa fa-search"></i>
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
 
       <!-- header desktop -->
@@ -241,7 +243,7 @@
             <!-- logo -->
             <div class="col-sm-2 col-md-2 d-flex align-items-center">
               <div id="logo">
-                <a href="index-2.html">
+                <a href="index.html">
                   <img class="img-fluid" src="img/home/logo.png" alt="logo" />
                 </a>
               </div>
@@ -267,7 +269,7 @@
               </form>
 
               <!-- acount  -->
-              <div id="block_myaccount_infos" class="hidden-sm-down dropdown">
+              <div id="block_myaccount_infos" class="pr-4 hidden-sm-down dropdown">
                 <div class="myaccount-title">
                   <a href="#acount" data-toggle="collapse" class="acount">
                     <i class="fa fa-user" aria-hidden="true"> </i>
@@ -370,7 +372,7 @@
                   </div>
                 </div>
               </div>
-              <div class="desktop_cart">
+              <div class="desktop_cart pl-3">
                 <div class="blockcart block-cart cart-preview tiva-toggle">
                   <div class="header-cart tiva-toggle-btn">
                     <span class="cart-products-count">1</span>
@@ -414,12 +416,21 @@
                               class="d-flex justify-content-center"
                             >
                               <div class="cart-button">
-                                <a href="product-cart.html" title="View Cart"
-                                  >View Cart</a
-                                >
-                                <a href="product-checkout.html" title="Checkout"
-                                  >Checkout</a
-                                >
+                                  <router-link
+                                    to="/Product Cart"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
+                                    title="Home"
+                                  >
+                                View Cart</router-link>
+                                  <router-link
+                                    to="/Checkout"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
+                                    title="Home"
+                                  >
+                                Checkout
+                                </router-link>
                               </div>
                             </td>
                           </tr>

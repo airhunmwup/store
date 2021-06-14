@@ -6,14 +6,11 @@
         <div class="wrap-banner">
 
             <!-- breadcrumb -->
-            <nav class="breadcrumb-bg">
-                <div class="container no-index">
-                    <div class="breadcrumb">
-                    </div>
-                </div>
-            </nav>
 
             <div class="acount head-acount  container">
+                <div class="container">
+                    <div id="main">
+                        <h1 class="title-page">Payment Methods</h1>
                       <router-link
                         to="/ADD Payment Method"
                         data-toggle="collapse"
@@ -24,9 +21,6 @@
                             Add new Payment Method
                         </button>
                         </router-link>
-                <div class="container">
-                    <div id="main">
-                        <h1 class="title-page">Payment Methods</h1>
                             <table class="std table" id="block-history">
                                 <tbody>
                                     <tr>

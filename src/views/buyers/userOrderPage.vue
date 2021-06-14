@@ -6,12 +6,6 @@
         <div class="wrap-banner">
 
             <!-- breadcrumb -->
-            <nav class="breadcrumb-bg">
-                <div class="container no-index">
-                    <div class="breadcrumb">
-                    </div>
-                </div>
-            </nav>
 
             <div class="acount head-acount  container">
                 <div class="container">
@@ -23,11 +17,10 @@
                                     <tr>
                                         <th class="first_item">
                                             <p class="text-dark">IT'S DELIVERD!</p><span class="text-small">Delivered on 14 MAR 2021</span>
-                                            <div class="row content col-12">
-                                                    <img src="img/product/6.jpg" class="col-3 " alt="Product">
-                                                    <img src="img/product/9.jpg" class="col-3 " alt="Product">
-                                                    <img src="img/product/3.jpg" class="col-3 " alt="Product">
-                                                    <img src="img/product/4.jpg" class="col-3 " alt="Product">
+                                            <div class="row content col-xs-12 col-12 col-md-12 col-lg-12">
+                                                    <img src="img/product/6.jpg" class="col-6 col-sm-3 col-md-4 col-lg-3" alt="Product">
+                                                    <img src="img/product/9.jpg" class="col-6 col-sm-3 col-md-4 col-lg-3" alt="Product">
+                                                    <img src="img/product/3.jpg" class="col-6 col-sm-3 ccol-md-4 ol-lg-3" alt="Product">
                                             </div>
 
                                             <p>Order No: <span class="text-small"> 567328996</span></p>
@@ -55,14 +48,14 @@
                                     <tr>
                                         <th class="first_item">
                                             <p class="text-dark">IT'S DELIVERD!</p><span class="text-small">Delivered on 14 MAR 2021</span>
-                                            <div class="row content col-12">
-                                                    <img src="img/product/6.jpg" class="col-3 " alt="Product">
-                                                    <img src="img/product/9.jpg" class="col-3 " alt="Product">
-                                                    <img src="img/product/3.jpg" class="col-3 " alt="Product">
-                                                    <img src="img/product/4.jpg" class="col-3 " alt="Product">
-                                                    <img src="img/product/7.jpg" class="col-3 " alt="Product">
-                                                    <img src="img/product/10.jpg" class="col-3 " alt="Product">
-                                                    <img src="img/product/1.jpg" class="col-3 " alt="Product">
+                                            <div class="row content col-xs-12 col-12 col-md-12 col-lg-12">
+                                                    <img src="img/product/6.jpg" class="col-6 col-sm-3 col-md-4 col-lg-3" alt="Product">
+                                                    <img src="img/product/9.jpg" class="col-6 col-sm-3 col-md-4 col-lg-3" alt="Product">
+                                                    <img src="img/product/3.jpg" class="col-6 col-sm-3 ccol-md-4 ol-lg-3" alt="Product">
+                                                    <img src="img/product/4.jpg" class="col-6 col-sm-3 col-md-4 col-lg-3" alt="Product">
+                                                    <img src="img/product/7.jpg" class="col-6 col-sm-3 col-md-4 ol-lg-3" alt="Product">
+                                                    <img src="img/product/10.jpg" class="col-6 col-sm-3 col-md-4 col-lg-3" alt="Product">
+                                                    <img src="img/product/1.jpg" class="col-6 col-sm-3 col-md-4 col-lg-3" alt="Product">
                                             </div>
 
                                             <p>Order No: <span class="text-small"> 567328996</span></p>

@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import LandingPage from '../views/buyers/landingPage.vue'
+import LandingPage from '../views/sellers/seller_dashboard.vue'
 import UserOrderPage from '../views/buyers/userOrderPage.vue'
 import orderDetailsPage from '../views/buyers/orderDetailsPage.vue'
 import wishlist from '../views/buyers/wishlist.vue'
@@ -14,6 +14,26 @@ import addCardPage from '../views/buyers/addCardPage.vue'
 import addPaymentMethod from '../views/buyers/addPaymentMethod.vue'
 import userRegistrationPage from '../views/buyers/userRegistrationPage.vue'
 import userLogin from '../views/buyers/userLogin.vue'
+import userCategoriePage from '../views/buyers/userCategoriePage.vue'
+import productPage from '../views/buyers/productPage.vue'
+import productDetails from '../views/buyers/productDetails.vue'
+import checkOutPage from '../views/buyers/checkOutPage.vue'
+import productcart from '../views/buyers/productCart.vue'
+import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
+import userAgreementPage from '../views/userAgreementPage.vue'
+import userPrivacy from '../views/userPrivacy.vue'
+import cookiePolicy from '../views/cookiePolicy.vue'
+import adChoice from '../views/adChoice.vue'
+import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vue'
+import seller_dashboard from '../views/sellers/seller_dashboard.vue'
+import seller_productListing from '../views/sellers/seller_productListing.vue'
+import seller_OrderHistory from '../views/sellers/sellers_OrderHistory.vue'
+import uploadproductimage from '../views/sellers/uploadproductimage.vue'
+import createnewlisting from '../views/sellers/createnewlisting.vue'
+import seller_orderdetails from '../views/sellers/seller_orderdetails.vue'
+import seller_changepassword from '../views/sellers/seller_changepassword.vue'
+import seller_accountsettings from '../views/sellers/seller_accountsettings.vue'
+import seller_supportservice from '../views/sellers/seller_supportservice.vue'
 
 Vue.use(VueRouter)
 
@@ -23,9 +43,74 @@ const routes = [{
         component: LandingPage,
     },
     {
-        path: '/Register buyers',
-        name: 'userRegistrationPage',
-        component: userRegistrationPage,
+        path: '/seller_dashboard',
+        name: 'seller_dashboard',
+        component: seller_dashboard,
+    },
+    {
+        path: '/Product Listing',
+        name: 'seller_productListing',
+        component: seller_productListing,
+    },
+    {
+        path: '/Order History',
+        name: 'seller_OrderHistory',
+        component: seller_OrderHistory,
+    },
+    {
+        path: '/Seller Orderdetails',
+        name: 'seller_orderdetails',
+        component: seller_orderdetails,
+    },
+    {
+        path: '/Seller change password',
+        name: 'seller_changepassword',
+        component: seller_changepassword,
+    },
+    {
+        path: '/Seller account settings',
+        name: 'seller_accountsettings',
+        component: seller_accountsettings,
+    },
+    {
+        path: '/Seller support service',
+        name: 'seller_supportservice',
+        component: seller_supportservice,
+    },
+    {
+        path: '/Create New Listing',
+        name: 'createnewlisting',
+        component: createnewlisting,
+    },
+    {
+        path: '/Upload Product Image',
+        name: 'uploadproductimage',
+        component: uploadproductimage,
+    },
+    {
+        path: '/User Agreement',
+        name: 'UserAgreementPage',
+        component: userAgreementPage,
+    },
+    {
+        path: '/User Privacy',
+        name: 'UserPrivacy',
+        component: userPrivacy,
+    },
+    {
+        path: '/Cookie Policy',
+        name: 'CookiePolicy',
+        component: cookiePolicy,
+    },
+    {
+        path: '/Ad Choice',
+        name: 'AdChoice',
+        component: adChoice,
+    },
+    {
+        path: '/Categorie Page',
+        name: 'UserCategoriePage',
+        component: userCategoriePage,
     },
     {
         path: '/Login buyers',
@@ -33,14 +118,44 @@ const routes = [{
         component: userLogin,
     },
     {
+        path: '/Order Details',
+        name: 'orderDetailsPage',
+        component: orderDetailsPage,
+    },
+    {
+        path: '/Categorie Page',
+        name: 'UserCategoriePage',
+        component: userCategoriePage,
+    },
+    {
         path: '/orderpage',
         name: 'Orderpage',
         component: UserOrderPage,
     },
     {
-        path: '/Order Details',
-        name: 'orderDetailsPage',
-        component: orderDetailsPage,
+        path: '/Product Page',
+        name: 'ProductPage',
+        component: productPage,
+    },
+    {
+        path: '/Product Detail',
+        name: 'ProductDetail',
+        component: productDetails,
+    },
+    {
+        path: '/Product Cart',
+        name: 'ProductCart',
+        component: productcart,
+    },
+    {
+        path: '/Checkout',
+        name: 'CheckOut',
+        component: checkOutPage,
+    },
+    {
+        path: '/Checkout Address',
+        name: 'CheckOutAddress',
+        component: checkOutPageAddress,
     },
     {
         path: '/Wish list',
@@ -85,6 +200,23 @@ const routes = [{
         component: addPaymentMethod,
     },
 
+    {
+        path: '/Login',
+        name: 'userLogin',
+        component: userLogin,
+    },
+
+    {
+        path: '/Register Personal Account',
+        name: 'userRegistrationPage',
+        component: userRegistrationPage,
+    },
+
+    {
+        path: '/Register Business Account',
+        name: 'registerBusinessAccount',
+        component: registerBusinessAccount,
+    },
     {
         path: '/Add New Card',
         name: 'addCardPage',

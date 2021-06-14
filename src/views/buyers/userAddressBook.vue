@@ -4,23 +4,8 @@
     <div class="main-content">
       <div class="wrap-banner">
         <!-- breadcrumb -->
-        <nav class="breadcrumb-bg">
-          <div class="container no-index">
-            <div class="breadcrumb"></div>
-          </div>
-        </nav>
 
         <div class="acount head-acount container">
-          <router-link
-            to="/Add New Address"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Edit Address"
-          >
-            <button class="btn item" data-link-action="sign-in" type="submit">
-              Add new Address
-            </button></router-link
-          >
           <div class="container">
             <div id="main">
               <h1 class="title-page">Address book</h1>
@@ -95,8 +80,20 @@
                   </tr>
                 </tbody>
               </table>
+
+          <router-link
+            to="/Add New Address"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Edit Address"
+          >
+            <button class="btn item" data-link-action="sign-in" type="submit">
+              Add new Address
+            </button></router-link
+          >
             </div>
           </div>
+          
         </div>
       </div>
     </div>
