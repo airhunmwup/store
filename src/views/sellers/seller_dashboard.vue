@@ -1,6 +1,25 @@
 <template>
   <!-- main content -->
     <div id="wrapper-site">
+        <div class="row">
+    <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
+      <span class="text-left border p-1"><router-link
+        to="/orderpage"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        title="Menu"
+      >
+        <i class="fa fa-bars"></i></router-link
+      ></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
+      <span class="text-left pr-0 p-1"><router-link
+        to="/Product Listing"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        title="close"
+      >
+        <i class="fa fa-close"></i></router-link
+      ></span></div>
+        </div>
       <div id="content-wrapper">
         <div id="main">
             <div class="container">
@@ -84,147 +103,101 @@
                   <div
                     class="col-sm-8 col-lg-9 col-md-8 product-container"
                   >
-                  
-    <div id="wrapper-site">
-      <div class="container">
-        <div class="row">
-          <div
-            id="content-wrapper"
-            class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onecol"
-          >
-            <div id="main">
-              <div id="content" class="page-content">
-                <h1 class="title-page">Order History</h1>
-
-                <form method="post" class="std" id="customer-form">
-                  <fieldset>
-                    <div
-                      class="input-group col-xs-12 col-sm-12 col-md-6 col-lg-6"
-                    >
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Search"
-                        class="form-control"
-                        value=""
-                      />
-                      <button
-                        class="btn border btn-warning"
-                        type="submit"
-                        data-action="show-password"
-                        data-text-show="Show"
-                        data-text-hide="Hide"
+               
+        <div id="wrapper-site">
+            <div id="content-wrapper">
+                <section class="page-home">
+                    <div class="container">
+                    <div class="content">
+                        <div class="row pt-5 justify-content-center">
+                            <div class="col-lg-12 col-sm-12 pl-5 pt-2">
+                                    <h1 class="title-page">Create New Listing</h1>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 pl-5 pb-3 pt-2">
+                            <div id="content" class="page-content">
+                                <div class="register-form text-center ">
+                                        <div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <div class="input-group js-parent-focus">
+                                                        <select class="form-control js-child-focus js-visible-password" name="password" type="password">
+                                                            <option>Category</option>
+                                                            <option></option>
+                                                            <option></option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <input class="form-control" type="text" placeholder="List Title">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <input class="form-control col-5" min="0" type="number" placeholder="Price">
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <div class="input-group js-parent-focus">
+                                                        <input class="form-control col-5" min="1" type="number" placeholder="Quantity">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <div class="input-group js-parent-focus">
+                                                        <input class="form-control col-5" type="text" placeholder="SKU">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-lg-6 col-sm-6 pl-5 pb-3 pt-2">
+                            <div id="content" class="page-content">
+                                <div class="register-form text-center ">
+                                        <div>
+                                            <div class="form-group">
+                                                <div>
+                                                    <textarea class="form-control" rows="6" name="email" type="email" placeholder="Description"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix">
+                                            <br>
+                      <router-link
+                        to="/Upload Product Image"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Upload Product Image"
                       >
-                        Submit
-                      </button>
-                    </div>
-                    <br />
-                  </fieldset>
-                </form>
-                <div id="mywishlist">
-                  <div id="block-history" class="block-center">
-                    <table class="std table table-fixed">
-                      <tbody>
-                        <tr id="wishlist_1">
-                          <td><i>2018-06-14.4:34</i></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                            >
-                              <img src="img/product/3.jpg" alt="Product" />
-                            </a>
-                          </td>
-                          <td class="bold align_center">
-                            White chair red leather faux
-                          </td>
-                          <td class="wishlist_default text-right"></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                              ><b class="text-info">Pending</b>
-                            </a>
-                          </td>
-                          <td class="wishlist_delete btn text-center">
-                            <router-link
-                              to="/Seller Orderdetails"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="Seller Orderdetails"
-                              ><i class="fa fa-eye"> View</i></router-link
-                            >
-                          </td>
-                        </tr>
-                        <tr id="wishlist_1">
-                          <td><i>2018-06-14.4:34</i></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                            >
-                              <img src="img/product/11.jpg" alt="Product" />
-                            </a>
-                          </td>
-                          <td class="bold align_center">Lamp</td>
-                          <td class="wishlist_default text-right"></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                              ><b class="text-success">Processed</b>
-                            </a>
-                          </td>
-                          <td class="wishlist_delete btn text-center">
-                            <router-link
-                              to="/Seller Orderdetails"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="Seller Orderdetails"
-                              ><i class="fa fa-eye"> View</i></router-link
-                            >
-                          </td>
-                        </tr>
-                        <tr id="wishlist_1">
-                          <td><i>2018-06-14.4:34</i></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                            >
-                              <img src="img/product/3.jpg" alt="Product" />
-                            </a>
-                          </td>
-                          <td class="bold align_center">Bag of Rice</td>
-                          <td class="wishlist_default text-right"></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                              ><b class="text-danger">Refunded</b>
-                            </a>
-                          </td>
-                          <td class="wishlist_delete btn text-center">
-                            <router-link
-                              to="/Seller Orderdetails"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="Seller Orderdetails"
-                              ><i class="fa fa-eye"> View</i></router-link
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                </div>
-              </div>
+                                            <div>
+                                                <button class="btn-success form-control" data-link-action="sign-in" type="submit">
+                                                    NEXT
+                                                </button>
+                                            </div></router-link>
+                                        </div>
+                                </div>
+                            </div>
+                        <div class="text-left pt-3">
+                            <p class="box border text-center">
+                              <router-link
+                                to="/Login"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Login"
+                              ><i class="fa fa-question-circle"></i> Need Help?</router-link></p>
+                        </div>
+                            </div>
+                        </div>
+                     </div>
+                     </div>
+                </section>
             </div>
-          </div>
         </div>
-      </div>
-    </div>
                   </div>
 
                   <!-- end col-md-9-1 -->
@@ -233,6 +206,18 @@
             </div>
         </div>
       </div>
+
+                        <!-- breadcrumb -->
+                        <nav class="breadcrumb-bg">
+                            <div class="container no-index">
+                                <div class="breadcrumb">
+                                    <ol>
+                                        <li>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </nav>
     </div>
 </template>
         

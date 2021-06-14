@@ -1,6 +1,17 @@
 <template>
   <!-- main content -->
     <div id="wrapper-site">
+        <div class="row">
+    <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
+      <span class="text-left border p-1"><router-link
+        to="/menu"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        title="Menu"
+      >
+        <i class="fa fa-bars"></i></router-link
+      ></span></div>
+        </div>
       <div id="content-wrapper">
         <div id="main">
             <div class="container">
@@ -217,6 +228,33 @@
                         </tr>
                       </tbody>
                     </table>
+
+            <div class="row">
+            <span class="col-3"><div><button class="form-control btn-warning"><i class="fa fa-arrow-left"></i> PREV</button></div></span>
+            <span class="col-6">
+              <div class="row">
+              <div class="h6 col-2">
+                <p>1</p>
+              </div>
+              <div class="h6 col-2">
+                <p>2</p>
+              </div>
+              <div class="h6 col-2">
+                <p>3</p>
+              </div>
+              <div class="h6 col-2">
+                <p>4</p>
+              </div>
+              <div class="h6 col-2">
+                <p>5</p>
+              </div>
+              <div class="h6 col-2">
+                <p>6</p>
+              </div>
+              </div>
+            </span>
+            <span class="col-3"><div><button class="form-control btn-warning">NEXT <i class="fa fa-arrow-right"></i></button></div></span>
+            </div>
                   </div>
                 </div>
               </div>
@@ -233,6 +271,18 @@
             </div>
         </div>
       </div>
+
+                        <!-- breadcrumb -->
+                        <nav class="breadcrumb-bg">
+                            <div class="container no-index">
+                                <div class="breadcrumb">
+                                    <ol>
+                                        <li>
+                                        </li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </nav>
     </div>
 </template>
         

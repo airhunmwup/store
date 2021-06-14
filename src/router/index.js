@@ -34,6 +34,8 @@ import seller_orderdetails from '../views/sellers/seller_orderdetails.vue'
 import seller_changepassword from '../views/sellers/seller_changepassword.vue'
 import seller_accountsettings from '../views/sellers/seller_accountsettings.vue'
 import seller_supportservice from '../views/sellers/seller_supportservice.vue'
+import Dashboard from '../views/sellers/seller_dashboard.vue'
+import Seller_menu from '../views/sellers/seller_menu.vue'
 
 Vue.use(VueRouter)
 
@@ -41,6 +43,16 @@ const routes = [{
         path: '/',
         name: 'Landingpage',
         component: LandingPage,
+    },
+    {
+        path: '/Dashboard',
+        name: 'seller_dashboard',
+        component: Dashboard,
+    },
+    {
+        path: '/menu',
+        name: 'seller_dashboard',
+        component: Seller_menu,
     },
     {
         path: '/seller_dashboard',

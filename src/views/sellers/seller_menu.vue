@@ -3,9 +3,16 @@
     <div id="wrapper-site">
         <div class="row">
     <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-      </div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
-      <span class="text-left pr-0 p-1"><router-link
+      <span class="text-left border p-1"><router-link
         to="/menu"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        title="Menu"
+      >
+        <i class="fa fa-bars"></i></router-link
+      ></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
+      <span class="text-left pr-0 p-1"><router-link
+        to="/Product Listing"
         data-toggle="collapse"
         data-target=".navbar-collapse"
         title="close"
@@ -22,7 +29,6 @@
                     class="
                       sidebar-3 sidebar-collection
                       col-lg-3 col-md-3
-                      d-xs-none
                       col-sm-4
                     "
                   >
@@ -92,62 +98,6 @@
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div
-                    class="col-sm-8 col-lg-9 col-md-8 product-container"
-                  >
-                  
-    <div class="main-content">
-           <div class="wrap-banner pt-5 ">
-
-            <!-- breadcrumb -->
-
-            <div class="acount head-acount">
-                <div class="containe">
-                    <div id="main">
-                            <div id="content" class="page-content col-lg-9">
-                                <div class="register-form">
-                                    <h1 class="title-page">Change Password</h1>
-                                    <form action="#" id="customer-form" class="js-customer-form col-lg-6" method="post">
-                                        <div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <div class="input-group js-parent-focus">
-                                                        <input class="form-control js-child-focus js-visible-password" name="password" type="password" placeholder="New Password">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <div class="input-group js-parent-focus">
-                                                        <input class="form-control js-child-focus js-visible-password" name="password" type="password" placeholder="Confirm Password">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                                            <div class="form-group row">
-                                                                <span class="custom-checkbox d-inline-flex check-input">
-                                                                    <input class="check" name="newsletter" type="checkbox" value="1" checked disabled>
-                                                                    <label class="label-absolute">Password must be not less than 10 words</label>
-                                                                </span>
-                                                            </div>
-                                        <div class="clearfix">
-                                            <div>
-                                                <button class="btn-success form-control-sm" type="submit">
-                                                    Save
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-            </div>
-
-            </div>
-        </div>
                   </div>
 
                   <!-- end col-md-9-1 -->
