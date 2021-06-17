@@ -101,16 +101,14 @@
                     </div>
                   </div>
                   <div
-                    class="col-sm-8 col-lg-9 col-md-8 product-container"
+                    class="col-sm-8 col-lg-9 col-md-9 product-container"
                   >
                
         <div id="wrapper-site">
             <div id="content-wrapper">
-                <section class="page-home">
-                    <div class="container">
                     <div class="content">
                         <div class="row pt-5 justify-content-center">
-                            <div class="col-lg-12 col-sm-12 pl-5 pt-2">
+                            <div class="col-lg-12 col-sm-12 col-md-12 pl-5 pt-2">
                                     <h1 class="title-page">Create New Listing</h1>
                             </div>
                             <div class="col-lg-6 col-sm-6 pl-5 pb-3 pt-2">
@@ -194,8 +192,6 @@
                             </div>
                         </div>
                      </div>
-                     </div>
-                </section>
             </div>
         </div>
                   </div>
