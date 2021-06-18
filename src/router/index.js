@@ -36,6 +36,7 @@ import seller_accountsettings from '../views/sellers/seller_accountsettings.vue'
 import seller_supportservice from '../views/sellers/seller_supportservice.vue'
 import Dashboard from '../views/sellers/seller_dashboard.vue'
 import Seller_menu from '../views/sellers/seller_menu.vue'
+import Order_process from '../views/sellers/orderprocess.vue'
 
 Vue.use(VueRouter)
 
@@ -73,6 +74,11 @@ const routes = [{
         path: '/Seller Orderdetails',
         name: 'seller_orderdetails',
         component: seller_orderdetails,
+    },
+    {
+        path: '/Process Order',
+        name: 'Order_process',
+        component: Order_process,
     },
     {
         path: '/Seller change password',

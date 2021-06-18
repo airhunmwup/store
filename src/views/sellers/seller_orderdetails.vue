@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-    <div id="wrapper-site">
+    <div >
         <div class="row">
     <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
       <span class="text-left border p-1"><router-link
@@ -10,18 +10,24 @@
         title="Menu"
       >
         <i class="fa fa-bars"></i></router-link
+      ></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
+      <span class="text-left pr-0 p-1"><router-link
+        to="/seller_dashboard"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        title="close"
+      >
+        <i class="fa fa-close"></i></router-link
       ></span></div>
         </div>
-      <div id="content-wrapper">
         <div id="main">
-            <div class="container">
-              <div class="content">
+              <div class="p-3">
                 <div class="row">
                   <div
                     class="
                       sidebar-3 sidebar-collection
                       col-lg-3 col-md-3
-                      d-xs-none
+                      d-xs-none pl-3 pt-3
                       col-sm-4
                     "
                   >
@@ -64,7 +70,7 @@
                             to="/Seller change password"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            title="Seller changepassword"
+                            title="Change password"
                             ><i class="fa fa-lock"></i> Change
                             Password</router-link
                           >
@@ -74,7 +80,7 @@
                             to="/Seller account settings"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            title="Seller accountsettings"
+                            title="Account settings"
                             ><i class="fa fa-university"></i> Account
                             settings</router-link
                           >
@@ -84,7 +90,7 @@
                             to="/Seller support service"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            title="Seller support service"
+                            title="Support service"
                             ><i class="fa fa-headphones"></i> Support
                             ?</router-link
                           >
@@ -93,19 +99,13 @@
                     </div>
                   </div>
                   <div
-                    class="col-sm-8 col-lg-9 col-md-8 product-container"
+                    class="col-sm-12 col-lg-9 col-md-9 product-container"
                   >
-                  
-    <div id="wrapper-site">
-      <div class="container">
-        <div class="row">
-          <div
-            id="content-wrapper"
-            class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onecol"
-          >
+               
+        <div id="wrapper-site">
+
               <div id="main">
                 <h1 class="title-page">Order Details</h1>
-                <p class="box col"><b>Items (3)</b></p>
                 <table class="std table">
                   <tbody>
                     <tr>
@@ -192,52 +192,63 @@
                       </th>
                     </tr>
                     <tr>
-                      <th class="first_item box">DELIVERY METHOD</th>
-                    </tr>
-                    <tr>
                       <th class="first_item">
-                        <p class="col text">Standard Delivery</p>
-                        <p class="col text-dark">£5.99</p>
+                        <p class="col text-dark">Standard Delivery</p>
+                        <p class="col text">£5.99</p>
                       </th>
-                      <td class="btn item">
-                        <b class="fa fa-angle-right"></b>
-                      </td>
+                    </tr>
+                    <tr class="box">
+                      <th class="font-weight-bold text-dark">
+                        <p class="col text-right"><b>Total:</b> £1,300.00</p>
+                      </th>
                     </tr>
 
                   </tbody>
                 </table>
 
-                <table class="std table" id="block-history">
-                  <tbody>
-                    <tr>
-                      <td class="first_item">
-                        <p class="col text-right">Total:</p>
-                      </td>
-                      <td class="font-weight-bold text-dark">
-                        <p class="col text-left">£1,300.00</p>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
 
-            <div class="row">
-            <span class="col-6"><div><button class="form-control btn-warning"> CANCEL</button></div></span>
             
-            <span class="col-6"><div><button class="form-control text-success">PROCESS ORDER</button></div></span>
+            <div class="row pt-3">
+              <span class="col-4">
+                <router-link
+                  to="/Product Listing"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="cancel"
+                  ><div>
+                    <button class="form-control"> CANCEL</button>
+                  </div>
+                </router-link></span
+              >
+              <span class="col-4">
+              </span>
+              <span class="col-4">
+                <router-link
+                  to="/Process Order"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Process Order"
+                >
+                  <div>
+                    <button
+                      class="btn-success form-control"
+                      data-link-action="sign-in"
+                      type="submit"
+                    >
+                      PROCESS ORDER <i class="fa fa-arrow-circle-right"></i>
+                    </button>
+                  </div></router-link
+                ></span
+              >
             </div>
               </div>
-          </div>
         </div>
-      </div>
-    </div>
                   </div>
 
                   <!-- end col-md-9-1 -->
                 </div>
               </div>
-            </div>
         </div>
-      </div>
 
                         <!-- breadcrumb -->
                         <nav class="breadcrumb-bg">

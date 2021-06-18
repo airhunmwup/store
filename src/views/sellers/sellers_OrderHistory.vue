@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-    <div id="wrapper-site">
+    <div >
         <div class="row">
     <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
       <span class="text-left border p-1"><router-link
@@ -10,18 +10,24 @@
         title="Menu"
       >
         <i class="fa fa-bars"></i></router-link
+      ></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
+      <span class="text-left pr-0 p-1"><router-link
+        to="/seller_dashboard"
+        data-toggle="collapse"
+        data-target=".navbar-collapse"
+        title="close"
+      >
+        <i class="fa fa-close"></i></router-link
       ></span></div>
         </div>
-      <div id="content-wrapper">
         <div id="main">
-            <div class="container">
-              <div class="content">
+              <div class="p-3">
                 <div class="row">
                   <div
                     class="
                       sidebar-3 sidebar-collection
                       col-lg-3 col-md-3
-                      d-xs-none
+                      d-xs-none pl-3 pt-3
                       col-sm-4
                     "
                   >
@@ -64,7 +70,7 @@
                             to="/Seller change password"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            title="Seller changepassword"
+                            title="Change password"
                             ><i class="fa fa-lock"></i> Change
                             Password</router-link
                           >
@@ -74,7 +80,7 @@
                             to="/Seller account settings"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            title="Seller accountsettings"
+                            title="Account settings"
                             ><i class="fa fa-university"></i> Account
                             settings</router-link
                           >
@@ -84,7 +90,7 @@
                             to="/Seller support service"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            title="Seller support service"
+                            title="Support service"
                             ><i class="fa fa-headphones"></i> Support
                             ?</router-link
                           >
@@ -93,17 +99,10 @@
                     </div>
                   </div>
                   <div
-                    class="col-sm-8 col-lg-9 col-md-8 product-container"
+                    class="col-sm-12 col-lg-9 col-md-9 product-container"
                   >
-                  
-    <div id="wrapper-site">
-      <div class="container">
-        <div class="row">
-          <div
-            id="content-wrapper"
-            class="col-xs-12 col-sm-12 col-md-12 col-lg-12 onecol"
-          >
-            <div id="main">
+               
+        <div id="wrapper-site">
               <div id="content" class="page-content">
                 <h1 class="title-page">Order History</h1>
 
@@ -163,7 +162,7 @@
                               to="/Seller Orderdetails"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
-                              title="Seller Orderdetails"
+                              title="View Order"
                               ><i class="fa fa-eye"> View</i></router-link
                             >
                           </td>
@@ -192,7 +191,7 @@
                               to="/Seller Orderdetails"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
-                              title="Seller Orderdetails"
+                              title="View Order"
                               ><i class="fa fa-eye"> View</i></router-link
                             >
                           </td>
@@ -221,7 +220,7 @@
                               to="/Seller Orderdetails"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
-                              title="Seller Orderdetails"
+                              title="View Order"
                               ><i class="fa fa-eye"> View</i></router-link
                             >
                           </td>
@@ -258,19 +257,13 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
         </div>
-      </div>
-    </div>
                   </div>
 
                   <!-- end col-md-9-1 -->
                 </div>
               </div>
-            </div>
         </div>
-      </div>
 
                         <!-- breadcrumb -->
                         <nav class="breadcrumb-bg">

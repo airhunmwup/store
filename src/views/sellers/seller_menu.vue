@@ -3,16 +3,9 @@
     <div id="wrapper-site">
         <div class="row">
     <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-      <span class="text-left border p-1"><router-link
-        to="/menu"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        title="Menu"
-      >
-        <i class="fa fa-bars"></i></router-link
-      ></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
-      <span class="text-left pr-0 p-1"><router-link
-        to="/Product Listing"
+      <span class="text-left p-1"></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
+      <span class="text-left border border pr-0 p-1"><router-link
+        to="/seller_dashboard"
         data-toggle="collapse"
         data-target=".navbar-collapse"
         title="close"
@@ -22,23 +15,24 @@
         </div>
       <div id="content-wrapper">
         <div id="main">
-            <div class="container">
-              <div class="content">
+        </div>
+      </div>
+
+                        <!-- breadcrumb -->
+                        <nav class="breadcrumb-bg">
+                            <div class="container no-index">
+                                
                 <div class="row">
                   <div
                     class="
-                      sidebar-3 sidebar-collection
-                      col-lg-3 col-md-3
-                      col-sm-4
+                      bar-2 sidebar-collection
+                      col-lg-12 col-md-12
+                      col-sm-12
                     "
                   >
                     <!-- category menu -->
-                    <div class="sidebar-block">
                       <div class="block-content">
-                        <div class="title-block">
-                          User Business name display here
-                        </div>
-                        <div class="cateTitle hasSubCategory open level1">
+                        <div class="cateTitle h6 border-b text-dark pl-4 pt-4 hasSubCategory open level1">
                           <router-link
                             to="/seller_dashboard"
                             data-toggle="collapse"
@@ -47,7 +41,7 @@
                             ><i class="fa fa-tachometer"></i> Dashboard</router-link
                           >
                         </div>
-                        <div class="cateTitle hasSubCategory open level1">
+                        <div class="cateTitle  h6 border-b text-dark pl-4 pt-4 hasSubCategory open level1">
                           <router-link
                             to="/Product Listing"
                             data-toggle="collapse"
@@ -57,7 +51,7 @@
                             Listing</router-link
                           >
                         </div>
-                        <div class="cateTitle hasSubCategory open level1">
+                        <div class="cateTitle  h6 border-b text-dark pl-4 pt-4 hasSubCategory open level1">
                           <router-link
                             to="/Order History"
                             data-toggle="collapse"
@@ -66,7 +60,7 @@
                             ><i class="fa fa-file-o"></i> Orders</router-link
                           >
                         </div>
-                        <div class="cateTitle hasSubCategory open level1">
+                        <div class="cateTitle  h6 border-b text-dark pl-4 pt-4 hasSubCategory open level1">
                           <router-link
                             to="/Seller change password"
                             data-toggle="collapse"
@@ -76,7 +70,7 @@
                             Password</router-link
                           >
                         </div>
-                        <div class="cateTitle hasSubCategory open level1">
+                        <div class="cateTitle  h6 border-b text-dark pl-4 pt-4 hasSubCategory open level1">
                           <router-link
                             to="/Seller account settings"
                             data-toggle="collapse"
@@ -86,7 +80,7 @@
                             settings</router-link
                           >
                         </div>
-                        <div class="cateTitle hasSubCategory open level1">
+                        <div class="cateTitle  h6 text-dark pl-4 pt-4 hasSubCategory open level1">
                           <router-link
                             to="/Seller support service"
                             data-toggle="collapse"
@@ -97,25 +91,10 @@
                           >
                         </div>
                       </div>
-                    </div>
                   </div>
 
                   <!-- end col-md-9-1 -->
                 </div>
-              </div>
-            </div>
-        </div>
-      </div>
-
-                        <!-- breadcrumb -->
-                        <nav class="breadcrumb-bg">
-                            <div class="container no-index">
-                                <div class="breadcrumb">
-                                    <ol>
-                                        <li>
-                                        </li>
-                                    </ol>
-                                </div>
                             </div>
                         </nav>
     </div>
