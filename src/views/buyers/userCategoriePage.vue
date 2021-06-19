@@ -7,85 +7,96 @@
           <div id="main">
             <div class="page-home">
               <!-- breadcrumb -->
-              <nav class="breadcrumb-bg">
-                <div class="container no-index">
-                  <div class="breadcrumb">
-                    <ol></ol>
-                  </div>
-                </div>
-              </nav>
               <div class="container">
                 <div class="content">
                   <div class="row">
                     <div class="title-product col-lg-9 col-md-9">
                       <h2 class="">Featured categories</h2>
-                      <br>
+                      <br />
                       <!-- FEATURED CATEGORIES -->
                       <div class="container">
-                      <div class="row content col-12">
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                        >
-                          <div class="content">
-                            <p>
-                              <img
-                                src="img/product/6.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                            </p>
-                            <p class="text-center h4 item text-dark">Category name</p>
+                        <div class="row content col-12">
+                          <div
+                            class="
+                              thumbnail-container
+                              col-6 col-sm-6 col-md-4 col-lg-3
+                            "
+                          >
+                            <div class="content shadow">
+                              <p>
+                                <img
+                                  src="img/product/6.jpg"
+                                  class="border"
+                                  alt="Product"
+                                />
+                              </p>
+                              <p class="text-center h4 item text-dark">
+                                Category name
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                        >
-                          <div class="content">
-                            <p>
-                              <img
-                                src="img/product/4.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                            </p>
-                            <p class="text-center h4 item text-dark">Category name</p>
+                          <div
+                            class="
+                              thumbnail-container
+                              col-6 col-sm-6 col-md-4 col-lg-3
+                            "
+                          >
+                            <div class="content shadow">
+                              <p>
+                                <img
+                                  src="img/product/4.jpg"
+                                  class="border"
+                                  alt="Product"
+                                />
+                              </p>
+                              <p class="text-center h4 item text-dark">
+                                Category name
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                        >
-                          <div class="content">
-                            <p>
-                              <img
-                                src="img/product/9.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                            </p>
-                            <p class="text-center h4 item text-dark">Category name</p>
+                          <div
+                            class="
+                              thumbnail-container
+                              col-6 col-sm-6 col-md-4 col-lg-3
+                            "
+                          >
+                            <div class="content shadow">
+                              <p>
+                                <img
+                                  src="img/product/9.jpg"
+                                  class="border"
+                                  alt="Product"
+                                />
+                              </p>
+                              <p class="text-center h4 item text-dark">
+                                Category name
+                              </p>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-3"
-                        >
-                          <div class="content">
-                            <p>
-                              <img
-                                src="img/product/10.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                            </p>
-                            <p class="text-center h4 item text-dark">Category name</p>
+                          <div
+                            class="
+                              thumbnail-container
+                              col-6 col-sm-6 col-md-4 col-lg-3
+                            "
+                          >
+                            <div class="content shadow">
+                              <p>
+                                <img
+                                  src="img/product/10.jpg"
+                                  class="border"
+                                  alt="Product"
+                                />
+                              </p>
+                              <p class="text-center h4 item text-dark">
+                                Category name
+                              </p>
+                            </div>
                           </div>
                         </div>
                       </div>
-                      </div>
-<hr>
+                      <hr />
                       <!-- spot light'any random product under the selected category -->
-                      <div
-                        class=""
-                      >
+                      <div class="">
                         <h2>SpotLight</h2>
                         <div class="js-product-list-top firt nav-top">
                           <div class="d-flex justify-content-around row">
@@ -93,128 +104,222 @@
                               <div
                                 class="d-flex sort-by-row justify-content-end"
                               >
-                                <div class="products-sort-order dropdown">
-                                </div>
+                                <div class="products-sort-order dropdown"></div>
                               </div>
                             </div>
                           </div>
                         </div>
-                        <br>
-                      <div class="row col-12">
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
-                        >
-                          <div class="content">
+                        <br />
+                        <div class="row col-12">
+                          <div
+                            class="
+                              thumbnail-container
+                              p-3
+                              col-6 col-sm-6 col-md-4 col-lg-4
+                            "
+                          >
+                            <div class="content">
                               <img
                                 src="img/product/4.jpg"
                                 class="shadow"
                                 alt="Product"
                               />
-                            <p class="h4 text-dark">Product name
-                            </p>
-                            <p class="h4 text-dark"><b>£12.00</b>
-                            </p>
+                              <div
+                                class="
+                                  content
+                                  p-3
+                                  font-weight-bold
+                                  tex-2
+                                  border-r-2 border-l-2 border-b-2
+                                "
+                              >
+                                <p class="text-dark text-4">Product name</p>
+                                <p class="text-dark"><b>£12.00</b></p>
+                                <hr />
+                                <p class="text">location</p>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
-                        >
-                          <div class="content">
+                          <div
+                            class="
+                              thumbnail-container
+                              p-3
+                              col-6 col-sm-6 col-md-4 col-lg-4
+                            "
+                          >
+                            <div class="content">
                               <img
                                 src="img/product/4.jpg"
                                 class="shadow"
                                 alt="Product"
                               />
-                            <p class="h4 text-dark">Product name
-                            </p>
-                            <p class="h4 text-dark"><b>£12.00</b>
-                            </p>
+                              <div
+                                class="
+                                  content
+                                  p-3
+                                  font-weight-bold
+                                  tex-2
+                                  border-r-2 border-l-2 border-b-2
+                                "
+                              >
+                                <p class="text-dark text-4">Product name</p>
+                                <p class="text-dark"><b>£12.00</b></p>
+                                <hr />
+                                <p class="text">location</p>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
-                        >
-                          <div class="content">
+                          <div
+                            class="
+                              thumbnail-container
+                              p-3
+                              col-6 col-sm-6 col-md-4 col-lg-4
+                            "
+                          >
+                            <div class="content">
                               <img
                                 src="img/product/4.jpg"
                                 class="shadow"
                                 alt="Product"
                               />
-                            <p class="h4 text-dark">Product name
-                            </p>
-                            <p class="h4 text-dark"><b>£12.00</b>
-                            </p>
+                              <div
+                                class="
+                                  content
+                                  p-3
+                                  font-weight-bold
+                                  tex-2
+                                  border-r-2 border-l-2 border-b-2
+                                "
+                              >
+                                <p class="text-dark text-4">Product name</p>
+                                <p class="text-dark"><b>£12.00</b></p>
+                                <hr />
+                                <p class="text">location</p>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
-                        >
-                          <div class="content">
+                          <div
+                            class="
+                              thumbnail-container
+                              p-3
+                              col-6 col-sm-6 col-md-4 col-lg-4
+                            "
+                          >
+                            <div class="content">
                               <img
-                                src="img/product/1.jpg"
+                                src="img/product/4.jpg"
                                 class="shadow"
                                 alt="Product"
                               />
-                            <p class="h4 text-dark">Product name
-                            </p>
-                            <p class="h4 text-dark"><b>£12.00</b>
-                            </p>
+                              <div
+                                class="
+                                  content
+                                  p-3
+                                  font-weight-bold
+                                  tex-2
+                                  border-r-2 border-l-2 border-b-2
+                                "
+                              >
+                                <p class="text-dark text-4">Product name</p>
+                                <p class="text-dark"><b>£12.00</b></p>
+                                <hr />
+                                <p class="text">location</p>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
-                        >
-                          <div class="content">
+                          <div
+                            class="
+                              thumbnail-container
+                              p-3
+                              col-6 col-sm-6 col-md-4 col-lg-4
+                            "
+                          >
+                            <div class="content">
                               <img
-                                src="img/product/5.jpg"
+                                src="img/product/4.jpg"
                                 class="shadow"
                                 alt="Product"
                               />
-                            <p class="h4 text-dark">Product name
-                            </p>
-                            <p class="h4 text-dark"><b>£12.00</b>
-                            </p>
+                              <div
+                                class="
+                                  content
+                                  p-3
+                                  font-weight-bold
+                                  tex-2
+                                  border-r-2 border-l-2 border-b-2
+                                "
+                              >
+                                <p class="text-dark text-4">Product name</p>
+                                <p class="text-dark"><b>£12.00</b></p>
+                                <hr />
+                                <p class="text">location</p>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
-                        >
-                          <div class="content">
+                          <div
+                            class="
+                              thumbnail-container
+                              p-3
+                              col-6 col-sm-6 col-md-4 col-lg-4
+                            "
+                          >
+                            <div class="content">
                               <img
-                                src="img/product/7.jpg"
+                                src="img/product/4.jpg"
                                 class="shadow"
                                 alt="Product"
                               />
-                            <p class="h4 text-dark">Product name
-                            </p>
-                            <p class="h4 text-dark"><b>£12.00</b>
-                            </p>
+                              <div
+                                class="
+                                  content
+                                  p-3
+                                  font-weight-bold
+                                  tex-2
+                                  border-r-2 border-l-2 border-b-2
+                                "
+                              >
+                                <p class="text-dark text-4">Product name</p>
+                                <p class="text-dark"><b>£12.00</b></p>
+                                <hr />
+                                <p class="text">location</p>
+                              </div>
+                            </div>
                           </div>
-                        </div>
-                        <div
-                          class="thumbnail-container col-6 col-sm-6 col-md-4 col-lg-4"
-                        >
-                          <div class="content">
+                          <div
+                            class="
+                              thumbnail-container
+                              p-3
+                              col-6 col-sm-6 col-md-4 col-lg-4
+                            "
+                          >
+                            <div class="content">
                               <img
-                                src="img/product/8.jpg"
+                                src="img/product/4.jpg"
                                 class="shadow"
                                 alt="Product"
                               />
-                            <p class="h4 text-dark">Product name
-                            </p>
-                            <p class="h4 text-dark"><b>£12.00</b>
-                            </p>
+                              <div
+                                class="
+                                  content
+                                  p-3
+                                  font-weight-bold
+                                  tex-2
+                                  border-r-2 border-l-2 border-b-2
+                                "
+                              >
+                                <p class="text-dark text-4">Product name</p>
+                                <p class="text-dark"><b>£12.00</b></p>
+                                <hr />
+                                <p class="text">location</p>
+                              </div>
+                            </div>
                           </div>
                         </div>
-                      </div>
-
                       </div>
                     </div>
 
                     <!-- Side bar Cataloge starts here-->
-                    <div
-                      class="sidebar-3 sidebar-collection col-lg-3 col-md-3"
-                    >
+                    <div class="sidebar-3 sidebar-collection col-lg-3 col-md-3">
                       <!-- category menu -->
                       <div class="sidebar-block">
                         <div class="title-block">Shop by Categories</div>

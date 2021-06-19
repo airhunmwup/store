@@ -18,7 +18,7 @@
 
           <div class="col-sm-12 col-lg-12 col-md-12">
             <div class="main-product-detail">
-              <div class="product-single row">
+              <div class=" shadow p-3 product-single row">
                 <div class="product-detail col-xs-12 col-md-5 col-sm-5">
                   <div class="page-content" id="content">
                     <div class="images-container">
@@ -111,27 +111,6 @@
                                 class="input-group form-control"
                               />
                             </div>
-                            <span class="add">
-                              <a class="addToWishlist" href="#">
-                                <i class="fa fa-heart" aria-hidden="true"></i> 
-                              </a>
-                            </span>
-                            <span class="justify-content-end"
-                              ><router-link
-                                to="/Checkout"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Home"
-                              >
-                                <button
-                                  class="col-lg-3 col-md-3 col-sm-12 btn btn-warning form-control add-to-cart"
-                                  data-button-action="add-to-cart"
-                                  type="submit"
-                                >
-                                  Buy now
-                                </button></router-link
-                              >
-                            </span>
                           </div>
                         </div>
                       </div>
@@ -149,8 +128,8 @@
                           <span>Message seller</span>
                         </a>
                         <a href="#" class="print">
-                          <i class="zmdi zmdi-save"></i>
-                          <span>save</span>
+                          <i class="fa fa-heart"></i>
+                          <span>add to wishlist</span>
                         </a>
                       </div>
                     </div>
@@ -168,6 +147,28 @@
                         </div>
                       </div>
                     </div>
+
+                            <span class="justify-content-end"
+                              ><router-link
+                                to="/Checkout"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Home"
+                              >
+                                <button
+                                  class="
+                                    col-lg-3 col-md-3 col-sm-12
+                                    btn btn-warning
+                                    form-control
+                                    add-to-cart
+                                  "
+                                  data-button-action="add-to-cart"
+                                  type="submit"
+                                >
+                                  Buy now
+                                </button></router-link
+                              >
+                            </span>
                     <div class="content">
                       <p>
                         SKU :
@@ -191,27 +192,12 @@
                           <a href="#">autumn</a>
                         </span>
                       </p>
-                      <p>
-                        Payment methods:
-                        <span class="content2">
-                          <image src="#" class="" />
-                        </span>
-                      </p>
-                      <p>
-                        tags :
-                        <span class="content2">
-                          <a href="#">Jacket</a>, <a href="#">Overcoat</a>,
-                          <a href="#">Luxury</a>, <a href="#">men</a>,
-                          <a href="#">summer</a>,
-                          <a href="#">autumn</a>
-                        </span>
-                      </p>
                     </div>
                   </div>
                 </div>
               </div>
 
-              <div class="review">
+              <div class="review p-5">
                 <ul class="nav nav-tabs">
                   <li class="active">
                     <a data-toggle="tab" href="#description" class="active show"
@@ -402,14 +388,20 @@
                       <fieldset class="spr-form-contact">
                         <div class="spr-form-contact-name">
                           <input
-                            class="spr-form-input spr-form-input-text form-control"
+                            class="
+                              spr-form-input spr-form-input-text
+                              form-control
+                            "
                             value=""
                             placeholder="Enter your name"
                           />
                         </div>
                         <div class="spr-form-contact-email">
                           <input
-                            class="spr-form-input spr-form-input-email form-control"
+                            class="
+                              spr-form-input spr-form-input-email
+                              form-control
+                            "
                             value=""
                             placeholder="Enter your email"
                           />
@@ -458,107 +450,8 @@
             </div>
           </div>
         </div>
-
       </div>
 
-        <!-- Related Products -->
-        <div class="container">
-          <div class="content">
-            <div class="title-product col-12">
-              <br />
-              <div class="box col-12">
-                <h2 class="">Related Products</h2>
-              </div>
-              <br />
-              <div class="row product-container">
-                <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-                  <router-link
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="">
-                      <img
-                        src="img/product/4.jpg"
-                        class="border"
-                        alt="Product"
-                      />
-                      <p class="text-dark">Product name</p>
-                      <p class="text-dark"><b>£12.00</b></p>
-                      <p class="text-dark">location</p>
-                    </div></router-link
-                  >
-                </div>
-                <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-                  <router-link
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="">
-                      <img
-                        src="img/product/4.jpg"
-                        class="border"
-                        alt="Product"
-                      />
-                      <p class="text-dark">Product name</p>
-                      <p class="text-dark"><b>£12.00</b></p>
-                      <p class="text-dark">location</p>
-                    </div></router-link
-                  >
-                </div>
-                <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-                  <router-link
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="">
-                      <img
-                        src="img/product/4.jpg"
-                        class="border"
-                        alt="Product"
-                      />
-                      <p class="text-dark">Product name</p>
-                      <p class="text-dark"><b>£12.00</b></p>
-                      <p class="text-dark">location</p>
-                    </div></router-link
-                  >
-                </div>
-                <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-                  <router-link
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="">
-                      <img
-                        src="img/product/1.jpg"
-                        class="border"
-                        alt="Product"
-                      />
-                      <p class="text-dark">Product name</p>
-                      <p class="text-dark"><b>£12.00</b></p>
-                      <p class="text-dark">location</p>
-                    </div></router-link
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
     </div>
   </div>
 </template>

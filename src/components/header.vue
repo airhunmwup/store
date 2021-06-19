@@ -236,6 +236,7 @@
                   <img class="img-fluid" src="img/home/logo.png" alt="logo" />
                 </a>
               </div>
+              
             </div>
 
             <!-- search-->
