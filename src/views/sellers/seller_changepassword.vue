@@ -13,23 +13,12 @@
             <i class="fa fa-bars"></i></router-link
         ></span>
       </div>
-      <div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
-        <span class="text-left pr-0 p-1"
-          ><router-link
-            to="/seller_dashboard"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="close"
-          >
-            <i class="fa fa-close"></i></router-link
-        ></span>
-      </div>
     </div>
     <div id="main">
       <div class="p-3">
         <div class="row">
           <div
-            class="
+            class="shadow-lg 
               sidebar-3 sidebar-collection
               col-lg-3 col-md-3
               d-xs-none
@@ -118,8 +107,7 @@
                           <div>
                             <div class="input-group js-parent-focus">
                               <input
-                                class="
-                                  col-8
+                                class="col-6
                                   form-control
                                   js-child-focus js-visible-password
                                 "
@@ -134,8 +122,7 @@
                           <div>
                             <div class="input-group js-parent-focus">
                               <input
-                                class="
-                                  col-8
+                                class="col-6
                                   form-control
                                   js-child-focus js-visible-password
                                 "
@@ -165,10 +152,11 @@
                       <div class="clearfix">
                         <div>
                           <button
-                            class="btn-success form-control-lg"
-                            type="submit"
+                      class="btn-success col-3 form-control"
+                      data-link-action="sign-in"
+                      type="submit"
                           >
-                            Save
+                            SAVE
                           </button>
                         </div>
                       </div>

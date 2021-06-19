@@ -10,21 +10,13 @@
         title="Menu"
       >
         <i class="fa fa-bars"></i></router-link
-      ></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
-      <span class="text-left pr-0 p-1"><router-link
-        to="/seller_dashboard"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        title="close"
-      >
-        <i class="fa fa-close"></i></router-link
       ></span></div>
         </div>
         <div id="main">
               <div class="p-3">
                 <div class="row">
                   <div
-                    class="
+                    class="shadow-lg  
                       sidebar-3 sidebar-collection
                       col-lg-3 col-md-3
                       d-xs-none pl-3 pt-3
@@ -104,8 +96,7 @@
                
         <div id="wrapper-site">
             <div id="main">
-              <div id="content" class="page-content">
-                <hr />
+              <div id="content" class="page-content  pt-5">
                 <div id="mywishlist">
                   <h1 class="title-page">Product Listing</h1>
                   <form method="post" class="std" id="customer-form">
@@ -135,7 +126,7 @@
                     </fieldset>
                   </form>
                   <div id="block-history" class="block-center">
-                    <table class="std table table-fixed">
+                    <table class="shadow std table table-fixed">
                       <tbody>
                         <tr class="text-dark font-weight-bold text-sm" id="wishlist_1">
                           <td></td>
@@ -165,7 +156,7 @@
                               href="javascript:;"
                               onclick="javascript:WishlistManage('block-order-detail', '1');"
                             >
-                              <img src="img/product/7.jpg" alt="Product" />
+                              <img src="img/product/7.jpg" class="shadow" alt="Product" />
                             </a>
                           </td>
                           <td class="bold align_center">Bag of Rice</td>
@@ -199,7 +190,7 @@
                               href="javascript:;"
                               onclick="javascript:WishlistManage('block-order-detail', '1');"
                             >
-                              <img src="img/product/7.jpg" alt="Product" />
+                              <img src="img/product/7.jpg" class="shadow" alt="Product" />
                             </a>
                           </td>
                           <td class="bold align_center">Bag of Rice</td>
@@ -233,7 +224,7 @@
                               href="javascript:;"
                               onclick="javascript:WishlistManage('block-order-detail', '1');"
                             >
-                              <img src="img/product/9.jpg" alt="Product" />
+                              <img src="img/product/9.jpg" class="shadow" alt="Product" />
                             </a>
                           </td>
                           <td class="bold align_center">Bag of Rice</td>

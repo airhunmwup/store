@@ -10,21 +10,13 @@
         title="Menu"
       >
         <i class="fa fa-bars"></i></router-link
-      ></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
-      <span class="text-left pr-0 p-1"><router-link
-        to="/seller_dashboard"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        title="close"
-      >
-        <i class="fa fa-close"></i></router-link
       ></span></div>
         </div>
         <div id="main">
               <div class="p-3">
                 <div class="row">
                   <div
-                    class="
+                    class="shadow-lg
                       sidebar-3 sidebar-collection
                       col-lg-3 col-md-3
                       d-xs-none pl-3 pt-3
@@ -104,7 +96,7 @@
                
         <div id="wrapper-site">
 
-              <div id="main">
+              <div id="main" class=" pt-5">
                 <h1 class="title-page">Order Details</h1>
                 <table class="std table">
                   <tbody>
@@ -114,7 +106,7 @@
                           <b class="fa fa-truck"></b> Order No:
                             <span class="text-small"> 567328996</span>
                         </p>
-                <p class="col text-dark">Status:<b class="col text-danger">Pending..</b></p>
+                <p class="text-dark">Status:<b class="text-danger"> Pending...</b></p>
                         <p class="text-dark">
                           <small
                             ><b class="fa fa-calendar-o"></b> Order date:
@@ -126,7 +118,7 @@
                     <tr>
                       <th class="first_item">
                         <div class="row content col-12">
-                          <span class=" border p-2 col-6 col-sm-6 col-md-4 col-lg-3">
+                          <span class="shadow p-2 col-6 col-sm-6 col-md-4 col-lg-3">
                             <img
                               src="img/product/11.jpg"
                               class=""
@@ -136,7 +128,7 @@
                             <p><span class="text-small"> Basket brown big</span></p>
                             <p><span class="text-small"> £12</span></p>
                           </span>
-                          <span class=" border p-2 col-6 col-sm-6 col-md-4 col-lg-3">
+                          <span class="shadow p-2 col-6 col-sm-6 col-md-4 col-lg-3">
                             <img
                               src="img/product/3.jpg"
                               class=""
@@ -146,7 +138,7 @@
                             <p><span class="text-small"> Basket brown big</span></p>
                             <p><span class="text-small"> £12</span></p>
                           </span>
-                          <span class=" border p-2 col-6 col-sm-6 col-md-4 col-lg-3">
+                          <span class="shadow p-2 col-6 col-sm-6 col-md-4 col-lg-3">
                             <img
                               src="img/product/5.jpg"
                               class=""
@@ -156,7 +148,7 @@
                             <p><span class="text-small"> Basket brown big</span></p>
                             <p><span class="text-small"> £12</span></p>
                           </span>
-                          <span class=" border p-2 col-6 col-sm-6 col-md-4 col-lg-3">
+                          <span class="shadow p-2 col-6 col-sm-6 col-md-4 col-lg-3">
                             <img
                               src="img/product/7.jpg"
                               class=""
@@ -166,7 +158,7 @@
                             <p><span class="text-small"> Basket brown big</span></p>
                             <p><span class="text-small"> £12</span></p>
                           </span>
-                          <span class=" border p-2 col-6 col-sm-6 col-md-4 col-lg-3">
+                          <span class="shadow p-2 col-6 col-sm-6 col-md-4 col-lg-3">
                             <img
                               src="img/product/1.jpg"
                               class=""
@@ -235,7 +227,7 @@
                       data-link-action="sign-in"
                       type="submit"
                     >
-                      PROCESS ORDER <i class="fa fa-arrow-circle-right"></i>
+                      PROCESS ORDER
                     </button>
                   </div></router-link
                 ></span

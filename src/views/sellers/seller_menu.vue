@@ -24,7 +24,7 @@
                                 
                 <div class="row">
                   <div
-                    class="
+                    class="shadow-lg
                       bar-2 sidebar-collection
                       col-lg-12 col-md-12
                       col-sm-12
@@ -65,7 +65,7 @@
                             to="/Seller change password"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            title="Seller changepassword"
+                            title="Change password"
                             ><i class="fa fa-lock"></i> Change
                             Password</router-link
                           >
@@ -75,7 +75,7 @@
                             to="/Seller account settings"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            title="Seller accountsettings"
+                            title="Account settings"
                             ><i class="fa fa-university"></i> Account
                             settings</router-link
                           >
@@ -85,7 +85,7 @@
                             to="/Seller support service"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            title="Seller support service"
+                            title="Support service"
                             ><i class="fa fa-headphones"></i> Support
                             ?</router-link
                           >

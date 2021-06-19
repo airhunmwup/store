@@ -30,7 +30,7 @@
                             <p>
                               <img
                                 src="img/product/6.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             </p>
@@ -44,7 +44,7 @@
                             <p>
                               <img
                                 src="img/product/4.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             </p>
@@ -58,7 +58,7 @@
                             <p>
                               <img
                                 src="img/product/9.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             </p>
@@ -72,7 +72,7 @@
                             <p>
                               <img
                                 src="img/product/10.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             </p>
@@ -107,7 +107,7 @@
                           <div class="content">
                               <img
                                 src="img/product/4.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             <p class="h4 text-dark">Product name
@@ -122,7 +122,7 @@
                           <div class="content">
                               <img
                                 src="img/product/4.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             <p class="h4 text-dark">Product name
@@ -137,7 +137,7 @@
                           <div class="content">
                               <img
                                 src="img/product/4.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             <p class="h4 text-dark">Product name
@@ -152,7 +152,7 @@
                           <div class="content">
                               <img
                                 src="img/product/1.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             <p class="h4 text-dark">Product name
@@ -167,7 +167,7 @@
                           <div class="content">
                               <img
                                 src="img/product/5.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             <p class="h4 text-dark">Product name
@@ -182,7 +182,7 @@
                           <div class="content">
                               <img
                                 src="img/product/7.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             <p class="h4 text-dark">Product name
@@ -197,7 +197,7 @@
                           <div class="content">
                               <img
                                 src="img/product/8.jpg"
-                                class="border"
+                                class="shadow"
                                 alt="Product"
                               />
                             <p class="h4 text-dark">Product name

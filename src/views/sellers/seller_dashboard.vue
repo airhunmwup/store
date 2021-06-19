@@ -10,21 +10,13 @@
         title="Menu"
       >
         <i class="fa fa-bars"></i></router-link
-      ></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
-      <span class="text-left pr-0 p-1"><router-link
-        to="/seller_dashboard"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        title="close"
-      >
-        <i class="fa fa-close"></i></router-link
       ></span></div>
         </div>
         <div id="main">
               <div class="p-3">
                 <div class="row">
                   <div
-                    class="
+                    class="shadow-lg 
                       sidebar-3 sidebar-collection
                       col-lg-3 col-md-3
                       d-xs-none pl-3 pt-3
@@ -104,6 +96,203 @@
                
         <div id="wrapper-site">
           
+                <div class="row shadow">
+                  <div
+                    class="
+                      sidebar-3 sidebar-collection
+                      col-lg-4 col-md-4
+                      pl-3 pt-3 pr-3
+                      col-sm-4
+                    "
+                  >
+                    <!-- category menu -->
+                    <div class="border shadow border-dark sidebar-block">
+                      <div class="block-content">
+                        <div class="p-3">
+                          <p class="text-success">Total Sales</p>
+                         <p class="font-weight-bold text-dark h5"> £1,430.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div
+                    class="
+                      sidebar-3 sidebar-collection
+                      col-lg-4 col-md-4
+                      pl-3 pt-3
+                      col-sm-4
+                    "
+                  >
+                    <!-- category menu -->
+                    <div class="border shadow border-dark sidebar-block">
+                      <div class="block-content">
+                        <div class="p-3">
+                          <p class="text-success">Total Day Sales</p>
+                         <p class="font-weight-bold text-dark h5"> £1,430.00</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+                  <div
+                    class="
+                      sidebar-3 sidebar-collection
+                      col-lg-4 col-md-4
+                      pl-3 pt-3
+                      col-sm-4 col-xs-4
+                    "
+                  >
+                    <!-- category menu -->
+                    <div class="border shadow border-dark sidebar-block">
+                      <div class="block-content">
+                        <div class="p-3">
+                          <p class="text-danger">Pending Orders</p>
+                         <p class="font-weight-bold text-dark h5"> 143</p>
+                        </div>
+                      </div>
+                    </div>
+                    
+                  </div>
+
+                  <!-- end col-md-9-1 -->
+                </div>
+
+                  <div
+                    class="col-sm-12 col-lg-12 col-md-12 product-container"
+                  >
+               
+        <div id="wrapper-site">
+              <div id="content" class="page-content">
+                <p class="text h6 font-weight-bold text-dark p-3">Recent Activity</p>
+
+                <div id="mywishlist">
+                  <div id="block-history" class="block-center">
+                    <table class="std table table-fixed">
+                      <tbody>
+                        <tr id="wishlist_1">
+                          <td><i>2018-06-14.4:34</i></td>
+                          <td>
+                            <a
+                              href="javascript:;"
+                              onclick="javascript:WishlistManage('block-order-detail', '1');"
+                            >
+                              <img src="img/product/3.jpg" class="shadow" alt="Product" />
+                            </a>
+                          </td>
+                          <td class="bold align_center">
+                            White chair red leather faux
+                          </td>
+                          <td class="wishlist_default text-right"></td>
+                          <td>
+                            <a
+                              href="javascript:;"
+                              onclick="javascript:WishlistManage('block-order-detail', '1');"
+                              ><b class="text-info">Pending</b>
+                            </a>
+                          </td>
+                          <td class="wishlist_delete btn text-center">
+                            <router-link
+                              to="/Seller Orderdetails"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="View Order"
+                              ><i class="fa fa-eye"> View</i></router-link
+                            >
+                          </td>
+                        </tr>
+                        <tr id="wishlist_1">
+                          <td><i>2018-06-14.4:34</i></td>
+                          <td>
+                            <a
+                              href="javascript:;"
+                              onclick="javascript:WishlistManage('block-order-detail', '1');"
+                            >
+                              <img src="img/product/11.jpg" class="shadow" alt="Product" />
+                            </a>
+                          </td>
+                          <td class="bold align_center">Lamp</td>
+                          <td class="wishlist_default text-right"></td>
+                          <td>
+                            <a
+                              href="javascript:;"
+                              onclick="javascript:WishlistManage('block-order-detail', '1');"
+                              ><b class="text-success">Processed</b>
+                            </a>
+                          </td>
+                          <td class="wishlist_delete btn text-center">
+                            <router-link
+                              to="/Seller Orderdetails"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="View Order"
+                              ><i class="fa fa-eye"> View</i></router-link
+                            >
+                          </td>
+                        </tr>
+                        <tr id="wishlist_1">
+                          <td><i>2018-06-14.4:34</i></td>
+                          <td>
+                            <a
+                              href="javascript:;"
+                              onclick="javascript:WishlistManage('block-order-detail', '1');"
+                            >
+                              <img src="img/product/3.jpg" class="shadow" alt="Product" />
+                            </a>
+                          </td>
+                          <td class="bold align_center">Bag of Rice</td>
+                          <td class="wishlist_default text-right"></td>
+                          <td>
+                            <a
+                              href="javascript:;"
+                              onclick="javascript:WishlistManage('block-order-detail', '1');"
+                              ><b class="text-danger">Refunded</b>
+                            </a>
+                          </td>
+                          <td class="wishlist_delete btn text-center">
+                            <router-link
+                              to="/Seller Orderdetails"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="View Order"
+                              ><i class="fa fa-eye"> View</i></router-link
+                            >
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+
+            <div class="row">
+            <span class="col-3"><div><button class="form-control btn-warning"><i class="fa fa-arrow-left"></i> PREV</button></div></span>
+            <span class="col-6">
+              <div class="row">
+              <div class="h6 col-2">
+                <p>1</p>
+              </div>
+              <div class="h6 col-2">
+                <p>2</p>
+              </div>
+              <div class="h6 col-2">
+                <p>3</p>
+              </div>
+              <div class="h6 col-2">
+                <p>4</p>
+              </div>
+              <div class="h6 col-2">
+                <p>5</p>
+              </div>
+              <div class="h6 col-2">
+                <p>6</p>
+              </div>
+              </div>
+            </span>
+            <span class="col-3"><div><button class="form-control btn-warning">NEXT <i class="fa fa-arrow-right"></i></button></div></span>
+            </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+                  </div>
         </div>
                   </div>
 

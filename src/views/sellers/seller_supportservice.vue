@@ -29,7 +29,7 @@
       <div class="p-3">
         <div class="row">
                   <div
-                    class="
+                    class="shadow-lg 
                       sidebar-3 sidebar-collection
                       col-lg-3 col-md-3
                       d-xs-none pl-3 pt-3

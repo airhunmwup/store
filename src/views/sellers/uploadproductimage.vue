@@ -31,7 +31,7 @@
                   data-target=".navbar-collapse"
                   title="back"
                   ><div>
-                    <button class="form-control">Cancel</button>
+                    <button class="form-control">CANCEL</button>
                   </div>
                 </router-link></span
               >
@@ -50,7 +50,7 @@
                       data-link-action="sign-in"
                       type="submit"
                     >
-                      <i class="fa fa-upload"></i> Upload
+                      <i class="fa fa-upload"></i> UPLOAD
                     </button>
                   </div></router-link
                 ></span

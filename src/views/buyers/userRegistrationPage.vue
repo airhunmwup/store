@@ -23,20 +23,20 @@
                                         <div class="clearfix p-3 justify-content-center">
                                 <p class="text-dark pb-3">Continue with:</p>
                                             <span class="p-2">
-                                                <button class="p-4  border btn-primary" data-link-action="sign-in" type="submit">
-                                                   <i class="text-large fa fa-facebook"></i> 
+                                                <button class="p-4 shadow  border btn-info" data-link-action="sign-in" type="submit">
+                                                   <i class="text-lg fa fa-facebook"></i> 
                                                 </button>
                                             </span>
 
                                             <span class="p-2">
-                                                <button class="p-4 border btn-danger" data-link-action="sign-in" type="submit">
-                                                    <i class="text-large fa fa-google"></i> 
+                                                <button class="p-4 shadow-xl border btn-danger" data-link-action="sign-in" type="submit">
+                                                    <i class="text-lg fa fa-google"></i> 
                                                 </button>
                                             </span>
                                         </div>
                                     <hr>
                             </div>
-                            <div class="col-lg-5 col-sm-6 pl-5 pb-3 pt-2 justify-content-end">
+                            <div class="col-lg-5 col-sm-6 pl-5 pb-3 pt-4 justify-content-end">
                                 
                             <div id="content" class="page-content">
                                 <div class="register-form text-center">
@@ -96,7 +96,7 @@
                                         </div>
                                         <div class="clearfix">
                                             <div>
-                                                <button class="btn-success form-control" data-link-action="sign-in" type="submit">
+                                                <button class="text-success border-success form-control" data-link-action="sign-in" type="submit">
                                                     Create Account
                                                 </button>
                                             </div>

@@ -15,7 +15,7 @@
           data-target=".navbar-collapse"
           title="Home"
         >
-          <li class="item btn text-dark">Categories 1</li></router-link
+          <li class="item shadow text-dark">Categories 1</li></router-link
         >
 
         <router-link
@@ -23,7 +23,7 @@
           data-toggle="collapse"
           data-target=".navbar-collapse"
           title="Home"
-          ><li class="item btn text-dark">Categories 2</li></router-link
+          ><li class="item shadow text-dark">Categories 2</li></router-link
         >
         <router-link
           to="/categorie page"
@@ -31,7 +31,7 @@
           data-target=".navbar-collapse"
           title="Home"
         >
-          <li class="item btn text-dark">Categories 3</li></router-link
+          <li class="item shadow text-dark">Categories 3</li></router-link
         >
         <router-link
           to="/categorie page"
@@ -39,7 +39,7 @@
           data-target=".navbar-collapse"
           title="Home"
         >
-          <li class="item btn text-dark">Categories 4</li></router-link
+          <li class="item shadow text-dark">Categories 4</li></router-link
         >
         <router-link
           to="/categorie page"
@@ -47,7 +47,7 @@
           data-target=".navbar-collapse"
           title="Home"
         >
-          <li class="item btn text-dark">Categories 5</li></router-link
+          <li class="item shadow text-dark">Categories 5</li></router-link
         >
 
         <router-link
@@ -56,7 +56,7 @@
           data-target=".navbar-collapse"
           title="Home"
         >
-          <li class="item btn text-dark">Categories 1</li></router-link
+          <li class="item shadow text-dark">Categories 1</li></router-link
         >
         <router-link
           to="/categorie page"
@@ -64,7 +64,7 @@
           data-target=".navbar-collapse"
           title="Home"
         >
-          <li class="item btn text-dark">Categories 2</li></router-link
+          <li class="item shadow text-dark">Categories 2</li></router-link
         >
       </ul>
     </div>
@@ -114,7 +114,7 @@
               <br />
               <div class="row product-container  col-lg-12 col-md-12 col-sm-12">
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -122,14 +122,14 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/4.jpg" class="border" alt="Product" />
+                    <img src="img/product/4.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -137,14 +137,14 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/4.jpg" class="border" alt="Product" />
+                    <img src="img/product/4.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -152,14 +152,14 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/4.jpg" class="border" alt="Product" />
+                    <img src="img/product/4.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -167,7 +167,7 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/1.jpg" class="border" alt="Product" />
+                    <img src="img/product/1.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
@@ -194,7 +194,7 @@
               <br />
               <div class="row product-container">
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -202,14 +202,14 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/4.jpg" class="border" alt="Product" />
+                    <img src="img/product/4.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -217,14 +217,14 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/4.jpg" class="border" alt="Product" />
+                    <img src="img/product/4.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -232,14 +232,14 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/4.jpg" class="border" alt="Product" />
+                    <img src="img/product/4.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -247,7 +247,7 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/1.jpg" class="border" alt="Product" />
+                    <img src="img/product/1.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
@@ -274,7 +274,7 @@
               <br />
               <div class="row product-container">
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -282,14 +282,14 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/4.jpg" class="border" alt="Product" />
+                    <img src="img/product/4.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -297,14 +297,29 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/4.jpg" class="border" alt="Product" />
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                    <p class="text-dark h5">Product name</p>
+                    <p class="text-dark"><b>£12.00</b></p>
+                    <p class="text-dark">location</p>
+                  </div></router-link>
+                </div>
+                <div
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
                   </div></router-link>
                 </div>
                 <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 shadow col-sm-6 col-md-3 col-lg-3"
                 ><router-link
           to="/Product Detail"
           data-toggle="collapse"
@@ -312,22 +327,7 @@
           title="Home"
         >
                   <div class="content">
-                    <img src="img/product/4.jpg" class="border" alt="Product" />
-                    <p class="text-dark">Product name</p>
-                    <p class="text-dark"><b>£12.00</b></p>
-                    <p class="text-dark">location</p>
-                  </div></router-link>
-                </div>
-                <div
-                  class="thumbnail-container col-6 col-sm-6 col-md-3 col-lg-3"
-                ><router-link
-          to="/Product Detail"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-          title="Home"
-        >
-                  <div class="content">
-                    <img src="img/product/1.jpg" class="border" alt="Product" />
+                    <img src="img/product/1.jpg" class="" alt="Product" />
                     <p class="text-dark">Product name</p>
                     <p class="text-dark"><b>£12.00</b></p>
                     <p class="text-dark">location</p>
@@ -342,10 +342,10 @@
   <div id="home3" class="pt-3">
 <footer  class="footer-one">
         <div class="inner-footer">
-            <div class="container">
+            <div class="container col-lg-12 col-md-12 col-xs-12 col-sm-12">
                 <div class="footer-top">
                     <div class="row">
-                        <div class="col-lg-3 col-md-12 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                             
                             <div class="block">
                                 <div class="block-content">
@@ -354,20 +354,27 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="#">Registration</a>
+                                            <router-link
+                                            to="/Register Personal Account"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Registration"
+                                          >Registration</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">REJEE Money back Guarantee</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Stores</a>
+                                            <router-link
+                                            to="/money back guarantee"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Money Back Guarantee"
+                                          >REJEE Money back Guarantee</router-link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 						
-                        <div class="col-lg-3 col-md-4 col-xs-12">
+                        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                             <div class="block">
                                 <div class="block-content">
                                     <div class="title-block">
@@ -375,23 +382,43 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="#">Start Selling</a>
+                                            <router-link
+                                            to="/Start selling"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Start selling"
+                                          >Start Selling</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">How to sell</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >How to sell</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">Business Seller</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Business Seller</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">Affiliates</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Affiliates</router-link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 						
-                        <div class="col-lg-3 col-md-4">
+                        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                             <div class="block">
                                 <div class="block-content">
                                     <div class="title-block">
@@ -399,13 +426,28 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="#">Company info</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Company info</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">Policies</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Policies</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">User Agreement</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >User Agreement</router-link>
                                         </li>
                                     </ul>
                                 </div>
@@ -413,7 +455,7 @@
                             </div>
                         </div>
 						
-                        <div class="col-lg-3 col-md-4">
+                        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                             
                             <div class="block">
                                 <div class="block-content">
@@ -422,25 +464,43 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="#">Resolution Center</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Resolution Center</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">Seller Center</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Seller Center</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">Contact Us</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Contact Us</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">REJEE Returns</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >REJEE Returns</router-link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="row">
 						
-                        <div class="col-lg-3 col-md-4 col-xs-12">
+                        <div class="col-lg-3 col-md-4  col-xs-3 col-sm-3">
                             <div class="block">
                                 
                                 <div class="block-content pt-3">
@@ -449,20 +509,35 @@
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="#">Developers</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Developers</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">Security Center</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Security Center</router-link>
                                         </li>
                                         <li>
-                                            <a href="#">Site Map</a>
+                                            <router-link
+                                            to="/Product Detail"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Home"
+                                          >Site Map</router-link>
                                         </li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
 						
-                        <div class="col-lg-3 col-md-4">
+                        <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                             <div class="block">
                               
 

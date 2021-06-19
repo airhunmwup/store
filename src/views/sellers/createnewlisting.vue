@@ -13,23 +13,12 @@
             <i class="fa fa-bars"></i></router-link
         ></span>
       </div>
-      <div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
-        <span class="text-left pr-0 p-1"
-          ><router-link
-            to="/seller_dashboard"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="close"
-          >
-            <i class="fa fa-close"></i></router-link
-        ></span>
-      </div>
     </div>
     <div id="main">
       <div class="p-3">
         <div class="row">
                   <div
-                    class="
+                    class="shadow-lg
                       sidebar-3 sidebar-collection
                       col-lg-3 col-md-3
                       d-xs-none pl-3 pt-3
@@ -108,7 +97,7 @@
               <section class="page-home">
                 <div class="content">
                   <div class="row pt-5">
-                    <div class="col-lg-12 col-sm-12 pl-5 pt-2">
+                    <div class="col-lg-12 col-md-12 col-sm-12 pl-5 pt-2">
                       <h1 class="title-page">Create New Listing</h1>
                     </div>
                     <div class="pl-5 pb-3 pt-2">
@@ -164,9 +153,11 @@
                                   placeholder="SKU"
                               /></span>
                             </div>
-                            <div class="form-group col-8">
+                            <div class="form-group"></div>
+
+                            <div class="form-group col-10">
                               <textarea
-                                class="form-control col-12"
+                                class="form-control"
                                 rows="6"
                                 name="email"
                                 type="email"
@@ -184,7 +175,7 @@
                                       title="cancel"
                                       ><div>
                                         <button class="form-control">
-                                          Cancel
+                                          CANCEL
                                         </button>
                                       </div>
                                     </router-link></span
@@ -212,7 +203,6 @@
                                 </div>
                               </div>
                             </div>
-                            <div class="form-group"></div>
                           </div>
                         </div>
                       </div>

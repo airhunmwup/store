@@ -1,24 +1,13 @@
 <template>
   <header>
     <div>
-      <!-- breadcrumb -->
-      <!-- breadcrumb -->
-      <nav class="breadcrumb-bg">
-        <div class="container no-index">
-          <div class="breadcrumb">
-            <ol>
-              <li></li>
-            </ol>
-          </div>
-        </div>
-      </nav>
       <!-- header left mobie -->
       <div class="header-mobile d-md-none">
         <div
           class="mobile hidden-md-up text-xs-center d-flex align-items-center justify-content-around"
         >
           <!-- logo -->
-          <div class="mobile-logo ">
+          <div class="mobile-logo pt-2">
                 
             <img
               class="logo-mobile img-fluid"
@@ -239,7 +228,7 @@
       <!-- header desktop -->
       <div class="header-top d-xs-none">
         <div class="container">
-          <div class="row">
+          <div class="row pt-2">
             <!-- logo -->
             <div class="col-sm-2 col-md-2 d-flex align-items-center">
               <div id="logo">
@@ -252,7 +241,7 @@
             <!-- search-->
             <div
               id="search_widget"
-              class="col-sm-6 col-md-10 align-items-center justify-content-end d-flex"
+              class="col-sm-6 col-md-10 col-lg-10 align-items-center justify-content-end d-flex"
             >
               <form method="get" action="#">
                 <input
@@ -450,13 +439,3 @@
     </div>
   </header>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-      headerText: "Copyright REJEE.co.uk 2021",
-    };
-  },
-};
-</script>

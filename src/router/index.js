@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import LandingPage from '../views/sellers/seller_dashboard.vue'
+import LandingPage from '../views/buyers/landingPage.vue'
 import UserOrderPage from '../views/buyers/userOrderPage.vue'
 import orderDetailsPage from '../views/buyers/orderDetailsPage.vue'
 import wishlist from '../views/buyers/wishlist.vue'
@@ -37,6 +37,8 @@ import seller_supportservice from '../views/sellers/seller_supportservice.vue'
 import Dashboard from '../views/sellers/seller_dashboard.vue'
 import Seller_menu from '../views/sellers/seller_menu.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
+import money_back_guarantee from '../views/rejee_money_back_guarantee.vue'
+import start_selling from '../views/start_selling.vue'
 
 Vue.use(VueRouter)
 
@@ -239,6 +241,16 @@ const routes = [{
         path: '/Add New Card',
         name: 'addCardPage',
         component: addCardPage,
+    },
+    {
+        path: '/money back guarantee',
+        name: 'money back guarantee',
+        component: money_back_guarantee,
+    },
+    {
+        path: '/Start selling',
+        name: 'start selling',
+        component: start_selling,
     },
 
     {

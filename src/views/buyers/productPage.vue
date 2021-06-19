@@ -187,7 +187,7 @@
                             </div>
                               <!--filter section-->
                             <div
-                              class="subCategory collapse"
+                              class="pt-3 subCategory collapse"
                               id="filter"
                               aria-expanded="true"
                               role="status"
@@ -657,7 +657,7 @@
                                     class="thumbnail-container col-6 pb-3 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
-                                        <img src="img/product/4.jpg" class="border" alt="Product" />
+                                        <img src="img/product/4.jpg" class="shadow" alt="Product" />
                                         <p class="text-dark">Product name</p>
                                         <p class="text-dark"><b>£12.00</b></p>
                                         <p class="text-dark">location</p>
@@ -667,7 +667,7 @@
                                     class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
-                                        <img src="img/product/4.jpg" class="border" alt="Product" />
+                                        <img src="img/product/4.jpg" class="shadow" alt="Product" />
                                         <p class="text-dark">Product name</p>
                                         <p class="text-dark"><b>£12.00</b></p>
                                         <p class="text-dark">location</p>
@@ -677,7 +677,7 @@
                                     class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
-                                        <img src="img/product/4.jpg" class="border" alt="Product" />
+                                        <img src="img/product/4.jpg" class="shadow" alt="Product" />
                                         <p class="text-dark">Product name</p>
                                         <p class="text-dark"><b>£12.00</b></p>
                                         <p class="text-dark">location</p>
@@ -687,7 +687,7 @@
                                     class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
-                                        <img src="img/product/1.jpg" class="border" alt="Product" />
+                                        <img src="img/product/1.jpg" class="shadow" alt="Product" />
                                         <p class="text-dark">Product name</p>
                                         <p class="text-dark"><b>£12.00</b></p>
                                         <p class="text-dark">location</p>
@@ -697,7 +697,7 @@
                                     class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
-                                        <img src="img/product/4.jpg" class="border" alt="Product" />
+                                        <img src="img/product/4.jpg" class="shadow" alt="Product" />
                                         <p class="text-dark">Product name</p>
                                         <p class="text-dark"><b>£12.00</b></p>
                                         <p class="text-dark">location</p>
@@ -707,7 +707,7 @@
                                     class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
-                                        <img src="img/product/24.jpg" class="border" alt="Product" />
+                                        <img src="img/product/24.jpg" class="shadow" alt="Product" />
                                         <p class="text-dark">Product name</p>
                                         <p class="text-dark"><b>£12.00</b></p>
                                         <p class="text-dark">location</p>
@@ -717,7 +717,7 @@
                                     class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
-                                        <img src="img/product/14.jpg" class="border" alt="Product" />
+                                        <img src="img/product/14.jpg" class="shadow" alt="Product" />
                                         <p class="text-dark">Product name</p>
                                         <p class="text-dark"><b>£12.00</b></p>
                                         <p class="text-dark">location</p>
@@ -727,7 +727,7 @@
                                     class="thumbnail-container pb-3 col-6 col-sm-6 col-md-4 col-lg-3"
                                     >
                                     <div class="content">
-                                        <img src="img/product/11.jpg" class="border" alt="Product" />
+                                        <img src="img/product/11.jpg" class="shadow" alt="Product" />
                                         <p class="text-dark">Product name</p>
                                         <p class="text-dark"><b>£12.00</b></p>
                                         <p class="text-dark"> location</p>
