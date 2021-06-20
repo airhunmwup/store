@@ -161,7 +161,7 @@
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="View Order"
-                              ><i class="fa fa-eye"> View</i></router-link
+                              ><i class="fa fa-eye"></i> View</router-link
                             >
                           </td>
                         </tr>
