@@ -124,12 +124,6 @@
                     <br />
                   </fieldset>
                 </form>
-                <div class="row shadow">
-                <div class="container">
-                <div class="content col-12">
-                </div>
-                </div>
-                </div>
                 <div id="mywishlist">
                   <div id="block-history" class="block-center">
                     <table class="std table table-fixed">
@@ -155,13 +149,13 @@
                               ><b class="text-info">Pending</b>
                             </a>
                           </td>
-                          <td class="wishlist_delete btn text-center">
+                          <td class="wishlist_delete btn border text-center">
                             <router-link
                               to="/Seller Orderdetails"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="View Order"
-                              ><i class="fa fa-eye"></i> View</router-link
+                              ><i class="fa fa-lg fa-angle-right"></i></router-link
                             >
                           </td>
                         </tr>
@@ -184,13 +178,13 @@
                               ><b class="text-success">Processed</b>
                             </a>
                           </td>
-                          <td class="wishlist_delete btn text-center">
+                          <td class="wishlist_delete btn border text-center">
                             <router-link
                               to="/Seller Orderdetails"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="View Order"
-                              ><i class="fa fa-eye"> View</i></router-link
+                              ><i class="fa fa-lg fa-angle-right"></i></router-link
                             >
                           </td>
                         </tr>
@@ -213,13 +207,13 @@
                               ><b class="text-danger">Refunded</b>
                             </a>
                           </td>
-                          <td class="wishlist_delete btn text-center">
+                          <td class="wishlist_delete btn border text-center">
                             <router-link
                               to="/Seller Orderdetails"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="View Order"
-                              ><i class="fa fa-eye"> View</i></router-link
+                              ><i class="fa fa-lg fa-angle-right"></i></router-link
                             >
                           </td>
                         </tr>

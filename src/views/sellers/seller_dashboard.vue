@@ -157,32 +157,7 @@
                 <div class="row shadow">
                 <div class="container">
                 <div class="content col-12">
-                <form method="post" class="std" id="customer-form">
-                  <fieldset>
-                    <div
-                      class="input-group col-xs-12 col-sm-12 col-md-7 col-lg-7"
-                    >
-                      <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Search"
-                        class="form-control"
-                        value=""
-                      />
-                      <button
-                        class="btn border btn-warning"
-                        type="submit"
-                        data-action="show-password"
-                        data-text-show="Show"
-                        data-text-hide="Hide"
-                      >
-                        Submit
-                      </button>
-                    </div>
-                    <br />
-                  </fieldset>
-                </form>
+                
                 </div>
                 </div>
                 </div>
@@ -220,13 +195,13 @@
                               ><b class="text-info">Pending</b>
                             </a>
                           </td>
-                          <td class="wishlist_delete btn text-center">
+                          <td class="wishlist_delete btn border text-center">
                             <router-link
                               to="/Seller Orderdetails"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="View Order"
-                              ><i class="fa fa-eye"> View</i></router-link
+                              ><i class="fa fa-lg fa-angle-right"></i></router-link
                             >
                           </td>
                         </tr>
@@ -249,13 +224,13 @@
                               ><b class="text-success">Processed</b>
                             </a>
                           </td>
-                          <td class="wishlist_delete btn text-center">
+                          <td class="wishlist_delete btn border text-center">
                             <router-link
                               to="/Seller Orderdetails"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="View Order"
-                              ><i class="fa fa-eye"> View</i></router-link
+                              ><i class="fa fa-lg fa-angle-right"></i></router-link
                             >
                           </td>
                         </tr>
@@ -278,13 +253,13 @@
                               ><b class="text-danger">Refunded</b>
                             </a>
                           </td>
-                          <td class="wishlist_delete btn text-center">
+                          <td class="wishlist_delete btn border text-center">
                             <router-link
                               to="/Seller Orderdetails"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="View Order"
-                              ><i class="fa fa-eye"> View</i></router-link
+                              ><i class="fa fa-lg fa-angle-right"></i></router-link
                             >
                           </td>
                         </tr>

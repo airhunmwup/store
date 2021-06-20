@@ -112,42 +112,58 @@
                                   placeholder="List Title"
                                 />
                               </div>
-                              <div class="pb-2 col-6">
-                                <div class="input-group js-parent-focus">
+                              <div class="pb-2 col-6 row">
+                                <div class="input-group js-parent-focus col-6">
                                   <select
                                     class="
                                       form-control
                                       js-child-focus js-visible-password
                                     "
-                                    name="password"
-                                    type="password"
+                                    name=""
+                                    type="text"
                                   >
                                     <option>Category</option>
-                                    <option></option>
-                                    <option></option>
+                                    <option>Fashion</option>
+                                    <option>Electronics</option>
+                                  </select>
+                                </div>
+                                <div class="input-group js-parent-focus col-6">
+                                  <select
+                                    class="
+                                      form-control
+                                      js-child-focus js-visible-password
+                                    "
+                                    name=""
+                                    type="text"
+                                  >
+                                    <option>Condition</option>
+                                    <option>New</option>
+                                    <option>Used</option>
                                   </select>
                                 </div>
                               </div>
+                              <div class="pb-2 col-6">
+                              </div>
                             </div>
                             <div class="form-group"></div>
-                            <div class="form-group col-6 pb-3">
-                              <span class=""
+                            <div class="container form-group col-6 row pb-3">
+                              <span class="col-3"
                                 ><input
-                                  class="form-control-md text-dark col-3 p-1"
+                                  class="form-control text-dark p-1"
                                   min="0"
                                   type="number"
                                   placeholder="Price"
                               /></span>
-                              <span class=""
+                              <span class="col-3"
                                 ><input
-                                  class="form-control-md text-dark col-3 p-1"
+                                  class="form-control text-dark p-1"
                                   min="1"
                                   type="number"
                                   placeholder="Qty"
                               /></span>
-                              <span class=""
+                              <span class="col-6"
                                 ><input
-                                  class="form-control-md text-dark col-6 p-1"
+                                  class="form-control text-dark p-1"
                                   min="1"
                                   type="text"
                                   placeholder="SKU"

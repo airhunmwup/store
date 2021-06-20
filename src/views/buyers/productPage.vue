@@ -668,239 +668,306 @@
                       <!-- FEATURED CATEGORIES -->
                       <div class="title-product">
                         <div class="row product-container">
-                          <div
-                            class="
-                              thumbnail-container
-                              col-6
-                              pb-3
-                              col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                              <img
-                                src="img/product/4.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                              <div
-                                class="
-                                  content
-                                  p-3
-                                  font-weight-bold
-                                  tex-2
-                                  border-r-2 border-l-2 border-b-2
-                                "
-                              >
-                                <p class="text-dark text-4">Product name</p>
-                                <p class="text-dark"><b>£12.00</b></p>
-                                <hr />
-                                <p class="text">location</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              thumbnail-container
-                              pb-3
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                              <img
-                                src="img/product/4.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                              <div
-                                class="
-                                  content
-                                  p-3
-                                  font-weight-bold
-                                  tex-2
-                                  border-r-2 border-l-2 border-b-2
-                                "
-                              >
-                                <p class="text-dark text-4">Product name</p>
-                                <p class="text-dark"><b>£12.00</b></p>
-                                <hr />
-                                <p class="text">location</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              thumbnail-container
-                              pb-3
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                              <img
-                                src="img/product/4.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                              <div
-                                class="
-                                  content
-                                  p-3
-                                  font-weight-bold
-                                  tex-2
-                                  border-r-2 border-l-2 border-b-2
-                                "
-                              >
-                                <p class="text-dark text-4">Product name</p>
-                                <p class="text-dark"><b>£12.00</b></p>
-                                <hr />
-                                <p class="text">location</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              thumbnail-container
-                              pb-3
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                              <img
-                                src="img/product/4.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                              <div
-                                class="
-                                  content
-                                  p-3
-                                  font-weight-bold
-                                  tex-2
-                                  border-r-2 border-l-2 border-b-2
-                                "
-                              >
-                                <p class="text-dark text-4">Product name</p>
-                                <p class="text-dark"><b>£12.00</b></p>
-                                <hr />
-                                <p class="text">location</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              thumbnail-container
-                              pb-3
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                              <img
-                                src="img/product/4.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                              <div
-                                class="
-                                  content
-                                  p-3
-                                  font-weight-bold
-                                  tex-2
-                                  border-r-2 border-l-2 border-b-2
-                                "
-                              >
-                                <p class="text-dark text-4">Product name</p>
-                                <p class="text-dark"><b>£12.00</b></p>
-                                <hr />
-                                <p class="text">location</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              thumbnail-container
-                              pb-3
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                              <img
-                                src="img/product/4.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                              <div
-                                class="
-                                  content
-                                  p-3
-                                  font-weight-bold
-                                  tex-2
-                                  border-r-2 border-l-2 border-b-2
-                                "
-                              >
-                                <p class="text-dark text-4">Product name</p>
-                                <p class="text-dark"><b>£12.00</b></p>
-                                <hr />
-                                <p class="text">location</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              thumbnail-container
-                              pb-3
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                              <img
-                                src="img/product/4.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                              <div
-                                class="
-                                  content
-                                  p-3
-                                  font-weight-bold
-                                  tex-2
-                                  border-r-2 border-l-2 border-b-2
-                                "
-                              >
-                                <p class="text-dark text-4">Product name</p>
-                                <p class="text-dark"><b>£12.00</b></p>
-                                <hr />
-                                <p class="text">location</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              thumbnail-container
-                              pb-3
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                              <img
-                                src="img/product/4.jpg"
-                                class="shadow"
-                                alt="Product"
-                              />
-                              <div
-                                class="
-                                  content
-                                  p-3
-                                  font-weight-bold
-                                  tex-2
-                                  border-r-2 border-l-2 border-b-2
-                                "
-                              >
-                                <p class="text-dark text-4">Product name</p>
-                                <p class="text-dark"><b>£12.00</b></p>
-                                <hr />
-                                <p class="text">location</p>
-                              </div>
-                            </div>
-                          </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
+                <div
+                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                ><router-link
+          to="/Product Detail"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+                  <div class="content shadow  rounded p-2">
+                    <img src="img/product/4.jpg" class="" alt="Product" />
+                  <div class="row p-1">
+                    <div class="content col-12 font-weight-bold tex-2">
+                    <span class="text-lg text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-lg text-dark"> Product name</span>
+                    </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"><i class="fa fa-lg fa-heart-o"></i> </span>
+                  </div>
+                  </div>
+                  </div>
+        </router-link>
+                </div>
                         </div>
                       </div>
                     </div>

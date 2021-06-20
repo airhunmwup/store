@@ -18,11 +18,11 @@
 
           <div class="col-sm-12 col-lg-12 col-md-12">
             <div class="main-product-detail">
-              <div class=" shadow p-3 product-single row">
+              <div class="product-single row">
                 <div class="product-detail col-xs-12 col-md-5 col-sm-5">
                   <div class="page-content" id="content">
                     <div class="images-container">
-                      <div class="js-qv-mask mask tab-content border">
+                      <div class="js-qv-mask tab-content">
                         <div id="item1" class="tab-pane fade active in show">
                           <img src="img/product/1.jpg" alt="img" />
                         </div>
@@ -36,7 +36,7 @@
                           <img src="img/product/5.jpg" alt="img" />
                         </div>
                       </div>
-                      <ul class="product-tab nav nav-tabs d-flex">
+                      <ul class="product-tab nav  shadow p-2 nav-tabs d-flex">
                         <li class="active col">
                           <a
                             href="#item1"
@@ -68,9 +68,9 @@
                 </div>
                 <div class="product-info col-xs-12 col-md-7 col-sm-7">
                   <div class="detail-description">
-                    <h2>Product name here</h2>
                     <div class="price-del">
-                      <span class="price">£150.00</span>
+                    <span class="text-xl text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
+                    <span class="text-xl text-dark"> Product name</span>
                       <span class="float-right">
                         <span class="availb">Availability: </span>
                         <span class="check">
@@ -153,12 +153,11 @@
                                 to="/Checkout"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
-                                title="Home"
                               >
                                 <button
                                   class="
                                     col-lg-3 col-md-3 col-sm-12
-                                    btn btn-warning
+                                    btn btn-success
                                     form-control
                                     add-to-cart
                                   "
@@ -195,9 +194,7 @@
                     </div>
                   </div>
                 </div>
-              </div>
-
-              <div class="review p-5">
+              <div class="review col-12">
                 <ul class="nav nav-tabs">
                   <li class="active">
                     <a data-toggle="tab" href="#description" class="active show"
@@ -205,15 +202,12 @@
                     >
                   </li>
                   <li>
-                    <a data-toggle="tab" href="#tag">Product Tags</a>
-                  </li>
-                  <li>
                     <a data-toggle="tab" href="#review">Reviews (2)</a>
                   </li>
                 </ul>
 
                 <div class="tab-content">
-                  <div id="description" class="tab-pane fade in active show">
+                  <div id="description" class=" border p-3 tab-pane fade in active show">
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit,
                       sed do eiusmod tempor incididunt ut labore et dolore magna
@@ -429,24 +423,10 @@
                       </div>
                     </form>
                   </div>
-                  <div id="tag" class="tab-pane fade in">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                  </div>
                 </div>
               </div>
+              </div>
+
             </div>
           </div>
         </div>
