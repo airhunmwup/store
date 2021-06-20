@@ -96,19 +96,18 @@
                
         <div id="wrapper-site">
           
-                <div class="row shadow">
+                <div class="row">
                   <div
                     class="
-                      sidebar-3 sidebar-collection
                       col-lg-4 col-md-4
-                      pl-3 pt-3 pr-3
+                      pl-3 pr-3
                       col-sm-4
                     "
                   >
                     <!-- category menu -->
-                    <div class="border shadow border-dark sidebar-block">
+                    <div class="shadow-inner sidebar-block">
                       <div class="block-content">
-                        <div class="p-3">
+                        <div class="p-3 border-b-4">
                           <p class="text-success">Total Sales</p>
                          <p class="font-weight-bold text-dark h5"> £1,430.00</p>
                         </div>
@@ -118,16 +117,15 @@
                   </div>
                   <div
                     class="
-                      sidebar-3 sidebar-collection
                       col-lg-4 col-md-4
-                      pl-3 pt-3
+                      pl-3 
                       col-sm-4
                     "
                   >
                     <!-- category menu -->
-                    <div class="border shadow border-dark sidebar-block">
+                    <div class="shadow-inner sidebar-block">
                       <div class="block-content">
-                        <div class="p-3">
+                        <div class="p-3 border-b-4">
                           <p class="text-success">Total Day Sales</p>
                          <p class="font-weight-bold text-dark h5"> £1,430.00</p>
                         </div>
@@ -137,16 +135,15 @@
                   </div>
                   <div
                     class="
-                      sidebar-3 sidebar-collection
                       col-lg-4 col-md-4
-                      pl-3 pt-3
+                      pl-3
                       col-sm-4 col-xs-4
                     "
                   >
                     <!-- category menu -->
-                    <div class="border shadow border-dark sidebar-block">
+                    <div class="shadow-inner sidebar-block">
                       <div class="block-content">
-                        <div class="p-3">
+                        <div class="p-3 border-b-4">
                           <p class="text-danger">Pending Orders</p>
                          <p class="font-weight-bold text-dark h5"> 143</p>
                         </div>
@@ -154,8 +151,40 @@
                     </div>
                     
                   </div>
-
                   <!-- end col-md-9-1 -->
+                </div>
+
+                <div class="row shadow">
+                <div class="container">
+                <div class="content col-12">
+                <form method="post" class="std" id="customer-form">
+                  <fieldset>
+                    <div
+                      class="input-group col-xs-12 col-sm-12 col-md-7 col-lg-7"
+                    >
+                      <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Search"
+                        class="form-control"
+                        value=""
+                      />
+                      <button
+                        class="btn border btn-warning"
+                        type="submit"
+                        data-action="show-password"
+                        data-text-show="Show"
+                        data-text-hide="Hide"
+                      >
+                        Submit
+                      </button>
+                    </div>
+                    <br />
+                  </fieldset>
+                </form>
+                </div>
+                </div>
                 </div>
 
                   <div

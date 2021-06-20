@@ -124,6 +124,12 @@
                     <br />
                   </fieldset>
                 </form>
+                <div class="row shadow">
+                <div class="container">
+                <div class="content col-12">
+                </div>
+                </div>
+                </div>
                 <div id="mywishlist">
                   <div id="block-history" class="block-center">
                     <table class="std table table-fixed">

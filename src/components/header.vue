@@ -160,7 +160,7 @@
                 <i class="fa fa-shopping-cart" aria-hidden="true"></i>
               </div>
               <div class="dropdown-content">
-                <div class="cart-content">
+                <div class="cart-content pt-2">
                   <table>
                     <tbody>
                       <tr>
@@ -228,7 +228,7 @@
       <!-- header desktop -->
       <div class="header-top d-xs-none">
         <div class="container">
-          <div class="row pt-2">
+          <div class="row">
             <!-- logo -->
             <div class="col-sm-2 col-md-2 d-flex align-items-center">
               <div id="logo">
@@ -236,13 +236,12 @@
                   <img class="img-fluid" src="img/home/logo.png" alt="logo" />
                 </a>
               </div>
-              
             </div>
 
             <!-- search-->
             <div
               id="search_widget"
-              class="col-sm-6 col-md-10 col-lg-10 align-items-center justify-content-end d-flex"
+              class="col-sm-6 col-md-10 align-items-center justify-content-end d-flex"
             >
               <form method="get" action="#">
                 <input
@@ -440,3 +439,13 @@
     </div>
   </header>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      headerText: "Copyright REJEE.co.uk 2021",
+    };
+  },
+};
+</script>
