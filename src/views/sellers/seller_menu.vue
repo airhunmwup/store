@@ -4,7 +4,7 @@
         <div class="row">
     <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
       <span class="text-left p-1"></span></div><div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
-      <span class="text-left border border pr-0 p-1"><router-link
+      <span class="text-left shadow pr-0 p-1"><router-link
         to="/seller_dashboard"
         data-toggle="collapse"
         data-target=".navbar-collapse"

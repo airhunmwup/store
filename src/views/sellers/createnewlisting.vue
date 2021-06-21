@@ -3,7 +3,7 @@
   <div>
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-        <span class="text-left border p-1"
+        <span class="text-left shadow p-1"
           ><router-link
             to="/menu"
             data-toggle="collapse"
@@ -96,22 +96,22 @@
             <div id="wrapper-site">
               <section class="page-home">
                 <div class="content">
-                  <div class="row pt-5">
+                  <div class="row pt-2">
                     <div class="col-lg-12 col-md-12 col-sm-12 pl-5 pt-2">
                       <h1 class="title-page">Create New Listing</h1>
                     </div>
-                    <div class="pl-5 pb-3 pt-2">
-                      <div id="content" class="page-content">
-                        <div class="register-form text-center">
-                          <div class="row">
-                            <div class="form-group col-12">
-                              <div class="pb-2 col-6">
+                              <div class="pb-2 col-lg-6 col-md-6 col-sm-9 col-xs-9">
                                 <input
                                   class="form-control"
                                   type="text"
                                   placeholder="List Title"
                                 />
                               </div>
+                    <div class="pl-5 pb-3 pt-2">
+                      <div id="content" class="page-content">
+                        <div class="register-form text-center">
+                          <div class="row">
+                            <div class="form-group col-12">
                               <div class="pb-2 col-6 row">
                                 <div class="input-group js-parent-focus col-6">
                                   <select
@@ -146,7 +146,7 @@
                               </div>
                             </div>
                             <div class="form-group"></div>
-                            <div class="container form-group col-6 row pb-3">
+                            <div class="form-group col-6 row pb-3">
                               <span class="col-3"
                                 ><input
                                   class="form-control text-dark p-1"

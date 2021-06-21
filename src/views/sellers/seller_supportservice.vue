@@ -3,7 +3,7 @@
   <div>
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-        <span class="text-left border p-1"
+        <span class="text-left shadow p-1"
           ><router-link
             to="/menu"
             data-toggle="collapse"

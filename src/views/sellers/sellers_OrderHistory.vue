@@ -3,7 +3,7 @@
     <div >
         <div class="row">
     <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-      <span class="text-left border p-1"><router-link
+      <span class="text-left shadow p-1"><router-link
         to="/menu"
         data-toggle="collapse"
         data-target=".navbar-collapse"
@@ -112,7 +112,7 @@
                         value=""
                       />
                       <button
-                        class="btn border btn-warning"
+                        class="btn shadow text-success border"
                         type="submit"
                         data-action="show-password"
                         data-text-show="Show"
@@ -221,7 +221,7 @@
                     </table>
 
             <div class="row">
-            <span class="col-3"><div><button class="form-control btn-warning"><i class="fa fa-arrow-left"></i> PREV</button></div></span>
+            <span class="col-3"><div><button class="form-control"><i class="fa fa-arrow-left"></i></button></div></span>
             <span class="col-6">
               <div class="row">
               <div class="h6 col-2">
@@ -244,7 +244,7 @@
               </div>
               </div>
             </span>
-            <span class="col-3"><div><button class="form-control btn-warning">NEXT <i class="fa fa-arrow-right"></i></button></div></span>
+            <span class="col-3"><div><button class="form-control"><i class="fa fa-arrow-right"></i></button></div></span>
             </div>
                   </div>
                 </div>

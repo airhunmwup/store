@@ -3,7 +3,7 @@
   <div>
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-        <span class="text-left border p-1"
+        <span class="text-left shadow p-1"
           ><router-link
             to="/menu"
             data-toggle="collapse"
@@ -11,17 +11,6 @@
             title="Menu"
           >
             <i class="fa fa-bars"></i></router-link
-        ></span>
-      </div>
-      <div class="col-6 d-lg-none h6 d-md-none text-lg pr-3 text-right">
-        <span class="text-left pr-0 p-1"
-          ><router-link
-            to="/seller_dashboard"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="close"
-          >
-            <i class="fa fa-close"></i></router-link
         ></span>
       </div>
     </div>

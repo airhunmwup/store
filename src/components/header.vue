@@ -252,8 +252,8 @@
                   class="ui-autocomplete-input large"
                   autocomplete="off"
                 />
-                <button type="submit">
-                  <i class="fa fa-search"></i>
+                <button type="submit" class="">
+                  <i class="fa fa-search font-weight-bold text-lg"></i>
                 </button>
               </form>
 
@@ -261,11 +261,9 @@
               <div id="block_myaccount_infos" class="pr-4 hidden-sm-down dropdown">
                 <div class="myaccount-title">
                   <a href="#acount" data-toggle="collapse" class="acount">
-                    <i class="fa fa-user" aria-hidden="true"> </i>
+                    <i class="text-lg fa fa-user" aria-hidden="true"> </i>
                     <span> My Account </span>
-                    <i class="fa fa-angle-down" aria-hidden="true"></i>
                   </a>
-                </div>
                 <div id="acount" class="collapse">
                   <div class="account-list-content">
                     <div>
@@ -359,6 +357,7 @@
                       </a>
                     </div>
                   </div>
+                </div>
                 </div>
               </div>
               <div class="desktop_cart pl-3">
