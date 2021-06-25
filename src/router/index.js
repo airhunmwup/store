@@ -37,6 +37,8 @@ import Dashboard from '../views/sellers/seller_dashboard.vue'
 import orders_page from '../views/sellers/orders_page.vue'
 import order_details from '../views/sellers/order_details.vue'
 import listing_page from '../views/sellers/listing_page.vue'
+import Account_Page from '../views/sellers/account_page.vue'
+import seller_message from '../views/sellers/message_page2.vue'
 import Seller_menu from '../views/sellers/seller_menu.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
 import money_back_guarantee from '../views/rejee_money_back_guarantee.vue'
@@ -73,6 +75,11 @@ const routes = [{
         path: '/Listing',
         name: 'listing Page',
         component: listing_page,
+    },
+    {
+        path: '/Account Page',
+        name: 'Account Page',
+        component: Account_Page,
     },
     {
         path: '/menu',
@@ -278,6 +285,11 @@ const routes = [{
         path: '/My Message',
         name: 'My message',
         component: Mymessage,
+    },
+    {
+        path: '/Message',
+        name: 'message',
+        component: seller_message,
     },
     {
         path: '/account',

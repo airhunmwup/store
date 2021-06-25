@@ -4,6 +4,12 @@
     <div class="row">
       <div class="container justify-content-center content-bottom">
 
+                  <span class="text-primary font-weight-normal">
+                  All Order 
+                  </span>>
+                  <span class="text pont-weight-normal">
+                  Order details
+                  </span>
         <div class="content sidebar-block">
           <div class="text-base">
             <div class="pt-5 pl-3">
@@ -43,12 +49,12 @@
                     title="listing"
                     ><span>Listing</span></router-link>
                   <router-link
-                    to="/Performance"
+                    to="/Account Page"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="p-2"
-                    title="Performance"
-                    ><span>Performance</span></router-link>
+                    class="p-3"
+                    title="Account"
+                    ><span>Account</span></router-link>
                   <router-link
                     to="/message"
                     data-toggle="collapse"
@@ -63,10 +69,9 @@
 
                 <div class="content justify-content-center">
               <div class="pl-5 pr-5">
-                  <span class="text p-4 h5 font-weight-bold  font-weight-normal">
+                  <p class="text p-2 h5 font-weight-bold">
                   Order number 00176293
-                  <hr>
-                  </span>
+                  </p>
                   <!-- this should appear when order has been shipped-->
               <div class="card">
                 <div class="row p-4 col-lg-12 col-md-12 col-sm-12 ">

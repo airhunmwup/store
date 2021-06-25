@@ -109,18 +109,6 @@
                 >
                   Saved Seller
                 </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Archive-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Archive"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Archive"
-                  aria-selected="true"
-                >
-                  Sell
-                </button>
               </div>
   </div>
 </div>
@@ -167,7 +155,7 @@
               font-weight-bold
             "
           >
-            <!-- category menu -->
+            <!-- menu -->
             <div class="sidebar-block text-dark">
               <div class="block-content">
               <div
@@ -249,18 +237,6 @@
                   aria-selected="true"
                 >
                   Saved Seller
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Archive-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Archive"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Archive"
-                  aria-selected="true"
-                >
-                  Sell
                 </button>
               </div>
               </div>

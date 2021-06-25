@@ -43,12 +43,12 @@
                     title="listing"
                     ><span class="text-primary">Listing</span></router-link>
                   <router-link
-                    to="/Performance"
+                    to="/Account Page"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="p-2"
-                    title="Performance"
-                    ><span>Performance</span></router-link>
+                    class="p-3"
+                    title="Account"
+                    ><span>Account</span></router-link>
                   <router-link
                     to="/message"
                     data-toggle="collapse"
@@ -64,23 +64,33 @@
           <div
             class="
               sidebar-3 
-              col-lg-2 col-md-2
+              col-lg-1 col-md-1
               d-xs-none
+              text-xs
               font-weight-bold
             "
           >
                 <button
-                  class="text-left h4 font-weight-bold p-2 active"
+                  class="text-left h6 font-weight-bold p-2 active"
                   data-bs-toggle="pill"
                   type="button"
                   role="tab"
                   aria-selected="true"
                 >
-                  Orders 
+                  Inventory
                 </button>
             <!-- category menu -->
             <div class="sidebar-block text-dark">
               <div class="block-content">
+                <button
+                  class="text-left h6 font-weight-bold p-2 active"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  Listings
+                </button>
               <div
                 class="block-content nav flex-column nav-pills"
                 id="v-pills-tab"
@@ -97,7 +107,7 @@
                   aria-controls="v-pills-All-Orders"
                   aria-selected="true"
                 >
-                  All Orders
+                  Active
                 </button>
                 <button
                   class="text-left  font-weight-bold text-dark p-2"
@@ -109,7 +119,7 @@
                   aria-controls="v-pills-Awaiting-Payment"
                   aria-selected="false"
                 >
-                  Awaiting Payment
+                  Unsold
                 </button>
 
                 <button
@@ -122,7 +132,7 @@
                   aria-controls="v-pills-Awaiting-Shipment"
                   aria-selected="true"
                 >
-                  Awaiting Shipment
+                  Drafts
                 </button>
                 <button
                   class="text-left  font-weight-bold text-dark p-2"
@@ -134,62 +144,26 @@
                   aria-controls="v-pills-Paid-and-shipped"
                   aria-selected="true"
                 >
-                  Paid and shipped
+                  Scheduled
+                </button>
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Saved-Search-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Saved-Search"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Saved-Search"
+                  aria-selected="true"
+                >
+                  Ended
                 </button>
                 <hr>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Saved-Search-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Saved-Search"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Saved-Search"
-                  aria-selected="true"
-                >
-                  Cancellations
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Saved-Search-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Saved-Search"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Saved-Search"
-                  aria-selected="true"
-                >
-                  Returns
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Saved-Seller-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Saved-Seller"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Saved-Seller"
-                  aria-selected="true"
-                >
-                  Cases
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Archive-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Archive"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Archive"
-                  aria-selected="true"
-                >
-                  Shipping labels
-                </button>
               </div>
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-10 col-md-10 product-container">
+          <div class="col-sm-12 col-lg-11 col-md-11 product-container">
             <div id="wrapper-site">
 
               <div class="col-sm-12 col-lg-12 p-3 col-md-12 product-container">
@@ -205,14 +179,14 @@
                 >
                 <div class="row">
                   <span class="text text-dark h5 font-weight-bold  font-weight-normal">
-                  Manage all orders
+                  Manage active Listings
                   <hr>
                   </span>
                   
                 <div class="content pb-3 justify-content-center text-center">
               <div class="row box pl-2">
                 <div class="col-lg-4 col-md-4 col-sm-6">
-                    <p class="form-control border box">All Orders (0)</p>  
+                    <p class="form-control border box">Create listing</p>  
                 </div>
                 <div class="col-lg-4 col-md-4 col-sm-6">
             
@@ -243,7 +217,7 @@
                 </select>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
-                    <button class="form-control border text-primary">Relist</button> 
+                    <button class="form-control border text-primary">Create listing</button> 
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                            
@@ -275,43 +249,46 @@
 
 
                     <div class="row container p-3 text-md">
-                      <table class="std table table-fixed">
-                        <tbody>
+<div style="overflow-x:auto;">
+                      <table class="table-fixed text-xs">
+                        <thead>
                           <tr class="box font-weight-bold text-xs">
                             
                             <td class="text-left">
-                              <input class="pr-3" type="checkbox" />
+                              <input class="" type="checkbox" />
+                            </td>
+                            <td class="text-left">
                               Actions
                             </td>
-                            <td class="text-left font-w">Record</td>
-                            <td class="text-left">Purchase details</td>
-                            <td class="text-right">Qty</td>
-                            <td class="text-right">Sold for</td>
-                            <td class="text-right">Total</td>
-                            <td class="text-right">Date sold</td>
-                            <td class="text-right">Date paid</td>
+                            <td class="text-left font-w">Photo</td>
+                            <td class="text-left">Title</td>
+                            <td class="text-left">Qty</td>
+                            <td class="text-left">Current price</td>
+                            <td class="text-left">shipping cost</td>
+                            <td class="text-left">Views</td>
+                            <td class="text-left">Watches</td>
+                            <td class="text-left">Offers</td>
+                            <td class="text-left">Bids</td>
                           </tr>
-                        </tbody>
-                      </table>
-                      <table class="std table table-fixed text-xs">
+                        </thead>
                         <tbody>
                           <tr>
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" /><i
-                                class="pl-2 text-gray-400 fa fa-flag"
-                              ></i>
+                            <td class="">
+                              <span><input class="" type="checkbox" /></span>
                             </td>
                             <td class="text-left">
+                            </td>
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
                                 >
-                    <img src="img/product/6.jpg" class=" border" alt="Product" />
+                    <img src="img/product/6.jpg" class="" alt="Product" />
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
@@ -320,33 +297,31 @@
                                 >Product name
                               </router-link>
                             </td>
-                            <td class="text-right">1</td>
-                            <td class="text-right">£150</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">25 Jun</td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">--</td>
                           </tr>
-                        </tbody>
-                      </table>
-                      <table class="std table table-fixed text-xs">
-                        <tbody>
                           <tr>
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" /><i
-                                class="pl-2 text-gray-400 fa fa-flag"
-                              ></i>
+                            <td class="text-left ">
+                              <span><input class="" type="checkbox" /></span>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left ">
+                            </td>
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
                                 >
-                    <img src="img/product/4.jpg" class=" border" alt="Product" />
+                    <img src="img/product/6.jpg" class="" alt="Product" />
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
@@ -355,14 +330,17 @@
                                 >Product name
                               </router-link>
                             </td>
-                            <td class="text-right">1</td>
-                            <td class="text-right">£150</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">25 Jun</td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">--</td>
+                            <td class="text-left border">--</td>
+                            <td class="text-left border">--</td>
+                            <td class="text-left border">25 Jun</td>
                           </tr>
                         </tbody>
                       </table>
+</div>
+                      
                     </div>
                 </div>
                 </div>
@@ -455,7 +433,7 @@
                       <table class="std table table-fixed text-xs">
                         <tbody>
                           <tr>
-                            <td class="text-left">
+                            <td class="text-left border-r-2">
                               <input class="pr-3" type="checkbox" /><i
                                 class="pl-2 text-gray-400 fa fa-flag"
                               ></i>
@@ -481,6 +459,7 @@
                             </td>
                             <td class="text-right">1</td>
                             <td class="text-right">£150</td>
+                            <td class="text-right">--</td>
                             <td class="text-right">--</td>
                             <td class="text-right">--</td>
                             <td class="text-right">25 Jun</td>

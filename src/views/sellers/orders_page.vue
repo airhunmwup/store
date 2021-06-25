@@ -43,12 +43,12 @@
                     title="listing"
                     ><span>Listing</span></router-link>
                   <router-link
-                    to="/Performance"
+                    to="/Account Page"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="p-2"
-                    title="Performance"
-                    ><span>Performance</span></router-link>
+                    class="p-3"
+                    title="Account"
+                    ><span>Account</span></router-link>
                   <router-link
                     to="/message"
                     data-toggle="collapse"

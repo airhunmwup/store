@@ -159,6 +159,35 @@
                   Close account
                 </router-link>
             <!-- Account preferences Ends/-->
+            <!-- Selling/-->
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="fa fa-tag fa-2x h4 pr-2"></i> Selling
+                </button>
+                <router-link
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Overview"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Seller dashboard"
+                            >
+                Seller Dashboard
+                </router-link>
+                <router-link
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Subscription"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Subscription"
+                            >
+                  Subscriptions
+                </router-link>
+            <!-- Selling Ends/-->
             <!-- Resolution center/-->
                 <button
                   class="text-left  font-weight-bold text-dark p-2"
@@ -186,27 +215,48 @@
       </div>
 
     </div>
-              <div class="row pl-5">
-                <div class="container pl-5">
-                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12  pl-5">
+              <div class="row pl-2">
+                <div class="container pl-2">
+                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12  pl-2">
                   <router-link
-                    to="/Summary"
+                    to="/Overview"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
                     class="p-3"
-                    title="Activity"
-                    ><span>Activity</span></router-link
+                    title="Overview"
+                    ><span>Overview</span></router-link
                   >
                   <router-link
-                    to="/My message"
+                    to="/Orders"
                     data-toggle="collapse"
                     data-target=".navbar-collapse" 
                     class="p-3"
-                    title="Message"
-                    ><span>Message (2)</span></router-link>
-                  <span class="border-primary border-b-4 p-3">Account</span>
+                    title="Orders"
+                    ><span>Orders</span></router-link>
+                  <router-link
+                    to="/Listing"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="p-2"
+                    title="listing"
+                    ><span>Listing</span></router-link>
+                  <router-link
+                    to="/Account Page"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="border-primary border-b-4 p-3"
+                    title="Account"
+                    ><span class="text-primary">Account</span></router-link>
+                  <router-link
+                    to="/message"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="pl-4 text-right text-primary underline justify-content-end"
+                    title="Performance"
+                    ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
                   </div>
                 </div>
+
               </div>
         <div class="row pl-5">
           <div
@@ -350,6 +400,35 @@
                   Close account
                 </router-link>
             <!-- Account preferences Ends/-->
+            <!-- Selling/-->
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="fa fa-tag fa-2x h4 pr-2"></i> Selling
+                </button>
+                <router-link
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Overview"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="seller dashboard"
+                            >
+                Seller Dashboard
+                </router-link>
+                <router-link
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Subscription"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Subscription"
+                            >
+                  Subscriptions
+                </router-link>
+            <!-- Selling Ends/-->
             <!-- Resolution center/-->
                 <button
                   class="text-left  font-weight-bold text-dark p-2"
