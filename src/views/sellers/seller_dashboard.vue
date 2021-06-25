@@ -1,321 +1,258 @@
 <template>
   <!-- main content -->
-    <div >
-        <div class="row">
-    <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-      <span class="text-left shadow p-1"><router-link
-        to="/menu"
-        data-toggle="collapse"
-        data-target=".navbar-collapse"
-        title="Menu"
-      >
-        <i class="fa fa-bars"></i></router-link
-      ></span></div>
-        </div>
-        <div id="main">
-              <div class="p-3">
-                <div class="row">
-                  <div
-                    class="shadow-lg 
-                      sidebar-3 sidebar-collection
-                      col-lg-3 col-md-3
-                      d-xs-none pl-3 pt-3
-                      col-sm-4
-                    "
-                  >
-                    <!-- category menu -->
-                    <div class="sidebar-block">
-                      <div class="block-content">
-                        <div class="title-block">
-                          User Business name display here
-                        </div>
-                        <div class="cateTitle hasSubCategory open level1">
-                          <router-link
-                            to="/seller_dashboard"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Dashboard"
-                            ><i class="fa fa-tachometer"></i> Dashboard</router-link
-                          >
-                        </div>
-                        <div class="cateTitle hasSubCategory open level1">
-                          <router-link
-                            to="/Product Listing"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Product Listing"
-                            ><i class="fa fa-shopping-basket"></i> Product
-                            Listing</router-link
-                          >
-                        </div>
-                        <div class="cateTitle hasSubCategory open level1">
-                          <router-link
-                            to="/Order History"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Order History"
-                            ><i class="fa fa-file-o"></i> Orders</router-link
-                          >
-                        </div>
-                        <div class="cateTitle hasSubCategory open level1">
-                          <router-link
-                            to="/Seller change password"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Change password"
-                            ><i class="fa fa-lock"></i> Change
-                            Password</router-link
-                          >
-                        </div>
-                        <div class="cateTitle hasSubCategory open level1">
-                          <router-link
-                            to="/Seller account settings"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Account settings"
-                            ><i class="fa fa-university"></i> Account
-                            settings</router-link
-                          >
-                        </div>
-                        <div class="cateTitle hasSubCategory open level1">
-                          <router-link
-                            to="/Seller support service"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Support service"
-                            ><i class="fa fa-headphones"></i> Support
-                            ?</router-link
-                          >
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="col-sm-12 col-lg-9 col-md-9 product-container"
-                  >
-               
-        <div id="wrapper-site">
-          
-                <div class="row">
-                  <div
-                    class="
-                      col-lg-4 col-md-4
-                      pl-3 pr-3
-                      col-sm-4
-                    "
-                  >
-                    <!-- category menu -->
-                    <div class="shadow-inner sidebar-block">
-                      <div class="block-content">
-                        <div class="p-3 border-b-4">
-                          <p class="text-success">Total Sales</p>
-                         <p class="font-weight-bold text-dark h5"> £1,430.00</p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                  <div
-                    class="
-                      col-lg-4 col-md-4
-                      pl-3 
-                      col-sm-4
-                    "
-                  >
-                    <!-- category menu -->
-                    <div class="shadow-inner sidebar-block">
-                      <div class="block-content">
-                        <div class="p-3 border-b-4">
-                          <p class="text-success">Total Day Sales</p>
-                         <p class="font-weight-bold text-dark h5"> £1,430.00</p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                  <div
-                    class="
-                      col-lg-4 col-md-4
-                      pl-3
-                      col-sm-4 col-xs-4
-                    "
-                  >
-                    <!-- category menu -->
-                    <div class="shadow-inner sidebar-block">
-                      <div class="block-content">
-                        <div class="p-3 border-b-4">
-                          <p class="text-danger">Pending Orders</p>
-                         <p class="font-weight-bold text-dark h5"> 143</p>
-                        </div>
-                      </div>
-                    </div>
-                    
-                  </div>
-                  <!-- end col-md-9-1 -->
-                </div>
+  <div class="box">
+    <div class="row">
+      <div class="container justify-content-center content-bottom">
 
-                <div class="row shadow">
-                <div class="container">
-                <div class="content col-12">
-                
-                </div>
-                </div>
-                </div>
-
-                  <div
-                    class="col-sm-12 col-lg-12 col-md-12 product-container"
-                  >
-               
-        <div id="wrapper-site">
-              <div id="content" class="page-content">
-                <p class="text h6 font-weight-bold text-dark p-3">Recent Activity</p>
-
-                <div id="mywishlist">
-                  <div id="block-history" class="block-center">
-                    <table class="std table table-fixed">
-                      <tbody>
-                        <tr id="wishlist_1">
-                          <td><i>2018-06-14.4:34</i></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                            >
-                              <img src="img/product/3.jpg" class="shadow" alt="Product" />
-                            </a>
-                          </td>
-                          <td class="bold align_center">
-                            White chair red leather faux
-                          </td>
-                          <td class="wishlist_default text-right"></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                              ><b class="text-info">Pending</b>
-                            </a>
-                          </td>
-                          <td class="wishlist_delete btn border text-center">
-                            <router-link
-                              to="/Seller Orderdetails"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="View Order"
-                              ><i class="fa fa-lg fa-angle-right"></i></router-link
-                            >
-                          </td>
-                        </tr>
-                        <tr id="wishlist_1">
-                          <td><i>2018-06-14.4:34</i></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                            >
-                              <img src="img/product/11.jpg" class="shadow" alt="Product" />
-                            </a>
-                          </td>
-                          <td class="bold align_center">Lamp</td>
-                          <td class="wishlist_default text-right"></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                              ><b class="text-success">Processed</b>
-                            </a>
-                          </td>
-                          <td class="wishlist_delete btn border text-center">
-                            <router-link
-                              to="/Seller Orderdetails"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="View Order"
-                              ><i class="fa fa-lg fa-angle-right"></i></router-link
-                            >
-                          </td>
-                        </tr>
-                        <tr id="wishlist_1">
-                          <td><i>2018-06-14.4:34</i></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                            >
-                              <img src="img/product/3.jpg" class="shadow" alt="Product" />
-                            </a>
-                          </td>
-                          <td class="bold align_center">Bag of Rice</td>
-                          <td class="wishlist_default text-right"></td>
-                          <td>
-                            <a
-                              href="javascript:;"
-                              onclick="javascript:WishlistManage('block-order-detail', '1');"
-                              ><b class="text-danger">Refunded</b>
-                            </a>
-                          </td>
-                          <td class="wishlist_delete btn border text-center">
-                            <router-link
-                              to="/Seller Orderdetails"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="View Order"
-                              ><i class="fa fa-lg fa-angle-right"></i></router-link
-                            >
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-
-            <div class="row">
-            <span class="col-3"><div><button class="form-control"><i class="fa fa-arrow-left"></i></button></div></span>
-            <span class="col-6">
-              <div class="row pt-3">
-              <div class="h6 col-2">
-                <p>1</p>
-              </div>
-              <div class="col-2">
-                <p>2</p>
-              </div>
-              <div class="col-2">
-                <p>3</p>
-              </div>
-              <div class="col-2">
-                <p>4</p>
-              </div>
-              <div class="col-2">
-                <p>5</p>
-              </div>
-              <div class="col-2">
-                <p>6</p>
-              </div>
-              </div>
-            </span>
-            <span class="col-3"><div><button class="form-control"><i class="fa fa-arrow-right"></i></button></div></span>
+        <div class="content sidebar-block">
+          <div class="text-base">
+            <div class="pt-5 pl-3">
+              <span class="font-weight-bold text-dark h3">
+                Seller Hub</span
+              >
+              <span class="text-dark text-sm"> UserID (0)</span>
             </div>
-                  </div>
-                </div>
-              </div>
+          </div>
         </div>
-                  </div>
-        </div>
-                  </div>
+      </div>
 
-                  <!-- end col-md-9-1 -->
-                </div>
-              </div>
-        </div>
-
-                        <!-- breadcrumb -->
-                        <nav class="breadcrumb-bg">
-                            <div class="container no-index">
-                                <div class="breadcrumb">
-                                    <ol>
-                                        <li>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </nav>
     </div>
+              <div class="row pl-2">
+                <div class="container pl-2">
+                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12  pl-2">
+                  <router-link
+                    to="/Overview"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="border-primary border-b-4 p-3"
+                    title="Overview"
+                    ><span class="text-primary">Overview</span></router-link
+                  >
+                  <router-link
+                    to="/Orders"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse" 
+                    class="p-3"
+                    title="Orders"
+                    ><span>Orders</span></router-link>
+                  <router-link
+                    to="/Listing"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="p-2"
+                    title="listing"
+                    ><span>Listing</span></router-link>
+                  <router-link
+                    to="/Performance"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="p-2"
+                    title="Performance"
+                    ><span>Performance</span></router-link>
+                  <router-link
+                    to="/message"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="pl-4 text-right text-primary underline justify-content-end"
+                    title="Performance"
+                    ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
+                  </div>
+                </div>
+              </div>
+
+                <div class="content justify-content-center text-center">
+              <div class="row box pl-5">
+                <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+                              <p class="font-weight-bold">
+                                Unread messages
+                              </p>
+                              <p class="pt-3 text-dark h6 border-b-2">
+                                0
+                              </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+                              <p class="font-weight-bold">
+                                Awaiting shipment
+                              </p>
+                              <p class="pt-3 text-dark h6 border-b-2">
+                                0
+                              </p>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+                              <p class="font-weight-bold">
+                                Sales (31 days)
+                              </p>
+                              <p class="pt-3 text-dark h6 border-b-2">
+                                £12,000.00
+                              </p>
+                </div>
+                </div>
+              </div>
+        <div class="row p-3">
+          <div
+            class="
+              sidebar-3 
+              col-lg-4 col-md-4 col-sm-12
+              pt-3
+              font-weight-bold
+            "
+          >
+            <!-- category menu -->
+            <div class="card ktit sidebar-block border-2 p-3 ">
+              <div class="block-content">
+              <div
+                class="block-content nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="text-left h4 font-weight-bold text-dark p-2 active"
+                  id="v-pills-Summary-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Summary"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Summary"
+                  aria-selected="true"
+                >
+                  Tasks
+                </button>
+                <hr>
+                  <p class="text-xs p-2">No task pending</p>
+               <p class="text-left text-dark p-2">Alerts</p>
+               <hr>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              sidebar-3 
+              col-lg-4 col-md-4 col-sm-12
+              pt-3
+              font-weight-bold
+            "
+          >
+            <!-- category menu -->
+            <div class="card ktit sidebar-block border-2 p-3 ">
+              <div class="block-content">
+              <div
+                class="block-content nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="text-left h4 font-weight-bold text-dark p-2 active"
+                  id="v-pills-Summary-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Summary"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Summary"
+                  aria-selected="true"
+                >
+                  Sales
+                </button>
+                <hr>
+
+                <hr>
+               <hr>
+                            <table class="std table" id="block-history">
+                                <tbody>
+                                    <tr>
+                                        <th class="first_item">Today </th>
+                                        <td><p class="text-right text-dark">0</p></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">Last 7days </th>
+                                        <td><p class="text-right text-dark">0</p></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">Last 31days </th>
+                                        <td><p class="text-right text-dark">0</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+              </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="
+              sidebar-3 
+              col-lg-4 col-md-4 col-sm-12
+              pt-3
+              font-weight-bold
+            "
+          >
+            <!-- category menu -->
+            <div class="card ktit sidebar-block border-2 p-3 ">
+              <div class="block-content">
+              <div
+                class="block-content nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="text-left h4 font-weight-bold text-dark p-2 active"
+                  id="v-pills-Summary-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Summary"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Summary"
+                  aria-selected="true"
+                >
+                  Orders 
+                </button>
+                <hr>
+                <button
+                  class="text-left text-primary p-2"
+                  id="v-pills-Recently-viewed-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Recently-viewed"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Recently-viewed"
+                  aria-selected="false"
+                >
+                  See all orders
+                </button>
+                <hr>
+
+                            <table class="std table" id="block-history">
+                                <tbody>
+                                    <tr>
+                                        <th class="first_item">Awaiting shipment -print shipping label</th>
+                                        <td><p class="text-right text-dark">0</p></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">Shipped and awaiting your feedbacks </th>
+                                        <td><p class="text-right text-dark">0</p></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">Awaiting payment </th>
+                                        <td><p class="text-right text-dark">0</p></td>
+                                    </tr>
+                                    <tr>
+                                        <th class="first_item">All Open returns/replacement </th>
+                                        <td><p class="text-right text-dark">0</p></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+              </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- end col-md-9-1 -->
+        </div>
+
+    <hr>
+  </div>
 </template>
         

@@ -25,7 +25,6 @@ import userPrivacy from '../views/userPrivacy.vue'
 import cookiePolicy from '../views/cookiePolicy.vue'
 import adChoice from '../views/adChoice.vue'
 import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vue'
-import seller_dashboard from '../views/sellers/seller_dashboard.vue'
 import seller_productListing from '../views/sellers/seller_productListing.vue'
 import seller_OrderHistory from '../views/sellers/sellers_OrderHistory.vue'
 import uploadproductimage from '../views/sellers/uploadproductimage.vue'
@@ -35,10 +34,18 @@ import seller_changepassword from '../views/sellers/seller_changepassword.vue'
 import seller_accountsettings from '../views/sellers/seller_accountsettings.vue'
 import seller_supportservice from '../views/sellers/seller_supportservice.vue'
 import Dashboard from '../views/sellers/seller_dashboard.vue'
+import orders_page from '../views/sellers/orders_page.vue'
+import order_details from '../views/sellers/order_details.vue'
+import listing_page from '../views/sellers/listing_page.vue'
 import Seller_menu from '../views/sellers/seller_menu.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
 import money_back_guarantee from '../views/rejee_money_back_guarantee.vue'
 import start_selling from '../views/start_selling.vue'
+import Mymessage from '../views/buyers/message.vue'
+import Account from '../views/buyers/account.vue'
+import Summary from '../views/buyers/summary.vue'
+import resolution_center from '../views/resolution_center.vue'
+import Subscription from '../views/subscription.vue'
 
 Vue.use(VueRouter)
 
@@ -48,19 +55,29 @@ const routes = [{
         component: LandingPage,
     },
     {
-        path: '/Dashboard',
+        path: '/Overview',
         name: 'seller_dashboard',
         component: Dashboard,
+    },
+    {
+        path: '/Orders',
+        name: 'Orders Page',
+        component: orders_page,
+    },
+    {
+        path: '/Order details',
+        name: 'Orders details',
+        component: order_details,
+    },
+    {
+        path: '/Listing',
+        name: 'listing Page',
+        component: listing_page,
     },
     {
         path: '/menu',
         name: 'seller_dashboard',
         component: Seller_menu,
-    },
-    {
-        path: '/seller_dashboard',
-        name: 'seller_dashboard',
-        component: seller_dashboard,
     },
     {
         path: '/Product Listing',
@@ -251,6 +268,31 @@ const routes = [{
         path: '/Start selling',
         name: 'start selling',
         component: start_selling,
+    },
+    {
+        path: '/Summary',
+        name: 'Summary',
+        component: Summary,
+    },
+    {
+        path: '/My Message',
+        name: 'My message',
+        component: Mymessage,
+    },
+    {
+        path: '/account',
+        name: 'Account',
+        component: Account,
+    },
+    {
+        path: '/Resolution center',
+        name: 'Resolution_center',
+        component: resolution_center,
+    },
+    {
+        path: '/Subscription',
+        name: 'Subscription Page',
+        component: Subscription,
     },
 
     {

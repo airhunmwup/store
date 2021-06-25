@@ -452,3 +452,264 @@ h4>strong {
     text-decoration: none;
     cursor: pointer;
 }
+
+.sidepanel {
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    height: 250px;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #882b2b;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidepanel a:hover {
+    color: #f1f1f1;
+}
+
+.sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+}
+
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: #111;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+}
+
+.openbtn:hover {
+    background-color: #444;
+}
+
+
+/* Style the tab */
+
+.tab {
+    float: left;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+
+/* Style the buttons inside the tab */
+
+.tab button {
+    display: block;
+    background-color: inherit;
+    color: black;
+    padding: 22px 16px;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: left;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+
+/* Change background color of buttons on hover */
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+
+/* Create an active/current "tab button" class */
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+
+/* Style the tab content */
+
+.tabcontent {
+    float: left;
+    padding: 0px 12px;
+    border: 1px solid #ccc;
+    border-left: none;
+}
+
+
+/*overlay*/
+
+#overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+
+#text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+
+/*payment css*/
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+#border-btm {
+    padding-bottom: 20px;
+    margin-bottom: 0px;
+    box-shadow: 0px 35px 2px -35px rgb(119, 119, 119)
+}
+
+#test {
+    margin-top: 0px;
+    margin-bottom: 40px;
+    border: 1px solid #FFE082;
+    border-radius: 0.25rem;
+    height: 30px;
+    background-color: #FFECB3
+}
+
+.active1 {
+    color: #2f5a92 !important;
+    font-weight: bold
+}
+
+.list-group .tabs {
+    color: #000000
+}
+
+#new-label {
+    padding: 2px;
+    font-size: 10px;
+    font-weight: bold;
+    background-color: red;
+    color: #ffffff;
+    border-radius: 5px;
+}
+
+.list-group-item.active {
+    z-index: 2;
+    color: #fff;
+    background-color: #fff !important;
+    border-color: #fff !important
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0
+    }
+    #page-content-wrapper {
+        min-width: 0;
+    }
+    #wrapper.toggled #sidebar-wrapper {
+        display: none
+    }
+}
+
+.card0 {
+    margin-top: 10px;
+    margin-bottom: 10px
+}
+
+.top-highlight {
+    color: #00C853;
+    font-weight: bold;
+    font-size: 20px
+}
+
+.form-card input,
+.form-card textarea {
+    border: none;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: arial;
+    color: #2C3E50;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+    -moz-box-shadow: 0px 0px 0px 1.5px skyblue !important;
+    -webkit-box-shadow: 0px 0px 0px 1.5px skyblue !important;
+    box-shadow: 0px 0px 0px 1.5px skyblue !important;
+    font-weight: bold;
+    border: 1px solid skyblue;
+    outline-width: 0
+}
+
+#below-btn a {
+    font-weight: bold;
+    color: #000000
+}
+
+.input-group {
+    position: relative;
+    overflow: hidden
+}
+
+.input-group input {
+    position: relative;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 6px;
+    padding-top: 30px;
+    padding-left: 25px
+}
+
+.input-group label {
+    position: absolute;
+    background: none;
+    border-radius: 6px;
+    line-height: 48px;
+    font-size: 15px;
+    color: gray;
+    width: 100%;
+    font-weight: 100;
+    padding-left: 25px
+}
+
+input:focus+label {
+    color: #1E88E5
+}
+
+#qr {
+    margin-bottom: 150px;
+    margin-top: 50px
+}
+
+.ktit {
+    height: 350px
+}
