@@ -36,7 +36,7 @@
                 aria-orientation="vertical"
               >
                 <button
-                  class="dropdown-item text-left  font-weight-bold text-dark p-2 active"
+                  class="dropdown-item text-left  font-weight-bold text-dark p-2"
                   id="v-pills-Summary-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Summary"
@@ -145,9 +145,9 @@
                   </div>
                 </div>
               </div>
-        <div class="row pl-5">
+        <div class="row">
           <div
-            class="
+            class="pl-4
               sidebar-3 
               col-lg-2 col-md-2
               d-xs-none
@@ -165,7 +165,7 @@
                 aria-orientation="vertical"
               >
                 <button
-                  class="text-left  font-weight-bold text-dark p-2 active"
+                  class="text-left  font-weight-bold text-dark p-2"
                   id="v-pills-Summary-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Summary"

@@ -19,50 +19,32 @@
                           <div class="container">
                             <div class="row">
                               <div class="col-lg-10 pt-5 pl-5 col-sm-10">
-                                <small class="pl-4 text-info">10 min article</small>
+                                <small class="pl-4 text-primary">10 min article</small>
                                 <h1 class="title-page pl-5">User Agreement</h1>
                               </div>
                               <div class="col-lg-4 col-sm-4 pb-3">
-                                <div
-                                  id="search_widget"
-                                  class="align-items-center justify-content-left d-flex"
-                                >
-                                  <form method="get" action="#">
-                                    <input
-                                      type="text"
-                                      name="s"
-                                      value=""
-                                      placeholder="Help ..."
-                                      class="ui-autocomplete-input large col-12"
-                                      autocomplete="off"
-                                    />
-                                    <button type="submit">
-                                      <i class="fa fa-question"></i>
-                                    </button>
-                                  </form>
-                                </div>
                                 <ul class="pt-3">
-                                    <li class="text-info"><a href="#Introduction">1. Introduction</a></li>
-                                    <li class="text-info"><a href="#About REJEE">2. About REJEE</a></li>
-                                    <li class="text-info"><a href="#Using REJEE">3. Using REJEE</a></li>
-                                    <li class="text-info"><a href="#Policy Enforcement">4. Policy Enforcement</a></li>
-                                    <li class="text-info"><a href="#Fees and Taxes">5. Fees and Taxes</a></li>
-                                    <li class="text-info"><a href="#Listing Conditions">6. Listing Conditions</a></li>
-                                    <li class="text-info"><a href="#Purchase Conditions">7. Purchase Conditions</a></li>
-                                    <li class="text-info"><a href="#International Buying">8. International Buying, Selling, and Shipping; Translation</a></li>
-                                    <li class="text-info"><a href="#Content">9. Content</a></li>
-                                    <li class="text-info"><a href="#Notice for Claims">10. Notice for Claims of Intellectual Property Violations and Copyright Infringement Pursuant to Section 512(c) of Title 17 of the United States Code</a></li>
-                                    <li class="text-info"><a href="#Holds and Restricted Funds">11. Holds and Restricted Funds</a></li>
-                                    <li class="text-info"><a href="#Authorization">12. Authorization to Contact You; Recording Calls</a></li>
-                                    <li class="text-info"><a href="#Additional Terms">13. Additional Terms
+                                    <li class="text-primary"><a href="#Introduction">1. Introduction</a></li>
+                                    <li class="text-primary"><a href="#About REJEE">2. About REJEE</a></li>
+                                    <li class="text-primary"><a href="#Using REJEE">3. Using REJEE</a></li>
+                                    <li class="text-primary"><a href="#Policy Enforcement">4. Policy Enforcement</a></li>
+                                    <li class="text-primary"><a href="#Fees and Taxes">5. Fees and Taxes</a></li>
+                                    <li class="text-primary"><a href="#Listing Conditions">6. Listing Conditions</a></li>
+                                    <li class="text-primary"><a href="#Purchase Conditions">7. Purchase Conditions</a></li>
+                                    <li class="text-primary"><a href="#International Buying">8. International Buying, Selling, and Shipping; Translation</a></li>
+                                    <li class="text-primary"><a href="#Content">9. Content</a></li>
+                                    <li class="text-primary"><a href="#Notice for Claims">10. Notice for Claims of Intellectual Property Violations and Copyright Infringement Pursuant to Section 512(c) of Title 17 of the United States Code</a></li>
+                                    <li class="text-primary"><a href="#Holds and Restricted Funds">11. Holds and Restricted Funds</a></li>
+                                    <li class="text-primary"><a href="#Authorization">12. Authorization to Contact You; Recording Calls</a></li>
+                                    <li class="text-primary"><a href="#Additional Terms">13. Additional Terms
                                 Returns and Cancellations
                                 REJEE Money Back Guarantee</a></li>
-                                    <li class="text-info"><a href="#Managed Payments">14. Managed Payments</a></li>
-                                    <li class="text-info"><a href="#Disclaimer">15. Disclaimer of Warranties; Limitation of Liability</a></li>
-                                    <li class="text-info"><a href="#Release">16. Release</a></li>
-                                    <li class="text-info"><a href="#Indemnity">17. Indemnity</a></li>
-                                    <li class="text-info"><a href="#Legal Disputes">18. Legal Disputes</a></li>
-                                    <li class="text-info"><a href="#General">19. General</a></li>
+                                    <li class="text-primary"><a href="#Managed Payments">14. Managed Payments</a></li>
+                                    <li class="text-primary"><a href="#Disclaimer">15. Disclaimer of Warranties; Limitation of Liability</a></li>
+                                    <li class="text-primary"><a href="#Release">16. Release</a></li>
+                                    <li class="text-primary"><a href="#Indemnity">17. Indemnity</a></li>
+                                    <li class="text-primary"><a href="#Legal Disputes">18. Legal Disputes</a></li>
+                                    <li class="text-primary"><a href="#General">19. General</a></li>
                                 </ul>
                               </div>
                               <div class="col-lg-8 col-sm-8">

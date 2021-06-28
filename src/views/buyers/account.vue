@@ -208,7 +208,7 @@
                   </div>
                 </div>
               </div>
-        <div class="row pl-5">
+        <div class="row">
           <div
             class="
               sidebar-3 

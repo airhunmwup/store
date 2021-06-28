@@ -4,13 +4,12 @@
   <!-- main content -->
   <div>
     <div class="box pt-4">
-      <div id="">
               <!-- breadcrumb -->
               
                 <!-- main content -->
                       <section class="">
                         <div class="container">
-                          <div class="row  pb-5 ">
+                          <div class="row pb-5 ">
                             <div
                               class="col-lg-10 col-md-10 col-sm-10"
                             >
@@ -18,7 +17,7 @@
                                 Subscriptions
                               </p>
                             </div>
-                            <div class="row card pb-5 p-3">
+                            <div class="row card pb-5  pt-3">
                               <p class="text-dark  text-left h6 font-weight-bold">
                                     Recommended
                               </p>
@@ -60,7 +59,6 @@
                           </div>
                         </div>
                       </section>
-      </div>
 
                 <p class="text-sm text-dark p-3">
                   <b>Need more help?:</b> Learn more about resolving issues as a seller or resolving issues as a buyer.

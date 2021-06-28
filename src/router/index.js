@@ -25,28 +25,28 @@ import userPrivacy from '../views/userPrivacy.vue'
 import cookiePolicy from '../views/cookiePolicy.vue'
 import adChoice from '../views/adChoice.vue'
 import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vue'
-import seller_productListing from '../views/sellers/seller_productListing.vue'
-import seller_OrderHistory from '../views/sellers/sellers_OrderHistory.vue'
 import uploadproductimage from '../views/sellers/uploadproductimage.vue'
-import createnewlisting from '../views/sellers/createnewlisting.vue'
-import seller_orderdetails from '../views/sellers/seller_orderdetails.vue'
 import seller_changepassword from '../views/sellers/seller_changepassword.vue'
-import seller_accountsettings from '../views/sellers/seller_accountsettings.vue'
-import seller_supportservice from '../views/sellers/seller_supportservice.vue'
 import Dashboard from '../views/sellers/seller_dashboard.vue'
 import orders_page from '../views/sellers/orders_page.vue'
 import order_details from '../views/sellers/order_details.vue'
 import listing_page from '../views/sellers/listing_page.vue'
+import create_listing from '../views/sellers/create_listing.vue'
 import Account_Page from '../views/sellers/account_page.vue'
 import seller_message from '../views/sellers/message_page2.vue'
-import Seller_menu from '../views/sellers/seller_menu.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
 import money_back_guarantee from '../views/rejee_money_back_guarantee.vue'
 import start_selling from '../views/start_selling.vue'
 import Mymessage from '../views/buyers/message.vue'
+import Mymessage_open from '../views/buyers/message_open.vue'
 import Account from '../views/buyers/account.vue'
 import Summary from '../views/buyers/summary.vue'
 import resolution_center from '../views/resolution_center.vue'
+import resolut_Center from '../views/resolut_Center.vue'
+import cancel_order from '../views/cancel_order.vue'
+import return_missing_item from '../views/return_missing_item.vue'
+import resolving_unpaid_item from '../views/resolving_unpaid_item.vue'
+import resolving_with_seller from '../views/resolving_with_seller.vue'
 import Subscription from '../views/subscription.vue'
 
 Vue.use(VueRouter)
@@ -77,29 +77,14 @@ const routes = [{
         component: listing_page,
     },
     {
+        path: '/Create listing',
+        name: 'Create listing',
+        component: create_listing,
+    },
+    {
         path: '/Account Page',
         name: 'Account Page',
         component: Account_Page,
-    },
-    {
-        path: '/menu',
-        name: 'seller_dashboard',
-        component: Seller_menu,
-    },
-    {
-        path: '/Product Listing',
-        name: 'seller_productListing',
-        component: seller_productListing,
-    },
-    {
-        path: '/Order History',
-        name: 'seller_OrderHistory',
-        component: seller_OrderHistory,
-    },
-    {
-        path: '/Seller Orderdetails',
-        name: 'seller_orderdetails',
-        component: seller_orderdetails,
     },
     {
         path: '/Process Order',
@@ -110,21 +95,6 @@ const routes = [{
         path: '/Seller change password',
         name: 'seller_changepassword',
         component: seller_changepassword,
-    },
-    {
-        path: '/Seller account settings',
-        name: 'seller_accountsettings',
-        component: seller_accountsettings,
-    },
-    {
-        path: '/Seller support service',
-        name: 'seller_supportservice',
-        component: seller_supportservice,
-    },
-    {
-        path: '/Create New Listing',
-        name: 'createnewlisting',
-        component: createnewlisting,
     },
     {
         path: '/Upload Product Image',
@@ -272,6 +242,26 @@ const routes = [{
         component: money_back_guarantee,
     },
     {
+        path: '/Resolving unpaid item',
+        name: 'Resolving unpaid item',
+        component: resolving_unpaid_item,
+    },
+    {
+        path: '/Resolving with seller',
+        name: 'Resolving with seller',
+        component: resolving_with_seller,
+    },
+    {
+        path: '/cancel order',
+        name: 'cancel order',
+        component: cancel_order,
+    },
+    {
+        path: '/Return missing item',
+        name: 'Return missing item',
+        component: return_missing_item,
+    },
+    {
         path: '/Start selling',
         name: 'start selling',
         component: start_selling,
@@ -287,6 +277,11 @@ const routes = [{
         component: Mymessage,
     },
     {
+        path: '/Message Read',
+        name: 'Message Read',
+        component: Mymessage_open,
+    },
+    {
         path: '/Message',
         name: 'message',
         component: seller_message,
@@ -300,6 +295,12 @@ const routes = [{
         path: '/Resolution center',
         name: 'Resolution_center',
         component: resolution_center,
+    },
+    {
+        path: '/Resolut Center',
+        name: 'Resoluti Center',
+        component: resolut_Center,
+
     },
     {
         path: '/Subscription',

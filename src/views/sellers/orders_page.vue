@@ -17,14 +17,14 @@
       </div>
 
     </div>
-              <div class="row pl-2">
-                <div class="container pl-2">
-                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12  pl-2">
+              <div class="row pl-4">
+                <div class="container pl-3">
+                  <div class="content text-dark p-2 border-b-2 font-weight-bold col-12  pl-2">
                   <router-link
                     to="/Overview"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="p-3"
+                    class="p-2"
                     title="Overview"
                     ><span>Overview</span></router-link
                   >
@@ -32,7 +32,7 @@
                     to="/Orders"
                     data-toggle="collapse"
                     data-target=".navbar-collapse" 
-                    class="border-primary border-b-4 p-3"
+                    class="border-primary border-b-4 p-2"
                     title="Orders"
                     ><span class="text-primary">Orders</span></router-link>
                   <router-link
@@ -46,23 +46,114 @@
                     to="/Account Page"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="p-3"
+                    class="p-2"
                     title="Account"
                     ><span>Account</span></router-link>
                   <router-link
                     to="/message"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="pl-4 text-right text-primary underline justify-content-end"
+                    class="pl-3 text-right text-primary underline justify-content-end"
                     title="Performance"
                     ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
                   </div>
                 </div>
               </div>
+<div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-end pl-5">
+  <a href="#" class="text-primary underline justify-content-end dropdown-toggle" data-toggle="dropdown">
+    Menu
+  </a>
+            <!-- category menu -->
+            <div class="sidebar-block text-dark dropdown-menu">
+              <div class="block-content">
+              <div
+                class="block-content nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="text-left text-sm font-weight-bold text-dark p-2 active"
+                  id="v-pills-All-Orders-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-All-Orders"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-All-Orders"
+                  aria-selected="true"
+                >
+                  All Orders
+                </button>
+                <button
+                  class="text-left text-sm font-weight-bold text-dark p-2"
+                  id="v-pills-Awaiting-Payment-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Awaiting-Payment"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Awaiting-Payment"
+                  aria-selected="false"
+                >
+                  Awaiting Payment
+                </button>
 
-        <div class="row pl-5">
+                <button
+                  class="text-left text-sm font-weight-bold text-dark p-2"
+                  id="v-pills-Awaiting-Shipment-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Awaiting-Shipment"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Awaiting-Shipment"
+                  aria-selected="true"
+                >
+                  Awaiting Shipment
+                </button>
+                <button
+                  class="text-left text-sm font-weight-bold text-dark p-2"
+                  id="v-pills-Paid-and-shipped-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Paid-and-shipped"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Paid-and-shipped"
+                  aria-selected="true"
+                >
+                  Paid and shipped
+                </button>
+                <hr>
+                <button
+                  class="text-left text-sm font-weight-bold text-dark p-2"
+                  id="v-pills-Cancellations-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Cancellations"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Cancellations"
+                  aria-selected="true"
+                >
+                  Cancellations
+                </button>
+                <button
+                  class="text-left text-sm font-weight-bold text-dark p-2"
+                  id="v-pills-Returns-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Returns"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Returns"
+                  aria-selected="true"
+                >
+                  Returns
+                </button>
+              </div>
+              </div>
+            </div>
+</div>
+
+        <div class="row ">
           <div
-            class="
+            class="pl-3
               sidebar-3 
               col-lg-2 col-md-2
               d-xs-none
@@ -88,7 +179,7 @@
                 aria-orientation="vertical"
               >
                 <button
-                  class="text-left  font-weight-bold text-dark p-2 active"
+                  class="text-left text-sm font-weight-bold text-dark p-2 active"
                   id="v-pills-All-Orders-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-All-Orders"
@@ -100,7 +191,7 @@
                   All Orders
                 </button>
                 <button
-                  class="text-left  font-weight-bold text-dark p-2"
+                  class="text-left text-sm font-weight-bold text-dark p-2"
                   id="v-pills-Awaiting-Payment-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Awaiting-Payment"
@@ -113,7 +204,7 @@
                 </button>
 
                 <button
-                  class="text-left  font-weight-bold text-dark p-2"
+                  class="text-left text-sm font-weight-bold text-dark p-2"
                   id="v-pills-Awaiting-Shipment-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Awaiting-Shipment"
@@ -125,7 +216,7 @@
                   Awaiting Shipment
                 </button>
                 <button
-                  class="text-left  font-weight-bold text-dark p-2"
+                  class="text-left text-sm font-weight-bold text-dark p-2"
                   id="v-pills-Paid-and-shipped-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Paid-and-shipped"
@@ -138,7 +229,7 @@
                 </button>
                 <hr>
                 <button
-                  class="text-left  font-weight-bold text-dark p-2"
+                  class="text-left text-sm font-weight-bold text-dark p-2"
                   id="v-pills-Cancellations-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Cancellations"
@@ -150,7 +241,7 @@
                   Cancellations
                 </button>
                 <button
-                  class="text-left  font-weight-bold text-dark p-2"
+                  class="text-left text-sm font-weight-bold text-dark p-2"
                   id="v-pills-Returns-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Returns"

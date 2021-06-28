@@ -215,14 +215,14 @@
       </div>
 
     </div>
-              <div class="row pl-2">
-                <div class="container pl-2">
-                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12  pl-2">
+              <div class="row pl-4">
+                <div class="container pl-3">
+                  <div class="content text-dark p-2 border-b-2 font-weight-bold col-12  pl-2">
                   <router-link
                     to="/Overview"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="p-3"
+                    class="p-2"
                     title="Overview"
                     ><span>Overview</span></router-link
                   >
@@ -230,7 +230,7 @@
                     to="/Orders"
                     data-toggle="collapse"
                     data-target=".navbar-collapse" 
-                    class="p-3"
+                    class="p-2"
                     title="Orders"
                     ><span>Orders</span></router-link>
                   <router-link
@@ -244,23 +244,23 @@
                     to="/Account Page"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="border-primary border-b-4 p-3"
+                    class="border-primary border-b-4 p-2"
                     title="Account"
                     ><span class="text-primary">Account</span></router-link>
                   <router-link
                     to="/message"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="pl-4 text-right text-primary underline justify-content-end"
+                    class="pl-3 text-right text-primary underline justify-content-end"
                     title="Performance"
                     ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
                   </div>
                 </div>
 
               </div>
-        <div class="row pl-5">
+        <div class="row">
           <div
-            class="
+            class="pl-4
               sidebar-3 
               col-lg-3 col-md-3
               d-xs-none
@@ -456,7 +456,7 @@
           <div class="col-sm-12 col-lg-9 col-md-9 product-container">
             <div id="wrapper-site">
 
-              <div class="col-sm-12 col-lg-12 p-3 col-md-12 product-container">
+              <div class="col-sm-12 col-lg-12 col-md-12 product-container">
                 <div id="wrapper-site">
               <div class="tab-content" id="v-pills-tabContent">
 

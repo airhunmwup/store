@@ -126,12 +126,12 @@
         </div>
       </div>
     </div>
-    <div class="row pl-5">
+    <div class="row">
       <div class="sidebar-3 col-lg-2 col-md-2 d-xs-none pt-3 font-weight-bold">
         <!-- category menu -->
         <div class="sidebar-block">
           <div class="block-content">
-            <div class="cateTitle hasSubCategory pl-2 open level1">
+            <div class="cateTitle hasSubCategory pl-3 open level1">
               <p class="p-2 text-dark">Inbox</p>
               <div
                 class="block-content nav flex-column nav-pills"
@@ -343,7 +343,7 @@
                             </td>
                             <td class="text-left">
                               <router-link
-                                to="/seller_dashboard"
+                                to="/Message Read"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
@@ -546,7 +546,7 @@
                             </td>
                             <td class="text-left">
                               <router-link
-                                to="/seller_dashboard"
+                                to="/Message Read"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"

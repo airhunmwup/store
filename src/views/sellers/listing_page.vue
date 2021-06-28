@@ -17,14 +17,14 @@
       </div>
 
     </div>
-              <div class="row pl-2">
-                <div class="container pl-2">
-                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12  pl-2">
+              <div class="row pl-4">
+                <div class="container pl-3">
+                  <div class="content text-dark p-2 border-b-2 font-weight-bold col-12  pl-2">
                   <router-link
                     to="/Overview"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="p-3"
+                    class="p-2"
                     title="Overview"
                     ><span>Overview</span></router-link
                   >
@@ -32,7 +32,7 @@
                     to="/Orders"
                     data-toggle="collapse"
                     data-target=".navbar-collapse" 
-                    class="p-3"
+                    class="p-2"
                     title="Orders"
                     ><span>Orders</span></router-link>
                   <router-link
@@ -46,27 +46,27 @@
                     to="/Account Page"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="p-3"
+                    class="p-2"
                     title="Account"
                     ><span>Account</span></router-link>
                   <router-link
                     to="/message"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="pl-4 text-right text-primary underline justify-content-end"
+                    class="pl-3 text-right text-primary underline justify-content-end"
                     title="Performance"
                     ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
                   </div>
                 </div>
               </div>
 
-        <div class="row pl-5">
+        <div class="row">
           <div
-            class="
+            class="pl-4 
               sidebar-3 
-              col-lg-1 col-md-1
+              col-lg-2 col-md-2
               d-xs-none
-              text-xs
+              text-sm
               font-weight-bold
             "
           >
@@ -98,7 +98,7 @@
                 aria-orientation="vertical"
               >
                 <button
-                  class="text-left  font-weight-bold text-dark p-2 active"
+                  class="text-left  font-weight-bold p-2 active"
                   id="v-pills-All-Orders-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-All-Orders"
@@ -110,7 +110,7 @@
                   Active
                 </button>
                 <button
-                  class="text-left  font-weight-bold text-dark p-2"
+                  class="text-left  font-weight-bold p-2"
                   id="v-pills-Awaiting-Payment-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Awaiting-Payment"
@@ -123,7 +123,7 @@
                 </button>
 
                 <button
-                  class="text-left  font-weight-bold text-dark p-2"
+                  class="text-left  font-weight-bold p-2"
                   id="v-pills-Awaiting-Shipment-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Awaiting-Shipment"
@@ -135,7 +135,7 @@
                   Drafts
                 </button>
                 <button
-                  class="text-left  font-weight-bold text-dark p-2"
+                  class="text-left  font-weight-bold p-2"
                   id="v-pills-Paid-and-shipped-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Paid-and-shipped"
@@ -147,7 +147,7 @@
                   Scheduled
                 </button>
                 <button
-                  class="text-left  font-weight-bold text-dark p-2"
+                  class="text-left  font-weight-bold p-2"
                   id="v-pills-Saved-Search-tab"
                   data-bs-toggle="pill"
                   data-bs-target="#v-pills-Saved-Search"
@@ -163,7 +163,7 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-lg-11 col-md-11 product-container">
+          <div class="pl-3 col-sm-12 col-lg-10 col-md-10 product-container">
             <div id="wrapper-site">
 
               <div class="col-sm-12 col-lg-12 p-3 col-md-12 product-container">
@@ -178,31 +178,77 @@
                   aria-labelledby="v-pills-All-Orders-tab"
                 >
                 <div class="row">
-                  <span class="text text-dark h5 font-weight-bold  font-weight-normal">
+                  <span class="text text-dark h5 pl-5 font-weight-bold  font-weight-normal">
                   Manage active Listings
-                  <hr>
                   </span>
+                  <hr>
                   
-                <div class="content pb-3 justify-content-center text-center">
+                <div class="content pt-3 pb-3 justify-content-center text-center">
+
+                             
               <div class="row box pl-2">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <p class="form-control border box">Create listing</p>  
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-            
-                <select class="text-primary form-control">
-                <option>Last 7days</option>
-                <option>Last 60days</option>
-                <option>2021</option>
-                <option>2020</option>
-                </select>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                            
-                </div>
+
+                          <div class=" card p-3 text-left text-dark">
+                              <div class="row justify-start pl-3">
+                              <div class="">
+                            <a class="cateItem" 
+                              data-toggle="collapse"
+                              data-target="#sort" href="#">
+                                  <span class="pr-2 pt-2"><b><i class="fa fa-angle-down"></i> Search</b></span></a>
+                              </div>
+                              </div>
+
+                              <!--sort section-->
+                              
+                            <div
+                              class="subCategory collapse"
+                              id="sort"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                
+                                <div class="row p-3 product-container">
+                                    <div class="col-8">
+                                    <select class="text-primary form-control">
+                                    <option>Last 7days</option>
+                                    <option>Last 60days</option>
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-6 p-3">
+                                    <select class="text-primary form-control">
+                                    <option>All categories</option>
+                                    <option>Last 60days</option>
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    </select>
+                                    </div>
+                                    <div class="col-6 p-3">
+                                    <select class="text-primary form-control">
+                                    <option>Last 7days</option>
+                                    <option>Last 60days</option>
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    </select>
+                                    </div>
+                                    <div
+                                    class="thumbnail-container"
+                                    >
+                                    <div class="content ">
+
+                    <button class="btn border border-primary text-primary">Search</button> 
+                                    </div>
+                                </div>
+                                </div>
+                                <hr>
+                              </div>
+                            </div>
+                          </div>
                 </div>
               </div>
-                <div class="card col-lg-12 col-md-12 col-sm-12 p-3">
+                <div class="card col-lg-12 col-md-12 col-sm-12 pt-3">
                   Results: 1 - 5 of 5 (2 Orders selected)
 
                 <div class="content pt-2 justify-content-center text-center">
@@ -217,7 +263,13 @@
                 </select>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
-                    <button class="form-control border text-primary">Create listing</button> 
+                  <router-link
+                    to="/Create Listing"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    title="listing"
+                    >
+                    <button class="form-control border text-primary">Create listing</button></router-link> 
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-6">
                            
@@ -340,7 +392,7 @@
                         </tbody>
                       </table>
 </div>
-                      
+                     
                     </div>
                 </div>
                 </div>

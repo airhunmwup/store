@@ -19,40 +19,22 @@
                           <div class="container">
                             <div class="row">
                               <div class="col-lg-10 pt-5 pl-5 col-sm-10">
-                                <small class="pl-4 text-info">10 min article</small>
+                                <small class="pl-4 text-primary">10 min article</small>
                                 <h1 class="title-page pl-5">User Privacy Notices</h1>
                               </div>
                               <div class="col-lg-4 col-sm-4 pb-3">
-                                <div
-                                  id="search_widget"
-                                  class="align-items-center justify-content-left d-flex"
-                                >
-                                  <form method="get" action="#">
-                                    <input
-                                      type="text"
-                                      name="s"
-                                      value=""
-                                      placeholder="Help ..."
-                                      class="ui-autocomplete-input large col-12"
-                                      autocomplete="off"
-                                    />
-                                    <button type="submit">
-                                      <i class="fa fa-question"></i>
-                                    </button>
-                                  </form>
-                                </div>
                                 <ul class="pt-3">
-                                    <li class="text-info"><a href="#Introduction">1. Scope and updates of this User Privacy Notice</a></li>
-                                    <li class="text-info"><a href="#About REJEE">2. Controller</a></li>
-                                    <li class="text-info"><a href="#Using REJEE">3. Data protection officer and contact</a></li>
-                                    <li class="text-info"><a href="#Policy Enforcement">4. What personal data we collect and process</a></li>
-                                    <li class="text-info"><a href="#Policy Enforcement">5. Purposes and legal basis for data processing and categories of recipientss</a></li>
-                                    <li class="text-info"><a href="#Listing Conditions">6. International data transfers</a></li>
-                                    <li class="text-info"><a href="#Purchase Conditions">7. Storage duration and erasure</a></li>
-                                    <li class="text-info"><a href="#International Buying">8. Rights as a data subject</a></li>
-                                    <li class="text-info"><a href="#Content">9. Cookies & similar technologies</a></li>
-                                    <li class="text-info"><a href="#Notice for Claims">10. Data security</a></li>
-                                    <li class="text-info"><a href="#Holds and Restricted Funds">11. Other important information regarding data protection</a></li>
+                                    <li class="text-primary"><a href="#Introduction">1. Scope and updates of this User Privacy Notice</a></li>
+                                    <li class="text-primary"><a href="#About REJEE">2. Controller</a></li>
+                                    <li class="text-primary"><a href="#Using REJEE">3. Data protection officer and contact</a></li>
+                                    <li class="text-primary"><a href="#Policy Enforcement">4. What personal data we collect and process</a></li>
+                                    <li class="text-primary"><a href="#Policy Enforcement">5. Purposes and legal basis for data processing and categories of recipientss</a></li>
+                                    <li class="text-primary"><a href="#Listing Conditions">6. International data transfers</a></li>
+                                    <li class="text-primary"><a href="#Purchase Conditions">7. Storage duration and erasure</a></li>
+                                    <li class="text-primary"><a href="#International Buying">8. Rights as a data subject</a></li>
+                                    <li class="text-primary"><a href="#Content">9. Cookies & similar technologies</a></li>
+                                    <li class="text-primary"><a href="#Notice for Claims">10. Data security</a></li>
+                                    <li class="text-primary"><a href="#Holds and Restricted Funds">11. Other important information regarding data protection</a></li>
                                 </ul>
                               </div>
                               <div class="col-lg-8 col-sm-8">

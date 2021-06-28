@@ -549,23 +549,23 @@
                                             to="/Product Detail"
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
-                                            title="Home"
+                                            title="Company Info"
                                           >Company info</router-link>
                                         </li>
                                         <li>
                                             <router-link
-                                            to="/Product Detail"
+                                            to="/User Privacy"
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
-                                            title="Home"
+                                            title="policies"
                                           >Policies</router-link>
                                         </li>
                                         <li>
                                             <router-link
-                                            to="/Product Detail"
+                                            to="/User Agreement"
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
-                                            title="Home"
+                                            title="User Agreement"
                                           >User Agreement</router-link>
                                         </li>
                                     </ul>
@@ -584,10 +584,10 @@
                                     <ul>
                                         <li>
                                             <router-link
-                                            to="/Product Detail"
+                                            to="/Resolut Center"
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
-                                            title="Home"
+                                            title="resolution center"
                                           >Resolution Center</router-link>
                                         </li>
                                         <li>
