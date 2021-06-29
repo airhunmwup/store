@@ -16,7 +16,7 @@
                                 to="/Register Personal Account"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
-                                class="text-info font-weight-bold"
+                                class="text-primary font-weight-bold"
                                 title="Register Business Account"
                               >Create a personal account</router-link></p>
                               
@@ -62,14 +62,14 @@
                                                 to="/User Agreement"
                                                 data-toggle="collapse"
                                                 data-target=".navbar-collapse"
-                                                class="text-info"
+                                                class="text-primary"
                                                 title="User Agreement"
                                             >User Agreement</router-link> and acknowledge reading our 
                                             <router-link
                                                 to="/User Privacy"
                                                 data-toggle="collapse"
                                                 data-target=".navbar-collapse"
-                                                class="text-info"
+                                                class="text-primary"
                                                 title="User Privacy"
                                             >User Privacy Notice</router-link></p>
                                         </div>

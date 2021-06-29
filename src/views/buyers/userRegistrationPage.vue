@@ -16,14 +16,14 @@
                                 to="/Register Business Account"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
-                                class="text-info font-weight-bold"
+                                class="text-primary font-weight-bold"
                                 title="Register Business Account"
                               >Create a business account</router-link></p>
                               
                                         <div class="clearfix p-3 justify-content-center">
                                 <p class="text-dark pb-3">Continue with:</p>
                                             <span class="p-2">
-                                                <button class="p-4 shadow  border btn-info" data-link-action="sign-in" type="submit">
+                                                <button class="p-4 shadow text-light border btn-info" data-link-action="sign-in" type="submit">
                                                    <i class="text-lg fa fa-facebook"></i> 
                                                 </button>
                                             </span>
@@ -83,14 +83,14 @@
                                 to="/User Agreement"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
-                                class="text-info"
+                                class="text-primary"
                                 title="User Agreement"
                               >User Agreement</router-link> and acknowledge reading our 
                               <router-link
                                 to="/User Privacy"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
-                                class="text-info"
+                                class="text-primary"
                                 title="User Privacy"
                               >User Privacy Notice</router-link></p>
                                         </div>

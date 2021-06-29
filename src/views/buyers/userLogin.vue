@@ -17,7 +17,7 @@
                                         <div class="clearfix p-3 justify-content-center">
                                 <p class="text-dark pb-3">Continue with:</p>
                                             <span class="p-2">
-                                                <button class="p-4  border btn-primary" data-link-action="sign-in" type="submit">
+                                                <button class="p-4  border btn-info" data-link-action="sign-in" type="submit">
                                                    <i class="text-large fa fa-facebook"></i> 
                                                 </button>
                                             </span>
@@ -47,7 +47,7 @@
                                     </div>
                                     <div class="no-gutters text-left">
                                         <div class="forgot-password ">
-                                            <a href="user-reset-password.html" rel="nofollow" class="text-info">
+                                            <a href="user-reset-password.html" rel="nofollow" class="text-primary">
                                                 Forgot your password?
                                             </a>
                                         </div>
@@ -69,7 +69,7 @@
                                 to="/Register Personal Account"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
-                                class="text-info font-weight-bold"
+                                class="text-primary font-weight-bold"
                                 title="Register Personal Account"
                               >Sign Up now</router-link></p>
                             </div>

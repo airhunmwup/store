@@ -55,8 +55,8 @@
             to="/message"
             data-toggle="collapse"
             data-target=".navbar-collapse"
-            class="pl-3 text-right text-primary underline justify-content-end"
-            title="Performance"
+            class="pl-2 text-right text-primary underline justify-content-end"
+            title="message"
           >
             <span
               class="

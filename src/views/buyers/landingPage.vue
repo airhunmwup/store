@@ -746,15 +746,15 @@
                       <div class="title-block">Stay Connected</div>
                       <ul>
                         <li>
-                          <a href=""><i class="fa fa-facebook"></i> Facebook</a>
+                          <a href="https://www.facebook.com/RejeeLtd"><i class="fa fa-facebook"></i> Facebook</a>
                         </li>
                         <li>
-                          <a href=""
+                          <a href="https://instagram.com/rejeecompany"
                             ><i class="fa fa-instagram"></i> Instagram</a
                           >
                         </li>
                         <li>
-                          <a href=""><i class="fa fa-twitter"></i> Twitter</a>
+                          <a href="https://twitter.com/rejeecompany"><i class="fa fa-twitter"></i> Twitter</a>
                         </li>
                       </ul>
                     </div>
