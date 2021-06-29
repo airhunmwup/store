@@ -106,8 +106,12 @@
                                             data-target=".navbar-collapse"
                                             title="Resolving with seller"
                                           >Resolving buying problems</router-link></li>
-                                  <li>Resolving selling problems</li>
-                                  <li>Report a problem with a buyer</li>
+                                  <li class="underline"><router-link
+                                            to="/Selling"
+                                            data-toggle="collapse"
+                                            data-target=".navbar-collapse"
+                                            title="Resolving selling problems"
+                                          >Resolving selling problems</router-link></li>
                               </ul>
                               </div>
                               </div>

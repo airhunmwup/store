@@ -22,11 +22,12 @@
                   Resolving issues with sellers
                   </span>
       </div>
+                                <p class="p-5 h1 text-dark">Customer service</p>
                         <section class="page-home p-3" style="background-color: orange;">
-                              <div class="col-lg-10 pt-5 pl-5 col-sm-10">
+                              <div class="col-lg-10 pt-3 pb-3 pl-5 col-sm-10">
                                 <small class="pl-4 text-primary">1 min Overview</small>
                                 <p class="pl-5 h1 text-dark">Resolving issues with sellers</p>
-                                <p class="text-dark font-weight-bold">If you’re having an issue with an eBay seller, try contacting them directly to resolve your problem. If you can’t work things out, we’re always here to step in and help.</p>
+                                <p class="text-dark font-weight-bold">If you’re having an issue with an REJEE seller, try contacting them directly to resolve your problem. If you can’t work things out, we’re always here to step in and help.</p>
                               </div>
                         </section>
                 <div class="content">
@@ -48,7 +49,7 @@
                                             to="/Login buyers"
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
-                                            class="text-primary underline"
+                                            class="text-primary underline font-weight-bold "
                                             title="sign in"
                                           >sign in</router-link> to your account.
                                     </p>
@@ -59,7 +60,7 @@
                                 >
                                   <div class="content text-dark">
                                     <p>
-                                      Usually your purchases on eBay will go smoothly, but occasionally a problem might come up with your order, or your seller. Our list of articles below will help with any issues you might run into.
+                                      Usually your purchases on REJEE will go smoothly, but occasionally a problem might come up with your order, or your seller. Our list of articles below will help with any issues you might run into.
                                     </p>
                                   </div>
                                 </div>

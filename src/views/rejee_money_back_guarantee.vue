@@ -35,10 +35,10 @@
                             </div>
                             <div class="row pt-5">
                               <div class="col-lg-4 col-md-4 col-sm-8">
-                                <h1 class="h1 text-warning">
+                                <h1 class="h1 text-primary">
                                   <i class="fa-2x fa fa-user"></i>
                                 </h1>
-                                <p class="h4 text-warning">
+                                <p class="h4 text-primary">
                                   Contact Your Seller
                                 </p>
                                 <p class="text font-weight-bold">
@@ -49,10 +49,10 @@
                                 </p>
                               </div>
                               <div class="col-lg-4 col-md-4 col-sm-8">
-                                <h1 class="h1 text-warning">
+                                <h1 class="h1 text-primary">
                                   <i class="fa-2x fa fa-headphones"></i>
                                 </h1>
-                                <p class="h4 text-warning">
+                                <p class="h4 text-primary">
                                   Not resolved? Let us know.
                                 </p>
                                 <p class="text font-weight-bold">
@@ -62,10 +62,10 @@
                                 </p>
                               </div>
                               <div class="col-lg-4 col-md-4 col-sm-8">
-                                <h1 class="h1 text-warning">
+                                <h1 class="h1 text-primary">
                                   <i class="fa-2x fa fa-clock-o"></i>
                                 </h1>
-                                <p class="h4 text-warning">
+                                <p class="h4 text-primary">
                                   We’ll get your money back. Fast.
                                 </p>
                                 <p class="text font-weight-bold">
@@ -90,7 +90,7 @@
                                 </div>
                                 <div
                                   class=" 
-                                    text-warning
+                                    text-primary
                                     font-weight-bold
                                     col-lg-3 col-sm-3 col-md-3
                                      
@@ -131,31 +131,31 @@
 
             <div class="container row pt-5">
               <div class="col-lg-4 col-md-4 col-sm-8 shadow-lg">
-                <h1 class="h1 text-warning">1</h1>
-                <p class="h4 text-warning">Start Your Return</p>
+                <h1 class="h1 text-primary">1</h1>
+                <p class="h4 text-primary">Start Your Return</p>
                 <p class="text font-weight-bold">
                   Select the item you want to return in your purchase history on
                   My REJEE.
                 </p>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-8 shadow-md">
-                <h1 class="h1 text-warning">2</h1>
-                <p class="h4 text-warning">Ship the Item Back</p>
+                <h1 class="h1 text-primary">2</h1>
+                <p class="h4 text-primary">Ship the Item Back</p>
                 <p class="text font-weight-bold">
                   If the seller asks, send the item back as soon as possible
                   using their preferred return method.
                 </p>
               </div>
               <div class="col-lg-4 col-md-4 col-sm-8 shadow">
-                <h1 class="h1 text-warning">3</h1>
-                <p class="h4 text-warning">Receive Your Refund</p>
+                <h1 class="h1 text-primary">3</h1>
+                <p class="h4 text-primary">Receive Your Refund</p>
                 <p class="text font-weight-bold">
                   If the seller doesn’t refund your money, ask REJEE to step in
                   and help.
                 </p>
               </div>
               <div class="row pt-5 pb-5">
-                <div class="text-warning text-right font-weight-bold col-12">
+                <div class="text-primary text-right font-weight-bold col-12">
                   Learn More <i class="fa fa-arrow-right"></i>
                 </div>
               </div>
@@ -171,7 +171,7 @@
                   "
                 >
                   <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
-                    <h1 class="h1 text-warning">REJEE Customer Service</h1>
+                    <h1 class="h1 text-primary">REJEE Customer Service</h1>
                     <p class="text-md text">
                       Have a question? Need to resolve an issue? We’re here to
                       help! Customer service is available seven days a week.
@@ -180,7 +180,7 @@
                 </div>
 
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
-                  <h1 class="h1 text-warning pt-5 ">
+                  <h1 class="h1 text-primary pt-5 ">
                     <i class="fa-2x fa fa-headphones"></i>
                   </h1>
                   <p class="font-weight-bold text">Contact Us</p>

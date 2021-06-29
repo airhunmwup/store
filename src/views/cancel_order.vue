@@ -25,42 +25,44 @@
                 <div class="content">
                   <!-- main content -->
                   <div class="main-content">
+                                <p class="p-5 h1 text-dark">Customer service</p>
                     <div id="wrapper-site">
                       <div id="content-wrapper">
                         <section class="page-home">
                           <div class="container">
                             <div class="row">
-                              <div class="col-lg-10 pt-5 pl-5 col-sm-10">
-                                <small class="pl-4 text-primary">2 min article</small>
+                              <div class="col-lg-12 pt-5 pl-5 col-sm-12"  style="background-color: orange;">
+                                <small class="pl-4 text-primary">2 min Overview</small>
                                 <h1 class="title-page pl-5">How sellers can cancel an order</h1>
 
                               </div>
                               <div class="col-lg-12 col-sm-12">
 
-                                  <div class="content text-dark">
+                                  <div class="content p-3 text-dark">
                                     <p>
                                       Sellers are obligated to complete a sale with a buyer. However, we understand that there may be certain circumstances in which orders need to be canceled.
                                     </p>
                                   </div>
                                 <div
-                                  class="container text-left p-3 border-warning border-l-2"
+                                  class="container text-left pb-3 border-primary border-l-2"
                                 >
-                                  <div class="content text-dark">
+                                  <div class="content p-3 text-dark">
                                     <p>
                                       To improve your help experience, please <router-link
                                             to="/Login buyers"
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
-                                            class="text-primary underline"
+                                            class="text-primary underline font-weight-bold"
                                             title="sign in"
                                           >sign in</router-link> to your account.
                                     </p>
                                   </div>
                                 </div>
+                                <br>
                                 <div
-                                  class="container text-left p-3 border-warning border"
+                                  class="container text-left p-3 border-primary border"
                                 >
-                                  <div class="content text-dark">
+                                  <div class="content p-3 text-dark">
                                     <p>
                                       Sellers don't need to open unpaid item cases any longer. Instead, orders can be canceled if a buyer hasn't paid within 4 calendar days. If you still have open unpaid item cases, you have 36 days from the date they were opened to close them. If you don't close them within 36 days, we'll close them for you, but you won't be eligible for a final value fee credit and the unpaid item won't be recorded on the buyer's account.
                                     </p>

@@ -37,6 +37,11 @@ import seller_message from '../views/sellers/message_page2.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
 import money_back_guarantee from '../views/rejee_money_back_guarantee.vue'
 import start_selling from '../views/start_selling.vue'
+import start_selling_here from '../views/start_selling_here.vue'
+import creating_listing from '../views/creating_listing.vue'
+import sellers_can_cancel_order from '../views/sellers_can_cancel_order.vue'
+import resolving_unpaid_item_with_buyer from '../views/resolving_unpaid_item_with_buyer.vue'
+import managing_returns_missing_items_and_refunds_for_sellers from '../views/managing_returns_missing_items_and_refunds_for_sellers.vue'
 import Mymessage from '../views/buyers/message.vue'
 import Mymessage_open from '../views/buyers/message_open.vue'
 import Account from '../views/buyers/account.vue'
@@ -44,6 +49,7 @@ import Summary from '../views/buyers/summary.vue'
 import resolution_center from '../views/resolution_center.vue'
 import resolut_Center from '../views/resolut_Center.vue'
 import cancel_order from '../views/cancel_order.vue'
+import Selling from '../views/selling.vue'
 import return_missing_item from '../views/return_missing_item.vue'
 import resolving_unpaid_item from '../views/resolving_unpaid_item.vue'
 import resolving_with_seller from '../views/resolving_with_seller.vue'
@@ -252,9 +258,24 @@ const routes = [{
         component: resolving_with_seller,
     },
     {
+        path: '/Resolving unpaid item with buyer',
+        name: 'Resolving unpaid item with buyer',
+        component: resolving_unpaid_item_with_buyer,
+    },
+    {
+        path: '/Managing returns missing items and refunds for sellers',
+        name: 'Managing returns missing items and refunds for sellers',
+        component: managing_returns_missing_items_and_refunds_for_sellers,
+    },
+    {
         path: '/cancel order',
         name: 'cancel order',
         component: cancel_order,
+    },
+    {
+        path: '/Selling',
+        name: 'Selling',
+        component: Selling,
     },
     {
         path: '/Return missing item',
@@ -265,6 +286,21 @@ const routes = [{
         path: '/Start selling',
         name: 'start selling',
         component: start_selling,
+    },
+    {
+        path: '/Start selling guide',
+        name: 'Start selling guide',
+        component: start_selling_here,
+    },
+    {
+        path: '/Creating listing',
+        name: 'Creating listing',
+        component: creating_listing,
+    },
+    {
+        path: '/Sellers can cancel order',
+        name: 'Sellers can cancel order',
+        component: sellers_can_cancel_order,
     },
     {
         path: '/Summary',

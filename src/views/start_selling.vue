@@ -17,7 +17,7 @@
                       <section class="page-home">
                         <div class="container p-4">
 
-                <p class="text-warning h1 pl-5 font-weight-bold">
+                <p class="text-primary h1 pl-5 font-weight-bold">
                 Start selling
                 </p>
             <div class="row">
@@ -77,28 +77,28 @@
             <div class="container row pt-5">
               <div class="ol-lg-6 col-md-6 col-sm-6 p-3 shadow-lg">
                 <h1 class="h1 text-info">1</h1>
-                <p class="h4 text-warning">Writing a relevant title</p>
+                <p class="h4 text-primary">Writing a relevant title</p>
                 <p class="text font-weight-bold">
                   Titles help buyers find your listing. We'll help you write a great one that makes your listing stand out by recommending the keywords buyers use when searching. Be sure to avoid using all caps and focus on item specifics like brand, model, size, and colour.
                 </p>
               </div>
               <div class="ol-lg-6 col-md-6 col-sm-6 p-3 shadow-md">
                 <h1 class="h1 text-danger">2</h1>
-                <p class="h4 text-warning">Taking high quality photos</p>
+                <p class="h4 text-primary">Taking high quality photos</p>
                 <p class="text font-weight-bold">
                   Our app has tools that help you clean up your image and add a white background. When shooting, remember to choose a well-lit place, take photos from various angles, and capture blemishes to help the buyer avoid surprises.
                 </p>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 p-3 shadow">
                 <h1 class="h1 text-primary">3</h1>
-                <p class="h4 text-warning">Setting the right price</p>
+                <p class="h4 text-primary">Setting the right price</p>
                 <p class="text font-weight-bold">
                   When you list, we’ll recommend a price based on recent sales of similar items. If you’d rather decide for yourself, think like a buyer! Search around to see how other sellers are pricing their items. You can also let your buyers know you’re willing to negotiate by adding Best Offer to your listing.
                 </p>
               </div>
               <div class="ol-lg-6 col-md-6 col-sm-6 p-3 shadow">
                 <h1 class="h1 text-success">4</h1>
-                <p class="h4 text-warning">Saving more on shipping</p>
+                <p class="h4 text-primary">Saving more on shipping</p>
                 <p class="text font-weight-bold">
                   Based on what you’re selling, we provide a custom recommendation for the best shipping service and packaging option. Once your item sells, you’ll get a discounted rate on postage by using REJEE shipping labels. To sell locally, you can also offer local pickup.
                 </p>
