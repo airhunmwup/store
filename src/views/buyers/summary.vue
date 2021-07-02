@@ -118,8 +118,8 @@
 
     </div>
               <div class="row pl-5">
-                <div class="container pl-5">
-                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12  pl-5">
+                <div class="container">
+                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12 ">
                   <router-link
                     to="/seller_dashboard"
                     data-toggle="collapse"

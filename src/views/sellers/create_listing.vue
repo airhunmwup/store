@@ -4,24 +4,34 @@
     <div class="row">
       <div class="container justify-content-center content-bottom">
 
-                  <span class="p-2 text-primary font-weight-normal">
-                  listing
-                  </span>>
-                  <span class="text pont-weight-normal">
-                  Create listing
-                  </span>
+        <div class="content sidebar-block">
+          <div class="text-base">
+            <div class="pt-5 pl-3">
+              <span class="font-weight-bold text-dark h3">
+                Seller Hub</span
+              >
+              <span class="text-dark text-sm"> UserID (0)</span>
+            </div>
+          </div>
+        </div>
       </div>
 
     </div>
 
-                <div class="content justify-content-center">
-              <div class="pl-4 pr-4">
-                  <p class="text p-2 h5 font-weight-bold">
-                  Create Listing
-                  </p>
+        <div class="row">
+          <div class="pl-3 col-sm-12 col-lg-12 col-md-12 product-container">
+            <div id="wrapper-site">
+
+              <div class="tab-content" id="v-pills-tabContent">
+
+<!--All-Orders-->
+                <div class="row">
+                  <span class="text h5 pl-5 font-weight-bold  font-weight-normal">
+                  Create Listings
+                  </span>
+                  <hr>
                   
-                  <!-- this should appear when order has been shipped-->
-              <div class="card">
+                <div class="card">
 
               <div class="row pl-4">
                 <div class="container pl-3">
@@ -40,21 +50,21 @@
                     data-target=".navbar-collapse" 
                     class="p-2"
                     title="Orders"
-                    ><span>Photo</span></router-link>
+                    ><span><i class="fa fa-image"></i> Photo</span></router-link>
                   <router-link
                     to="/Listing"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
                     class="p-2"
                     title="listing"
-                    ><span>Listing</span></router-link>
+                    ><span><i class="fa fa-folder"></i> Variation</span></router-link>
                   <router-link
                     to="/Account Page"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
                     class="p-2"
                     title="Account"
-                    ><span>Account</span></router-link>
+                    ><span><i class="fa fa-truck"></i> Shipping</span></router-link>
                   </div>
                   <hr>
                 </div>
@@ -62,7 +72,7 @@
                 <div class="container pl-3">
                 <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                     <div class="col-lg-2 col-md-2">
-                        <p class="pt-3 font-weight-bold text-dark">Title</p>
+                        <p class="pt-3 font-weight-bold text-dark">Title:</p>
                     </div>
                     <div class="col-lg-8 col-md-8">
                         <input class="form-control" type="text"/>
@@ -70,50 +80,50 @@
                 </div>
                 <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                     <div class="col-lg-2 col-md-2">
-                        <p class="pt-3 font-weight-bold text-dark">Subtitle (£2.40)</p>
+                        <p class="pt-3 font-weight-bold text-dark">Subtitle (£2.40):</p>
                     </div>
                     <div class="col-lg-8 col-md-8">
-                        <input class="form-control col-4" type="text"/>
+                        <input class="form-control" type="number" step="0.01" min="0.50"/>
                     </div>
                 </div>
                 <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                     <div class="col-lg-2 col-md-2">
-                        <p class="pt-3 font-weight-bold text-dark">Custom label (SKU)</p>
+                        <p class="pt-3 font-weight-bold text-dark">Custom label (SKU):</p>
                     </div>
                     <div class="col-lg-8 col-md-8">
-                        <input class="form-control col-4" type="text"/>
+                        <input class="form-control col-10" type="text"/>
                     </div>
                 </div>
                 <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                     <div class="col-lg-2 col-md-2">
-                        <p class="pt-3 font-weight-bold text-dark">Category</p>
+                        <p class="font-weight-bold text-dark">Category:</p>
                     </div>
                     <div class="col-lg-8 col-md-8">
-                        <select class="form-control form-control-md col-6 text-primary select-auto border" type="text">
-                        <option></option>
-                        <option></option>
+                        <select class="underline pt-4 form-control-md col-6 text-primary select-auto border" type="text">
+                        <option>Fashion</option>
+                        <option>Electronics</option>
                         <option></option>
                         </select>
                     </div>
                 </div>
                 <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                     <div class="col-lg-2 col-md-2">
-                        <p class="pt-3 font-weight-bold text-dark">Second category</p>
+                        <p class="font-weight-bold text-dark">Sub-category:</p>
                     </div>
                     <div class="col-lg-8 col-md-8">
-                        <select class="form-control form-control-md col-6 text-primary select-auto border" type="text">
-                        <option></option>
-                        <option></option>
+                        <select class="col-6 text-primary underline sselect-auto border" type="text">
+                        <option>male</option>
+                        <option>female</option>
                         <option></option>
                         </select>
                     </div>
                 </div>
                 <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                     <div class="col-lg-2 col-md-2">
-                        <p class="pt-3 font-weight-bold text-dark">Condition</p>
+                        <p class="font-weight-bold text-dark">Condition:</p>
                     </div>
                     <div class="col-lg-8 col-md-8">
-                        <select class="form-control form-control-md col-3 text-primary select-auto border" type="text">
+                        <select class="col-3 text-primary underline select-auto border" type="text">
                         <option>New</option>
                         <option>Used</option>
                         <option>Any</option>
@@ -122,82 +132,69 @@
                 </div>
                 <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                     <div class="col-lg-2 col-md-2">
-                        <p class="pt-3 font-weight-bold text-dark">Quantity in stock</p>
+                        <p class="pt-3 font-weight-bold text-dark">Minimum Quantity:</p>
                     </div>
-                    <div class="col-lg-8 col-md-8">
-                        <input class="form-control col-3" type="text"/>
+                    <div class="col-lg-4 col-md-4">
+                        <input class="form-control" type="text"/>
+                    </div>
+                    <div class="col-lg-2 col-md-2">
+                        <p class="pt-3 font-weight-bold text-dark">Maximum Quantity:</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4">
+                        <input class="form-control" type="text"/>
                     </div>
                 </div>
                 <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                     <div class="col-lg-2 col-md-2">
-                        <p class="pt-3 font-weight-bold text-dark">Description</p>
+                        <p class="pt-3 font-weight-bold text-dark">Description:</p>
                     </div>
-                    <div class="col-lg-8 col-md-8"> 
-                    <div class="row container ">  
-                    <ul class="nav nav-tabs">
-                        <li class="active border border-b-0 p-2 text-primary"><a data-toggle="tab" href="#home">Standard</a></li>
-                        <li class="p-2 border border-b-0 text-primary"><a data-toggle="tab" href="#menu1">Html</a></li>
-                    </ul>
-                    <hr>
-
-                    <div class="tab-content p-3">
-                        <div id="home" class="tab-pane fade in show active">
-                        <h3>Standard</h3>
+                    <div class="col-lg-10 col-md-10"> 
+                    
                         <div class="form-group">
-                        <textarea class="form-control" rows="10" id="comment"></textarea>
+                        <textarea class="form-control" rows="10"></textarea>
                         </div>
-                        </div>
-                        <div id="menu1" class="tab-pane fade">
-                        <h3>Html</h3>
-                        <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                        </div>
-                    </div>
-                    </div>
                     </div>
                 </div>
-       
-      
-      
-                                <div class="row pt-5">
-                                  <span class="col-4">
+                <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                                     <router-link
                                       to="/Product Listing"
                                       data-toggle="collapse"
                                       data-target=".navbar-collapse"
                                       title="cancel"
-                                      ><div>
-                                        <button class="form-control col-6">
+                                      >
+                                        <span class="form-control align-content-lg-start col-6">
                                           CANCEL
-                                        </button>
-                                      </div>
-                                    </router-link></span
-                                  >
-                                  <span class="col-4">
-                                  </span>
-                                  <span class="col-4">
+                                        </span>
+                                    </router-link>
+                    
+                        
                                     <router-link
-                                      to="/Upload Product Image"
+                                      to="/Upload Image"
                                       data-toggle="collapse"
                                       data-target=".navbar-collapse"
                                       title="next"
                                     >
-                                      <div>
-                                        <button
-                                          class="text-primary border-primary form-control col-6"
+                                        <span
+                                          class="text-primary align-content-lg-end border-primary form-control col-6"
                                           data-link-action="sign-in"
                                           type="submit"
                                         >
                                           NEXT
-                                        </button>
-                                      </div></router-link
-                                    ></span
-                                  >
-                                </div>
+                                        </span></router-link
+                                    >
+                </div>
+       
+      
+      
+                </div>
                 </div>
                 </div>
               </div>
-              </div>
+            </div>
+          </div>
 
+          <!-- end col-md-9-1 -->
+        </div>
 
     <hr>
   </div>

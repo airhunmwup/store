@@ -31,6 +31,7 @@
                         <div class="border-primary text-dark alert alert-primary">
                         <strong><i class="fa fa-info-circle fa-lg"></i></strong> <b>Upcoming updates to Resolution Center</b><br> Center will be going away soon. You will still be able to create and manage your requests and cases in Seller Hub, My REJEE Sold and Purchase History.
                         </div>
+                        <form>
                             <div class="row">
                               <div class="col-lg-8 p-3 col-md-8 col-sm-12">
                               <div class="border p-3">
@@ -116,6 +117,7 @@
                               </div>
                               </div>
                             </div>
+                        </form>
                           </div>
                         </div>
                       </section>

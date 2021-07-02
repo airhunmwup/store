@@ -128,15 +128,6 @@
                 >
                   <i class="zmdi zmdi-settings h4 pr-2"></i> Account preferences
                 </button>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Product Listing"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Product Listing"
-                            >
-                  Advertisement Preferences
-                </router-link>
                 <button
                   class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
                   id="v-pills-Communication-Preferences-tab"
@@ -346,7 +337,7 @@
                 >
                   Payments
                 </button>
-                <button
+               <!--  <button
                   class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
                   id="v-pills-Paypal-Account-tab"
                   data-bs-toggle="pill"
@@ -358,7 +349,7 @@
                 >
                   Paypal Account
                 </button>
-            <!-- Payment Information button ends/-->
+            Payment Information button ends/-->
             <!-- Account preferences/-->
                 <button
                   class="text-left  font-weight-bold text-dark p-2"
@@ -369,15 +360,6 @@
                 >
                   <i class="zmdi zmdi-settings h4 pr-2"></i> Account preferences
                 </button>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Product Listing"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Product Listing"
-                            >
-                  Advertisement Preferences
-                </router-link>
                 <button
                   class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
                   id="v-pills-Communication-Preferences-tab"
@@ -471,18 +453,6 @@
                     
                         <h1 class="title-page">Personal Information</h1>
 
-        <p class="p-3 justify-content-end text-right">
-          <router-link
-            to="/seller_dashboard"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-3 justify-content-end"
-            title="Account"
-            ><span class="p-3 text-primary underline justify-content-end"
-              >Edit</span
-            ></router-link
-          >
-        </p>
                 <div class="container">
                     <div id="main">
                             <table class="std table" id="block-history">
@@ -533,6 +503,7 @@
                   </span>
 
                     <div id="main">
+<!--Password modify-->
                             <table class="std table p-3" id="block-history">
                                 <tbody>
                                     <tr>
@@ -546,19 +517,107 @@
                                         </p></td>
                                         <td>
                                         <p class="p-3 justify-content-end text-right">
-                                        <router-link
-                                            to="/seller_dashboard"
-                                            data-toggle="collapse"
-                                            data-target=".navbar-collapse"
-                                            class="justify-content-end"
-                                            title="Account"
-                                            ><span class="text-primary underline justify-content-end"
+                                        
+                            <a class="cateItem justify-content-end" 
+                              data-toggle="collapse"
+                              data-target="#passwordmodify" href="#"><span class="text-primary underline justify-content-end"
                                             >Edit</span
-                                            ></router-link
-                                        >
+                                            ></a>
                                         </p>
                                         </td>
                                     </tr>
+                                </tbody>
+                            </table>
+
+                            <div
+                              class="subCategory collapse justify-content-center"
+                              id="passwordmodify"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                                    
+                  <div class="register-form pl-5">
+                    <p class="text-dark">Create a password or modify your existing one.</p>
+                    <form
+                      action="#"
+                      id="#"
+                      class="col-lg-6"
+                      method="post"
+                    >
+                      <div>
+                        <div class="pt-3 form-group">
+                              <input
+                                class="col-6 text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="Current password"
+                                type="password"
+                                placeholder="Current password"
+                              />
+                        </div>
+                        <div class="pt-3 form-group">
+                              <input
+                                class="col-6 text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="password"
+                                type="password"
+                                placeholder="New password"
+                              />
+                        </div>
+                        <div class="form-group">
+                              <input
+                                class="col-6 text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="password"
+                                type="password"
+                                placeholder="Reenter new password"
+                              />
+                        </div>
+                      </div>
+                      <div class="form-group row">
+                        <span class="custom-checkbox d-inline-flex check-input">
+                          <input
+                            class="check"
+                            name="newsletter"
+                            type="checkbox"
+                            value="1"
+                            checked
+                            disabled
+                          />
+                          <label class="pl-2 text-sm label-absolute"
+                            > Password must be not less than 10 words</label
+                          >
+                        </span>
+                      </div>
+                      <div class="clearfix row pb-3 ">
+                          <span class="col-6"><button
+                      class="form-control"
+                      data-link-action="sign-in"
+                      type="submit"
+                          >
+                            Cancel
+                          </button></span>
+                          <span class="col-6"><button
+                      class="btn border-primary text-primary form-control"
+                      data-link-action="sign-in"
+                      type="submit"
+                          >
+                            SAVE
+                          </button></span>
+                      </div>
+                    </form>
+                  </div>
+
+                                <hr>
+                            </div>
+<!--Security question -->
+                            <table class="std table p-3" id="block-history">
+                                <tbody>
                                     <tr>
                                         <th class="first_item">
                                         <p class="p-3 font-weight-bold text-dark">
@@ -569,20 +628,172 @@
                                             Give yourself another secure way to recover your account.
                                         </p></td>
                                         <td>
+                                         
                                         <p class="p-3 justify-content-end text-right">
-                                        <router-link
-                                            to="/seller_dashboard"
-                                            data-toggle="collapse"
-                                            data-target=".navbar-collapse"
-                                            class="justify-content-end"
-                                            title="Account"
-                                            ><span class="text-primary underline justify-content-end"
+                                        
+                            <a class="cateItem justify-content-end" 
+                              data-toggle="collapse"
+                              data-target="#securityquestion" href="#"><span class="text-primary underline justify-content-end"
                                             >Edit</span
-                                            ></router-link
-                                        >
+                                            ></a>
                                         </p>
                                         </td>
                                     </tr>
+                                </tbody>
+                            </table>
+                            <div
+                              class="subCategory collapse justify-content-center"
+                              id="securityquestion"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                                    
+                  <div class="register-form pl-5">
+                    <p class="text-dark font-weight-bold">
+                      PICK YOUR SECRET QUESTIONS
+                    </p>
+                    <p class="text-dark">
+Give yourself another secure way to recover your account in case your information becomes outdated.</p>
+                    <form
+                      action="#"
+                      id="#"
+                      class="col-lg-6"
+                      method="post"
+                    >
+                      <div>
+                        <div class="form-group">
+                    <p class="text-dark pt-3 font-weight-bold">Question 1</p>
+                        </div>
+                        <div class="form-group">
+                              <select
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="Question_1"
+                                type="text"
+                              >
+                              <option>Select an option</option>
+                              <option value="First Company you worked for?">First Company you worked for?</option>
+                              <option value="First Concert you attended?">First Concert you attended?</option>
+                              <option value="Name of your first pet?">Name of your first pet?</option>
+                              <option value="First foreign country you visited?">First foreign country you visited?</option>
+                              <option value="Model of your first car?">Model of your first car?</option>
+                              <option value="Your childhood nickname?">Your childhood nickname?</option>
+                              <option value="Name of the street you grew up on?">Name of the street you grew up on?</option>
+                              <option value="First snd last name of your best friend?">First snd last name of your best friend?</option>
+                              <option value="Name of favorite book?">Name of favorite book?</option>
+                              <option value="Mothers maiden name?">Mothers maiden name?</option>
+                              </select>
+                        </div>
+                        <div class="pt-3 form-group">
+                              <input
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="answer_1"
+                                type="text"
+                                placeholder="Answer"
+                              />
+                        </div>
+                        <div class="form-group">
+                    <p class="text-dark pt-3 font-weight-bold">Question 2</p>
+                        </div>
+                        <div class="form-group">
+                              <select
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="Question_1"
+                                type="text"
+                              >
+                              <option>Select an option</option>
+                              <option value="First Company you worked for?">First Company you worked for?</option>
+                              <option value="First Concert you attended?">First Concert you attended?</option>
+                              <option value="Name of your first pet?">Name of your first pet?</option>
+                              <option value="First foreign country you visited?">First foreign country you visited?</option>
+                              <option value="Model of your first car?">Model of your first car?</option>
+                              <option value="Your childhood nickname?">Your childhood nickname?</option>
+                              <option value="Name of the street you grew up on?">Name of the street you grew up on?</option>
+                              <option value="First snd last name of your best friend?">First snd last name of your best friend?</option>
+                              <option value="Name of favorite book?">Name of favorite book?</option>
+                              <option value="Mothers maiden name?">Mothers maiden name?</option>
+                              </select>
+                        </div>
+                        <div class="pt-3 form-group">
+                              <input
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="answer_2"
+                                type="text"
+                                placeholder="Answer"
+                              />
+                        </div>
+                        <div class="form-group">
+                    <p class="text-dark pt-3 font-weight-bold">Question 3</p>
+                        </div>
+                        <div class="form-group">
+                              <select
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="Question_1"
+                                type="text"
+                              >
+                              <option>Select an option</option>
+                              <option value="First Company you worked for?">First Company you worked for?</option>
+                              <option value="First Concert you attended?">First Concert you attended?</option>
+                              <option value="Name of your first pet?">Name of your first pet?</option>
+                              <option value="First foreign country you visited?">First foreign country you visited?</option>
+                              <option value="Model of your first car?">Model of your first car?</option>
+                              <option value="Your childhood nickname?">Your childhood nickname?</option>
+                              <option value="Name of the street you grew up on?">Name of the street you grew up on?</option>
+                              <option value="First snd last name of your best friend?">First snd last name of your best friend?</option>
+                              <option value="Name of favorite book?">Name of favorite book?</option>
+                              <option value="Mothers maiden name?">Mothers maiden name?</option>
+                              </select>
+                        </div>
+                        <div class="pt-3 form-group">
+                              <input
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="answer_3"
+                                type="text"
+                                placeholder="Answer"
+                              />
+                        </div>
+                      </div>
+                      <div class="clearfix row pb-3 ">
+                          <span class="col-6"><button
+                      class="form-control"
+                      data-link-action="sign-in"
+                      type="submit"
+                          >
+                            Cancel
+                          </button></span>
+                          <span class="col-6"><button
+                      class="btn border-primary text-primary form-control"
+                      data-link-action="sign-in"
+                      type="submit"
+                          >
+                            Confirm
+                          </button></span>
+                      </div>
+                    </form>
+                  </div>
+
+                                <hr>
+                            </div>
+<!--Social accounts-->
+                            <table class="std table p-3" id="block-history">
+                                <tbody>
                                     <tr>
                                         <th class="">
                                         <p class="p-3 font-weight-bold text-dark">
@@ -604,7 +815,7 @@
                                         <p class="p-3">
                                             Unlinked
                                         </p>
-                                        <p class="justify-content-end text-right">
+                                         <p class="p-3 justify-content-end text-right">
                                         <router-link
                                             to="/seller_dashboard"
                                             data-toggle="collapse"
@@ -618,6 +829,10 @@
                                         </p>
                                         </td>
                                     </tr>
+                                </tbody>
+                            </table>
+                            <table class="std table p-3" id="block-history">
+                                <tbody>
                                     <tr>
                                         <th class="">
                                         <p class="p-3 font-weight-bold text-dark">
@@ -627,30 +842,7 @@
                                         <p class="p-3">
                                             Unlinked
                                         </p>
-                                        <p class="justify-content-end text-right">
-                                        <router-link
-                                            to="/seller_dashboard"
-                                            data-toggle="collapse"
-                                            data-target=".navbar-collapse"
-                                            class="justify-content-end"
-                                            title="Account"
-                                            ><span class="text-primary underline justify-content-end"
-                                            >Edit</span
-                                            ></router-link
-                                        >
-                                        </p>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <th class="">
-                                        <p class="p-3 font-weight-bold text-dark">
-                                            Apple
-                                        </p></th>
-                                        <td>
-                                        <p class="p-3">
-                                            Unlinked
-                                        </p>
-                                        <p class="justify-content-end text-right">
+                                         <p class="p-3 justify-content-end text-right">
                                         <router-link
                                             to="/seller_dashboard"
                                             data-toggle="collapse"
@@ -714,6 +906,10 @@
                                         </p>
                                         </td>
                                     </tr>
+                                </tbody>
+                            </table>
+                            <table class="std table p-3" id="block-history">
+                                <tbody>
                                     <tr>
                                         <th class="">
                                         <p class="font-weight-bold text-dark">
@@ -738,6 +934,10 @@
                                         </p>
                                         </td>
                                     </tr>
+                                </tbody>
+                            </table>
+                            <table class="std table p-3" id="block-history">
+                                <tbody>
                                     <tr>
                                         <th class="">
                                         <p class="font-weight-bold text-dark">
@@ -748,22 +948,168 @@
                                         </p>
                                         </th>
                                         <td>
-                                        <p class="justify-content-end p-3 text-right">
-                                        <router-link
-                                            to="/seller_dashboard"
-                                            data-toggle="collapse"
-                                            data-target=".navbar-collapse"
-                                            class="justify-content-end"
-                                            title="Account"
-                                            ><span class="text-primary btn border border-primary justify-content-end"
-                                            >Add</span
-                                            ></router-link
-                                        >
+                                        <p class="p-3 justify-content-end text-right">
+                                        
+                            <a class="cateItem justify-content-end  border btn border-primary" 
+                              data-toggle="collapse"
+                              data-target="#editaddress" href="#"><span class="text-primary underline justify-content-end"
+                                            >Edit</span
+                                            ></a>
                                         </p>
                                         </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <div
+                              class="subCategory collapse justify-content-center"
+                              id="securityquestion"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                                    
+                  <div class="register-form pl-5">
+                    <p class="text-dark font-weight-bold">
+                      PICK YOUR SECRET QUESTIONS
+                    </p>
+                    <p class="text-dark">
+Give yourself another secure way to recover your account in case your information becomes outdated.</p>
+                    <form
+                      action="#"
+                      id="#"
+                      class="col-lg-6"
+                      method="post"
+                    >
+                      <div>
+                        <div class="form-group">
+                    <p class="text-dark pt-3 font-weight-bold">Question 1</p>
+                        </div>
+                        <div class="form-group">
+                              <select
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="Question_1"
+                                type="text"
+                              >
+                              <option>Select an option</option>
+                              <option value="First Company you worked for?">First Company you worked for?</option>
+                              <option value="First Concert you attended?">First Concert you attended?</option>
+                              <option value="Name of your first pet?">Name of your first pet?</option>
+                              <option value="First foreign country you visited?">First foreign country you visited?</option>
+                              <option value="Model of your first car?">Model of your first car?</option>
+                              <option value="Your childhood nickname?">Your childhood nickname?</option>
+                              <option value="Name of the street you grew up on?">Name of the street you grew up on?</option>
+                              <option value="First snd last name of your best friend?">First snd last name of your best friend?</option>
+                              <option value="Name of favorite book?">Name of favorite book?</option>
+                              <option value="Mothers maiden name?">Mothers maiden name?</option>
+                              </select>
+                        </div>
+                        <div class="pt-3 form-group">
+                              <input
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="answer_1"
+                                type="text"
+                                placeholder="Answer"
+                              />
+                        </div>
+                        <div class="form-group">
+                    <p class="text-dark pt-3 font-weight-bold">Question 2</p>
+                        </div>
+                        <div class="form-group">
+                              <select
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="Question_1"
+                                type="text"
+                              >
+                              <option>Select an option</option>
+                              <option value="First Company you worked for?">First Company you worked for?</option>
+                              <option value="First Concert you attended?">First Concert you attended?</option>
+                              <option value="Name of your first pet?">Name of your first pet?</option>
+                              <option value="First foreign country you visited?">First foreign country you visited?</option>
+                              <option value="Model of your first car?">Model of your first car?</option>
+                              <option value="Your childhood nickname?">Your childhood nickname?</option>
+                              <option value="Name of the street you grew up on?">Name of the street you grew up on?</option>
+                              <option value="First snd last name of your best friend?">First snd last name of your best friend?</option>
+                              <option value="Name of favorite book?">Name of favorite book?</option>
+                              <option value="Mothers maiden name?">Mothers maiden name?</option>
+                              </select>
+                        </div>
+                        <div class="pt-3 form-group">
+                              <input
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="answer_2"
+                                type="text"
+                                placeholder="Answer"
+                              />
+                        </div>
+                        <div class="form-group">
+                    <p class="text-dark pt-3 font-weight-bold">Question 3</p>
+                        </div>
+                        <div class="form-group">
+                              <select
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="Question_1"
+                                type="text"
+                              >
+                              <option>Select an option</option>
+                              <option value="First Company you worked for?">First Company you worked for?</option>
+                              <option value="First Concert you attended?">First Concert you attended?</option>
+                              <option value="Name of your first pet?">Name of your first pet?</option>
+                              <option value="First foreign country you visited?">First foreign country you visited?</option>
+                              <option value="Model of your first car?">Model of your first car?</option>
+                              <option value="Your childhood nickname?">Your childhood nickname?</option>
+                              <option value="Name of the street you grew up on?">Name of the street you grew up on?</option>
+                              <option value="First snd last name of your best friend?">First snd last name of your best friend?</option>
+                              <option value="Name of favorite book?">Name of favorite book?</option>
+                              <option value="Mothers maiden name?">Mothers maiden name?</option>
+                              </select>
+                        </div>
+                        <div class="pt-3 form-group">
+                              <input
+                                class="text-sm
+                                  form-control
+                                  js-child-focus js-visible-password
+                                "
+                                name="answer_3"
+                                type="text"
+                                placeholder="Answer"
+                              />
+                        </div>
+                      </div>
+                      <div class="clearfix row pb-3 ">
+                          <span class="col-6"><button
+                      class="form-control"
+                      data-link-action="sign-in"
+                      type="submit"
+                          >
+                            Cancel
+                          </button></span>
+                          <span class="col-6"><button
+                      class="btn border-primary text-primary form-control"
+                      data-link-action="sign-in"
+                      type="submit"
+                          >
+                            Confirm
+                          </button></span>
+                      </div>
+                    </form>
+                  </div>
+
+                                <hr>
+                            </div>
                     </div>
                 </div>
                 </div>
@@ -786,65 +1132,67 @@
                   <span class="text font-weight-bold text-dark h5 font-weight-normal">
                         Add Payment Option
                   </span>
-                    <div class="container pl-3 col-sm-6 col-md-6 col-lg-3 justify-content-center text-center text-primary">
+                    <div class="row container pl-3 col-sm-6 col-md-6 col-lg-3 justify-content-center text-center text-primary">
 
-                    <div class="card col-6 p-5" style="padding:20px">
+                    <div class="card col-lg-6 col-sm-6 col-md-6 p-5" style="padding:20px">
                     <button onclick="on()"><i class="fa fa-lg fa-plus"></i></button>
                        <p class="">
                             Add Card Payment Option
                       </p>
                     </div>
+                    <div class="card col-lg-6 col-sm-6 col-md-6 p-5" style="padding:20px">
+                      <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black">Open Modal</button>
+                       <div id="id01" class="w3-modal">
+    <div class="w3-modal-content">
+      <div class="w3-container">
+        <span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">&times;</span>
+        <p>Some text. Some text. Some text.</p>
+        <p>Some text. Some text. Some text.</p>
+      </div>
+    </div>
+  </div>
+                    <button onclick="on(#card)"><i class="fa fa-lg fa-plus"></i></button>
+                       <p class="">
+                            Add Paypal Account
+                      </p>
+                    </div>
                     </div>
                     <div id="overlay">
-                    <div id="text" class="">
-                <div class="container row">
+                    <div id="text" class="col-sm-12  col-lg-6  col-md-6">
                 <div class="content card">
-                    <p class="text-primary text-right" onclick="off()"><i class="fa fa-close fa-lg"></i></p>
-                <div class="d-flex" id="wrapper">
-                    <!-- payment Sidebar -->
-                    <div class="bg-light border-right" id="sidebar-wrapper">
-                        <div class="list-group list-group-flush"> 
-                            <a data-toggle="tab" href="#menu1" id="tab1" class="tabs list-group-item active1">
-                                <div class="list-div text-primary my-2">
-                                    <div class="fa fa-credit-card"></div> &nbsp;&nbsp; Card
-                                </div>
-                            </a> <a data-toggle="tab" href="#menu2" id="tab2" class="tabs list-group-item bg-light">
-                                <div class="list-div my-2">
-                                    <div class="fa fa-paypal"></div> &nbsp;&nbsp;&nbsp; Paypal <span id="new-label">NEW</span>
-                                </div>
-                            </a> </div>
-                    </div> <!-- payment Page Content -->
-                    <div id="page-content-wrapper">
-                        <div class="row justify-content-center">
-                            <div class="text-center">
-                            <span class="text font-weight-bold text-dark h6 font-weight-normal">
+                    <p class="text-primary text-right p-2" onclick="off()"><i class="fa fa-close fa-lg"></i></p>
+                
+                    <!-- payment Sidebar --> <!-- payment Page Content -->
+                        <div class="tab-content">
+                                <div class="row justify-content-center">
+                            <span class="text text-center font-weight-bold text-dark h6 font-weight-normal">
                                     Add Payment Option
                             </span>
-                            </div>
-                        </div>
-                        <div class="tab-content col-12">
-                            <div id="menu1" class="tab-pane in active">
-                                <div class="row justify-content-center">
-                                    <div class="col-11">
-                                        <div class="form-card col-12">
+                                    <div class="col-12">
+                                        <div class="form-card p-3">
                                             <h3 class="mt-0 mb-4 text-center">Enter your card details</h3>
                                             <form onsubmit="event.preventDefault()">
                                                 <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group"> <input type="text" id="cr_no" placeholder="Names as shown on Card" minlength="19" maxlength="19"> <label>NAME</label> </div>
+                                                    <div class="col-12"><label class="font-weight-bold">NAME</label> 
+                                                        <div class="input-group"> <input type="text" id="cr_no" placeholder="Names as shown on Card" minlength="19" maxlength="19"> </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
+                                                    <div class="col-12"><label class="font-weight-bold">Address</label> 
+                                                        <div class="input-group"> <input type="text" id="cr_no" placeholder="Billing address" minlength="19" maxlength="19"> </div>
+                                                    </div>
+                                                </div>
+                                                <div class="row"><label class="font-weight-bold">CARD NUMBER</label> 
                                                     <div class="col-12">
-                                                        <div class="input-group"> <input type="text" id="cr_no" placeholder="0000 0000 0000 0000" minlength="19" maxlength="19"> <label>CARD NUMBER</label> </div>
+                                                        <div class="input-group"> <input type="text" id="cr_no" placeholder="0000 0000 0000 0000" minlength="19" maxlength="19"> </div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
-                                                    <div class="col-6">
-                                                        <div class="input-group"> <input type="text" name="exp" id="exp" placeholder="MM/YY" minlength="5" maxlength="5"> <label>CARD EXPIRY</label> </div>
+                                                    <div class="col-6"> <label class="font-weight-bold">CARD EXPIRY</label> 
+                                                        <div class="input-group"> <input type="text" name="exp" id="exp" placeholder="MM/YY" minlength="5" maxlength="5"></div>
                                                     </div>
-                                                    <div class="col-6">
-                                                        <div class="input-group"> <input type="password" name="cvcpwd" placeholder="" class="placeicon" minlength="3" maxlength="3"> <label>CVV</label> </div>
+                                                    <div class="col-6"> <label class="font-weight-bold">CVV</label> 
+                                                        <div class="input-group"> <input type="password" name="cvcpwd" placeholder="" class="placeicon" minlength="3" maxlength="3"></div>
                                                     </div>
                                                 </div>
                                                 <div class="row">
@@ -854,33 +1202,10 @@
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <div id="menu2" class="tab-pane">
-                                <div class="row">
-                                    <div class="col-11">
-                                        <div class="form-card col-12 justify-content-center">
-                                            <h3 class="mt-0 mb-4 p-3 font-weight-bold text-center">Enter your Paypal details</h3>
-                                            <form onsubmit="event.preventDefault()">
-                                                <div class="row">
-                                                    <div class="col-12">
-                                                        <div class="input-group"> <input type="text" id="bk_nm" placeholder="Email address"> <label>Paypal Account</label> </div>
-                                                    </div>
-                                                </div>
-                                                <div class="row">
-                                                    <div class="col-12"> <input type="submit" value="SAVE" class="btn btn-success text-light placeicon"> </div>
-                                                </div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
-                    </div>
-                </div>
                 </div>
 
 
-                </div>
 
                     </div>
                     </div>
@@ -890,7 +1215,7 @@
                 </div>
                 </div>
                 </div>
-<!--Paypal-Account-->
+<!--Paypal-Account
                 <div
                   class="tab-pane fade"
                   id="v-pills-Paypal-Account"
@@ -903,7 +1228,7 @@
                   <hr>
                   </span>
                 </div>
-                </div>
+                </div>-->
 
 <!--Communication-Preferences-->
                 <div

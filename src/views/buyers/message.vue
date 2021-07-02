@@ -103,9 +103,9 @@
         </div>
       </div>
     </div>
-    <div class="row pl-5">
-      <div class="container pl-5">
-        <div class="content text-dark p-3 border-b-2 font-weight-bold col-12 pl-5">
+              <div class="row pl-5">
+                <div class="container">
+                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12 ">
           <router-link
             to="/Summary"
             data-toggle="collapse"
@@ -206,18 +206,6 @@
         </div>
       </div>
       <div class="col-sm-12 col-lg-9 col-md-9 product-container">
-        <p class="p-3 justify-content-end text-right">
-          <router-link
-            to="/seller_dashboard"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-3 justify-content-end"
-            title="Account"
-            ><span class="p-3 text-primary underline justify-content-end"
-              >Change settings</span
-            ></router-link
-          >
-        </p>
         <div id="wrapper-site" class="border">
           <div class="col-sm-12 col-lg-12 p-3 col-md-12 product-container">
             <div id="wrapper-site">

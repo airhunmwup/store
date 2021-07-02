@@ -25,13 +25,13 @@ import userPrivacy from '../views/userPrivacy.vue'
 import cookiePolicy from '../views/cookiePolicy.vue'
 import adChoice from '../views/adChoice.vue'
 import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vue'
-import uploadproductimage from '../views/sellers/uploadproductimage.vue'
 import seller_changepassword from '../views/sellers/seller_changepassword.vue'
 import Dashboard from '../views/sellers/seller_dashboard.vue'
 import orders_page from '../views/sellers/orders_page.vue'
 import order_details from '../views/sellers/order_details.vue'
 import listing_page from '../views/sellers/listing_page.vue'
 import create_listing from '../views/sellers/create_listing.vue'
+import upload_image from '../views/sellers/upload_image.vue'
 import Account_Page from '../views/sellers/account_page.vue'
 import seller_message from '../views/sellers/message_page2.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
@@ -103,9 +103,9 @@ const routes = [{
         component: seller_changepassword,
     },
     {
-        path: '/Upload Product Image',
-        name: 'uploadproductimage',
-        component: uploadproductimage,
+        path: '/Upload Image',
+        name: 'Upload Image',
+        component: upload_image,
     },
     {
         path: '/User Agreement',
