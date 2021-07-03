@@ -123,27 +123,7 @@
         </div>
     </div>
 
-                        <!-- breadcrumb -->
-                        <nav class="breadcrumb-bg">
-                            <div class="container no-index">
-                                <div class="breadcrumb">
-                                    <ol>
-                                        <li>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </nav>
+                       <hr>
     </div>
 
 </template>
-<script>
-export default {
-  data() {
-      return{
-    footerText: 'Copyright REJEE.co.uk 2021'
-
-      }
-  }
-}
-</script>

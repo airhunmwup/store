@@ -17,7 +17,7 @@
                                         <div class="clearfix p-3 justify-content-center">
                                 <p class="text-dark pb-3">Continue with:</p>
                                             <span class="p-2">
-                                                <button class="p-4  border btn-info" data-link-action="sign-in" type="submit">
+                                                <button class="p-4  text-light border btn-info" data-link-action="sign-in" type="submit">
                                                    <i class="text-large fa fa-facebook"></i> 
                                                 </button>
                                             </span>
@@ -38,7 +38,7 @@
                                 <div class="container col-6">
                                     <input type="hidden" name="back" value="my-account">
                                     <div class="form-group no-gutters">
-                                        <input class="form-control" name="email" type="email" placeholder=" Email">
+                                        <input class="form-control" name="email" type="email" value="" placeholder=" Email">
                                     </div>
                                     <div class="form-group no-gutters">
                                         <div class="input-group js-parent-focus">
@@ -83,27 +83,7 @@
         </div>
     </div>
 
-                        <!-- breadcrumb -->
-                        <nav class="breadcrumb-bg">
-                            <div class="container no-index">
-                                <div class="breadcrumb">
-                                    <ol>
-                                        <li>
-                                        </li>
-                                    </ol>
-                                </div>
-                            </div>
-                        </nav>
+                        <hr>
     </div>
 
 </template>
-<script>
-export default {
-  data() {
-      return{
-    footerText: 'Copyright REJEE.co.uk 2021'
-
-      }
-  }
-}
-</script>
