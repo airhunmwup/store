@@ -64,3 +64,9 @@ function myFunction() {
     var popup = document.getElementById("myPopup");
     popup.classList.toggle("show");
 }
+
+
+function taxConverter(valNum) {
+    document.getElementById("outputtax").innerHTML = valNum * 100;
+
+}

@@ -3,73 +3,13 @@
   <div class="box">
     <div class="row">
       <div class="container justify-content-center content-bottom">
-        <span class="p-5 text-right">Summary is your My REJEE homepage</span>
         <div class="content sidebar-block">
           <div class="text-base">
-            <div class="pt-5 pl-5">
-              <span class="font-weight-bold text-dark h3"> My REJEE</span>
+            <div class="pt-3 pl-5">
+              <span class="font-weight-bold text-dark h3"> My REJEE Message</span>
               <span class="text-dark text-sm"> UserID (0)</span>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="row pl-4">
-      <div class="container pl-3">
-        <div
-          class="content text-dark p-2 border-b-2 font-weight-bold col-12 pl-2"
-        >
-          <router-link
-            to="/Overview"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-2"
-            title="Overview"
-            ><span>Overview</span></router-link
-          >
-          <router-link
-            to="/Orders"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-2"
-            title="Orders"
-            ><span>Orders</span></router-link
-          >
-          <router-link
-            to="/Listing"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-2"
-            title="listing"
-            ><span>Listing</span></router-link
-          >
-          <router-link
-            to="/Account Page"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-2"
-            title="Account"
-            ><span>Account</span></router-link
-          >
-          <router-link
-            to="/message"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="pl-2 text-right text-primary underline justify-content-end"
-            title="message"
-          >
-            <span
-              class="
-                p-2
-                text-primary
-                underline
-                border-primary
-                justify-content-end
-                border-b-4
-              "
-              >Message (2)</span
-            ></router-link
-          >
         </div>
       </div>
     </div>
@@ -153,7 +93,7 @@
         </div>
       </div>
       <div class="col-sm-12 col-lg-9 col-md-9 product-container">
-        <p class="p-3 justify-content-end text-right">
+        <p class="p-3 justify-content-end text-right"><span>
           <router-link
             to="/Account Page"
             data-toggle="collapse"
@@ -163,7 +103,17 @@
             ><span class="p-3 text-primary underline justify-content-end"
               >Change settings</span
             ></router-link
-          >
+          ></span><span>
+          <router-link
+            to="/Overview"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            class="p-3 justify-content-end"
+            title="Overview"
+            ><span class="p-3 text-primary underline justify-content-end"
+              >Back to Seller Hub</span
+            ></router-link
+          ></span>
         </p>
         <div id="wrapper-site" class="border card">
           <div class="col-sm-12 col-lg-12 p-3 col-md-12 product-container">
@@ -257,38 +207,36 @@
                         </select></span
                       >
                     </p>
-                    <div class="row container p-3 text-dark text-md">
-                      <table class="std table table-fixed">
+                      <div class="row container text-md table-responsive">
+                        <table class="std table">
                         <tbody>
                           <tr class="box font-weight-bold text-primary">
                             <td class="text-left">
                               <span>
                                 <i class="pl-4 text-gray-400 fa fa-flag"></i
-                                ><i
-                                  class="
+                                ></span>
+                            </td>
+                            <td class="text-left font-w">
+                              <i type="submit" class="btn
                                     pl-4
                                     text-dark
                                     font-weight-bold
                                     fa fa-paperclip
                                   "
                                 ></i
-                              ></span>
-                            </td>
+                              ></td>
                             <td class="text-left font-w">From</td>
-                            <td class="text-left">Subject</td>
-                            <td class="text-right">Item Ends</td>
+                            <td colspan="4" class="text-left">Subject</td>
+                            <td class="text-center">Item Ends</td>
                             <td class="text-right">Received</td>
                           </tr>
-                        </tbody>
-                      </table>
-                      <table class="std table table-fixed text-xs">
-                        <tbody>
                           <tr>
                             <td class="text-left">
                               <input class="pr-3" type="checkbox" /><i
                                 class="pl-2 text-gray-400 fa fa-flag"
                               ></i>
                             </td>
+                            <td class="text-left"></td>
                             <td class="text-left">
                               <router-link
                                 to="/seller_dashboard"
@@ -298,7 +246,7 @@
                                 >REJEE
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td colspan="4" class="text-left">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
@@ -307,7 +255,7 @@
                                 >New sign in activity on your REJEE account
                               </router-link>
                             </td>
-                            <td class="text-right">--</td>
+                            <td class="text-center">--</td>
                             <td class="text-right">
                               <router-link
                                 to="/seller_dashboard"
@@ -318,37 +266,32 @@
                               >
                             </td>
                           </tr>
-                        </tbody>
-                      </table>
-                      <table
-                        class="std table table-fixed font-weight-bold text-xs"
-                      >
-                        <tbody>
                           <tr>
                             <td class="text-left">
                               <input class="pr-3" type="checkbox" /><i
                                 class="pl-2 text-gray-400 fa fa-flag"
                               ></i>
                             </td>
+                            <td class="text-left"></td>
                             <td class="text-left">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >Simple serve
+                                >REJEE
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td colspan="4" class="text-left">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >New Order
+                                >New sign in activity on your REJEE account
                               </router-link>
                             </td>
-                            <td class="text-right">--</td>
+                            <td class="text-center">--</td>
                             <td class="text-right">
                               <router-link
                                 to="/seller_dashboard"

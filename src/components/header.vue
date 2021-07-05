@@ -1,9 +1,9 @@
 <template>
   <header>
-    <div class="row">
+    <div class="row box">
        
       <div
-        class="pt-2 col-6 box h6 pl-5 pr-5"
+        class="col-lg-6 col-md-6 col-sm-4 h6 pl-5 pr-5"
       >
         <a
           href="#"
@@ -59,10 +59,10 @@
         </div>
       </div>
       <div
-        class="pt-2 col-6 box h6 text-right pl-5 pr-5"
+        class="col-lg-6 col-md-6 col-sm-4 h6 text-right pl-5 pr-5"
       >
         <router-link
-          class="text-dark text-sm text-right pr-4"
+          class="text-dark font-weight-bold text-sm text-right pr-4"
           to="/Summary"
           data-toggle="collapse"
           data-target=".navbar-collapse"
@@ -72,7 +72,7 @@
         >
         <a
           href="#"
-          class="text-dark text-sm text-right dropdown-toggle"
+          class="ptext-dark text-sm text-right dropdown-toggle"
           data-toggle="dropdown"
         >
           My REJEE
@@ -240,7 +240,7 @@
       </div>
 
       <!-- header desktop -->
-      <div class="d-xs-none">
+      <div class="d-xs-none card">
         <div class="container">
           <div class="row">
             <!-- logo -->
@@ -253,9 +253,9 @@
             </div>
 
             <!-- search-->
-            <div class="col-sm-6 col-md-6 col-lg-8 pt-2"> 
+            <div class="col-sm-8 col-md-8 col-lg-8 pt-2"> 
               <form method="post" class="std" id="customer-form">
-                <div class="input-group">
+                <div class="input-group col-12">
                   <input
                     type="text"
                     id="name"

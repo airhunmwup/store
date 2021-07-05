@@ -6,8 +6,15 @@
       <div class="container justify-content-center content-bottom">
 
         <div class="content sidebar-block">
+                  <router-link
+                    to="/message"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="pl-2 text-right text-primary underline justify-content-end"
+                    title="Performance"
+                    ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
           <div class="text-base">
-            <div class="pt-5 pl-3">
+            <div class="pt-3 pl-3">
               <span class="font-weight-bold text-dark h3">
                 Seller Hub</span
               >
@@ -50,13 +57,6 @@
                     class="p-2"
                     title="Account"
                     ><span>Account</span></router-link>
-                  <router-link
-                    to="/message"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="pl-2 text-right text-primary underline justify-content-end"
-                    title="Performance"
-                    ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
                   </div>
                 </div>
               </div>

@@ -2,28 +2,65 @@
   <!-- main content -->
   <div>
     <div class="row">
-      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-        
-      </div>
       <div class="container justify-content-center content-bottom">
 
-        <span class="p-5 text-right">Summary is your My REJEE 
-          <router-link
-            to="/Summary"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="text-primary"
-            title="Home Page"
-            >homepage</router-link></span>
         <div class="content sidebar-block">
+                  <router-link
+                    to="/message"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="pl-2 text-right text-primary underline justify-content-end"
+                    title="Performance"
+                    ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
           <div class="text-base">
-            <div class="pt-5 pl-5">
+            <div class="pt-3 pl-3">
               <span class="font-weight-bold text-dark h3">
-                My REJEE</span
+                Seller Hub</span
               >
               <span class="text-dark text-sm"> UserID (0)</span>
             </div>
           </div>
+        </div>
+      </div>
+
+    </div>
+              <div class="row box pl-4">
+                <div class="container pl-3">
+                  <div class="content text-dark p-2 border-b-2 font-weight-bold col-12  pl-2">
+                  <router-link
+                    to="/Overview"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="p-2"
+                    title="Overview"
+                    ><span>Overview</span></router-link
+                  >
+                  <router-link
+                    to="/Orders"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse" 
+                    class="p-2"
+                    title="Orders"
+                    ><span>Orders</span></router-link>
+                  <router-link
+                    to="/Listing"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="p-2"
+                    title="listing"
+                    ><span>Listing</span></router-link>
+                  <router-link
+                    to="/Account Page"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="border-primary border-b-4 p-2"
+                    title="Account"
+                    ><span class="text-primary">Account</span></router-link>
+                  </div>
+                </div>
+
+              </div>
+
 <div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-between pl-5">
   <a href="#" class="text-primary underline  dropdown-toggle" data-toggle="dropdown">
     Menu
@@ -202,53 +239,6 @@
               </div>
   </div>
 </div>
-        </div>
-      </div>
-
-    </div>
-              <div class="row pl-4">
-                <div class="container pl-3">
-                  <div class="content text-dark p-2 border-b-2 font-weight-bold col-12  pl-2">
-                  <router-link
-                    to="/Overview"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="p-2"
-                    title="Overview"
-                    ><span>Overview</span></router-link
-                  >
-                  <router-link
-                    to="/Orders"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse" 
-                    class="p-2"
-                    title="Orders"
-                    ><span>Orders</span></router-link>
-                  <router-link
-                    to="/Listing"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="p-2"
-                    title="listing"
-                    ><span>Listing</span></router-link>
-                  <router-link
-                    to="/Account Page"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="border-primary border-b-4 p-2"
-                    title="Account"
-                    ><span class="text-primary">Account</span></router-link>
-                  <router-link
-                    to="/message"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="pl-2 text-right text-primary underline justify-content-end"
-                    title="Performance"
-                    ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
-                  </div>
-                </div>
-
-              </div>
         <div class="row">
           <div
             class="pl-4

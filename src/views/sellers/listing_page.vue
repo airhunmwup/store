@@ -5,8 +5,15 @@
       <div class="container justify-content-center content-bottom">
 
         <div class="content sidebar-block">
+                  <router-link
+                    to="/message"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    class="pl-2 text-right text-primary underline justify-content-end"
+                    title="Performance"
+                    ><span class="text-right text-primary underline justify-content-end">Message (2)</span></router-link>
           <div class="text-base">
-            <div class="pt-5 pl-3">
+            <div class="pt-3 pl-3">
               <span class="font-weight-bold text-dark h3">
                 Seller Hub</span
               >
@@ -49,17 +56,118 @@
                     class="p-2"
                     title="Account"
                     ><span>Account</span></router-link>
-                  <router-link
-                    to="/message"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="pl-2 text-right text-primary underline justify-content-end"
-                    title="Performance"
-                    ><span class="p-2 text-right text-primary underline justify-content-end">Message (2)</span></router-link>
                   </div>
                 </div>
               </div>
 
+<div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-between pl-5">
+  <a href="#" class="text-primary underline  dropdown-toggle" data-toggle="dropdown">
+    Menu
+  </a>
+  <div class="dropdown-menu">
+          <div
+            class="pl-4 
+              sidebar-3 
+              col-lg-2 col-md-2
+              text-sm
+              font-weight-bold
+            "
+          >
+                <button
+                  class="text-left h6 font-weight-bold p-2 active"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  Inventory
+                </button>
+            <!-- category menu -->
+            <div class="sidebar-block text-dark">
+              <div class="block-content">
+                <button
+                  class="text-left h6 font-weight-bold p-2 active"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  Listings
+                </button>
+              <div
+                class="block-content nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="text-left  font-weight-bold p-2 active"
+                  id="v-pills-All-Orders-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-All-Orders"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-All-Orders"
+                  aria-selected="true"
+                >
+                  Active
+                </button>
+                <button
+                  class="text-left  font-weight-bold p-2"
+                  id="v-pills-Awaiting-Payment-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Awaiting-Payment"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Awaiting-Payment"
+                  aria-selected="false"
+                >
+                  Unsold
+                </button>
+
+                <button
+                  class="text-left  font-weight-bold p-2"
+                  id="v-pills-Awaiting-Shipment-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Awaiting-Shipment"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Awaiting-Shipment"
+                  aria-selected="true"
+                >
+                  Drafts
+                </button>
+                <button
+                  class="text-left  font-weight-bold p-2"
+                  id="v-pills-Paid-and-shipped-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Paid-and-shipped"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Paid-and-shipped"
+                  aria-selected="true"
+                >
+                  Scheduled
+                </button>
+                <button
+                  class="text-left  font-weight-bold p-2"
+                  id="v-pills-Saved-Search-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Saved-Search"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Saved-Search"
+                  aria-selected="true"
+                >
+                  Ended
+                </button>
+                <hr>
+              </div>
+              </div>
+            </div>
+          </div>
+  </div>
+</div>
         <div class="row">
           <div
             class="pl-4 
@@ -170,7 +278,7 @@
                 <div id="wrapper-site">
               <div class="tab-content" id="v-pills-tabContent">
 
-<!--All-Orders-->
+<!--Active Listing-->
                 <div
                   class="tab-pane fade show active"
                   id="v-pills-All-Orders"
@@ -210,22 +318,17 @@
                                 
                                 <div class="row p-3 product-container">
                                     <div class="col-8">
-                                    <select class="text-primary form-control">
-                                    <option>Last 7days</option>
-                                    <option>Last 60days</option>
-                                    <option>2021</option>
-                                    <option>2020</option>
-                                    </select>
+                                    <input class="text-primary pb-2 pt-2 form-control" name="" value="" placeholder="Search"/>
                                     </div>
-                                    <div class="col-6 p-3">
+                                    <div class="col-6 pb-2 pt-2">
                                     <select class="text-primary form-control">
                                     <option>All categories</option>
-                                    <option>Last 60days</option>
-                                    <option>2021</option>
-                                    <option>2020</option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
                                     </select>
                                     </div>
-                                    <div class="col-6 p-3">
+                                    <div class="col-6 pb-2 pt-2">
                                     <select class="text-primary form-control">
                                     <option>Last 7days</option>
                                     <option>Last 60days</option>
@@ -255,14 +358,14 @@
               <div class="row pl-2">
                 <div class="col-lg-3 col-md-3 col-sm-3">
                                
-                <select class="text-primary drop-tab form-control">
+                <select class="text-primary pb-2 pt-2 drop-tab form-control">
                 <option>Shipping</option>
                 <option>Awaiting Payment (0)</option>
                 <option>Awaiting Shipment (0)</option>
                 <option>Paid and Shipped (0)</option>
                 </select>
                 </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
+                <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6">
                   <router-link
                     to="/Create Listing"
                     data-toggle="collapse"
@@ -270,21 +373,6 @@
                     title="listing"
                     >
                     <button class="form-control border text-primary">Create listing</button></router-link> 
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                           
-<div class="dropdown justify-content-end">
-  <a href="#" class="text-primary form-control justify-content-end dropdown-toggle" data-toggle="dropdown">
-    More
-  </a>
-  <div class="p-3 dropdown-menu">
-      <p>Sell Similar</p>
-      <hr>
-      <p>Mark as Payment</p>
-      <hr>
-      <p>Download</p>
-  </div>
-</div>
                 </div>
                 <div class="col-lg-3 row col-md-3 col-sm-3">
                 <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
@@ -300,18 +388,14 @@
               </div>
 
 
-                    <div class="row container p-3 text-md">
-<div style="overflow-x:auto;">
-                      <table class="table-fixed text-xs">
-                        <thead>
-                          <tr class="box font-weight-bold text-xs">
-                            
-                            <td class="text-left">
-                              <input class="" type="checkbox" />
-                            </td>
-                            <td class="text-left">
-                              Actions
-                            </td>
+                      <div class="row container text-md table-responsive">
+                        <table class="std table">
+                          <tbody>
+                            <tr class="box border-dark font-weight-bold text-xs">
+                              <td class="text-left">
+                                <input class="pr-3" type="checkbox" />
+                              </td>
+                            <td class="text-left font-w">Actions</td>
                             <td class="text-left font-w">Photo</td>
                             <td class="text-left">Title</td>
                             <td class="text-left">Qty</td>
@@ -321,14 +405,18 @@
                             <td class="text-left">Watches</td>
                             <td class="text-left">Offers</td>
                             <td class="text-left">Bids</td>
-                          </tr>
-                        </thead>
-                        <tbody>
+                            </tr>
                           <tr>
                             <td class="">
                               <span><input class="" type="checkbox" /></span>
                             </td>
                             <td class="text-left">
+                <select class="border text-primary text-xs drop-tab">
+                <option>Send to online action</option>
+                <option>Delete</option>
+                <option>Edit</option>
+                <option></option>
+                </select>
                             </td>
                             <td class="text-left border">
                               <router-link
@@ -337,7 +425,7 @@
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
                                 >
-                    <img src="img/product/6.jpg" class="" alt="Product" />
+                    <img src="img/product/6.jpg" width="90px" class="" alt="Product" />
                               </router-link>
                             </td>
                             <td class="text-left border">
@@ -357,43 +445,9 @@
                             <td class="text-left border">0</td>
                             <td class="text-left border">--</td>
                           </tr>
-                          <tr>
-                            <td class="text-left ">
-                              <span><input class="" type="checkbox" /></span>
-                            </td>
-                            <td class="text-left ">
-                            </td>
-                            <td class="text-left border">
-                              <router-link
-                                to="/seller_dashboard"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Dashboard"
-                                >
-                    <img src="img/product/6.jpg" class="" alt="Product" />
-                              </router-link>
-                            </td>
-                            <td class="text-left border">
-                              <router-link
-                                to="/seller_dashboard"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Dashboard"
-                                >Product name
-                              </router-link>
-                            </td>
-                            <td class="text-left border">1</td>
-                            <td class="text-left border">£150</td>
-                            <td class="text-left border">--</td>
-                            <td class="text-left border">--</td>
-                            <td class="text-left border">--</td>
-                            <td class="text-left border">25 Jun</td>
-                          </tr>
-                        </tbody>
-                      </table>
-</div>
-                     
-                    </div>
+                          </tbody>
+                        </table>
+                      </div>
                 </div>
                 </div>
                 </div>
