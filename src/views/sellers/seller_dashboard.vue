@@ -160,8 +160,9 @@
                 <div class="panel-heading">
                     <h3>Line Series</h3>
                 </div>
+                    <div id="canvas"></div>
                 <div class="panel-body">
-                    <div id="chart1"></div>
+                    <div id="canvas"></div>
                 </div>
             </div>
                 <hr>

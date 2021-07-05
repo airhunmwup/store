@@ -65,10 +65,12 @@
     Menu
   </a>
   <div class="dropdown-menu">
+          
           <div
             class="pl-4 
               sidebar-3 
               col-lg-2 col-md-2
+              d-xs-none
               text-sm
               font-weight-bold
             "
@@ -85,15 +87,6 @@
             <!-- category menu -->
             <div class="sidebar-block text-dark">
               <div class="block-content">
-                <button
-                  class="text-left h6 font-weight-bold p-2 active"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  Listings
-                </button>
               <div
                 class="block-content nav flex-column nav-pills"
                 id="v-pills-tab"
@@ -101,25 +94,37 @@
                 aria-orientation="vertical"
               >
                 <button
-                  class="text-left  font-weight-bold p-2 active"
-                  id="v-pills-All-Orders-tab"
+                  class="text-left h6 font-weight-bold p-2 active"
+                  id="v-pills-All-Listing-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-All-Orders"
+                  data-bs-target="#v-pills-All-Listing"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-All-Orders"
+                  aria-controls="v-pills-All-Listing"
                   aria-selected="true"
+                >
+                  Listings
+                </button>
+                <button
+                  class="text-left font-weight-bold p-2"
+                  id="v-pills-Active-Listing-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Active-Listing"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Active-Listing"
+                  aria-selected="false"
                 >
                   Active
                 </button>
                 <button
                   class="text-left  font-weight-bold p-2"
-                  id="v-pills-Awaiting-Payment-tab"
+                  id="v-pills-Unsold-listing-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Awaiting-Payment"
+                  data-bs-target="#v-pills-Unsold-listing"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-Awaiting-Payment"
+                  aria-controls="v-pills-Unsold-listing"
                   aria-selected="false"
                 >
                   Unsold
@@ -127,36 +132,36 @@
 
                 <button
                   class="text-left  font-weight-bold p-2"
-                  id="v-pills-Awaiting-Shipment-tab"
+                  id="v-pills-Draft-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Awaiting-Shipment"
+                  data-bs-target="#v-pills-Draft"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-Awaiting-Shipment"
+                  aria-controls="v-pills-Draft"
                   aria-selected="true"
                 >
                   Drafts
                 </button>
                 <button
                   class="text-left  font-weight-bold p-2"
-                  id="v-pills-Paid-and-shipped-tab"
+                  id="v-pills-Scheduled-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Paid-and-shipped"
+                  data-bs-target="#v-pills-Scheduled"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-Paid-and-shipped"
+                  aria-controls="v-pills-Scheduled"
                   aria-selected="true"
                 >
                   Scheduled
                 </button>
                 <button
                   class="text-left  font-weight-bold p-2"
-                  id="v-pills-Saved-Search-tab"
+                  id="v-pills-Ended-listing-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Saved-Search"
+                  data-bs-target="#v-pills-Ended-listing"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-Saved-Search"
+                  aria-controls="v-pills-Ended-listing"
                   aria-selected="true"
                 >
                   Ended
@@ -190,15 +195,6 @@
             <!-- category menu -->
             <div class="sidebar-block text-dark">
               <div class="block-content">
-                <button
-                  class="text-left h6 font-weight-bold p-2 active"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  Listings
-                </button>
               <div
                 class="block-content nav flex-column nav-pills"
                 id="v-pills-tab"
@@ -206,25 +202,37 @@
                 aria-orientation="vertical"
               >
                 <button
-                  class="text-left  font-weight-bold p-2 active"
-                  id="v-pills-All-Orders-tab"
+                  class="text-left h6 font-weight-bold p-2 active"
+                  id="v-pills-All-Listing-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-All-Orders"
+                  data-bs-target="#v-pills-All-Listing"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-All-Orders"
+                  aria-controls="v-pills-All-Listing"
                   aria-selected="true"
+                >
+                  Listings
+                </button>
+                <button
+                  class="text-left font-weight-bold p-2"
+                  id="v-pills-Active-Listing-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Active-Listing"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Active-Listing"
+                  aria-selected="false"
                 >
                   Active
                 </button>
                 <button
                   class="text-left  font-weight-bold p-2"
-                  id="v-pills-Awaiting-Payment-tab"
+                  id="v-pills-Unsold-listing-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Awaiting-Payment"
+                  data-bs-target="#v-pills-Unsold-listing"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-Awaiting-Payment"
+                  aria-controls="v-pills-Unsold-listing"
                   aria-selected="false"
                 >
                   Unsold
@@ -232,36 +240,36 @@
 
                 <button
                   class="text-left  font-weight-bold p-2"
-                  id="v-pills-Awaiting-Shipment-tab"
+                  id="v-pills-Draft-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Awaiting-Shipment"
+                  data-bs-target="#v-pills-Draft"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-Awaiting-Shipment"
+                  aria-controls="v-pills-Draft"
                   aria-selected="true"
                 >
                   Drafts
                 </button>
                 <button
                   class="text-left  font-weight-bold p-2"
-                  id="v-pills-Paid-and-shipped-tab"
+                  id="v-pills-Scheduled-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Paid-and-shipped"
+                  data-bs-target="#v-pills-Scheduled"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-Paid-and-shipped"
+                  aria-controls="v-pills-Scheduled"
                   aria-selected="true"
                 >
                   Scheduled
                 </button>
                 <button
                   class="text-left  font-weight-bold p-2"
-                  id="v-pills-Saved-Search-tab"
+                  id="v-pills-Ended-listing-tab"
                   data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Saved-Search"
+                  data-bs-target="#v-pills-Ended-listing"
                   type="button"
                   role="tab"
-                  aria-controls="v-pills-Saved-Search"
+                  aria-controls="v-pills-Ended-listing"
                   aria-selected="true"
                 >
                   Ended
@@ -278,39 +286,32 @@
                 <div id="wrapper-site">
               <div class="tab-content" id="v-pills-tabContent">
 
-<!--Active Listing-->
+                              
+<!--All Listing-->
                 <div
                   class="tab-pane fade show active"
-                  id="v-pills-All-Orders"
+                  id="v-pills-All-Listing"
                   role="tabpanel"
-                  aria-labelledby="v-pills-All-Orders-tab"
+                  aria-labelledby="v-pills-All-Listing-tab"
                 >
                 <div class="row">
-                  <span class="text text-dark h5 pl-5 font-weight-bold  font-weight-normal">
-                  Manage active Listings
+                  <span class="text text-dark h5 font-weight-bold  font-weight-normal">
+                  Manage All Listings
                   </span>
                   <hr>
-                  
-                <div class="content pt-3 pb-3 justify-content-center text-center">
+                        <!--search section-->
 
-                             
-              <div class="row box pl-2">
+                          <div class="pb-2 pt-2 text-left text-dark">
 
-                          <div class=" card p-3 text-left text-dark">
-                              <div class="row justify-start pl-3">
-                              <div class="">
+                              <div class="col-12">
                             <a class="cateItem" 
                               data-toggle="collapse"
-                              data-target="#sort" href="#">
+                              data-target="#search" href="#">
                                   <span class="pr-2 pt-2"><b><i class="fa fa-angle-down"></i> Search</b></span></a>
                               </div>
-                              </div>
-
-                              <!--sort section-->
-                              
                             <div
                               class="subCategory collapse"
-                              id="sort"
+                              id="search"
                               aria-expanded="true"
                               role="status"
                             >
@@ -320,49 +321,45 @@
                                     <div class="col-8">
                                     <input class="text-primary pb-2 pt-2 form-control" name="" value="" placeholder="Search"/>
                                     </div>
-                                    <div class="col-6 pb-2 pt-2">
-                                    <select class="text-primary form-control">
+                                    <div class="col-4">
+                                    <select class="text-primary pb-2 pt-2 form-control">
                                     <option>All categories</option>
                                     <option></option>
                                     <option></option>
                                     <option></option>
                                     </select>
                                     </div>
-                                    <div class="col-6 pb-2 pt-2">
-                                    <select class="text-primary form-control">
-                                    <option>Last 7days</option>
-                                    <option>Last 60days</option>
-                                    <option>2021</option>
-                                    <option>2020</option>
-                                    </select>
-                                    </div>
-                                    <div
-                                    class="thumbnail-container"
-                                    >
-                                    <div class="content ">
+                                    <div class="pb-2 pt-2">
 
                     <button class="btn border border-primary text-primary">Search</button> 
                                     </div>
-                                </div>
                                 </div>
                                 <hr>
                               </div>
                             </div>
                           </div>
-                </div>
-              </div>
+                  
                 <div class="card col-lg-12 col-md-12 col-sm-12 pt-3">
-                  Results: 1 - 5 of 5 (2 Orders selected)
+                  Results: 1 - 5 of 5 
 
                 <div class="content pt-2 justify-content-center text-center">
               <div class="row pl-2">
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                               
-                <select class="text-primary pb-2 pt-2 drop-tab form-control">
-                <option>Shipping</option>
-                <option>Awaiting Payment (0)</option>
-                <option>Awaiting Shipment (0)</option>
-                <option>Paid and Shipped (0)</option>
+                <div class="col-lg-3 pb-2 pt-2 row col-md-3 col-sm-3">
+                <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
+
+                <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
+                <option>Date</option>
+                <option>A to Z</option>
+                <option>Heighest Quantity</option>
+                <option>Lowestest Quantity</option>
+                <option>Heighest Views</option>
+                <option>Lowestest Views</option>
+                <option>Heighest Watches</option>
+                <option>Lowestest Watches</option>
+                <option>Heighest Offers</option>
+                <option>Lowestest Offers</option>
+                <option>Heighest Bids</option>
+                <option>Lowestest Bids</option>
                 </select>
                 </div>
                 <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6">
@@ -374,15 +371,11 @@
                     >
                     <button class="form-control border text-primary">Create listing</button></router-link> 
                 </div>
-                <div class="col-lg-3 row col-md-3 col-sm-3">
-                <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
-
-                <select class="col-7 border text-primary text-xs drop-tab">
-                <option>Date Sold</option>
-                <option>Date Shipped</option>
-                <option>Awaiting Shipment (0)</option>
-                <option>Paid and Shipped (0)</option>
-                </select>
+                <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6">
+                    <button class="form-control border text-primary">Delete</button>
+                </div>
+                <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6">
+                    <button class="form-control border text-primary">Upload</button>
                 </div>
                 </div>
               </div>
@@ -393,9 +386,8 @@
                           <tbody>
                             <tr class="box border-dark font-weight-bold text-xs">
                               <td class="text-left">
-                                <input class="pr-3" type="checkbox" />
                               </td>
-                            <td class="text-left font-w">Actions</td>
+                            <td class="text-left font-w"></td>
                             <td class="text-left font-w">Photo</td>
                             <td class="text-left">Title</td>
                             <td class="text-left">Qty</td>
@@ -411,12 +403,8 @@
                               <span><input class="" type="checkbox" /></span>
                             </td>
                             <td class="text-left">
-                <select class="border text-primary text-xs drop-tab">
-                <option>Send to online action</option>
-                <option>Delete</option>
-                <option>Edit</option>
-                <option></option>
-                </select>
+                    <button class="underline text-primary">Edit</button>
+                    <p class="pt-3"><i class="fa fa-cloud-upload text-success"></i></p>
                             </td>
                             <td class="text-left border">
                               <router-link
@@ -445,6 +433,214 @@
                             <td class="text-left border">0</td>
                             <td class="text-left border">--</td>
                           </tr>
+                          <tr>
+                            <td class="">
+                              <span><input class="" type="checkbox" /></span>
+                            </td>
+                            <td class="text-left">
+                    <button class="underline text-primary">Edit</button>
+                    <p class="pt-3"><i class="fa fa-cloud-upload text-danger"></i></p>
+                            </td>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >
+                    <img src="img/product/4.jpg" width="90px" class="" alt="Product" />
+                              </router-link>
+                            </td>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >Product name
+                              </router-link>
+                            </td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">--</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+                </div>
+                </div>
+<!--Active Listing-->
+                <div
+                  class="tab-pane fade"
+                  id="v-pills-Active-Listing"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-Active-Listing-tab"
+                >
+                <div class="row">
+                  <span class="text text-dark h5 font-weight-bold  font-weight-normal">
+                  Manage active Listings
+                  </span>
+                  <hr>
+                  
+                        <!--search section-->
+
+                          <div class="pb-2 pt-2 text-left text-dark">
+
+                              <div class="col-12">
+                            <a class="cateItem" 
+                              data-toggle="collapse"
+                              data-target="#active_search" href="#">
+                                  <span class="pr-2 pt-2"><b><i class="fa fa-angle-down"></i> Search</b></span></a>
+                              </div>
+                            <div
+                              class="subCategory collapse"
+                              id="active_search"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                
+                                <div class="row p-3 product-container">
+                                    <div class="col-8">
+                                    <input class="text-primary pb-2 pt-2 form-control" name="" value="" placeholder="Search"/>
+                                    </div>
+                                    <div class="col-4">
+                                    <select class="text-primary pb-2 pt-2 form-control">
+                                    <option>All categories</option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    </select>
+                                    </div>
+                                    <div class="pb-2 pt-2">
+
+                    <button class="btn border border-primary text-primary">Search</button> 
+                                    </div>
+                                </div>
+                                <hr>
+                              </div>
+                            </div>
+                          </div>
+                <div class="card col-lg-12 col-md-12 col-sm-12 pt-3">
+                  Results: 1 - 5 of 5
+
+                <div class="content pt-2 justify-content-center text-center">
+              <div class="row pl-2">
+                <div class="col-lg-3 p-3 row col-md-3 col-sm-3">
+                <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
+
+                <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
+                <option>Date</option>
+                <option>A to Z</option>
+                <option>Heighest Quantity</option>
+                <option>Lowestest Quantity</option>
+                <option>Heighest Views</option>
+                <option>Lowestest Views</option>
+                <option>Heighest Watches</option>
+                <option>Lowestest Watches</option>
+                <option>Heighest Offers</option>
+                <option>Lowestest Offers</option>
+                <option>Heighest Bids</option>
+                <option>Lowestest Bids</option>
+                </select>
+                </div>
+                <div class="col-lg-3 col-md-3 p-3 col-sm-6">
+                    <button class="form-control border text-primary">Delete</button>
+                </div>
+                </div>
+              </div>
+
+
+                      <div class="row container text-md table-responsive">
+                        <table class="std table">
+                          <tbody>
+                            <tr class="box border-dark font-weight-bold text-xs">
+                              <td class="text-left">
+                              </td>
+                            <td class="text-left font-w"></td>
+                            <td class="text-left font-w">Photo</td>
+                            <td class="text-left">Title</td>
+                            <td class="text-left">Qty</td>
+                            <td class="text-left">Current price</td>
+                            <td class="text-left">shipping cost</td>
+                            <td class="text-left">Views</td>
+                            <td class="text-left">Watches</td>
+                            <td class="text-left">Offers</td>
+                            <td class="text-left">Bids</td>
+                            </tr>
+                          <tr>
+                            <td class="">
+                              <span><input class="" type="checkbox" /></span>
+                            </td>
+                            <td class="text-left">
+                    <p class="pt-3"><i class="fa fa-cloud-upload text-success"></i></p>
+                            </td>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >
+                    <img src="img/product/6.jpg" width="90px" class="" alt="Product" />
+                              </router-link>
+                            </td>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >Product name
+                              </router-link>
+                            </td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">--</td>
+                          </tr>
+                          <tr>
+                            <td class="">
+                              <span><input class="" type="checkbox" /></span>
+                            </td>
+                            <td class="text-left">
+                    <p class="pt-3"><i class="fa fa-cloud-upload text-success"></i></p>
+                            </td>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >
+                    <img src="img/product/4.jpg" width="90px" class="" alt="Product" />
+                              </router-link>
+                            </td>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >Product name
+                              </router-link>
+                            </td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">--</td>
+                          </tr>
                           </tbody>
                         </table>
                       </div>
@@ -452,109 +648,122 @@
                 </div>
                 </div>
 
-<!--Awaiting Payment-->
+<!--Unsold listing-->
                 <div
                   class="tab-pane fade"
-                  id="v-pills-Awaiting-Payment"
+                  id="v-pills-Unsold-listing"
                   role="tabpanel"
-                  aria-labelledby="v-pills-Awaiting-Payment-tab"
+                  aria-labelledby="v-pills-Unsold-listing-tab"
                 >
                 <div class="row">
                   <span class="text text-dark h5 font-weight-bold  font-weight-normal">
-                  Awaiting Payment
-                  <hr>
+                  Unsold listing
                   </span>
+                  <hr>
+                        <!--search section-->
+
+                          <div class="pb-2 pt-2 text-left text-dark">
+
+                              <div class="col-12">
+                            <a class="cateItem" 
+                              data-toggle="collapse"
+                              data-target="#unsold_search" href="#">
+                                  <span class="pr-2 pt-2"><b><i class="fa fa-angle-down"></i> Search</b></span></a>
+                              </div>
+                            <div
+                              class="subCategory collapse"
+                              id="unsold_search"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                
+                                <div class="row p-3 product-container">
+                                    <div class="col-8">
+                                    <input class="text-primary pb-2 pt-2 form-control" name="" value="" placeholder="Search"/>
+                                    </div>
+                                    <div class="col-4">
+                                    <select class="text-primary pb-2 pt-2 form-control">
+                                    <option>All categories</option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    </select>
+                                    </div>
+                                    <div class="pb-2 pt-2">
+
+                    <button class="btn border border-primary text-primary">Search</button> 
+                                    </div>
+                                </div>
+                                <hr>
+                              </div>
+                            </div>
+                          </div>
                   
-                <div class="content pb-3 justify-content-center text-center">
-              <div class="row box pl-2">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <p class="form-control border box">Awaiting Payment (0)</p>  
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-            
-                <select class="text-primary form-control">
-                <option>Last 7days</option>
-                <option>Last 60days</option>
-                <option>2021</option>
-                <option>2020</option>
-                </select>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                            
-                </div>
-                </div>
-              </div>
                 <div class="card col-lg-12 col-md-12 col-sm-12 p-3">
-                  Results: 1 - 5 of 5 (2 Orders selected)
+                  Results: 1 - 5 of 5
 
                 <div class="content pt-2 justify-content-center text-center">
               <div class="row pl-2">
-                
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <button class="form-control border text-primary">Relist</button> 
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                           
-<div class="dropdown justify-content-end">
-  <a href="#" class="text-primary form-control justify-content-end dropdown-toggle" data-toggle="dropdown">
-    More
-  </a>
-  <div class="dropdown-menu">
-  </div>
-</div>
-                </div>
+
                 <div class="col-lg-3 row col-md-3 col-sm-3">
                 <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
 
-                <select class="col-7 border text-primary text-xs drop-tab">
-                <option>Date Sold</option>
-                <option>Date Shipped</option>
-                <option>Awaiting Shipment (0)</option>
-                <option>Paid and Shipped (0)</option>
+                <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
+                <option>Date</option>
+                <option>A to Z</option>
+                <option>Heighest Quantity</option>
+                <option>Lowestest Quantity</option>
+                <option>Heighest Views</option>
+                <option>Lowestest Views</option>
+                <option>Heighest Watches</option>
+                <option>Lowestest Watches</option>
+                <option>Heighest Offers</option>
+                <option>Lowestest Offers</option>
+                <option>Heighest Bids</option>
+                <option>Lowestest Bids</option>
                 </select>
                 </div>
                 </div>
               </div>
+                <div class="content pt-2 justify-content-center text-center">
+             
 
-
-                    <div class="row container p-3 text-md">
-                      <table class="std table table-fixed">
-                        <tbody>
-                          <tr class="box font-weight-bold text-xs">
-                            
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" />
-                              Actions
-                            </td>
-                            <td class="text-left font-w">Record</td>
-                            <td class="text-left">Purchase details</td>
-                            <td class="text-right">Qty</td>
-                            <td class="text-right">Sold for</td>
-                            <td class="text-right">Total</td>
-                            <td class="text-right">Date sold</td>
-                            <td class="text-right">Date paid</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <table class="std table table-fixed text-xs">
-                        <tbody>
+                      <div class="row container text-md table-responsive">
+                        <table class="std table">
+                          <tbody>
+                            <tr class="box border-dark font-weight-bold text-xs">
+                              <td class="text-left">
+                              </td>
+                            <td class="text-left font-w"></td>
+                            <td class="text-left font-w">Photo</td>
+                            <td class="text-left">Title</td>
+                            <td class="text-left">Qty</td>
+                            <td class="text-left">Current price</td>
+                            <td class="text-left">shipping cost</td>
+                            <td class="text-left">Views</td>
+                            <td class="text-left">Watches</td>
+                            <td class="text-left">Offers</td>
+                            <td class="text-left">Bids</td>
+                            </tr>
                           <tr>
-                            <td class="text-left border-r-2">
-                              <input class="pr-3" type="checkbox" /><i
-                                class="pl-2 text-gray-400 fa fa-flag"
-                              ></i>
+                            <td class="">
+                              <span><input class="" type="checkbox" /></span>
                             </td>
                             <td class="text-left">
+                    <button class="underline text-primary">Edit</button>
+                            </td>
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
                                 >
-                    <img src="img/product/6.jpg" class=" border" alt="Product" />
+                    <img src="img/product/6.jpg" width="90px" class="" alt="Product" />
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
@@ -563,34 +772,32 @@
                                 >Product name
                               </router-link>
                             </td>
-                            <td class="text-right">1</td>
-                            <td class="text-right">£150</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">25 Jun</td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">--</td>
                           </tr>
-                        </tbody>
-                      </table>
-                      <table class="std table table-fixed text-xs">
-                        <tbody>
                           <tr>
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" /><i
-                                class="pl-2 text-gray-400 fa fa-flag"
-                              ></i>
+                            <td class="">
+                              <span><input class="" type="checkbox" /></span>
                             </td>
                             <td class="text-left">
+                    <button class="underline text-primary">Edit</button>
+                            </td>
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
                                 >
-                    <img src="img/product/4.jpg" class=" border" alt="Product" />
+                    <img src="img/product/4.jpg" width="90px" class="" alt="Product" />
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
@@ -599,123 +806,127 @@
                                 >Product name
                               </router-link>
                             </td>
-                            <td class="text-right">1</td>
-                            <td class="text-right">£150</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">25 Jun</td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">--</td>
                           </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                          </tbody>
+                        </table>
+                      </div>
                 </div>
+              </div>
+
                 </div>
-                  -------
                 </div>
 
-<!--Awaiting-Shipment-->
+<!--Draft-->
                 <div
                   class="tab-pane fade"
-                  id="v-pills-Awaiting-Shipment"
+                  id="v-pills-Draft"
                   role="tabpanel"
-                  aria-labelledby="v-pills-Awaiting-Shipment-tab"
+                  aria-labelledby="v-pills-Draft-tab"
                 >
                 <div class="row">
                   <span class="text text-dark h5 font-weight-bold  font-weight-normal">
-                  Manage orders awaiting Shipment
-                  <hr>
+                  Draft Listings
                   </span>
+                  <hr>
                   
-                <div class="content pb-3 justify-content-center text-center">
-              <div class="row box pl-2">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <p class="form-control border box">Awaiting Shipment (0)</p>  
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-            
-                <select class="text-primary form-control">
-                <option>Last 7days</option>
-                <option>Last 60days</option>
-                <option>2021</option>
-                <option>2020</option>
-                </select>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                            
-                </div>
-                </div>
-              </div>
+                        <!--search section-->
+
+                          <div class="pb-2 pt-2 text-left text-dark">
+
+                              <div class="col-12">
+                            <a class="cateItem" 
+                              data-toggle="collapse"
+                              data-target="#draft_search" href="#">
+                                  <span class="pr-2 pt-2"><b><i class="fa fa-angle-down"></i> Search</b></span></a>
+                              </div>
+                            <div
+                              class="subCategory collapse"
+                              id="draft_search"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                
+                                <div class="row p-3 product-container">
+                                    <div class="col-8">
+                                    <input class="text-primary pb-2 pt-2 form-control" name="" value="" placeholder="Search"/>
+                                    </div>
+                                    <div class="col-4">
+                                    <select class="text-primary pb-2 pt-2 form-control">
+                                    <option>All categories</option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    </select>
+                                    </div>
+                                    <div class="pb-2 pt-2">
+
+                    <button class="btn border border-primary text-primary">Search</button> 
+                                    </div>
+                                </div>
+                                <hr>
+                              </div>
+                            </div>
+                          </div>
                 <div class="card col-lg-12 col-md-12 col-sm-12 p-3">
-                  Results: 1 - 5 of 5 (2 Orders selected)
+                  Results: 1 - 5 of 5 
 
                 <div class="content pt-2 justify-content-center text-center">
               <div class="row pl-2">
-                
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                    <button class="form-control border text-primary">Relist</button> 
-                </div>
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                           
-<div class="dropdown justify-content-end">
-  <a href="#" class="text-primary form-control justify-content-end dropdown-toggle" data-toggle="dropdown">
-    More
-  </a>
-  <div class="dropdown-menu">
-  </div>
-</div>
-                </div>
                 <div class="col-lg-3 row col-md-3 col-sm-3">
                 <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
 
-                <select class="col-7 border text-primary text-xs drop-tab">
-                <option>Date Sold</option>
-                <option>Date Shipped</option>
-                <option>Awaiting Shipment (0)</option>
-                <option>Paid and Shipped (0)</option>
+                
+                <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
+                <option>Date</option>
+                <option>A to Z</option>
+                <option>Heighest Quantity</option>
+                <option>Lowestest Quantity</option>
                 </select>
                 </div>
                 </div>
               </div>
+                <div class="content pt-2 justify-content-center text-center">
+             
 
-
-                    <div class="row container p-3 text-md">
-                      <table class="std table table-fixed">
-                        <tbody>
-                          <tr class="box font-weight-bold text-xs">
-                            
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" />
-                              Actions
-                            </td>
-                            <td class="text-left font-w">Record</td>
-                            <td class="text-left">Purchase details</td>
-                            <td class="text-right">Qty</td>
-                            <td class="text-right">Sold for</td>
-                            <td class="text-right">Total</td>
-                            <td class="text-right">Date sold</td>
-                            <td class="text-right">Date paid</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <table class="std table table-fixed text-xs">
-                        <tbody>
+                      <div class="row container text-md table-responsive">
+                        <table class="std table">
+                          <tbody>
+                            <tr class="box border-dark font-weight-bold text-xs">
+                              <td class="text-left">
+                              </td>
+                            <td class="text-left font-w"></td>
+                            <td class="text-left font-w">Photo</td>
+                            <td class="text-left">Title</td>
+                            <td class="text-left">Qty</td>
+                            <td class="text-left">Current price</td>
+                            <td class="text-left">shipping cost</td>
+                            </tr>
                           <tr>
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" /><i
-                                class="pl-2 text-gray-400 fa fa-flag"
-                              ></i>
+                            <td class="">
+                              <span><input class="" type="checkbox" /></span>
                             </td>
                             <td class="text-left">
+                    <button class="underline text-primary">Edit</button>
+                            </td>
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
                                 >
-                    <img src="img/product/6.jpg" class=" border" alt="Product" />
+                    <img src="img/product/6.jpg" width="90px" class="" alt="Product" />
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
@@ -724,33 +935,28 @@
                                 >Product name
                               </router-link>
                             </td>
-                            <td class="text-right">1</td>
-                            <td class="text-right">£150</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">25 Jun</td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
                           </tr>
-                        </tbody>
-                      </table>
-                      <table class="std table table-fixed text-xs">
-                        <tbody>
                           <tr>
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" /><i
-                                class="pl-2 text-gray-400 fa fa-flag"
-                              ></i>
+                            <td class="">
+                              <span><input class="" type="checkbox" /></span>
                             </td>
                             <td class="text-left">
+                    <button class="underline text-primary">Edit</button>
+                            </td>
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
                                 >
-                    <img src="img/product/4.jpg" class=" border" alt="Product" />
+                    <img src="img/product/4.jpg" width="90px" class="" alt="Product" />
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
@@ -759,124 +965,120 @@
                                 >Product name
                               </router-link>
                             </td>
-                            <td class="text-right">1</td>
-                            <td class="text-right">£150</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">25 Jun</td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
                           </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                          </tbody>
+                        </table>
+                      </div>
                 </div>
+              </div>
+
                 </div>
                 </div>
 
-<!--Paid-and-shipped-->
+<!--Scheduled-->
                 <div
                   class="tab-pane fade"
-                  id="v-pills-Paid-and-shipped"
+                  id="v-pills-Scheduled"
                   role="tabpanel"
-                  aria-labelledby="v-pills-Paid-and-shipped-tab"
+                  aria-labelledby="v-pills-Scheduled-tab"
                 >
                 <div class="row">
                   <span class="text text-dark h5 font-weight-bold  font-weight-normal">
-                  Manage Paid and shipped
-                  <hr>
+                  Scheduled Listings
                   </span>
+                  <hr>
                   
-                <div class="content pb-3 justify-content-center text-center">
-              <div class="row box pl-2">
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                    <p class="form-control border box">Paid and shipped (2)</p>  
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-            
-                <select class="text-primary form-control">
-                <option>Last 7days</option>
-                <option>Last 60days</option>
-                <option>2021</option>
-                <option>2020</option>
-                </select>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6">
-                            
-                </div>
-                </div>
-              </div>
+                        <!--search section-->
+
+                          <div class="pb-2 pt-2 text-left text-dark">
+
+                              <div class="col-12">
+                            <a class="cateItem" 
+                              data-toggle="collapse"
+                              data-target="#draft_search" href="#">
+                                  <span class="pr-2 pt-2"><b><i class="fa fa-angle-down"></i> Search</b></span></a>
+                              </div>
+                            <div
+                              class="subCategory collapse"
+                              id="draft_search"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                
+                                <div class="row p-3 product-container">
+                                    <div class="col-8">
+                                    <input class="text-primary pb-2 pt-2 form-control" name="" value="" placeholder="Search"/>
+                                    </div>
+                                    <div class="col-4">
+                                    <select class="text-primary pb-2 pt-2 form-control">
+                                    <option>All categories</option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    </select>
+                                    </div>
+                                    <div class="pb-2 pt-2">
+
+                    <button class="btn border border-primary text-primary">Search</button> 
+                                    </div>
+                                </div>
+                                <hr>
+                              </div>
+                            </div>
+                          </div>
                 <div class="card col-lg-12 col-md-12 col-sm-12 p-3">
-                  Results: 1 - 5 of 5 (2 Paid and shipped selected)
+                  Results: 1 - 5 of 5 
 
                 <div class="content pt-2 justify-content-center text-center">
               <div class="row pl-2">
-                
-                <div class="col-lg-3 col-md-3 col-sm-6">
-                           
-<div class="dropdown justify-content-end">
-  <a href="#" class="text-primary form-control justify-content-end dropdown-toggle" data-toggle="dropdown">
-    More
-  </a>
-  <div class="p-3 dropdown-menu">
-      <p>Sell Similar</p>
-      <hr>
-      <p>Mark as Payment</p>
-      <hr>
-      <p>Download</p>
-  </div>
-</div>
-                </div>
                 <div class="col-lg-3 row col-md-3 col-sm-3">
                 <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
 
-                <select class="col-7 border text-primary text-xs drop-tab">
-                <option>Date Sold</option>
-                <option>Date Shipped</option>
-                <option>Awaiting Shipment (0)</option>
-                <option>Paid and Shipped (0)</option>
+                
+                <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
+                <option>Date</option>
+                <option>A to Z</option>
+                <option>Heighest Quantity</option>
+                <option>Lowestest Quantity</option>
                 </select>
                 </div>
                 </div>
               </div>
+                <div class="content pt-2 justify-content-center text-center">
+             
 
-
-                    <div class="row container p-3 text-md">
-                      <table class="std table table-fixed">
-                        <tbody>
-                          <tr class="box font-weight-bold text-xs">
-                            
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" />
-                              Actions
-                            </td>
-                            <td class="text-left font-w">Record</td>
-                            <td class="text-left">Purchase details</td>
-                            <td class="text-right">Qty</td>
-                            <td class="text-right">Sold for</td>
-                            <td class="text-right">Total</td>
-                            <td class="text-right">Date sold</td>
-                            <td class="text-right">Date paid</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                      <table class="std table table-fixed text-xs">
-                        <tbody>
+                      <div class="row container text-md table-responsive">
+                        <table class="std table">
+                          <tbody>
+                            <tr class="box border-dark font-weight-bold text-xs">
+                              <td class="text-left">
+                                Scheduled Date
+                              </td>
+                            <td class="text-left font-w">Photo</td>
+                            <td class="text-left">Title</td>
+                            <td class="text-left">Qty</td>
+                            <td class="text-left">Current price</td>
+                            <td class="text-left">shipping cost</td>
+                            </tr>
                           <tr>
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" /><i
-                                class="pl-2 text-gray-400 fa fa-flag"
-                              ></i>
+                            <td class="">
+                              <span>12-06-2020</span>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
                                 >
-                    <img src="img/product/6.jpg" class=" border" alt="Product" />
+                    <img src="img/product/6.jpg" width="90px" class="" alt="Product" />
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
@@ -885,33 +1087,25 @@
                                 >Product name
                               </router-link>
                             </td>
-                            <td class="text-right">1</td>
-                            <td class="text-right">£150</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">25 Jun</td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
                           </tr>
-                        </tbody>
-                      </table>
-                      <table class="std table table-fixed text-xs">
-                        <tbody>
                           <tr>
-                            <td class="text-left">
-                              <input class="pr-3" type="checkbox" /><i
-                                class="pl-2 text-gray-400 fa fa-flag"
-                              ></i>
+                            <td class="">
+                              <span>12-06-2020</span>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
                                 >
-                    <img src="img/product/4.jpg" class=" border" alt="Product" />
+                    <img src="img/product/8.jpg" width="90px" class="" alt="Product" />
                               </router-link>
                             </td>
-                            <td class="text-left">
+                            <td class="text-left border">
                               <router-link
                                 to="/seller_dashboard"
                                 data-toggle="collapse"
@@ -920,35 +1114,262 @@
                                 >Product name
                               </router-link>
                             </td>
-                            <td class="text-right">1</td>
-                            <td class="text-right">£150</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">--</td>
-                            <td class="text-right">25 Jun</td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
                           </tr>
-                        </tbody>
-                      </table>
-                    </div>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+              </div>
+
                 </div>
                 </div>
-                </div>
-<!--Saved Search-->
+<!--Ended1-->
                 <div
                   class="tab-pane fade"
-                  id="v-pills-Saved-Search"
+                  id="v-pills-Ended-1listing"
                   role="tabpanel"
-                  aria-labelledby="v-pills-Saved-Search-tab"
+                  aria-labelledby="v-pills-Ended-1listing-tab"
                 >
-                  -------Saved-Search
+                <div class="row">
+                  <span class="text text-dark h5 font-weight-bold  font-weight-normal">
+                  Unsold listing
+                  </span>
+                  <hr>
+                        <!--search section-->
+
+                          <div class="pb-2 pt-2 text-left text-dark">
+
+                              <div class="col-12">
+                            <a class="cateItem" 
+                              data-toggle="collapse"
+                              data-target="#unsold_search" href="#">
+                                  <span class="pr-2 pt-2"><b><i class="fa fa-angle-down"></i> Search</b></span></a>
+                              </div>
+                            <div
+                              class="subCategory collapse"
+                              id="unsold_search"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                
+                                <div class="row p-3 product-container">
+                                    <div class="col-8">
+                                    <input class="text-primary pb-2 pt-2 form-control" name="" value="" placeholder="Search"/>
+                                    </div>
+                                    <div class="col-4">
+                                    <select class="text-primary pb-2 pt-2 form-control">
+                                    <option>All categories</option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    </select>
+                                    </div>
+                                    <div class="pb-2 pt-2">
+
+                    <button class="btn border border-primary text-primary">Search</button> 
+                                    </div>
+                                </div>
+                                <hr>
+                              </div>
+                            </div>
+                          </div>
+                  
+                <div class="card col-lg-12 col-md-12 col-sm-12 p-3">
+                  Results: 1 - 5 of 5
+
+                <div class="content pt-2 justify-content-center text-center">
+              <div class="row pl-2">
+
+                <div class="col-lg-3 row col-md-3 col-sm-3">
+                <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
+
+                <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
+                <option>Date</option>
+                <option>A to Z</option>
+                <option>Heighest Quantity</option>
+                <option>Lowestest Quantity</option>
+                <option>Heighest Views</option>
+                <option>Lowestest Views</option>
+                <option>Heighest Watches</option>
+                <option>Lowestest Watches</option>
+                <option>Heighest Offers</option>
+                <option>Lowestest Offers</option>
+                <option>Heighest Bids</option>
+                <option>Lowestest Bids</option>
+                </select>
                 </div>
-<!--Saved Seller-->
+                </div>
+              </div>
+                <div class="content pt-2 justify-content-center text-center">
+             
+
+                      <div class="row container text-md table-responsive">
+                        <table class="std table">
+                          <tbody>
+                            <tr class="box border-dark font-weight-bold text-xs">
+                            <td class="text-left font-w">Photo</td>
+                            <td class="text-left">Title</td>
+                            <td class="text-left">Qty</td>
+                            <td class="text-left">Current price</td>
+                            <td class="text-left">shipping cost</td>
+                            <td class="text-left">Views</td>
+                            <td class="text-left">Watches</td>
+                            <td class="text-left">Offers</td>
+                            <td class="text-left">Bids</td>
+                            </tr>
+                          <tr>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >
+                    <img src="img/product/6.jpg" width="90px" class="" alt="Product" />
+                              </router-link>
+                            </td>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >Product name
+                              </router-link>
+                            </td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">--</td>
+                          </tr>
+                          <tr>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >
+                    <img src="img/product/4.jpg" width="90px" class="" alt="Product" />
+                              </router-link>
+                            </td>
+                            <td class="text-left border">
+                              <router-link
+                                to="/seller_dashboard"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Dashboard"
+                                >Product name
+                              </router-link>
+                            </td>
+                            <td class="text-left border">1</td>
+                            <td class="text-left border">£150</td>
+                            <td class="text-left border">Free</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">0</td>
+                            <td class="text-left border">--</td>
+                          </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                </div>
+              </div>
+
+                </div>
+                </div>
+<!--when empty-->
                 <div
                   class="tab-pane fade"
-                  id="v-pills-Saved-Seller"
+                  id="v-pills-Ended-listing"
                   role="tabpanel"
-                  aria-labelledby="v-pills-Saved-Seller-tab"
+                  aria-labelledby="v-pills-Ended-listing-tab"
                 >
-                  -------Saved-Seller
+                <div class="row">
+                  <span class="text text-dark h5 font-weight-bold  font-weight-normal">
+                  Unsold listing
+                  </span>
+                  <hr>
+                        <!--search section-->
+
+                          <div class="pb-2 pt-2 text-left text-dark">
+
+                              <div class="col-12">
+                            <a class="cateItem" 
+                              data-toggle="collapse"
+                              data-target="#unsold_search" href="#">
+                                  <span class="pr-2 pt-2"><b><i class="fa fa-angle-down"></i> Search</b></span></a>
+                              </div>
+                            <div
+                              class="subCategory collapse"
+                              id="unsold_search"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                
+                                <div class="row p-3 product-container">
+                                    <div class="col-8">
+                                    <input class="text-primary pb-2 pt-2 form-control" name="" value="" placeholder="Search"/>
+                                    </div>
+                                    <div class="col-4">
+                                    <select class="text-primary pb-2 pt-2 form-control">
+                                    <option>All categories</option>
+                                    <option></option>
+                                    <option></option>
+                                    <option></option>
+                                    </select>
+                                    </div>
+                                    <div class="pb-2 pt-2">
+
+                    <button class="btn border border-primary text-primary">Search</button> 
+                                    </div>
+                                </div>
+                                <hr>
+                              </div>
+                            </div>
+                          </div>
+                  
+                <div class="card col-lg-12 col-md-12 col-sm-12 p-3">
+                  Results: 1 - 5 of 5
+
+                <div class="content pt-2 justify-content-center text-center">
+              <div class="row pl-2">
+
+                <div class="col-lg-3 row col-md-3 col-sm-3">
+                <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
+
+                <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
+                <option>Date</option>
+                <option>A to Z</option>
+                <option>Heighest Quantity</option>
+                <option>Lowestest Quantity</option>
+                <option>Heighest Views</option>
+                <option>Lowestest Views</option>
+                <option>Heighest Watches</option>
+                <option>Lowestest Watches</option>
+                <option>Heighest Offers</option>
+                <option>Lowestest Offers</option>
+                <option>Heighest Bids</option>
+                <option>Lowestest Bids</option>
+                </select>
+                </div>
+                </div>
+              </div>
+                <div class="content pt-2 justify-content-center text-center">
+             <hr>
+<p class="p-3 text-dark">No activity here!</p>
+                </div>
+              </div>
+
+                </div>
                 </div>
               </div>
                 </div>
