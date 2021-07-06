@@ -5,7 +5,6 @@
     <div class="content">
       <!-- breadcrumb -->
       <div class="row">
-        <div class="product-container">
           <div class="js-product-list-top firt nav-top">
             <div class="d-flex justify-content-around row">
               <div class="col col-xs-12">
@@ -15,14 +14,15 @@
               </div>
             </div>
           </div>
+              <hr>
 
           <div class="col-sm-12 col-lg-12 col-md-12">
-            <div class="main-product-detail">
-              <div class="product-single row">
+            <div class="row main-product-detail">
+              <div class="product-single col-sm-12 col-lg-9 col-md-9 row">
                 <div class="product-detail col-xs-12 col-md-5 col-sm-5">
                   <div class="page-content" id="content">
                     <div class="images-container">
-                      <div class="js-qv-mask tab-content">
+                      <div class="js-qv-mask tab-content border">
                         <div id="item1" class="tab-pane fade active in show">
                           <img src="img/product/1.jpg" alt="img" />
                         </div>
@@ -36,7 +36,7 @@
                           <img src="img/product/5.jpg" alt="img" />
                         </div>
                       </div>
-                      <ul class="product-tab nav  shadow p-2 nav-tabs d-flex">
+                      <ul class="product-tab nav p-2 nav-tabs d-flex">
                         <li class="active col">
                           <a
                             href="#item1"
@@ -63,16 +63,16 @@
                           </a>
                         </li>
                       </ul>
+                      <hr>
                     </div>
                   </div>
                 </div>
                 <div class="product-info col-xs-12 col-md-7 col-sm-7">
-                  <div class="detail-description">
+                  <div class="">
                     <div class="price-del">
-                    <span class="text-xl text-dark border-r-2 border-dark pr-2"><b>£12.00</b> </span>
-                    <span class="text-xl text-dark"> Product name</span>
+                    <span class="text-xl pb-4 text-dark"> This is where the product title goes </span>
                       <span class="float-right">
-                        <span class="availb">Availability: </span>
+                        <span class="text-xs">Availability: </span>
                         <span class="check">
                           <i class="fa fa-check-square-o" aria-hidden="true"></i
                           >IN STOCK</span
@@ -80,120 +80,155 @@
                       </span>
                     </div>
                     <p class="description">
-                      Proin gravida nibh vel velit auctor aliquet. Aenean lorem
-                      quis bibendum auctor, nisi elit consequat etiam non
-                      auctor.
+                      <span class="text-xs text-danger">
+                      <i class="fa fa-fire"></i>
+                      1 viewed per hour
+                      </span>
                     </p>
+                    <hr>
                     <!--the option below is suppose to show if the category has size, e.g shoes and cloths only sizes available displays-->
                     <div class="option has-border d-lg-flex size-color">
                       <div class="size">
-                        <span class="size">size :</span>
-                        <select>
-                          <option value="">Choose your size</option>
-                          <option value="">M</option>
-                          <option value="">l</option>
-                          <option value="">xl</option>
-                        </select>
                       </div>
                     </div>
-                    <div class="has-border cart-area">
-                      <div class="product-quantity">
-                        <div class="qty">
-                          <div class="input-group">
-                            <div class="quantity">
-                              <span class="control-label">QTY : </span>
+                      <div class="row">
+                      <div class="col-6 table-responsive">
+                        <table class="table std">
+                          <tbody>
+                            <tr>
+                              <td class="text-left">
+                                Condition:
+                              </td>
+                              <td class="text-left font-weight-bold">
+                                New
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td class="text-left">
+                                Quantity:
+                              </td>
+                              <td class="text-left">
                               <input
                                 type="number"
                                 name="qty"
                                 max="4"
                                 min="1"
                                 value="1"
-                                class="input-group form-control"
+                                class="input-group form-control-sm"
                               />
-                            </div>
-                          </div>
-                        </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
-                      <div class="clearfix"></div>
-                      <p class="product-minimal-quantity"></p>
-                    </div>
-                    <div class="d-flex2 has-border">
-                      <div class="btn-group">
-                        <a href="#">
-                          <i class="zmdi zmdi-share"></i>
-                          <span>Share</span>
-                        </a>
-                        <a href="#" class="email">
-                          <i class="fa fa-envelope" aria-hidden="true"></i>
-                          <span>Message seller</span>
-                        </a>
-                        <a href="#" class="print">
-                          <i class="fa fa-heart"></i>
-                          <span>add to wishlist</span>
-                        </a>
+                      <div class="col-6 align-text-bottom">
+                        <p class="text-sm pt-5">4 available</p>
+                        <p class="text-sm text-danger underline">223 sold</p>
                       </div>
-                    </div>
-                    <div class="rating-comment has-border d-flex">
-                      <div class="review-description d-flex">
-                        <span>REVIEW :</span>
-                        <div class="rating">
-                          <div class="star-content">
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                            <div class="star"></div>
-                          </div>
-                        </div>
                       </div>
-                    </div>
+                      <div class="clearfix border-b-0 border-t-2 border-l-2 border-r-2">
 
-                            <span class="justify-content-end"
-                              ><router-link
+                    <p class="text text-sm p-3 font-weight-bold">Price: <span class="font-weight-bold text-dark h5 border-dark pr-2"> £12.00 </span></p>
+                    
+                                            <div class="pb-2"><router-link
                                 to="/Checkout"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                               >
-                                <button
-                                  class="
-                                    col-lg-3 col-md-3 col-sm-12
-                                    btn btn-success
-                                    form-control
-                                    add-to-cart
-                                  "
-                                  data-button-action="add-to-cart"
-                                  type="submit"
-                                >
-                                  Buy now
-                                </button></router-link
+                                            <button class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" style="background-color: blue;" type="submit">
+                                                   Buy it now
+                                            </button></router-link>
+                                            </div>
+
+                                            <div class="pb-2">
+                                            <button class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" style="background-color: blue;" type="submit">
+                                                    Add to basket
+                                                </button>
+                                            </div>
+                                            <div class="pb-2">
+                                            <button class="p-2 shadow border-primary text-primary col-lg-12 col-md-12 col-sm-12 btn" type="submit">
+                                                    <i class="fa fa-heart"></i> Watch this item
+                                                </button>
+                                            </div>
+
+                        <table class="table std font-weight-bold">
+                          <tbody>
+                            <tr>
+                              <td class="border text-danger border-l-0 text-center">
+                                Click & Collect
+                              </td>
+                              <td class="border text-center">
+                                126 watchers
+                              </td>
+                              <td class="border border-r-0 text-center">
+                                30-day return
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                                </div>
+
+                                            <div class="row">
+                                            <div class="col-3">
+                                              Collection:
+                                            </div>
+                                            <div class="col-9">
+                                              <p>Click & Collect - Select store at checkout.</p>
+                                            </div>
+                                            </div>
+                                            <div class="row">
+                                            <div class="col-3">
+                                              Postage:
+                                            </div>
+                                            <div class="col-9">
+                                              <p class="text-success underline">Free 3 day postage</p>
+                                              <p>Between Thu. 08 Jul. and Fri. 09 Jul.</p>
+                                              <p>Item location:
+                                              London, London, United Kingdom</p>
+                                            </div>
+                                            </div>
+                                            <div class="row">
+                                            <div class="col-3">
+                                              Payment
+                                            </div>
+                                            <div class="col-9">
+                                              <p>card</p>
+                                            </div>
+                                            </div>
+                                            <div class="row">
+                                            <div class="col-3">
+                                              Returns:
+                                            </div>
+                                            <div class="col-9">
+                                              <p>30 days refund, buyer pays return postage</p>
+                                            </div>
+                                            </div>
+
+
+                            <span class="justify-content-end"
                               >
                             </span>
                     <div class="content">
-                      <p>
-                        SKU :
-                        <span class="content2">
-                          <a href="#">e-02154</a>
-                        </span>
-                      </p>
-                      <p>
-                        Categories :
-                        <span class="content2">
-                          <a href="#">Clothing</a>,
-                          <a href="#">Men's Jackets</a>
-                        </span>
-                      </p>
-                      <p>
-                        tags :
-                        <span class="content2">
-                          <a href="#">Jacket</a>, <a href="#">Overcoat</a>,
-                          <a href="#">Luxury</a>, <a href="#">men</a>,
-                          <a href="#">summer</a>,
-                          <a href="#">autumn</a>
-                        </span>
-                      </p>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="card col-sm-12 col-lg-3 col-md-3 row">
+                    <div class="container p-2 border">
+                      <p class="text-dark h6 font-weight-bold ">Seller information</p>
+                      <p class="text-primary p-2 font-weight-bold">seller-account ID (23960 )</p>
+                      <hr>
+                      <p class="text-primary"><i class="fa fa-heart fa-lg"></i> Save Seller</p>
+                      <a href="mailto:#"><p class="text-primary p-2">Contact Seller</p></a>
+                  <!--to view thesame sellers listing-->
+                      <p class="text-primary">See other items</p>
+                      <hr>
+                      <p class="text p-3 text-xs">Registered as a business seller</p>
+                    </div>
+              </div>
+              <hr>
+
+
               <div class="review col-12">
                 <ul class="nav nav-tabs">
                   <li class="active">
@@ -425,11 +460,9 @@
                   </div>
                 </div>
               </div>
-              </div>
-
             </div>
+            
           </div>
-        </div>
       </div>
 
     </div>

@@ -534,113 +534,108 @@ TIP: Change the view using the filters at the top of the section.
                   Wishlist
                   </span>
                                     <div class="cart-container">
-                                        <div class="cart-overview js-cart">
-                                            <ul class="cart-items">
-                                                <li class="cart-item p-3">
-                                                    <div class="product-line-grid row p-3 border font-weight-bold text-dark justify-content-between">
-                                                        <!--  product left content: image-->
-                                                        <div class="product-line-grid-center col-md-2 col-sm-6 col-xs-6">
-                                                            <span class="product-image media-middle">
-                                                                <a href="product-detail.html">
-                                                                    <img class="img-fluid shadow" src="img/product/3.jpg" alt="Organic Strawberry Fruits">
-                                                                </a>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-line-grid-body col-md-6 col-sm-6 col-xs-6">
-                                                            <div class="product-line-info">
-                                                                <a class="label" href="product-detail.html" data-id_customization="0">Organic Strawberry Fruits</a>
-                                                            </div>
-                                                            <div class="product-line-info product-price">
-                                                                <span class="value">£20.00</span>
-                                                            </div>
-                                                            <div class="product-line-info">
-                                                                <span class="label-atrr">Size:</span>
-                                                                <span class="value">S</span>
-                                                            </div>
-                                                            <div class="product-line-info">
-                                                                <span class="label-atrr">Color:</span>
-                                                                <span class="value">Blue</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-line-grid-center text-center product-line-actions col-md-4">
-                                                            <div class="row">
-                                                                <div class="col-md-5 col qty">
-                                                                    <div class="label">Qty:</div>
-                                                                    <div class="quantity">
-                                                                        <input type="number" name="qty" value="3" max="5" min="1" class="input-group form-control">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-4 col price">
-                                                                    <div class="label">Total:</div>
-                                                                    <div class="product-price total">
-                                                                        £20.00
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-2 col text-xs-right align-self-end">
-                                                                    <div class="cart-line-product-actions ">
-                                                                        <a class="remove-from-cart" rel="nofollow" href="#" data-link-action="delete-from-cart" data-id-product="1">
-                                                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="cart-item p-3">
-                                                    <div class="product-line-grid border row p-3 text-dark font-weight-bold justify-content-between">
-                                                        <!--  product left content: image-->
-                                                        <div class="product-line-grid-left col-md-2 col-sm-6 col-xs-6">
-                                                            <span class="product-image media-middle">
-                                                                <a href="product-detail.html">
-                                                                    <img class="img-fluid shadow" src="img/product/2.jpg" alt="Organic Strawberry Fruits">
-                                                                </a>
-                                                            </span>
-                                                        </div>
-                                                        <div class="product-line-grid-body col-md-6 col-sm-6 col-xs-6">
-                                                            <div class="product-line-info">
-                                                                <a class="label" href="product-detail.html" data-id_customization="0">
-                                                                    Etiam Congue Nisl Nec</a>
-                                                            </div>
-                                                            <div class="product-line-info product-price">
-                                                                <span class="value">£30.00</span>
-                                                            </div>
-                                                            <div class="product-line-info">
-                                                                <span class="label-atrr">Size:</span>
-                                                                <span class="value">S</span>
-                                                            </div>
-                                                            <div class="product-line-info">
-                                                                <span class="label-atrr">Color:</span>
-                                                                <span class="value">Blue</span>
-                                                            </div>
-                                                        </div>
-                                                        <div class="product-line-grid-right text-center product-line-actions  col-md-4 col-sm-4 col-xs-4">
-                                                            <div class="row">
-                                                                <div class="col-md-5 col qty">
-                                                                    <div class="label">Qty:</div>
-                                                                    <div class="quantity">
-                                                                        <input type="number" name="qty" value="3" max="5" min="1" class="input-group form-control">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-5 price col">
-                                                                    <div class="label">Total:</div>
-                                                                    <div class="product-price total">
-                                                                        £60.00
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-md-2 text-xs-right align-self-end col">
-                                                                    <div class="cart-line-product-actions ">
-                                                                        <a class="remove-from-cart" rel="nofollow" href="#" data-link-action="delete-from-cart" data-id-product="1">
-                                                                            <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </div>
+
+                      <div class="row col-9 text-md table-responsive">
+                        <table class="std table">
+                          <tbody>
+                            <tr class="">
+                              <td class="shadow text-left">
+                                  <img
+                                    src="img/product/6.jpg"
+                                    class="thumbnail-img"
+                                    width="200px"
+                                    alt="Product"
+                                  />
+                              </td>
+                              <td class="text-left">
+                                <div class="row">
+                                <p class="pb-2 pt-4 font-weight-bold text-dark">Product nameProduct name</p>
+                                <p class="pb-2 text text-xs">Condition: New</p>
+                                <div class="col-8 row">
+                                <div class="border-r-2 col-6">
+                                <p class="font-weight-bold text-dark">£150.00</p>
+                                </div>
+                                <div class="col-6">
+                                <p class="font-weight-bold text-dark">£150.00</p>
+                                </div>
+
+                                </div>
+                                <div class="col-4 text-center">
+                                <div class="">
+                               <button class="text-sm border-primary btn text-primary" type="submit">
+                                           Buy it Now
+                                        </button>
+                                </div>
+                                <div class="pt-2 ">
+                               <button class="text-sm border-primary btn text-primary" type="submit">
+                                           Add to cart
+                                        </button>
+                                </div>
+                                <div class="pt-2 ">
+                               <button class="text-sm border-primary btn text-primary" type="submit">
+                                           Delete
+                                        </button>
+                                </div>
+
+                                </div>
+                                </div>
+                                <router-link class="small"
+                                  to="/seller_dashboard"
+                                  data-toggle="collapse"
+                                  data-target=".navbar-collapse"
+                                  title="Dashboard"
+                                >
+                                </router-link>
+                              </td>
+                            </tr>
+                            <tr class="">
+                              <td class="shadow text-left">
+                                  <img
+                                    src="img/product/4.jpg"
+                                    class="thumbnail-img"
+                                    width="200px"
+                                    alt="Product"
+                                  />
+                              </td>
+                              <td class="text-left">
+                                <div class="row">
+                                <p class="pb-2 pt-4 font-weight-bold text-dark">Product nameProduct name</p>
+                                <p class="pb-2 text text-xs">Condition: New</p>
+                                <div class="col-8 row">
+                                <div class="border-r-2 col-6">
+                                <p class="font-weight-bold text-dark">£150.00</p>
+                                </div>
+                                <div class="col-6">
+                                <p class="font-weight-bold text-dark">£150.00</p>
+                                </div>
+
+                                </div>
+                                <div class="col-4 text-center">
+                                <div class="">
+                               <button class="text-sm border-primary btn text-primary" type="submit">
+                                           Buy it Now
+                                        </button>
+                                </div>
+                                <div class="pt-2 ">
+                               <button class="text-sm border-primary btn text-primary" type="submit">
+                                           Add to cart
+                                        </button>
+                                </div>
+
+                                </div>
+                                </div>
+                                <router-link class="small"
+                                  to="/seller_dashboard"
+                                  data-toggle="collapse"
+                                  data-target=".navbar-collapse"
+                                  title="Dashboard"
+                                >
+                                </router-link>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
                                     </div>
                 </div>
                 </div>
