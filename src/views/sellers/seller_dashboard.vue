@@ -217,18 +217,15 @@
                   Orders 
                 </button>
                 <hr>
-                <button
-                  class="text-left text-primary p-2"
-                  id="v-pills-Recently-viewed-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Recently-viewed"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Recently-viewed"
-                  aria-selected="false"
-                >
+                  <router-link
+                    to="/Orders"
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse" 
+                    class="p-2 text-primary underline"
+                    title="Orders"
+                    >
                   See all orders
-                </button>
+                  </router-link>
                 <hr>
 
                             <table class="std table" id="block-history">

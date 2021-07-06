@@ -54,6 +54,7 @@ import return_missing_item from '../views/return_missing_item.vue'
 import resolving_unpaid_item from '../views/resolving_unpaid_item.vue'
 import resolving_with_seller from '../views/resolving_with_seller.vue'
 import Subscription from '../views/subscription.vue'
+import Signout from '../views/signout.vue'
 
 Vue.use(VueRouter)
 
@@ -204,42 +205,42 @@ const routes = [{
     },
     {
         path: '/Change Password',
-        name: 'changeUserPasswordPage',
+        name: 'Change Password',
         component: changeUserPasswordPage,
     },
 
     {
         path: '/Payment Method',
-        name: 'paymentMethodPage',
+        name: 'Payment Method',
         component: paymentMethodPage,
     },
 
     {
         path: '/ADD Payment Method',
-        name: 'addPaymentMethod',
+        name: 'ADD Payment Method',
         component: addPaymentMethod,
     },
 
     {
         path: '/Login',
-        name: 'userLogin',
+        name: 'Login',
         component: userLogin,
     },
 
     {
         path: '/Register Personal Account',
-        name: 'userRegistrationPage',
+        name: 'Register Personal Account',
         component: userRegistrationPage,
     },
 
     {
         path: '/Register Business Account',
-        name: 'registerBusinessAccount',
+        name: 'Register Business Account',
         component: registerBusinessAccount,
     },
     {
         path: '/Add New Card',
-        name: 'addCardPage',
+        name: 'Add New Card',
         component: addCardPage,
     },
     {
@@ -284,7 +285,7 @@ const routes = [{
     },
     {
         path: '/Start selling',
-        name: 'start selling',
+        name: 'Start selling',
         component: start_selling,
     },
     {
@@ -319,12 +320,12 @@ const routes = [{
     },
     {
         path: '/Message',
-        name: 'message',
+        name: 'Message',
         component: seller_message,
     },
     {
         path: '/account',
-        name: 'Account',
+        name: 'account',
         component: Account,
     },
     {
@@ -334,14 +335,19 @@ const routes = [{
     },
     {
         path: '/Resolut Center',
-        name: 'Resoluti Center',
+        name: 'Resolut Center',
         component: resolut_Center,
 
     },
     {
         path: '/Subscription',
-        name: 'Subscription Page',
+        name: 'Subscription',
         component: Subscription,
+    },
+    {
+        path: '/Signout',
+        name: 'Signout',
+        component: Signout,
     },
 
     {

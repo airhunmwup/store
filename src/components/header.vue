@@ -47,7 +47,7 @@
             <!-- Resolution center/-->
             <router-link
               class="text-left pl-4 text-xs pb-2 font-weight-bold"
-              to="/Login"
+              to="/Signout"
               data-toggle="collapse"
               data-target=".navbar-collapse"
               title="sign out"
@@ -266,7 +266,7 @@
                   />
 
                   <button
-                    class="btn text-light btn-dark border"
+                    class="btn text-light btn-primary border"
                     type="submit"
                     data-action="show-password"
                     data-text-show="Show"

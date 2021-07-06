@@ -1,81 +1,49 @@
 <template>
-    <div id="page-404" class="blog">
     <!-- main content -->
     
     <!-- main content -->
-    <div class="main-content">
-        <div id="wrapper-site">
-            <div id="content-wrapper">
-                <section class="page-home">
-                    <div class="container">
-                    <div class="content">
-                        <div class="row pt-5">
-                            <div class="content-404 col-lg-5 col-sm-6 text-left">
-                                    <h1 class="title-page">Create an account</h1>
-                                    <p class="text-dark">Are you a business or nonprofit? <br><router-link
+    <div class="">
+                                    <p class="pb-4 pr-4 text-dark text-right">Already a member? <router-link
+                                to="/Login"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                class="text-primary underline font-weight-bold"
+                                title="sign in"
+                              >Sign in</router-link></p>
+        
+                    <div class="container pb-5">
+                            <div class="row container align-content-center">
+                                    <div class="pb-4 text-center">
+                                    <p class="h1 text-dark">Create an account</p>
+                                    </div>
+                                    <p class="pb-4 text-dark text-center">Are you a business or nonprofit? <br><router-link
                                 to="/Register Business Account"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
-                                class="text-primary font-weight-bold"
+                                class="text-primary underline font-weight-bold"
                                 title="Register Business Account"
                               >Create a business account</router-link></p>
-                              
-                                        <div class="clearfix p-3 justify-content-center">
-                                <p class="text-dark pb-3">Continue with:</p>
-                                            <span class="p-2">
-                                                <button class="p-4 shadow text-light border btn-info" data-link-action="sign-in" type="submit">
-                                                   <i class="text-lg fa fa-facebook"></i> 
-                                                </button>
-                                            </span>
-
-                                            <span class="p-2">
-                                                <button class="p-4 shadow-xl border btn-danger" data-link-action="sign-in" type="submit">
-                                                    <i class="text-lg fa fa-google"></i> 
-                                                </button>
-                                            </span>
-                                        </div>
-                                    <hr>
-                            </div>
-                            <div class="col-lg-5 col-sm-6 pl-5 pb-3 pt-4 justify-content-end">
+                            <div class="col-lg-6 col-sm-6 pb-3 pt-4 justify-content-center">
                                 
                             <div id="content" class="page-content">
                                 <div class="register-form text-center">
                                     <form action="#" id="customer-form" class="" method="post">
-                                        <div class="">
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="firstname" type="text" placeholder="First name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="lastname" type="text" placeholder="Last name">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="email" type="email" placeholder="Email">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <input class="form-control" name="Phonenumber" type="text" placeholder="Phone number">
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <div class="input-group js-parent-focus">
-                                                        <input class="form-control js-child-focus js-visible-password" name="password" type="password" placeholder="Password">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="form-group">
-                                                <div>
-                                                    <div class="input-group js-parent-focus">
-                                                        <input class="form-control js-child-focus js-visible-password" name="password" type="password" placeholder="Confirm Password">
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="text-center">
+                                    <div class="row">
+                                    <div class="form-group text-left col-lg-6 col-md-6 col-sm-6  pb-3">
+                                        <input class="col-lg-12 col-md-12 col-sm-12 border-b border-dark border-t-0 border-l-0 border-r-0" name="First_name" type="text" value="" placeholder="First Name">
+                                    </div>    
+                                    <div class="form-group text-left col-lg-6 col-md-6 col-sm-6  pb-3">
+                                        <input class="col-lg-12 col-md-12 col-sm-12 border-b border-dark border-t-0 border-l-0 border-r-0" name="Last_name" type="text" value="" placeholder="Last Name">
+                                    </div>
+                                                
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
+                                        <input class="col-lg-12 col-md-12 col-sm-12 border-b border-dark border-t-0 border-l-0 border-r-0" name="Email" type="email" value="" placeholder="Email">
+                                    </div>       
+                                    <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
+                                        <input class="col-lg-12 col-md-12 col-sm-12 border-b border-dark border-t-0 border-l-0 border-r-0" name="Pass_word" type="password" value="" placeholder="Password">
+                                    </div> 
+                                     </div>
                                         </div>
                                         <div>
                                             <p class="text-left pt-2 pb-2">By Creating an account, you agree to our 
@@ -96,34 +64,40 @@
                                         </div>
                                         <div class="clearfix">
                                             <div>
-                                                <button class="text-success border-success form-control" data-link-action="sign-in" type="submit">
-                                                    Create Account
-                                                </button>
+                                                
+                               <button class="col-lg-12 col-md-12 col-sm-12  btn text-light" style="background-color: rgb(209, 209, 208);" data-link-action="sign-in" type="submit">
+                                           Create account
+                                        </button>
                                             </div>
                                         </div>
                                     </form>
                                 </div>
                             </div>
 
-                        <div class="text-left pt-3">
-                            <p class="box border text-center">
-                              <router-link
-                                to="/Login"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Login"
-                              ><i class="fa fa-question-circle"></i> Need Help?</router-link></p>
-                        </div>
                             </div>
-                        </div>
+                            <div class="col-lg-6 col-sm-6">
+                                    
+                              
+                                        <div class="clearfix p-3 justify-content-center text-center">
+                                <p class="text-dark pb-3">Continue with:</p>
+                                            <div class="pt-3 pb-3">
+                                            <button class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" style="background-color: blue;" data-link-action="sign-in" type="submit">
+                                                   <i class="text-lg fa fa-facebook"></i> 
+                                            </button>
+                                            </div>
+
+                                            <div class="pt-3 pb-3">
+                                            <button class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" style="background-color: red;" data-link-action="sign-in" type="submit">
+                                                    <i class="text-lg fa fa-google"></i> 
+                                                </button>
+                                            </div>
+                                        </div>
+                                    <hr>
+                            </div>
+                            </div>
                      </div>
-                     </div>
-                </section>
-            </div>
-        </div>
+                        <hr>
     </div>
 
-                       <hr>
-    </div>
 
 </template>
