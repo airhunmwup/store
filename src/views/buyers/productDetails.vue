@@ -2,24 +2,13 @@
   <!-- main content -->
 
   <div class="container" id="product-detail">
-    <div class="content">
       <!-- breadcrumb -->
       <div class="row">
-          <div class="js-product-list-top firt nav-top">
-            <div class="d-flex justify-content-around row">
-              <div class="col col-xs-12">
-                <div class="hidden-sm-down total-products">
-                  <!--banner area-->
-                </div>
-              </div>
-            </div>
-          </div>
-              <hr>
 
           <div class="col-sm-12 col-lg-12 col-md-12">
             <div class="row main-product-detail">
               <div class="product-single col-sm-12 col-lg-9 col-md-9 row">
-                <div class="product-detail col-xs-12 col-md-5 col-sm-5">
+                <div class="product-detail col-xs-12 col-lg-6 col-md-5 col-sm-12">
                   <div class="page-content" id="content">
                     <div class="images-container">
                       <div class="js-qv-mask tab-content border">
@@ -67,11 +56,11 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-info col-xs-12 col-md-7 col-sm-7">
+                <div class="product-info col-xs-12 col-lg-6 col-md-7 col-sm-12">
                   <div class="">
                     <div class="price-del">
                     <span class="text-xl pb-4 text-dark"> This is where the product title goes </span>
-                      <span class="float-right">
+                      <span class="text-success float-right">
                         <span class="text-xs">Availability: </span>
                         <span class="check">
                           <i class="fa fa-check-square-o" aria-hidden="true"></i
@@ -85,7 +74,6 @@
                       1 viewed per hour
                       </span>
                     </p>
-                    <hr>
                     <!--the option below is suppose to show if the category has size, e.g shoes and cloths only sizes available displays-->
                     <div class="option has-border d-lg-flex size-color">
                       <div class="size">
@@ -141,7 +129,7 @@
                                             </div>
 
                                             <div class="pb-2">
-                                            <button class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" style="background-color: blue;" type="submit">
+                                            <button class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" style="background-color: rgb(130, 231, 238)" type="submit">
                                                     Add to basket
                                                 </button>
                                             </div>
@@ -213,8 +201,8 @@
                   </div>
                 </div>
               </div>
-              <div class="card col-sm-12 col-lg-3 col-md-3 row">
-                    <div class="container p-2 border">
+              <div class="ccontainer col-sm-12 col-lg-3 col-md-3 row">
+                    <div class="p-2 box border-l-2">
                       <p class="text-dark h6 font-weight-bold ">Seller information</p>
                       <p class="text-primary p-2 font-weight-bold">seller-account ID (23960 )</p>
                       <hr>
@@ -226,37 +214,73 @@
                       <p class="text p-3 text-xs">Registered as a business seller</p>
                     </div>
               </div>
-              <hr>
 
 
-              <div class="review col-12">
+              <section class="review col-12 text-dark">
                 <ul class="nav nav-tabs">
-                  <li class="active">
+                  <li class="active font-weight-bold text-dark p-2 border-l-2 border-r-2 border-b-0 border-t-2">
                     <a data-toggle="tab" href="#description" class="active show"
                       >Description</a
                     >
                   </li>
-                  <li>
-                    <a data-toggle="tab" href="#review">Reviews (2)</a>
+                  <li class="p-2 font-weight-bold text-dark border-l-2 border-r-2 border-b-0 border-t-2">
+                    <a data-toggle="tab" href="#review">Postage and Payment</a>
                   </li>
                 </ul>
-
-                <div class="tab-content">
-                  <div id="description" class=" border p-3 tab-pane fade in active show">
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                      sed do eiusmod tempor incididunt ut labore et dolore magna
-                      aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing
-                      elit, sed do eiusmod tempor incididunt ut labore et dolore
-                      magna aliqua.
-                    </p>
+                <hr>
+                <p class="text-sm p-3">Seller assumes all responsibility for this listing.</p>
+                <div class="tab-content p-4 border">
+                  <div id="description" class="tab-pane fade in active show">
+                              <strong class="h5">Item specifics</strong> 
+                    
+                            <div class="p-3 table-responsive">
+                        <table class="table text-sm std ">
+                          <tbody>
+                            <tr>
+                              <td class="text-xs font-weight-bold">
+                                Condition:
+                              </td>
+                              <td class="text-xs">
+                              <p>A brand-new, unused, unopened and undamaged item. See the seller's listing for full details.</p>
+                              </td>
+                              <td class="text-xs font-weight-bold">
+                                Brand
+                              </td>
+                              <td class="text-xs">
+                                Funiture
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-xs font-weight-bold">
+                                Type:
+                              </td>
+                              <td class="text-xs">
+                                Integrated Design Environments
+                              </td>
+                              <td class="text-xs font-weight-bold">
+                                Location:
+                              </td>
+                              <td class="text-xs">
+                                United Kingdom
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-xs font-weight-bold">
+                                Sub-Type:
+                              </td>
+                              <td class="text-xs">
+                                Templates
+                              </td>
+                            <tr>
+                              <td class="text-xs font-weight-bold">
+                                MPN:
+                              </td>
+                              <td class="text-xs">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                            </div>
                   </div>
 
                   <div id="review" class="tab-pane fade">
@@ -265,206 +289,99 @@
                         <div class="spr-review">
                           <div class="spr-review-header">
                             <span class="spr-review-header-byline">
-                              <strong>Peter Capidal</strong> -
-                              <span>Apr 14, 2018</span>
+                              <strong class="h5">Postage and packaging</strong> 
                             </span>
-                            <div class="rating">
-                              <div class="star-content">
-                                <div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
+                              <div class="p-2">
+                              <p class=" ">Item location: Item location from listing</p>
+                              <p class=" ">Postage to: Worldwide</p>
                               </div>
+                            <div class="p-3 table-responsive">
+                        <table class="table text-sm std ">
+                          <tbody>
+                            <tr>
+                              <td class="text-xs">
+                                Postage and packaging
+                              </td>
+                              <td class="text-xs">
+                                To
+                              </td>
+                              <td class="text-xs">
+                                Service
+                              </td>
+                              <td class="text-xs">
+                                Delivery*
+                              </td>
+                            </tr>
+                            <tr class="font-weight-bold">
+                              <td class="text-xs">
+                                <p>Free P&P</p>
+                              </td>
+                              <td class="text-xs">
+                                <p>United Kingdom</p>
+                              </td>
+                              <td class="text-xs">
+                                <p>Express Delivery (Royal Mail Special Delivery (TM) 11:00 am)</p>
+                              </td>
+                              <td class="text-xs">
+                                <p>Delivery</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                              <p class="text-xs text-primary">You’ll see an estimated delivery date based on the seller’s dispatch time and delivery service. Delivery times may vary, especially during peak periods and will depend on when your payment clears.</p>
                             </div>
-                          </div>
-                          <div class="spr-review-content">
-                            <p class="spr-review-content-body">
-                              In feugiat venenatis enim, non finibus metus
-                              bibendum eu. Proin massa justo, eleifend fermentum
-                              varius quis, semper gravida quam. Cras nec enim
-                              sed lacus viverra luctus. Nunc quis accumsan
-                              mauris. Aliquam fermentum sit amet est id
-                              scelerisque. Nam porta risus metus.
-                            </p>
-                          </div>
-                        </div>
-                        <div class="spr-review preview2">
-                          <div class="spr-review-header">
-                            <span class="spr-review-header-byline">
-                              <strong>David James</strong> -
-                              <span>Apr 13, 2018</span>
-                            </span>
-                            <div class="rating">
-                              <div class="star-content">
-                                <div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                                <div class="star"></div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="spr-review-content">
-                            <p class="spr-review-content-body">
-                              In feugiat venenatis enim, non finibus metus
-                              bibendum eu. Proin massa justo, eleifend fermentum
-                              varius quis, semper gravida quam. Cras nec enim
-                              sed lacus viverra luctus. Nunc quis accumsan
-                              mauris. Aliquam fermentum sit amet est id
-                              scelerisque. Nam porta risus metus.
-                            </p>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <form method="post" action="#" class="new-review-form">
-                      <input type="hidden" name="review[rating]" value="3" />
-                      <input type="hidden" name="product_id" />
-                      <h3 class="spr-form-title">Write a review</h3>
-                      <fieldset>
-                        <div class="spr-form-review-rating">
-                          <label class="spr-form-label">Your Rating</label>
-                          <fieldset class="ratings">
-                            <input
-                              type="radio"
-                              id="star5"
-                              name="rating"
-                              value="5"
-                            />
-                            <label
-                              class="full"
-                              for="star5"
-                              title="Awesome - 5 stars"
-                            ></label>
-                            <input
-                              type="radio"
-                              id="star4half"
-                              name="rating"
-                              value="4 and a half"
-                            />
-                            <input
-                              type="radio"
-                              id="star4"
-                              name="rating"
-                              value="4"
-                            />
-                            <label
-                              class="full"
-                              for="star4"
-                              title="Pretty good - 4 stars"
-                            ></label>
-                            <input
-                              type="radio"
-                              id="star3half"
-                              name="rating"
-                              value="3 and a half"
-                            />
-                            <input
-                              type="radio"
-                              id="star3"
-                              name="rating"
-                              value="3"
-                            />
-                            <label
-                              class="full"
-                              for="star3"
-                              title="Meh - 3 stars"
-                            ></label>
-                            <input
-                              type="radio"
-                              id="star2half"
-                              name="rating"
-                              value="2 and a half"
-                            />
-                            <input
-                              type="radio"
-                              id="star2"
-                              name="rating"
-                              value="2"
-                            />
-                            <label
-                              class="full"
-                              for="star2"
-                              title="Kinda bad - 2 stars"
-                            ></label>
-                            <input
-                              type="radio"
-                              id="star1half"
-                              name="rating"
-                              value="1 and a half"
-                            />
-                            <input
-                              type="radio"
-                              id="star1"
-                              name="rating"
-                              value="1"
-                            />
-                            <label
-                              class="full"
-                              for="star1"
-                              title="Sucks big time - 1 star"
-                            ></label>
-                            <input
-                              type="radio"
-                              id="starhalf"
-                              name="rating"
-                              value="half"
-                            />
-                          </fieldset>
-                        </div>
-                      </fieldset>
-                      <fieldset class="spr-form-contact">
-                        <div class="spr-form-contact-name">
-                          <input
-                            class="
-                              spr-form-input spr-form-input-text
-                              form-control
-                            "
-                            value=""
-                            placeholder="Enter your name"
-                          />
-                        </div>
-                        <div class="spr-form-contact-email">
-                          <input
-                            class="
-                              spr-form-input spr-form-input-email
-                              form-control
-                            "
-                            value=""
-                            placeholder="Enter your email"
-                          />
-                        </div>
-                      </fieldset>
-                      <fieldset>
-                        <div class="spr-form-review-body">
-                          <div class="spr-form-input">
-                            <textarea
-                              class="spr-form-input-textarea"
-                              rows="10"
-                              placeholder="Write your comments here"
-                            ></textarea>
+                    <div class="spr-form">
+                      <div class="user-comment">
+                        <div class="spr-review">
+                          <div class="spr-review-header">
+                            <span class="spr-review-header-byline">
+                              <strong class="h5">Return Policy</strong> 
+                            </span>
+                            <div class="p-3 table-responsive">
+                        <table class="table text-sm std ">
+                          <tbody>
+                            <tr>
+                              <td class="text-xs">
+                               After receiving the item, cancel the purchase within
+                              </td>
+                              <td class="text-xs">
+                                Return postage
+                              </td>
+                            </tr>
+                            <tr class="font-weight-bold">
+                              <td class="text-xs">
+                                <p>30 days</p>
+                              </td>
+                              <td class="text-xs">
+                                <p>Seller pays return postage</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                              <p class="text">Take a look at our 
+                          <router-link
+                          class="text-primary underline"
+                            to="/managing_returns_missing_items_and_refunds_for_sellers"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            >Returning an item help page</router-link> for more details.</p>
+                            <p class="text-xs p-3">The seller is responsible for return postage costs.</p>
+                            </div>
                           </div>
                         </div>
-                      </fieldset>
-                      <div class="submit">
-                        <input
-                          type="submit"
-                          name="addComment"
-                          id="submitComment"
-                          class="btn btn-default"
-                          value="Submit Review"
-                        />
                       </div>
-                    </form>
+                    </div>
                   </div>
                 </div>
-              </div>
+              </section>
             </div>
             
           </div>
       </div>
 
-    </div>
   </div>
 </template>
