@@ -52,6 +52,35 @@
     content: '';
 }
 
+.gs {
+    display: grid;
+    grid-template-columns: 2px;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(50% - var(--gutter) * auto);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-top: 0px;
+}
+
+.gs:before,
+.gs:after {
+    content: '';
+}
+
+.li,
+.itemi {
+    scroll-snap-align: center;
+    padding: calc(var(--gutter) / 3 * 1.5);
+    display: fixed;
+    flex-direction: column;
+    font-size: small;
+    align-items: center;
+    background: #fff;
+    border-color: rgb(233, 224, 212);
+    width: 230px;
+    height: 250;
+}
+
 
 /* Demo styles */
 

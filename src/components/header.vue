@@ -207,14 +207,24 @@
 
                       <tr>
                         <td colspan="3" class="d-flex justify-content-center">
-                          <div class="cart-button">
-                            <a href="product-cart.html" title="View Cart"
-                              >View Cart</a
-                            >
-                            <a href="product-checkout.html" title="Checkout"
-                              >Checkout</a
-                            >
-                          </div>
+                          
+                            <div class="cart-button">
+                              
+            <router-link
+              to="/View Cart"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="summary"
+            >
+                              View Cart</router-link>
+            <router-link
+              to="/Product Cart"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="summary"
+            >
+                              Checkout</router-link>
+                            </div>
                         </td>
                       </tr>
                     </tbody>
@@ -322,12 +332,21 @@
                         <tr>
                           <td colspan="3" class="d-flex justify-content-center">
                             <div class="cart-button">
-                              <a href="product-cart.html" title="View Cart"
-                                >View Cart</a
-                              >
-                              <a href="product-checkout.html" title="Checkout"
-                                >Checkout</a
-                              >
+                              
+            <router-link
+              to="/View Cart"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="summary"
+            >
+                              View Cart</router-link>
+            <router-link
+              to="/Product Cart"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="summary"
+            >
+                              Checkout</router-link>
                             </div>
                           </td>
                         </tr>
