@@ -1,28 +1,24 @@
 <template>
-  <div class="product-checkout checkout-cart">
+  <div class="">
     <!-- main content -->
-    <div id="checkout" class="main-content">
-      <div class="wrap-banner">
         <!-- breadcrumb -->
 
         <!-- main -->
-        <div id="wrapper-site">
           <div class="container">
             <div class="row container">
-              <div id="content-wrapper" class="onecol">
                 <div id="main">
                   <div class="row">
                     <div class="col-md-9 check-info justify-content-end">
                       <div class="checkout-personal-step">
-                        <h3 class="step-title h3 info">
-                          <span class="step-number">1</span>PERSONAL INFORMATION
+                        <h3 class="step-title text-dark h3 p-2 info">
+                          PERSONAL INFORMATION
                         </h3>
                       </div>
                       <div class="content">
                         <ul class="nav nav-inline">
                           <li class="nav-item">
                             <a
-                              class="nav-link active"
+                              class="nav-link active underline text-dark font-weight-bold"
                               data-toggle="tab"
                               href="#checkout-guest-form"
                             >
@@ -31,7 +27,7 @@
                           </li>
                           <li class="nav-item">
                             <a
-                              class="nav-link"
+                              class="nav-link underline text-dark font-weight-bold"
                               data-toggle="tab"
                               href="#checkout-login-form"
                             >
@@ -47,7 +43,6 @@
                           >
                             <form
                               action="#"
-                              id="customer-form"
                               class="js-customer-form"
                               method="post"
                             >
@@ -59,7 +54,7 @@
                                 />
                                 <div class="form-group row">
                                   <input
-                                    class="form-control"
+                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
                                     name="firstname"
                                     type="text"
                                     placeholder="Full name"
@@ -67,7 +62,7 @@
                                 </div>
                                 <div class="form-group row">
                                   <input
-                                    class="form-control"
+                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
                                     name="email"
                                     type="email"
                                     placeholder="Email"
@@ -75,14 +70,14 @@
                                 </div>
                                 <div class="form-group row">
                                   <input
-                                    class="form-control"
-                                    name="email"
-                                    type="email"
+                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
+                                    name="phone"
+                                    type="number"
                                     placeholder="Phone"
                                   />
                                 </div>
                                 <div class="desc-password">
-                                  <span class="font-weight-bold"
+                                  <span class="text-dark font-weight-bold"
                                     >Create an account</span
                                   >
                                   <span>(optional)</span>
@@ -92,86 +87,59 @@
                                   >
                                 </div>
                                 <div class="form-group row">
-                                  <div class="input-group js-parent-focus">
                                     <input
-                                      class="form-control js-child-focus"
+                                      class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
                                       name="password"
                                       type="password"
                                       placeholder=" Password"
                                     />
-                                  </div>
-                                </div>
-                                <div class="hidden-comment">
-                                  <div class="form-group row">
-                                    <input
-                                      class="form-control"
-                                      name="birthday"
-                                      type="text"
-                                      value=""
-                                      placeholder=" Birthdate"
-                                    />
-                                  </div>
                                 </div>
                                 <div class="form-group row check-input">
-                                  <span class="custom-checkbox d-inline-flex">
+                                  <p>
                                     <input
                                       class="check"
                                       name="optin"
                                       type="checkbox"
                                       value="1"
                                     />
-                                    <label class="label-absolute"
-                                      >Receive offers from our partners</label
-                                    >
-                                  </span>
+                                  <span class="text-primary"> Receive offers from our partners</span>
+                                  </p>
                                 </div>
-                                <div class="form-group row">
-                                  <span
-                                    class="custom-checkbox d-inline-flex check-input"
-                                  >
+                                <div class="form-group row"><p>
                                     <input
-                                      class="check"
+                                      class="pt-2"
                                       name="newsletter"
                                       type="checkbox"
                                       value="1"
                                     />
-                                    <label
-                                      >Sign up for our newsletter
+                                    <span class="text-primary"
+                                      > Sign up for our newsletter
                                       <br />
                                       <em
                                         >You may unsubscribe at any moment. For
                                         that purpose, please find our contact
                                         info in the legal notice.
                                       </em>
-                                    </label>
-                                  </span>
+                                    </span>
+                                    </p>
                                 </div>
                               </div>
-                              <div class="clearfix">
-                                <div class="row">
-                                  <input
-                                    type="hidden"
-                                    name="submitCreate"
-                                    value="1"
-                                  />
-                                  <router-link
-                                    to="/Checkout Address"
-                                    data-toggle="collapse"
-                                    data-target=".navbar-collapse"
-                                    title="Home"
-                                  >
-                                    <button
-                                      class="continue btn btn-primary pull-xs-right"
-                                      name="continue"
-                                      data-link-action="register-new-customer"
-                                      type="submit"
-                                      value="1"
-                                    >
-                                      Continue
-                                    </button></router-link
-                                  >
-                                </div>
-                              </div>
+                                            <div class="p-3">
+                                            <router-link
+                                to="/Checkout"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Home"
+                              >
+                                <button
+                                  class="col-lg-12 col-md-12 col-sm-12 btn btn-warning form-control add-to-cart"
+                                  data-button-action="add-to-cart"
+                                  type="submit"
+                                >
+                                  Continue
+                                </button></router-link
+                              >
+                                        </div>
                             </form>
                           </div>
                           <div
@@ -189,24 +157,22 @@
                                 <input type="hidden" name="back" value="" />
                                 <div class="form-group row">
                                   <input
-                                    class="form-control"
+                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
                                     name="email"
                                     type="email"
                                     placeholder="Email"
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <div class="input-group js-parent-focus">
                                     <input
-                                      class="form-control js-child-focus js-visible-password"
+                                      class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
                                       name="password"
                                       type="password"
                                       placeholder="Password"
                                     />
-                                  </div>
                                 </div>
-                                <div class="row">
-                                  <div class="forgot-password">
+                                <div class="row p-2">
+                                  <div class="forgot-password text-primary underline">
                                     <a
                                       href="user-reset-password.html"
                                       rel="nofollow"
@@ -216,118 +182,70 @@
                                   </div>
                                 </div>
                               </div>
-                              <div class="clearfix">
-                                <div class="row">
-                                  <button
-                                    class="continue btn btn-primary pull-xs-right"
-                                    name="continue"
-                                    data-link-action="sign-in"
-                                    type="submit"
-                                    value="1"
-                                  >
-                                    Continue
-                                  </button>
-                                </div>
-                              </div>
+                                            <div class="p-3">
+                                            <router-link
+                                to="/Checkout"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Home"
+                              >
+                                <button
+                                  class="col-lg-12 col-md-12 col-sm-12 btn btn-warning form-control add-to-cart"
+                                  data-button-action="add-to-cart"
+                                  type="submit"
+                                >
+                                  Continue
+                                </button></router-link
+                              >
+                                        </div>
                             </form>
                           </div>
                         </div>
-                        <div class="checkout-personal-step">
+                        <div class="checkout-personal-step p-2">
                           <h3 class="step-title h3">
-                            <span class="step-number">2</span>Addresses
+                             <i class="fa fa-address-book-o"></i> Addresses.
                           </h3>
                         </div>
-                        <div class="checkout-personal-step">
+                        <div class="checkout-personal-step p-2">
                           <h3 class="step-title h3">
-                            <span class="step-number">3</span>Shipping Method
+                             <i class="fa fa-truck"></i> Shipping Method.
                           </h3>
                         </div>
-                        <div class="checkout-personal-step">
+                        <div class="checkout-personal-step p-2">
                           <h3 class="step-title h3">
-                            <span class="step-number">4</span>Payment
+                             <i class="fa fa-credit-card"></i> Payment.
                           </h3>
                         </div>
                       </div>
                     </div>
-                    <div class="cart-grid-right col-md-12 col-lg-3">
-                      <div class="cart-summary">
-                        <div class="cart-summary-products">
-                          <div class="summary-label">
-                            There are 3 item in your cart
-                          </div>
-                        </div>
-                        <div
-                          class="cart-summary-line"
-                          id="cart-subtotal-products"
-                        >
-                          <span class="label js-subtotal">
-                            Total products:
-                          </span>
-                          <span class="value">£200.00</span>
-                        </div>
-                        <div
-                          class="cart-summary-line"
-                          id="cart-subtotal-shipping"
-                        >
-                          <span class="label"> Total Shipping: </span>
-                          <span class="value">Free</span>
-                          <div>
-                            <small class="value"></small>
-                          </div>
-                        </div>
-                        <div class="cart-summary-line cart-total">
-                          <span class="label">Total:</span>
-                          <span class="value">£200.00 (tax incl.)</span>
-                        </div>
-                      </div>
-                      <div id="block-reassurance">
-                        <ul>
-                          <li>
-                            <div class="block-reassurance-item">
-                              <img
-                                src="img/product/check1.png"
-                                alt="Security policy (edit with Customer reassurance module)"
-                              />
-                              <span
-                                >Security policy (edit with Customer reassurance
-                                module)</span
-                              >
-                            </div>
-                          </li>
-                          <li>
-                            <div class="block-reassurance-item">
-                              <img
-                                src="img/product/check2.png"
-                                alt="Delivery policy (edit with Customer reassurance module)"
-                              />
-                              <span
-                                >Delivery policy (edit with Customer reassurance
-                                module)</span
-                              >
-                            </div>
-                          </li>
-                          <li>
-                            <div class="block-reassurance-item">
-                              <img
-                                src="img/product/check3.png"
-                                alt="Return policy (edit with Customer reassurance module)"
-                              />
-                              <span
-                                >Return policy (edit with Customer reassurance
-                                module)</span
-                              >
-                            </div>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
+                                <div class="col-xs-12 col-lg-3">
+                                        <div class="border p-3">
+                                            <div class="text-dark p-2 cart-summary-line">
+                                                <span class="font-weight-bold">
+                                                    Total products:
+                                                </span>
+                                                <span class="value"> £200.00</span>
+                                            </div>
+                                            <div class="text-dark p-2 cart-summary-line">
+                                                <span class="font-weight-bold">
+                                                    Total Shipping:
+                                                </span>
+                                                <span class="value"> Free</span>
+                                                <div>
+                                                    <small class="value"></small>
+                                                </div>
+                                            </div>
+                                            <hr>
+                                            <div class="text-dark text-lg text-right pt-3 cart-total">
+                                                <span class="font-weight-bold">Total:</span>
+                                                <span class="value"> £200.00 </span>
+                                                <p class="text-sm">(tax incl.)</p>
+                                            </div>
+                                        </div>
+                                </div>
                   </div>
                 </div>
-              </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
