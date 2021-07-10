@@ -214,14 +214,14 @@
               to="/View Cart"
               data-toggle="collapse"
               data-target=".navbar-collapse"
-              title="summary"
+              title="view Cart"
             >
                               View Cart</router-link>
             <router-link
-              to="/Product Cart"
+              to="/Checkout"
               data-toggle="collapse"
               data-target=".navbar-collapse"
-              title="summary"
+              title="Checkout"
             >
                               Checkout</router-link>
                             </div>
@@ -337,14 +337,14 @@
               to="/View Cart"
               data-toggle="collapse"
               data-target=".navbar-collapse"
-              title="summary"
+              title="View Cart"
             >
                               View Cart</router-link>
             <router-link
-              to="/Product Cart"
+              to="/Checkout"
               data-toggle="collapse"
               data-target=".navbar-collapse"
-              title="summary"
+              title="Checkout"
             >
                               Checkout</router-link>
                             </div>

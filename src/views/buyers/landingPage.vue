@@ -97,7 +97,7 @@
       
     <div class="appion">
               <div class="col-12">
-                <p class="h3 text-dark">Today' Pick</p>
+                <p class="h3 text-dark">Newly listed</p>
                 <p class="text-dark text-right">
                   <b class=""> 
                   <router-link
@@ -690,7 +690,7 @@
       
     <div class="appion">
               <div class="col-12">
-                <p class="h3 text-dark">Properties for Rent</p>
+                <p class="h3 text-dark">Property to Rent</p>
                 <p class="text-dark text-right">
                   <b class=""> see all </b>
                   <b class="fa fa-caret-square-o-right"></b>
