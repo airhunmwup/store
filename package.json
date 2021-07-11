@@ -9,6 +9,7 @@
     "build-css": "tailwindcss build src/assets/tailwind.css -o public/css/styles.css"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "vue": "^2.6.11",
     "vue-router": "^3.5.1"
@@ -16,9 +17,9 @@
   "devDependencies": {
     "@tailwindcss/postcss7-compat": "^2.1.2",
     "@vue/cli-plugin-babel": "~4.5.0",
-    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-plugin-eslint": "^3.1.1",
     "@vue/cli-plugin-router": "^4.5.13",
-    "@vue/cli-service": "~4.5.0",
+    "@vue/cli-service": "^3.12.1",
     "autoprefixer": "^9.8.6",
     "babel-eslint": "^10.1.0",
     "eslint": "^6.7.2",

@@ -16,8 +16,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/category', [CategoryController::class, 'index']);
-Route::post('/category', [CategoryController::class, 'store']);
+Route::resource('category', CategoryController::class);
+
 
 Route::get('/sub_category', [SubcategoryController::class, 'index']);
 Route::post('/sub_category', [SubCategoryController::class, 'store']);

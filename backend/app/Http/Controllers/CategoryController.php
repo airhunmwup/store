@@ -49,6 +49,7 @@ class CategoryController extends Controller
     public function show($id)
     {
         //
+        return Categories::find($id);
     }
 
     /**
@@ -83,5 +84,6 @@ class CategoryController extends Controller
     public function destroy($id)
     {
         //
+        return Categories::destroy($id);
     }
 }
