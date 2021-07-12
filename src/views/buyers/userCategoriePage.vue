@@ -1,11 +1,4 @@
 <template>
-  <!-- main content -->
-  <div id="home4">
-    <div class="main-content">
-      <div id="wrapper-site">
-        <div id="content-wrapper">
-          <div id="main">
-            <div class="page-home">
               <!-- breadcrumb -->
               <div class="container">
                 <div class="content">
@@ -14,7 +7,6 @@
                       <p class="h3 text-dark">Featured categories</p>
                       <br />
                       <!-- FEATURED CATEGORIES -->
-                      <div class="container">
                         <div class="row content col-12">
                           <div
                             class="
@@ -112,7 +104,6 @@
                             </div>
                           </div>
                         </div>
-                      </div>
                       <hr />
                       <!-- spot light'any random product under the selected category -->
                       <div class="">
@@ -131,7 +122,7 @@
                         <br />
                         <div class="row col-12">
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                   class=""
@@ -163,7 +154,7 @@
                   </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                   class=""
@@ -195,7 +186,7 @@
                   </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                   class=""
@@ -227,7 +218,7 @@
                   </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                   class=""
@@ -259,7 +250,7 @@
                   </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                   class=""
@@ -291,7 +282,7 @@
                   </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                   class=""
@@ -323,7 +314,7 @@
                   </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                   class=""
@@ -355,7 +346,7 @@
                   </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                   class=""
@@ -387,7 +378,7 @@
                   </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
                   <router-link
                   class=""
@@ -631,12 +622,6 @@
                   </div>
                 </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>
 <script>
 export default {

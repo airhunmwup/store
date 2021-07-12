@@ -3,9 +3,7 @@
 
   <div>
       <!-- breadcrumb -->
-      <div class="row">
-          <div class="p-3">
-            <div class="row">
+          <div class="row justify-content-center">
               <div class="product-single col-sm-12 col-lg-9 col-md-9 row">
                 <div class="product-detail col-xs-12 col-lg-6 col-md-5 col-sm-12">
                   <div class="page-content" id="content">
@@ -215,8 +213,174 @@
                     </div>
               </div>
 
-            </div>
             
+          </div>
+
+
+              <section class="review col-12 text-dark">
+                <ul class="nav nav-tabs">
+                  <li class="active font-weight-bold text-dark p-2 border-l-2 border-r-2 border-b-0 border-t-2">
+                    <a data-toggle="tab" href="#description" class="active show"
+                      >Description</a
+                    >
+                  </li>
+                  <li class="p-2 font-weight-bold text-dark border-l-2 border-r-2 border-b-0 border-t-2">
+                    <a data-toggle="tab" href="#review">Postage and Payment</a>
+                  </li>
+                </ul>
+                <hr>
+                <p class="text-sm p-3">Seller assumes all responsibility for this listing.</p>
+                <div class="tab-content p-4 border">
+                  <div id="description" class="tab-pane fade in active show">
+                              <strong class="h5">Item specifics</strong> 
+                    
+                            <div class="p-3 table-responsive">
+                        <table class="table text-sm std ">
+                          <tbody>
+                            <tr>
+                              <td class="text-xs font-weight-bold">
+                                Condition:
+                              </td>
+                              <td class="text-xs">
+                              <p>A brand-new, unused, unopened and undamaged item. See the seller's listing for full details.</p>
+                              </td>
+                              <td class="text-xs font-weight-bold">
+                                Brand
+                              </td>
+                              <td class="text-xs">
+                                Funiture
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-xs font-weight-bold">
+                                Type:
+                              </td>
+                              <td class="text-xs">
+                                Integrated Design Environments
+                              </td>
+                              <td class="text-xs font-weight-bold">
+                                Location:
+                              </td>
+                              <td class="text-xs">
+                                United Kingdom
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-xs font-weight-bold">
+                                Sub-Type:
+                              </td>
+                              <td class="text-xs">
+                                Templates
+                              </td>
+                            <tr>
+                              <td class="text-xs font-weight-bold">
+                                MPN:
+                              </td>
+                              <td class="text-xs">
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                            </div>
+                  </div>
+
+                  <div id="review" class="tab-pane fade">
+                    <div class="spr-form">
+                      <div class="user-comment">
+                        <div class="spr-review">
+                          <div class="spr-review-header">
+                            <span class="spr-review-header-byline">
+                              <strong class="h5">Postage and packaging</strong> 
+                            </span>
+                              <div class="p-2">
+                              <p class=" "><b>Item location:</b> Item location from listing</p>
+                              <p class=" "><b>Postage to:</b> Worldwide</p>
+                              </div>
+                            <div class="p-3 table-responsive">
+                        <table class="table text-sm std ">
+                          <tbody>
+                            <tr class="font-weight-bold">
+                              <td class="text-xs">
+                                Postage and packaging
+                              </td>
+                              <td class="text-xs">
+                                To
+                              </td>
+                              <td class="text-xs">
+                                Service
+                              </td>
+                              <td class="text-xs">
+                                Delivery*
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-xs">
+                                <p>Free P&P</p>
+                              </td>
+                              <td class="text-xs">
+                                <p>United Kingdom</p>
+                              </td>
+                              <td class="text-xs">
+                                <p>Express Delivery (Royal Mail Special Delivery (TM) 11:00 am)</p>
+                              </td>
+                              <td class="text-xs">
+                                <p>Delivery</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                              <p class="text-xs text-primary">You’ll see an estimated delivery date based on the seller’s dispatch time and delivery service. Delivery times may vary, especially during peak periods and will depend on when your payment clears.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="spr-form">
+                      <div class="user-comment">
+                        <div class="spr-review">
+                          <div class="spr-review-header">
+                            <span class="spr-review-header-byline">
+                              <strong class="h5">Return Policy</strong> 
+                            </span>
+                            <div class="p-3 table-responsive">
+                        <table class="table text-sm std ">
+                          <tbody>
+                            <tr class="font-weight-bold">
+                              <td class="text-xs">
+                               After receiving the item, cancel the purchase within
+                              </td>
+                              <td class="text-xs">
+                                Return postage
+                              </td>
+                            </tr>
+                            <tr>
+                              <td class="text-xs">
+                                <p>30 days</p>
+                              </td>
+                              <td class="text-xs">
+                                <p>Seller pays return postage</p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                              <p class="text">Take a look at our 
+                          <router-link
+                          class="text-primary underline"
+                            to="/managing_returns_missing_items_and_refunds_for_sellers"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            >Returning an item help page</router-link> for more details.</p>
+                            <p class="text-xs p-3">The seller is responsible for return postage costs.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
     <div class="appion">
               <div class="col-12">
                 <p class="h3 text-dark">Similer Items</p>
@@ -411,171 +575,5 @@
        
       </div>
     </div>
-          </div>
-
-      </div>
-
-              <section class="review col-12 text-dark">
-                <ul class="nav nav-tabs">
-                  <li class="active font-weight-bold text-dark p-2 border-l-2 border-r-2 border-b-0 border-t-2">
-                    <a data-toggle="tab" href="#description" class="active show"
-                      >Description</a
-                    >
-                  </li>
-                  <li class="p-2 font-weight-bold text-dark border-l-2 border-r-2 border-b-0 border-t-2">
-                    <a data-toggle="tab" href="#review">Postage and Payment</a>
-                  </li>
-                </ul>
-                <hr>
-                <p class="text-sm p-3">Seller assumes all responsibility for this listing.</p>
-                <div class="tab-content p-4 border">
-                  <div id="description" class="tab-pane fade in active show">
-                              <strong class="h5">Item specifics</strong> 
-                    
-                            <div class="p-3 table-responsive">
-                        <table class="table text-sm std ">
-                          <tbody>
-                            <tr>
-                              <td class="text-xs font-weight-bold">
-                                Condition:
-                              </td>
-                              <td class="text-xs">
-                              <p>A brand-new, unused, unopened and undamaged item. See the seller's listing for full details.</p>
-                              </td>
-                              <td class="text-xs font-weight-bold">
-                                Brand
-                              </td>
-                              <td class="text-xs">
-                                Funiture
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs font-weight-bold">
-                                Type:
-                              </td>
-                              <td class="text-xs">
-                                Integrated Design Environments
-                              </td>
-                              <td class="text-xs font-weight-bold">
-                                Location:
-                              </td>
-                              <td class="text-xs">
-                                United Kingdom
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs font-weight-bold">
-                                Sub-Type:
-                              </td>
-                              <td class="text-xs">
-                                Templates
-                              </td>
-                            <tr>
-                              <td class="text-xs font-weight-bold">
-                                MPN:
-                              </td>
-                              <td class="text-xs">
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                            </div>
-                  </div>
-
-                  <div id="review" class="tab-pane fade">
-                    <div class="spr-form">
-                      <div class="user-comment">
-                        <div class="spr-review">
-                          <div class="spr-review-header">
-                            <span class="spr-review-header-byline">
-                              <strong class="h5">Postage and packaging</strong> 
-                            </span>
-                              <div class="p-2">
-                              <p class=" "><b>Item location:</b> Item location from listing</p>
-                              <p class=" "><b>Postage to:</b> Worldwide</p>
-                              </div>
-                            <div class="p-3 table-responsive">
-                        <table class="table text-sm std ">
-                          <tbody>
-                            <tr class="font-weight-bold">
-                              <td class="text-xs">
-                                Postage and packaging
-                              </td>
-                              <td class="text-xs">
-                                To
-                              </td>
-                              <td class="text-xs">
-                                Service
-                              </td>
-                              <td class="text-xs">
-                                Delivery*
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs">
-                                <p>Free P&P</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>United Kingdom</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>Express Delivery (Royal Mail Special Delivery (TM) 11:00 am)</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>Delivery</p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                              <p class="text-xs text-primary">You’ll see an estimated delivery date based on the seller’s dispatch time and delivery service. Delivery times may vary, especially during peak periods and will depend on when your payment clears.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="spr-form">
-                      <div class="user-comment">
-                        <div class="spr-review">
-                          <div class="spr-review-header">
-                            <span class="spr-review-header-byline">
-                              <strong class="h5">Return Policy</strong> 
-                            </span>
-                            <div class="p-3 table-responsive">
-                        <table class="table text-sm std ">
-                          <tbody>
-                            <tr class="font-weight-bold">
-                              <td class="text-xs">
-                               After receiving the item, cancel the purchase within
-                              </td>
-                              <td class="text-xs">
-                                Return postage
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs">
-                                <p>30 days</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>Seller pays return postage</p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                              <p class="text">Take a look at our 
-                          <router-link
-                          class="text-primary underline"
-                            to="/managing_returns_missing_items_and_refunds_for_sellers"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            >Returning an item help page</router-link> for more details.</p>
-                            <p class="text-xs p-3">The seller is responsible for return postage costs.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
   </div>
 </template>

@@ -1,8 +1,6 @@
 <template>
-<div class="">
-    <!-- main content -->
         <!-- main -->
-        <div class="container pb-5">
+        <div class="container  justify-content-center pb-5">
             <!-- breadcrumb -->
                         <section id="main">
                             <div class="cart-grid row pb-5">
@@ -101,7 +99,7 @@
                                             </ul>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-lg-3">
+                                <div class="col-xs-12 col-md-3 col-lg-3">
                                         <div class="border p-3">
                                             <div class="text-dark p-2 cart-summary-line">
                                                 <span class="font-weight-bold">
@@ -127,12 +125,13 @@
                                             <div class="p-3">
                                             <router-link
                                 to="/Checkout"
+                                class="text-center"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Home"
                               >
                                 <button
-                                  class="col-lg-12 col-md-12 col-sm-12 btn btn-warning form-control add-to-cart"
+                                  class="text-center align-content-center text-sm btn-lg col-lg-12 col-md-12 col-sm-12 btn btn-warning form-control add-to-cart"
                                   data-button-action="add-to-cart"
                                   type="submit"
                                 >
@@ -145,6 +144,4 @@
                             </div>
                         </section>
         </div>
-        <hr>
-</div>
 </template>

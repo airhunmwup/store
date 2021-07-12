@@ -93,21 +93,17 @@
                         <p class="pt-3 text-dark">Photos(0)</p>
                     </div>
                     <div class="col-lg-8 col-md-8">
-                    <div class="grid-x grid-padding-x">
-  <div class="small-10 small-offset-1 medium-8 medium-offset-2 cell">
-    <h1>Multiple Image File Upload with Preview</h1>
-    <form action="upload_file.php" id="img-upload-form" method="post" enctype="multipart/form-data">
-      <p>
-        <label for="upload_imgs" class="button hollow">Select Your Images +</label>
-        <input class="show-for-sr" type="file" id="upload_imgs" name="upload_imgs[]" multiple/>
-      </p>
-      <div class="quote-imgs-thumbs quote-imgs-thumbs--hidden" id="img_preview" aria-live="polite"></div>
-      <p>
-        <input class="button large expanded" type="submit" name="submit" value="Upload Images"/>
-      </p>
-    </form>
+                         <div id="my-strictly-unique-vue-upload-multiple-image" style="display: flex; justify-content: center;">
+    <vue-upload-multiple-image
+      @upload-success="uploadImageSuccess"
+      @before-remove="beforeRemove"
+      @edit-image="editImage"
+      :data-images="images"
+      idUpload="myIdUpload"
+      editUpload="myIdEdit"
+      ></vue-upload-multiple-image>
   </div>
-</div>
+                   
                     </div>
                 </div>
 
@@ -677,4 +673,3 @@ Let buyers make offers. Allowing offers increases your chance of selling by 3-7%
     <hr>
   </div>
 </template>
-        

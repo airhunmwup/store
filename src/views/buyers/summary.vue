@@ -23,95 +23,6 @@
               >
               <span class="text-dark text-sm"> UserID (0)</span>
             </div>
-<div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-end pl-5">
-  <a href="#" class="text-primary underline justify-content-end dropdown-toggle" data-toggle="dropdown">
-    Menu
-  </a>
-  <div class="dropdown-menu">
-
-              <div
-                class="p-2 text-sm block-content nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                <button
-                  class="dropdown-item text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Summary-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Summary"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Summary"
-                  aria-selected="true"
-                >
-                  Summary
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Recently-viewed-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Recently-viewed"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Recently-viewed"
-                  aria-selected="false"
-                >
-                  Recently
-                    viewed
-                </button>
-
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Purchased-history-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Purchased-history"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Purchased-history"
-                  aria-selected="true"
-                >
-                  Purchase History
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Watching-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Watching"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Watching"
-                  aria-selected="true"
-                >
-                  Watching
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Saved-Search-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Saved-Search"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Saved-Search"
-                  aria-selected="true"
-                >
-                  Saved Search
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Saved-Seller-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Saved-Seller"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Saved-Seller"
-                  aria-selected="true"
-                >
-                  Saved Seller
-                </button>
-              </div>
-  </div>
-</div>
           </div>
         </div>
       </div>
@@ -242,6 +153,96 @@
               </div>
             </div>
           </div>
+
+<div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-end pl-5">
+  <a href="#" class="text-primary underline justify-content-end dropdown-toggle" data-toggle="dropdown">
+    Menu
+  </a>
+  <div class="dropdown-menu">
+
+              <div
+                class="p-2 text-sm block-content nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="dropdown-item text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Summary-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Summary"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Summary"
+                  aria-selected="true"
+                >
+                  Summary
+                </button>
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Recently-viewed-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Recently-viewed"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Recently-viewed"
+                  aria-selected="false"
+                >
+                  Recently
+                    viewed
+                </button>
+
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Purchased-history-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Purchased-history"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Purchased-history"
+                  aria-selected="true"
+                >
+                  Purchase History
+                </button>
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Watching-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Watching"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Watching"
+                  aria-selected="true"
+                >
+                  Watching
+                </button>
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Saved-Search-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Saved-Search"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Saved-Search"
+                  aria-selected="true"
+                >
+                  Saved Search
+                </button>
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Saved-Seller-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Saved-Seller"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Saved-Seller"
+                  aria-selected="true"
+                >
+                  Saved Seller
+                </button>
+              </div>
+  </div>
+</div>
           <div class="col-sm-12 col-lg-9 col-md-9 product-container">
             <div id="wrapper-site">
 
@@ -535,107 +536,96 @@ TIP: Change the view using the filters at the top of the section.
                   </span>
                                     <div class="cart-container">
 
-                      <div class="row col-9 text-md table-responsive">
-                        <table class="std table">
-                          <tbody>
-                            <tr class="">
-                              <td class="shadow text-left">
-                                  <img
-                                    src="img/product/6.jpg"
-                                    class="thumbnail-img"
-                                    width="200px"
-                                    alt="Product"
-                                  />
-                              </td>
-                              <td class="text-left">
-                                <div class="row">
-                                <p class="pb-2 pt-4 font-weight-bold text-dark">Product nameProduct name</p>
-                                <p class="pb-2 text text-xs">Condition: New</p>
-                                <div class="col-8 row">
-                                <div class="border-r-2 col-6">
-                                <p class="font-weight-bold text-dark">£150.00</p>
-                                </div>
-                                <div class="col-6">
-                                <p class="font-weight-bold text-dark">£150.00</p>
-                                </div>
-
-                                </div>
-                                <div class="col-4 text-center">
-                                <div class="">
-                               <button class="text-sm border-primary btn text-primary" type="submit">
-                                           Buy it Now
-                                        </button>
-                                </div>
-                                <div class="pt-2 ">
-                               <button class="text-sm border-primary btn text-primary" type="submit">
-                                           Add to cart
-                                        </button>
-                                </div>
-                                <div class="pt-2 ">
-                               <button class="text-sm border-primary btn text-primary" type="submit">
-                                           Delete
-                                        </button>
-                                </div>
-
-                                </div>
-                                </div>
-                                <router-link class="small"
-                                  to="/seller_dashboard"
-                                  data-toggle="collapse"
-                                  data-target=".navbar-collapse"
-                                  title="Dashboard"
-                                >
-                                </router-link>
-                              </td>
-                            </tr>
-                            <tr class="">
-                              <td class="shadow text-left">
-                                  <img
-                                    src="img/product/4.jpg"
-                                    class="thumbnail-img"
-                                    width="200px"
-                                    alt="Product"
-                                  />
-                              </td>
-                              <td class="text-left">
-                                <div class="row">
-                                <p class="pb-2 pt-4 font-weight-bold text-dark">Product nameProduct name</p>
-                                <p class="pb-2 text text-xs">Condition: New</p>
-                                <div class="col-8 row">
-                                <div class="border-r-2 col-6">
-                                <p class="font-weight-bold text-dark">£150.00</p>
-                                </div>
-                                <div class="col-6">
-                                <p class="font-weight-bold text-dark">£150.00</p>
-                                </div>
-
-                                </div>
-                                <div class="col-4 text-center">
-                                <div class="">
-                               <button class="text-sm border-primary btn text-primary" type="submit">
-                                           Buy it Now
-                                        </button>
-                                </div>
-                                <div class="pt-2 ">
-                               <button class="text-sm border-primary btn text-primary" type="submit">
-                                           Add to cart
-                                        </button>
-                                </div>
-
-                                </div>
-                                </div>
-                                <router-link class="small"
-                                  to="/seller_dashboard"
-                                  data-toggle="collapse"
-                                  data-target=".navbar-collapse"
-                                  title="Dashboard"
-                                >
-                                </router-link>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
+                        <div class="cart-container">
+                                            <ul class="cart-items">
+                                                <li class="cart-item p-3">
+                                                    <div class="product-line-grid row p-2 justify-content-between">
+                                                        <!--  product left content: image-->
+                                                        <div class="product-line-grid-center col-md-2 col-sm-6 col-xs-6">
+                                                                <a href="product-detail.html">
+                                                                    <img class="" src="img/product/3.jpg" width="100%">
+                                                                </a>
+                                                        </div>
+                                                        <div class="product-line-grid-body col-md-6 col-sm-6 col-xs-6">
+                                                            <div class="product-line-info">
+                                                                <a class="label text-lg text-dark" href="product-detail.html" data-id_customization="0">Organic Strawberry Fruits</a>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">New</span>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">Color:</span>
+                                                                <span class="value">Blue</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-line-grid-center text-center product-line-actions col-md-4">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col text-dark">
+                                                                    <div class="quantity border p-2">
+                                                                    <p class="label">Qty: <span class="value"><input type="number" name="qty" value="3" max="5" min="1" class="form-control-sm"></span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col price">
+                                                                    <div class="text-right ">
+                                                                <p class="value text-lg text-dark font-weight-bold">£20.00</p>
+                                                                <p class="value text-xs ">2 days delivery</p>
+                                                                    <div class="text-right p-3">
+                                                                            <p class="text-xs text-primary underline"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove</p>
+                                                                    </div>
+                                                                    </div>
+                                                                <div class="col-md-2 text-right col align-self-end">
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                                <li class="cart-item p-3">
+                                                    <div class="product-line-grid row p-2 justify-content-between">
+                                                        <!--  product left content: image-->
+                                                        <div class="product-line-grid-center col-md-2 col-sm-6 col-xs-6">
+                                                                <a href="product-detail.html">
+                                                                    <img class="" src="img/product/6.jpg" width="100%">
+                                                                </a>
+                                                        </div>
+                                                        <div class="product-line-grid-body col-md-6 col-sm-6 col-xs-6">
+                                                            <div class="product-line-info">
+                                                                <a class="label text-lg text-dark" href="product-detail.html" data-id_customization="0">Organic Strawberry Fruits</a>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">New</span>
+                                                            </div>
+                                                            <div class="product-line-info">
+                                                                <span class="label-atrr">Color:</span>
+                                                                <span class="value">Blue</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-line-grid-center text-center product-line-actions col-md-4">
+                                                            <div class="row">
+                                                                <div class="col-md-6 col text-dark">
+                                                                    <div class="quantity border p-2">
+                                                                    <p class="label">Qty: <span class="value"><input type="number" name="qty" value="3" max="5" min="1" class="form-control-sm"></span></p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-md-6 col price">
+                                                                    <div class="text-right ">
+                                                                <p class="value text-lg text-dark font-weight-bold">£20.00</p>
+                                                                <p class="value text-xs ">2 days delivery</p>
+                                                                    <div class="text-right p-3">
+                                                                            <p class="text-xs text-primary underline"><i class="fa fa-trash-o" aria-hidden="true"></i> Remove</p>
+                                                                    </div>
+                                                                    </div>
+                                                                <div class="col-md-2 text-right col align-self-end">
+                                                                </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                    </div>
                                     </div>
                 </div>
                 </div>

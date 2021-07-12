@@ -24,164 +24,6 @@
               <span class="text-dark text-sm"> UserID (0)</span>
             </div>
           </div>
-<div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-between pl-5">
-  <a href="#" class="text-primary underline  dropdown-toggle" data-toggle="dropdown">
-    Menu
-  </a>
-  <div class="dropdown-menu">
-              <div
-                class="text-sm block-content nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-            <!-- primary info buttons -->
-                <button
-                  class="text-left h6 font-weight-bold text-dark p-2 active"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="fa fa-xl fa-user pr-2"></i>Personal Info
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Personal-Information-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Personal-Information"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Personal-Information"
-                  aria-selected="false"
-                >
-                  Personal Information
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Sigin-and-security-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Sigin-and-security"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Sigin-and-security"
-                  aria-selected="false"
-                >
-                  Sign in and security
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Addresses-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Addresses"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Addresses"
-                  aria-selected="false"
-                >
-                  Addresses
-                </button>
-            <!-- primary info buttons ends/-->
-
-            <!-- Payment Information button/-->
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="zmdi zmdi-balance-wallet h4 pr-2"></i> Payment Info
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Payments-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Payments"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Payments"
-                  aria-selected="false"
-                >
-                  Payments
-                </button>
-              <!-- Payment   <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Paypal-Account-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Paypal-Account"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Paypal-Account"
-                  aria-selected="true"
-                >
-                  Paypal Account
-                </button>
-            Information button ends/-->
-            <!-- Account preferences/-->
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="zmdi zmdi-settings h4 pr-2"></i> Account preferences
-                </button>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Product Listing"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Product Listing"
-                            >
-                  Advertisement Preferences
-                </router-link>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Communication-Preferences-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Communication-Preferences"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Communication-Preferences"
-                  aria-selected="true"
-                >
-                  Communication Preferences
-                </button>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Product Listing"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Product Listing"
-                            >
-                  Close account
-                </router-link>
-            <!-- Account preferences Ends/-->
-            <!-- Resolution center/-->
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="fa fa-commenting-o fa-2x pr-2"></i> Resolution center
-                </button>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Resolution center"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Resolution center"
-                            >
-                  Resolution Center
-                </router-link>
-            <!-- Resolution center End/-->
-              </div>
-  </div>
-</div>
         </div>
       </div>
 
@@ -352,6 +194,165 @@
               </div>
             </div>
           </div>
+
+<div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-between pl-5">
+  <a href="#" class="text-primary underline  dropdown-toggle" data-toggle="dropdown">
+    Menu
+  </a>
+  <div class="dropdown-menu">
+              <div
+                class="text-sm block-content nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+            <!-- primary info buttons -->
+                <button
+                  class="text-left h6 font-weight-bold text-dark p-2 active"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="fa fa-xl fa-user pr-2"></i>Personal Info
+                </button>
+                <button
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                  id="v-pills-Personal-Information-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Personal-Information"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Personal-Information"
+                  aria-selected="false"
+                >
+                  Personal Information
+                </button>
+                <button
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                  id="v-pills-Sigin-and-security-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Sigin-and-security"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Sigin-and-security"
+                  aria-selected="false"
+                >
+                  Sign in and security
+                </button>
+                <button
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                  id="v-pills-Addresses-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Addresses"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Addresses"
+                  aria-selected="false"
+                >
+                  Addresses
+                </button>
+            <!-- primary info buttons ends/-->
+
+            <!-- Payment Information button/-->
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="zmdi zmdi-balance-wallet h4 pr-2"></i> Payment Info
+                </button>
+                <button
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                  id="v-pills-Payments-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Payments"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Payments"
+                  aria-selected="false"
+                >
+                  Payments
+                </button>
+              <!-- Payment   <button
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                  id="v-pills-Paypal-Account-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Paypal-Account"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Paypal-Account"
+                  aria-selected="true"
+                >
+                  Paypal Account
+                </button>
+            Information button ends/-->
+            <!-- Account preferences/-->
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="zmdi zmdi-settings h4 pr-2"></i> Account preferences
+                </button>
+                <router-link
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Product Listing"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Product Listing"
+                            >
+                  Advertisement Preferences
+                </router-link>
+                <button
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                  id="v-pills-Communication-Preferences-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Communication-Preferences"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Communication-Preferences"
+                  aria-selected="true"
+                >
+                  Communication Preferences
+                </button>
+                <router-link
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Product Listing"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Product Listing"
+                            >
+                  Close account
+                </router-link>
+            <!-- Account preferences Ends/-->
+            <!-- Resolution center/-->
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="fa fa-commenting-o fa-2x pr-2"></i> Resolution center
+                </button>
+                <router-link
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Resolution center"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Resolution center"
+                            >
+                  Resolution Center
+                </router-link>
+            <!-- Resolution center End/-->
+              </div>
+  </div>
+</div>
           <div class="col-sm-12 col-lg-9 col-md-9 product-container">
             <div id="wrapper-site">
 

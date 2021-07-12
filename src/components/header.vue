@@ -79,14 +79,14 @@
         </a>
         <div class="dropdown-menu">
           <div
-            class="text-sm block-content nav flex-column nav-pills"
+            class="text-md block-content nav flex-column nav-pills"
             id="v-pills-tab"
             role="tablist"
             aria-orientation="vertical"
           >
             <!-- primary info buttons -->
             <router-link
-              class="text-left text-dark pl-4 text-xs pb-2 font-weight-bold"
+              class="text-left text-dark pl-4 pb-2 font-weight-bold"
               to="/Summary"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -96,7 +96,7 @@
 
             <!-- Account preferences/-->
             <router-link
-              class="text-left text-dark pl-4 text-xs pb-2 font-weight-bold"
+              class="text-left text-dark pl-4 pb-2 font-weight-bold"
               to="/account"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -105,7 +105,7 @@
             </router-link>
             <!-- Account preferences/-->
             <router-link
-              class="text-left text-dark pl-4 text-xs pb-2 font-weight-bold"
+              class="text-left text-dark pl-4 pb-2 font-weight-bold"
               to="/My message"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -113,7 +113,7 @@
               Recently viewed
             </router-link>
             <router-link
-              class="text-left text-dark pl-4 text-xs pb-2 font-weight-bold"
+              class="text-left text-dark pl-4 pb-2 font-weight-bold"
               to="/My message"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -121,7 +121,7 @@
               Purchase history
             </router-link>
             <router-link
-              class="text-left text-dark pl-4 text-xs pb-2 font-weight-bold"
+              class="text-left text-dark pl-4 pb-2 font-weight-bold"
               to="/My message"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -132,7 +132,7 @@
             <hr />
             <!-- Resolution center/-->
             <router-link
-              class="text-left text-dark pl-4 text-xs pb-2 font-weight-bold"
+              class="text-left text-dark pl-4 pb-2 font-weight-bold"
               to="/Resolution center"
               data-toggle="collapse"
               data-target=".navbar-collapse"

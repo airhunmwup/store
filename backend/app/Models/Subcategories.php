@@ -10,6 +10,7 @@ class Subcategories extends Model
     use HasFactory;
 
     protected $fillable = [
-        'sub_catname'
+        'sub_catname',
+        'cat_id'
     ];
 }
