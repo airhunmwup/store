@@ -102,6 +102,7 @@ ul {
     align-items: center;
     background: #fff;
     border-color: rgb(233, 224, 212);
+    width: 200px;
 }
 
 .no-scrollbar {

@@ -17,7 +17,7 @@
           data-target=".navbar-collapse"
           title="Home"
         >
-          <li class="item text-dark">{{category.cat_name}}</li></router-link
+          <li class="shadow item text-dark  text-sm text-center font-weight-bold">{{category.cat_name}}</li></router-link
         >
 
         <!-- <router-link
