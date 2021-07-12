@@ -14,7 +14,7 @@
                               col-6 col-sm-6 col-md-4 col-lg-3
                             "
                           >
-                            <div class="content shadow">
+                            <div class="content ">
                               <p>
                                 <img
                                   src="img/product/6.jpg"
@@ -33,7 +33,7 @@
                               col-6 col-sm-6 col-md-4 col-lg-3
                             "
                           >
-                            <div class="content shadow">
+                            <div class="content ">
                               <p>
                                 <img
                                   src="img/product/4.jpg"
@@ -52,7 +52,7 @@
                               col-6 col-sm-6 col-md-4 col-lg-3
                             "
                           >
-                            <div class="content shadow">
+                            <div class="content ">
                               <p>
                                 <img
                                   src="img/product/8.jpg"
@@ -71,7 +71,7 @@
                               col-6 col-sm-6 col-md-4 col-lg-3
                             "
                           >
-                            <div class="content shadow">
+                            <div class="content ">
                               <p>
                                 <img
                                   src="img/product/9.jpg"
@@ -90,7 +90,7 @@
                               col-6 col-sm-6 col-md-4 col-lg-3
                             "
                           >
-                            <div class="content shadow">
+                            <div class="content ">
                               <p>
                                 <img
                                   src="img/product/10.jpg"
@@ -131,7 +131,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="shadow p-2">
+                    <div class=" p-2">
                       <img src="img/product/4.jpg" class="" alt="Product" />
                       <div class="row p-1">
                         <div class="content col-12">
@@ -163,7 +163,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="shadow p-2">
+                    <div class=" p-2">
                       <img src="img/product/4.jpg" class="" alt="Product" />
                       <div class="row p-1">
                         <div class="content col-12">
@@ -195,7 +195,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="shadow p-2">
+                    <div class=" p-2">
                       <img src="img/product/4.jpg" class="" alt="Product" />
                       <div class="row p-1">
                         <div class="content col-12">
@@ -227,7 +227,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="shadow p-2">
+                    <div class=" p-2">
                       <img src="img/product/4.jpg" class="" alt="Product" />
                       <div class="row p-1">
                         <div class="content col-12">
@@ -259,7 +259,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="shadow p-2">
+                    <div class=" p-2">
                       <img src="img/product/4.jpg" class="" alt="Product" />
                       <div class="row p-1">
                         <div class="content col-12">
@@ -291,7 +291,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="shadow p-2">
+                    <div class=" p-2">
                       <img src="img/product/4.jpg" class="" alt="Product" />
                       <div class="row p-1">
                         <div class="content col-12">
@@ -323,7 +323,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="shadow p-2">
+                    <div class=" p-2">
                       <img src="img/product/4.jpg" class="" alt="Product" />
                       <div class="row p-1">
                         <div class="content col-12">
@@ -355,7 +355,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="shadow p-2">
+                    <div class=" p-2">
                       <img src="img/product/4.jpg" class="" alt="Product" />
                       <div class="row p-1">
                         <div class="content col-12">
@@ -387,7 +387,7 @@
                     data-target=".navbar-collapse"
                     title="Home"
                   >
-                    <div class="shadow p-2">
+                    <div class=" p-2">
                       <img src="img/product/4.jpg" class="" alt="Product" />
                       <div class="row p-1">
                         <div class="content col-12">

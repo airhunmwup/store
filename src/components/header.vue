@@ -233,8 +233,6 @@
               </div>
             </div>
           </div>
-        </div>
-
         <!-- search -->
 
         <div id="mobile_search" class="d-flex">
@@ -247,6 +245,8 @@
             </form>
           </div>
         </div>
+        </div>
+
       </div>
 
       <!-- header desktop -->
@@ -359,7 +359,6 @@
           </div>
         </div>
       </div>
-      <hr />
     </div>
   </header>
 </template>
