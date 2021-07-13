@@ -350,6 +350,7 @@ Your account status is not confirmed.<br>You do not have a valid billing REJEE a
     </tr>
   </tbody>
 </table>
+                      </div>
 <div class="">
     <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
@@ -361,7 +362,6 @@ Your account status is not confirmed.<br>You do not have a valid billing REJEE a
     <button class="border-primary border p-2 font-weight-bold text-primary">Back to My Subscriptions</button>
     </router-link>
 </div>
-                      </div>
                             </div>
 
                           </div>
