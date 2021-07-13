@@ -50,7 +50,15 @@
                               <div class="col-lg-3 p-3 col-md-3 col-sm-8 align-bottom">
                               <div class="pt-4">
                               <div class="p-3">
+        <router-link
+          class="text-dark font-weight-bold text-sm text-right pr-4"
+          to="/Subscriptions"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="summary"
+        >
                                 <button class="btn text-primary border-primary" type="submit">Choose Store</button>
+        </router-link>
                               </div>
                               </div>
                               </div>

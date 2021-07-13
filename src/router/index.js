@@ -54,6 +54,7 @@ import return_missing_item from '../views/return_missing_item.vue'
 import resolving_unpaid_item from '../views/resolving_unpaid_item.vue'
 import resolving_with_seller from '../views/resolving_with_seller.vue'
 import Subscription from '../views/subscription.vue'
+import Subscription_select from '../views/subscription_select.vue'
 import Signout from '../views/signout.vue'
 
 Vue.use(VueRouter)
@@ -343,6 +344,11 @@ const routes = [{
         path: '/Subscription',
         name: 'Subscription',
         component: Subscription,
+    },
+    {
+        path: '/Subscriptions',
+        name: 'Subscriptions',
+        component: Subscription_select,
     },
     {
         path: '/Signout',

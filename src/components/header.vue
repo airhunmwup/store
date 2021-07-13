@@ -233,6 +233,8 @@
               </div>
             </div>
           </div>
+        </div>
+
         <!-- search -->
 
         <div id="mobile_search" class="d-flex">
@@ -245,8 +247,6 @@
             </form>
           </div>
         </div>
-        </div>
-
       </div>
 
       <!-- header desktop -->
@@ -270,7 +270,7 @@
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Search"
+                    placeholder="Search All categories, Items and stores"
                     class="form-control"
                     value=""
                   />
