@@ -156,8 +156,8 @@
           "
         >
           <!-- logo -->
-          <div class="mobile-logo pt-2">
-            <img
+          <div class="mobile-logo ">
+             <img
               class="logo-mobile img-fluid"
               src="img/home/logo.png"
               width="30%"
@@ -237,16 +237,28 @@
 
         <!-- search -->
 
-        <div id="mobile_search" class="d-flex">
-          <div id="mobile_search_content">
-            <form method="get" action="#">
-              <input type="text" name="s" value="" placeholder="Search" />
-              <button type="submit" class="text-dark">
-                <i class="fa fa-search text-dark border-l-2 pl-2 border-dark"></i>
-              </button>
-            </form>
-          </div>
-        </div>
+         <form method="post" class="std pt-2" id="customer-form">
+                <div class="input-group">
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Search for anything"
+                    class="form-control"
+                    value=""
+                  />
+
+                  <button
+                    class="btn text-light btn-primary border"
+                    type="submit"
+                    data-action="show-password"
+                    data-text-show="Show"
+                    data-text-hide="Hide"
+                  >
+                    Search
+                  </button>
+                </div>
+              </form>
       </div>
 
       <!-- header desktop -->
@@ -270,7 +282,7 @@
                     type="text"
                     id="name"
                     name="name"
-                    placeholder="Search All categories, Items and stores"
+                    placeholder="Search for anything"
                     class="form-control"
                     value=""
                   />
