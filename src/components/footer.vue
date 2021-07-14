@@ -43,9 +43,9 @@
             </div>
         </div>
     </footer>
-    <div class="back-to-top">
+    <div class="back-to-top pr-4">
       <a href="#">
-        <i class="fa fa-long-arrow-up"></i>
+        <i class="text-warning fa fa-long-arrow-up"></i>
       </a>
     </div>
 

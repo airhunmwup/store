@@ -34,49 +34,26 @@
           title="Home"
         >
           <li class="item text-dark">Categories 3</li></router-link
-        >
-        <router-link
-          to="/categorie page"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-          title="Home"
-        >
-          <li class="item text-dark">Categories 4</li></router-link
-        >
-        <router-link
-          to="/categorie page"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-          title="Home"
-        >
-          <li class="item text-dark">Categories 5</li></router-link
-        >
-
-        <router-link
-          to="/categorie page"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-          title="Home"
-        >
-          <li class="item text-dark">Categories 6</li></router-link
-        >
-        <router-link
-          to="/categorie page"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-          title="Home"
-        >
-          <li class="item text-dark">Categories 7</li></router-link
-        > -->
+        >-->
       </ul>
     </div>
 
-    <ul class="hax d-xs-none -lg">
+    <ul class="hax d-xs-none">
       <li class="">
         <a href="#">
           <img
             class="hax"
-            src="img/home/effect5.jpg"
+            src="img/home/effect4.jpg"
+            alt="banner-3"
+            title="banner-1"
+          />
+        </a>
+      </li>
+      <li class="">
+        <a href="#">
+          <img
+            class="hax"
+            src="img/home/effect3.jpg"
             alt="banner-1"
             title="banner-1"
           />
@@ -86,7 +63,7 @@
         <a href="#">
           <img
             class="hax"
-            src="img/home/effect5.jpg"
+            src="img/home/effect2.jpg"
             alt="banner-1"
             title="banner-1"
           />
@@ -125,7 +102,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/3.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -155,7 +132,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/5.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -185,7 +162,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/9.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -215,7 +192,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/8.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -245,7 +222,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/11.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -275,7 +252,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/6.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -319,7 +296,37 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/10.jpg" class="" alt="Product" />
+                <div class="row p-1">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark">Product name</p>
+                    <p>New</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p>Free P&P</p>
+                    <p class="font-weight-bold text-dark">12 sold</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"
+                      ><i class="fa fa-lg fa-heart-o"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+          </li>
+          <li class="li itemi">
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/2.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -379,7 +386,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/15.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -409,7 +416,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/13.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -439,37 +446,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/16.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -512,7 +489,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/10.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -542,7 +519,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/22.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -572,7 +549,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/13.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -602,7 +579,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/17.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -632,7 +609,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/16.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -662,7 +639,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/14.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -705,7 +682,67 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/12.jpg" class="" alt="Product" />
+                <div class="row p-1">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark">Product name</p>
+                    <p>New</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p>Free P&P</p>
+                    <p class="font-weight-bold text-dark">12 sold</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"
+                      ><i class="fa fa-lg fa-heart-o"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+          </li>
+          <li class="li itemi">
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/6.jpg" class="" alt="Product" />
+                <div class="row p-1">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark">Product name</p>
+                    <p>New</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p>Free P&P</p>
+                    <p class="font-weight-bold text-dark">12 sold</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text align-text-bottom item-right"
+                      ><i class="fa fa-lg fa-heart-o"></i>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+          </li>
+          <li class="li itemi">
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/8.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -765,67 +802,7 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
+                <img src="img/product/7.jpg" class="" alt="Product" />
                 <div class="row p-1">
                   <div class="content col-12">
                     <p class="text-lg text-dark">Product name</p>
@@ -879,10 +856,10 @@
         </div>
       </div>
     </div>
-    <hr />
 
     <div id="home3" class="pt-3">
       <footer class="footer-one">
+    <hr />
         <div class="inner-footer">
           <div class="container col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <div class="footer-top">
