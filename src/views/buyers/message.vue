@@ -16,7 +16,7 @@
             >homepage</router-link></span>
         <div class="content sidebar-block">
           <div class="text-base">
-            <div class="pt-5 pl-5">
+            <div class="pt-2 pl-5">
               <span class="font-weight-bold text-dark h3"> My REJEE</span>
               <span class="text-dark text-sm"> UserID (0)</span>
             </div>

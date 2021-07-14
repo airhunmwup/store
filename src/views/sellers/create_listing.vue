@@ -48,7 +48,7 @@
                     </div>
                     <div class="col-lg-8 col-md-8">
                         <select class="form-control col-lg-6 col-md-6 col-sm-12 text-primary select-auto border" type="text" name="">
-                        <option value="">Fashion</option>
+                        <option value=""></option>
                         <option value="">Electronics</option>
                         <option value=""></option>
                         </select>

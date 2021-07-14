@@ -21,9 +21,9 @@
                               <p class="text-dark  text-left h6 font-weight-bold">
                                     Recommended
                               </p>
-                              <div class="row p-3 border col-lg-12 p-3 col-md-12 col-sm-12">
-                              <div class="col-lg-3 p-3 col-md-3 col-sm-8">
-                              <div class="p-2">
+                              <div class="row p-2 border col-lg-12 col-md-12 col-sm-12">
+                              <div class="col-lg-3 col-md-3 col-sm-8">
+                              <div class="">
                                 <p class="h4 text-primary">
                                   REJEE Store
                                 </p>
@@ -33,8 +33,8 @@
                               </div>
                               </div>
 
-                              <div class="col-lg-6 p-3 col-md-6 col-sm-8">
-                              <div class="border-r-2 p-3">
+                              <div class="col-lg-6 col-md-6 col-sm-8">
+                              <div class="border-r-2 ">
                                 <p class="text text-dark font-weight-bold">
                                   What you'll get when you subscribe to a Store:
                                 </p>
