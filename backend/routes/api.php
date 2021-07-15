@@ -3,7 +3,9 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubcategoryController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\InstockController;
+use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -18,13 +20,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('category', CategoryController::class);
-Route::resource('product', ProductsController::class);
-Route::resource('instock', InstockController::class);
+
+//Public Routes
+Route::get('/products', [ProductsController::class, 'index']);
+Route::get('/products/{id}', [ProductsController::class, 'show']);
+Route::get('/products/{name}', [ProductsController::class, 'search']);
+Route::get('/register', [AuthController::class, 'register']);
 
 
+//Static Public Routes
+Route::get('/category', [CategoryController::class, 'index']);
 Route::get('/sub_category', [SubcategoryController::class, 'index']);
-Route::post('/sub_category', [SubCategoryController::class, 'store']);
+
+
+//Protected Routes
+Route::group(['middleware' => ['auth:sanctum']], function () {
+    Route::get('/products', [ProductsController::class, 'store']);
+    Route::get('/products/{id}', [ProductsController::class, 'update']);
+    Route::get('/products/{id}', [ProductsController::class, 'destroy']);
+});
+
 
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();

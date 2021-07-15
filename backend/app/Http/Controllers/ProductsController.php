@@ -73,6 +73,9 @@ class ProductsController extends Controller
     public function update(Request $request, $id)
     {
         //
+        $editProduct = Products::find($id);
+        $editProduct->update($request->all());
+        return $editProduct;
     }
 
     /**
@@ -85,5 +88,17 @@ class ProductsController extends Controller
     {
         //
         return Products::destroy($id);
+    }
+
+    /**
+     * Search the specified resource from storage.
+     *
+     * @param  str  $name
+     * @return \Illuminate\Http\Response
+     */
+    public function search($name)
+    {
+        //
+        return Products::where($name, 'like', '%'.'product_name'.'%')->get();
     }
 }
