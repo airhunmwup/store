@@ -6,6 +6,8 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Hash;
+use Ramsey\Uuid\Guid\Fields;
 
 class AuthController extends Controller
 {
@@ -35,6 +37,36 @@ class AuthController extends Controller
     }
 
     public function logout(Request $request){
-        auth()->user()->tokens;
+        $request->user()->currentAccessToken()->delete();
+
+        return [
+            'message' => 'Logged Out'
+        ];
+    }
+
+
+    public function login(Request $request){
+
+        $fields = $request->validate([
+            'email' => 'required|string',
+            'password' => 'required|string'
+        ]);
+
+        $user = User::where('email', $fields['email'])->first();
+
+        if(!$user || Hash::check($fields['password'], $user->password)){
+            return [
+                'message' => 'Bad Credentials'
+            ];
+        }
+
+        $token = $user->createToken('AppToken')->plainTextToken;
+
+        $response = [
+            'user' => $user,
+            'token' => $token
+        ];
+
+        return response($response, 201);
     }
 }
