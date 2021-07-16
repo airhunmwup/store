@@ -26,6 +26,7 @@ Route::get('/products', [ProductsController::class, 'index']);
 Route::get('/products/{id}', [ProductsController::class, 'show']);
 Route::get('/products/{name}', [ProductsController::class, 'search']);
 Route::post('/register', [AuthController::class, 'register']);
+Route::post('/login', [AuthController::class, 'login']);
 
 
 //Static Public Routes
