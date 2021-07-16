@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Hash;
+use Illuminate\Support\Facades\Auth;
 
 class AuthController extends Controller
 {
@@ -14,7 +14,7 @@ class AuthController extends Controller
 
         $fields = $request->validate([
             'name' => 'required|string',
-            'email' => 'require|string|unique:users,email',
+            'email' => 'required|string|unique:users,email',
             'password' => 'required|string|confirmed'
         ]);
 
@@ -32,5 +32,9 @@ class AuthController extends Controller
         ];
 
         return response($response, 201);
+    }
+
+    public function logout(Request $request){
+        auth()->user()->tokens;
     }
 }
