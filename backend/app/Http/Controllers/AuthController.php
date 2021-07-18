@@ -4,10 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use Illuminate\Http\Request;
-use Illuminate\Http\Response;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
-use Ramsey\Uuid\Guid\Fields;
+use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
@@ -15,15 +13,19 @@ class AuthController extends Controller
     public function register(Request $request){
 
         $fields = $request->validate([
-            'name' => 'required|string',
+            'first_name' => 'required|string',
+            'last_name' => 'required|string',
             'email' => 'required|string|unique:users,email',
-            'password' => 'required|string|confirmed'
+            'password' => 'required|string',
+            'user_type' => 'required|string'
         ]);
 
         $user = User::create([
-            'name' => $fields['name'],
+            'first_name' => $fields['first_name'],
+            'last_name' => $fields['last_name'],
             'email' => $fields['email'],
-            'password' => bcrypt($fields['password'])
+            'password' => bcrypt($fields['password']),
+            'user_type' => $fields['user_type']
         ]);
 
         $token = $user->createToken('AppToken')->plainTextToken;
@@ -48,7 +50,7 @@ class AuthController extends Controller
     public function login(Request $request){
 
         $fields = $request->validate([
-            'email' => 'required|string',
+            'email' => 'required|email',
             'password' => 'required|string'
         ]);
 
@@ -56,7 +58,7 @@ class AuthController extends Controller
 
         if(!$user || Hash::check($fields['password'], $user->password)){
             return [
-                'message' => 'Bad Credentials'
+                'message' => 'invalid login'
             ];
         }
 

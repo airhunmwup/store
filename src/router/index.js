@@ -229,13 +229,13 @@ const routes = [{
     },
 
     {
-        path: '/Register Personal Account',
+        path: '/register',
         name: 'Register Personal Account',
         component: userRegistrationPage,
     },
 
     {
-        path: '/Register Business Account',
+        path: '/mechantregister',
         name: 'Register Business Account',
         component: registerBusinessAccount,
     },
