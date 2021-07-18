@@ -1271,7 +1271,7 @@ textarea:focus {
 }
 
 #page-preloader [class~=page-loading] [class~=dot]:nth-child(2) {
-    background: #d7d7d7;
+    background: #0db115;
 }
 
 [class~=title-block],
@@ -1764,7 +1764,7 @@ a:hover,
 }
 
 #page-preloader [class~=page-loading] [class~=dot]:nth-child(4) {
-    background: #a0a0a0;
+    background: #f37d0e;
 }
 
 #customer-form [class~=desc-password] {
@@ -2044,7 +2044,8 @@ a:hover,
 }
 
 #page-preloader [class~=page-loading] [class~=dot]:nth-child(5) {
-    background: #717171;
+    background: #0e97f3;
+    ;
 }
 
 [class~=block-cart] [class~=dropdown-content] {
