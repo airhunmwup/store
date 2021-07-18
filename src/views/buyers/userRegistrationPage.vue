@@ -39,7 +39,7 @@
         <div class="col-lg-6 col-sm-6 pb-3 pt-4 justify-content-center">
           <div id="content" class="page-content">
             <div class="register-form text-center">
-              <form>
+              <div>
                 <div class="text-center">
                   <div class="row">
                     <div
@@ -55,11 +55,13 @@
                           col-lg-12 col-md-12 col-sm-12
                           border-b border-dark border-t-0 border-l-0 border-r-0
                         "
-                        
+                        name="First_Name"
                         type="text"
                         value=""
                         placeholder="First Name"
+                        v-model="formData.first_name"
                       />
+                      <p class="text-danger" v-text="errors.first_name"></p>
                     </div>
 
                     <div
@@ -79,7 +81,9 @@
                         type="text"
                         value=""
                         placeholder="Last Name"
+                        v-model="formData.last_name"
                       />
+                      <p class="text-danger" v-text="errors.last_name"></p>
                     </div>
 
                     <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
@@ -92,7 +96,9 @@
                         type="email"
                         value=""
                         placeholder="Email"
+                        v-model="formData.email"
                       />
+                      <p class="text-danger" v-text="errors.email"></p>
                     </div>
 
                     <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
@@ -105,7 +111,9 @@
                         type="password"
                         value=""
                         placeholder="Password"
+                        v-model="formData.password"
                       />
+                      <p class="text-danger" v-text="errors.password"></p>
                     </div>
                   </div>
                 </div>
@@ -142,12 +150,11 @@
                       class="col-lg-12 col-md-12 col-sm-12 btn text-light"
                       style="background-color: rgb(209, 209, 208)"
                       @click='userRegister'>
-                    >
                       Create account
                     </button>
                   </div>
                 </div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
@@ -203,19 +210,31 @@
 </template>
 <script>
 import axios from "axios";
+
 export default {
   data() {
     return {
       formData: {
+        first_name: "",
+        last_name: "",
         email: "",
         password: "",
+        user_type: "buyer"
       },
-      error: {},
+      errors: {},
     };
   },
   methods: {
-    login() {
-      axios.post();
+    userRegister() {
+      axios.post('http://localhost:8000/api/register', this.formData).then((response) =>{
+          console.log(response.data);
+          this.formData.first_name = this.formData.last_name = this.formData.email = this.formData.password = ''
+          this.errors = { }
+          this.$router.push('/login');
+      }).catch((errors) => {
+          this.errors = errors.response.data.errors;
+          console.log(errors.response.data.errors);
+      })
     },
   },
 };
