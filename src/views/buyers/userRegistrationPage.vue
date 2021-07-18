@@ -207,7 +207,7 @@
 
     <hr />
 
-    <div id="page-preloader" class="redit">
+    <div v-if="loading" id="page-preloader" class="redit">
         <div class="page-loading">
             <div class="dot"></div>
             <div class="dot"></div>
@@ -232,19 +232,22 @@ export default {
         user_type: "buyer"
       },
       errors: {},
+      loading: false
     };
   },
   methods: {
     userRegister() {
+      this.loading = true;
       axios.post('http://localhost:8000/api/register', this.formData).then((response) =>{
           console.log(response.data);
           this.formData.first_name = this.formData.last_name = this.formData.email = this.formData.password = ''
+          console.log(this.loading);
           this.errors = { }
           this.$router.push('/login');
       }).catch((errors) => {
           this.errors = errors.response.data.errors;
           console.log(errors.response.data.errors);
-      })
+      }).finally(() => this.loading = false);
     },
   },
 };
