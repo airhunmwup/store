@@ -1558,3 +1558,7 @@ tr:nth-child(even) {
     max-width: 140px;
     padding: 0.25rem;
 }
+
+.redit {
+    opacity: .8;
+}

@@ -1271,7 +1271,7 @@ textarea:focus {
 }
 
 #page-preloader [class~=page-loading] [class~=dot]:nth-child(2) {
-    background: #0db115;
+    background: #0de617;
 }
 
 [class~=title-block],
@@ -25107,4 +25107,13 @@ footer [class~=title-block],
 
 .user-wishlist #wrapper-site #block-history thead th {
     border-color: rgba(255, 255, 255, 0.1);
+}
+
+border-color: rgba(255,
+255,
+255,
+0.1);
+
+}
+
 }

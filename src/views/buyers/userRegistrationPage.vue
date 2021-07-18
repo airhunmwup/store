@@ -207,7 +207,7 @@
 
     <hr />
 
-    <div id="page-preloader">
+    <div id="page-preloader" class="redit">
         <div class="page-loading">
             <div class="dot"></div>
             <div class="dot"></div>
