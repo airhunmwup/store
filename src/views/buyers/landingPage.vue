@@ -19,25 +19,31 @@
         >
           <li class=" item text-dark  text-sm text-center font-weight-regular">{{category.cat_name}}</li></router-link
         >
+
+        <!-- <router-link
+          to="/categorie page"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+          ><li class="item text-dark">Categories 2</li></router-link
+        >
+        <router-link
+          to="/categorie page"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="Home"
+        >
+          <li class="item text-dark">Categories 3</li></router-link
+        >-->
       </ul>
     </div>
 
-    <ul class="hax d-xs-none">
+    <ul class="hax d-xs-none -lg">
       <li class="">
         <a href="#">
           <img
             class="hax"
             src="img/home/effect4.jpg"
-            alt="banner-3"
-            title="banner-1"
-          />
-        </a>
-      </li>
-      <li class="">
-        <a href="#">
-          <img
-            class="hax"
-            src="img/home/effect3.jpg"
             alt="banner-1"
             title="banner-1"
           />
