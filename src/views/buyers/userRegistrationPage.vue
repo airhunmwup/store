@@ -219,7 +219,6 @@
   </div>
 </template>
 <script>
-import axios from "axios";
 
 export default {
   data() {
@@ -238,15 +237,14 @@ export default {
   methods: {
     userRegister() {
       this.loading = true;
-      axios.post('http://localhost:8000/api/register', this.formData).then((response) =>{
+      this.$http
+      .post('http://localhost:8000/api/register', this.formData).then((response) =>{
           console.log(response.data);
           this.formData.first_name = this.formData.last_name = this.formData.email = this.formData.password = ''
           this.errors = {}
           this.$router.push('/login');
       }).catch((errors) => {
-          
           const err = Object.keys(errors.response.data.errors);
-
           err.forEach((key)=>{
             var strError = errors.response.data.errors[key][0];
             this.errors[key] = strError;

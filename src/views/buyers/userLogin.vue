@@ -2,6 +2,7 @@
   <!-- main content -->
 
   <!-- main content -->
+
   <div class="">
     <div class="content pt-5 pb-5">
       <div class="row pt-2">
@@ -9,8 +10,10 @@
           <div class="register-form text-center">
             <div class="pb-4">
               <p class="h1 text-dark">Hello</p>
+
               <p class="pb-4 text-dark">
                 Sign in to REJEE or
+
                 <router-link
                   to="/register"
                   data-toggle="collapse"
@@ -20,8 +23,10 @@
                   >create an account</router-link
                 >
               </p>
+              <p class="pb-4 text-danger" v-text="errors.message"></p>
             </div>
-            <div >
+
+            <div>
               <div class="container">
                 <div class="form-group p-2">
                   <input
@@ -34,7 +39,9 @@
                     placeholder=" Email"
                     v-model="formData.email"
                   />
+                  <p class="text-danger" v-text="errors.email"></p>
                 </div>
+
                 <div class="form-group p-2">
                   <input
                     class="
@@ -47,6 +54,8 @@
                     placeholder="Password"
                     v-model="formData.password"
                   />
+
+                  <p class="text-danger" v-text="errors.password"></p>
                 </div>
 
                 <a
@@ -56,11 +65,13 @@
                 >
                   Forgot your password?
                 </a>
+
                 <div class="clearfix p-2">
                   <button
                     class="col-lg-6 col-md-6 col-sm-6 btn text-light"
                     style="background-color: rgb(209, 209, 208)"
-                    @click='login'>
+                    @click="login"
+                  >
                     Submit
                   </button>
                 </div>
@@ -70,26 +81,59 @@
         </div>
       </div>
     </div>
+
     <hr />
+
+    <div v-if="loading" id="page-preloader" class="redit">
+      <div class="page-loading">
+        <div class="dot"></div>
+
+        <div class="dot"></div>
+
+        <div class="dot"></div>
+
+        <div class="dot"></div>
+
+        <div class="dot"></div>
+      </div>
+    </div>
   </div>
 </template>
 <script>
-import axios from 'axios';
+
 export default {
   data() {
-      return {
-          formData: {
-              email: '',
-              password: ''
-
-          },
-          error: {}
-      }
+    return {
+      formData: {
+        email: "",
+        password: "",
+      },
+      loading: false,
+      errors: {},
+    };
   },
   methods: {
-      login(){
-          axios.post()
-      }
-  }
+    login() {
+      this.loading = true;
+      this.$http
+        .post("http://localhost:8000/api/login", this.formData)
+        .then((response) => {
+          console.log(response.data);
+          this.formData.email = this.formData.password = "";
+          this.errors = {};
+          localStorage.setItem("token", response.data.token);
+          localStorage.setItem("user", response.data);
+          this.$router.push("/");
+        })
+        .catch((errors) => {
+          const err = Object.keys(errors.response.data.errors);
+          err.map((key) => {
+            this.errors[key] = errors.response.data.errors[key][0];
+          });
+          console.log(this.errors);
+        })
+        .finally(() => (this.loading = false));
+    },
+  },
 };
 </script>

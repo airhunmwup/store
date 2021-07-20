@@ -1,16 +1,21 @@
 <template>
   <header>
     <div class="row box">
-       
-      <div
-        class="col-lg-6 col-md-6 col-sm-4 h6 pl-5 pr-5"
-      >
+      <div class="col-lg-6 col-md-6 col-sm-4 h6 pl-5 pr-5">
+
         <a
+          v-if="token"
           href="#"
-          class="text-dark text-sm  dropdown-toggle"
+          class="text-dark text-sm dropdown-toggle"
           data-toggle="dropdown"
+        > Hi Alfie
+        </a>
+        <a
+          v-else
+          href="#"
+          class="text-dark text-sm dropdown-toggle"
         >
-          Hi <b>Username!</b>
+          Hi Sign in or register
         </a>
         <div class="dropdown-menu">
           <div
@@ -27,7 +32,8 @@
               data-target=".navbar-collapse"
               title="summary"
             >
-              <i class="zmdi zmdi-account h4 pr-2"></i> Peter more<br> User(112837)
+              <i class="zmdi zmdi-account h4 pr-2"></i> Peter more<br />
+              User(112837)
             </router-link>
             <!-- primary info buttons ends/-->
 
@@ -39,7 +45,6 @@
               data-target=".navbar-collapse"
               title="account"
             >
-              
               Account settings
             </router-link>
             <!-- Account preferences/-->
@@ -58,9 +63,7 @@
           </div>
         </div>
       </div>
-      <div
-        class="col-lg-6 col-md-6 col-sm-4 h6 text-right pl-5 pr-5"
-      >
+      <div class="col-lg-6 col-md-6 col-sm-4 h6 text-right pl-5 pr-5">
         <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
           to="/Summary"
@@ -90,7 +93,8 @@
               to="/Summary"
               data-toggle="collapse"
               data-target=".navbar-collapse"
-            > Summary
+            >
+              Summary
             </router-link>
             <!-- primary info buttons ends/-->
 
@@ -156,8 +160,8 @@
           "
         >
           <!-- logo -->
-          <div class="mobile-logo ">
-             <img
+          <div class="mobile-logo">
+            <img
               class="logo-mobile img-fluid"
               src="img/home/logo.png"
               width="30%"
@@ -207,24 +211,24 @@
 
                       <tr>
                         <td colspan="3" class="d-flex justify-content-center">
-                          
-                            <div class="cart-button">
-                              
-            <router-link
-              to="/View Cart"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="view Cart"
-            >
-                              View Cart</router-link>
-            <router-link
-              to="/Checkout"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Checkout"
-            >
-                              Checkout</router-link>
-                            </div>
+                          <div class="cart-button">
+                            <router-link
+                              to="/View Cart"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="view Cart"
+                            >
+                              View Cart</router-link
+                            >
+                            <router-link
+                              to="/Checkout"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="Checkout"
+                            >
+                              Checkout</router-link
+                            >
+                          </div>
                         </td>
                       </tr>
                     </tbody>
@@ -237,28 +241,28 @@
 
         <!-- search -->
 
-         <form method="post" class="std pt-2" id="customer-form">
-                <div class="input-group">
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Search for anything"
-                    class="form-control"
-                    value=""
-                  />
+        <form method="post" class="std pt-2" id="customer-form">
+          <div class="input-group">
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Search for anything"
+              class="form-control"
+              value=""
+            />
 
-                  <button
-                    class="btn text-light btn-primary border"
-                    type="submit"
-                    data-action="show-password"
-                    data-text-show="Show"
-                    data-text-hide="Hide"
-                  >
-                    Search
-                  </button>
-                </div>
-              </form>
+            <button
+              class="btn text-light btn-primary border"
+              type="submit"
+              data-action="show-password"
+              data-text-show="Show"
+              data-text-hide="Hide"
+            >
+              Search
+            </button>
+          </div>
+        </form>
       </div>
 
       <!-- header desktop -->
@@ -275,7 +279,7 @@
             </div>
 
             <!-- search-->
-            <div class="col-sm-8 col-md-8 col-lg-8 pt-2"> 
+            <div class="col-sm-8 col-md-8 col-lg-8 pt-2">
               <form method="post" class="std" id="customer-form">
                 <div class="input-group col-12">
                   <input
@@ -344,21 +348,22 @@
                         <tr>
                           <td colspan="3" class="d-flex justify-content-center">
                             <div class="cart-button">
-                              
-            <router-link
-              to="/View Cart"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="View Cart"
-            >
-                              View Cart</router-link>
-            <router-link
-              to="/Checkout"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Checkout"
-            >
-                              Checkout</router-link>
+                              <router-link
+                                to="/View Cart"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="View Cart"
+                              >
+                                View Cart</router-link
+                              >
+                              <router-link
+                                to="/Checkout"
+                                data-toggle="collapse"
+                                data-target=".navbar-collapse"
+                                title="Checkout"
+                              >
+                                Checkout</router-link
+                              >
                             </div>
                           </td>
                         </tr>
@@ -374,3 +379,20 @@
     </div>
   </header>
 </template>
+<script>
+export default {
+  data(){
+    return {
+      token: localStorage.getItem('token'),
+      user: localStorage.getItem('user'),
+    }
+  },
+  methods: {
+    
+  },
+  mounted(){
+    console.log(this.token);
+  }
+};
+</script>
+
