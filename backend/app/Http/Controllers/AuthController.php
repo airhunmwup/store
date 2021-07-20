@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+use Illuminate\Validation\ValidationException;
 
 class AuthController extends Controller
 {
@@ -55,10 +56,10 @@ class AuthController extends Controller
 
         $user = User::where('email', $fields['email'])->first();
 
-        if(!$user || Hash::check($fields['password'], $user->password)){
-            return [
-                'message' => 'invalid login'
-            ];
+        if(!$user || !Hash::check($fields['password'], $user->password)){
+            throw validationException::withMessages([
+                'message' => '* Invalid login details'
+            ]);
         }
 
         $token = $user->createToken('AppToken')->plainTextToken;

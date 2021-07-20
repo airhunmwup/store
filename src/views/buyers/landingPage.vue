@@ -19,22 +19,6 @@
         >
           <li class=" item text-dark  text-sm text-center font-weight-regular">{{category.cat_name}}</li></router-link
         >
-
-        <!-- <router-link
-          to="/categorie page"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-          title="Home"
-          ><li class="item text-dark">Categories 2</li></router-link
-        >
-        <router-link
-          to="/categorie page"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-          title="Home"
-        >
-          <li class="item text-dark">Categories 3</li></router-link
-        >-->
       </ul>
     </div>
 
@@ -1013,6 +997,13 @@ export default {
         
       ],
     };
+  },
+  methods: {
+    getUser(){
+    }
+  }
+  ,
+  mounted() {
   },
   async created(){
     try{
