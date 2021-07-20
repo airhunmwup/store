@@ -61,7 +61,7 @@
                         placeholder="First Name"
                         v-model="formData.first_name"
                       />
-                      <p class="text-danger" v-text="errors.first_name"></p>
+                      <p class="text-danger text-left" v-text="errors.first_name"></p>
                     </div>
 
                     <div
@@ -83,7 +83,7 @@
                         placeholder="Last Name"
                         v-model="formData.last_name"
                       />
-                      <p class="text-danger" v-text="errors.last_name"></p>
+                      <p class="text-danger text-left" v-text="errors.last_name"></p>
                     </div>
 
                     <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
@@ -98,7 +98,7 @@
                         placeholder="Email"
                         v-model="formData.email"
                       />
-                      <p class="text-danger" v-text="errors.email"></p>
+                      <p class="text-danger text-left" v-text="errors.email"></p>
                     </div>
 
                     <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
@@ -113,7 +113,7 @@
                         placeholder="Password"
                         v-model="formData.password"
                       />
-                      <p class="text-danger" v-text="errors.password"></p>
+                      <p class="text-danger text-left" v-text="errors.password"></p>
                     </div>
                   </div>
                 </div>

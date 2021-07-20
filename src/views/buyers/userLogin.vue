@@ -15,7 +15,7 @@
                 Sign in to REJEE or
 
                 <router-link
-                  to="/Register Personal Account"
+                  to="/register"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                   class="text-primary underline font-weight-bold"

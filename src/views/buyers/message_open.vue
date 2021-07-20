@@ -4,7 +4,7 @@
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left"></div>
       <div class="container justify-content-center content-bottom">
-        <span class="p-5 text-right"
+        <span class="p-3 text-right"
           >Summary is your My REJEE
           <router-link
             to="/Summary"
@@ -17,7 +17,7 @@
         >
         <div class="content sidebar-block">
           <div class="text-base">
-            <div class="pt-5 pl-5">
+            <div class="pl-3">
               <span class="font-weight-bold text-dark h3"> My REJEE</span>
               <span class="text-dark text-sm"> UserID (0)</span>
             </div>

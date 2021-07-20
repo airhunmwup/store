@@ -6,7 +6,7 @@
        
       </div>
       <div class="container justify-content-center content-bottom">
-        <span class="p-5 text-right">Summary is your My REJEE 
+        <span class="p-3 text-right">Summary is your My REJEE 
           <router-link
             to="/Summary"
             data-toggle="collapse"
@@ -24,7 +24,7 @@
         </div>
       </div>
     </div>
-              <div class="row pl-5">
+              <div class="row pl-3">
                 <div class="container">
                   <div class="content text-dark p-3 border-b-2 font-weight-bold col-12 ">
           <router-link

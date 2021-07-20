@@ -1560,5 +1560,6 @@ tr:nth-child(even) {
 }
 
 .redit {
-    opacity: .8;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0.9;
 }
