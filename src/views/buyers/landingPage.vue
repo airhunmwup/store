@@ -861,7 +861,7 @@
                       <ul>
                         <li>
                           <router-link
-                            to="/Register Personal Account"
+                            to="/register"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             >Registration</router-link
