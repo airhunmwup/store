@@ -58,13 +58,15 @@
                   <p class="text-danger" v-text="errors.password"></p>
                 </div>
 
-                <a
-                  href="user-reset-password.html"
-                  rel="nofollow"
-                  class="underline text-primary"
-                >
+                <router-link
+                  to="/passwordrecovery"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  class="text-primary underline font-weight-bold"
+                  title="Forget your password?"
+                  >
                   Forgot your password?
-                </a>
+                </router-link>
 
                 <div class="clearfix p-2">
                   <button

@@ -5,12 +5,12 @@
 
         <!-- main -->
           <div class="container">
-            <div class="row container">
+            <div class="row">
                 <div id="main">
                   <div class="row">
-                    <div class="col-md-9 check-info justify-content-end">
+                    <div class="col-md-8 check-info">
                       <div class="checkout-personal-step">
-                        <h3 class="step-title text-dark h3 p-2 info">
+                        <h3 class="step-title text-dark h4 p-2 info">
                           PERSONAL INFORMATION
                         </h3>
                       </div>
@@ -126,10 +126,10 @@
                               </div>
                                             <div class="p-3">
                                             <router-link
-                                to="/Checkout"
+                                to="/checkoutAddress"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
-                                title="Home"
+                                title="Continue"
                               >
                                 <button
                                   class="col-lg-12 col-md-12 col-sm-12 btn btn-warning form-control add-to-cart"
@@ -202,45 +202,65 @@
                           </div>
                         </div>
                         <div class="checkout-personal-step p-2">
-                          <h3 class="step-title h3">
-                             <i class="fa fa-address-book-o"></i> Addresses.
+                          <h3 class="step-title h4">
+                             Addresses.
                           </h3>
                         </div>
                         <div class="checkout-personal-step p-2">
-                          <h3 class="step-title h3">
-                             <i class="fa fa-truck"></i> Shipping Method.
-                          </h3>
-                        </div>
-                        <div class="checkout-personal-step p-2">
-                          <h3 class="step-title h3">
-                             <i class="fa fa-credit-card"></i> Payment.
+                          <h3 class="step-title h4">
+                             Payment.
                           </h3>
                         </div>
                       </div>
                     </div>
-                                <div class="col-xs-12 col-lg-3">
+                                <div class="col-xs-12 col-lg-4">
                                         <div class="border p-3">
-                                            <div class="text-dark p-2 cart-summary-line">
-                                                <span class="font-weight-bold">
-                                                    Total products:
-                                                </span>
-                                                <span class="value"> £200.00</span>
-                                            </div>
-                                            <div class="text-dark p-2 cart-summary-line">
-                                                <span class="font-weight-bold">
-                                                    Total Shipping:
-                                                </span>
-                                                <span class="value"> Free</span>
-                                                <div>
-                                                    <small class="value"></small>
+                                            
+                                        <table class="std">
+                                          <tbody>
+                                            <tr>
+                                              <td colspan="3" >
+                                                <div class="text-dark font-weight-bold">
+                                                  <a href="product-detail.html"
+                                                    >Organic Strawberry Fruits</a
+                                                  >
                                                 </div>
-                                            </div>
-                                            <hr>
-                                            <div class="text-dark text-lg text-right pt-3 cart-total">
-                                                <span class="font-weight-bold">Total:</span>
-                                                <span class="value"> £200.00 </span>
-                                                <p class="text-sm">(tax incl.)</p>
-                                            </div>
+                                                <div>
+                                                  2 x
+                                                  <span class="product-price">£28.98</span>
+                                                </div>
+                                                </td>
+                                                <td class="action text-right">
+                                                <a class="remove" href="#">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="3" >
+                                                <div class="text-dark font-weight-bold">
+                                                  <a href="product-detail.html"
+                                                    >Organic Strawberry Fruits</a
+                                                  >
+                                                </div>
+                                                <div>
+                                                  2 x
+                                                  <span class="product-price">£28.98</span>
+                                                </div>
+                                                </td>
+                                                <td class="action text-right">
+                                                <a class="remove" href="#">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="total font-weight-bold h5 text-dark">
+                                              <td class="p-3" colspan="2">Total:</td>
+                                              <td class="p-3" colspan="2">£92.96</td>
+                                            </tr>
+
+                                          </tbody>
+                                        </table>
                                         </div>
                                 </div>
                   </div>

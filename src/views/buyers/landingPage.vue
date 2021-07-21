@@ -65,7 +65,7 @@
             <b class="fa fa-caret-square-o-right"></b>
           </p>
         </div>
-        <!-- breadcrumb -->
+      <!-- breadcrumb -->
         <div class="ul gs full">
           <li class="li itemi">
             <router-link
@@ -81,7 +81,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -101,7 +101,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -121,7 +121,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -141,7 +141,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -161,7 +161,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -181,7 +181,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -199,7 +199,7 @@
             <b class="fa fa-caret-square-o-right"></b>
           </p>
         </div>
-        <!-- breadcrumb -->
+      <!-- breadcrumb -->
         <div class="ul gs full">
           <li class="li itemi">
             <router-link
@@ -215,7 +215,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -235,7 +235,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -255,7 +255,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -275,7 +275,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -295,7 +295,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -315,7 +315,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -417,7 +417,7 @@
             <b class="fa fa-caret-square-o-right"></b>
           </p>
         </div>
-        <!-- breadcrumb -->
+      <!-- breadcrumb -->
         <div class="ul gs full">
           <li class="li itemi">
             <router-link
@@ -433,7 +433,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -453,7 +453,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -473,7 +473,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -493,7 +493,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -513,7 +513,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
@@ -533,7 +533,7 @@
                   <div class="content col-12">
                     <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>

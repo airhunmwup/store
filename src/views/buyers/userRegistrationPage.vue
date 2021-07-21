@@ -27,11 +27,11 @@
           Are you a business or nonprofit? <br />
 
           <router-link
-            to="/Register Business Account"
+            to="/mechantregister"
             data-toggle="collapse"
             data-target=".navbar-collapse"
             class="text-primary underline font-weight-bold"
-            title="Register Business Account"
+            title="Create Business Account"
             >Create a business account</router-link
           >
         </p>

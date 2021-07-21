@@ -245,30 +245,34 @@
                         </td>
                       </tr>
                       <tr class="total">
-                        <td colspan="2">Total:</td>
-                        <td>£92.96</td>
+                        <td class="p-3" colspan="2">Total:</td>
+                        <td class="p-3" colspan="2">£92.96</td>
                       </tr>
 
                       <tr>
                         <td colspan="3" class="d-flex justify-content-center">
-                          <div class="cart-button">
+                          <span class="btn p-3 text-sm justify-content-start">
                             <router-link
                               to="/View Cart"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="view Cart"
                             >
-                              View Cart</router-link
+                            <button class="form-control btn-dark text-white">
+                              View Cart</button></router-link
                             >
+                          </span>
+                          <span class="btn p-3 text-sm justify-content-end">
                             <router-link
                               to="/Checkout"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="Checkout"
                             >
-                              Checkout</router-link
+                            <button class="form-control btn-dark text-white">
+                              Checkout</button></router-link
                             >
-                          </div>
+                          </span>
                         </td>
                       </tr>
                     </tbody>
@@ -386,26 +390,30 @@
                         </tr>
 
                         <tr>
-                          <td colspan="3" class="d-flex justify-content-center">
-                            <div class="cart-button">
-                              <router-link
-                                to="/View Cart"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="View Cart"
-                              >
-                                View Cart</router-link
-                              >
-                              <router-link
-                                to="/Checkout"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Checkout"
-                              >
-                                Checkout</router-link
-                              >
-                            </div>
-                          </td>
+                        <td colspan="3" class="d-flex justify-content-center">
+                          <span class="btn p-3 text-sm justify-content-start">
+                            <router-link
+                              to="/View Cart"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="view Cart"
+                            >
+                            <button class="form-control btn-dark text-white">
+                              View Cart</button></router-link
+                            >
+                          </span>
+                          <span class="btn p-3 text-sm justify-content-end">
+                            <router-link
+                              to="/Checkout"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="Checkout"
+                            >
+                            <button class="form-control btn-dark text-white">
+                              Checkout</button></router-link
+                            >
+                          </span>
+                        </td>
                         </tr>
                       </tbody>
                     </table>
