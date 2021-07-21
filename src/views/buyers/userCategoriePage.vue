@@ -103,263 +103,7 @@
                       <div class="title-product">
                         <div class="row product-container">
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/10.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/12.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/6.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/3.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/8.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/15.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/13.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
-                <div class="row p-1">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -370,28 +114,18 @@
             >
               <div class=" p-2">
                 <img src="img/product/1.jpg" class="" alt="Product" />
-                <div class="row p-1">
+                <div class="row">
                   <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
+                    <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
                   </div>
                 </div>
               </div>
             </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -402,28 +136,172 @@
             >
               <div class=" p-2">
                 <img src="img/product/2.jpg" class="" alt="Product" />
-                <div class="row p-1">
+                <div class="row">
                   <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
+                    <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
                   </div>
                 </div>
               </div>
             </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/3.jpg" class="" alt="Product" />
+                <div class="row">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark underline">Product name</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+                </div>
+                <div
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/4.jpg" class="" alt="Product" />
+                <div class="row">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark underline">Product name</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+                </div>
+                <div
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/5.jpg" class="" alt="Product" />
+                <div class="row">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark underline">Product name</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+                </div>
+                <div
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/6.jpg" class="" alt="Product" />
+                <div class="row">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark underline">Product name</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+                </div>
+                <div
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/7.jpg" class="" alt="Product" />
+                <div class="row">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark underline">Product name</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+                </div>
+                <div
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/8.jpg" class="" alt="Product" />
+                <div class="row">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark underline">Product name</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+                </div>
+                <div
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/9.jpg" class="" alt="Product" />
+                <div class="row">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark underline">Product name</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+                </div>
+                <div
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -434,28 +312,40 @@
             >
               <div class=" p-2">
                 <img src="img/product/10.jpg" class="" alt="Product" />
-                <div class="row p-1">
+                <div class="row">
                   <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
+                    <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
                   </div>
                 </div>
               </div>
             </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/6.jpg" class="" alt="Product" />
+                <div class="row">
+                  <div class="content col-11">
+                    <p class="text-lg text-dark underline">Product name</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+                </div>
+                <div
+                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -466,21 +356,11 @@
             >
               <div class=" p-2">
                 <img src="img/product/12.jpg" class="" alt="Product" />
-                <div class="row p-1">
+                <div class="row">
                   <div class="content col-12">
-                    <p class="text-lg text-dark">Product name</p>
-                    <p>New</p>
+                    <p class="text-lg text-dark underline">Product name</p>
                     <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p>Free P&P</p>
-                    <p class="font-weight-bold text-dark">12 sold</p>
-                  </div>
-                  <div class="col-6">
-                    <span class="text align-text-bottom">location</span>
-                  </div>
-                  <div class="col-6 justify-content-end text-right">
-                    <span class="text-xs text-success align-text-bottom item-right"
-                      ><p class="text-center">3</p>in stock
-                    </span>
+                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
                   </div>
                 </div>
               </div>
