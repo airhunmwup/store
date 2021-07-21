@@ -1,21 +1,19 @@
 <template>
   <header>
     <div class="row box">
-      <div class="col-lg-6 col-md-6 col-sm-4 h6 pl-5 pr-5">
+      <div class="col-lg-6 col-md-6 col-sm-4 h6 pl-4 pr-5">
 
         <a
           v-if="token"
           href="#"
           class="text-dark text-sm dropdown-toggle"
           data-toggle="dropdown"
-        > Hi Alfie
-        </a>
+        > 
         <a
-          v-else
           href="#"
-          class="text-dark text-sm dropdown-toggle"
-        >
-          Hi Sign in or register
+          class="ptext-dark text-sm text-right dropdown-toggle"
+          data-toggle="dropdown"
+        >Hi Alfie
         </a>
         <div class="dropdown-menu">
           <div
@@ -62,17 +60,59 @@
             <!-- Resolution center/-->
           </div>
         </div>
+        </a>
+        <a
+          v-else
+          href="#"
+        >
+        <a
+          href="#"
+          class="text-dark text-sm text-right"
+        >
+            <router-link
+              class="text-dark font-weight-bold"
+              to="/login"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="login"
+            ><i class="fa fa-user-o"></i> 
+          Hi Sign in or register
+            </router-link>
+            </a>
+        </a>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-4 h6 text-right pl-5 pr-5">
+        
+        <a
+          v-if="token"
+          href="#"
+          class="text-dark text-sm dropdown-toggle"
+          data-toggle="dropdown"
+        > 
         <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
-          to="/Summary"
+          to="/mechantregister"
           data-toggle="collapse"
           data-target=".navbar-collapse"
-          title="summary"
+          title="sell"
         >
           SELL</router-link
         >
+        </a>
+        <a
+          v-else
+          href="#"
+        >
+        <router-link
+          class="text-dark font-weight-bold text-sm text-right pr-4"
+          to="/Creating listing"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="sell"
+        >
+          SELL</router-link
+        >
+        </a>
         <a
           href="#"
           class="ptext-dark text-sm text-right dropdown-toggle"

@@ -3,36 +3,26 @@
 
   <!-- main content -->
   <div id="home4">
-    <div class="main-content pt-4">
-      <div class="container justify-content-center content-bottom">
+      <div class="container justify-content-center font-weight-bold content-bottom">
 
                   <span class="p-2 text-primary font-weight-normal">
                   Home
                   </span>>
-                  <span class="text text-primary pont-weight-normal">
+                  <span class="text text-primary font-weight-normal">
                   Help
                   </span>>
-                  <span class="text  text-primary  pont-weight-normal">
+                  <span class="text  text-primary  font-weight-normal">
                   selling
                   </span>>
-                  <span class="text font-weight-bold pont-weight-normal">
+                  <span class="text font-weight-bold font-weight-normal">
                   Manage returns, missing items, and refunds for sellers
                   </span>
       </div>
-      <div id="wrapper-site">
-        <div id="content-wrapper">
+    <div class="main-content pt-4">
           <div id="main">
-            <div class="page-home">
+            <div class="page-home pt-3">
               <!-- breadcrumb -->
-              <div class="container">
-                <div class="content">
                   <!-- main content -->
-                  <div class="main-content">
-                    <div id="wrapper-site">
-                      <div id="content-wrapper">
-                        <section class="page-home">
-                          <div class="container">
-                            <div class="row">
                               <div class="col-lg-12 pt-5 pl-5 col-sm-12"  style="background-color: orange;">
                                 <small class="pl-4 text-primary">4 min Overview</small>
                                 <p class="h1 font-weight-bold text-dark pl-5">Manage returns, missing items, and refunds for sellers</p>
@@ -40,6 +30,9 @@
                                       Here’s everything you need to know if something goes wrong with an order or if a buyer changes their mind and doesn’t want the item anymore.
                                     </p>
                               </div>
+                        <section class="page-home">
+                          <div class="container">
+                            <div class="row">
                               <hr>
                                 <div
                                   class="container text-left p-3 border-warning border-l-2"
@@ -47,7 +40,7 @@
                                   <div class="content text-dark">
                                     <p>
                                       To improve your help experience, please <router-link
-                                            to="/Login buyers"
+                                            to="/login"
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
                                             class="text-primary underline font-weight-bold "
@@ -146,15 +139,8 @@
                             </div>
                           </div>
                         </section>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
-      </div>
     </div>
                         <hr>
   </div>

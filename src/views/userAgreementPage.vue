@@ -4,9 +4,15 @@
   <!-- main content -->
   <div id="home4">
     <div class="main-content pt-4">
-      <div id="wrapper-site">
-        <div id="content-wrapper">
-          <div id="main">
+      <div class="container justify-content-center  font-weight-bold content-bottom">
+
+                  <span class="p-2 text-primary font-weight-normal">
+                  Home
+                  </span>>
+                  <span class="text font-weight-bold font-weight-normal">
+                  User Agreement
+                  </span>
+      </div>
             <div class="page-home">
               <!-- breadcrumb -->
               <div class="container">
@@ -16,13 +22,12 @@
                     <div id="wrapper-site">
                       <div id="content-wrapper">
                         <section class="page-home">
-                          <div class="container">
                             <div class="row">
-                              <div class="col-lg-10 pt-5 pl-5 col-sm-10">
-                                <small class="pl-4 text-primary">10 min article</small>
+                              <div class="col-lg-10 pt-4 pl-4 col-sm-10">
+                                <small class="pl-4 text-primary font-weight-bold">10 min article</small>
                                 <h1 class="title-page pl-5">User Agreement</h1>
                               </div>
-                              <div class="col-lg-4 col-sm-4 pb-3">
+                              <div class="col-lg-4 col-sm-4 underline pb-3">
                                 <ul class="pt-3">
                                     <li class="text-primary"><a href="#Introduction">1. Introduction</a></li>
                                     <li class="text-primary"><a href="#About REJEE">2. About REJEE</a></li>
@@ -917,7 +922,6 @@ A party who intends to seek arbitration must first send to the other, by certifi
                                 </div>
                               </div>
                             </div>
-                          </div>
                         </section>
                       </div>
                     </div>
@@ -925,9 +929,6 @@ A party who intends to seek arbitration must first send to the other, by certifi
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>

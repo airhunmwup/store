@@ -390,190 +390,188 @@
                 </p>
               </div>
       <!-- breadcrumb -->
-      <div class="ul gs full">
-                    <li class="li itemi">
-                  <router-link
-                  class=""
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="p-2">
-                      <img src="img/product/10.jpg" class="" alt="Product" />
-                      <div class="row p-1">
-                        <div class="content col-12">
-                          <p class="text-lg text-dark"> Product name</p>
-                          <p>New</p>
-                          <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                          <p>Free P&P</p>
-                          <p class="font-weight-bold text-dark">12 sold</p>
-                        </div>
-                        <div class="col-6">
-                          <span class="text align-text-bottom">location</span>
-                        </div>
-                        <div class="col-6 justify-content-end text-right">
-                          <span class="text align-text-bottom item-right"
-                            ><i class="fa fa-lg fa-heart-o"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </router-link>
-                  </li>
-                    <li class="li itemi">
-                  <router-link
-                  class=""
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="p-2">
-                      <img src="img/product/4.jpg" class="" alt="Product" />
-                      <div class="row p-1">
-                        <div class="content col-12">
-                          <p class="text-lg text-dark"> Product name</p>
-                          <p>New</p>
-                          <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                          <p>Free P&P</p>
-                          <p class="font-weight-bold text-dark">12 sold</p>
-                        </div>
-                        <div class="col-6">
-                          <span class="text align-text-bottom">location</span>
-                        </div>
-                        <div class="col-6 justify-content-end text-right">
-                          <span class="text align-text-bottom item-right"
-                            ><i class="fa fa-lg fa-heart-o"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </router-link>
-                  </li>
-                    <li class="li itemi">
-                  <router-link
-                  class=""
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="p-2">
-                      <img src="img/product/11.jpg" class="" alt="Product" />
-                      <div class="row p-1">
-                        <div class="content col-12">
-                          <p class="text-lg text-dark"> Product name</p>
-                          <p>New</p>
-                          <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                          <p>Free P&P</p>
-                          <p class="font-weight-bold text-dark">12 sold</p>
-                        </div>
-                        <div class="col-6">
-                          <span class="text align-text-bottom">location</span>
-                        </div>
-                        <div class="col-6 justify-content-end text-right">
-                          <span class="text align-text-bottom item-right"
-                            ><i class="fa fa-lg fa-heart-o"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </router-link>
-                  </li>
-                    <li class="li itemi">
-                  <router-link
-                  class=""
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="p-2">
-                      <img src="img/product/6.jpg" class="" alt="Product" />
-                      <div class="row p-1">
-                        <div class="content col-12">
-                          <p class="text-lg text-dark"> Product name</p>
-                          <p>New</p>
-                          <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                          <p>Free P&P</p>
-                          <p class="font-weight-bold text-dark">12 sold</p>
-                        </div>
-                        <div class="col-6">
-                          <span class="text align-text-bottom">location</span>
-                        </div>
-                        <div class="col-6 justify-content-end text-right">
-                          <span class="text align-text-bottom item-right"
-                            ><i class="fa fa-lg fa-heart-o"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </router-link>
-                  </li>
-                    <li class="li itemi">
-                  <router-link
-                  class=""
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="p-2">
-                      <img src="img/product/8.jpg" class="" alt="Product" />
-                      <div class="row p-1">
-                        <div class="content col-12">
-                          <p class="text-lg text-dark"> Product name</p>
-                          <p>New</p>
-                          <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                          <p>Free P&P</p>
-                          <p class="font-weight-bold text-dark">12 sold</p>
-                        </div>
-                        <div class="col-6">
-                          <span class="text align-text-bottom">location</span>
-                        </div>
-                        <div class="col-6 justify-content-end text-right">
-                          <span class="text align-text-bottom item-right"
-                            ><i class="fa fa-lg fa-heart-o"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </router-link>
-                  </li>
-                    <li class="li itemi">
-                  <router-link
-                  class=""
-                    to="/Product Detail"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Home"
-                  >
-                    <div class="p-2">
-                      <img src="img/product/3.jpg" class="" alt="Product" />
-                      <div class="row p-1">
-                        <div class="content col-12">
-                          <p class="text-lg text-dark"> Product name</p>
-                          <p>New</p>
-                          <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                          <p>Free P&P</p>
-                          <p class="font-weight-bold text-dark">12 sold</p>
-                        </div>
-                        <div class="col-6">
-                          <span class="text align-text-bottom">location</span>
-                        </div>
-                        <div class="col-6 justify-content-end text-right">
-                          <span class="text align-text-bottom item-right"
-                            ><i class="fa fa-lg fa-heart-o"></i>
-                          </span>
-                        </div>
-                      </div>
-                    </div>
-                  </router-link>
-                  </li>
-       
-       
-      </div>
+        <div class="ul gs full">
+          <li class="li itemi">
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/10.jpg" class="" alt="Product" />
+                <div class="row p-1">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark">Product name</p>
+                    <p>New</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p>Free P&P</p>
+                    <p class="font-weight-bold text-dark">12 sold</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+          </li>
+          <li class="li itemi">
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/2.jpg" class="" alt="Product" />
+                <div class="row p-1">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark">Product name</p>
+                    <p>New</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p>Free P&P</p>
+                    <p class="font-weight-bold text-dark">12 sold</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+          </li>
+          <li class="li itemi">
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/4.jpg" class="" alt="Product" />
+                <div class="row p-1">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark">Product name</p>
+                    <p>New</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p>Free P&P</p>
+                    <p class="font-weight-bold text-dark">12 sold</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+          </li>
+          <li class="li itemi">
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/15.jpg" class="" alt="Product" />
+                <div class="row p-1">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark">Product name</p>
+                    <p>New</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p>Free P&P</p>
+                    <p class="font-weight-bold text-dark">12 sold</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+          </li>
+          <li class="li itemi">
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/13.jpg" class="" alt="Product" />
+                <div class="row p-1">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark">Product name</p>
+                    <p>New</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p>Free P&P</p>
+                    <p class="font-weight-bold text-dark">12 sold</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+          </li>
+          <li class="li itemi">
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+                <img src="img/product/16.jpg" class="" alt="Product" />
+                <div class="row p-1">
+                  <div class="content col-12">
+                    <p class="text-lg text-dark">Product name</p>
+                    <p>New</p>
+                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+                    <p>Free P&P</p>
+                    <p class="font-weight-bold text-dark">12 sold</p>
+                  </div>
+                  <div class="col-6">
+                    <span class="text align-text-bottom">location</span>
+                  </div>
+                  <div class="col-6 justify-content-end text-right">
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </router-link>
+          </li>
+        </div>
     </section>
   </div>
 </template>

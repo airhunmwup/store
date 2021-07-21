@@ -209,11 +209,11 @@
 
     <div v-if="loading" id="page-preloader" class="redit">
         <div class="page-loading">
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
-            <div class="dot"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold">R</div>
+            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
+            <div class="dot text-center text-danger font-italic font-extrabold">J</div>
+            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
+            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
         </div>
     </div>
   </div>

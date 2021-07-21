@@ -22,7 +22,7 @@
       </ul>
     </div>
 
-    <ul class="hax d-xs-none -lg">
+    <ul class="hax shadow">
       <li class="">
         <a href="#">
           <img
@@ -48,7 +48,7 @@
     <div class="main-content">
       <!-- main -->
 
-      <div class="appion">
+      <div class="appion shadow">
         <div class="col-12">
           <p class="h3 text-dark">Newly listed</p>
           <p class="text-dark text-right">
@@ -89,8 +89,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -119,8 +119,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -149,8 +149,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -179,8 +179,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -209,8 +209,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -239,8 +239,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -283,8 +283,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -313,8 +313,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -343,8 +343,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -373,8 +373,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -403,8 +403,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -433,8 +433,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -445,13 +445,7 @@
       </div>
       <!--search history go display under here , stuff way he don check before-->
 
-      <div class="appion">
-        <div class="col-12">
-          <p class="text-dark text-right">
-            <b class=""> see all </b>
-            <b class="fa fa-caret-square-o-right"></b>
-          </p>
-        </div>
+      <div class="appion shadow">
         <!-- breadcrumb -->
         <div class="ul gs full">
           <li class="li itemi">
@@ -476,8 +470,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -506,8 +500,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -536,8 +530,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -566,8 +560,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -596,8 +590,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -626,8 +620,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -669,8 +663,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -699,8 +693,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -729,8 +723,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -759,8 +753,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -789,8 +783,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -819,8 +813,8 @@
                     <span class="text align-text-bottom">location</span>
                   </div>
                   <div class="col-6 justify-content-end text-right">
-                    <span class="text align-text-bottom item-right"
-                      ><i class="fa fa-lg fa-heart-o"></i>
+                    <span class="text-xs text-success align-text-bottom item-right"
+                      ><p class="text-center">3</p>in stock
                     </span>
                   </div>
                 </div>
@@ -940,7 +934,7 @@
                         </li>
                         <li>
                           <router-link
-                            to="/managing_returns_missing_items_and_refunds_for_sellers"
+                            to="/managing returns missing items and refunds for sellers"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             >REJEE Returns</router-link

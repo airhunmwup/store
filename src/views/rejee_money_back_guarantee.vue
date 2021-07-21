@@ -5,15 +5,11 @@
   <div id="home4">
     <div class="main-content pt-4">
       <div id="wrapper-site">
-        <div id="content-wrapper">
           <div id="main">
             <div class="page-home">
               <!-- breadcrumb -->
-              <div class="container">
                 <!-- main content -->
-                <div class="main-content">
                   <div id="wrapper-site">
-                    <div id="content-wrapper">
                       <section class="page-home">
                         <div class="container">
                           <div class="row">
@@ -104,16 +100,11 @@
                           </div>
                         </div>
                       </section>
-                    </div>
                   </div>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
 
         <section class="box">
-          <div class="container">
             <div class="row">
               <div class="col-lg-6 col-md-6 pt-5 pl-5 col-sm-6">
                 <p class="text-dark h1 font-weight-bold">
@@ -130,7 +121,7 @@
             </div>
 
             <div class="container row pt-5">
-              <div class="col-lg-4 col-md-4 col-sm-8 shadow-lg">
+              <div class="col-lg-4 col-md-4 p-4 col-sm-8 shadow-lg">
                 <h1 class="h1 text-primary">1</h1>
                 <p class="h4 text-primary">Start Your Return</p>
                 <p class="text font-weight-bold">
@@ -138,7 +129,7 @@
                   My REJEE.
                 </p>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-8 shadow-md">
+              <div class="col-lg-4 col-md-4 p-4 col-sm-8 shadow-md">
                 <h1 class="h1 text-primary">2</h1>
                 <p class="h4 text-primary">Ship the Item Back</p>
                 <p class="text font-weight-bold">
@@ -146,7 +137,7 @@
                   using their preferred return method.
                 </p>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-8 shadow">
+              <div class="col-lg-4 col-md-4 p-4 col-sm-8 shadow">
                 <h1 class="h1 text-primary">3</h1>
                 <p class="h4 text-primary">Receive Your Refund</p>
                 <p class="text font-weight-bold">
@@ -170,13 +161,11 @@
                     text-left
                   "
                 >
-                  <div class="col-lg-8 col-md-8 col-sm-8 col-xs-8">
                     <h1 class="h1 text-primary">REJEE Customer Service</h1>
                     <p class="text-md text">
                       Have a question? Need to resolve an issue? We’re here to
                       help! Customer service is available seven days a week.
                     </p>
-                  </div>
                 </div>
 
                 <div class="col-lg-3 col-md-3 col-sm-3 col-xs-3 text-center">
@@ -187,7 +176,6 @@
                 </div>
               </div>
             </div>
-          </div>
         </section>
       </div>
     </div>

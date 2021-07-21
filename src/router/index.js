@@ -265,7 +265,7 @@ const routes = [{
         component: resolving_unpaid_item_with_buyer,
     },
     {
-        path: '/Managing returns missing items and refunds for sellers',
+        path: '/managing returns missing items and refunds for sellers',
         name: 'Managing returns missing items and refunds for sellers',
         component: managing_returns_missing_items_and_refunds_for_sellers,
     },

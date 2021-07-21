@@ -3,39 +3,33 @@
 
   <!-- main content -->
   <div id="home4">
-    <div class="main-content pt-4">
-      <div id="wrapper-site">
         <div id="content-wrapper">
           <div id="main">
             <div class="page-home">
               <!-- breadcrumb -->
-              <div class="container">
-      <div class="container justify-content-center content-bottom">
+      <div class="container justify-content-center font-weight-bold content-bottom">
 
                   <span class="p-2 text-primary font-weight-normal">
                   Home
                   </span>>
-                  <span class="text text-primary pont-weight-normal">
+                  <span class="text text-primary font-weight-normal">
                   Resolution center
                   </span>>
-                  <span class="text font-weight-bold pont-weight-normal">
+                  <span class="text font-weight-bold">
                   Resolving unpaid items with buyers
                   </span>
       </div>
-                <div class="content">
                   <!-- main content -->
                   <div class="main-content">
-                                <p class="p-5 h1 text-dark">Customer service</p>
-                    <div id="wrapper-site">
-                      <div id="content-wrapper">
-                        <section class="page-home">
-                          <div class="container">
-                            <div class="row">
-                              <div class="col-lg-12 pt-5 pl-5 col-sm-12"  style="background-color: orange;">
-                                <small class="pl-4 text-primary">2 min Overview</small>
+                                <p class="p-4 h1 text-dark">Customer service</p>
+                              <div class="col-lg-12 pt-4 pl-5 pb-3 col-sm-12"  style="background-color: orange;">
+                                <small class="pl-4 text-primary font-weight-bold">2 min Overview</small>
                                 <h1 class="title-page pl-5">Resolving unpaid items with buyers</h1>
 
                               </div>
+                        <section class="page-home">
+                          <div class="container">
+                            <div class="row">
                               <br>
                               <div class="col-lg-12 pt-3 col-sm-12">
 
@@ -124,25 +118,10 @@
                             </div>
                           </div>
                         </section>
-                      </div>
-                    </div>
                   </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
                       <hr>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      footerText: "Copyright REJEE.co.uk 2021",
-    };
-  },
-};
-</script>

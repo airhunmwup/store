@@ -4,41 +4,37 @@
   <!-- main content -->
   <div id="home4">
     <div class="main-content pt-4">
-      <div class="container justify-content-center content-bottom">
+      <div class="container justify-content-center  font-weight-bold content-bottom">
 
                   <span class="p-2 text-primary font-weight-normal">
                   Home
                   </span>>
-                  <span class="text text-primary pont-weight-normal">
+                  <span class="text text-primary font-weight-normal">
                   Help
                   </span>>
-                  <span class="text  text-primary  pont-weight-normal">
+                  <span class="text  text-primary  font-weight-normal">
                   selling
                   </span>>
-                  <span class="text font-weight-bold pont-weight-normal">
+                  <span class="text font-weight-bold font-weight-normal">
                   Creating a listing
                   </span>
       </div>
       <div id="wrapper-site">
-        <div id="content-wrapper">
           <div id="main">
             <div class="page-home">
               <!-- breadcrumb -->
-              <div class="container">
-                <div class="content">
                   <!-- main content -->
-                  <div class="main-content">
                     <div id="wrapper-site">
                       <div id="content-wrapper">
                         <section class="page-home">
                           <div class="container">
                             <div class="row">
                               <div class="col-lg-10 pt-5 pl-5 pb-4 col-sm-10">
-                                <small class="pl-4 text-primary">3 min article</small>
-                                <p class="h1 font-weight-bold text-dark pl-5">Creating a listing</p>
+                                <small class="pl-4 text-primary font-weight-bold">3 min article</small>
+                                <p class="h1 font-weight-bold text-dark ">Creating a listing</p>
                               </div>
                               <hr>
-                              <div class="col-lg-4 col-sm-4 pb-3">
+                              <div class="col-lg-4 col-sm-4 underline pb-3">
                                 <ul class="font-weight-bold pt-3">
                                     <li class="text-primary p-2"><a href="#getting-started">Getting Started</a></li>
                                     <li class="text-primary p-2"><a href="#item-description">Item description</a></li>
@@ -185,12 +181,8 @@
                         </section>
                       </div>
                     </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
       </div>
     </div>
   </div>
