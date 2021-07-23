@@ -20,6 +20,7 @@ import productDetails from '../views/buyers/productDetails.vue'
 import checkOutPage from '../views/buyers/checkOutPage.vue'
 import productcart from '../views/buyers/productCart.vue'
 import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
+import checkOutPagepayment from '../views/buyers/checkoutPagePayment.vue'
 import userAgreementPage from '../views/userAgreementPage.vue'
 import userPrivacy from '../views/userPrivacy.vue'
 import cookiePolicy from '../views/cookiePolicy.vue'
@@ -174,6 +175,11 @@ const routes = [{
         path: '/Checkout',
         name: 'CheckOut',
         component: checkOutPage,
+    },
+    {
+        path: '/checkoutpayment',
+        name: 'CheckOutPayment',
+        component: checkOutPagepayment,
     },
     {
         path: '/checkoutAddress',
