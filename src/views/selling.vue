@@ -4,24 +4,21 @@
   <!-- main content -->
   <div id="home4">
               <!-- breadcrumb -->
-              <div class="container">
-      <div class="container justify-content-center content-bottom">
+      <div class="container justify-content-center font-weight-bold content-bottom">
 
                   <span class="p-2 text-primary font-weight-normal">
                   Home
                   </span>>
-                  <span class="text text-primary pont-weight-normal">
+                  <span class="text text-primary font-weight-normal">
                   Help
                   </span>>
-                  <span class="text font-weight-bold pont-weight-normal">
+                  <span class="text font-weight-bold">
                   selling
                   </span>
       </div>
-              </div>
               
-                                <p class="p-5 h1 text-dark">Customer service</p>
+                                <p class="p-4 h1 text-dark">Customer service</p>
                         <section class="page-home">
-                          <div class="container">
                             <div class="row">
                               <div class="col-lg-12 p-5 col-sm-12 text-center font-weight-bolder text-primary"  style="background-color: #a5cee0;">
                                 <span><i class="fa fa-tag fa-xl text-3xl"></i> </span><span class="h1"> Selling</span>
@@ -33,7 +30,7 @@
                                   <div class="col-lg-4 pt-5 col-md-4 col-sm-6 ">
                                       <br>
                                       <br>
-  <span class="h4 font-weight-bold text-light align-text-bottom pt-4">Top selling articles for you </span><span class="h2 pl-4"> <i class="fa fa-2xl d-xs-none text-light fa-hand-o-right"></i><i class="fa fa-2xl d-lg-none d-md-none d-sm-none text-light fa-hand-o-down"></i></span>
+  <span class="h4 font-weight-bold text-light align-text-bottom pl-3 pt-4">Top selling articles for you </span><span class="h2 pl-4"> <i class="fa fa-2xl d-xs-none text-light fa-hand-o-right"></i><i class="fa fa-2xl d-lg-none d-md-none d-sm-none text-light fa-hand-o-down"></i></span>
                                     </div>
                                     <div class="col-lg-4 p-3 col-md-4 col-sm-6 ">
                                         <router-link
@@ -94,7 +91,6 @@
                                   </div>
                             </div>
                             </div>
-                          </div>
                         </section>
                       <hr>
   </div>

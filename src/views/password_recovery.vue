@@ -9,7 +9,8 @@
         <div class="container align-content-center">
           <div class="register-form text-center">
             <div class="pb-5">
-              <p class="h4 text-dark">Change Password</p>
+              <p class="h4 text-dark">Password Recovery</p>
+              <p class="text-dark">Enter email address associated with your REJEE account.</p>
 
             </div>
 
@@ -21,20 +22,9 @@
                       col-lg-6 col-md-6 col-sm-6
                       border-b border-dark border-t-0 border-l-0 border-r-0
                     "
-                    name="password"
-                    type="password"
-                    placeholder="New Password"
-                  />
-                </div>
-                <div class="form-group p-2">
-                  <input
-                    class="
-                      col-lg-6 col-md-6 col-sm-6
-                      border-b border-dark border-t-0 border-l-0 border-r-0
-                    "
-                    name="password"
-                    type="password"
-                    placeholder="Confirm Password"
+                    name="email"
+                    type="email"
+                    placeholder=" Email"
                   />
                 </div>
 
@@ -45,7 +35,7 @@
                     class="col-lg-6 col-md-6 col-sm-6 btn text-light"
                     style="background-color: rgb(209, 209, 208)"
                   >
-                    Submit
+                    Send
                   </button>
                 </div>
               </div>

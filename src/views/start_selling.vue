@@ -5,17 +5,14 @@
   <div id="home4">
     <div class="main-content pt-4">
       <div id="wrapper-site">
-        <div id="content-wrapper">
           <div id="main">
             <div class="page-home">
               <!-- breadcrumb -->
-              <div class="container">
                 <!-- main content -->
-                <div class="main-content">
                   <div id="wrapper-site">
                     <div id="content-wrapper">
                       <section class="page-home">
-                        <div class="container p-4">
+                        <div class="p-4">
 
                 <p class="text-primary h1 pl-5 font-weight-bold">
                 Start selling
@@ -27,9 +24,9 @@
                 </p>
                 <p class="text">Here’s what you need to know to get started.</p>
               </div>
-              <div class="col-lg-6 col-md-6 pt-5 pl-5 col-sm-6"></div>
+              <div class="col-lg-6 col-md-6 pt-3 col-sm-6"></div>
             </div>
-            <div class="container row pt-5">
+            <div class="row pt-4">
               <div class="col-lg-4 col-md-4 border-r-2 col-sm-8">
                 <h1 class="h3 text-info">1</h1>
                 <p class="h4 text-dark">It’s free to list</p>
@@ -56,16 +53,13 @@
                       </section>
                     </div>
                   </div>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
 
         <section class="box">
           <div class="container">
             <div class="row">
-              <div class="col-lg-6 col-md-6 pt-5 pl-5 col-sm-6">
+              <div class="col-lg-6 col-md-6 pt-3 pl-5 col-sm-6">
                 <p class="text-dark h1 font-weight-bold">
                 Create a great listing
                 </p>
@@ -74,7 +68,7 @@
               <div class="col-lg-6 col-md-6 pt-5 pl-5 col-sm-6"></div>
             </div>
 
-            <div class="container row pt-5">
+            <div class="row pt-3">
               <div class="ol-lg-6 col-md-6 col-sm-6 p-3 shadow-lg">
                 <h1 class="h1 text-info">1</h1>
                 <p class="h4 text-primary">Writing a relevant title</p>

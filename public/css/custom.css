@@ -20,8 +20,20 @@
 
 .hax {
     padding-top: 0px;
-    height: 185px;
+    height: 205px;
     width: 100%;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: calc(50% - var(--gutter) * auto);
+    overflow-x: scroll;
+    scroll-snap-type: x proximity;
+    padding-top: 0px
+}
+
+.gax {
+    padding-top: 0px;
+    height: 205px;
+    width: 150px;
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: calc(50% - var(--gutter) * auto);
@@ -78,6 +90,23 @@
     background: #fff;
     border-color: rgb(233, 224, 212);
     width: 150px;
+}
+
+.lix {
+    scroll-snap-align: center;
+    padding: calc(var(--gutter) / 3 * 1.5);
+    display: fixed;
+    flex-direction: column;
+    font-size: small;
+    align-items: center;
+    background: #fff;
+    border-color: rgb(233, 224, 212);
+    width: 150px;
+}
+
+.lix,
+.malami {
+    width: 230px;
 }
 
 
@@ -1562,4 +1591,27 @@ tr:nth-child(even) {
 .redit {
     background-color: rgba(0, 0, 0, 0.4);
     opacity: 0.9;
+}
+
+opacity: 0.9;
+
+}
+background-color: rgba(0, 0, 0, 0.4);
+opacity: 0.9;
+
+}
+opacity: 0.9;
+
+}
+opacity: 0.9;
+
+}
+opacity: 0.9;
+
+}
+opacity: 0.9;
+
+}
+opacity: 0.9;
+
 }

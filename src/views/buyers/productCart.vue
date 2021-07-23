@@ -7,7 +7,7 @@
                                     <p class="h3 text-dark">Your Cart</p>
                                                 <div class="summary-label">There are 2 item in your cart</div>
                                          
-                                <div class="col-md-9  col-xs-12 col-sm-12 check-info">
+                                <div class="col-md-8  col-xs-12 col-sm-12 check-info">
                                     <div class="cart-container">
                                             <ul class="cart-items">
                                                 <li class="cart-item p-3">
@@ -99,46 +99,61 @@
                                             </ul>
                                     </div>
                                 </div>
-                                <div class="col-xs-12 col-md-3 col-lg-3">
+                                <div class="col-xs-12 col-lg-4 col-md-4">
                                         <div class="border p-3">
-                                            <div class="text-dark p-2 cart-summary-line">
-                                                <span class="font-weight-bold">
-                                                    Total products:
-                                                </span>
-                                                <span class="value"> £200.00</span>
-                                            </div>
-                                            <div class="text-dark p-2 cart-summary-line">
-                                                <span class="font-weight-bold">
-                                                    Total Shipping:
-                                                </span>
-                                                <span class="value"> Free</span>
-                                                <div>
-                                                    <small class="value"></small>
+                                            
+                                        <table class="std">
+                                          <tbody>
+                                            <tr>
+                                              <td colspan="3" >
+                                                <div class="text-dark font-weight-bold">
+                                                  <a href="product-detail.html"
+                                                    >Organic Strawberry Fruits</a
+                                                  >
                                                 </div>
-                                            </div>
-                                            <hr>
-                                            <div class="text-dark text-lg text-right pt-3 cart-total">
-                                                <span class="font-weight-bold">Total:</span>
-                                                <span class="value"> £200.00 </span>
-                                                <p class="text-sm">(tax incl.)</p>
-                                            </div>
-                                            <div class="p-3">
-                                            <router-link
-                                to="/Checkout"
-                                class="text-center"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Home"
-                              >
-                                <button
-                                  class="text-center align-content-center text-sm btn-lg col-lg-12 col-md-12 col-sm-12 btn btn-warning form-control add-to-cart"
-                                  data-button-action="add-to-cart"
-                                  type="submit"
-                                >
-                                  Check Out
-                                </button></router-link
-                              >
-                                        </div>
+                                                <div>
+                                                  2 x
+                                                  <span class="product-price">£28.98</span>
+                                                </div>
+                                                </td>
+                                                <td class="action text-right">
+                                                <a class="remove" href="#">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </a>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                              <td colspan="3" >
+                                                <div class="text-dark font-weight-bold">
+                                                  <a href="product-detail.html"
+                                                    >Organic Strawberry Fruits</a
+                                                  >
+                                                </div>
+                                                <div>
+                                                  2 x
+                                                  <span class="product-price">£28.98</span>
+                                                </div>
+                                                </td>
+                                                <td class="action text-right">
+                                                <a class="remove" href="#">
+                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
+                                                </a>
+                                                </td>
+                                            </tr>
+                                            <tr class="total font-weight-bold h5 text-dark">
+                                              <td class="p-3" colspan="2">Total:</td>
+                                              <td class="p-3" colspan="2">£92.96</td>
+                                            </tr>
+                                            <tr>
+                                              <td  colspan="6" class="">
+                                                  <span class="justify-content-center">
+                                                  <button class="form-control text-white btn-success">Pay</button>
+                                                  </span>
+                                                  </td>
+                                            </tr>
+
+                                          </tbody>
+                                        </table>
                                         </div>
                                 </div>
                             </div>

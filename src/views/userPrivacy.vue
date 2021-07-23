@@ -4,13 +4,18 @@
   <!-- main content -->
   <div id="home4">
     <div class="main-content pt-4">
-      <div id="wrapper-site">
-        <div id="content-wrapper">
+      <div class="container justify-content-center  font-weight-bold content-bottom">
+
+                  <span class="p-2 text-primary font-weight-normal">
+                  Home
+                  </span>>
+                  <span class="text font-weight-bold font-weight-normal">
+                  User Privacy Notices
+                  </span>
+      </div>
           <div id="main">
             <div class="page-home">
               <!-- breadcrumb -->
-              <div class="container">
-                <div class="content">
                   <!-- main content -->
                   <div class="main-content">
                     <div id="wrapper-site">
@@ -18,11 +23,11 @@
                         <section class="page-home">
                           <div class="container">
                             <div class="row">
-                              <div class="col-lg-10 pt-5 pl-5 col-sm-10">
-                                <small class="pl-4 text-primary">10 min article</small>
-                                <h1 class="title-page pl-5">User Privacy Notices</h1>
+                              <div class="col-lg-10 pt-4 pl-5 col-sm-10">
+                                <small class="pl-4 text-primary font-weight-bold">10 min article</small>
+                                <h1 class="title-page pl-3">User Privacy Notices</h1>
                               </div>
-                              <div class="col-lg-4 col-sm-4 pb-3">
+                              <div class="col-lg-4 col-sm-4 underline pb-3">
                                 <ul class="pt-3">
                                     <li class="text-primary"><a href="#Introduction">1. Scope and updates of this User Privacy Notice</a></li>
                                     <li class="text-primary"><a href="#About REJEE">2. Controller</a></li>
@@ -896,21 +901,8 @@
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
             </div>
           </div>
-        </div>
-      </div>
     </div>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      footerText: "Copyright REJEE.co.uk 2021",
-    };
-  },
-};
-</script>

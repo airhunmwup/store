@@ -49,6 +49,7 @@ import Summary from '../views/buyers/summary.vue'
 import resolution_center from '../views/resolution_center.vue'
 import resolut_Center from '../views/resolut_Center.vue'
 import cancel_order from '../views/cancel_order.vue'
+import PasswordRecovery from '../views/password_recovery.vue'
 import Selling from '../views/selling.vue'
 import return_missing_item from '../views/return_missing_item.vue'
 import resolving_unpaid_item from '../views/resolving_unpaid_item.vue'
@@ -175,7 +176,7 @@ const routes = [{
         component: checkOutPage,
     },
     {
-        path: '/Checkout Address',
+        path: '/checkoutAddress',
         name: 'CheckOutAddress',
         component: checkOutPageAddress,
     },
@@ -205,9 +206,14 @@ const routes = [{
         component: editAddressPage,
     },
     {
-        path: '/Change Password',
+        path: '/changepassword',
         name: 'Change Password',
         component: changeUserPasswordPage,
+    },
+    {
+        path: '/passwordrecovery',
+        name: 'Password Recovery',
+        component: PasswordRecovery,
     },
 
     {
@@ -265,7 +271,7 @@ const routes = [{
         component: resolving_unpaid_item_with_buyer,
     },
     {
-        path: '/Managing returns missing items and refunds for sellers',
+        path: '/managing returns missing items and refunds for sellers',
         name: 'Managing returns missing items and refunds for sellers',
         component: managing_returns_missing_items_and_refunds_for_sellers,
     },

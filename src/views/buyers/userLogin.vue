@@ -58,13 +58,15 @@
                   <p class="text-danger" v-text="errors.password"></p>
                 </div>
 
-                <a
-                  href="user-reset-password.html"
-                  rel="nofollow"
-                  class="underline text-primary"
-                >
+                <router-link
+                  to="/passwordrecovery"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  class="text-primary underline font-weight-bold"
+                  title="Forget your password?"
+                  >
                   Forgot your password?
-                </a>
+                </router-link>
 
                 <div class="clearfix p-2">
                   <button
@@ -85,17 +87,13 @@
     <hr />
 
     <div v-if="loading" id="page-preloader" class="redit">
-      <div class="page-loading">
-        <div class="dot"></div>
-
-        <div class="dot"></div>
-
-        <div class="dot"></div>
-
-        <div class="dot"></div>
-
-        <div class="dot"></div>
-      </div>
+        <div class="page-loading">
+            <div class="dot text-center text-danger font-italic font-extrabold">R</div>
+            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
+            <div class="dot text-center text-danger font-italic font-extrabold">J</div>
+            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
+            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
+        </div>
     </div>
   </div>
 </template>

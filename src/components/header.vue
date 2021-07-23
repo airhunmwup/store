@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="row box">
-      <div class="col-lg-6 col-md-6 col-sm-4 h6 pl-5 pr-5">
+      <div class="col-lg-6 col-md-6 col-sm-4 h6 pl-4 pr-5">
 
         <a
           v-if="currentUser"
@@ -11,11 +11,10 @@
         > Hi {{currentUser.name}}
         </a>
         <a
-          v-else
           href="#"
-          class="text-dark text-sm dropdown-toggle"
-        >
-          Hi Sign in or register
+          class="ptext-dark text-sm text-right dropdown-toggle"
+          data-toggle="dropdown"
+        >Hi Alfie
         </a>
         <div class="dropdown-menu">
           <div
@@ -62,17 +61,57 @@
             <!-- Resolution center/-->
           </div>
         </div>
+        <a
+          
+          href="#"
+        ></a>
+        <a
+          href="#"
+          class="text-dark text-sm text-right"
+        >
+            <router-link
+              class="text-dark font-weight-bold"
+              to="/login"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="login"
+            ><i class="fa fa-user-o"></i> 
+          Hi Sign in or register
+            </router-link>
+            </a>
       </div>
       <div class="col-lg-6 col-md-6 col-sm-4 h6 text-right pl-5 pr-5">
+        
+        <a
+          v-if="token"
+          href="#"
+          class="text-dark text-sm dropdown-toggle"
+          data-toggle="dropdown"
+        > 
         <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
-          to="/Summary"
+          to="/mechantregister"
           data-toggle="collapse"
           data-target=".navbar-collapse"
-          title="summary"
+          title="sell"
         >
           SELL</router-link
         >
+        </a>
+        <a
+          v-else
+          href="#"
+        >
+        <router-link
+          class="text-dark font-weight-bold text-sm text-right pr-4"
+          to="/Creating listing"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+          title="sell"
+        >
+          SELL</router-link
+        >
+        </a>
         <a
           href="#"
           class="ptext-dark text-sm text-right dropdown-toggle"
@@ -205,30 +244,34 @@
                         </td>
                       </tr>
                       <tr class="total">
-                        <td colspan="2">Total:</td>
-                        <td>£92.96</td>
+                        <td class="p-3" colspan="2">Total:</td>
+                        <td class="p-3" colspan="2">£92.96</td>
                       </tr>
 
                       <tr>
                         <td colspan="3" class="d-flex justify-content-center">
-                          <div class="cart-button">
+                          <span class="btn p-3 text-sm justify-content-start">
                             <router-link
                               to="/View Cart"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="view Cart"
                             >
-                              View Cart</router-link
+                            <button class="form-control btn-dark text-white">
+                              View Cart</button></router-link
                             >
+                          </span>
+                          <span class="btn p-3 text-sm justify-content-end">
                             <router-link
                               to="/Checkout"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="Checkout"
                             >
-                              Checkout</router-link
+                            <button class="form-control btn-dark text-white">
+                              Checkout</button></router-link
                             >
-                          </div>
+                          </span>
                         </td>
                       </tr>
                     </tbody>
@@ -346,26 +389,30 @@
                         </tr>
 
                         <tr>
-                          <td colspan="3" class="d-flex justify-content-center">
-                            <div class="cart-button">
-                              <router-link
-                                to="/View Cart"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="View Cart"
-                              >
-                                View Cart</router-link
-                              >
-                              <router-link
-                                to="/Checkout"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Checkout"
-                              >
-                                Checkout</router-link
-                              >
-                            </div>
-                          </td>
+                        <td colspan="3" class="d-flex justify-content-center">
+                          <span class="btn p-3 text-sm justify-content-start">
+                            <router-link
+                              to="/View Cart"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="view Cart"
+                            >
+                            <button class="form-control btn-dark text-white">
+                              View Cart</button></router-link
+                            >
+                          </span>
+                          <span class="btn p-3 text-sm justify-content-end">
+                            <router-link
+                              to="/Checkout"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="Checkout"
+                            >
+                            <button class="form-control btn-dark text-white">
+                              Checkout</button></router-link
+                            >
+                          </span>
+                        </td>
                         </tr>
                       </tbody>
                     </table>
