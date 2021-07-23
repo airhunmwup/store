@@ -4,11 +4,11 @@
       <div class="col-lg-6 col-md-6 col-sm-4 h6 pl-5 pr-5">
 
         <a
-          v-if="token"
+          v-if="currentUser"
           href="#"
           class="text-dark text-sm dropdown-toggle"
           data-toggle="dropdown"
-        > Hi Alfie
+        > Hi {{currentUser.name}}
         </a>
         <a
           v-else
@@ -384,14 +384,20 @@ export default {
   data(){
     return {
       token: localStorage.getItem('token'),
-      user: localStorage.getItem('user'),
+      user: JSON.parse(localStorage.getItem('user')),
+      currentUser: false
     }
   },
   methods: {
     
   },
   mounted(){
-    console.log(this.token);
+    if(this.token){
+      this.currentUser = {};
+    }else{
+      this.currentUser = false;
+      console.log(this.currentUser);
+    }
   }
 };
 </script>

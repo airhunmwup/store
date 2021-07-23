@@ -122,10 +122,11 @@ export default {
           this.formData.email = this.formData.password = "";
           this.errors = {};
           localStorage.setItem("token", response.data.token);
-          localStorage.setItem("user", response.data);
+          localStorage.setItem("user", JSON.stringify(response.data.user));
           this.$router.push("/");
         })
         .catch((errors) => {
+          this.errors = {};
           const err = Object.keys(errors.response.data.errors);
           err.map((key) => {
             this.errors[key] = errors.response.data.errors[key][0];

@@ -244,6 +244,7 @@ export default {
           this.errors = {}
           this.$router.push('/login');
       }).catch((errors) => {
+          this.errors = {};
           const err = Object.keys(errors.response.data.errors);
           err.forEach((key)=>{
             var strError = errors.response.data.errors[key][0];
