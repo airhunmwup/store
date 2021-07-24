@@ -9,13 +9,6 @@
           class="text-dark text-sm dropdown-toggle"
           data-toggle="dropdown"
         > Hi {{currentUser.name}}
-        </a>
-        <a
-          href="#"
-          class="ptext-dark text-sm text-right dropdown-toggle"
-          data-toggle="dropdown"
-        >Hi Alfie
-        </a>
         <div class="dropdown-menu">
           <div
             class="text-sm block-content nav flex-column nav-pills"
@@ -31,7 +24,7 @@
               data-target=".navbar-collapse"
               title="summary"
             >
-              <i class="zmdi zmdi-account h4 pr-2"></i> Peter more<br />
+              <i class="zmdi zmdi-account h4 pr-2"></i> {{currentUser.name}}<br />
               User(112837)
             </router-link>
             <!-- primary info buttons ends/-->
@@ -61,11 +54,9 @@
             <!-- Resolution center/-->
           </div>
         </div>
+        </a>
         <a
-          
-          href="#"
-        ></a>
-        <a
+          v-else
           href="#"
           class="text-dark text-sm text-right"
         >
@@ -85,8 +76,7 @@
         <a
           v-if="token"
           href="#"
-          class="text-dark text-sm dropdown-toggle"
-          data-toggle="dropdown"
+          class="text-dark text-sm"
         > 
         <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
@@ -104,7 +94,7 @@
         >
         <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
-          to="/Creating listing"
+          to="/mechantregister"
           data-toggle="collapse"
           data-target=".navbar-collapse"
           title="sell"
@@ -119,7 +109,9 @@
         >
           My REJEE
         </a>
-        <div class="dropdown-menu">
+        <div
+          v-if="token"
+           class="dropdown-menu">
           <div
             class="text-md block-content nav flex-column nav-pills"
             id="v-pills-tab"
@@ -170,6 +162,40 @@
               data-target=".navbar-collapse"
             >
               Message (2)
+            </router-link>
+            <!-- Account preferences Ends/-->
+            <hr />
+            <!-- Resolution center/-->
+            <router-link
+              class="text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/Resolution center"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              ><i class="fa fa-commenting-o fa-2x pr-2"></i>
+              Support
+            </router-link>
+            <!-- Resolution center End/-->
+          </div>
+        </div>
+        <div
+          v-else
+           class="dropdown-menu">
+          <div
+            class="text-md block-content nav flex-column nav-pills"
+            id="v-pills-tab"
+            role="tablist"
+            aria-orientation="vertical"
+          >
+            <!-- primary info buttons ends/-->
+
+            <!-- Account preferences/-->
+            <router-link
+              class="text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/My message"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              Recently viewed
             </router-link>
             <!-- Account preferences Ends/-->
             <hr />
