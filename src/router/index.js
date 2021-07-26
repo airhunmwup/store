@@ -58,7 +58,7 @@ import Subscription from '../views/subscription.vue'
 import Subscription_select from '../views/subscription_select.vue'
 import Signout from '../views/signout.vue'
 
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [{
         path: '/',

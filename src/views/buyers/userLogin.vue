@@ -122,9 +122,9 @@ export default {
           localStorage.setItem("token", response.data.token);
           localStorage.setItem("user", JSON.stringify(response.data.user));
           this.$router.push("/");
-        })
-        .catch((errors) => {
+        }).catch((errors) => {
           this.errors = {};
+          console.log(errors.response.data);
           const err = Object.keys(errors.response.data.errors);
           err.map((key) => {
             this.errors[key] = errors.response.data.errors[key][0];

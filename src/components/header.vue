@@ -8,15 +8,24 @@
           href="#"
           class="text-dark text-sm dropdown-toggle"
           data-toggle="dropdown"
-        > Hi {{currentUser.name}}
+        > Hi {{currentUser.first_name}}
         </a>
         <a
+          v-else
           href="#"
-          class="ptext-dark text-sm text-right dropdown-toggle"
-          data-toggle="dropdown"
-        >Hi Alfie
-        </a>
-        <div class="dropdown-menu">
+          class="text-dark text-sm text-right"
+        >
+            <router-link
+              class="text-dark font-weight-bold"
+              to="/login"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="login"
+            ><i class="fa fa-user-o"></i> 
+          Hi Sign in or register
+            </router-link>
+            </a>
+            <div class="dropdown-menu">
           <div
             class="text-sm block-content nav flex-column nav-pills"
             id="v-pills-tab"
@@ -49,50 +58,30 @@
             <!-- Account preferences/-->
             <hr />
             <!-- Resolution center/-->
-            <router-link
+            <a
+              @click="logout"
               class="text-left pl-4 text-xs pb-2 font-weight-bold"
               to="/Signout"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
               title="sign out"
               ><i class="fa fa-sign-out fa-2x pr-2"></i>
               Sign out
-            </router-link>
+            </a>
             <!-- Resolution center/-->
           </div>
         </div>
-        <a
-          
-          href="#"
-        ></a>
-        <a
-          href="#"
-          class="text-dark text-sm text-right"
-        >
-            <router-link
-              class="text-dark font-weight-bold"
-              to="/login"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="login"
-            ><i class="fa fa-user-o"></i> 
-          Hi Sign in or register
-            </router-link>
-            </a>
       </div>
+        
+        
       <div class="col-lg-6 col-md-6 col-sm-4 h6 text-right pl-5 pr-5">
         
         <a
           v-if="token"
           href="#"
-          class="text-dark text-sm dropdown-toggle"
-          data-toggle="dropdown"
+          class="text-dark text-sm "
         > 
         <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
           to="/mechantregister"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
           title="sell"
         >
           SELL</router-link
@@ -105,14 +94,13 @@
         <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
           to="/Creating listing"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
           title="sell"
         >
           SELL</router-link
         >
         </a>
         <a
+          v-if="token"
           href="#"
           class="ptext-dark text-sm text-right dropdown-toggle"
           data-toggle="dropdown"
@@ -427,6 +415,8 @@
   </header>
 </template>
 <script>
+
+import {store} from '../main.js';
 export default {
   data(){
     return {
@@ -436,15 +426,26 @@ export default {
     }
   },
   methods: {
-    
+    logout() {
+        this.$http.post("http://localhost:8000/api/logout").then((response) => {
+            console.log(response);
+            localStorage.removeItem('token');
+            localStorage.removeItem('user');
+            this.$router.push('/Signout');
+        }).catch((errors) => {
+            console.log(errors)
+        })
+    }
   },
   mounted(){
-    if(this.token){
-      this.currentUser = {};
-    }else{
-      this.currentUser = false;
-      console.log(this.currentUser);
-    }
+    console.log(this.currentUser);
+    this.$http.defaults.headers.common[`Authorization`] = `Bearer ${this.token}`;
+    
+    this.$http.get("http://localhost:8000/api/user").then((response)=>{
+      this.currentUser = response.data;
+    }).catch((errors)=>{
+      console.log(errors);
+    })
   }
 };
 </script>

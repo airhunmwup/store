@@ -42,7 +42,7 @@ class AuthController extends Controller
         $request->user()->currentAccessToken()->delete();
 
         return [
-            'message' => 'Logged Out'
+            "message" => "You've signed out."
         ];
     }
 
