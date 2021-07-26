@@ -10,18 +10,12 @@
                   <div class="row">
                     <div class="col-md-8 check-info">
                       <div class="checkout-personal-step">
-                                            <router-link
-                                to="/Checkout"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Continue"
-                              >
-                        <h3 class="step-title p-2 info h4">
-                          PERSONAL INFORMATION
-                        </h3></router-link>
+                        <h3 class="step-title info h5">
+                          PERSONAL INFORMATION <i class="fa fa-check font-weight-normal text-success"></i>
+                        </h3>
                       </div>
                         <div class="checkout-personal-step">
-                          <h3 class="step-title text-dark  p-2 h4">
+                          <h3 class="step-title text-dark  h5">
                             Addresses.
                           </h3>
                         </div>
@@ -114,7 +108,7 @@
                               </div>
                                             <div class="p-3">
                                             <router-link
-                                to="/checkoutAddress"
+                                to="/checkoutpayment"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Continue"
@@ -132,7 +126,7 @@
                           </div>
                         </div>
                         <div class="checkout-personal-step p-2">
-                          <h3 class="step-title h4">
+                          <h3 class="step-title h5">
                              Payment.
                           </h3>
                         </div>
