@@ -8,7 +8,6 @@
           href="#"
           class="text-dark text-sm dropdown-toggle"
           data-toggle="dropdown"
-<<<<<<< HEAD
         > Hi {{currentUser.first_name}}
         </a>
         <a
@@ -27,10 +26,7 @@
             </router-link>
             </a>
             <div class="dropdown-menu">
-=======
-        > Hi {{currentUser.name}}
         <div class="dropdown-menu">
->>>>>>> 256df24fef98492fa76af09baf8ed940ba220596
           <div
             class="text-sm block-content nav flex-column nav-pills"
             id="v-pills-tab"
@@ -45,7 +41,7 @@
               data-target=".navbar-collapse"
               title="summary"
             >
-              <i class="zmdi zmdi-account h4 pr-2"></i> {{currentUser.name}}<br />
+              <i class="zmdi zmdi-account h4 pr-2"></i> {{currentUser.first_name}}<br />
               User(112837)
             </router-link>
             <!-- primary info buttons ends/-->
@@ -74,25 +70,7 @@
             <!-- Resolution center/-->
           </div>
         </div>
-<<<<<<< HEAD
-=======
-        </a>
-        <a
-          v-else
-          href="#"
-          class="text-dark text-sm text-right"
-        >
-            <router-link
-              class="text-dark font-weight-bold"
-              to="/login"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="login"
-            ><i class="fa fa-user-o"></i> 
-          Hi Sign in or register
-            </router-link>
-            </a>
->>>>>>> 256df24fef98492fa76af09baf8ed940ba220596
+            </div>
       </div>
         
         
@@ -101,11 +79,7 @@
         <a
           v-if="token"
           href="#"
-<<<<<<< HEAD
           class="text-dark text-sm "
-=======
-          class="text-dark text-sm"
->>>>>>> 256df24fef98492fa76af09baf8ed940ba220596
         > 
         <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
@@ -121,13 +95,9 @@
         >
         <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
-<<<<<<< HEAD
           to="/Creating listing"
-=======
-          to="/mechantregister"
           data-toggle="collapse"
           data-target=".navbar-collapse"
->>>>>>> 256df24fef98492fa76af09baf8ed940ba220596
           title="sell"
         >
           SELL</router-link
@@ -485,38 +455,41 @@
   </header>
 </template>
 <script>
-
-import {store} from '../main.js';
+import { store } from "../main.js";
 export default {
-  data(){
+  data() {
     return {
-      token: localStorage.getItem('token'),
-      user: JSON.parse(localStorage.getItem('user')),
-      currentUser: false
-    }
+      token: localStorage.getItem("token"),
+      user: JSON.parse(localStorage.getItem("user")),
+      currentUser: false,
+    };
   },
   methods: {
     logout() {
-        this.$http.post("http://localhost:8000/api/logout").then((response) => {
-            console.log(response);
-            localStorage.removeItem('token');
-            localStorage.removeItem('user');
-            this.$router.push('/Signout');
-        }).catch((errors) => {
-            console.log(errors)
+      this.$http
+        .post("http://localhost:8000/api/logout")
+        .then((response) => {
+          console.log(response);
+          localStorage.removeItem("token");
+          localStorage.removeItem("user");
+          this.$router.push("/Signout");
         })
-    }
+        .catch((errors) => {
+          console.log(errors);
+        });
+    },
   },
-  mounted(){
+  mounted() {
     console.log(this.currentUser);
-    this.$http.defaults.headers.common[`Authorization`] = `Bearer ${this.token}`;
-    
-    this.$http.get("http://localhost:8000/api/user").then((response)=>{
-      this.currentUser = response.data;
-    }).catch((errors)=>{
-      console.log(errors);
-    })
-  }
+    this.$http
+      .get("http://localhost:8000/api/user")
+      .then((response) => {
+        this.currentUser = response.data;
+      })
+      .catch((errors) => {
+        console.log(errors);
+      });
+  },
 };
 </script>
 
