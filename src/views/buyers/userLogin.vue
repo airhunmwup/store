@@ -64,7 +64,7 @@
                   data-target=".navbar-collapse"
                   class="text-primary underline font-weight-bold"
                   title="Forget your password?"
-                  >
+                >
                   Forgot your password?
                 </router-link>
 
@@ -87,17 +87,28 @@
     <hr />
 
     <div v-if="loading" id="page-preloader" class="redit">
-        <div class="page-loading">
-            <div class="dot text-center text-danger font-italic font-extrabold">R</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">J</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
+      <div class="page-loading">
+        <div class="dot text-center text-danger font-italic font-extrabold">
+          R
         </div>
+        <div class="dot text-center text-danger font-italic font-extrabold">
+          E
+        </div>
+        <div class="dot text-center text-danger font-italic font-extrabold">
+          J
+        </div>
+        <div class="dot text-center text-danger font-italic font-extrabold">
+          E
+        </div>
+        <div class="dot text-center text-danger font-italic font-extrabold">
+          E
+        </div>
+      </div>
     </div>
   </div>
 </template>
 <script>
+import User from "../../apis/User";
 
 export default {
   data() {
@@ -111,18 +122,17 @@ export default {
     };
   },
   methods: {
-    login() {
-      this.loading = true;
-      this.$http
-        .post("http://localhost:8000/api/login", this.formData)
-        .then((response) => {
-          console.log(response.data);
-          this.formData.email = this.formData.password = "";
-          this.errors = {};
-          localStorage.setItem("token", response.data.token);
-          localStorage.setItem("user", JSON.stringify(response.data.user));
-          this.$router.push("/");
-        }).catch((errors) => {
+  login() {
+    this.loading = true;  
+    User.login(this.formData)
+    .then((response)=>{ 
+      this.errors = {};
+      localStorage.setItem('token', response.data.token);
+      localStorage.setItem('isLoggedIn', true);
+      localStorage.setItem('currentUser', JSON.stringify(response.data.user));
+      this.$store.dispatch("login");
+      this.$router.push("/");
+    }).catch((errors) => {
           this.errors = {};
           console.log(errors.response.data);
           const err = Object.keys(errors.response.data.errors);
@@ -132,7 +142,7 @@ export default {
           console.log(this.errors);
         })
         .finally(() => (this.loading = false));
-    },
+    }
   },
 };
 </script>
