@@ -40,7 +40,7 @@
               title="summary"
             >
               <i class="zmdi zmdi-account h4 pr-2"></i>
-              {{ currentUser.first_name + " " + currentUser.last_name }}<br />
+              {{ this.$store.state.full_name }}<br />
               User(112837)
             </router-link>
 
@@ -65,10 +65,9 @@
             <!-- Resolution center/-->
 
             <a
-              
               class="text-left pl-4 text-xs pb-2 font-weight-bold"
-              
               title="sign out"
+              @click="signOut"
               ><i class="fa fa-sign-out fa-2x pr-2"></i>
               Sign out
             </a>
@@ -111,6 +110,7 @@
               to="/Summary"
               data-toggle="collapse"
               data-target=".navbar-collapse"
+              
             >
               Summary
             </router-link>
@@ -501,27 +501,27 @@
   </header>
 </template>
 <script>
-import User from "../apis/User";
 
 export default {
   data() {
     return {
-      currentUser: false,
-      loading: false,
+      loading: false
     };
   },
-  mounted() {
-    console.log(this.$store.state.currentUser);
-    this.$http.defaults.headers.common['Authorization'] = `Bearer ${this.$store.state.token}`;
-    User.getUser(this.$store.state.token)
-    .then((response)=>{ 
-      this.currentUser = response.data;
-      console.log(response.data);
-    }).catch((errors) => {
-      console.log(errors);
-    });
+  methods: {
+    login() {
+      this.$store.dispatch("userloginInfo");
+    },
+    signOut() {
+      this.$store.dispatch("logout");
+      this.$router.push("/signout");
+    }
   },
-  
+  mounted() {
+    console.log("ran...");
+    this.$http.defaults.headers.common['Authorization'] = `Bearer ${this.$store.state.token}`;
+    this.login();
+  },
 };
 </script>
 

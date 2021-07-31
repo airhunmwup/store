@@ -129,12 +129,11 @@ export default {
       this.errors = {};
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('isLoggedIn', true);
-      localStorage.setItem('currentUser', JSON.stringify(response.data.user));
       this.$store.dispatch("login");
       this.$router.push("/");
     }).catch((errors) => {
           this.errors = {};
-          console.log(errors.response.data);
+          console.log(errors.response);
           const err = Object.keys(errors.response.data.errors);
           err.map((key) => {
             this.errors[key] = errors.response.data.errors[key][0];
@@ -144,5 +143,6 @@ export default {
         .finally(() => (this.loading = false));
     }
   },
+  
 };
 </script>
