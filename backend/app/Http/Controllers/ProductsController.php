@@ -18,6 +18,7 @@ class ProductsController extends Controller
         return Products::all();
     }
 
+
     /**
      * Show the form for creating a new resource.
      *
@@ -100,5 +101,11 @@ class ProductsController extends Controller
     {
         //
         return Products::where($name, 'like', '%'.'product_name'.'%')->get();
+    }
+
+    public function newlisting()
+    {
+        //
+        return Products::orderBy('id', 'desc')->take(6)->get();
     }
 }

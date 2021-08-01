@@ -67,125 +67,31 @@
         </div>
       <!-- breadcrumb -->
         <div class="ul gs full">
-          <li class="li itemi">
-            <router-link
+          <li 
+            class="li itemi"
+            v-for="listings of newListings"
+            :key="listings.id"
+            v-bind:data-id="listings.id"
+          >
+            <a
+              v-bind:data-id="listings.id"
               class=""
-              to="/Product Detail"
               data-toggle="collapse"
               data-target=".navbar-collapse"
               title="Home"
+              @click="product_detail_link"
             >
               <div class=" p-2">
-                <img src="img/product/1.jpg" class="" alt="Product" />
+                <img v-bind:src="'img/product/' + listings.product_image1" class="" alt="Product" v-bind:data-id="listings.id"/>
                 <div class="row">
                   <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
+                    <p class="text-lg text-dark underline" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
+                    <p class="font-weight-bold text-lg text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
+                    <p class="text-dark" v-bind:data-id="listings.id">RRP: <del> £350</del></p>
                   </div>
                 </div>
               </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/2.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/3.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/5.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/6.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
+            </a>
           </li>
         </div>
       </div>
@@ -717,32 +623,42 @@
 
 <script>
 
-import axios from "axios";
+import User from "../../apis/User";
 
 export default {
   name: "landingPage",
   data() {
     return {
-      categoryList: [
-        
-      ],
+      categoryList: [],
+      newListings:[]
     };
   },
   methods: {
-    getUser(){
+    getCategoryList() {
+      User.getCategoryList().then(response => {
+      this.categoryList = response.data;
+    }).catch((errors) => {
+        console.log(errors);
+        console.log("cat list info api call error");
+      });
+    },
+    getNewListings() {
+      User.getNewListings().then(response => {
+      this.newListings = response.data;
+    }).catch((errors) => {
+        console.log(errors);
+        console.log("new listing api call error");
+      });
+    },
+    product_detail_link(event){
+      var id = event.target.getAttribute("data-id");
+      this.$store.dispatch("product_detail_page", id);
     }
-  }
-  ,
-  mounted() {
+
   },
-  async created(){
-    try{
-      const res = await axios.get('http://localhost:8000/api/category');
-     
-     this.categoryList = res.data;
-    }catch (e){
-      console.error(e);
-    }
-  }
+  mounted() {
+    this.getCategoryList();
+    this.getNewListings();
+  },
 }
 </script>

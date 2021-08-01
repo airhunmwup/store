@@ -533,3 +533,30 @@
     </section>
   </div>
 </template>
+
+<script>
+
+import User from "../../apis/User";
+
+export default {
+  name: "productDetails",
+  data() {
+    return {
+      productDetails: [],
+    };
+  },
+  methods: {
+    getProductDetails() {
+      User.product_detail_page(this.$store.state.product_detail_id).then(response => {
+        this.productDetails = response.data;
+        console.log(this.productDetails);
+      }).catch(error => {
+        console.log(error);
+      });
+    }
+  },
+  mounted() {
+    this.getProductDetails();
+  }
+}
+</script>

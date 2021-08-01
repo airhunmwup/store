@@ -1,5 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
+import router from '../router/index'
 import User from "../apis/User";
 
 Vue.use(Vuex);
@@ -10,6 +11,7 @@ export const store = new Vuex.Store({
         isLoggedIn: localStorage.getItem('isLoggedIn'),
         currentUser: "",
         full_name: "",
+        product_detail_id: "",
     },
     getters: {
         isLoggedIn: state => {
@@ -32,6 +34,11 @@ export const store = new Vuex.Store({
             state.isLoggedIn = false;
             state.currentUser = "";
             state.full_name = "";
+        },
+        product_detail_page: (state, payload) => {
+            state.product_detail_id = payload;
+            console.log(payload);
+            router.push("/productDetail");
         }
     },
     actions: {
@@ -59,6 +66,9 @@ export const store = new Vuex.Store({
                 localStorage.removeItem('isLoggedIn');
                 context.commit('logout');
             }
+        },
+        product_detail_page: (context, id ) => {
+            context.commit('product_detail_page', id);
         }
     }
 });

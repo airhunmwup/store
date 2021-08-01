@@ -162,7 +162,7 @@ const routes = [{
         component: productPage,
     },
     {
-        path: '/Product Detail',
+        path: '/productDetail',
         name: 'ProductDetail',
         component: productDetails,
     },

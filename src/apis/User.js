@@ -17,6 +17,18 @@ export default{
 
     getUser(){
         return Api().get("/user");
+    },
+
+    getCategoryList(){
+        return Api().get("/category");
+    },
+
+    getNewListings(){
+        return Api().get("/newlistings");
+    },
+
+    product_detail_page(id){
+        return Api().get("/products/" + id);
     }
 
 };
