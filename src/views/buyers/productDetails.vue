@@ -41,6 +41,15 @@
                         </div>
                       </div>
                       <ul class="product-tab nav p-2 nav-tabs d-flex">
+                      <li class="col" v-for="num in nums" :key="num">
+                          <a
+                            v-bind:href="'#item' + num"
+                            data-toggle="tab"
+                          >
+                            <img v-bind:src="'img/product/' + img['product_image' + num]" alt="img" />
+                          </a>
+                        </li>
+                      <!-- 
                         <li class="active col">
                           <a
                             href="#item1"
@@ -65,7 +74,7 @@
                           <a href="#item4" data-toggle="tab">
                             <img src="img/product/5.jpg" alt="img" />
                           </a>
-                        </li>
+                        </li> -->
                       </ul>
                       <hr>
                     </div>
@@ -74,7 +83,7 @@
                 <div class="product-info col-xs-12 col-lg-6 col-md-7 col-sm-12">
                   <div class="">
                     <div class="price-del">
-                    <span class="text-xl pb-4 text-dark"> This is where the product title goes </span>
+                    <span class="text-xl pb-4 text-dark"> {{ productDetails.product_name }} </span>
                       <span class="text-success float-right">
                         <span class="text-xs">Availability: </span>
                         <span class="check">
@@ -103,7 +112,7 @@
                                 Condition:
                               </td>
                               <td class="text-left font-weight-bold">
-                                New
+                                {{ productDetails.product_condition }}
                               </td>
                             </tr>
                             <tr class="">
@@ -131,7 +140,7 @@
                       </div>
                       <div class="clearfix border-b-0 border-t-2 border-l-2 border-r-2">
 
-                    <p class="text text-sm p-3 font-weight-bold">Price: <span class="font-weight-bold text-dark h5 border-dark pr-2"> £12.00 </span></p>
+                    <p class="text text-sm p-3 font-weight-bold">Price: <span class="font-weight-bold text-dark h5 border-dark pr-2"> £{{ productDetails.product_price }} </span></p>
                     
                                             <div class="pb-2"><router-link
                                 to="/Checkout"
@@ -266,7 +275,7 @@
                                 Brand
                               </td>
                               <td class="text-xs">
-                                Funiture
+                                {{productDetails.product_brand}}
                               </td>
                             </tr>
                             <tr>
@@ -280,7 +289,7 @@
                                 Location:
                               </td>
                               <td class="text-xs">
-                                United Kingdom
+                                {{ productDetails.product_location}}
                               </td>
                             </tr>
                             <tr>
@@ -543,20 +552,41 @@ export default {
   data() {
     return {
       productDetails: [],
+      p_id: this.$store.state.product_detail_id,
+      img: [],
+      nums: 4,
     };
   },
   methods: {
-    getProductDetails() {
-      User.product_detail_page(this.$store.state.product_detail_id).then(response => {
+    getProductDetails(pid) {
+      User.product_detail_page(pid).then(response => {
         this.productDetails = response.data;
-        console.log(this.productDetails);
+        const img = Object.keys(response.data);
+        let index = 1;
+        img.map((key) => {
+          if(key == `product_image${index}`){
+          this.img[key] = response.data[key];
+          index++;
+        }
+      });
+        console.log(this.img);
       }).catch(error => {
         console.log(error);
       });
+    },
+    getImages(){
+      const img = Object.keys(this.productDetails);
+        img.map((key) => {
+          this.img[key] = this.getProductDetails;
+      });
+      console.log(this.img)
     }
   },
   mounted() {
-    this.getProductDetails();
+    
+    this.getProductDetails(this.p_id);
+    console.log(this.productDetails);
+    console.log(this.img);
   }
 }
 </script>

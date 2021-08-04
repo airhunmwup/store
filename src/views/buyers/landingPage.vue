@@ -659,6 +659,7 @@ export default {
   mounted() {
     this.getCategoryList();
     this.getNewListings();
+    console.log(this.categoryList);
   },
 }
 </script>
