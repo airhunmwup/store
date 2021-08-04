@@ -32,6 +32,8 @@ import orders_page from '../views/sellers/orders_page.vue'
 import order_details from '../views/sellers/order_details.vue'
 import listing_page from '../views/sellers/listing_page.vue'
 import create_listing from '../views/sellers/create_listing.vue'
+import add_category from '../views/sellers/add_category.vue'
+import add_subcategory from '../views/sellers/add_subcategory.vue'
 import upload_image from '../views/sellers/upload_image.vue'
 import Account_Page from '../views/sellers/account_page.vue'
 import seller_message from '../views/sellers/message_page2.vue'
@@ -310,6 +312,16 @@ const routes = [{
         path: '/Creating listing',
         name: 'Creating listing',
         component: creating_listing,
+    },
+    {
+        path: '/addcategory',
+        name: 'addcategory',
+        component: add_category,
+    },
+    {
+        path: '/addsubcategory',
+        name: 'addsubcategory',
+        component: add_subcategory,
     },
     {
         path: '/Sellers can cancel order',

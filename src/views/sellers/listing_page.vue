@@ -364,10 +364,10 @@
                 </div>
                 <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6">
                   <router-link
-                    to="/Create Listing"
+                    to="/addcategory"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    title="listing"
+                    title="Create Listing"
                     >
                     <button class="form-control border text-primary">Create listing</button></router-link> 
                 </div>
