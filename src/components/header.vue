@@ -206,7 +206,14 @@
           </div>
         </div>
         </a>
-
+<a href="#" class="text-dark text-sm">
+          <router-link
+            class="text-dark font-weight-bold text-sm text-right p-2"
+            to="/My message"
+            title="message">
+          <i class="fa fa-envelope"></i> (0)
+          </router-link>
+        </a>
       </div>
 
       <!-- header left mobie -->

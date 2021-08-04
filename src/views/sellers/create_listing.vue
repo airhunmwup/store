@@ -42,7 +42,13 @@
                     <div class="col-lg-8 col-md-8">
                         <p class="p-3">Add at least 2 photos for this category.
 First picture - is the title picture. You can change the order of photos: just grab your photos and drag</p>
-                         <p class="p-3"><span class="h2 p-4 border"><i class="pt-2 fa fa-plus-circle fa-lg"></i></span> </p>
+                         <p class="p-3 col-lg-2 col-sm-2 col-xs-2" type="file"><span class="h2 p-4 border box" ><i class="pt-2 fa fa-plus-circle fa-lg"></i></span> </p>
+                         <div class="p-3 row col-12">
+                         <p class="col-lg-2 col-sm-4 col-xs-2 p-3"><img src="img/product/6.jpg"/></p>
+                         <p class="col-lg-2 col-sm-4 col-xs-2 p-3"><img src="img/product/8.jpg"/></p>
+                         <p class="col-lg-2 col-sm-4 col-xs-2 p-3"><img src="img/product/11.jpg"/></p>
+                         <p class="col-lg-2 col-sm-4 col-xs-2 p-3"><img src="img/product/13.jpg"/></p>
+                         </div>
                    <p class="p-3">Each picture must not exceed 5 Mb
 Supported formats are *.jpg, *.gif and *.png</p>
                     </div>
