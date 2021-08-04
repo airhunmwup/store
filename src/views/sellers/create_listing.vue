@@ -188,18 +188,6 @@ Let buyers make offers. Allowing offers increases your chance of selling by 3-7%
                 </div>
                 <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
                     <div class="col-lg-2 col-md-2">
-                        <p class="pt-3 text-dark">Sales tax</p>
-                    </div>
-                    <div class="row col-lg-8  pt-3  col-md-8">
-                        
-                    <div class="col-4">
-<p><input id="inputPounds" placeholder="%" class="col-10 form-control" type="number" oninput="taxConverter(this.value)" onchange="weightConverter(this.value)">£<span id='outputtax'></span></p>
-                    </div>
-                        <p class="text-xs p-2"><input type="checkbox" value="" name="" /> Also apply to shipping and handling costs</p>
-                    </div>
-                </div>
-                <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
-                    <div class="col-lg-2 col-md-2">
                         <p class="pt-3 text-dark">Return options</p>
                     </div>
                     <div class="row col-lg-8 col-md-8">
