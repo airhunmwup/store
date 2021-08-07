@@ -27,28 +27,21 @@
                   <div class="page-content" id="content">
                     <div class="images-container">
                       <div class="js-qv-mask tab-content border">
-                        <div id="item1" class="tab-pane fade active in show">
-                          <img src="img/product/1.jpg" alt="img" />
-                        </div>
-                        <div id="item2" class="tab-pane fade">
-                          <img src="img/product/2.jpg" alt="img" />
-                        </div>
-                        <div id="item3" class="tab-pane fade">
-                          <img src="img/product/3.jpg" alt="img" />
-                        </div>
-                        <div id="item4" class="tab-pane fade">
-                          <img src="img/product/5.jpg" alt="img" />
+                        <div v-bind:id="'item' + num" class="tab-pane fade "
+                            v-for="num in nums" :key="num" v-bind:class="activeImage(num)"
+                        >
+                          <img v-bind:src="'img/product/' + img['product_image' + num]" alt="img" />
                         </div>
                       </div>
                       <ul class="product-tab nav p-2 nav-tabs d-flex">
                       <li class="col" v-for="num in nums" :key="num">
-                          <a
-                            v-bind:href="'#item' + num"
-                            data-toggle="tab"
+                        <a
+                          v-bind:href="'#item' + num"
+                          data-toggle="tab"
                           >
                             <img v-bind:src="'img/product/' + img['product_image' + num]" alt="img" />
                           </a>
-                        </li>
+                      </li>
                       <!-- 
                         <li class="active col">
                           <a
@@ -580,6 +573,13 @@ export default {
           this.img[key] = this.getProductDetails;
       });
       console.log(this.img)
+    },
+    activeImage(id){
+      if(id == 1){
+        return "active in show"
+      }else{
+        return ""
+      }
     }
   },
   mounted() {
