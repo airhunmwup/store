@@ -9,20 +9,7 @@
           data-toggle="dropdown"
         >
           Hi {{ this.$store.state.currentUser.first_name }}
-        </a>
-
-        <a v-else href="#" class="text-dark text-sm text-right">
-          <router-link
-            class="text-dark font-weight-bold"
-            to="/login"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="login"
-            ><i class="fa fa-user-o"></i> 
-            <a >Hi Sign in or register</a>
-          </router-link>
-        </a>
-
+          
         <div class="dropdown-menu">
           <div
             class="text-sm block-content nav flex-column nav-pills"
@@ -33,7 +20,7 @@
             <!-- primary info buttons -->
 
             <router-link
-              class="text-left text-dark pl-4 text-xs pb-2 font-weight-bold"
+              class="text-left text-dark p-4 text-xs font-weight-bold"
               to="/Summary"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -45,7 +32,6 @@
             </router-link>
 
             <!-- primary info buttons ends/-->
-
             <!-- Account preferences/-->
 
             <router-link
@@ -57,27 +43,37 @@
             >
               Account settings
             </router-link>
+            
+<hr>
 
-            <!-- Account preferences/-->
-
-            <hr />
-
-            <!-- Resolution center/-->
-
-            <a
-              class="text-left pl-4 text-xs pb-2 font-weight-bold"
+        <a
+              class="text-left text-dark pt-3 pl-4 text-xs pb-2 font-weight-bold"
+              data-toggle="collapse"
               title="sign out"
               @click="signOut"
-              ><i class="fa fa-sign-out fa-2x pr-2"></i>
+            ><i class="fa fa-sign-out fa-2x pr-2"></i>
               Sign out
-            </a>
-
-            <!-- Resolution center/-->
+         </a>
+            <!-- Account preferences/-->
           </div>
         </div>
+        </a>
+
+        <a v-else href="#" class="text-dark text-sm text-right">
+          <router-link
+            class="text-dark font-weight-bold"
+            to="/login"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="login"
+            ><i class="fa fa-user-o"></i> 
+            <a > Hi Sign in or register</a>
+          </router-link>
+        </a>
+
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-4 h6 text-right pl-5 pr-5">
+      <div class="col-lg-6 col-md-6 col-sm-6 h6 justify-content-end text-right pl-5 pr-5">
         <a href="#" class="text-dark text-sm">
           <router-link
             class="text-dark font-weight-bold text-sm text-right pr-4"
@@ -88,14 +84,11 @@
         </a>
 
         <a
-          v-if="this.$store.state.isLoggedIn"
           href="#"
-          class="ptext-dark text-sm text-right dropdown-toggle"
+          class="text-dark text-sm text-right dropdown-toggle"
           data-toggle="dropdown"
         >
           My REJEE
-        </a>
-
         <div v-if="this.$store.state.isLoggedIn" class="dropdown-menu">
           <div
             class="text-md block-content nav flex-column nav-pills"
@@ -212,6 +205,15 @@
             <!-- Resolution center End/-->
           </div>
         </div>
+        </a>
+<a href="#" class="text-dark text-sm">
+          <router-link
+            class="text-dark font-weight-bold text-sm text-right p-2"
+            to="/My message"
+            title="message">
+          <i class="fa fa-envelope"></i> (0)
+          </router-link>
+        </a>
       </div>
 
       <!-- header left mobie -->
@@ -230,9 +232,9 @@
       >
         <!-- logo -->
 
-        <div class="mobile-logo">
+        <div class="mobile-logo pb-3">
           <img
-            class="logo-mobile img-fluid"
+            class="logo-mobile img-fluid "
             src="img/home/logo.png"
             width="30%"
             alt="REJEE COMPANY"
@@ -326,7 +328,7 @@
 
       <!-- search -->
 
-      <form method="post" class="std pt-2" id="customer-form">
+      <form method="post" class="std pt-3" id="customer-form">
         <div class="input-group">
           <input
             type="text"
@@ -357,7 +359,7 @@
         <div class="row">
           <!-- logo -->
 
-          <div class="col-sm-2 col-md-2 col-lg-2 align-items-center">
+          <div class="col-sm-2 col-md-2 col-lg-2 pb-2 align-items-center">
             <div id="logo">
               <a href="index.html">
                 <img class="img-fluid" src="img/home/logo.png" alt="logo" />

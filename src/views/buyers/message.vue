@@ -14,37 +14,85 @@
             class="text-primary"
             title="Home Page"
             >homepage</router-link></span>
-        <div class="content sidebar-block">
-          <div class="text-base">
-            <div class="pt-2 pl-5">
-              <span class="font-weight-bold text-dark h3"> My REJEE</span>
-              <span class="text-dark text-sm"> UserID (0)</span>
+<div class="dropdown pt-2 d-lg-none text-right h6 d-md-none justify-content-end pl-5">
+  <a href="#" class="text-primary pr-4 underline justify-content-end dropdown-toggle" data-toggle="dropdown">
+    Menu
+  </a>
+  <div class="dropdown-menu">
+
+            <div class="cateTitle hasSubCategory pl-2 open level1">
+              <p class="p-2 text-dark">Inbox</p>
+              <div
+                class="block-content nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="pl-4 p-1 text-primary active me-3"
+                  id="v-pills-inbox1-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-inbox1"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-inbox1"
+                  aria-selected="true"
+                >
+                  All messages (2)
+                </button>
+                <button
+                  class="pl-4 p-1 text-primary me-3"
+                  id="v-pills-inbox2-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-inbox2"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-inbox2"
+                  aria-selected="false"
+                >
+                  From REJEE (1)
+                </button>
+
+                <button
+                  class="text-left text-dark p-2"
+                  id="v-pills-sent-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-sent"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-sent"
+                  aria-selected="true"
+                >
+                  Sent
+                </button>
+                <button
+                  class="text-left text-dark p-2"
+                  id="v-pills-trash-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-trash"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-trash"
+                  aria-selected="true"
+                >
+                  Trash
+                </button>
+                <button
+                  class="text-left text-dark p-2"
+                  id="v-pills-Archive-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Archive"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Archive"
+                  aria-selected="true"
+                >
+                  Archive
+                </button>
+              </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </div>
-              <div class="row pl-3">
-                <div class="container">
-                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12 ">
-          <router-link
-            to="/Summary"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-3"
-            title="Home Page"
-            ><span>Activity</span></router-link
-          >
-          <span class="p-3 text-primary border-primary border-b-4">Message (2)</span>
-          <router-link
-            to="/account"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-3"
-            title="Account"
-            ><span>Account</span></router-link
-          >
-        </div>
+  </div>
+</div>
       </div>
     </div>
     <div class="row">
@@ -127,85 +175,6 @@
         </div>
       </div>
 
-<div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-end pl-5">
-  <a href="#" class="text-primary underline justify-content-end dropdown-toggle" data-toggle="dropdown">
-    Menu
-  </a>
-  <div class="dropdown-menu">
-
-            <div class="cateTitle hasSubCategory pl-2 open level1">
-              <p class="p-2 text-dark">Inbox</p>
-              <div
-                class="block-content nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                <button
-                  class="pl-4 p-1 text-primary active me-3"
-                  id="v-pills-inbox1-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-inbox1"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-inbox1"
-                  aria-selected="true"
-                >
-                  All messages (2)
-                </button>
-                <button
-                  class="pl-4 p-1 text-primary me-3"
-                  id="v-pills-inbox2-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-inbox2"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-inbox2"
-                  aria-selected="false"
-                >
-                  From REJEE (1)
-                </button>
-
-                <button
-                  class="text-left text-dark p-2"
-                  id="v-pills-sent-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-sent"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-sent"
-                  aria-selected="true"
-                >
-                  Sent
-                </button>
-                <button
-                  class="text-left text-dark p-2"
-                  id="v-pills-trash-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-trash"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-trash"
-                  aria-selected="true"
-                >
-                  Trash
-                </button>
-                <button
-                  class="text-left text-dark p-2"
-                  id="v-pills-Archive-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Archive"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Archive"
-                  aria-selected="true"
-                >
-                  Archive
-                </button>
-              </div>
-            </div>
-  </div>
-</div>
       <div class="col-sm-12 col-lg-9 col-md-9 product-container">
         <div id="wrapper-site" class="border">
           <div class="col-sm-12 col-lg-12 p-3 col-md-12 product-container">

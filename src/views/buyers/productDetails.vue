@@ -21,7 +21,7 @@
         </div>
       </div>
       <!-- breadcrumb -->
-          <div class="row justify-content-center">
+          <div class="row justify-content-center pt-3 ">
               <div class="product-single col-sm-12 col-lg-9 col-md-9 row justify-content-center">
                 <div class="product-detail col-xs-12 col-lg-6 col-md-5 col-sm-12">
                   <div class="page-content" id="content">
@@ -73,10 +73,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="product-info col-xs-12 col-lg-6 col-md-7 col-sm-12">
+                <div class="product-info col-xs-12  pt-3 col-lg-6 col-md-7 col-sm-12">
                   <div class="">
                     <div class="price-del">
-                    <span class="text-xl pb-4 text-dark"> {{ productDetails.product_name }} </span>
+                    <span class="text-xl pb-4text-dark"> {{ productDetails.product_name }} </span>
                       <span class="text-success float-right">
                         <span class="text-xs">Availability: </span>
                         <span class="check">

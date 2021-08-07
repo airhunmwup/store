@@ -15,6 +15,95 @@
             class="text-primary"
             title="Home Page"
             >homepage</router-link></span>
+<div class="dropdown pt-2 d-lg-none  text-right h6 d-md-none justify-content-end pl-5">
+  <a href="#" class="text-primary underline pr-4 justify-content-end dropdown-toggle" data-toggle="dropdown">
+    Menu
+  </a>
+  <div class="dropdown-menu">
+
+              <div
+                class="p-2 text-sm block-content nav flex-column nav-pills"
+                id="v-pills-tab"
+                role="tablist"
+                aria-orientation="vertical"
+              >
+                <button
+                  class="dropdown-item text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Summary-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Summary"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Summary"
+                  aria-selected="true"
+                >
+                  Summary
+                </button>
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Recently-viewed-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Recently-viewed"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Recently-viewed"
+                  aria-selected="false"
+                >
+                  Recently
+                    viewed
+                </button>
+
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Purchased-history-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Purchased-history"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Purchased-history"
+                  aria-selected="true"
+                >
+                  Purchase History
+                </button>
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Watching-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Watching"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Watching"
+                  aria-selected="true"
+                >
+                  Watching
+                </button>
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Saved-Search-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Saved-Search"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Saved-Search"
+                  aria-selected="true"
+                >
+                  Saved Search
+                </button>
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  id="v-pills-Saved-Seller-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Saved-Seller"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Saved-Seller"
+                  aria-selected="true"
+                >
+                  Saved Seller
+                </button>
+              </div>
+  </div>
+</div>
         <div class="content sidebar-block">
           <div class="text-base">
             <div class="pt-2 pl-5">
@@ -28,34 +117,6 @@
       </div>
 
     </div>
-              <div class="row pl-3">
-                <div class="container">
-                  <div class="content text-dark p-3 border-b-2 font-weight-bold col-12 ">
-                  <router-link
-                    to="/seller_dashboard"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="border-primary border-b-4 p-3"
-                    title="Activity"
-                    ><span class="text-primary">Activity</span></router-link
-                  >
-                  <router-link
-                    to="/My message"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse" 
-                    class="p-3"
-                    title="Message"
-                    ><span>Message (2)</span></router-link>
-                  <router-link
-                    to="/account"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="p-3"
-                    title="Account"
-                    ><span>Account</span></router-link>
-                  </div>
-                </div>
-              </div>
         <div class="row">
           <div
             class="pl-4
@@ -154,95 +215,6 @@
             </div>
           </div>
 
-<div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-end pl-5">
-  <a href="#" class="text-primary underline justify-content-end dropdown-toggle" data-toggle="dropdown">
-    Menu
-  </a>
-  <div class="dropdown-menu">
-
-              <div
-                class="p-2 text-sm block-content nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                <button
-                  class="dropdown-item text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Summary-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Summary"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Summary"
-                  aria-selected="true"
-                >
-                  Summary
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Recently-viewed-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Recently-viewed"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Recently-viewed"
-                  aria-selected="false"
-                >
-                  Recently
-                    viewed
-                </button>
-
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Purchased-history-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Purchased-history"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Purchased-history"
-                  aria-selected="true"
-                >
-                  Purchase History
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Watching-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Watching"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Watching"
-                  aria-selected="true"
-                >
-                  Watching
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Saved-Search-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Saved-Search"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Saved-Search"
-                  aria-selected="true"
-                >
-                  Saved Search
-                </button>
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  id="v-pills-Saved-Seller-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Saved-Seller"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Saved-Seller"
-                  aria-selected="true"
-                >
-                  Saved Seller
-                </button>
-              </div>
-  </div>
-</div>
           <div class="col-sm-12 col-lg-9 col-md-9 product-container">
             <div id="wrapper-site">
 
