@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import LandingPage from '../views/buyers/landingPage.vue'
 import UserOrderPage from '../views/buyers/userOrderPage.vue'
 import orderDetailsPage from '../views/buyers/orderDetailsPage.vue'
@@ -21,10 +22,12 @@ import checkOutPage from '../views/buyers/checkOutPage.vue'
 import productcart from '../views/buyers/productCart.vue'
 import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
 import checkOutPagepayment from '../views/buyers/checkoutPagePayment.vue'
-import userAgreementPage from '../views/userAgreementPage.vue'
-import userPrivacy from '../views/userPrivacy.vue'
-import cookiePolicy from '../views/cookiePolicy.vue'
-import adChoice from '../views/adChoice.vue'
+import Mymessage from '../views/buyers/message.vue'
+import Mymessage_open from '../views/buyers/message_open.vue'
+import Account from '../views/buyers/account.vue'
+import Summary from '../views/buyers/summary.vue'
+
+
 import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vue'
 import seller_changepassword from '../views/sellers/seller_changepassword.vue'
 import Dashboard from '../views/sellers/seller_dashboard.vue'
@@ -38,6 +41,19 @@ import upload_image from '../views/sellers/upload_image.vue'
 import Account_Page from '../views/sellers/account_page.vue'
 import seller_message from '../views/sellers/message_page2.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
+import communication_settings from '../views/sellers/communication_settings.vue'
+import store_info from '../views/sellers/store_info.vue'
+import signin_security from '../views/sellers/signin_security.vue'
+import address_setting from '../views/sellers/address_setting.vue'
+import payout_settings from '../views/sellers/payout_settings.vue'
+import active_listing from '../views/sellers/active_listing.vue'
+import ended_listing from '../views/sellers/ended_listing.vue'
+import scheduled_listing from '../views/sellers/scheduled_listing.vue'
+import draft_listing from '../views/sellers/draft_listing.vue'
+import unsold_listing from '../views/sellers/unsold_listing.vue'
+
+
+
 import money_back_guarantee from '../views/rejee_money_back_guarantee.vue'
 import start_selling from '../views/start_selling.vue'
 import start_selling_here from '../views/start_selling_here.vue'
@@ -45,10 +61,10 @@ import creating_listing from '../views/creating_listing.vue'
 import sellers_can_cancel_order from '../views/sellers_can_cancel_order.vue'
 import resolving_unpaid_item_with_buyer from '../views/resolving_unpaid_item_with_buyer.vue'
 import managing_returns_missing_items_and_refunds_for_sellers from '../views/managing_returns_missing_items_and_refunds_for_sellers.vue'
-import Mymessage from '../views/buyers/message.vue'
-import Mymessage_open from '../views/buyers/message_open.vue'
-import Account from '../views/buyers/account.vue'
-import Summary from '../views/buyers/summary.vue'
+import userAgreementPage from '../views/userAgreementPage.vue'
+import userPrivacy from '../views/userPrivacy.vue'
+import cookiePolicy from '../views/cookiePolicy.vue'
+import adChoice from '../views/adChoice.vue'
 import resolution_center from '../views/resolution_center.vue'
 import resolut_Center from '../views/resolut_Center.vue'
 import cancel_order from '../views/cancel_order.vue'
@@ -60,6 +76,7 @@ import resolving_with_seller from '../views/resolving_with_seller.vue'
 import Subscription from '../views/subscription.vue'
 import Subscription_select from '../views/subscription_select.vue'
 import Signout from '../views/signout.vue'
+
 
 Vue.use(VueRouter);
 
@@ -87,6 +104,31 @@ const routes = [{
         path: '/Listing',
         name: 'listing Page',
         component: listing_page,
+    },
+    {
+        path: '/activelisting',
+        name: 'activelisting',
+        component: active_listing,
+    },
+    {
+        path: '/endedlisting',
+        name: 'endedlisting',
+        component: ended_listing,
+    },
+    {
+        path: '/scheduledlisting',
+        name: 'scheduledlisting',
+        component: scheduled_listing,
+    },
+    {
+        path: '/draftisting',
+        name: 'draftisting',
+        component: draft_listing,
+    },
+    {
+        path: '/unsoldlisting',
+        name: 'unsoldlisting',
+        component: unsold_listing,
     },
     {
         path: '/Create listing',
@@ -148,6 +190,32 @@ const routes = [{
         name: 'orderDetailsPage',
         component: orderDetailsPage,
     },
+    {
+        path: '/communicationsettings',
+        name: 'Orders details',
+        component: communication_settings,
+    },
+    {
+        path: '/storeinfo',
+        name: 'storeinfo',
+        component: store_info,
+    },
+    {
+        path: '/siginsec',
+        name: 'siginsec',
+        component: signin_security,
+    },
+    {
+        path: '/addresssetting',
+        name: 'addresssetting',
+        component: address_setting,
+    },
+    {
+        path: '/payoutsettings',
+        name: 'payoutsettings',
+        component: payout_settings,
+    },
+
     {
         path: '/Categorie Page',
         name: 'UserCategoriePage',

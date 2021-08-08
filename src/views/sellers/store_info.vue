@@ -220,7 +220,7 @@
                 </div>
                 <router-link
                   class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Account Page"
+                            to="/storeinfo"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             title="Store information"
@@ -355,28 +355,25 @@
               <div class="tab-content" id="v-pills-tabContent">
 
 <!--Personal-Information-->
-                <div
-                  class=" pt-3 tab-pane fade show active"
-                  id="v-pills-Personal-Information"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-Personal-Information-tab"
-                >
-                  <div id="content" class="page-content border box">
+                  <div id="content" class="page-content border p-3 box">
                     
-                        <h1 class="title-page p-2">Store Information</h1>
+                        <h1 class="title-page">Store Information</h1>
 
                 <div class="container">
                     <div id="main">
                             <table class="std table" id="block-history">
                                 <tbody>
                                     <tr>
-                                        <th class="first_item"><p>Business Name:</p> <span class=""> David James</span></th>
+                                        <th class="first_item">Business Name:</th>
+                                        <td>David James</td>
                                     </tr>
                                     <tr>
-                                        <th class="first_item"><p>Email: </p> <span class=""> example@example.com</span></th>
+                                        <th class="first_item">Email:</th>
+                                        <td>example@example.com</td>
                                     </tr>
                                     <tr>
-                                        <th class="first_item"><p>Location: </p><span class="">United Kingdom</span></th>
+                                        <th class="first_item">Country:</th>
+                                        <td>United Kingdom</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -385,7 +382,6 @@
 
                 </div>
                   </div>
-                </div>
 
               </div>
                 </div>
