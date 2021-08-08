@@ -41,17 +41,25 @@ import upload_image from '../views/sellers/upload_image.vue'
 import Account_Page from '../views/sellers/account_page.vue'
 import seller_message from '../views/sellers/message_page2.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
+
 import communication_settings from '../views/sellers/communication_settings.vue'
 import store_info from '../views/sellers/store_info.vue'
 import signin_security from '../views/sellers/signin_security.vue'
 import address_setting from '../views/sellers/address_setting.vue'
 import payout_settings from '../views/sellers/payout_settings.vue'
+
 import active_listing from '../views/sellers/active_listing.vue'
 import ended_listing from '../views/sellers/ended_listing.vue'
 import scheduled_listing from '../views/sellers/scheduled_listing.vue'
 import draft_listing from '../views/sellers/draft_listing.vue'
 import unsold_listing from '../views/sellers/unsold_listing.vue'
 
+
+import awaiting_shipped from '../views/sellers/awaiting_shipment.vue'
+import paid_shipped from '../views/sellers/paid_shipped.vue'
+import cancellation from '../views/sellers/cancellations.vue'
+import returns from '../views/sellers/returns.vue'
+import awaiting_order from '../views/sellers/awaiting_order.vue'
 
 
 import money_back_guarantee from '../views/rejee_money_back_guarantee.vue'
@@ -140,6 +148,33 @@ const routes = [{
         name: 'Account Page',
         component: Account_Page,
     },
+
+    {
+        path: '/awaitingshipment',
+        name: 'awaitingshipment',
+        component: awaiting_shipped,
+    },
+    {
+        path: '/paidshipped',
+        name: 'paidshipped',
+        component: paid_shipped,
+    },
+    {
+        path: '/cancellationlist',
+        name: 'cancellationlist',
+        component: cancellation,
+    },
+    {
+        path: '/returnslist',
+        name: 'returns',
+        component: returns,
+    },
+    {
+        path: '/awaitingpayment',
+        name: 'awaitingpayment',
+        component: awaiting_order,
+    },
+
     {
         path: '/Process Order',
         name: 'Order_process',

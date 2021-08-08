@@ -206,7 +206,7 @@
           </div>
         </div>
         </a>
-<a href="#" class="text-dark text-sm">
+<a href="#" v-if="this.$store.state.isLoggedIn" class="text-dark text-sm">
           <router-link
             class="text-dark font-weight-bold text-sm text-right p-2"
             to="/My message"
