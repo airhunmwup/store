@@ -1,10 +1,10 @@
 <template>
   <!-- main content -->
   <div class="box">
-    <div class="row pl-4">
-      <div class="container pl-3">
+    <div class="row">
+      <div class="container pl-2">
         <div
-          class="content text-dark p-2 border-b-2 font-weight-bold col-12 pl-2"
+          class="content text-dark p-2 border-b-2 font-weight-bold col-12"
         >
           <router-link
             to="/Overview"
@@ -299,14 +299,13 @@
                       "
                     >
                       Manage all orders
-                      <hr />
                     </span>
 
                         <!--search section-->
 
                           <div class="pb-2 pt-2 text-left text-dark">
 
-                              <div class="col-12">
+                              <div class="col-12 text-right pr-4">
                             <a class="cateItem" 
                               data-toggle="collapse"
                               data-target="#active_search" href="#">
@@ -345,23 +344,23 @@
                       Results: 1 - 5 of 5 ($total amount of orders sold)
 
                       
-                <div class="content pt-2 justify-content-center text-center">
-              <div class="row pl-2">
-                <div class="col-lg-3 pb-2 pt-2 row col-md-3 col-sm-3">
-                <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
+                <div class="content pt-2 justify-content-end">
+              <div class="row p-3 col-xs-12">
+                <div class="text-left col-lg-3 pb-2 pt-2 row col-md-3 col-sm-3 col-xs-3">
+                <span class="col-lg-5 col-md-5 col-sm-5 col-xs-5 pb-2  pt-2"><p class="text-xs">sort by</p> </span>
 
-                <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
-                              <option>Date Sold</option>
-                              <option>Date Paid</option>
-                              <option>Heighest Quantity</option>
-                              <option>Lowest Quantity</option>
-                              <option>Awaiting Shipment</option>
-                              <option>Delivered</option>
-                              <option>Shipped</option>
-                              <option>Canceled</option>
+                <select class="text-right col-lg-7 col-md-7 col-sm-7 col-xs-7 form-control-xs text-primary text-xs drop-tab">
+                              <option class="text-right">Date Sold</option>
+                              <option class="text-right">Date Paid</option>
+                              <option class="text-right">Heighest Quantity</option>
+                              <option class="text-right">Lowest Quantity</option>
+                              <option class="text-right">Awaiting Shipment</option>
+                              <option class="text-right">Delivered</option>
+                              <option class="text-right">Shipped</option>
+                              <option class="text-right">Canceled</option>
                 </select>
                 </div>
-                <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6">
+                <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6 col-xs-6">
                     <button class="form-control border text-primary">Relist</button>
                 </div>
                 </div>
@@ -392,8 +391,8 @@
                               </td>
                               <td class="text-left">
                                   <img
-                                    src="img/product/6.jpg"
-                                    class="thumbnail-img"
+                                    src="img/product/16.jpg"
+                                    class=""
                                     width="250px"
                                     alt="Product"
                                   />
@@ -425,7 +424,6 @@
                               <td class="text-left">
                                   <img
                                     src="img/product/6.jpg"
-                                    class="thumbnail-img"
                                     width="250px"
                                     alt="Product"
                                   />
@@ -456,8 +454,7 @@
                               </td>
                               <td class="text-left">
                                   <img
-                                    src="img/product/6.jpg"
-                                    class="thumbnail-img"
+                                    src="img/product/11.jpg"
                                     width="250px"
                                     alt="Product"
                                   />
@@ -489,7 +486,6 @@
                               <td class="text-left">
                                   <img
                                     src="img/product/6.jpg"
-                                    class="thumbnail-img"
                                     width="250px"
                                     alt="Product"
                                   />

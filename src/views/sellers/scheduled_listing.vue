@@ -1,9 +1,9 @@
 <template>
   <!-- main content -->
   <div class="box">
-              <div class="row box pl-3">
+              <div class="row">
                 <div class="container pl-2">
-                  <div class="content text-dark p-2 border-b-2 font-weight-bold col-12  pl-2">
+                  <div class="content text-dark p-2 border-b-2 font-weight-bold">
                   <router-link
                     to="/Overview"
                     data-toggle="collapse"
@@ -222,7 +222,6 @@
                   <span class="text text-dark pl-4 h5 font-weight-bold  font-weight-normal">
                   Scheduled Listings
                   </span>
-                  <hr>
                   
                         <!--search section-->
 

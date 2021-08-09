@@ -24,8 +24,11 @@ import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
 import checkOutPagepayment from '../views/buyers/checkoutPagePayment.vue'
 import Mymessage from '../views/buyers/message.vue'
 import Mymessage_open from '../views/buyers/message_open.vue'
+
 import Account from '../views/buyers/account.vue'
 import Summary from '../views/buyers/summary.vue'
+import payment_setting from '../views/buyers/payment_setting.vue'
+import buyeraddress_setting from '../views/buyers/address_setting.vue'
 
 
 import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vue'
@@ -185,6 +188,18 @@ const routes = [{
         name: 'seller_changepassword',
         component: seller_changepassword,
     },
+    {
+        path: '/paymentsetting',
+        name: 'paymentsetting',
+        component: payment_setting,
+    },
+
+    {
+        path: '/buyeraddresssetting',
+        name: 'buyeraddresssetting',
+        component: buyeraddress_setting,
+    },
+
     {
         path: '/Upload Image',
         name: 'Upload Image',

@@ -340,7 +340,7 @@
           />
 
           <button
-            class="btn text-light btn-primary border"
+            class="btn text-dark btn-light border border-light shadow"
             type="submit"
             data-action="show-password"
             data-text-show="Show"
@@ -382,7 +382,7 @@
                 />
 
                 <button
-                  class="btn text-light btn-primary border"
+                  class="btn text-dark btn-light shadow border"
                   type="submit"
                   data-action="show-password"
                   data-text-show="Show"

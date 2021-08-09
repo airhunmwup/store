@@ -300,14 +300,13 @@
                       "
                     >
                       Manage all Cancellations
-                      <hr />
                     </span>
 
                         <!--search section-->
 
                           <div class="pb-2 pt-2 text-left text-dark">
 
-                              <div class="col-12">
+                              <div class="col-12 text-right pr-4">
                             <a class="cateItem" 
                               data-toggle="collapse"
                               data-target="#active_search" href="#">
