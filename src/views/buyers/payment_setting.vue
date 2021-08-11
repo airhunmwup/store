@@ -7,7 +7,7 @@
       </div>
       <div class="container justify-content-center content-bottom">
 
-        <span class="p-3 text-xs text-right">Summary is your My REJEE 
+        <span class="p-3 text-xs text-right">Summary is your My REJEE Stores 
           <router-link
             to="/Summary"
             data-toggle="collapse"
@@ -392,7 +392,7 @@
                   <div class="row p-3 col-12">
                   <div class="col-lg-6 col-md-6 col-sm-4 col-xs-4 ">
                     <p class="text-dark font-weight-bold">Billing address <span class="popup" onclick="myFunction()"><i class="zmdi zmdi-info-outline"></i>
-  <span class="popuptext p-3 text-sm-left" id="myPopup">To change billing address go to address on your REJEE account page and select the billing address associated with your payment card.</span>
+  <span class="popuptext p-3 text-sm-left" id="myPopup">To change billing address go to address on your REJEE Stores account page and select the billing address associated with your payment card.</span>
 </span></p>
                     <p class="text-dark">123 canberra Street, New York, USA</p>
                     <p class="text-dark">New York</p>

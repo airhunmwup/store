@@ -6,7 +6,7 @@
        
       </div>
       <div class="container justify-content-center content-bottom">
-        <span class="p-3 text-right">Summary is your My REJEE 
+        <span class="p-3 text-right">Summary is your My REJEE Stores 
           <router-link
             to="/Summary"
             data-toggle="collapse"
@@ -50,7 +50,7 @@
                   aria-controls="v-pills-inbox2"
                   aria-selected="false"
                 >
-                  From REJEE (1)
+                  From REJEE Stores (1)
                 </button>
 
                 <button
@@ -130,7 +130,7 @@
                   aria-controls="v-pills-inbox2"
                   aria-selected="false"
                 >
-                  From REJEE (1)
+                  From REJEE Stores (1)
                 </button>
 
                 <button
@@ -305,7 +305,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >REJEE
+                                >REJEE Stores
                               </router-link>
                             </td>
                             <td class="text-left">
@@ -314,7 +314,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >New sign in activity on your REJEE account
+                                >New sign in activity on your REJEE Stores account
                               </router-link>
                             </td>
                             <td class="text-right">--</td>
@@ -381,7 +381,7 @@
                   aria-labelledby="v-pills-inbox2-tab"
                 >
                   <span class="text text-dark p-3 h6 font-weight-bold">
-                    Inbox : From REJEE
+                    Inbox : From REJEE Stores
                   </span>
                   <span class="justify-content-end p-3">
                     <form
@@ -399,7 +399,7 @@
                           type="text"
                           id="name"
                           name="name"
-                          placeholder="Search inbox: From REJEE"
+                          placeholder="Search inbox: From REJEE Stores"
                           class="form-control border-r-none border"
                           value=""
                         />
@@ -499,7 +499,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >REJEE
+                                >REJEE Stores
                               </router-link>
                             </td>
                             <td class="text-left">
@@ -508,7 +508,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >New sign in activity on your REJEE account
+                                >New sign in activity on your REJEE Stores account
                               </router-link>
                             </td>
                             <td class="text-right">--</td>
@@ -643,7 +643,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >REJEE
+                                >REJEE Stores
                               </router-link>
                             </td>
                             <td class="text-left">
@@ -652,7 +652,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >New sign in activity on your REJEE account
+                                >New sign in activity on your REJEE Stores account
                               </router-link>
                             </td>
                             <td class="text-right">--</td>

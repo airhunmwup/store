@@ -4,7 +4,7 @@
     <div class="row">
       <div class="container text-xs justify-content-center content-bottom">
 
-        <span class="p-3 text-right">Summary is your My REJEE 
+        <span class="p-3 text-right">Summary is your My REJEE Stores 
           <router-link
             to="/Summary"
             data-toggle="collapse"
@@ -266,18 +266,15 @@
                 >
                   <i class="zmdi zmdi-settings h4 pr-2"></i> Account preferences
                 </button>
-                <button
+                <router-link
                   class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Communication-Preferences-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Communication-Preferences"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Communication-Preferences"
-                  aria-selected="true"
-                >
+                            to="/communicationsettings"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Communication Preferences"
+                            >
                   Communication Preferences
-                </button>
+                </router-link>
                 <router-link
                   class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
                             to="/Product Listing"

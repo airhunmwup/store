@@ -66,7 +66,7 @@
                                   <div class="content text-dark">
 
                                     <p class="text-dark p-2">
-                                      If an item went missing and never arrived, you'll either need to provide additional tracking details from one of the shipping carriers integrated with REJEE, or offer a replacement or refund. If the buyer got their item but it’s faulty, damaged, or doesn't match the listing description, you need to work with them to resolve their issue (you also have to cover the return shipping costs). If they changed their mind, how you can respond (and who pays for return shipping) depends on your return policy.
+                                      If an item went missing and never arrived, you'll either need to provide additional tracking details from one of the shipping carriers integrated with REJEE Stores, or offer a replacement or refund. If the buyer got their item but it’s faulty, damaged, or doesn't match the listing description, you need to work with them to resolve their issue (you also have to cover the return shipping costs). If they changed their mind, how you can respond (and who pays for return shipping) depends on your return policy.
                                     </p>
                                     <p class="text-dark h3 font-weight-bold p-2">
                                        What to do if a buyer has an issue
@@ -75,19 +75,19 @@
                                         Help a buyer with an item that hasn’t arrived 
                                     </p>
                                     <p class="text-dark p-2">
-                                        If a buyer doesn’t receive their item, they’re entitled to a refund or a replacement unless you can provide tracking information from one of the shipping carriers integrated with REJEE showing it was delivered by the estimated delivery date.
+                                        If a buyer doesn’t receive their item, they’re entitled to a refund or a replacement unless you can provide tracking information from one of the shipping carriers integrated with REJEE Stores showing it was delivered by the estimated delivery date.
                                     </p>
                                     <p class="text-primary underline font-weight-bold p-2">
                                         Handle a cancellation request 
                                     </p>
                                     <p class="text-dark p-2">
-                                        If a buyer opens a cancellation request with you, you have 3 days to approve or decline it. If you approve it and the buyer has already paid for the item, you have 10 business days to issue a refund. If you don’t refund the buyer within 10 days, they can file a claim through the REJEE Money Back Guarantee.
+                                        If a buyer opens a cancellation request with you, you have 3 days to approve or decline it. If you approve it and the buyer has already paid for the item, you have 10 business days to issue a refund. If you don’t refund the buyer within 10 days, they can file a claim through the REJEE Stores Money Back Guarantee.
                                     </p>
                                     <p class="text-primary underline font-weight-bold p-2">
                                         Handle a return request 
                                     </p>
                                     <p class="text-dark p-2">
-                                        If the buyer wants to return an item to you, your options for responding depend on why they want to send it back. If the item is damaged, faulty, or doesn’t match the listing description, they’re covered by the REJEE Money Back Guarantee, and you’ll have to refund them or replace the item, even if you don’t offer returns. If they’ve changed their mind, your options depend on your return policy.
+                                        If the buyer wants to return an item to you, your options for responding depend on why they want to send it back. If the item is damaged, faulty, or doesn’t match the listing description, they’re covered by the REJEE Stores Money Back Guarantee, and you’ll have to refund them or replace the item, even if you don’t offer returns. If they’ve changed their mind, your options depend on your return policy.
                                     </p>
                                     <p class="text-primary underline font-weight-bold p-2">
                                         Return shipping 
@@ -99,19 +99,19 @@
                                         Handle payment disputes as a managed payments seller 
                                     </p>
                                     <p class="text-dark p-2">
-                                        In some situations, a buyer may ask their financial institution to open a payment dispute if they believe there’s an issue with their order. Learn how to handle a payment dispute on an REJEE transaction if you’re a managed payments seller.
+                                        In some situations, a buyer may ask their financial institution to open a payment dispute if they believe there’s an issue with their order. Learn how to handle a payment dispute on an REJEE Stores transaction if you’re a managed payments seller.
                                     </p>
                                     <p class="text-dark h3 font-weight-bold p-2">
-                                       Unable to resolve the buyer’s issue? Ask REJEE to step in
+                                       Unable to resolve the buyer’s issue? Ask REJEE Stores to step in
                                     </p>
                                     <p class="text-primary underline font-weight-bold p-2">
-                                       Ask REJEE to step in 
+                                       Ask REJEE Stores to step in 
                                     </p>
                                     <p class="text-dark p-2">
                                         If you and the buyer haven’t been able to come to an agreement after 3 business days, you can ask us to step in and resolve the issue. We’ll assess all the information and come to a decision. It’s important to remember that if you ask us to step in and we close the case in the buyer’s favor, you could receive a defect (which might affect your seller standards), so you should only ask us for help when you’ve exhausted all other options.
                                     </p>
                                     <p class="text-primary underline font-weight-bold p-2">
-                                      Appeal REJEE’s decision on a case 
+                                      Appeal REJEE Stores’s decision on a case 
                                     </p>
                                     <p class="text-dark p-2">
                                         If you disagree with our decision after we’ve been asked to step in, you can ask us to take another look for up to 30 days after the claim has been closed. In order to request an appeal, you must provide additional details for us to take into consideration, such as photographs showing there’s nothing wrong with the item. We’ll review your new information and get back to you with our final decision, usually within 48 hours.
@@ -124,7 +124,7 @@
                                        Set up your return policy 
                                     </p>
                                     <p class="text-dark p-2">
-                                       When you sell on REJEE, you can save time managing your return requests by setting up rules that automatically accept returns or issue immediate refunds. Automating your return process can not only save you time but also provide a great experience for your customers.
+                                       When you sell on REJEE Stores, you can save time managing your return requests by setting up rules that automatically accept returns or issue immediate refunds. Automating your return process can not only save you time but also provide a great experience for your customers.
                                     </p>
                                     <p class="text-primary underline font-weight-bold p-2">
                                        Avoid disputes with buyers 

@@ -3,7 +3,7 @@
 
   <!-- main content -->
   <!-- main -->
-  <div>
+  <section>
     <!-- breadcrumb -->
 
     <div class="appion">
@@ -492,7 +492,7 @@
                             to="/money back guarantee"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            >REJEE Money back Guarantee</router-link
+                            >REJEE Stores Money back Guarantee</router-link
                           >
                         </li>
                       </ul>
@@ -524,7 +524,7 @@
                 <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                   <div class="block">
                     <div class="block-content">
-                      <div class="title-block">About REJEE</div>
+                      <div class="title-block">About REJEE Stores</div>
                       <ul>
                         <li class="underline">
                           <a
@@ -579,7 +579,7 @@
                             to="/managing returns missing items and refunds for sellers"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
-                            >REJEE Returns</router-link
+                            >REJEE Stores Returns</router-link
                           >
                         </li>
                       </ul>
@@ -593,17 +593,17 @@
                       <div class="title-block">Stay Connected</div>
                       <ul>
                         <li>
-                          <a href="https://www.facebook.com/RejeeLtd"
+                          <a href="https://www.facebook.com/REJEELtd"
                             ><i class="fa fa-facebook"></i> Facebook</a
                           >
                         </li>
                         <li>
-                          <a href="https://instagram.com/rejeecompany"
+                          <a href="https://instagram.com/REJEEcompany"
                             ><i class="fa fa-instagram"></i> Instagram</a
                           >
                         </li>
                         <li>
-                          <a href="https://twitter.com/rejeecompany"
+                          <a href="https://twitter.com/REJEEcompany"
                             ><i class="fa fa-twitter"></i> Twitter</a
                           >
                         </li>
@@ -617,7 +617,7 @@
         </div>
       </footer>
     </div>
-  </div>
+  </section>
 </template>
 
 

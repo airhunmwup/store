@@ -25,8 +25,14 @@ import checkOutPagepayment from '../views/buyers/checkoutPagePayment.vue'
 import Mymessage from '../views/buyers/message.vue'
 import Mymessage_open from '../views/buyers/message_open.vue'
 
-import Account from '../views/buyers/account.vue'
 import Summary from '../views/buyers/summary.vue'
+import saved_seller from '../views/buyers/saved_seller.vue'
+import saved_search from '../views/buyers/saved_search.vue'
+import watching from '../views/buyers/watching.vue'
+import purchase_history from '../views/buyers/purchase_history.vue'
+import recently_viewed from '../views/buyers/recently_viewed.vue'
+
+import Account from '../views/buyers/account.vue'
 import payment_setting from '../views/buyers/payment_setting.vue'
 import buyeraddress_setting from '../views/buyers/address_setting.vue'
 
@@ -198,6 +204,28 @@ const routes = [{
         path: '/buyeraddresssetting',
         name: 'buyeraddresssetting',
         component: buyeraddress_setting,
+    },
+
+    {
+        path: '/savedseller',
+        name: 'savedseller',
+        component: saved_seller,
+    }, {
+        path: '/savedsearch',
+        name: 'savedsearch',
+        component: saved_search,
+    }, {
+        path: '/purchasehistory',
+        name: 'purchasehistory',
+        component: purchase_history,
+    }, {
+        path: '/watchingpage',
+        name: 'watchingpage',
+        component: watching,
+    }, {
+        path: '/recentlyviewed',
+        name: 'recentlyviewed',
+        component: recently_viewed,
     },
 
     {

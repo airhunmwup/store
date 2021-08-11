@@ -35,7 +35,7 @@
 
                                   <div class="content text-dark">
                                     <p>
-                                      After you’ve made a sale on REJEE, it’s usually a smooth process to complete the transaction with the buyer, but sometimes you might find yourself in a situation where the buyer hasn’t yet paid for the item they bought. If that happens, you can cancel the order 4 calendar days after the listing ended and your item will be relisted automatically unless you choose not to relist.
+                                      After you’ve made a sale on REJEE Stores, it’s usually a smooth process to complete the transaction with the buyer, but sometimes you might find yourself in a situation where the buyer hasn’t yet paid for the item they bought. If that happens, you can cancel the order 4 calendar days after the listing ended and your item will be relisted automatically unless you choose not to relist.
                                     </p>
                                   </div>
                                 <div
@@ -104,13 +104,13 @@
                                 </div>
                                   <div id="Introduction" class="pt-2 content text-dark">
                                     <p class="p-2">
-                                      You can only use Preferences for items awaiting payment when you use REJEE checkout, which means that the buyer pays through the standard checkout flow, not cash on delivery or with a check.
+                                      You can only use Preferences for items awaiting payment when you use REJEE Stores checkout, which means that the buyer pays through the standard checkout flow, not cash on delivery or with a check.
                                     </p>
                                     <p class="p-2">
                                       If you accept cash on local pickup, checks, or money orders on your listings, you'll need to remove these payment methods if you want to use Preferences for items awaiting payment on those listings.
                                     </p>
                                     <p class="p-2">
-                                      While Preferences for items awaiting payment is available on most REJEE listings, including items listed in REJEE Motors, Parts & Accessories, it can't be used for vehicle listings in REJEE Motors. If you've sold a car and haven't received payment, you can manually cancel an order in Seller Hub or My REJEE Sold.
+                                      While Preferences for items awaiting payment is available on most REJEE Stores listings, including items listed in REJEE Stores Motors, Parts & Accessories, it can't be used for vehicle listings in REJEE Stores Motors. If you've sold a car and haven't received payment, you can manually cancel an order in Seller Hub or My REJEE Stores Sold.
                                     </p>
                                   </div>
                                 </div>

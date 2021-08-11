@@ -433,36 +433,36 @@
                                         <form>
                                         <p class="p-2 text-dark">
                                         <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
-                                         <span class="p-2">REJEE surveys and research
-                                        Send me invitations to participate in occasional research such as surveys and focus groups to share feedback on my REJEE experience.
+                                         <span class="p-2">REJEE Stores surveys and research
+                                        Send me invitations to participate in occasional research such as surveys and focus groups to share feedback on my REJEE Stores experience.
                                          </span>
                                         </p>
                                         <p class="p-2 text-dark">
                                         <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
                                          <span class="p-2">
                                         General email promotions
-                                        Send me emails about what's new and hot on REJEE, great deals, special events, discount coupons and other special offers.
+                                        Send me emails about what's new and hot on REJEE Stores, great deals, special events, discount coupons and other special offers.
                                          </span>
                                         </p>
                                         <p class="p-2 text-dark">
                                         <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
                                          <span class="p-2">
                                         Seller email promotions
-                                        Send me emails about seller specials like fee and listing discounts, selling tips and other ways to get started selling or get more from selling on REJEE
+                                        Send me emails about seller specials like fee and listing discounts, selling tips and other ways to get started selling or get more from selling on REJEE Stores
                                          </span>
                                         </p>
                                         <p class="p-2 text-dark">
                                         <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
                                          <span class="p-2">
                                         Postal mail catalogs and promotions
-                                        Send me postal mail catalogs, coupons, seller hotlists, holiday sales planners and newsletters. (If you're a seller, clearing this box means you may not receive some news, information, and invitations designed to help your sales on REJEE.)
+                                        Send me postal mail catalogs, coupons, seller hotlists, holiday sales planners and newsletters. (If you're a seller, clearing this box means you may not receive some news, information, and invitations designed to help your sales on REJEE Stores.)
                                          </span>
                                         </p>
                                         <p class="p-2 text-dark">
                                         <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
                                          <span class="p-2">
                                         Phone updates and promotions
-                                        Call me about REJEE programs like seller specials and other special events and opportunities. (If you're a seller, clearing this box means you may not receive some news, information, and invitations designed to help your sales on REJEE.)
+                                        Call me about REJEE Stores programs like seller specials and other special events and opportunities. (If you're a seller, clearing this box means you may not receive some news, information, and invitations designed to help your sales on REJEE Stores.)
                                          </span>
                                         </p>
                                         <div class="pt-5">

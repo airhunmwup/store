@@ -21,7 +21,7 @@
                                 that simple.
                               </p>
                               <p class="text  text-left font-weight-bold">
-                                Our REJEE Money Back Guarantee applies to
+                                Our REJEE Stores Money Back Guarantee applies to
                                 virtually everything on our site, and there's no
                                 extra fee for coverage. It’s automatic and
                                 covers your purchase price plus original
@@ -39,7 +39,7 @@
                                 </p>
                                 <p class="text font-weight-bold">
                                   If an item hasn’t arrived or isn’t as
-                                  described, go to My REJEE, select the item in
+                                  described, go to My REJEE Stores, select the item in
                                   your purchase history, and reach out to your
                                   seller.
                                 </p>
@@ -72,7 +72,7 @@
                               <div class="row pt-5 pb-5">
                                 <div class="col-lg-9 col-sm-9 col-md-9 border-r-2">
                                   <p>
-                                    *In order to be protected by REJEE Money
+                                    *In order to be protected by REJEE Stores Money
                                     Back Guarantee certain payment methods must
                                     be used and all eligibility requirements and
                                     deadlines must be met. Certain transactions
@@ -80,7 +80,7 @@
                                     estate, business sales & domains, digital
                                     content, industrial equipment or vouchers
                                     are not covered. For full terms and
-                                    conditions, read our REJEE Money Back
+                                    conditions, read our REJEE Stores Money Back
                                     Guarantee policy.
                                   </p>
                                 </div>
@@ -110,9 +110,9 @@
                 <p class="text-dark h1 font-weight-bold">
                   Need to Return an Item?
                 </p>
-                <p class="text">It’s easy to do on REJEE.</p>
+                <p class="text">It’s easy to do on REJEE Stores.</p>
                 <p class="text">
-                  Whatever you’re looking for, millions of items on REJEE are
+                  Whatever you’re looking for, millions of items on REJEE Stores are
                   returnable. Before you buy an item, check the seller’s return
                   policy, then follow these easy steps to make a return.
                 </p>
@@ -126,7 +126,7 @@
                 <p class="h4 text-primary">Start Your Return</p>
                 <p class="text font-weight-bold">
                   Select the item you want to return in your purchase history on
-                  My REJEE.
+                  My REJEE Stores.
                 </p>
               </div>
               <div class="col-lg-4 col-md-4 p-4 col-sm-8 shadow-md">
@@ -141,7 +141,7 @@
                 <h1 class="h1 text-primary">3</h1>
                 <p class="h4 text-primary">Receive Your Refund</p>
                 <p class="text font-weight-bold">
-                  If the seller doesn’t refund your money, ask REJEE to step in
+                  If the seller doesn’t refund your money, ask REJEE Stores to step in
                   and help.
                 </p>
               </div>
@@ -161,7 +161,7 @@
                     text-left
                   "
                 >
-                    <h1 class="h1 text-primary">REJEE Customer Service</h1>
+                    <h1 class="h1 text-primary">REJEE Stores Customer Service</h1>
                     <p class="text-md text">
                       Have a question? Need to resolve an issue? We’re here to
                       help! Customer service is available seven days a week.

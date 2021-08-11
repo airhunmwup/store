@@ -44,7 +44,7 @@
                                 <li style="list-style-type: disc;"><b>Boost traffic!</b> Drive buyers to your listings and Store.</li>
                                 <li style="list-style-type: disc;"><b>Brand yourself!</b> Design a custom homepage to bring in new and repeat buyers.</li>
                                 <li style="list-style-type: disc;"><b>Optimize listings!</b> Use exclusive, powerful tools to optimize your listings.</li>
-                                <li style="list-style-type: disc;"><b>Enjoy dedicated customer service!</b> REJEE Anchor and Enterprise Store subscribers have access to white-glove customer service.*</li>
+                                <li style="list-style-type: disc;"><b>Enjoy dedicated customer service!</b> REJEE Stores Anchor and Enterprise Store subscribers have access to white-glove customer service.*</li>
                                 </ul>
                               </div>
                               </div>

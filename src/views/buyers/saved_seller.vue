@@ -1,11 +1,20 @@
 <template>
   <!-- main content -->
-  <div>
-    <div class="row">
+  <div class="">
+    <div class="row pb-4">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
         
       </div>
       <div class="container justify-content-center content-bottom">
+
+        <span class="p-3 text-right">Summary is your My REJEE 
+          <router-link
+            to="/Summary"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            class="text-primary"
+            title="Home Page"
+            >homepage</router-link></span>
       </div>
 
     </div>
@@ -89,54 +98,17 @@
             </div>
           </div>
 
-          <div class="col-sm-12 p-4 col-lg-9 col-md-9 product-container">
+          <div class="col-sm-12 col-lg-9 col-md-9 product-container">
             <div id="wrapper-site">
 
               <div class="tab-content" id="v-pills-tabContent">
 
-<!--Summary-->
-                  <div id="content" class="page-content border p-3 box">
-
-                    <div class="content p-4 sidebar-block">
-                      <div class="text-base">
-                        <div class="pl-5">
-                          <span class="font-weight-bold text-dark h3">
-                            My REJEE Stores</span
-                          >
-                          <span class="text-dark text-sm"> UserID (0)</span>
-                        </div>
-                      </div>
-                    </div>
-                    <p class="text h6 font-weight-bold text-dark">
-                      Get more out of my REJEE Stores
-                    </p>
-                    <p class="text text-dark">
-                      REJEE Stores's a big place, so here's your space to track of items that matter most to you.
-                    </p>
-
-                  <div class="row container p-3 text-dark text-md">
-                  <div class="col-lg-3 col-md-3 col-sm-6 p-3 text-center">
-                    <i class="fa fa-binoculars fa-lg text-warning"></i><br>
-                    <b>Find deals</b> 
-                    <p>on items just for you.</p>
-                  </div>
-                  <div class="col-lg-3 col-md-3 col-sm-6 p-3 text-center">
-                    <i class="fa fa-binoculars fa-lg text-warning"></i><br>
-                    <b>Watch favorite</b> 
-                    <p> sellers and searches.</p>
-                  </div>
-                  <div class="ol-lg-3 col-md-3 col-sm-6 p-3 text-center">
-                    <i class="fa fa-folder-o fa-lg text-warning"></i><br>
-                    <b>Save items</b> 
-                    <p>you want to buy or bid on.</p>
-                  </div>
-                  <div class="ol-lg-3 col-md-3 col-sm-6 p-3 text-center">
-                    <i class="fa fa-tag fa-lg text-warning"></i><br>
-                    <b>Track selling</b> 
-                    <p> of your listed items.</p>
-                  </div>
-                  </div>
-                  </div>
+<!--Saved Seller-->
+                <div class="row p-4">
+                  <span class="text text-dark h5 font-weight-bold p-3 font-weight-normal">
+                  Saved Search
+                  </span>
+                </div>
               </div>
             </div>
           </div>

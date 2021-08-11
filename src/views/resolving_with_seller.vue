@@ -23,7 +23,7 @@
                               <div class="col-lg-10 pt-3 pb-3 pl-5 col-sm-10">
                                 <small class="pl-4 text-primary font-weight-bold">1 min Overview</small>
                                 <p class="pl-5 h1 text-dark">Resolving issues with sellers</p>
-                                <p class="text-dark font-weight-bold">If you’re having an issue with an REJEE seller, try contacting them directly to resolve your problem. If you can’t work things out, we’re always here to step in and help.</p>
+                                <p class="text-dark font-weight-bold">If you’re having an issue with an REJEE Stores seller, try contacting them directly to resolve your problem. If you can’t work things out, we’re always here to step in and help.</p>
                               </div>
                         </section>
                   <!-- main content -->
@@ -53,7 +53,7 @@
                                 >
                                   <div class="content text-dark">
                                     <p>
-                                      Usually your purchases on REJEE will go smoothly, but occasionally a problem might come up with your order, or your seller. Our list of articles below will help with any issues you might run into.
+                                      Usually your purchases on REJEE Stores will go smoothly, but occasionally a problem might come up with your order, or your seller. Our list of articles below will help with any issues you might run into.
                                     </p>
                                   </div>
                                 </div>

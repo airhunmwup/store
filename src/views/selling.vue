@@ -38,7 +38,7 @@
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
                                           ><div class="content card shadow p-3 border">
-                                            <p class="text-primary h4 pt-5 pb-2 font-weight-bold text-center"> Start selling on REJEE</p>
+                                            <p class="text-primary h4 pt-5 pb-2 font-weight-bold text-center"> Start selling on REJEE Stores</p>
                                             <p class="p-3">Whether you want to make some cash, clear out unwanted items from around the house, or even start a business, its easy t...</p>
                                             <p class="pb-4 pt-4">4 min</p>
                                         </div></router-link>
@@ -73,7 +73,7 @@
                                             data-target=".navbar-collapse"
                                           ><div class="content card shadow p-3 border">
                                             <p class="text-primary pt-5 pb-2 h4 font-weight-bold text-center"> Resolving unpaid item with buyers</p>
-                                            <p class="p-3">After you've made a sale on REJEE, It's usually a smooth process to complete the transaction with the buyer, but sometimes you might...</p>
+                                            <p class="p-3">After you've made a sale on REJEE Stores, It's usually a smooth process to complete the transaction with the buyer, but sometimes you might...</p>
                                             <p class="pb-3 pt-3">2 min</p>
                                         </div></router-link>
                                     </div>

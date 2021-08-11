@@ -94,7 +94,7 @@
                 <h1 class="h1 text-success">4</h1>
                 <p class="h4 text-primary">Saving more on shipping</p>
                 <p class="text font-weight-bold">
-                  Based on what you’re selling, we provide a custom recommendation for the best shipping service and packaging option. Once your item sells, you’ll get a discounted rate on postage by using REJEE shipping labels. To sell locally, you can also offer local pickup.
+                  Based on what you’re selling, we provide a custom recommendation for the best shipping service and packaging option. Once your item sells, you’ll get a discounted rate on postage by using REJEE Stores shipping labels. To sell locally, you can also offer local pickup.
                 </p>
               </div>
             </div>
