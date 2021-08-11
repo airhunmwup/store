@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <section>
     <Header/>
     <router-view />
     <Footer/>
-  </div>
+  </section>
 </template>
 
 

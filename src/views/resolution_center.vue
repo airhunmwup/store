@@ -31,10 +31,10 @@
                                   Cancel an order
                                 </p>
                                 <p class="text font-weight-bold">
-                                  You can cancel your paid and unpaid orders by going to the sold page on My REJEE and selecting the cancel option next to the order.
+                                  You can cancel your paid and unpaid orders by going to the sold page on My REJEE Stores and selecting the cancel option next to the order.
                                 </p>
                               <div class="p-3">
-                                <button class="btn text-primary border-primary" type="submit">Goto My REJEE Sold</button>
+                                <button class="btn text-primary border-primary" type="submit">Goto My REJEE Stores Sold</button>
                               </div>
                               </div>
                               </div>
@@ -44,10 +44,10 @@
                                   Manage your buyer's requests and disputes
                                 </p>
                                 <p class="text font-weight-bold">
-                                  You can view all your issues from buyers next to the order in the My REJEE Sold page.
+                                  You can view all your issues from buyers next to the order in the My REJEE Stores Sold page.
                                 </p>
                               <div class="p-3">
-                                <button class="btn text-primary border-primary" type="submit">Goto My REJEE Sold</button>
+                                <button class="btn text-primary border-primary" type="submit">Goto My REJEE Stores Sold</button>
                               </div>
                               </div>
                               </div>

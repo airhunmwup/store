@@ -10,7 +10,7 @@
           <div class="register-form text-center">
             <div class="pb-5">
               <p class="h4 text-dark">Password Recovery</p>
-              <p class="text-dark">Enter email address associated with your REJEE account.</p>
+              <p class="text-dark">Enter email address associated with your REJEE Stores account.</p>
 
             </div>
 

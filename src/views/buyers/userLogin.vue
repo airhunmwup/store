@@ -12,7 +12,7 @@
               <p class="h1 text-dark">Hello</p>
 
               <p class="pb-4 text-dark">
-                Sign in to REJEE or
+                Sign in to REJEE Stores or
 
                 <router-link
                   to="/register"

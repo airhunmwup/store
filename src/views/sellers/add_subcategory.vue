@@ -14,7 +14,7 @@
                                     </div>
                             <form id="customer-form" action="#" method="post">
                                 <div class="container">
-                                    <p class="h6 text-dark">Select Sub Category</p>
+                                    <p class="h6 text-dark">Select Type of Listing</p>
                                     <div class="form-group p-3">
                                         <select class="col-lg-10 col-md-10 col-sm-10 border p-2 border-dark " name="" type="text">
                                     <option></option>

@@ -29,7 +29,7 @@
                               </p>
                             </div>
                         <div class="border-primary text-dark alert alert-primary">
-                        <strong><i class="fa fa-info-circle fa-lg"></i></strong> <b>Upcoming updates to Resolution Center</b><br> Center will be going away soon. You will still be able to create and manage your requests and cases in Seller Hub, My REJEE Sold and Purchase History.
+                        <strong><i class="fa fa-info-circle fa-lg"></i></strong> <b>Upcoming updates to Resolution Center</b><br> Center will be going away soon. You will still be able to create and manage your requests and cases in Seller Hub, My REJEE Stores Sold and Purchase History.
                         </div>
                         <form>
                             <div class="row">
@@ -82,7 +82,7 @@
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
                                             title="Money Back Guarantee"
-                                          >What is the REJEE Money Back Guarantee?</router-link></li>
+                                          >What is the REJEE Stores Money Back Guarantee?</router-link></li>
                                   <li class="underline"><router-link
                                             to="/Resolving unpaid item"
                                             data-toggle="collapse"

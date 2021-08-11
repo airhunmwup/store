@@ -119,7 +119,7 @@
                                       If a buyer sends you a cancellation request you'll have 3 days to accept or decline it.
                                     </p>
                                     <p class="p-2">
-                                        If the buyer sends you a message asking you to cancel the order you can cancel it from Seller Hub or from the Sold section in My REJEE by following the instructions above.
+                                        If the buyer sends you a message asking you to cancel the order you can cancel it from Seller Hub or from the Sold section in My REJEE Stores by following the instructions above.
                                     </p>
                                   </div>
                                   <div id="Introduction" class="pt-2 content text-dark">
@@ -144,7 +144,7 @@
                                      If there's an issue with the refund, we'll notify you immediately to let you know. We'll also ask that you try to issue it again by selecting the Retry refund button in the notification. If you still can't issue the refund, try selecting a different payment method to fund it.
                                     </p>
                                     <p class="p-2">
-                                       If the buyer doesn't receive their refund within 10 days from the date you accepted the request, they can report that the item hasn't arrived or that they haven't received a refund through REJEE Money Back Guarantee. If a case is opened through REJEE Money Back Guarantee, you can refund the buyer through that case.
+                                       If the buyer doesn't receive their refund within 10 days from the date you accepted the request, they can report that the item hasn't arrived or that they haven't received a refund through REJEE Stores Money Back Guarantee. If a case is opened through REJEE Stores Money Back Guarantee, you can refund the buyer through that case.
                                     </p>
                                   </div>
                                   <div id="Introduction" class="pt-2 content text-dark">

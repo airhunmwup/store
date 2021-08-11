@@ -1,10 +1,10 @@
 <template>
   <!-- main content -->
   <div class="box">
-    <div class="row">
-      <div class="container pl-2">
+    <div class="row pl-4">
+      <div class="container pl-3">
         <div
-          class="content text-dark p-2 border-b-2 font-weight-bold col-12"
+          class="content text-dark p-2 border-b-2 font-weight-bold col-12 pl-2"
         >
           <router-link
             to="/Overview"
@@ -61,7 +61,7 @@
               aria-orientation="vertical"
             >
               <div
-                class="block-content nav text-primary underline flex-column nav-pills"
+                class="block-content nav flex-column nav-pills"
                 id="v-pills-tab"
                 role="tablist"
                 aria-orientation="vertical"
@@ -77,7 +77,7 @@
               </div>
 
               <div
-                class="block-content nav flex-column nav-pills"
+                class="block-content text-primary underline nav flex-column nav-pills"
                 id="v-pills-tab"
                 role="tablist"
                 aria-orientation="vertical"
@@ -184,7 +184,7 @@
               aria-orientation="vertical"
             >
               <div
-                class="block-content text-primary underline nav flex-column nav-pills"
+                class="block-content nav flex-column nav-pills"
                 id="v-pills-tab"
                 role="tablist"
                 aria-orientation="vertical"
@@ -200,7 +200,7 @@
               </div>
 
               <div
-                class="block-content nav flex-column nav-pills"
+                class="block-content text-primary underline nav flex-column nav-pills"
                 id="v-pills-tab"
                 role="tablist"
                 aria-orientation="vertical"
@@ -289,7 +289,8 @@
       <div class="col-sm-12 col-lg-10 col-md-10 product-container">
         <div id="wrapper-site">
               <div class="tab-content" id="v-pills-tabContent">
-                <!--All-Orders-->
+
+                <!--Awaiting Payment-->
                   <div class="row">
                     <span
                       class="pl-4
@@ -298,7 +299,7 @@
                         font-weight-bold font-weight-normal
                       "
                     >
-                      Manage all orders
+                      Manage Awaiting Payments
                     </span>
 
                         <!--search section-->
@@ -340,90 +341,45 @@
                               </div>
                             </div>
                           </div>
+                    <div
+                      class="content pb-3 justify-content-center text-center"
+                    >
+                    </div>
                     <div class="card col-lg-12 col-md-12 col-sm-12 p-3">
                       Results: 1 - 5 of 5 ($total amount of orders sold)
 
                       
-                <div class="content pt-2 justify-content-end">
-              <div class="row p-3 col-xs-12">
-                <div class="text-left col-lg-3 pb-2 pt-2 row col-md-3 col-sm-3 col-xs-3">
-                <span class="col-lg-5 col-md-5 col-sm-5 col-xs-5 pb-2  pt-2"><p class="text-xs">sort by</p> </span>
+                <div class="content pt-2 justify-content-center text-center">
+              <div class="row pl-2">
+                <div class="col-lg-3 pb-2 pt-2 row col-md-3 col-sm-3">
+                <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
 
-                <select class="text-right col-lg-7 col-md-7 col-sm-7 col-xs-7 form-control-xs text-primary text-xs drop-tab">
-                              <option class="text-right">Date Sold</option>
-                              <option class="text-right">Date Paid</option>
-                              <option class="text-right">Heighest Quantity</option>
-                              <option class="text-right">Lowest Quantity</option>
-                              <option class="text-right">Awaiting Shipment</option>
-                              <option class="text-right">Delivered</option>
-                              <option class="text-right">Shipped</option>
-                              <option class="text-right">Canceled</option>
+                <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
+                              <option>Date</option>
+                              <option>A to Z</option>
+                              <option>Heighest Quantity</option>
+                              <option>Lowest Quantity</option>
                 </select>
-                </div>
-                <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6 col-xs-6">
-                    <button class="form-control border text-primary">Relist</button>
                 </div>
                 </div>
               </div>
 
-                      <div class="row text-md table-responsive pl-2">
+                      <div class="row text-md table-responsive pl-3">
                         <table class="std table">
                           <tbody>
                             <tr class="box border-primary font-weight-bold text-xs">
-                              <td class="text-left">
-                                <input class="pr-3" type="checkbox" />
-                              </td>
-                              <td class="text-left font-w">Actions</td>
                               <td class="text-left">Order details</td>
                               <td class="text-left"></td>
                               <td class="text-left">Qty</td>
                               <td class="text-left">Sold for</td>
                               <td class="text-left">Total</td>
                               <td class="text-right">Date sold</td>
-                              <td class="text-right">Date paid</td>
                             </tr>
                             <tr class="">
-                              <td class="border text-left">
-                                <input class="pr-3" type="checkbox" />
-                              </td>
-                              <td class="border text-left">
-                                <p class="text-dark font-weight-bold">Shipped June 12 2020</p>
-                              </td>
-                              <td class="text-left">
-                                  <img
-                                    src="img/product/16.jpg"
-                                    class=""
-                                    width="250px"
-                                    alt="Product"
-                                  />
-                              </td>
-                              <td class="text-left">
-                                  <p class="">Product nameProduct nameProduct nameProduct nameProduct nameProduct name</p>
-                                
-                                <router-link class="small"
-                                  to="/seller_dashboard"
-                                  data-toggle="collapse"
-                                  data-target=".navbar-collapse"
-                                  title="Dashboard"
-                                >
-                                </router-link>
-                              </td>
-                              <td class="border text-left">1</td>
-                              <td class="border text-left">£150</td>
-                              <td class="border text-primary underline text-left">£150</td>
-                              <td class="border text-right">25 Jun</td>
-                              <td class="border text-right">25 Jun</td>
-                            </tr>
-                            <tr class="">
-                              <td class="border text-left">
-                                <input class="pr-3" type="checkbox" />
-                              </td>
-                              <td class="border text-left">
-                                <p class="text-dark font-weight-bold">Delivered June 12 2020</p>
-                              </td>
                               <td class="text-left">
                                   <img
                                     src="img/product/6.jpg"
+                                    class="thumbnail-img"
                                     width="250px"
                                     alt="Product"
                                   />
@@ -443,49 +399,12 @@
                               <td class="border text-left">£150</td>
                               <td class="border text-primary underline text-left">£150</td>
                               <td class="border text-right">25 Jun</td>
-                              <td class="border text-right">25 Jun</td>
                             </tr>
                             <tr class="">
-                              <td class="border text-left">
-                                <input class="pr-3" type="checkbox" />
-                              </td>
-                              <td class="border text-left">
-                                <p class="text-dark font-weight-bold">Canceled June 12 2020</p>
-                              </td>
-                              <td class="text-left">
-                                  <img
-                                    src="img/product/11.jpg"
-                                    width="250px"
-                                    alt="Product"
-                                  />
-                              </td>
-                              <td class="text-left">
-                                  <p class="">Product nameProduct nameProduct nameProduct nameProduct nameProduct name</p>
-                                
-                                <router-link class="small"
-                                  to="/seller_dashboard"
-                                  data-toggle="collapse"
-                                  data-target=".navbar-collapse"
-                                  title="Dashboard"
-                                >
-                                </router-link>
-                              </td>
-                              <td class="border text-left">1</td>
-                              <td class="border text-left">£150</td>
-                              <td class="border text-primary underline text-left">£150</td>
-                              <td class="border text-right">25 Jun</td>
-                              <td class="border text-right">25 Jun</td>
-                            </tr>
-                            <tr class="">
-                              <td class="border text-left">
-                                <input class="pr-3" type="checkbox" />
-                              </td>
-                              <td class="border text-left">
-                                <p class="text-dark font-weight-bold">Awaiting Shipping June 12 2020</p>
-                              </td>
                               <td class="text-left">
                                   <img
                                     src="img/product/6.jpg"
+                                    class="thumbnail-img"
                                     width="250px"
                                     alt="Product"
                                   />
@@ -501,10 +420,34 @@
                                 >
                                 </router-link>
                               </td>
-                              <td class="border text-left">6</td>
+                              <td class="border text-left">1</td>
                               <td class="border text-left">£150</td>
                               <td class="border text-primary underline text-left">£150</td>
                               <td class="border text-right">25 Jun</td>
+                            </tr>
+                            <tr class="">
+                              <td class="text-left">
+                                  <img
+                                    src="img/product/6.jpg"
+                                    class="thumbnail-img"
+                                    width="250px"
+                                    alt="Product"
+                                  />
+                              </td>
+                              <td class="text-left">
+                                  <p class="">Product nameProduct nameProduct nameProduct nameProduct nameProduct name</p>
+                                
+                                <router-link class="small"
+                                  to="/seller_dashboard"
+                                  data-toggle="collapse"
+                                  data-target=".navbar-collapse"
+                                  title="Dashboard"
+                                >
+                                </router-link>
+                              </td>
+                              <td class="border text-left">1</td>
+                              <td class="border text-left">£150</td>
+                              <td class="border text-primary underline text-left">£150</td>
                               <td class="border text-right">25 Jun</td>
                             </tr>
                           </tbody>
@@ -512,6 +455,7 @@
                       </div>
                     </div>
                   </div>
+                  
               </div>
         </div>
       </div>

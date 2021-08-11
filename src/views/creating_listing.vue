@@ -100,7 +100,7 @@
 
                                 <p class="h4 font-weight-bold text-dark">Item condition</p>
                                     <p class="text-dark p-2">
-                                      You can sell almost anything on REJEE, from brand new products to items that have signs of wear and tear.
+                                      You can sell almost anything on REJEE Stores, from brand new products to items that have signs of wear and tear.
                                     </p>
                                     <p class="text-dark p-2">
                                       It's vital you're honest and accurate about the condition of what you're selling so your buyer knows exactly what they're getting.
@@ -112,7 +112,7 @@
                                         <li style="list-style-type: disc;">New – A brand-new, unused, and unworn item (including handmade items) in the original packaging</li>
                                         <li style="list-style-type: disc;">New (other) – An item with no sign of wear and tear that is missing its original packaging, or the original packaging has been opened and is no longer sealed</li>
                                         <li style="list-style-type: disc;">Certified refurbished – A tech item in like-new condition, refurbished by the manufacturer. The item will be in new packaging with original or new accessories</li>
-                                        <li style="list-style-type: disc;">Seller refurbished – A tech item that has been restored to working order by the REJEE seller or a third party</li>
+                                        <li style="list-style-type: disc;">Seller refurbished – A tech item that has been restored to working order by the REJEE Stores seller or a third party</li>
                                         <li style="list-style-type: disc;">New with tags / box – Clothing or shoes that are unworn, and still have the original tags attached, or are in the original box</li>
                                         <li style="list-style-type: disc;">New without tags – Clothing or shoes that are unworn, and don't have the original tags attached, or are not in the original box</li>
                                         <li style="list-style-type: disc;">Used – An item that has been previously used. The item may have some signs of cosmetic wear, but is fully operational and functions as intended</li>
@@ -134,7 +134,7 @@
                                       Item specifics may include brand, size, type, color, style, or other relevant information about the item you're selling.
                                     </p>
                                     <p class="text-dark p-2">
-                                        We strongly recommend providing as many of these specifics as you can to ensure that your item gets maximum visibility on both REJEE and external sites such as Google Shopping.
+                                        We strongly recommend providing as many of these specifics as you can to ensure that your item gets maximum visibility on both REJEE Stores and external sites such as Google Shopping.
                                     </p>
                                 <p class="h5 font-weight-bold pt-3 text-dark">Product identifiers</p>
                                     <p class="text-dark p-2">
@@ -170,7 +170,7 @@
                                     </p>
                                 <p class="h5 font-weight-bold text-dark">Seller Hub</p>
                                     <p class="text-dark p-2">
-                                        As your sales on REJEE grow, you may want to consider using Seller Hub, a central place for managing your REJEE business. It's free, consolidates all our selling tools in one place, and has helpful data and recommendations to help grow your sales.
+                                        As your sales on REJEE Stores grow, you may want to consider using Seller Hub, a central place for managing your REJEE Stores business. It's free, consolidates all our selling tools in one place, and has helpful data and recommendations to help grow your sales.
                                     </p>
                                   </div>
                                 </div>

@@ -1,6 +1,7 @@
 <template>
   <!-- main content -->
   <div class="box">
+             
               <div class="row">
                 <div class="container pl-2">
                   <div class="content text-dark p-2 border-b-2 font-weight-bold">
@@ -35,7 +36,7 @@
                     ><span>Account</span></router-link>
                   </div>
 
-<div class="dropdown pt-2 d-lg-none text-right h6 pr-4 d-md-none justify-content-between">
+<div class="dropdown pt-2 d-lg-none text-right h6 pr-4 d-md-none justify-content-between pl-5">
   <a href="#" class="text-primary underline  dropdown-toggle" data-toggle="dropdown">
     Menu
   </a>
@@ -60,7 +61,7 @@
                 aria-orientation="vertical"
               >
                 <router-link
-                  class="text-left text-primary underline font-weight-bold p-2"
+                  class="text-left font-weight-bold p-2"
                             to="/listing"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
@@ -87,7 +88,7 @@
                 </router-link>
 
                 <router-link
-                  class="text-left font-weight-bold p-2"
+                  class="text-left text-primary underline font-weight-bold p-2"
                             to="/draftisting"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
@@ -122,7 +123,6 @@
 </div>
                 </div>
               </div>
-
         <div class="row">
           <div
             class="pl-4 
@@ -152,7 +152,7 @@
                 aria-orientation="vertical"
               >
                 <router-link
-                  class="text-left text-primary underline font-weight-bold p-2"
+                  class="text-left font-weight-bold p-2"
                             to="/listing"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
@@ -179,7 +179,7 @@
                 </router-link>
 
                 <router-link
-                  class="text-left font-weight-bold p-2"
+                  class="text-left text-primary underline font-weight-bold p-2"
                             to="/draftisting"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
@@ -215,11 +215,12 @@
 
               <div class="tab-content" id="v-pills-tabContent">
 
-                              
-<!--All Listing-->
+                       
+
+<!--Draft-->
                 <div class="row">
                   <span class="text pl-4 text-dark h5 font-weight-bold  font-weight-normal">
-                  Manage All Listings
+                  Draft Listings
                   </span>
                         <!--search section-->
 
@@ -228,12 +229,12 @@
                               <div class="col-12">
                             <a class="cateItem" 
                               data-toggle="collapse"
-                              data-target="#search" href="#">
+                              data-target="#draft_search" href="#">
                                   <span class="pr-2 pt-2"><b><i class="fa fa-angle-down"></i> Search</b></span></a>
                               </div>
                             <div
                               class="subCategory collapse"
-                              id="search"
+                              id="draft_search"
                               aria-expanded="true"
                               role="status"
                             >
@@ -260,48 +261,26 @@
                               </div>
                             </div>
                           </div>
-                  
-                <div class="card col-lg-12 col-md-12 col-sm-12 pt-3">
+                <div class="card col-lg-12 col-md-12 col-sm-12 p-3">
                   Results: 1 - 5 of 5 
 
                 <div class="content pt-2 justify-content-center text-center">
               <div class="row pl-2">
-                <div class="col-lg-3 pb-2 pt-2 row col-md-3 col-sm-3">
+                <div class="col-lg-3 row col-md-3 col-sm-3">
                 <span class="col-5 pt-2"><p class="text-xs">sort by</p> </span>
 
+                
                 <select class="col-7 border form-control-sm text-primary text-xs drop-tab">
                 <option>Date</option>
                 <option>A to Z</option>
                 <option>Heighest Quantity</option>
                 <option>Lowestest Quantity</option>
-                <option>Heighest Views</option>
-                <option>Lowestest Views</option>
-                <option>Heighest Watches</option>
-                <option>Lowestest Watches</option>
-                <option>Heighest Offers</option>
-                <option>Lowestest Offers</option>
-                <option>Heighest Bids</option>
-                <option>Lowestest Bids</option>
                 </select>
-                </div>
-                <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6">
-                  <router-link
-                    to="/addcategory"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Create Listing"
-                    >
-                    <button class="form-control border text-primary">Create listing</button></router-link> 
-                </div>
-                <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6">
-                    <button class="form-control border text-primary">Delete</button>
-                </div>
-                <div class="col-lg-3 pb-2 pt-2 col-md-3 col-sm-6">
-                    <button class="form-control border text-primary">Upload</button>
                 </div>
                 </div>
               </div>
-
+                <div class="content pt-2 justify-content-center text-center">
+             
 
                       <div class="row container text-md table-responsive">
                         <table class="std table">
@@ -315,10 +294,6 @@
                             <td class="text-left">Qty</td>
                             <td class="text-left">Current price</td>
                             <td class="text-left">shipping cost</td>
-                            <td class="text-left">Views</td>
-                            <td class="text-left">Watches</td>
-                            <td class="text-left">Offers</td>
-                            <td class="text-left">Bids</td>
                             </tr>
                           <tr>
                             <td class="">
@@ -326,32 +301,29 @@
                             </td>
                             <td class="text-left">
                     <button class="underline text-primary">Edit</button>
-                    <p class="pt-3"><i class="fa fa-cloud-upload text-success"></i></p>
                             </td>
                             <td class="text-left border">
                               <router-link
-                                to="/"
+                                to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
+                                title="Dashboard"
                                 >
-                    <img src="img/product/6.jpg" width="100px" class="" alt="Product" />
+                    <img src="img/product/6.jpg" width="90px" class="" alt="Product" />
                               </router-link>
                             </td>
                             <td class="text-left border">
                               <router-link
-                                to="/"
+                                to="/seller_dashboard"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
+                                title="Dashboard"
                                 >Product name
                               </router-link>
                             </td>
                             <td class="text-left border">1</td>
                             <td class="text-left border">£150</td>
                             <td class="text-left border">Free</td>
-                            <td class="text-left border">0</td>
-                            <td class="text-left border">0</td>
-                            <td class="text-left border">0</td>
-                            <td class="text-left border">--</td>
                           </tr>
                           <tr>
                             <td class="">
@@ -359,7 +331,6 @@
                             </td>
                             <td class="text-left">
                     <button class="underline text-primary">Edit</button>
-                    <p class="pt-3"><i class="fa fa-cloud-upload text-danger"></i></p>
                             </td>
                             <td class="text-left border">
                               <router-link
@@ -383,16 +354,15 @@
                             <td class="text-left border">1</td>
                             <td class="text-left border">£150</td>
                             <td class="text-left border">Free</td>
-                            <td class="text-left border">0</td>
-                            <td class="text-left border">0</td>
-                            <td class="text-left border">0</td>
-                            <td class="text-left border">--</td>
                           </tr>
                           </tbody>
                         </table>
                       </div>
                 </div>
+              </div>
+
                 </div>
+
 <!--when empty-->
                 <div
                   class="tab-pane fade"

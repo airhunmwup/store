@@ -62,17 +62,17 @@
                                 <div class="row product-container pb-3 pt-3">
                                   <div id="Introduction" class="content text-dark">
                                     <p class="p-2">
-                                      To help you find the information you need, we’ve pulled together all of our useful articles about refunds on REJEE.
+                                      To help you find the information you need, we’ve pulled together all of our useful articles about refunds on REJEE Stores.
                                     </p>
                                     <p class="p-2">
-                                      Here’s how the refund process works on REJEE:
+                                      Here’s how the refund process works on REJEE Stores:
 
                                     <ul class="pl-4">
                                         <li style="list-style-type: number;">Let the seller know you’ve got a problem
 If your item hasn’t arrived or if it has and you want to return it.</li>
                                         <li style="list-style-type: number;">Try to work things out with the seller
 They’ve got 3 business days to make things right for you, and you can always keep track of what’s going on.</li>
-                                        <li style="list-style-type: number;">Seller wasn’t able to help? Ask REJEE to step in
+                                        <li style="list-style-type: number;">Seller wasn’t able to help? Ask REJEE Stores to step in
 If the seller hasn’t fixed things for you in 3 business days, let us know and we’ll help resolve the issue.</li>
                                      </ul>
                                     </p>
@@ -85,7 +85,7 @@ If the seller hasn’t fixed things for you in 3 business days, let us know and 
                                       Let the seller know you’ve got a problem
                                     </p>
                                     <p class="p-2">
-                                      If something’s gone wrong with your order, the first step is to let the seller know there’s a problem. If your item has gone missing, or if it’s damaged or faulty, most sellers are happy to work with you to resolve the issue. Either way, you’re covered by the REJEE Money Back Guarantee.
+                                      If something’s gone wrong with your order, the first step is to let the seller know there’s a problem. If your item has gone missing, or if it’s damaged or faulty, most sellers are happy to work with you to resolve the issue. Either way, you’re covered by the REJEE Stores Money Back Guarantee.
                                     </p>
                                     <p class="p-2 font-weight-bold h6">
                                         Get help with an item that hasn’t arrived
@@ -103,7 +103,7 @@ If the seller hasn’t fixed things for you in 3 business days, let us know and 
                                         Help with guest purchases
                                     </p>
                                     <p class="p-2">
-                                        If you bought an item on REJEE as a guest, you’re still covered if something goes wrong. Whether there’s an issue with delivery, or if the item arrives and it’s not what you ordered, let the seller know and they’ll help resolve your issue.
+                                        If you bought an item on REJEE Stores as a guest, you’re still covered if something goes wrong. Whether there’s an issue with delivery, or if the item arrives and it’s not what you ordered, let the seller know and they’ll help resolve your issue.
                                     </p>
                                     <p class="p-2 font-weight-bold h5">
                                         Try to work things out with the seller
@@ -121,17 +121,17 @@ If the seller hasn’t fixed things for you in 3 business days, let us know and 
                                         When the seller has accepted your return, you may need to send the item back to them. Who pays the shipping costs depends on the reason you’re returning it. If the item was damaged or faulty, they’re responsible for the return shipping costs – if you changed your mind, who covers the cost will depend on the seller’s return policy.
                                     </p>
                                     <p class="p-2 font-weight-bold h5">
-                                      Seller wasn’t able to help? Ask REJEE to step in
+                                      Seller wasn’t able to help? Ask REJEE Stores to step in
                                     <p class="p-2">
                                         Sometimes, there might be an issue you’re unable to resolve with the seller. When that happens, we’re here to step in and help. We’ll review the request, and get back to you and the seller with our decision. If you’re not happy with our decision, and you have extra information you’d like us to consider, you can appeal. We’ll review the new information and get back to you with our final decision.
                                     </p>
                                     <p class="p-2 font-weight-bold h6">
-                                      Ask REJEE to step in and help for buyers
+                                      Ask REJEE Stores to step in and help for buyers
                                     <p class="p-2">
                                         Most of the time sellers will be able to resolve your issue, but if the seller hasn’t been able to fix things for you after 3 business days, you can ask us to step in and help. We’ll consider all the details and be as fair as possible with our decision.
                                     </p>
                                     <p class="p-2 font-weight-bold h6">
-                                      Appeal REJEE’s decision on a case for buyers
+                                      Appeal REJEE Stores’s decision on a case for buyers
                                     <p class="p-2">
                                         If you disagree with our decision after we’re asked to step in, you can ask us to take another look. In order to request an appeal, you’ll have to provide additional details for us to take into consideration, such as photographs showing what’s wrong with the item. We’ll review the new information, and get back to you with our final decision, which usually takes 48 hours.
                                     </p>

@@ -1,7 +1,7 @@
 <template>
   <!-- main content -->
 
-  <div class="justify-content-center">
+  <section class="justify-content-center">
       <!--adverts banners of store, product or anything related to banner adverts this will be set inrespect to the advertising actions-->
       <div class="appion d-xs-none shadow">
         <!-- breadcrumb -->
@@ -513,7 +513,7 @@
           </li>
         </div>
     </section>
-  </div>
+  </section>
 </template>
 
 <script>

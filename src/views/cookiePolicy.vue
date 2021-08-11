@@ -62,7 +62,7 @@
                                 >
                                   <div class="content text-dark">
                                     <p class="pt-3 pb-3">
-                                      <b>All users:</b> You can adjust the settings for the usage of first-party cookies (and similar technologies) for marketing purposes on the site AdChoice – REJEE Advertising Preferences.</p>
+                                      <b>All users:</b> You can adjust the settings for the usage of first-party cookies (and similar technologies) for marketing purposes on the site AdChoice – REJEE Stores Advertising Preferences.</p>
                                     <p class="pb-3"><b>Users in the EEA:</b> Users in the European Economic Area (EEA) can also determine whether they consent to the use of cookies and similar technologies for marketing purposes via the advertising preferences.</p>
                                   </div>
                                 </div>
@@ -71,7 +71,7 @@
                                 >
                                   <div class="content text-dark">
                                     <p class="text-dark font-weight-bold">
-                                      Our Cookie Notice details all relevant information regarding the use of cookies, web beacons and similar technologies in connection to REJEE's websites, applications, services, products and tools (hereinafter: "Services") and your choice options in this regard. This Cookie Notice shall be read in conjunction with our User Privacy Notice and the information regarding cookies and similar technologies which the User Privacy Notice contains. This Cookie Notice is applicable regardless of how you access and make use of our Services including the access via mobile devices and apps
+                                      Our Cookie Notice details all relevant information regarding the use of cookies, web beacons and similar technologies in connection to REJEE Stores websites, applications, services, products and tools (hereinafter: "Services") and your choice options in this regard. This Cookie Notice shall be read in conjunction with our User Privacy Notice and the information regarding cookies and similar technologies which the User Privacy Notice contains. This Cookie Notice is applicable regardless of how you access and make use of our Services including the access via mobile devices and apps
                                     </p>
                                   </div>
                                 </div>
@@ -246,7 +246,7 @@
 
 
 
-                                        <p class="p-3">With the exception of the use of such technologies by our service providers or other authorized third parties, we do not permit any third-party content on sites (such as item listings, communication between users, classified listings, comments, reviews, etc.) to include or utilize any cookies, web beacons, local storage, or similar technologies for tracking purposes or to collect your personal data for the own purposes of such third parties. If you suspect that an offer or third-party content within our Services collects personal data or may use tracking technologies, please report this to spam@rejee.co.uk.</p>
+                                        <p class="p-3">With the exception of the use of such technologies by our service providers or other authorized third parties, we do not permit any third-party content on sites (such as item listings, communication between users, classified listings, comments, reviews, etc.) to include or utilize any cookies, web beacons, local storage, or similar technologies for tracking purposes or to collect your personal data for the own purposes of such third parties. If you suspect that an offer or third-party content within our Services collects personal data or may use tracking technologies, please report this to spam@rejeestores.co.uk.</p>
                                         <p class="p-3">Users in the European Economic Area (EEA) can find information on other service providers and their privacy notices within the advertising preferences.</p>
                                         
                                         
@@ -411,7 +411,7 @@
                                 >
                                   <div class="content text-dark">
                                     <p class="pt-3 pb-3">
-                                      <b>All users:</b>You can adjust the settings for the usage of first-party cookies (and similar technologies) for marketing purposes on the site AdChoice – REJEE Advertising Preferences.</p>
+                                      <b>All users:</b>You can adjust the settings for the usage of first-party cookies (and similar technologies) for marketing purposes on the site AdChoice – REJEE Stores Advertising Preferences.</p>
                                     <p class="pb-3"><b>Users in the EEA:</b>Users in the European Economic Area (EEA) can also determine whether they consent to the use of cookies and similar technologies for marketing purposes via the advertising preferences.</p>
                                   </div>
                                 </div>
@@ -462,7 +462,7 @@
                                     >
                                     <div class="content pl-4">
                                         <p class="p-3">If you wish to deactivate the use of any cookies – including cookies that are operationally necessary, performance-related or functionality-related – that we use within the provision of our Services, you may do so by using the settings in your browser or device, if this is supported by your browser or device. The settings must be made separately for each browser you use.</p>
-                                        <p class="p-3">Please note that you may not be able to use certain REJEE services when you deactivate cookies and similar technologies (e.g. the 'stay logged in function'). You may also need to enter your password more frequently during your browser sessions.</p>
+                                        <p class="p-3">Please note that you may not be able to use certain REJEE Stores services when you deactivate cookies and similar technologies (e.g. the 'stay logged in function'). You may also need to enter your password more frequently during your browser sessions.</p>
                                     </div>
                                 </div>
                                 </div>
@@ -494,7 +494,7 @@
                                         <p class="p-3">In addition, you can specifically decide whether we and third parties may use cookies and similar technologies to show you personalized ads. If you use our Services within the European Economic Area (EEA), this will only be done with your consent, which you can withdraw at any time.</p>
                                         <p class="p-3">If you choose not to have your personal data processed by us for advertising purposes using cookies (and similar technologies), this does not necessarily mean that no advertisements will be shown to you. It simply means that these advertisements will not be personalized for you by means of cookies, web beacons or similar technologies. As a result, you will no longer receive personalized advertising in the future, but your data may still be collected as described in our User Privacy Notice.</p>
                                         <p class="p-3 font-weight-bold">2.2.1 All users</p>
-                                        <p class="p-3">You can determine under AdChoice – REJEE Advertising Preferences, whether you agree to the use of advertising-related first-party cookies (and similar technologies). You can also get to the AdChoice preferences directly via a link in the corresponding advertisement or in the footer of our website. You can find additional information regarding the AdChoice Program here.</p>
+                                        <p class="p-3">You can determine under AdChoice – REJEE Stores Advertising Preferences, whether you agree to the use of advertising-related first-party cookies (and similar technologies). You can also get to the AdChoice preferences directly via a link in the corresponding advertisement or in the footer of our website. You can find additional information regarding the AdChoice Program here.</p>
                                         <p class="p-3">You can deactivate the use of any third-party cookies – e.g. by online ad networks – within our Services by using the settings in your browser or the device settings in your device, if this is supported by your browser or device.</p>
                                         <p class="p-3">If you delete all cookies on your device, any opt-out cookies that have already been set will also be deleted, so that you will have to declare again any opt-outs that have already been declared.</p>
                                         <p class="p-3 font-weight-bold">2.2.2 Users in the European Economic Area (EEA)</p>
@@ -541,12 +541,3 @@
     </div>
   </div>
 </template>
-<script>
-export default {
-  data() {
-    return {
-      footerText: "Copyright REJEE.co.uk 2021",
-    };
-  },
-};
-</script>

@@ -354,46 +354,132 @@
                 <div id="wrapper-site">
               <div class="tab-content" id="v-pills-tabContent">
 
-<!--Personal-Information-->
-                <div
-                  class=" pt-3 tab-pane fade show active"
-                  id="v-pills-Personal-Information"
-                  role="tabpanel"
-                  aria-labelledby="v-pills-Personal-Information-tab"
-                >
-                  <div id="content" class="page-content border box">
-                    
-                        <h1 class="title-page p-2">Store Information</h1>
 
-                <div class="container">
+<!--Communication-Preferences-->
+                <div class="row">
+                  <span class="text text-dark h5 p-3 font-weight-normal">
+                    <h1 class="title-page">Communication Preferences</h1>
+                  </span>
+
                     <div id="main">
-                            <table class="std table" id="block-history">
-                                <tbody>
+                            <table class="p-3 std table" id="block-history">
+                                <tbody class="border-0">
                                     <tr>
-                                        <th class="first_item"><p>Business Name:</p> <span class=""> David James</span></th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item"><p>Email: </p> <span class=""> example@example.com</span></th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item"><p>Location: </p><span class="">United Kingdom</span></th>
+                                        <th class="first_item">
+                                        <p class="font-weight-bold text-dark">
+                                           Delivery <br>Options
+                                        </p></th>
+                                        <td>    
+                                        <p class="font-weight-bold text-dark">     
+                                        Notification Delivery Format
+                                        </p>
+                                        <p class="">                 
+                                        Choose how you want notifications delivered to you.
+                                        </p></td>
+                                        <td>
+                                        <p class="p-3 justify-content-end text-right">
+
+                                        </p>
+                                        </td>
                                     </tr>
                                 </tbody>
                             </table>
+                            <div
+                              class="subCategory "
+                            >
+                                    <div class="content pl-4">
+                                        <p class="p-2">
+                                            Email Format
+                                        </p>
+                                            <form>     
+                                        <p class="p-2 text-dark">
+                                        <span class="pr-3"><input type="radio" id="html" name="fav_language" value="HTML"> Include graphics</span> 
+                                        <span><input type="radio" id="css" name="fav_language" value="CSS"> Text-only</span>
+                                        </p>
+                                            </form>
+                                    </div>
 
+                                <hr>
+                            </div>
+
+
+                            <table class="p-3 std table" id="block-history">
+                                <tbody class="border-0">
+                                    <tr>
+                                        <th class="first_item">
+                                        <p class="pr-3 font-weight-bold text-dark">
+                                           Marketing<br> Communications
+                                        </p></th>
+                                        <td>  
+                                        <p class="font-weight-bold text-dark">    
+                                        Subscriptions
+                                        </p> 
+                                        <p class="">    
+                                        Edit your marketing communication preferences
+                                        </p></td>
+                                        <td>
+                                        <p class="p-3 justify-content-end text-right">
+                                        
+                                        </p>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <div
+                              class="subCategory"
+                            >
+                                
+                                    <div class="content p-3 pl-4">
+                                        <form>
+                                        <p class="p-2 text-dark">
+                                        <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
+                                         <span class="p-2">REJEE Stores surveys and research
+                                        Send me invitations to participate in occasional research such as surveys and focus groups to share feedback on my REJEE Stores experience.
+                                         </span>
+                                        </p>
+                                        <p class="p-2 text-dark">
+                                        <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
+                                         <span class="p-2">
+                                        General email promotions
+                                        Send me emails about what's new and hot on REJEE Stores, great deals, special events, discount coupons and other special offers.
+                                         </span>
+                                        </p>
+                                        <p class="p-2 text-dark">
+                                        <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
+                                         <span class="p-2">
+                                        Seller email promotions
+                                        Send me emails about seller specials like fee and listing discounts, selling tips and other ways to get started selling or get more from selling on REJEE Stores
+                                         </span>
+                                        </p>
+                                        <p class="p-2 text-dark">
+                                        <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
+                                         <span class="p-2">
+                                        Postal mail catalogs and promotions
+                                        Send me postal mail catalogs, coupons, seller hotlists, holiday sales planners and newsletters. (If you're a seller, clearing this box means you may not receive some news, information, and invitations designed to help your sales on REJEE Stores.)
+                                         </span>
+                                        </p>
+                                        <p class="p-2 text-dark">
+                                        <span><input type="checkbox" id="html" name="fav_language" value="HTML"></span>
+                                         <span class="p-2">
+                                        Phone updates and promotions
+                                        Call me about REJEE Stores programs like seller specials and other special events and opportunities. (If you're a seller, clearing this box means you may not receive some news, information, and invitations designed to help your sales on REJEE Stores.)
+                                         </span>
+                                        </p>
+                                        <div class="pt-5">
+                                        <span class="p-3 "><button class="btn border" type="">Cancel</button></span>
+                                        <span class="p-3 "><button class="btn border border-primary text-primary" type="">Save</button></span>
+                                        </div>
+                                        </form>
+                                    </div>
+                            </div>
                     </div>
-
                 </div>
-                  </div>
-                </div>
-
               </div>
                 </div>
               </div>
             </div>
           </div>
 
-              <div class="d-flex align-items-start p-5"></div>
           <!-- end col-md-9-1 -->
         </div>
 

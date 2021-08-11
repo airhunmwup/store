@@ -5,7 +5,7 @@
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left"></div>
       <div class="container justify-content-center content-bottom">
         <span class="p-3 text-right"
-          >Summary is your My REJEE
+          >Summary is your My REJEE Stores
           <router-link
             to="/Summary"
             data-toggle="collapse"
@@ -18,7 +18,7 @@
         <div class="content sidebar-block">
           <div class="text-base">
             <div class="pl-3">
-              <span class="font-weight-bold text-dark h3"> My REJEE</span>
+              <span class="font-weight-bold text-dark h3"> My REJEE Stores</span>
               <span class="text-dark text-sm"> UserID (0)</span>
             </div>
             <div
@@ -75,7 +75,7 @@
                       aria-controls="v-pills-inbox2"
                       aria-selected="false"
                     >
-                      From REJEE (1)
+                      From REJEE Stores (1)
                     </button>
 
                     <button
@@ -182,7 +182,7 @@
                   aria-controls="v-pills-inbox2"
                   aria-selected="false"
                 >
-                  From REJEE (1)
+                  From REJEE Stores (1)
                 </button>
 
                 <button
@@ -276,7 +276,7 @@
                           class="sender d-flex text-primary align-items-center"
                         >
                           <span class="pr-2"><b>From:</b></span>
-                          <span> REJEE</span>
+                          <span> REJEE Stores</span>
                         </div>
                         <div
                           class="
@@ -567,7 +567,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >REJEE
+                                >REJEE Stores
                               </router-link>
                             </td>
                             <td class="text-left">
@@ -576,7 +576,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >New sign in activity on your REJEE account
+                                >New sign in activity on your REJEE Stores account
                               </router-link>
                             </td>
                             <td class="text-right">--</td>
@@ -643,7 +643,7 @@
                   aria-labelledby="v-pills-inbox2-tab"
                 >
                   <span class="text text-dark p-3 h6 font-weight-bold">
-                    Inbox : From REJEE
+                    Inbox : From REJEE Stores
                   </span>
                   <span class="justify-content-end p-3">
                     <form
@@ -661,7 +661,7 @@
                           type="text"
                           id="name"
                           name="name"
-                          placeholder="Search inbox: From REJEE"
+                          placeholder="Search inbox: From REJEE Stores"
                           class="form-control border-r-none border"
                           value=""
                         />
@@ -761,7 +761,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >REJEE
+                                >REJEE Stores
                               </router-link>
                             </td>
                             <td class="text-left">
@@ -770,7 +770,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >New sign in activity on your REJEE account
+                                >New sign in activity on your REJEE Stores account
                               </router-link>
                             </td>
                             <td class="text-right">--</td>
@@ -905,7 +905,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >REJEE
+                                >REJEE Stores
                               </router-link>
                             </td>
                             <td class="text-left">
@@ -914,7 +914,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Dashboard"
-                                >New sign in activity on your REJEE account
+                                >New sign in activity on your REJEE Stores account
                               </router-link>
                             </td>
                             <td class="text-right">--</td>

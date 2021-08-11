@@ -9,7 +9,7 @@
                   Home
                   </span>>
                   <span class="text text-primary font-weight-normal">
-                  My REJEE
+                  My REJEE Stores
                   </span>>
                   <span class="text  text-primary  font-weight-normal">
                   My Account
@@ -38,7 +38,7 @@
           data-target=".navbar-collapse"
           title="account"
         >Add Payment Method</router-link>
-Your account status is not confirmed.<br>You do not have a valid billing REJEE account. Please provide a valid account before choosing your Store.<router-link
+Your account status is not confirmed.<br>You do not have a valid billing REJEE Stores account. Please provide a valid account before choosing your Store.<router-link
           class="text-primary font-weight-bold text-sm text-right pr-4"
           to="/Subscriptions"
           data-toggle="collapse"
@@ -244,7 +244,7 @@ Your account status is not confirmed.<br>You do not have a valid billing REJEE a
       <td class="border text-success text-center"><i class="fa fa-check fa-lg"></i></td>
     </tr>
     <tr>
-      <th scope="row">Link to REJEE Store on listings</th>
+      <th scope="row">Link to REJEE Stores Store on listings</th>
       <td class="border text-success text-center"><i class="fa fa-check fa-lg"></i></td>
       <td class="border text-success text-center"><i class="fa fa-check fa-lg"></i></td>
       <td class="border text-success text-center"><i class="fa fa-check fa-lg"></i></td>
@@ -263,16 +263,16 @@ Your account status is not confirmed.<br>You do not have a valid billing REJEE a
     <tr>
       <th scope="row">Best for sellers who</th>
       <td class="border">Best for sellers who have a handful of products and want a storefront to brand and promote their business.</td>
-      <td class="border">nlock more zero insertion fee listings, final value fee discounts, and a coupon for REJEE-branded shipping supplies each quarter.</td>
+      <td class="border">nlock more zero insertion fee listings, final value fee discounts, and a coupon for REJEE Stores-branded shipping supplies each quarter.</td>
       <td class="border">If you have an extensive product assortment, a Premium Store subscription gives you substantially more zero insertion fee listings.</td>
       <td class="border">For high volume sellers who have an extensive product catalog or are running a business that would benefit from dedicated customer support.</td>
     </tr>
     <tr>
       <th scope="row">Eligibility</th>
-      <td class="border">Have an REJEE seller account.</td>
-      <td class="border">Have an REJEE seller account.</td>
-      <td class="border">Have an REJEE seller account.</td>
-      <td class="border">Have an REJEE seller account.</td>
+      <td class="border">Have an REJEE Stores seller account.</td>
+      <td class="border">Have an REJEE Stores seller account.</td>
+      <td class="border">Have an REJEE Stores seller account.</td>
+      <td class="border">Have an REJEE Stores seller account.</td>
     </tr>
   </tbody>
   <p class="h5 text-dark pt-4">Summary</p>

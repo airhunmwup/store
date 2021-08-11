@@ -1,7 +1,7 @@
 <template>
   <header>
-    <div class="row box">
-      <div class="col-lg-6 col-md-6 col-sm-4 h6 pl-4 pr-5">
+    <section class="row box">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3">
         <a
           v-if="this.$store.state.isLoggedIn"
           href="#"
@@ -73,10 +73,10 @@
 
       </div>
 
-      <div class="col-lg-6 col-md-6 col-sm-6 h6 justify-content-end text-right pl-5 pr-5">
+      <div class="col-lg-6 col-xs-6 col-md-6 col-sm-6 justify-content-end text-right pr-2">
         <a href="#" class="text-dark text-sm">
           <router-link
-            class="text-dark font-weight-bold text-sm text-right pr-4"
+            class="text-dark font-weight-bold text-sm text-right pr-2"
             to="/mechantregister"
             title="sell">
           SELL
@@ -114,7 +114,7 @@
 
             <router-link
               class="text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/account"
+              to="/watchingpage"
               data-toggle="collapse"
               data-target=".navbar-collapse"
             >
@@ -125,7 +125,7 @@
 
             <router-link
               class="text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/My message"
+              to="/recentlyviewed"
               data-toggle="collapse"
               data-target=".navbar-collapse"
             >
@@ -134,7 +134,7 @@
 
             <router-link
               class="text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/My message"
+              to="/purchasehistory"
               data-toggle="collapse"
               data-target=".navbar-collapse"
             >
@@ -206,7 +206,7 @@
           </div>
         </div>
         </a>
-<a href="#" class="text-dark text-sm">
+<a href="#" v-if="this.$store.state.isLoggedIn" class="text-dark text-sm">
           <router-link
             class="text-dark font-weight-bold text-sm text-right p-2"
             to="/My message"
@@ -217,9 +217,9 @@
       </div>
 
       <!-- header left mobie -->
-    </div>
+    </section>
 
-    <div class="header-mobile d-md-none">
+    <section class="header-mobile d-md-none">
       <div
         class="
           mobile
@@ -227,7 +227,6 @@
           text-xs-center
           d-flex
           align-items-center
-          justify-content-around
         "
       >
         <!-- logo -->
@@ -340,7 +339,7 @@
           />
 
           <button
-            class="btn text-light btn-primary border"
+            class="btn text-dark btn-light border border-light shadow"
             type="submit"
             data-action="show-password"
             data-text-show="Show"
@@ -350,16 +349,16 @@
           </button>
         </div>
       </form>
-    </div>
+    </section>
 
     <!-- header desktop -->
 
-    <div class="d-xs-none card">
+    <section class="d-xs-none card">
       <div class="container">
         <div class="row">
           <!-- logo -->
 
-          <div class="col-sm-2 col-md-2 col-lg-2 pb-2 align-items-center">
+          <div class="col-sm-2 col-md-2 col-lg-2 pb-2 align-items-left">
             <div id="logo">
               <a href="index.html">
                 <img class="img-fluid" src="img/home/logo.png" alt="logo" />
@@ -369,7 +368,7 @@
 
           <!-- search-->
 
-          <div class="col-sm-8 col-md-8 col-lg-8 pt-2">
+          <div class="col-sm-9 col-md-9 col-lg-9 pt-2">
             <form method="post" class="std" id="customer-form">
               <div class="input-group col-12">
                 <input
@@ -382,7 +381,7 @@
                 />
 
                 <button
-                  class="btn text-light btn-primary border"
+                  class="btn text-dark btn-light shadow border"
                   type="submit"
                   data-action="show-password"
                   data-text-show="Show"
@@ -394,15 +393,15 @@
             </form>
           </div>
 
-          <div class="desktop_cart col-lg-2 col-md-2 justify-content-end">
+          <div class="desktop_cart col-lg-1 col-md-1 justify-content-end">
             <div class="blockcart block-cart cart-preview tiva-toggle">
-              <span class="text-right pl-3"
+              <span class="text-right"
                 ><i
-                  class="fa fa-2x pt-3 fa-shopping-cart"
+                  class="fa fa-2x p-3 fa-shopping-cart"
                   aria-hidden="true"
-                ></i>
+                >
 
-                <b class="text-danger">(1)</b></span
+                <b class="text-dark text-sm">(1)</b></i></span
               >
 
               <div class="dropdown-content">
@@ -480,23 +479,23 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
     <div v-if="loading" id="page-preloader" class="redit">
       <div class="page-loading">
         <div class="dot text-center text-danger font-italic font-extrabold">
-          R
+          
         </div>
         <div class="dot text-center text-danger font-italic font-extrabold">
-          E
+          
         </div>
         <div class="dot text-center text-danger font-italic font-extrabold">
-          J
+          
         </div>
         <div class="dot text-center text-danger font-italic font-extrabold">
-          E
+          
         </div>
         <div class="dot text-center text-danger font-italic font-extrabold">
-          E
+        
         </div>
       </div>
     </div>
