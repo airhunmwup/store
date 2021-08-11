@@ -255,29 +255,29 @@
               <div class="cart-content pt-2">
                 <table>
                   <tbody>
-                    <tr>
+                    <tr v-for="cart in this.$store.state.basket" :key="cart.id">
                       <td class="product-image">
                         <a href="product-detail.html">
-                          <img src="img/product/5.jpg" alt="Product" />
+                          <img v-bind:src="'img/product/' + cart['product_image1']" alt="Product" />
                         </a>
                       </td>
 
                       <td>
                         <div class="product-name">
                           <a href="product-detail.html"
-                            >Organic Strawberry Fruits</a
+                            >{{ cart['product_name']}}</a
                           >
                         </div>
 
                         <div>
-                          2 x
+                          {{cart['qnty']}}  x
 
-                          <span class="product-price">£28.98</span>
+                          <span class="product-price">£{{cart['product_price']}} </span>
                         </div>
                       </td>
 
                       <td class="action">
-                        <a class="remove" href="#">
+                        <a class="remove" @click="removeBasket(cart.id)">
                           <i class="fa fa-trash-o" aria-hidden="true"></i>
                         </a>
                       </td>
@@ -409,29 +409,29 @@
                 <div class="cart-content pt-2">
                   <table>
                     <tbody>
-                      <tr>
+                      <tr v-for="cart in this.$store.state.basket" :key="cart.id">
                         <td class="product-image">
                           <a href="product-detail.html">
-                            <img src="img/product/5.jpg" alt="Product" />
+                            <img v-bind:src="'img/product/' + cart['product_image1']" alt="Product" />
                           </a>
                         </td>
 
                         <td>
                           <div class="product-name">
                             <a href="product-detail.html"
-                              >Organic Strawberry Fruits</a
+                              >{{ cart['product_name']}}</a
                             >
                           </div>
 
                           <div>
-                            2 x
+                            {{cart['qnty']}} x
 
-                            <span class="product-price">£28.98</span>
+                            <span class="product-price">£{{ cart['product_price']}}</span>
                           </div>
                         </td>
 
                         <td class="action">
-                          <a class="remove" href="#">
+                          <a class="remove" @click="removeBasket(cart['id'])">
                             <i class="fa fa-trash-o" aria-hidden="true"></i>
                           </a>
                         </td>
@@ -507,7 +507,8 @@
 export default {
   data() {
     return {
-      loading: false
+      loading: false,
+
     };
   },
   methods: {
@@ -517,6 +518,10 @@ export default {
     signOut() {
       this.$store.dispatch("logout");
       this.$router.push("/signout");
+    },
+    removeBasket: function (id){
+      var itemToRemove = id;
+      this.$store.dispatch('removeFromBasket', itemToRemove);
     }
   },
   mounted() {

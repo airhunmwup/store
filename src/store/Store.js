@@ -12,6 +12,8 @@ export const store = new Vuex.Store({
         currentUser: "",
         full_name: "",
         product_detail_id: "",
+        basket: [],
+        cartTotal : '',
     },
     getters: {
         isLoggedIn: state => {
@@ -22,12 +24,10 @@ export const store = new Vuex.Store({
         login: state => {
             state.token = localStorage.getItem("token");
             state.isLoggedIn = localStorage.getItem('isLoggedIn');
-            console.log("mutated");
         },
         userloginInfo: (state, payload) => {    
             state.currentUser = payload;
             state.full_name = payload.first_name + " " + payload.last_name;
-            console.log(state.currentUser);
         },
         logout: state => {
             state.token = "";
@@ -37,8 +37,33 @@ export const store = new Vuex.Store({
         },
         product_detail_page: (state, payload) => {
             state.product_detail_id = payload;
-            console.log(payload);
             router.push("/productDetail");
+        },
+        addToBasket: (state, payload) => {
+            state.basket.push(payload);
+        },
+        updateBasket: (state, payload) =>{
+            console.log(state);
+            console.log(payload);
+            console.log("Update"); 
+            const getIndex = state.basket.findIndex(findIndex);
+            
+            state.basket.splice(getIndex, 1);
+            state.basket.push(payload);
+            function findIndex(index){
+                return index.id === payload.id;
+            }
+            console.log(state.basket);
+        },
+        removeFromBasket: (state, payload) =>{
+            
+            const getIndex = state.basket.findIndex(findIndex);
+            state.basket.splice(getIndex, 1);
+
+            function findIndex(index){
+                return index.id = payload;
+            }
+            console.log("removed");
         }
     },
     actions: {
@@ -53,7 +78,6 @@ export const store = new Vuex.Store({
                   context.commit('userloginInfo',response.data);
                 }).catch((errors) => {
                   console.log(errors);
-                  console.log("user info api call error");
                 });
             }else{
                 console.log("not logged in");
@@ -69,6 +93,15 @@ export const store = new Vuex.Store({
         },
         product_detail_page: (context, id ) => {
             context.commit('product_detail_page', id);
+        },
+        addToBasket: (context, payload) => {
+            context.commit('addToBasket', payload);
+        },
+        updateBasket: (context, payload) => {
+            context.commit('updateBasket', payload);
+        },
+        removeFromBasket: (context, payload) => {
+            context.commit('removeFromBasket', payload);
         }
     }
 });

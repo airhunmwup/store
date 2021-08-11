@@ -42,32 +42,7 @@
                             <img v-bind:src="'img/product/' + img['product_image' + num]" alt="img" />
                           </a>
                       </li>
-                      <!-- 
-                        <li class="active col">
-                          <a
-                            href="#item1"
-                            data-toggle="tab"
-                            aria-expanded="true"
-                            class="active show"
-                          >
-                            <img src="img/product/1.jpg" alt="img" />
-                          </a>
-                        </li>
-                        <li class="col">
-                          <a href="#item2" data-toggle="tab">
-                            <img src="img/product/2.jpg" alt="img" />
-                          </a>
-                        </li>
-                        <li class="col">
-                          <a href="#item3" data-toggle="tab">
-                            <img src="img/product/3.jpg" alt="img" />
-                          </a>
-                        </li>
-                        <li class="col">
-                          <a href="#item4" data-toggle="tab">
-                            <img src="img/product/5.jpg" alt="img" />
-                          </a>
-                        </li> -->
+                      
                       </ul>
                       <hr>
                     </div>
@@ -119,6 +94,7 @@
                                 max="4"
                                 min="1"
                                 value="1"
+                                v-model.number="order_qnty"
                                 class="input-group form-control-sm"
                               />
                               </td>
@@ -133,7 +109,7 @@
                       </div>
                       <div class="clearfix border-b-0 border-t-2 border-l-2 border-r-2">
 
-                    <p class="text text-sm p-3 font-weight-bold">Price: <span class="font-weight-bold text-dark h5 border-dark pr-2"> £{{ productDetails.product_price }} </span></p>
+                    <p class="text text-sm p-3 font-weight-bold">Price: <span class="font-weight-bold text-dark h5 border-dark pr-2"> £{{ productDetails.product_price }}</span></p>
                     
                                             <div class="pb-2"><router-link
                                 to="/Checkout"
@@ -146,7 +122,11 @@
                                             </div>
 
                                             <div class="pb-2">
-                                            <button class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" style="background-color: rgb(130, 231, 238)" type="submit">
+                                            <button 
+                                            @click="addToBasket"
+                                            class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" 
+                                            style="background-color: rgb(130, 231, 238)" 
+                                            type="submit">
                                                     Add to basket
                                                 </button>
                                             </div>
@@ -548,7 +528,13 @@ export default {
       p_id: this.$store.state.product_detail_id,
       img: [],
       nums: 4,
+      order_qnty: 1,
     };
+  },
+  computed: {
+    basket: function(){
+      return this.$store.state.basket;
+    }
   },
   methods: {
     getProductDetails(pid) {
@@ -580,10 +566,31 @@ export default {
       }else{
         return ""
       }
+    },
+    findBasket(index){
+        return index.id == this.productDetails.id;
+    },
+    addToBasket(){
+      if(this.$store.state.basket.length == 0){
+          this.productDetails["qnty"] = this.order_qnty;
+          this.$store.dispatch("addToBasket", this.productDetails);
+        }else if(this.$store.state.basket.length > 0){
+          var basketStore = this.$store.state.basket;
+          var updateBasket = basketStore.find(this.findBasket);
+
+          if(basketStore.findIndex(this.findBasket) >= 0 && updateBasket.qnty != this.order_qnty){
+            this.productDetails["qnty"] = this.order_qnty;
+            this.$store.dispatch("updateBasket", updateBasket);
+          }else  if(basketStore.findIndex(this.findBasket) == -1){
+            this.productDetails["qnty"] = this.order_qnty;
+            this.$store.dispatch("addToBasket", this.productDetails);
+          }else if(basketStore.findIndex(this.findBasket) >= 0){
+            console.log("Already Added");
+          }
+      }
     }
   },
   mounted() {
-    
     this.getProductDetails(this.p_id);
     console.log(this.productDetails);
     console.log(this.img);
