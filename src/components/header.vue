@@ -271,7 +271,7 @@
                         <div>
                           {{cart['qnty']}}  x
 
-                          <span class="product-price">£{{cart['product_price']}} </span>
+                          <span class="product-price">£{{cart['qnty_price']}} </span>
                         </div>
                       </td>
 
@@ -425,7 +425,7 @@
                           <div>
                             {{cart['qnty']}} x
 
-                            <span class="product-price">£{{ cart['product_price']}}</span>
+                            <span class="product-price">£{{ cart['qnty_price']}}</span>
                           </div>
                         </td>
 
@@ -439,7 +439,7 @@
                       <tr class="total">
                         <td colspan="2">Total:</td>
 
-                        <td>£92.96</td>
+                        <td>£{{this.$store.state.basketTotal}}</td>
                       </tr>
 
                       <tr>

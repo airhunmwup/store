@@ -14,6 +14,7 @@ export const store = new Vuex.Store({
         product_detail_id: "",
         basket: [],
         cartTotal : '',
+        basketTotal: '',
     },
     getters: {
         isLoggedIn: state => {
@@ -41,12 +42,15 @@ export const store = new Vuex.Store({
         },
         addToBasket: (state, payload) => {
             state.basket.push(payload);
+            console.log(state.basket);
+            state.basketTotal += payload.qnty_price;
         },
         updateBasket: (state, payload) =>{
             console.log(state);
             console.log(payload);
             console.log("Update"); 
             const getIndex = state.basket.findIndex(findIndex);
+            
             
             state.basket.splice(getIndex, 1);
             state.basket.push(payload);

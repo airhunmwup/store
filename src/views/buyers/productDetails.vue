@@ -573,13 +573,14 @@ export default {
     addToBasket(){
       if(this.$store.state.basket.length == 0){
           this.productDetails["qnty"] = this.order_qnty;
+          this.productDetails["qnty_price"] = this.productDetails.product_price * this.order_qnty;
           this.$store.dispatch("addToBasket", this.productDetails);
         }else if(this.$store.state.basket.length > 0){
           var basketStore = this.$store.state.basket;
           var updateBasket = basketStore.find(this.findBasket);
-
           if(basketStore.findIndex(this.findBasket) >= 0 && updateBasket.qnty != this.order_qnty){
             this.productDetails["qnty"] = this.order_qnty;
+            this.productDetails["qnty_price"] = this.productDetails.product_price * this.order_qnty;
             this.$store.dispatch("updateBasket", updateBasket);
           }else  if(basketStore.findIndex(this.findBasket) == -1){
             this.productDetails["qnty"] = this.order_qnty;
