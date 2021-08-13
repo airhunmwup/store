@@ -14,7 +14,7 @@ export const store = new Vuex.Store({
         product_detail_id: "",
         basket: [],
         cartTotal : '',
-        basketTotal: '',
+        basketTotal: 0,
     },
     getters: {
         isLoggedIn: state => {
@@ -42,32 +42,43 @@ export const store = new Vuex.Store({
         },
         addToBasket: (state, payload) => {
             state.basket.push(payload);
+            state.basketTotal = 0;
+
+            const total = Object.keys(state.basket);
+            total.forEach(key => {
+                state.basketTotal += state.basket[key]['qnty_price'];
+            });
             console.log(state.basket);
-            state.basketTotal += payload.qnty_price;
         },
         updateBasket: (state, payload) =>{
-            console.log(state);
-            console.log(payload);
             console.log("Update"); 
+            state.basketTotal = 0;
             const getIndex = state.basket.findIndex(findIndex);
             
-            
+            console.log(getIndex); 
             state.basket.splice(getIndex, 1);
             state.basket.push(payload);
             function findIndex(index){
                 return index.id === payload.id;
             }
+            console.log(payload);
+            const total = Object.keys(state.basket);
+            total.forEach(key => {
+                state.basketTotal += state.basket[key]['qnty_price'];
+            });
             console.log(state.basket);
         },
         removeFromBasket: (state, payload) =>{
             
             const getIndex = state.basket.findIndex(findIndex);
+            const item = state.basket.find(findIndex);
             state.basket.splice(getIndex, 1);
 
             function findIndex(index){
                 return index.id = payload;
             }
-            console.log("removed");
+            state.basketTotal -= item.qnty_price;
+            console.log(item);
         }
     },
     actions: {

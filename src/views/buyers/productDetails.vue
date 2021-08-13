@@ -575,15 +575,22 @@ export default {
           this.productDetails["qnty"] = this.order_qnty;
           this.productDetails["qnty_price"] = this.productDetails.product_price * this.order_qnty;
           this.$store.dispatch("addToBasket", this.productDetails);
+          console.log("lenght 0");
         }else if(this.$store.state.basket.length > 0){
+          console.log("lenght > 0");
           var basketStore = this.$store.state.basket;
           var updateBasket = basketStore.find(this.findBasket);
+          //if product exists in basket and qnty is not equals to the qnty in the basket
           if(basketStore.findIndex(this.findBasket) >= 0 && updateBasket.qnty != this.order_qnty){
+            console.log("m than 1 qnty != qnty");
             this.productDetails["qnty"] = this.order_qnty;
             this.productDetails["qnty_price"] = this.productDetails.product_price * this.order_qnty;
-            this.$store.dispatch("updateBasket", updateBasket);
-          }else  if(basketStore.findIndex(this.findBasket) == -1){
+            this.$store.dispatch("updateBasket", this.productDetails);
+            //if product does not exist in basket
+          }else if(basketStore.findIndex(this.findBasket) == -1){
+            console.log("not in basket");
             this.productDetails["qnty"] = this.order_qnty;
+            this.productDetails["qnty_price"] = this.productDetails.product_price * this.order_qnty;
             this.$store.dispatch("addToBasket", this.productDetails);
           }else if(basketStore.findIndex(this.findBasket) >= 0){
             console.log("Already Added");

@@ -253,7 +253,7 @@
             <div class="dropdown-content">
               <div class="cart-content pt-2">
                 <table>
-                  <tbody>
+                  <tbody v-if="basketState">
                     <tr v-for="cart in this.$store.state.basket" :key="cart.id">
                       <td class="product-image">
                         <a href="product-detail.html">
@@ -318,6 +318,9 @@
                       </td>
                     </tr>
                   </tbody>
+                  <tbody v-else>
+                      <tr>Empty Cart</tr>
+                    </tbody>
                 </table>
               </div>
             </div>
@@ -401,13 +404,13 @@
                   aria-hidden="true"
                 >
 
-                <b class="text-dark text-sm">(1)</b></i></span
+                <b class="text-dark text-sm">({{basketState}})</b></i></span
               >
 
               <div class="dropdown-content">
                 <div class="cart-content pt-2">
                   <table>
-                    <tbody>
+                    <tbody v-if="basketState">
                       <tr v-for="cart in this.$store.state.basket" :key="cart.id">
                         <td class="product-image">
                           <a href="product-detail.html">
@@ -472,6 +475,9 @@
                         </td>
                       </tr>
                     </tbody>
+                    <tbody v-else>
+                      <tr>Empty Cart</tr>
+                    </tbody>
                   </table>
                 </div>
               </div>
@@ -506,9 +512,13 @@
 export default {
   data() {
     return {
-      loading: false,
-
+      loading: false,  
     };
+  },
+  computed:{
+    basketState: function(){
+      return this.$store.state.basket.length;
+    }
   },
   methods: {
     login() {
