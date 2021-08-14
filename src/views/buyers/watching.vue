@@ -5,114 +5,26 @@
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
         
       </div>
-      <div class="container justify-content-center content-bottom">
-
-        <span class="p-3 text-right">Summary is your My REJEE 
-          <router-link
-            to="/Summary"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="text-primary"
-            title="Home Page"
-            >homepage</router-link></span>
-      </div>
 
     </div>
-        <div class="row pb-4">
-          <div
-            class="pl-4
-              sidebar-3 
-              col-lg-2 col-md-2
-              d-xs-none
-              pt-3
-              font-weight-bold
-            "
-          >
-            <!-- menu -->
-            <div class="sidebar-block text-dark">
-              <div class="block-content">
-              <div
-                class="block-content nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/summary"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Summary"
-                            >
-                  Summary
-                </router-link>
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/recentlyviewed"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Recently viewed"
-                            >
-                  Recently
-                    viewed
-                </router-link>
+        <div class="row pt-3 pb-4 justify-content-center">
 
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/purchasehistory"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Purchase History"
-                            >
-                  Purchase History
-                </router-link>
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/watchingpage"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Watching"
-                            >
-                  Watching
-                </router-link>
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/savedsearch"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Saved Search"
-                            >
-                  Saved Search
-                </router-link>
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/savedseller"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Saved Seller"
-                            >
-                  Saved Seller
-                </router-link>
-              </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-sm-12 col-lg-9 col-md-9 product-container">
-            <div id="wrapper-site">
-
-              <div class="tab-content" id="v-pills-tabContent">
+                <div class="container pl-2">
+                    <div class="row">
+                    <div class="col-lg-6 col-xs-12">
+                  <p class="text font-weight-bold">
+                  <span class="p-3 font-weight-bolder text-dark h4 underline">Watchlist</span>
+                  <span>Purchases & Rentals</span>
+                  </p>
+                    </div>
+                    </div>
+                </div>
 
 <!--Watching-->
-                <div class="row">
-                  <span class="text text-dark h4 font-weight-bold p-4 font-weight-normal">
-                  Watching
-                  </span>
-                                    <div class="cart-container">
+                <div class="row justify-center">
 
-        <div class="col-md-10 col-xs-12 col-sm-12 check-info">
-          <div class="cart-container">
-            <ul class="cart-items">
+        <div class="col-lg-10 col-md-10 col-xs-12 col-sm-12 check-info">
+            <ul class="cart-items border-2">
               <li class="cart-item">
                 <div class="product-line-grid row p-2 justify-content-between">
                   <!--  product left content: image-->
@@ -142,11 +54,15 @@
                         </div>
                       </div>
                     </div>
-                          <div class="p-3">
-                            <p class="text-xs text-primary underline">
-                              <span class="p-3">
+                          <div class="pt-4">
+                            <p class="text-xs text-right">
+                              <span class="text-primary underline btn p-3">
                               <i class="fa fa-trash-o" aria-hidden="true"></i>
                               Remove
+                              </span>
+                              <span class="text-primary underline btn p-3">
+                              <i class="fa fa-trash-o" aria-hidden="true"></i>
+                              ADD to basket
                               </span>
                             </p>
                           </div>
@@ -183,11 +99,15 @@
                         </div>
                       </div>
                     </div>
-                          <div class="p-3">
-                            <p class="text-xs text-primary underline">
-                              <span class="p-3">
+                          <div class="pt-4">
+                            <p class="text-xs text-right">
+                              <span class="text-primary underline btn p-3">
                               <i class="fa fa-trash-o" aria-hidden="true"></i>
                               Remove
+                              </span>
+                              <span class="text-primary underline btn p-3">
+                              <i class="fa fa-trash-o" aria-hidden="true"></i>
+                              ADD to basket
                               </span>
                             </p>
                           </div>
@@ -196,13 +116,8 @@
               </li>
               <hr />
             </ul>
-          </div>
         </div>
-                                    </div>
                 </div>
-              </div>
-            </div>
-          </div>
 
           <!-- end col-md-9-1 -->
         </div>

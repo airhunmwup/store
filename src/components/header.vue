@@ -5,10 +5,10 @@
         <a
           v-if="this.$store.state.isLoggedIn"
           href="#"
-          class="text-dark text-sm dropdown-toggle"
+          class="text-dark dropdown-toggle h6"
           data-toggle="dropdown"
         >
-          Hi {{ this.$store.state.currentUser.first_name }}
+          Hello {{ this.$store.state.currentUser.first_name }}
           
         <div class="dropdown-menu">
           <div
@@ -20,7 +20,7 @@
             <!-- primary info buttons -->
 
             <router-link
-              class="text-left text-dark p-4 text-xs font-weight-bold"
+              class="text-left text-dark p-3 text-xs font-weight-bold"
               to="/Summary"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -33,21 +33,11 @@
 
             <!-- primary info buttons ends/-->
             <!-- Account preferences/-->
-
-            <router-link
-              class="text-left text-primary pl-4 text-xs pb-2 font-weight-bold"
-              to="/account"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="account"
-            >
-              Account settings
-            </router-link>
             
 <hr>
 
         <a
-              class="text-left text-dark pt-3 pl-4 text-xs pb-2 font-weight-bold"
+              class="text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
               data-toggle="collapse"
               title="sign out"
               @click="signOut"
@@ -59,7 +49,7 @@
         </div>
         </a>
 
-        <a v-else href="#" class="text-dark text-sm text-right">
+        <a v-else href="#" class="h6 text-dark text-sm text-right">
           <router-link
             class="text-dark font-weight-bold"
             to="/login"
@@ -67,46 +57,26 @@
             data-target=".navbar-collapse"
             title="login"
             ><i class="fa fa-user-o"></i> 
-            <a > Hi Sign in or register</a>
+            <a > Hello Sign in or register</a>
           </router-link>
         </a>
 
       </div>
 
       <div class="col-lg-6 col-xs-6 col-md-6 col-sm-6 justify-content-end text-right pr-2">
-        <a href="#" class="text-dark text-sm">
-          <router-link
-            class="text-dark font-weight-bold text-sm text-right pr-2"
-            to="/mechantregister"
-            title="sell">
-          SELL
-          </router-link>
-        </a>
-
+        
         <a
           href="#"
-          class="text-dark text-sm text-right dropdown-toggle"
+          class="text-dark text-sm pr-3 dropdown-toggle"
           data-toggle="dropdown"
         >
           My REJEE
-        <div v-if="this.$store.state.isLoggedIn" class="dropdown-menu">
-          <div
-            class="text-md block-content nav flex-column nav-pills"
-            id="v-pills-tab"
-            role="tablist"
-            aria-orientation="vertical"
-          >
+        </a>
+        <div v-if="this.$store.state.isLoggedIn" class="row dropdown-menu justify-around pr-4">
+          
+          <div class="text-md nav flex-column">
             <!-- primary info buttons -->
 
-            <router-link
-              class="text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/Summary"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              
-            >
-              Summary
-            </router-link>
 
             <!-- primary info buttons ends/-->
 
@@ -118,7 +88,7 @@
               data-toggle="collapse"
               data-target=".navbar-collapse"
             >
-              Wishlist
+              Watching
             </router-link>
 
             <!-- Account preferences/-->
@@ -138,7 +108,7 @@
               data-toggle="collapse"
               data-target=".navbar-collapse"
             >
-              Purchase history
+              Your Orders
             </router-link>
 
             <router-link
@@ -152,23 +122,131 @@
 
             <!-- Account preferences Ends/-->
 
-            <hr />
+            <!-- primary info buttons -->
+                <button
+                  class="text-left h6 font-weight-bold text-dark p-2 active"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="fa fa-md fa-user pr-2"></i>Account Info
+                </button>
+                <router-link
+                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
+                            to="/account"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Personal Information"
+                            >
+                  Your Account
+                </router-link>
+                <router-link
+                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
+                            to="/buyeraddresssetting"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Addresses"
+                            >
+                  Your Addresses
+                </router-link>
+                <router-link
+                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
+                            to="/buyersigninsecsetting"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Sign in and security"
+                            >
+                  Sign in and security
+                </router-link>
+            <!-- primary info buttons ends/-->
 
-            <!-- Resolution center/-->
-
-            <router-link
-              class="text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/Resolution center"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              ><i class="fa fa-commenting-o fa-2x pr-2"></i> Support
-            </router-link>
-
-            <!-- Resolution center End/-->
+            <!-- Payment Information button/-->
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="zmdi zmdi-balance-wallet h5 pr-2"></i> Payment Info
+                </button>
+                <router-link
+                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
+                            to="/paymentsetting"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Payments"
+                            >
+                  Payments
+                </router-link>
+              <!-- Payment   <button
+                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
+                  id="v-pills-Paypal-Account-tab"
+                  data-bs-toggle="pill"
+                  data-bs-target="#v-pills-Paypal-Account"
+                  type="button"
+                  role="tab"
+                  aria-controls="v-pills-Paypal-Account"
+                  aria-selected="true"
+                >
+                  Paypal Account
+                </button>
+            Information button ends/-->
+            <!-- Account preferences/-->
+                <button
+                  class="text-left  font-weight-bold text-dark p-2"
+                  data-bs-toggle="pill"
+                  type="button"
+                  role="tab"
+                  aria-selected="true"
+                >
+                  <i class="zmdi zmdi-settings h5 pr-2"></i> Preferences
+                </button>
+                <router-link
+                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Product Listing"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Advertisement Preferences"
+                            >
+                  Advertisement Preferences
+                </router-link>
+                <router-link
+                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Product Listing"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Communication Preferences"
+                            >
+                  Communication Preferences
+                </router-link>
+                <router-link
+                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Product Listing"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Close account"
+                            >
+                  Close account
+                </router-link>
+            <!-- Account preferences Ends/-->
           </div>
+            <!-- Resolution center/-->
+                <router-link
+                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
+                            to="/Resolution center"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Resolution center"
+                            >
+                  
+                  <i class="fa fa-commenting-o fa-2x pr-2"></i> Resolution Center
+                </router-link>
+            <!-- Resolution center End/-->
         </div>
 
-        <div v-else class="dropdown-menu">
+        <div v-else class="dropdown-menu pr-4">
           <div
             class="text-md block-content nav flex-column nav-pills"
             id="v-pills-tab"
@@ -205,6 +283,13 @@
             <!-- Resolution center End/-->
           </div>
         </div>
+        <a href="#" class="text-dark text-right text-sm pr-4">
+          <router-link
+            class="text-dark font-weight-bold text-sm text-right"
+            to="/mechantregister"
+            title="sell">
+          SELL
+          </router-link>
         </a>
 <a href="#" v-if="this.$store.state.isLoggedIn" class="text-dark text-sm">
           <router-link
