@@ -252,37 +252,19 @@
               <div class="border p-3">
                 <table class="std">
                   <tbody>
-                    <tr>
+                    <tr v-for="cart in this.$store.state.basket" :key="cart.id">
                       <td colspan="3">
                         <div class="text-dark font-weight-bold">
                           <a href="product-detail.html"
-                            >Organic Strawberry Fruits</a
+                            >{{cart['product_name']}}</a
                           >
                         </div>
                         <div>
-                          2 x
-                          <span class="product-price">£28.98</span>
+                          {{cart['qnty']}}x
+                          <span class="product-price">£{{cart['qnty_price']}}</span>
                         </div>
                       </td>
-                      <td class="action text-right">
-                        <a class="remove" href="#">
-                          <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="3">
-                        <div class="text-dark font-weight-bold">
-                          <a href="product-detail.html"
-                            >Organic Strawberry Fruits</a
-                          >
-                        </div>
-                        <div>
-                          2 x
-                          <span class="product-price">£28.98</span>
-                        </div>
-                      </td>
-                      <td class="action text-right">
+                      <td class="action text-right" @click="removeBasket(cart['id'])">
                         <a class="remove" href="#">
                           <i class="fa fa-trash-o" aria-hidden="true"></i>
                         </a>
@@ -290,7 +272,7 @@
                     </tr>
                     <tr class="total font-weight-bold h5 text-dark">
                       <td class="p-3" colspan="2">Total:</td>
-                      <td class="p-3" colspan="2">£92.96</td>
+                      <td class="p-3" colspan="2">£{{this.$store.state.basketTotal}}</td>
                     </tr>
                   </tbody>
                 </table>
@@ -302,3 +284,20 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: "productCart",
+  data() {
+    return {
+
+    }
+  },
+  methods: {
+    removeBasket: function (id){
+      var itemToRemove = id;
+      this.$store.dispatch('removeFromBasket', itemToRemove);
+    }
+  }
+}
+</script>
