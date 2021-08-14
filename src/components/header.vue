@@ -80,6 +80,15 @@
 
             <!-- primary info buttons ends/-->
 
+                <router-link
+                  class="text-left underline pl-4 pb-2  font-weight-bold"
+                            to="/account"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Personal Information"
+                            >
+                  Your Account
+                </router-link>
             <!-- Account preferences/-->
 
             <router-link
@@ -132,15 +141,6 @@
                 >
                   <i class="fa fa-md fa-user pr-2"></i>Account Info
                 </button>
-                <router-link
-                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
-                            to="/account"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Personal Information"
-                            >
-                  Your Account
-                </router-link>
                 <router-link
                   class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
                             to="/buyeraddresssetting"
@@ -377,7 +377,7 @@
                       <td colspan="3" class="d-flex justify-content-center">
                         <span class="btn p-3 text-sm justify-content-start">
                           <router-link
-                            to="/ViewCart"
+                            to="/View Cart"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             title="view Cart"
@@ -619,6 +619,7 @@ export default {
     }
   },
   mounted() {
+    console.log("ran...");
     this.$http.defaults.headers.common['Authorization'] = `Bearer ${this.$store.state.token}`;
     this.login();
   },
