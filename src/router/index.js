@@ -315,7 +315,7 @@ const routes = [{
         component: productDetails,
     },
     {
-        path: '/View Cart',
+        path: '/ViewCart',
         name: 'View Cart',
         component: productcart,
     },

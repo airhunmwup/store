@@ -292,7 +292,7 @@
                       <td colspan="3" class="d-flex justify-content-center">
                         <span class="btn p-3 text-sm justify-content-start">
                           <router-link
-                            to="/View Cart"
+                            to="/ViewCart"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             title="view Cart"
@@ -449,7 +449,7 @@
                         <td colspan="3" class="d-flex justify-content-center">
                           <span class="btn p-3 text-sm justify-content-start">
                             <router-link
-                              to="/View Cart"
+                              to="/ViewCart"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="view Cart"
@@ -534,7 +534,6 @@ export default {
     }
   },
   mounted() {
-    console.log("ran...");
     this.$http.defaults.headers.common['Authorization'] = `Bearer ${this.$store.state.token}`;
     this.login();
   },

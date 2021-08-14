@@ -12,9 +12,8 @@ export const store = new Vuex.Store({
         currentUser: "",
         full_name: "",
         product_detail_id: "",
-        basket: [],
-        cartTotal : '',
-        basketTotal: 0,
+        basket: JSON.parse(localStorage.getItem('basket')) ? JSON.parse(localStorage.getItem('basket')) : [],
+        basketTotal: localStorage.getItem('basketTotal') ? localStorage.getItem('basketTotal') : 0,
     },
     getters: {
         isLoggedIn: state => {
@@ -48,37 +47,51 @@ export const store = new Vuex.Store({
             total.forEach(key => {
                 state.basketTotal += state.basket[key]['qnty_price'];
             });
-            console.log(state.basket);
+            //OPTIMIZATION NEEDED
+            localStorage.setItem('basketTotal', state.basketTotal);
+            state.basketTotal = parseInt(localStorage.getItem('basketTotal'));
+            localStorage.setItem('basket', JSON.stringify(state.basket));
+            state.basket = JSON.parse(localStorage.getItem('basket'));
+            console.log("Item added to basket");
         },
-        updateBasket: (state, payload) =>{
-            console.log("Update"); 
+        updateBasket: (state, payload) => { 
             state.basketTotal = 0;
             const getIndex = state.basket.findIndex(findIndex);
-            
-            console.log(getIndex); 
+             
             state.basket.splice(getIndex, 1);
             state.basket.push(payload);
             function findIndex(index){
                 return index.id === payload.id;
             }
-            console.log(payload);
+
             const total = Object.keys(state.basket);
             total.forEach(key => {
                 state.basketTotal += state.basket[key]['qnty_price'];
             });
-            console.log(state.basket);
+            //OPTIMIZATION NEEDED
+            localStorage.setItem('basketTotal', state.basketTotal);
+            state.basketTotal = parseInt(localStorage.getItem('basketTotal'));
+            localStorage.setItem('basket', JSON.stringify(state.basket));
+            state.basket = JSON.parse(localStorage.getItem('basket'));
+            console.log("Item updated in basket");
         },
         removeFromBasket: (state, payload) =>{
             
             const getIndex = state.basket.findIndex(findIndex);
             const item = state.basket.find(findIndex);
             state.basket.splice(getIndex, 1);
+            localStorage.setItem('basket', JSON.stringify(state.basket));
+            state.basket = JSON.parse(localStorage.getItem('basket'));
 
             function findIndex(index){
                 return index.id = payload;
             }
+
             state.basketTotal -= item.qnty_price;
-            console.log(item);
+            //OPTIMIZATION NEEDED
+            localStorage.setItem('basketTotal', state.basketTotal);
+            state.basketTotal = parseInt(localStorage.getItem('basketTotal'));
+            console.log("Item removed from basket");
         }
     },
     actions: {
@@ -96,8 +109,7 @@ export const store = new Vuex.Store({
                 });
             }else{
                 console.log("not logged in");
-            }
-            
+            }   
         },
         logout: context => {
             if(context.state.token){
