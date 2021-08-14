@@ -48,7 +48,7 @@
                     to="/purchasehistory"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="border-warning border-b-4 p-2"
+                    class="p-2"
                     title="Orders"
                     ><span>Orders</span></router-link
                   >
@@ -56,7 +56,7 @@
                     to="/buyagain"
                     data-toggle="collapse"
                     data-target=".navbar-collapse" 
-                    class="p-2"
+                    class="border-warning border-b-4 p-2"
                     title="Buy Again"
                     ><span>Buy Again</span></router-link>
                   <router-link
@@ -80,24 +80,8 @@
 
 <!--Purchase History-->
                 <div class="row">
-                    <div class="pb-3 col-6">
-                        <form method="post" class="std" id="customer-form">
-                        <div class="input-group">
-                <div class="page-item p-2 font-weight-bold text-dark">0 Orders placed: </div>
-                                <select class="form-control-sm shadow text-xs text-primary btn select ">
-                                    <option>Last 30 Days</option>
-                                    <option>Past three months</option>
-                                    <option>2021</option>
-                                    <option>2020</option>
-                                    <option>2019</option>
-                                    </select>
-
-                        </div>
-                        </form>
-                    </div>
-                <hr>
                 <div class="">
-                  <p class="text-dark text-center">You do not have any orders to display in this view.</p>
+                  <p class="text-dark text-center">You do not have iterm to display in this view.</p>
                 </div>
                 </div>
 

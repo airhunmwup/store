@@ -48,7 +48,7 @@
                     to="/purchasehistory"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="border-warning border-b-4 p-2"
+                    class="p-2"
                     title="Orders"
                     ><span>Orders</span></router-link
                   >
@@ -70,7 +70,7 @@
                     to="/buyerreturns"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
-                    class="p-2"
+                    class="border-warning border-b-4 p-2"
                     title="Returns"
                     ><span>Returns</span></router-link>
                   </div>
