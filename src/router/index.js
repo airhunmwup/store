@@ -31,6 +31,11 @@ import saved_search from '../views/buyers/saved_search.vue'
 import watching from '../views/buyers/watching.vue'
 import purchase_history from '../views/buyers/purchase_history.vue'
 import recently_viewed from '../views/buyers/recently_viewed.vue'
+import signin_sec from '../views/buyers/signin_sec.vue'
+import buyer_returns from '../views/buyers/returns.vue'
+import cancelled_order from '../views/buyers/cancelled_orders.vue'
+import buy_again from '../views/buyers/buyagain.vue'
+
 
 import Account from '../views/buyers/account.vue'
 import payment_setting from '../views/buyers/payment_setting.vue'
@@ -185,6 +190,21 @@ const routes = [{
     },
 
     {
+        path: '/buyerreturns',
+        name: 'buyerreturns',
+        component: buyer_returns,
+    },
+    {
+        path: '/cancelledorder',
+        name: 'cancelledorder',
+        component: cancelled_order,
+    },
+    {
+        path: '/buyagain',
+        name: 'buyagain',
+        component: buy_again,
+    },
+    {
         path: '/Process Order',
         name: 'Order_process',
         component: Order_process,
@@ -206,6 +226,11 @@ const routes = [{
         component: buyeraddress_setting,
     },
 
+    {
+        path: '/buyersigninsecsetting',
+        name: 'buyersigninsecsetting',
+        component: signin_sec,
+    },
     {
         path: '/savedseller',
         name: 'savedseller',

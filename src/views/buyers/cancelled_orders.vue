@@ -20,7 +20,7 @@
                     data-target=".navbar-collapse"
                     class="p-2"
                     title="Orders"
-                    ><span class="text-primary">Orders</span></router-link
+                    ><span>Orders</span></router-link
                   >
                   <router-link
                     to="/buyagain"
