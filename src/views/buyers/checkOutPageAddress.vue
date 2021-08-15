@@ -4,16 +4,16 @@
         <!-- breadcrumb -->
 
         <!-- main -->
-  <div class="row p-3">
+  <div class="row p-4">
     <div class="col-12">
      <p class="text-dark h4">Select a delivery address</p>
     </div>
     <div class="col-12">
-     <p class="text-dark">Is the address you'd like to use displayed below? If so, click the corresponding "Deliver to this address" button. Or you can <a href="" class="text-primary underline">enter a new delivery address. </a></p>
+     <p class="text-dark">Is the address you'd like to use displayed below? If so, click the corresponding "Deliver to this address" button. Or you can <a href="#AddAddress" class="text-primary underline">enter a new delivery address. </a></p>
     </div>
     <hr>
 
-<div class="row p-3">
+<div class="row p-4">
   <div class="col-sm-4">
     <div class="card">
       <div class="card-body">
@@ -23,7 +23,15 @@
         <p class="card-text text-dark">City, Postcode</p>
         <p class="card-text text-dark">Country</p>
       </div>
-<p class="p-2"><button type="button" class="btn border btn-sm btn-warning btn-block">Deliver to this address</button></p>
+<p class="p-2">
+            <router-link
+              class=""
+              to="/checkoutpayment"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            ><button type="button" class="btn border btn-sm btn-warning btn-block">Deliver to this address</button>
+            </router-link></p>
 <p class="p-2"><button type="button" class="col-6 border btn-sm pr-3 btn btn-light">Edit</button> <button type="button" class="col-6 btn-sm border btn btn-light">Delete</button></p>
     </div>
   </div>
@@ -36,15 +44,23 @@
         <p class="card-text text-dark">City, Postcode</p>
         <p class="card-text text-dark">Country</p>
       </div>
-<p class="p-2"><button type="button" class="btn border btn-sm btn-warning btn-block">Deliver to this address</button></p>
+<p class="p-2">
+            <router-link
+              class=""
+              to="/checkoutpayment"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            ><button type="button" class="btn border btn-sm btn-warning btn-block">Deliver to this address</button>
+            </router-link></p>
 <p class="p-2"><button type="button" class="col-6 border btn-sm pr-3 btn btn-light">Edit</button> <button type="button" class="col-6 btn-sm border btn btn-light">Delete</button></p>
     </div>
   </div>
 </div>
 <hr>
   </div>
-                  <div class="row">
-                    <div class="col-md-8 check-info">
+                  <div id="AddAddress"  class="row">
+                    <div class="p-4 col-md-8 check-info">
                         <div class="checkout-personal-step">
                           <h3 class="step-title text-dark  h5">
                             Add a new address
@@ -65,8 +81,8 @@
                               <div>
                                 
                                 <div class="form-group row">
-                                  <label class="title text-dark">Country/Region</label>
-                              <select id="country" name="country" class="form-control">
+                                  <label class="title text-dark font-weight-bold">Country/Region</label>
+                              <select id="country" name="country" class="border-secondary form-control">
                                 <option value="United Kingdom">United Kingdom</option>
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands">Åland Islands</option>
@@ -315,63 +331,63 @@
                             </select>
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark">Full name</label>
+                                  <label class="title text-dark font-weight-bold">Full name</label>
                                   <input
-                                    class="form-control border"
+                                    class="form-control border-secondary"
                                     name="fullname"
                                     type="text"
                                     placeholder=""
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark">Phone number</label>
+                                  <label class="title text-dark font-weight-bold">Phone number</label>
                                   <input
-                                    class="form-control border"
+                                    class="form-control border-secondary"
                                     name="fullname"
                                     type="tel"
                                     placeholder=""
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark">Postcode</label>
+                                  <label class="title text-dark font-weight-bold">Postcode</label>
                                   <input
-                                    class="form-control border"
+                                    class="form-control border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="Enter your area postcode"
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark">Address line 1</label>
+                                  <label class="title text-dark font-weight-bold">Address line 1</label>
                                   <input
-                                    class="form-control border"
+                                    class="form-control border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="type your address"
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark">Address line 2 (optional)</label>
+                                  <label class="title text-dark font-weight-bold">Address line 2 (optional)</label>
                                   <input
-                                    class="form-control border"
+                                    class="form-control border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark">Town/City</label>
+                                  <label class="title text-dark font-weight-bold">Town/City</label>
                                   <input
-                                    class="form-control border"
+                                    class="form-control border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark">County (if applicable)</label>
+                                  <label class="title text-dark font-weight-bold">County (if applicable)</label>
                                   <input
-                                    class="form-control border"
+                                    class="form-control border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -386,7 +402,7 @@
                                       </p>
 
                                   <textarea
-                                    class="form-control border-2 text-xs"
+                                    class="form-control border-secondary text-xs"
                                     name="firstname"
                                     type="text"
                                     row="10"
@@ -399,27 +415,21 @@
                                       </p>
 
                                   <input
-                                    class="form-control"
+                                    class="form-control border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="1234"
                                   />
                                 </div>
                               </div>
-                                            <div class="p-3">
+                                            <div class="">
                                             <router-link
                                 to="/checkoutpayment"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Continue"
                               >
-                                <button
-                                  class="col-lg-12 border col-md-12 col-sm-12 btn btn-warning form-control add-to-cart"
-                                  data-button-action="add-to-cart"
-                                  type="submit"
-                                >
-                                  Use this address
-                                </button></router-link
+                                <button type="button" class="btn btn-warning border">Add address</button></router-link
                               >
                                         </div>
                             </form>

@@ -375,8 +375,8 @@ const routes = [{
         component: userAddressBook,
     },
     {
-        path: '/Add New Address',
-        name: 'addUserAddressPage',
+        path: '/addnewaddress',
+        name: 'addnewaddress',
         component: addUserAddressPage,
     },
     {

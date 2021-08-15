@@ -1,5 +1,4 @@
 <template>
-  <div>
     <!-- footer -->
     <footer class="footer-one box">
       <hr>
@@ -43,13 +42,7 @@
             </div>
         </div>
     </footer>
-    <div class="back-to-top pr-4">
-      <a href="#">
-        <i class="text-warning fa fa-long-arrow-up"></i>
-      </a>
-    </div>
 
-  </div>
   <!-- footer -->
 </template>
 
