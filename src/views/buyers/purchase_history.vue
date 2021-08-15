@@ -17,20 +17,23 @@
                   </p>
                     </div>
                     <div class="col-lg-6 col-xs-9">
+
           <div class="pt-2">
             <form method="post" class="std" id="customer-form">
-              <div class="justify-content-center text-center input-group col-12 border-2">
-                  <i class="pr-3 pt-3 fa fa-search fa-lg"></i>
+              <div class="justify-content-center text-center input-group col-12">
+    <div class="input-group-prepend">
+      <div class="input-group-text" id="btnGroupAddon"><i class="fa fa-search"></i></div>
+    </div>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Search all Orders"
-                  class="form-control border-0"
+                  class="form-control border"
                   value=""
                 />
                 <button
-                  class="btn text-primary  border-l-2"
+                  class="btn-light btn text-primary  border-l-2"
                   type="submit"
                   data-action="show-password"
                   data-text-show="Show"
@@ -95,8 +98,57 @@
                         </div>
                         </form>
                     </div>
-                <hr>
-                <div class="">
+                <div class=""><div class="card">
+  <div class="border card-header">
+  <div class="text-dark row">
+    <div class="col">
+      <p>ORDER PLACED</p>
+    <p class="text-dark">4 August 2021</p>
+    </div>
+    <div class="col">
+      <p>TOTAL</p>
+    <p class="text-dark">£0.00</p>
+    </div>
+    <div class="col-4">
+      <p>DISPATCH TO</p>
+    <p class="text-dark"> </p>
+    </div>
+    <div class="col-lg-4 p-2 col-md-4 col-xs-12">
+        <p>ORDER # 202-0274579-1617107</p>
+    <p class=""> <span class="text-primary text-sm" >View order details </span>|<span class="text-primary text-sm" > Invoice</span></p>
+    </div>
+  </div>
+  </div>
+  <div class="card-body">
+
+  <div class="row">
+    <div class="col-8">
+       <p class="text-dark h6"> 
+      Expected by 10 Aug
+       </p>
+
+  <div class="row">
+    <div class="col-lg-5 col-md-5 col-xs-12 center">
+       <img src="img/product/1.jpg" class="" alt="Product" />
+    </div>
+    <div class="p-3 text-dark col-7">
+       <p class="pt-3 text-primary h6 underline"> Product name</p>
+        <button type="button" class="btn btn-secondary btn-sm">Buy again</button>
+    </div>
+  </div>
+    </div>
+    <div class="col">
+<button type="button" class="btn btn-warning btn-block">Track package</button>
+<button type="button" class="btn btn-light border btn-block">Problem with order</button>
+<button type="button" class="btn btn-light border btn-block">Return</button>
+<button type="button" class="btn btn-light border btn-block">Leave seller feedback</button>
+    </div>
+  </div>
+  </div>
+  <div class="card-body border-t-2">
+<button type="button" class="text-primary underline"> Archive order</button>
+  </div>
+</div>
                   <p class="text-dark text-center">You do not have any orders to display in this view.</p>
                 </div>
                 </div>

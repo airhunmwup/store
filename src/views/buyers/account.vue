@@ -9,15 +9,15 @@
             <span class="text text-dark h5 pl-4 font-weight-normal">
               <h1 class="title-page">Your Account</h1>
             </span>
-            <div class="row center">
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+            <div class="row center ">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-4">
                 <router-link
                   to="/purchasehistory"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left r-3 pt-3 pl-3 pb-3 pills shadow">
+                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills shadow">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/orderimg.png" width="100%" />
                     </div>
@@ -28,7 +28,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-4">
                 <router-link
                   to="/buyersigninsecsetting"
                   data-toggle="collapse"
@@ -48,7 +48,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-4">
                 <router-link
                   to="/buyeraddresssetting"
                   data-toggle="collapse"
@@ -68,7 +68,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-4">
                 <router-link
                   to="/paymentsetting"
                   data-toggle="collapse"
@@ -88,7 +88,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-4">
                 <router-link
                   to="/My message"
                   data-toggle="collapse"
@@ -108,14 +108,14 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-4">
                 <router-link
                   to="/Resolution center"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left r-3 pt-3 pl-3 pb-3 pills shadow">
+                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills shadow">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/help.ico" width="100%" />
                     </div>

@@ -37,7 +37,7 @@
                     class="product-line-grid-body col-md-9 col-sm-6 col-xs-6"
                   >
                     <div class="product-line-info">
-                      <p class="h4 text-dark">
+                      <p class="h4 pt-4 text-dark">
                         Organic Strawberry Fruits
                       </p>
                     </div>
@@ -82,7 +82,7 @@
                     class="product-line-grid-body col-md-9 col-sm-6 col-xs-6"
                   >
                     <div class="product-line-info">
-                      <p class="h4 text-dark">
+                      <p class="h4 pt-4 text-dark">
                         Organic Strawberry Fruits
                       </p>
                     </div>

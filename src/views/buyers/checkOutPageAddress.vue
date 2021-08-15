@@ -1,22 +1,53 @@
 <template>
-  <div class="">
+  <div class="container">
     <!-- main content -->
         <!-- breadcrumb -->
 
         <!-- main -->
-          <div class="container">
-            <div class="row">
-                <div id="main">
+  <div class="row p-3">
+    <div class="col-12">
+     <p class="text-dark h4">Select a delivery address</p>
+    </div>
+    <div class="col-12">
+     <p class="text-dark">Is the address you'd like to use displayed below? If so, click the corresponding "Deliver to this address" button. Or you can <a href="" class="text-primary underline">enter a new delivery address. </a></p>
+    </div>
+    <hr>
+
+<div class="row p-3">
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark h6">John Maxwell</h5>
+        <p class="card-text text-dark">Address line 1</p>
+        <p class="card-text text-dark">Address line 2</p>
+        <p class="card-text text-dark">City, Postcode</p>
+        <p class="card-text text-dark">Country</p>
+      </div>
+<p class="p-2"><button type="button" class="btn btn-sm btn-warning btn-block">Deliver to this address</button></p>
+<p class="p-2"><button type="button" class="col-6 border btn-sm pr-3 btn btn-light">Edit</button> <button type="button" class="col-6 btn-sm border btn btn-light">Delete</button></p>
+    </div>
+  </div>
+  <div class="col-sm-4">
+    <div class="card">
+      <div class="card-body">
+        <h5 class="card-title text-dark h6">John Maxwell</h5>
+        <p class="card-text text-dark">Address line 1</p>
+        <p class="card-text text-dark">Address line 2</p>
+        <p class="card-text text-dark">City, Postcode</p>
+        <p class="card-text text-dark">Country</p>
+      </div>
+<p class="p-2"><button type="button" class="btn btn-sm btn-warning btn-block">Deliver to this address</button></p>
+<p class="p-2"><button type="button" class="col-6 border btn-sm pr-3 btn btn-light">Edit</button> <button type="button" class="col-6 btn-sm border btn btn-light">Delete</button></p>
+    </div>
+  </div>
+</div>
+<hr>
+  </div>
                   <div class="row">
                     <div class="col-md-8 check-info">
-                      <div class="checkout-personal-step">
-                        <h3 class="step-title info h5">
-                          PERSONAL INFORMATION <i class="fa fa-check font-weight-normal text-success"></i>
-                        </h3>
-                      </div>
                         <div class="checkout-personal-step">
                           <h3 class="step-title text-dark  h5">
-                            Addresses.
+                            Add a new address
                           </h3>
                         </div>
                       <div class="content">
@@ -32,14 +63,25 @@
                               method="post"
                             >
                               <div>
-                                <input
-                                  type="hidden"
-                                  name="id_customer"
-                                  value=""
-                                />
                                 <div class="form-group row">
                                   <input
-                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
+                                    class="form-control border"
+                                    name="fullname"
+                                    type="text"
+                                    placeholder="Full name"
+                                  />
+                                </div>
+                                <div class="form-group row">
+                                  <input
+                                    class="form-control border"
+                                    name="fullname"
+                                    type="text"
+                                    placeholder="Phone number"
+                                  />
+                                </div>
+                                <div class="form-group row">
+                                  <input
+                                    class="form-control border"
                                     name="firstname"
                                     type="text"
                                     placeholder="Address line 1"
@@ -47,7 +89,7 @@
                                 </div>
                                 <div class="form-group row">
                                   <input
-                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
+                                    class="form-control border"
                                     name="firstname"
                                     type="text"
                                     placeholder="Address line 2 (optional)"
@@ -55,7 +97,7 @@
                                 </div>
                                 <div class="form-group row">
                                   <input
-                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
+                                    class="form-control border"
                                     name="firstname"
                                     type="text"
                                     placeholder="Postcode"
@@ -63,7 +105,7 @@
                                 </div>
                                 <div class="form-group row">
                                   <input
-                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
+                                    class="form-control border"
                                     name="firstname"
                                     type="text"
                                     placeholder="Town/City"
@@ -71,7 +113,7 @@
                                 </div>
                                 <div class="form-group row">
                                   <input
-                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
+                                    class="form-control border"
                                     name="firstname"
                                     type="text"
                                     placeholder="Country"
@@ -99,7 +141,7 @@
                                       </p>
 
                                   <input
-                                    class="form-control border-b-2 border-t-0 border-l-0 border-r-0"
+                                    class="form-control"
                                     name="firstname"
                                     type="text"
                                     placeholder="1234"
@@ -118,73 +160,15 @@
                                   data-button-action="add-to-cart"
                                   type="submit"
                                 >
-                                  Continue
+                                  Use this address
                                 </button></router-link
                               >
                                         </div>
                             </form>
                           </div>
                         </div>
-                        <div class="checkout-personal-step p-2">
-                          <h3 class="step-title h5">
-                             Payment.
-                          </h3>
-                        </div>
                       </div>
                     </div>
-                                <div class="col-xs-12 col-lg-4">
-                                        <div class="border p-3">
-                                            
-                                        <table class="std">
-                                          <tbody>
-                                            <tr>
-                                              <td colspan="3" >
-                                                <div class="text-dark font-weight-bold">
-                                                  <a href="product-detail.html"
-                                                    >Organic Strawberry Fruits</a
-                                                  >
-                                                </div>
-                                                <div>
-                                                  2 x
-                                                  <span class="product-price">£28.98</span>
-                                                </div>
-                                                </td>
-                                                <td class="action text-right">
-                                                <a class="remove" href="#">
-                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                                </a>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                              <td colspan="3" >
-                                                <div class="text-dark font-weight-bold">
-                                                  <a href="product-detail.html"
-                                                    >Organic Strawberry Fruits</a
-                                                  >
-                                                </div>
-                                                <div>
-                                                  2 x
-                                                  <span class="product-price">£28.98</span>
-                                                </div>
-                                                </td>
-                                                <td class="action text-right">
-                                                <a class="remove" href="#">
-                                                    <i class="fa fa-trash-o" aria-hidden="true"></i>
-                                                </a>
-                                                </td>
-                                            </tr>
-                                            <tr class="total font-weight-bold h5 text-dark">
-                                              <td class="p-3" colspan="2">Total:</td>
-                                              <td class="p-3" colspan="2">£92.96</td>
-                                            </tr>
-
-                                          </tbody>
-                                        </table>
-                                        </div>
-                                </div>
                   </div>
-                </div>
-            </div>
-          </div>
   </div>
 </template>
