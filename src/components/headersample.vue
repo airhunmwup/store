@@ -80,6 +80,15 @@
 
             <!-- primary info buttons ends/-->
 
+                <router-link
+                  class="text-left underline pl-4 pb-2  font-weight-bold"
+                            to="/account"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Personal Information"
+                            >
+                  Your Account
+                </router-link>
             <!-- Account preferences/-->
 
             <router-link
@@ -132,15 +141,6 @@
                 >
                   <i class="fa fa-md fa-user pr-2"></i>Account Info
                 </button>
-                <router-link
-                  class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
-                            to="/account"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Personal Information"
-                            >
-                  Your Account
-                </router-link>
                 <router-link
                   class="text-left underline pl-4 text-xs pb-2  font-weight-bold"
                             to="/buyeraddresssetting"
@@ -330,7 +330,7 @@
         <div class="desktop_cart">
           <div class="blockcart block-cart cart-preview tiva-toggle">
             <div class="header-cart tiva-toggle-btn">
-              <span class="cart-products-count">1</span>
+              <span class="cart-products-count">{{basketState}}</span>
 
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </div>
@@ -338,7 +338,7 @@
             <div class="dropdown-content">
               <div class="cart-content pt-2">
                 <table>
-                  <tbody>
+                  <tbody v-if="basketState">
                     <tr v-for="cart in this.$store.state.basket" :key="cart.id">
                       <td class="product-image">
                         <a href="product-detail.html">
@@ -356,7 +356,7 @@
                         <div>
                           {{cart['qnty']}}  x
 
-                          <span class="product-price">£{{cart['product_price']}} </span>
+                          <span class="product-price">£{{cart['qnty_price']}} </span>
                         </div>
                       </td>
 
@@ -375,22 +375,26 @@
 
                     <tr>
                       <td colspan="3" class="d-flex justify-content-center">
-                        <span class="btn p-3 text-sm justify-content-start">
+                        <span class="btn text-sm justify-content-start">
                           <router-link
-                            to="/View Cart"
+                            to="/ViewCart"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             title="view Cart"
                           >
-                            <button class="form-control btn-dark text-white">
-                              Continue to Checkout
+                            <button class="form-control btn-lg border btn-warning">
+                              View Shopping Basket
                             </button></router-link
                           >
                         </span>
-
                       </td>
                     </tr>
                   </tbody>
+                  <tbody v-else>
+                      <tr>
+                        <p class="text-dark text-center font-weight-bold">Your Basket is Empty</p>
+                      </tr>
+                    </tbody>
                 </table>
               </div>
             </div>
@@ -406,7 +410,7 @@
             type="text"
             id="name"
             name="name"
-            placeholder="Search all category"
+            placeholder="Search for anything"
             class="form-control"
             value=""
           />
@@ -448,8 +452,8 @@
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Search all category"
-                  class="form-control border-warning border-l-3 border-t-3 border-b-3 border-r-0"
+                  placeholder="Search for anything"
+                  class="form-control"
                   value=""
                 />
 
@@ -468,19 +472,23 @@
 
           <div class="desktop_cart col-lg-1 col-md-1 justify-content-end">
             <div class="blockcart block-cart cart-preview tiva-toggle">
-              <span class="text-right"
-                ><i
-                  class="fa fa-2x p-3 fa-shopping-cart"
+                            <router-link
+                              to="/ViewCart"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="view Shopping basket"
+                            >
+                            <button type="button" class=" pt-3 btn ">
+  <i
+                  class="fa fa-lg p-2 fa-shopping-cart"
                   aria-hidden="true"
-                >
-
-                <b class="text-dark text-sm">(1)</b></i></span
-              >
-
+                ></i><span class="badge badge-danger">{{basketState}}</span>
+</button></router-link>
+<!--
               <div class="dropdown-content">
                 <div class="cart-content pt-2">
                   <table>
-                    <tbody>
+                    <tbody v-if="basketState">
                       <tr v-for="cart in this.$store.state.basket" :key="cart.id">
                         <td class="product-image">
                           <a href="product-detail.html">
@@ -498,7 +506,7 @@
                           <div>
                             {{cart['qnty']}} x
 
-                            <span class="product-price">£{{ cart['product_price']}}</span>
+                            <span class="product-price">£{{ cart['qnty_price']}}</span>
                           </div>
                         </td>
 
@@ -512,24 +520,24 @@
                       <tr class="total">
                         <td colspan="2">Total:</td>
 
-                        <td>£92.96</td>
+                        <td>£{{this.$store.state.basketTotal}}</td>
                       </tr>
 
                       <tr>
                         <td colspan="3" class="d-flex justify-content-center">
                           <span class="btn p-3 text-sm justify-content-start">
                             <router-link
-                              to="/View Cart"
+                              to="/ViewCart"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="view Cart"
                             >
                               <button class="form-control btn-dark text-white">
-                              Continue to Checkout
+                                View Cart
                               </button></router-link
                             >
                           </span>
-<!--
+
                           <span class="btn p-3 text-sm justify-content-end">
                             <router-link
                               to="/Checkout"
@@ -541,13 +549,17 @@
                                 Checkout
                               </button></router-link
                             >
-                          </span> -->
+                          </span>
                         </td>
                       </tr>
+                    </tbody>
+                    <tbody v-else>
+                      <tr>Empty Cart</tr>
                     </tbody>
                   </table>
                 </div>
               </div>
+              -->
             </div>
           </div>
         </div>
@@ -579,9 +591,13 @@
 export default {
   data() {
     return {
-      loading: false,
-
+      loading: false,  
     };
+  },
+  computed:{
+    basketState: function(){
+      return this.$store.state.basket.length;
+    }
   },
   methods: {
     login() {

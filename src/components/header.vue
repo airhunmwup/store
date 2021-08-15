@@ -330,7 +330,7 @@
         <div class="desktop_cart">
           <div class="blockcart block-cart cart-preview tiva-toggle">
             <div class="header-cart tiva-toggle-btn">
-              <span class="cart-products-count">1</span>
+              <span class="cart-products-count">{{basketState}}</span>
 
               <i class="fa fa-shopping-cart" aria-hidden="true"></i>
             </div>
@@ -375,28 +375,15 @@
 
                     <tr>
                       <td colspan="3" class="d-flex justify-content-center">
-                        <span class="btn p-3 text-sm justify-content-start">
+                        <span class="btn text-sm justify-content-start">
                           <router-link
-                            to="/View Cart"
+                            to="/ViewCart"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             title="view Cart"
                           >
-                            <button class="form-control btn-dark text-white">
-                              View Cart
-                            </button></router-link
-                          >
-                        </span>
-
-                        <span class="btn p-3 text-sm justify-content-end">
-                          <router-link
-                            to="/Checkout"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Checkout"
-                          >
-                            <button class="form-control btn-dark text-white">
-                              Checkout
+                            <button class="form-control btn-lg border btn-warning">
+                              View Shopping Basket
                             </button></router-link
                           >
                         </span>
@@ -404,7 +391,9 @@
                     </tr>
                   </tbody>
                   <tbody v-else>
-                      <tr>Empty Cart</tr>
+                      <tr>
+                        <p class="text-dark text-center font-weight-bold">Your Basket is Empty</p>
+                      </tr>
                     </tbody>
                 </table>
               </div>
@@ -483,15 +472,19 @@
 
           <div class="desktop_cart col-lg-1 col-md-1 justify-content-end">
             <div class="blockcart block-cart cart-preview tiva-toggle">
-              <span class="text-right"
-                ><i
-                  class="fa fa-2x p-3 fa-shopping-cart"
+                            <router-link
+                              to="/ViewCart"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="view Shopping basket"
+                            >
+                            <button type="button" class=" pt-3 btn ">
+  <i
+                  class="fa fa-lg p-2 fa-shopping-cart"
                   aria-hidden="true"
-                >
-
-                <b class="text-dark text-sm">({{basketState}})</b></i></span
-              >
-
+                ></i><span class="badge badge-danger">{{basketState}}</span>
+</button></router-link>
+<!--
               <div class="dropdown-content">
                 <div class="cart-content pt-2">
                   <table>
@@ -566,6 +559,7 @@
                   </table>
                 </div>
               </div>
+              -->
             </div>
           </div>
         </div>

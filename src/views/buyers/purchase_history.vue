@@ -138,7 +138,7 @@
   </div>
     </div>
     <div class="col">
-<button type="button" class="btn btn-warning btn-block">Track package</button>
+<button type="button" class="btn border btn-warning btn-block">Track package</button>
 <button type="button" class="btn btn-light border btn-block">Problem with order</button>
 <button type="button" class="btn btn-light border btn-block">Return</button>
 <button type="button" class="btn btn-light border btn-block">Leave seller feedback</button>

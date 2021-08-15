@@ -6,7 +6,7 @@
 
                     <div class="col-lg-6 col-xs-12">
                   <p class="text pt-3 text-dark h3 font-weight-bold font-weight-normal">
-                  Your Cart
+                  Shopping Basket
                   </p>
                     </div>
     <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
@@ -97,17 +97,15 @@
     </div>
   </div>
   </div>
-  <div class="card-body justify-content-center">
                       <router-link
-                        to="/checkout"
+                        to="/checkoutAddress"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
-                        title="Pay now"
+                        title="Process to Checkout"
                       >
-<button type="button" class="col-12 btn btn-success font-weight-bold btn-block">Pay now</button>
+<button type="button" class="col-12 border btn btn-warning btn-block">Process to Checkout</button>
 </router-link>
       
-  </div>
       </div>
     </div>
       </section>
