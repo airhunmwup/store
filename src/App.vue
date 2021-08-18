@@ -8,6 +8,7 @@
         <i class="text-warning fa fa-long-arrow-up"></i>
       </a>
     </div>
+    
   </section>
 </template>
 

@@ -453,7 +453,7 @@
                   id="name"
                   name="name"
                   placeholder="Search for anything"
-                  class="form-control"
+                  class="form-control shadow-inner"
                   value=""
                 />
 

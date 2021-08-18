@@ -1,116 +1,861 @@
 <template>
   <!-- main content -->
-  <div>
-    <div class="row">
-      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-        
-      </div>
-      <div class="container justify-content-center content-bottom">
+  <div id="home4">
+              <!-- breadcrumb -->
+              <div class="container">
+                  <div class="row">
 
-        <span class="p-3 text-right">Summary is your My REJEE 
-          <router-link
-            to="/Summary"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="text-primary"
-            title="Home Page"
-            >homepage</router-link></span>
-      </div>
+                    <!-- ####Side bar Cataloge starts here the categorie active wouldnt ###
+                    #########collapse other can and should have text-primary underline ####
+                    ######### to indicate its active,###################################-->
+           <!--         <div
+                      class="
+                        sidebar-3 sidebar-collection
+                        col-lg-3 col-md-3 col-sm-3 d-xs-none border-r-2
+                      "
+                    >
+                      <div class="sidebar-block">
+                        <div class="title-block">All Categories</div>
+                        <div class="block-content font-weight-bold text-dark">
+                          <div class="cateTitle hasSubCategory open level1">
+                            <span
+                              class="arrow collapsed collapse-icons"
+                              data-toggle="collapse"
+                              data-target="#livingroom"
+                              aria-expanded="false"
+                              role="status"
+                            >
+                              <i class="zmdi zmdi-minus"></i>
+                              <i class="zmdi zmdi-plus"></i>
+                            </span>
+                            <a class="cateItem " href="#">Category</a>
+                            <div
+                              class="subCategory "
+                              id="livingroom"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem text-primary underline">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cateTitle hasSubCategory open level1">
+                            <span
+                              class="arrow collapsed collapse-icons"
+                              data-toggle="collapse"
+                              data-target="#bathroom"
+                              aria-expanded="false"
+                              role="status"
+                            >
+                              <i class="zmdi zmdi-minus"></i>
+                              <i class="zmdi zmdi-plus"></i>
+                            </span>
+                            <a class="cateItem" href="#">Category</a>
+                            <div
+                              class="subCategory collapse"
+                              id="bathroom"
+                              aria-expanded="false"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cateTitle hasSubCategory open level1">
+                            <span
+                              class="arrow collapsed collapse-icons"
+                              data-toggle="collapse"
+                              data-target="#diningroom"
+                              aria-expanded="false"
+                              role="status"
+                            >
+                              <i class="zmdi zmdi-minus"></i>
+                              <i class="zmdi zmdi-plus"></i>
+                            </span>
+                            <a class="cateItem" href="#">Category</a>
+                            <div
+                              class="subCategory collapse"
+                              id="diningroom"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cateTitle hasSubCategory open level1">
+                            <span
+                              class="arrow collapsed collapse-icons"
+                              data-toggle="collapse"
+                              data-target="#bedroom"
+                              aria-expanded="false"
+                              role="status"
+                            >
+                              <i class="zmdi zmdi-minus"></i>
+                              <i class="zmdi zmdi-plus"></i>
+                            </span>
+                            <a class="cateItem" href="#">Category</a>
+                            <div
+                              class="subCategory collapse"
+                              id="bedroom"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">Tsubcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cateTitle hasSubCategory open level1">
+                            <span
+                              class="arrow collapsed collapse-icons"
+                              data-toggle="collapse"
+                              data-target="#kitchen"
+                              aria-expanded="false"
+                              role="status"
+                            >
+                              <i class="zmdi zmdi-minus"></i>
+                              <i class="zmdi zmdi-plus"></i>
+                            </span>
+                            <a class="cateItem" href="#">Category</a>
+                            <div
+                              class="subCategory collapse"
+                              id="kitchen"
+                              aria-expanded="true"
+                              role="status"
+                            >
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                              <div class="cateTitle">
+                                <a href="#" class="cateItem">subcategory</a>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
+                      <div class="sidebar-block"></div>
+                    </div>
+
+                    -->
+
+                    
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                      <p class="text p-3 text-dark h5 font-weight-bold font-weight-normal">
+                    Recently Viewed
+                  </p>
+                      <br />
+  <div class="row">
+    <div class="col justify-content-end">
+  <div class="form-group mx-sm- mb-2 ">
+                            <form class="form-inline">
+                          <div class="text-right">
+    <select class="select-title">
+                                <option value="">Sort by</option>
+                                <option value="">Name, A to Z</option>
+                                <option value="">Name, Z to A</option>
+                                <option value="">Price, low to high</option>
+                                <option value="">Price, high to low</option>
+                              </select>
+  </div>
+</form>
+                          </div>
     </div>
-        <div class="row">
-          <div
-            class="pl-4
-              sidebar-3 
-              col-lg-2 col-md-2
-              d-xs-none
-              pt-3
-              font-weight-bold
-            "
-          >
-            <!-- menu -->
-            <div class="sidebar-block text-dark">
-              <div class="block-content">
-              <div
-                class="block-content nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/summary"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Summary"
+    <div class="col">
+                          <div class="text-right">
+                            <a
+                              class="cateItem"
+                              data-toggle="collapse"
+                              data-target="#filter"
+                              href="#"
                             >
-                  Summary
-                </router-link>
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/recentlyviewed"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Recently viewed"
-                            >
-                  Recently
-                    viewed
-                </router-link>
+                              <span class="pr-2 pt-2"
+                                ><b>filter <i class="fa fa-th"></i></b></span
+                            ></a>
+                          </div>
+    </div>
+  </div>
+                      <div
+                        class="
+                          cateTitle
+                          pb-3
+                          hasSubCategory
+                          open
+                          level1
+                          text-dark
+                        "
+                      >
+                        <!--sort section-->
 
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/purchasehistory"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Purchase History"
-                            >
-                  Purchase History
-                </router-link>
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/watchingpage"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Watching"
-                            >
-                  Watching
-                </router-link>
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/savedsearch"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Saved Search"
-                            >
-                  Saved Search
-                </router-link>
-                <router-link
-                  class="text-left  font-weight-bold text-dark p-2"
-                            to="/savedseller"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Saved Seller"
-                            >
-                  Saved Seller
-                </router-link>
-              </div>
-              </div>
-            </div>
-          </div>
+                        <div
+                          class="subCategory collapse"
+                          id="sort"
+                          aria-expanded="true"
+                          role="status"
+                        >
+                          <div class="cateTitle">
+                            <div class="row product-container">
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-3
+                                "
+                              >
+                                <div class="content">
+                                  <div class="new-item-content">
+                                    <h3 class="title-product"><b></b></h3>
+                                    <ul class="scroll-product">
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" checked />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Recommended </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Price</b> - lowest first
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Price</b> - Highest first
+                                        </a>
+                                      </li>
 
-          <div class="col-sm-12 p-3 col-lg-9 col-md-9 product-container">
-            <div id="wrapper-site">
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Year</b> - Newest first
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Year</b> - Oldest first
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-4
+                                "
+                              >
+                                <div class="content">
+                                  <div class="new-item-content">
+                                    <h3 class="title-product"><b></b></h3>
+                                    <ul class="scroll-product">
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Distance</b> - lowest first
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Distance</b> - Nearest first
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Date listed</b> - Newest first
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Date listed</b> - Oldest first
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-4
+                                "
+                              >
+                                <div class="content">
+                                  <div class="new-item-content">
+                                    <h3 class="title-product"><b></b></h3>
+                                    <ul class="scroll-product">
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Mileage</b> - lowest first
+                                        </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#">
+                                          <b> Mileage</b> - Highest first
+                                        </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <!--filter section-->
+                        <div
+                          class="pt-3 subCategory collapse"
+                          id="filter"
+                          aria-expanded="true"
+                          role="status"
+                        >
+                          <div class="cateTitle">
+                            <div class="row product-container">
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-3
+                                "
+                              >
+                                <div class="content">
+                                  <div class="new-item-content">
+                                    <h3 class="title-product"><b>Make</b></h3>
+                                    <ul class="scroll-product">
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" checked />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Any </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Dell </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Polygon </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Newment </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Asus </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Mac </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Vaio </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Lettuce </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-3
+                                "
+                              >
+                                <div class="content">
+                                  <div class="new-item-content">
+                                    <h3 class="title-product"><b>Model</b></h3>
+                                    <ul class="scroll-product">
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" checked />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Any </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Dell </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Polygon </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Newment </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Asus </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Mac </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Vaio </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Lettuce </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-3
+                                "
+                              >
+                                <div class="content">
+                                  <div class="new-item-content">
+                                    <h3 class="title-product">
+                                      <b>Body Style</b>
+                                    </h3>
+                                    <ul class="scroll-product">
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Any </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Convertible </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Hatchback </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> MPV/People carrier </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Saloon </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Estate </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> 4x4 </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Pick-up </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Small car </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Other </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-3
+                                "
+                              >
+                                <div class="content">
+                                  <div class="new-item-content">
+                                    <h3 class="title-product">
+                                      <b>Transmission type</b>
+                                    </h3>
+                                    <ul class="scroll-product">
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" checked />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Any </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Automatic </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Manual </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="thumbnail-container">
+                                  <div class="content">
+                                    <div class="new-item-content">
+                                      <h3 class="title-product">
+                                        <b>Conditon</b>
+                                      </h3>
+                                      <ul class="scroll-product">
+                                        <li>
+                                          <label class="check">
+                                            <input type="checkbox" checked />
+                                            <span class="checkmark"></span>
+                                          </label>
+                                          <a href="#"> Any </a>
+                                        </li>
+                                        <li>
+                                          <label class="check">
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                          </label>
+                                          <a href="#"> New </a>
+                                        </li>
+                                        <li>
+                                          <label class="check">
+                                            <input type="checkbox" />
+                                            <span class="checkmark"></span>
+                                          </label>
+                                          <a href="#"> Used </a>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-3
+                                "
+                              >
+                                <div class="content pb-2">
+                                  <h3 class="title-product"><b>By Price</b></h3>
+                                  <span>Min </span
+                                  ><input
+                                    name="price"
+                                    class="border form-control col-6"
+                                    type="number"
+                                    min="10"
+                                  />
 
-              <div class="tab-content" id="v-pills-tabContent">
+                                  <span>max </span
+                                  ><input
+                                    name="price"
+                                    class="border form-control col-6"
+                                    type="number"
+                                    min="10"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-3
+                                "
+                              >
+                                <div class="content pb-2">
+                                  <h3 class="title-product"><b>Year</b></h3>
+                                  <span>Min </span
+                                  ><input
+                                    name="price"
+                                    class="border form-control col-6"
+                                    max="2021"
+                                    type="number"
+                                    min="2001"
+                                  />
 
-<!--recently viewed-->
-                <div class="row">
-                  <span class="text text-dark h5 font-weight-bold p-3 font-weight-normal">
-                  Recently Viewed
-                  </span>
-                <div class="col-12 row col-sm-12 col-md-12 col-lg-12 ">
+                                  <span>max </span
+                                  ><input
+                                    name="price"
+                                    class="border form-control col-6"
+                                    max="2021"
+                                    type="number"
+                                    min="2001"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-3
+                                "
+                              >
+                                <div class="content pb-2">
+                                  <h3 class="title-product"><b>Mileage</b></h3>
+                                  <span>Min </span
+                                  ><input
+                                    name="price"
+                                    class="border form-control col-6"
+                                    type="number"
+                                    min="10"
+                                  />
+
+                                  <span>max </span
+                                  ><input
+                                    name="price"
+                                    class="border form-control col-6"
+                                    type="number"
+                                    min="10"
+                                  />
+                                </div>
+                              </div>
+                              <div
+                                class="
+                                  thumbnail-container
+                                  pb-3
+                                  col-6 col-sm-6 col-md-4 col-lg-3
+                                "
+                              >
+                                <div class="content">
+                                  <div class="new-item-content">
+                                    <h3 class="title-product">
+                                      <b>Fuel type</b>
+                                    </h3>
+                                    <ul class="scroll-product">
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" checked />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Any </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Diesel </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Electric </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Petrol </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Flex </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Hybrid </a>
+                                      </li>
+                                      <li>
+                                        <label class="check">
+                                          <input type="checkbox" />
+                                          <span class="checkmark"></span>
+                                        </label>
+                                        <a href="#"> Plug-in hybrid </a>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- FEATURED Listings -->
+                      <div class="title-product">
+                        <div class="row">
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -119,20 +864,18 @@
               data-target=".navbar-collapse"
               title="Home"
             >
-              <div class=" p-2">
-                <img src="img/product/14.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
             </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -141,20 +884,18 @@
               data-target=".navbar-collapse"
               title="Home"
             >
-              <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/23.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
             </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -163,20 +904,18 @@
               data-target=".navbar-collapse"
               title="Home"
             >
-              <div class=" p-2">
-                <img src="img/product/15.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
             </router-link>
                 </div>
                 <div
-                  class="thumbnail-container p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -185,29 +924,192 @@
               data-target=".navbar-collapse"
               title="Home"
             >
-              <div class=" p-2">
-                <img src="img/product/11.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/20.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
             </router-link>
                 </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/18.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
                 </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/14.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
                 </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/1.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
                 </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/2.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/3.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/16.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/7.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                        </div>
+                      </div>
+                        <div class="justify-content-center p-4">
+                <nav aria-label="Page navigation example" class="col-12">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link underline" href="#">1</a></li>
+    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+    <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+  </ul>
+</nav>
+                      </div>
+                    </div>
 
-            </div>
-          </div>
-
-          <!-- end col-md-9-1 -->
-        </div>
-
-    <hr>
+                  </div>
+              </div>
   </div>
 </template>
-        

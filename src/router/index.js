@@ -35,11 +35,17 @@ import signin_sec from '../views/buyers/signin_sec.vue'
 import buyer_returns from '../views/buyers/returns.vue'
 import cancelled_order from '../views/buyers/cancelled_orders.vue'
 import buy_again from '../views/buyers/buyagain.vue'
+import paymentgate from '../views/buyers/paymentgate.vue'
+import edit_login_name from '../views/buyers/edit_login_name.vue'
+import edit_login_email from '../views/buyers/edit_login_email.vue'
+import edit_login_mobilenumber from '../views/buyers/edit_login_mobilenumber.vue'
+
 
 
 import Account from '../views/buyers/account.vue'
 import payment_setting from '../views/buyers/payment_setting.vue'
 import buyeraddress_setting from '../views/buyers/address_setting.vue'
+import changePasswordPage from '../views/buyers/changePasswordPage.vue'
 
 
 import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vue'
@@ -113,9 +119,35 @@ const routes = [{
         component: Dashboard,
     },
     {
+        path: '/editloginname',
+        name: 'editloginname',
+        component: edit_login_name,
+    },
+
+    {
+        path: '/editloginemail',
+        name: 'editloginemail',
+        component: edit_login_email,
+    }, {
+        path: '/editloginnumber',
+        name: 'editloginnumber',
+        component: edit_login_mobilenumber,
+    },
+    {
+        path: '/addcard',
+        name: 'addcard',
+        component: paymentgate,
+    },
+    {
         path: '/Orders',
         name: 'Orders Page',
         component: orders_page,
+    },
+
+    {
+        path: '/editpassword',
+        name: 'editpassword',
+        component: changePasswordPage,
     },
     {
         path: '/Order details',

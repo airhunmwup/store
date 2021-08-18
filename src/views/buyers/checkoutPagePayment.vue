@@ -20,7 +20,7 @@
                 <p class="">
                   <router-link
                     class=""
-                    to="/checkoutpayment"
+                    to="/addcard"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
                     ><button type="button" class="btn border btn-sm btn-light">
@@ -28,6 +28,7 @@
                     </button>
                   </router-link>
                 </p>
+
               </div>
             </div>
             <div class="col"></div>
@@ -71,7 +72,7 @@
       </div>
       <!-- CONTINE TO PAYMENT BUTTON -->
       <div class="p-3 col-lg-3 col-md-3 col-sm-12 col-xs-12">
-        <p class="p-2 card p-3 bg-light border">
+        <p class="card bg-light border">
           <router-link
             class=""
             to="/checkoutpayment"

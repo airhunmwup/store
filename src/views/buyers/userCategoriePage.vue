@@ -1,385 +1,9 @@
 <template>
   <div id="home4">
-    <div class="main-content pt-4">
-      <div id="wrapper-site">
-        <div id="content-wrapper">
-          <div id="main">
-            <div class="page-home">
               <!-- breadcrumb -->
               <div class="container">
               <!-- breadcrumb -->
-                <div class="content">
                   <div class="row">
-                    <div class="col-lg-9 col-md-9 col-sm-12">
-                      <p class="h3 text-dark">Featured categories</p>
-                      <br />
-                      <!-- FEATURED CATEGORIES -->
-                        <div class="row p-3">
-                          <div
-                            class="
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                                <img
-                                  src="img/product/6.jpg"
-                                  class=""
-                                  alt="Product"
-                                />
-                              <p class="h6 text-dark">
-                                Category name
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                                <img
-                                  src="img/product/7.jpg"
-                                  class=""
-                                  alt="Product"
-                                />
-                              <p class="h6 text-dark">
-                                Category name
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                                <img
-                                  src="img/product/1.jpg"
-                                  class=""
-                                  alt="Product"
-                                />
-                              <p class="h6 text-dark">
-                                Category name
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                                <img
-                                  src="img/product/15.jpg"
-                                  class=""
-                                  alt="Product"
-                                />
-                              <p class="h6 text-dark">
-                                Category name
-                              </p>
-                            </div>
-                          </div>
-                          <div
-                            class="
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                            <div class="content">
-                                <img
-                                  src="img/product/11.jpg"
-                                  class=""
-                                  alt="Product"
-                                />
-                              <p class="h6 text-dark">
-                                Category name
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      <hr />
-                      <!-- spot light'any random product under the selected category -->
-                      
-                      <!-- FEATURED Listings -->
-                      <div class="title-product">
-                        <div class="row product-container">
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/1.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/2.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/3.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/5.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/6.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/7.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/8.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/9.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/10.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/6.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-11">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                <div
-                  class="p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/12.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <span class=" stroke-current">£350</span></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-                </div>
-                        </div>
-                      </div>
-                        <div class="justify-content-center p-4">
-                <nav aria-label="Page navigation example" class="col-12 justify-content-center">
-  <ul class="pagination justify-content-center">
-    <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link underline" href="#">1</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
-  </ul>
-</nav>
-                      </div>
-                    </div>
 
                     <!-- ####Side bar Cataloge starts here the categorie active wouldnt ###
                     #########collapse other can and should have text-primary underline ####
@@ -387,13 +11,13 @@
                     <div
                       class="
                         sidebar-3 sidebar-collection
-                        col-lg-3 col-md-3 col-sm-3
+                        col-lg-3 col-md-3 col-sm-3 d-xs-none border-r-2
                       "
                     >
                       <!-- ###category menu### -->
                       <div class="sidebar-block">
-                        <div class="title-block">Shop by Categories</div>
-                        <div class="block-content">
+                        <div class="title-block">All Categories</div>
+                        <div class="block-content font-weight-bold text-dark">
                           <div class="cateTitle hasSubCategory open level1">
                             <span
                               class="arrow collapsed collapse-icons"
@@ -405,7 +29,7 @@
                               <i class="zmdi zmdi-minus"></i>
                               <i class="zmdi zmdi-plus"></i>
                             </span>
-                            <a class="cateItem" href="#">Living Room</a>
+                            <a class="cateItem " href="#">Category</a>
                             <div
                               class="subCategory "
                               id="livingroom"
@@ -413,25 +37,25 @@
                               role="status"
                             >
                               <div class="cateTitle">
-                                <a href="#" class="cateItem text-primary underline">Side Table</a>
+                                <a href="#" class="cateItem text-primary underline">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">FIREPLACE</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">FIREPLACE</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">floor lamp</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">ottoman</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">armchair</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">cushion</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                             </div>
                           </div>
@@ -446,7 +70,7 @@
                               <i class="zmdi zmdi-minus"></i>
                               <i class="zmdi zmdi-plus"></i>
                             </span>
-                            <a class="cateItem" href="#">Bathroom</a>
+                            <a class="cateItem" href="#">Category</a>
                             <div
                               class="subCategory collapse"
                               id="bathroom"
@@ -454,19 +78,19 @@
                               role="status"
                             >
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">TOMATO</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">BROCCOLI</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">CABBAGE</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">CUCUMBER</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">EGGPLANT</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                             </div>
                           </div>
@@ -481,7 +105,7 @@
                               <i class="zmdi zmdi-minus"></i>
                               <i class="zmdi zmdi-plus"></i>
                             </span>
-                            <a class="cateItem" href="#">Dining Rooom</a>
+                            <a class="cateItem" href="#">Category</a>
                             <div
                               class="subCategory collapse"
                               id="diningroom"
@@ -489,16 +113,16 @@
                               role="status"
                             >
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">DRY BREAD</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">BREAD SLICES</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">FRENCH BREAD</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">BLACK BREAD</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                             </div>
                           </div>
@@ -513,7 +137,7 @@
                               <i class="zmdi zmdi-minus"></i>
                               <i class="zmdi zmdi-plus"></i>
                             </span>
-                            <a class="cateItem" href="#">BedRoom</a>
+                            <a class="cateItem" href="#">Category</a>
                             <div
                               class="subCategory collapse"
                               id="bedroom"
@@ -521,13 +145,13 @@
                               role="status"
                             >
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">ORANGE JUICES</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">TOMATO JUICES</a>
+                                <a href="#" class="cateItem">Tsubcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">APPLE JUICES</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                             </div>
                           </div>
@@ -542,7 +166,7 @@
                               <i class="zmdi zmdi-minus"></i>
                               <i class="zmdi zmdi-plus"></i>
                             </span>
-                            <a class="cateItem" href="#">Kitchen</a>
+                            <a class="cateItem" href="#">Category</a>
                             <div
                               class="subCategory collapse"
                               id="kitchen"
@@ -550,13 +174,13 @@
                               role="status"
                             >
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">ORANGE JUICES</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">TOMATO JUICES</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                               <div class="cateTitle">
-                                <a href="#" class="cateItem">APPLE JUICES</a>
+                                <a href="#" class="cateItem">subcategory</a>
                               </div>
                             </div>
                           </div>
@@ -566,13 +190,323 @@
                       <!-- best seller -->
                       <div class="sidebar-block"></div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+
+
+
+                    <div class="col-lg-9 col-md-9 col-sm-12">
+                      <p class="text p-3 text-dark h5 font-weight-bold font-weight-normal">
+                        Featured categories
+                      </p>
+                      <br />
+                      <!-- FEATURED CATEGORIES -->
+                        <div class="row pt-4 pb-4">
+                          <div
+                            class="
+                              col-6 col-sm-6 col-md-4 col-lg-3
+                            "
+                          >
+                              <p class="underline h6  text-dark">
+                                Sub-Category
+                              </p>
+                          </div>
+                          <div
+                            class="
+                              col-6 col-sm-6 col-md-4 col-lg-3
+                            "
+                          >
+                              <p class="underline h6  text-dark">
+                                Sub-Category
+                              </p>
+                          </div>
+                          <div
+                            class="
+                              col-6 col-sm-6 col-md-4 col-lg-3
+                            "
+                          >
+                              <p class="underline h6  text-dark">
+                                Sub-Category
+                              </p>
+                          </div>
+                          <div
+                            class="
+                              col-6 col-sm-6 col-md-4 col-lg-3
+                            "
+                          >
+                              <p class="underline h6  text-dark">
+                                Sub-Category
+                              </p>
+                          </div>
+                          <div
+                            class="
+                              col-6 col-sm-6 col-md-4 col-lg-3
+                            "
+                          >
+                              <p class="underline h6  text-dark">
+                                Sub-Category
+                              </p>
+                          </div>
+                        </div>
+                      <!-- spot light'any random product under the selected category -->
+                      
+                      <!-- FEATURED Listings -->
+                      <div class="title-product">
+                        <div class="row">
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/23.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/20.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/18.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/14.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/1.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/2.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/3.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/16.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/7.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                <div
+                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                >
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+            </router-link>
+                </div>
+                        </div>
+                      </div>
+                        <div class="justify-content-center p-4">
+                <nav aria-label="Page navigation example" class="col-12">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link underline" href="#">1</a></li>
+    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+    <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+  </ul>
+</nav>
+                      </div>
+                    </div>
+
+                  </div>
+              </div>
+    </div>
 </template>
