@@ -4,6 +4,7 @@ use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubcategoryController;
 use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\InstockController;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -42,6 +43,11 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/products', [ProductsController::class, 'store']);
     Route::put('/products/{id}', [ProductsController::class, 'update']);
     Route::delete('/products/{id}', [ProductsController::class, 'destroy']);
+    Route::post('/wishlist', [WishlistController::class, 'store']);
+    Route::post('/checkwishlist', [WishlistController::class, 'show']);
+    Route::post('/watcherCount', [WishlistController::class, 'index']);
+    Route::post('/mywishlist/{user_id}', [WishlistController::class, 'mywishlist']);
+    Route::delete('/removeWishlist/{id}', [WishlistController::class, 'destroy']);
     Route::post('/logout', [AuthController::class, 'logout']);
 });
 

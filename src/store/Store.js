@@ -12,12 +12,17 @@ export const store = new Vuex.Store({
         currentUser: "",
         full_name: "",
         product_detail_id: "",
+        wishList: '',
+        wishListUser: "",
         basket: JSON.parse(localStorage.getItem('basket')) ? JSON.parse(localStorage.getItem('basket')) : [],
         basketTotal: localStorage.getItem('basketTotal') ? localStorage.getItem('basketTotal') : 0,
     },
     getters: {
         isLoggedIn: state => {
             return state.isLoggedIn
+        },
+        wishListUser: state => {
+            return state.wishListUser = state.currentUser.id;
         }
     },
     mutations: {
@@ -92,6 +97,12 @@ export const store = new Vuex.Store({
             localStorage.setItem('basketTotal', state.basketTotal);
             state.basketTotal = parseInt(localStorage.getItem('basketTotal'));
             console.log("Item removed from basket");
+        },
+        showWishlist: (state, payload) => {
+            state.wishList = payload;
+            console.log(state.wishList);
+            
+            console.log(state.currentUser);
         }
     },
     actions: {
@@ -100,7 +111,6 @@ export const store = new Vuex.Store({
             context.dispatch('userloginInfo');
         },
         userloginInfo: context => {
-            console.log(context.state.token);
             if(context.state.token){
                 User.getUser(context.state.token).then((response)=>{ 
                   context.commit('userloginInfo',response.data);
@@ -129,6 +139,21 @@ export const store = new Vuex.Store({
         },
         removeFromBasket: (context, payload) => {
             context.commit('removeFromBasket', payload);
+        },
+        showWishlist: context => {
+
+            User.mywishlist(context.state.wishListUser).then((res) => {
+                context.commit('showWishlist', res.data);
+            }).catch(err => {
+                console.log(err);
+            });
+        },
+        removeWishlist: (context, payload) => {
+            User.removeWishlist(payload).then((res) => {
+                context.dispatch('showWishlist');
+            }).catch(err => {
+                console.log(err);
+            });
         }
     }
 });

@@ -131,7 +131,10 @@
                                                 </button>
                                             </div>
                                             <div class="pb-2">
-                                            <button class="p-2 shadow border-primary text-primary col-lg-12 col-md-12 col-sm-12 btn" type="submit">
+                                            <button 
+                                            @click="addToWatchlist(productDetails['id'])"
+                                            class="p-2 shadow border-primary text-primary col-lg-12 col-md-12 col-sm-12 btn" 
+                                            type="submit">
                                                     <i class="fa fa-heart"></i> Watch this item
                                                 </button>
                                             </div>
@@ -143,7 +146,7 @@
                                 Click & Collect
                               </td>
                               <td class="border text-center">
-                                126 watchers
+                                {{ watchCount }} watchers
                               </td>
                               <td class="border border-r-0 text-center">
                                 30-day return
@@ -529,12 +532,14 @@ export default {
       img: [],
       nums: 4,
       order_qnty: 1,
+      watchCount: 0,
     };
   },
   computed: {
     basket: function(){
       return this.$store.state.basket;
-    }
+    },
+    
   },
   methods: {
     getProductDetails(pid) {
@@ -552,6 +557,7 @@ export default {
       }).catch(error => {
         console.log(error);
       });
+      console.log(this.productDetails);
     },
     getImages(){
       const img = Object.keys(this.productDetails);
@@ -594,10 +600,58 @@ export default {
             console.log("Already Added");
           }
       }
+    },
+    addToWatchlist(product_id){
+      var data = {
+        product_name: this.productDetails.product_name,
+        product_image: this.productDetails.product_image1,
+        product_price: this.productDetails.product_price,
+        product_condition: this.productDetails.product_condition,
+        user_id: this.$store.state.currentUser.id,
+      };
+
+      const checkWishlist = {
+        product_name: this.productDetails.product_name,
+        user_id: this.$store.state.currentUser.id,
+      }
+
+      if(this.$store.state.token){
+        User.checkwishlist(checkWishlist)
+        .then((response) => {
+          if(response.data.status == 1){
+            console.log("Already in wishlist");
+          }else if(response.data.status == 0){
+            User.addToWishlist(data)
+            .then(response => {
+              console.log("Added to wish list");
+            }).catch(error => {
+              console.log(error);
+            });
+          }
+        }).catch(error => {
+          console.log(error);
+        })
+      }else if(!this.$store.state.token){
+        this.$router.push("/login");
+        console.log(product_id);
+      }
+
+    },
+    watchCounter(){
+      const data = {'product_name': this.productDetails.product_name};
+      console.log(this.productDetails.product_name);
+      return User.watchersCounter(data)
+      .then((response) => {
+        this.watchCount = response.data.status;
+        console.log(this.watchCount);
+      }).catch(error => {
+        console.log(error);
+      });
     }
   },
   mounted() {
     this.getProductDetails(this.p_id);
+    this.watchCounter();
   }
 }
 </script>

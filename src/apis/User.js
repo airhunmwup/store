@@ -29,6 +29,26 @@ export default{
 
     product_detail_page(id){
         return Api().get("/products/" + id);
+    },
+
+    addToWishlist(productData){
+        return Api().post("/wishlist", productData);
+    },
+
+    checkwishlist(data){
+        return Api().post("/checkwishlist", data);
+    },
+
+    watchersCounter(data){
+        return Api().post("/watcherCount", data);
+    },
+
+    mywishlist(data){
+        return Api().post("/mywishlist/" + data);
+    },
+
+    removeWishlist(id){
+        return Api().delete("/removeWishlist/" + id);
     }
 
 };

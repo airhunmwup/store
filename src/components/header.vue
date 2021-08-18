@@ -612,10 +612,12 @@ export default {
       this.$store.dispatch('removeFromBasket', itemToRemove);
     }
   },
-  mounted() {
-    console.log("ran...");
+  created() {
     this.$http.defaults.headers.common['Authorization'] = `Bearer ${this.$store.state.token}`;
     this.login();
+  },
+  mounted() {
+    console.log(this.$store.state.currentUser); 
   },
 };
 </script>

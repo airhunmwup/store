@@ -24,31 +24,31 @@
                 <div class="row justify-center">
 
         <div class="col-lg-10 col-md-10 col-xs-12 col-sm-12 check-info">
-            <ul class="cart-items border-2">
+            <ul class="cart-items border-2" v-for="list in this.$store.state.wishList" :key="list.id">
               <li class="cart-item">
                 <div class="product-line-grid row p-2 justify-content-between">
                   <!--  product left content: image-->
                   <div
                     class="product-line-grid-center col-md-3 col-lg-3 col-sm-6 col-xs-6"
                   >
-                    <img class="" src="img/product/16.jpg" />
+                    <img class="" :src="'img/product/' + list['product_image']" />
                   </div>
                   <div
                     class="product-line-grid-body col-md-9 col-sm-6 col-xs-6"
                   >
                     <div class="product-line-info">
                       <p class="h4 pt-4 text-dark">
-                        Organic Strawberry Fruits
+                        {{list['product_name']}}
                       </p>
                     </div>
                     <div class="product-line-info">
-                      <span class="label-atrr">New</span>
+                      <span class="label-atrr">{{list['product_condition']}}</span>
                     </div>
                     <div class="row">
                       <div class="col-md-6 col-sm-6 col text-dark">
                         <div class="quantity pt-2">
                           <p class="value text-lg text-dark font-weight-bold">
-                            £20.00
+                            £{{list['product_price']}}
                           </p>
                           <p class="value text-xs">2 days delivery</p>
                         </div>
@@ -56,7 +56,9 @@
                     </div>
                           <div class="pt-4">
                             <p class="text-xs text-right">
-                              <span class="text-primary underline btn p-3">
+                              <span class="text-primary underline btn p-3"
+                              @click="removeWishlist(list['id'])"
+                              >
                               <i class="fa fa-trash-o" aria-hidden="true"></i>
                               Remove
                               </span>
@@ -68,53 +70,9 @@
                           </div>
                   </div>
                 </div>
+                <hr />
               </li>
-              <hr />
-              <li class="cart-item">
-                <div class="product-line-grid row p-2 justify-content-between">
-                  <!--  product left content: image-->
-                  <div
-                    class="product-line-grid-center col-md-3 col-lg-3 col-sm-6 col-xs-6"
-                  >
-                    <img class="" src="img/product/12.jpg" />
-                  </div>
-                  <div
-                    class="product-line-grid-body col-md-9 col-sm-6 col-xs-6"
-                  >
-                    <div class="product-line-info">
-                      <p class="h4 pt-4 text-dark">
-                        Organic Strawberry Fruits
-                      </p>
-                    </div>
-                    <div class="product-line-info">
-                      <span class="label-atrr">New</span>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6 col text-dark">
-                        <div class="quantity pt-2">
-                          <p class="value text-lg text-dark font-weight-bold">
-                            £20.00
-                          </p>
-                          <p class="value text-xs">2 days delivery</p>
-                        </div>
-                      </div>
-                    </div>
-                          <div class="pt-4">
-                            <p class="text-xs text-right">
-                              <span class="text-primary underline btn p-3">
-                              <i class="fa fa-trash-o" aria-hidden="true"></i>
-                              Remove
-                              </span>
-                              <span class="text-primary underline btn p-3">
-                              <i class="fa fa-trash-o" aria-hidden="true"></i>
-                              ADD to basket
-                              </span>
-                            </p>
-                          </div>
-                  </div>
-                </div>
-              </li>
-              <hr />
+              
             </ul>
         </div>
                 </div>
@@ -125,4 +83,27 @@
     <hr>
   </div>
 </template>
+<script>
+import User from '../../apis/User'
+export default {
+  data () {
+    return {
+      wishlist : [],
+    }
+  },
+  methods:{
+    removeWishlist(id){
+      this.$store.dispatch('removeWishlist',id)
+    }
+  },
+  computed:{
+    myWislist () {
+      return this.$store.dispatch('showWishlist');
+    }
+  },
+  updated () {
+    this.myWislist;
+  }
+}
+</script>
         
