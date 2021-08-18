@@ -87,7 +87,7 @@
                         <form method="post" class="std" id="customer-form">
                         <div class="input-group">
                 <div class="page-item p-2 font-weight-bold text-dark">0 Orders placed: </div>
-                                <select class="form-control-sm shadow text-xs text-primary btn select ">
+                                <select class="form-control-sm shadow-inner border text-xs text-primary btn select ">
                                     <option>Last 30 Days</option>
                                     <option>Past three months</option>
                                     <option>2021</option>
@@ -169,6 +169,7 @@
       <!-- breadcrumb -->
         <div class="ul gs full">
           <li class="li itemi">
+              
             <router-link
               class=""
               to="/Product Detail"
@@ -177,18 +178,19 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/1.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/1.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
+</div>
             </router-link>
           </li>
           <li class="li itemi">
+              
             <router-link
               class=""
               to="/Product Detail"
@@ -197,18 +199,19 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/2.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/9.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
+</div>
             </router-link>
           </li>
           <li class="li itemi">
+              
             <router-link
               class=""
               to="/Product Detail"
@@ -217,18 +220,19 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/3.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/7.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
+</div>
             </router-link>
           </li>
           <li class="li itemi">
+              
             <router-link
               class=""
               to="/Product Detail"
@@ -237,18 +241,19 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/10.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
+</div>
             </router-link>
           </li>
           <li class="li itemi">
+              
             <router-link
               class=""
               to="/Product Detail"
@@ -257,18 +262,19 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/5.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/8.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
+</div>
             </router-link>
           </li>
           <li class="li itemi">
+              
             <router-link
               class=""
               to="/Product Detail"
@@ -277,15 +283,36 @@
               title="Home"
             >
               <div class=" p-2">
-                <img src="img/product/6.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/13.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
+  </div>
+</div>
+</div>
+            </router-link>
+          </li>
+          <li class="li itemi">
+              
+            <router-link
+              class=""
+              to="/Product Detail"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Home"
+            >
+              <div class=" p-2">
+            <div class="card" style="width: 11rem;">
+  <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
+  <div class="card-body">
+                    <p class="h6 text-dark">Product name</p>
+                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="text-dark">RRP: <del> £350</del></p>
+  </div>
+</div>
+</div>
             </router-link>
           </li>
         </div>
