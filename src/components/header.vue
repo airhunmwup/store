@@ -597,7 +597,7 @@ export default {
   computed:{
     basketState: function(){
       return this.$store.state.basket.length;
-    }
+    },
   },
   methods: {
     login() {
@@ -615,9 +615,7 @@ export default {
   created() {
     this.$http.defaults.headers.common['Authorization'] = `Bearer ${this.$store.state.token}`;
     this.login();
-  },
-  mounted() {
-    console.log(this.$store.state.currentUser); 
+    
   },
 };
 </script>

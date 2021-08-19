@@ -23,6 +23,9 @@ export const store = new Vuex.Store({
         },
         wishListUser: state => {
             return state.wishListUser = state.currentUser.id;
+        },
+        wishList: state => {
+            return state.wishList;
         }
     },
     mutations: {
@@ -101,11 +104,17 @@ export const store = new Vuex.Store({
         showWishlist: (state, payload) => {
             state.wishList = payload;
             console.log(state.wishList);
-            
-            console.log(state.currentUser);
         }
     },
     actions: {
+        getuser: (context, payload) => {
+            console.log(payload);
+            User.mywishlist(payload).then((res) => {
+                context.commit('showWishlist', res.data);
+              }).catch(err => {
+                console.log(err);
+              });
+        },
         login: context => {
             context.commit('login');
             context.dispatch('userloginInfo');
@@ -114,6 +123,8 @@ export const store = new Vuex.Store({
             if(context.state.token){
                 User.getUser(context.state.token).then((response)=>{ 
                   context.commit('userloginInfo',response.data);
+                  console.log(response.data.id);
+                  context.dispatch('getuser', response.data.id);
                 }).catch((errors) => {
                   console.log(errors);
                 });
@@ -140,13 +151,9 @@ export const store = new Vuex.Store({
         removeFromBasket: (context, payload) => {
             context.commit('removeFromBasket', payload);
         },
-        showWishlist: context => {
-
-            User.mywishlist(context.state.wishListUser).then((res) => {
-                context.commit('showWishlist', res.data);
-            }).catch(err => {
-                console.log(err);
-            });
+        showWishlist: (context, payload) => { 
+            console.log(payload);
+            context.commit('showWishlist', payload);
         },
         removeWishlist: (context, payload) => {
             User.removeWishlist(payload).then((res) => {

@@ -91,18 +91,24 @@ export default {
       wishlist : [],
     }
   },
+  watch: {
+    '$route':'myWislist'
+  },
   methods:{
     removeWishlist(id){
-      this.$store.dispatch('removeWishlist',id)
-    }
+      this.$store.dispatch('removeWishlist',id);
+    },
   },
   computed:{
-    myWislist () {
-      return this.$store.dispatch('showWishlist');
+    getUser: function(){
+      return this.$store.getters.wishListUser;
     }
   },
-  updated () {
-    this.myWislist;
+  created(){
+  },
+  updated(){
+    console.log(this.getUser);
+    
   }
 }
 </script>
