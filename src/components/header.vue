@@ -24,9 +24,7 @@
             alt="REJEE COMPANY"
           /></a>
       </div>
-      <div class="col-4 d-md-none">
-      </div>
-      <div class="col-4 d-md-none">
+      <div class="col-6 d-md-none">
           <a href="index.html">
           <img
             src="img/home/logo.png"
@@ -35,8 +33,9 @@
           />
            </a>
       </div>
-      <div class="col-4 d-md-none">
-    <ul class="nav justify-content-center">
+      <div class="col-6 row d-md-none">
+      <div class="col-6 text-left">
+    <ul class="nav  pr-3">
       <li v-if="this.$store.state.isLoggedIn" class="nav-item dropdown pt-3">
         <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-user"></i> Account
@@ -140,21 +139,27 @@
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
       </li>
-      <li class="nav-item ">
+    </ul>
+      </div>
+      <div class="col-6 justify-content-end">
+    <ul class="nav">
+      <li class="nav-item pl-3">
+                            <button type="button" class="text-dark pt-3 btn ">
           <router-link
                               to="/ViewCart"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="view Shopping basket"
                             >
-                            <button type="button" class="text-dark pt-3 btn ">
   <i
                   class="fa fa-lg p-2 fa-shopping-cart"
                   aria-hidden="true"
                 ></i><span class="badge badge-danger">{{basketState}}</span>
-</button></router-link>
+                </router-link>
+</button>
       </li>
-</ul>
+    </ul>
+      </div>
       </div>
       <div class="col-lg-6 col-md-6 col-xs-12">
             <form method="post" class="" id="customer-form">

@@ -24,7 +24,7 @@
                 <div class="row justify-center">
 
         <div class="col-lg-10 col-md-10 col-xs-12 col-sm-12 check-info">
-            <ul class="cart-items border-2" v-for="list in this.$store.state.wishList" :key="list.id">
+            <ul class="cart-items card" v-for="list in this.$store.state.wishList" :key="list.id">
               <li class="cart-item">
                 <div class="product-line-grid row p-2 justify-content-between">
                   <!--  product left content: image-->

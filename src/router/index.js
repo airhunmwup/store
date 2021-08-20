@@ -4,7 +4,6 @@ import VueRouter from 'vue-router'
 import LandingPage from '../views/buyers/landingPage.vue'
 import UserOrderPage from '../views/buyers/userOrderPage.vue'
 import orderDetailsPage from '../views/buyers/orderDetailsPage.vue'
-import wishlist from '../views/buyers/wishlist.vue'
 import userAccountDetailPage from '../views/buyers/userAccountDetailPage.vue'
 import userAddressBook from '../views/buyers/userAddressBook.vue'
 import changeUserPasswordPage from '../views/buyers/changeUserPasswordPage.vue'
@@ -392,11 +391,6 @@ const routes = [{
         component: checkOutPageAddress,
     },
     {
-        path: '/Wish list',
-        name: 'wishlist',
-        component: wishlist,
-    },
-    {
         path: '/User Detail',
         name: 'userAccountDetailPage',
         component: userAccountDetailPage,
@@ -542,8 +536,8 @@ const routes = [{
         component: Mymessage,
     },
     {
-        path: '/Message Read',
-        name: 'Message Read',
+        path: '/messageopen',
+        name: 'messageopen',
         component: Mymessage_open,
     },
     {
