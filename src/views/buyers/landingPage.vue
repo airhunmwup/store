@@ -1,57 +1,98 @@
 <template>
-  <!-- main content -->
-
-  <!-- main content -->
-  <!-- main -->
-  <section>
+  <section class="bg-warning">
     <!-- breadcrumb -->
+<div class="container pt-2">
+  <!-- Content here -->
 
-    <div class="appion">
-      <!-- breadcrumb -->
-      <ul class="hs full">
+  <div class="row">
+    <div class="col-lg-3 col-md-3 col-sm-lg">
+<div class="card">
+  <ul class="list-group list-group-flush">
+
         <router-link
           v-for="category of categoryList"
           :key="category.id"
-          to="/categorie page"
+          to="/"
+          class="dropright"
           data-toggle="collapse"
           data-target=".navbar-collapse"
-          title="Home"
         >
-          <li class=" item text-dark  text-sm text-center font-weight-regular">{{category.cat_name}}</li></router-link
+          <li class="dropdown-toggle list-group-item text-xs text-dark" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">{{category.cat_name}}</li>
+
+  <div class="dropdown-menu border-2" style="width: 18rem;">
+    <!-- Dropdown menu links -->
+      <div class="">
+        <router-link
+          v-for="category of categoryList"
+          :key="category.id"
+          to="/"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
         >
-      </ul>
+          <li class="list-group-item text-xs text-dark">{{category.cat_name}}</li>
+
+  </router-link>
+</div>
+  </div>
+        </router-link>
+
+  </ul>
+</div>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-12 row">
+<div id="carouselExampleIndicators" class="col-lg-12 col-sm-12 carousel slide" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/home/effect2.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " src="img/home/effect1.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/home/effect3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container pt-2 card">
+
+      <div class="row">
+<div v-for="listings of newListings"
+            :key="listings.id"
+            v-bind:data-id="listings.id" class="col" style="width: 19rem;">
+            <a
+              v-bind:data-id="listings.id"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              @click="product_detail_link"
+            >
+                <img v-bind:src="'img/product/' + listings.product_image1" class="card-img-top" alt="Product" v-bind:data-id="listings.id"/>
+            </a>
+</div>
+      </div>
+</div>
     </div>
 
-    <ul class="hax shadow">
-      <li class="">
-        <a href="#">
-          <img
-            class="hax"
-            src="img/home/effect4.jpg"
-            alt="banner-1"
-            title="banner-1"
-          />
-        </a>
-      </li>
-      <li class="">
-        <a href="#">
-          <img
-            class="hax"
-            src="img/home/effect2.jpg"
-            alt="banner-1"
-            title="banner-1"
-          />
-        </a>
-      </li>
-    </ul>
-    <!-- main content -->
-    <div class="main-content">
-      <!-- main -->
+  </div>
 
-      <div class="appion">
-        <div class="col-12">
-          <p class="h3 text-dark">Newly listed</p>
-          <span class="text-dark text-right">
+</div>
+<div class="container pt-2 card">
+
+      <div class="row">
+          <p class="h6 text-dark">Newly listed</p>
+          <span class="text-dark border-b-2">
               <router-link
                 class=""
                 to="/Product Page"
@@ -62,16 +103,9 @@
               </router-link>
             <b class="fa fa-caret-square-o-right"></b>
           </span>
-        </div>
-      <!-- breadcrumb -->
-        <div class="ul gs full">
-
-          <li 
-            class="li itemi"
-            v-for="listings of newListings"
+<div v-for="listings of newListings"
             :key="listings.id"
-            v-bind:data-id="listings.id"
-          >
+            v-bind:data-id="listings.id" class="col m-1" style="width: 19rem;">
             <a
               v-bind:data-id="listings.id"
               class=""
@@ -79,462 +113,15 @@
               data-target=".navbar-collapse"
               @click="product_detail_link"
             >
-              <div class="p-2">
-
-            <div class="card" style="width: 11rem;">
-                
                 <img v-bind:src="'img/product/' + listings.product_image1" class="card-img-top" alt="Product" v-bind:data-id="listings.id"/>
-                  <div class="card-body">
-                    <p class="h6 text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
-                    <p class="font-weight-bold h6 text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
-                  </div>
-</div>
-              </div>
+  <div class="card-body">
+    <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
+    <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
+  </div>
             </a>
-          </li>
-        </div>
+</div>
       </div>
-      <!--each sections from down below will be resend update from different categories eg like the vehicle way they under, just display only for-->
-
-      <div class="appion">
-       
-        <div class="col-12">
-          <p class="h3 text-dark">Vehicles</p>
-          <span class="text-dark text-right">
-              <router-link
-                class=""
-                to="/Product Page"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-                title="Home"
-                >see all
-              </router-link>
-            <b class="fa fa-caret-square-o-right"></b>
-          </span>
-        </div>
-      <!-- breadcrumb -->
-        <div class="ul gs full">
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/1.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
 </div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/9.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/7.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/10.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/8.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/13.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-        </div>
-      </div>
-      <!--Product adverts this will be set inrespect to the advertising actions-->
-
-      <div class="appion">
-        <!-- breadcrumb -->
-        <div class="ul gs full">
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/10.jpg" class="" alt="Product" />
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/22.jpg" class="" alt="Product" />
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/13.jpg" class="" alt="Product" />
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/17.jpg" class="" alt="Product" />
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/16.jpg" class="" alt="Product" />
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/14.jpg" class="" alt="Product" />
-              </div>
-            </router-link>
-          </li>
-        </div>
-      </div>
-
-      <div class="appion">
-        <div class="col-12">
-          <p class="h3 text-dark">Properties on Rent</p>
-          <span class="text-dark text-right">
-              <router-link
-                class=""
-                to="/Product Page"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-                title="Home"
-                >see all
-              </router-link>
-            <b class="fa fa-caret-square-o-right"></b>
-          </span>
-        </div>
-      <!-- breadcrumb -->
-        <div class="ul gs full">
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/1.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/9.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/7.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/10.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/8.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/13.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-              
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-</div>
-</div>
-            </router-link>
-          </li>
-        </div>
-      </div>
-      <!--adverts banners of store, product or anything related to banner adverts this will be set inrespect to the advertising actions-->
-      <div class="appion shadow">
-        <!-- breadcrumb -->
-        <div class="ul gs full">
-          <li class="lix  p-2">
-                <img src="img/home/effect2.jpg" class="malami" alt="banner" />
-          </li>
-          <li class="lix  p-2">
-                <img src="img/home/effect3.jpg" class="malami" alt="banner" />
-          </li>
-          <li class="lix  p-2">
-                <img src="img/home/effect4.jpg" class="malami" height="120px" alt="banner" />
-          </li>
-          <li class="lix  p-2">
-                <img src="img/home/effect4.jpg" class="malami" height="120px" alt="banner" />
-          </li>
-        </div>
-      </div>
-    </div>
-
     <div id="home3" class="pt-3">
       <footer class="footer-one">
     <hr />

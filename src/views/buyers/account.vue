@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div>
+  <div class="bg-warning"> 
     <div class="row p-4">
       <div id="wrapper-site">
         <div class="tab-content" id="v-pills-tabContent">
@@ -17,7 +17,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills shadow">
+                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills card">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/orderimg.png" width="100%" />
                     </div>
@@ -35,7 +35,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left r-3 pt-3 pl-3 pb-3 pills shadow">
+                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills card">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/shield.png" width="100%" />
                     </div>
@@ -55,7 +55,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left r-3 pt-3 pl-3 pb-3 pills shadow">
+                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills card">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/address.png" width="100%" />
                     </div>
@@ -75,11 +75,11 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left r-3 pt-3 pl-3 pb-3 pills shadow">
+                  <div class="text-left p-2 card">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/payment.png" width="100%" />
                     </div>
-                    <div class="col-9">
+                    <div class="col-12">
                       <p class="text-dark h5">Your Payment</p>
                       <p class="text-dark">
                         Manage payment methods and settings
@@ -95,11 +95,11 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left r-3 pt-3 pl-3 pb-3 pills shadow">
+                  <div class="text-left p-2 card">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/message.png" width="100%" />
                     </div>
-                    <div class="col-9">
+                    <div class="col-12">
                       <p class="text-dark h5">Message Center</p>
                       <p class="text-dark">
                         Vue your REJEE Stores and Marketplace Seller Message
@@ -115,11 +115,11 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills shadow">
+                  <div class="text-left p-2 card">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/help.ico" width="100%" />
                     </div>
-                    <div class="col-9">
+                    <div class="col-12">
                       <p class="text-dark h5">Help</p>
                       <p class="text-dark">Browes available help topics</p>
                     </div>

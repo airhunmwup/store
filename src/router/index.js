@@ -4,7 +4,6 @@ import VueRouter from 'vue-router'
 import LandingPage from '../views/buyers/landingPage.vue'
 import UserOrderPage from '../views/buyers/userOrderPage.vue'
 import orderDetailsPage from '../views/buyers/orderDetailsPage.vue'
-import wishlist from '../views/buyers/wishlist.vue'
 import userAccountDetailPage from '../views/buyers/userAccountDetailPage.vue'
 import userAddressBook from '../views/buyers/userAddressBook.vue'
 import changeUserPasswordPage from '../views/buyers/changeUserPasswordPage.vue'
@@ -24,6 +23,7 @@ import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
 import checkOutPagepayment from '../views/buyers/checkoutPagePayment.vue'
 import Mymessage from '../views/buyers/message.vue'
 import Mymessage_open from '../views/buyers/message_open.vue'
+import sent_message from '../views/buyers/sent_message.vue'
 
 import Summary from '../views/buyers/summary.vue'
 import saved_seller from '../views/buyers/saved_seller.vue'
@@ -392,11 +392,6 @@ const routes = [{
         component: checkOutPageAddress,
     },
     {
-        path: '/Wish list',
-        name: 'wishlist',
-        component: wishlist,
-    },
-    {
         path: '/User Detail',
         name: 'userAccountDetailPage',
         component: userAccountDetailPage,
@@ -542,9 +537,14 @@ const routes = [{
         component: Mymessage,
     },
     {
-        path: '/Message Read',
-        name: 'Message Read',
+        path: '/messageopen',
+        name: 'messageopen',
         component: Mymessage_open,
+    },
+    {
+        path: '/sentmessage',
+        name: 'sentmessage',
+        component: sent_message,
     },
     {
         path: '/Message',
