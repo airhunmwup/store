@@ -651,6 +651,7 @@ export default {
             User.addToWishlist(data)
             .then(response => {
               console.log("Added to wish list");
+              this.$store.dispatch('getuser', data.user_id);
             }).catch(error => {
               console.log(error);
             });

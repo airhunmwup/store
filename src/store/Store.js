@@ -156,8 +156,9 @@ export const store = new Vuex.Store({
             context.commit('showWishlist', payload);
         },
         removeWishlist: (context, payload) => {
+            console.log(payload);
             User.removeWishlist(payload).then((res) => {
-                context.dispatch('showWishlist');
+                context.dispatch('getuser', context.getters.wishListUser);
             }).catch(err => {
                 console.log(err);
             });
