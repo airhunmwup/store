@@ -7,8 +7,15 @@
     <div class="col-2">
       <div class="" style="width: 10rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item underline font-weight-bold">Inbox</li>
-    <li class="list-group-item">Sent messages</li>
+    <li class="list-group-item underline font-weight-bold bg-light">Inbox</li>
+    <li class="list-group-item font-weight-bold">
+          <router-link
+                              to="/sentmessage"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="view Shopping basket"
+                            >Sent messages
+          </router-link></li>
   </ul>
 </div>
     </div>
