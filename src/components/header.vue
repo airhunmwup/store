@@ -1,5 +1,5 @@
 <template>
-  <header class="row">
+  <header class="row border-b-2">
       
     <section class="row box">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3">
@@ -109,7 +109,7 @@
             <!-- Account preferences Ends/-->
             <hr>
         <a
-              class="dropdown-item bg-warning text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
+              class="dropdown-item text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
               data-toggle="collapse"
               title="sign out"
               @click="signOut"
@@ -250,7 +250,7 @@
             <!-- Account preferences Ends/-->
             <hr>
         <a
-              class="dropdown-item bg-warning text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
+              class="dropdown-item text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
               data-toggle="collapse"
               title="sign out"
               @click="signOut"

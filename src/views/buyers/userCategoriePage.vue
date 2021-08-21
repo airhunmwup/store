@@ -1,5 +1,4 @@
 <template>
-  <div id="home4">
               <!-- breadcrumb -->
               <div class="container">
               <!-- breadcrumb -->
@@ -252,7 +251,7 @@
                       <div class="title-product">
                         <div class="row">
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -268,11 +267,13 @@
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -282,17 +283,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/23.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -302,17 +305,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -322,17 +327,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/20.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -342,17 +349,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/18.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -362,17 +371,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/14.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -382,17 +393,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/1.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -402,17 +415,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/2.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -422,17 +437,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/3.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -442,17 +459,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/16.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -462,17 +481,19 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/7.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
                 <div
-                  class="col-6 col-sm-6 col-md-3 col-lg-3"
+                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
               class=""
@@ -482,12 +503,14 @@
               title="Home"
             >
             <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/11.jpg" alt="Card image cap">
+  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
                     <p class="font-weight-bold h6 text-dark">£149.99</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
+
+<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
 </div>
             </router-link>
                 </div>
@@ -508,5 +531,4 @@
 
                   </div>
               </div>
-    </div>
 </template>
