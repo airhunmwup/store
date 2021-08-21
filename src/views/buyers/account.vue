@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="bg-warning"> 
+  <div class="container"> 
     <div class="row p-4">
       <div id="wrapper-site">
         <div class="tab-content" id="v-pills-tabContent">
@@ -17,7 +17,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills card">
+                  <div class="text-left p-2 card">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/orderimg.png" width="100%" />
                     </div>
@@ -35,7 +35,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills card">
+                  <div class="text-left p-2 card">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/shield.png" width="100%" />
                     </div>
@@ -55,14 +55,14 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-                  <div class="row text-left pr-3 pt-4 pl-3 pb-4 pills card">
+                  <div class="text-left p-2 card">
                     <div class="col-3 content-end">
                       <img src="img/myaccount/address.png" width="100%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Addresses</p>
                       <p class="text-dark">
-                        Edit address and delivery preferences for orders
+                        Edit address and delivery preferences
                       </p>
                     </div>
                   </div>
@@ -102,7 +102,7 @@
                     <div class="col-12">
                       <p class="text-dark h5">Message Center</p>
                       <p class="text-dark">
-                        Vue your REJEE Stores and Marketplace Seller Message
+                        View your REJEE Stores and Marketplace Seller Message
                       </p>
                     </div>
                   </div>

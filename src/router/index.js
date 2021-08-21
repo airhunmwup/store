@@ -10,8 +10,6 @@ import changeUserPasswordPage from '../views/buyers/changeUserPasswordPage.vue'
 import paymentMethodPage from '../views/buyers/paymentMethodPage.vue'
 import editAddressPage from '../views/buyers/editAddressPage.vue'
 import addUserAddressPage from '../views/buyers/addUserAddressPage.vue'
-import addCardPage from '../views/buyers/addCardPage.vue'
-import addPaymentMethod from '../views/buyers/addPaymentMethod.vue'
 import userRegistrationPage from '../views/buyers/userRegistrationPage.vue'
 import userLogin from '../views/buyers/userLogin.vue'
 import userCategoriePage from '../views/buyers/userCategoriePage.vue'
@@ -429,12 +427,6 @@ const routes = [{
     },
 
     {
-        path: '/ADD Payment Method',
-        name: 'ADD Payment Method',
-        component: addPaymentMethod,
-    },
-
-    {
         path: '/Login',
         name: 'Login',
         component: userLogin,
@@ -450,11 +442,6 @@ const routes = [{
         path: '/mechantregister',
         name: 'Register Business Account',
         component: registerBusinessAccount,
-    },
-    {
-        path: '/Add New Card',
-        name: 'Add New Card',
-        component: addCardPage,
     },
     {
         path: '/money back guarantee',

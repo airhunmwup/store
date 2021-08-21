@@ -1,12 +1,8 @@
 <template>
   <!-- main content -->
-  <div>
-    <div class="row">
-      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-        
-      </div>
+  <div class="container">
+    <p class="h6 text-sm p-3"><span class="text-primary">Your Account</span> > <span class="text-primary">Your Orders</span> > <span class=" ">Returns</span></p>
 
-    </div>
         <div class="justify-content-center row  pb-4">
             
                 <div class="container pl-2">
@@ -52,13 +48,6 @@
                     title="Orders"
                     ><span>Orders</span></router-link
                   >
-                  <router-link
-                    to="/buyagain"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse" 
-                    class="p-2"
-                    title="Buy Again"
-                    ><span>Buy Again</span></router-link>
                   <router-link
                     to="/cancelledorder"
                     data-toggle="collapse"

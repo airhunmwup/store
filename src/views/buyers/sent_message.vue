@@ -25,6 +25,13 @@
     <button id="btnGroupDrop1" type="button" class="btn btn-sm border border-b-0 dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
       All Messages
     </button>
+    <div class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+      <a class="dropdown-item" href="#"><p class="text-xs">Last 30 Days</p></a>
+      <a class="dropdown-item" href="#"><p class="text-xs">30 Days to 6 Months</p></a>
+      <a class="dropdown-item" href="#"><p class="text-xs">This Year</p></a>
+      <a class="dropdown-item" href="#"><p class="text-xs">Last Year</p></a>
+      <a class="dropdown-item" href="#"><p class="text-xs">Older</p></a>
+    </div>
   </div>
     </div>
 <div class="card pt-2" style="height: 20rem;">
@@ -90,7 +97,6 @@
 </div>
   </div>
     </div>
-  </div>
   </div>
 </template>
         

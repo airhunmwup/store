@@ -1,12 +1,8 @@
 <template>
   <!-- main content -->
-  <div>
-    <div class="row">
-      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-        
-      </div>
+  <div class="container">
+    <p class="h6 text-sm p-3"><span class="text-primary">Your Account</span> > <span class="text-primary">Your Orders</span> > <span class=" ">Cancelled Orders</span></p>
 
-    </div>
         <div class="justify-content-center row  pb-4">
             
                 <div class="container pl-2">
@@ -22,13 +18,6 @@
                     title="Orders"
                     ><span>Orders</span></router-link
                   >
-                  <router-link
-                    to="/buyagain"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse" 
-                    class="p-2"
-                    title="Buy Again"
-                    ><span>Buy Again</span></router-link>
                   <router-link
                     to="/cancelledorder"
                     data-toggle="collapse"
@@ -84,6 +73,55 @@ TIP: Change the view using the filters at the top of the section.
                   <hr>
                   </span>
                 <div class="">
+
+                  <div class="card">
+  <div class="border card-header">
+  <div class="text-dark row">
+    <div class="col">
+      <p>CANCELLED</p>
+    <p class="text-dark">4 August 2021</p>
+    </div>
+    <div class="col">
+      <p>TOTAL</p>
+    <p class="text-dark">£0.00</p>
+    </div>
+    <div class="col-4">
+      <p>DISPATCH TO</p>
+    <p class="text-dark"> </p>
+    </div>
+    <div class="col-lg-4 p-2 col-md-4 col-xs-12">
+        <p>ORDER # 202-0274579-1617107</p>
+    <p class=""> <span class="text-primary text-sm" >View order details </span>|<span class="text-primary text-sm" > Invoice</span></p>
+    </div>
+  </div>
+  </div>
+  <div class="card-body">
+
+  <div class="row">
+    <div class="col-8">
+
+  <div class="row">
+    <div class="col-lg-5 col-md-5 col-xs-12 center">
+       <img src="img/product/1.jpg" class="" alt="Product" />
+    </div>
+    <div class="p-3 text-dark col-7">
+       <p class="pt-3 text-primary h6 underline"> Product name</p>
+    </div>
+  </div>
+    </div>
+    <div class="col">
+<button type="button" class="btn border btn-warning btn-block">Track package</button>
+<button type="button" class="btn btn-light border btn-block">Problem with order</button>
+<button type="button" class="btn btn-light border btn-block">Return</button>
+<button type="button" class="btn btn-light border btn-block">Leave seller feedback</button>
+    </div>
+  </div>
+  </div>
+  <div class="card-body border-t-2">
+<button type="button" class="text-primary underline"> Archive order</button>
+  </div>
+</div>
+          
                 <hr>
                 You do not have any canceled unpaid items to display in this view.
                 </div>
