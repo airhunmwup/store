@@ -5,7 +5,6 @@ import LandingPage from '../views/buyers/landingPage.vue'
 import UserOrderPage from '../views/buyers/userOrderPage.vue'
 import orderDetailsPage from '../views/buyers/orderDetailsPage.vue'
 import userAccountDetailPage from '../views/buyers/userAccountDetailPage.vue'
-import userAddressBook from '../views/buyers/userAddressBook.vue'
 import changeUserPasswordPage from '../views/buyers/changeUserPasswordPage.vue'
 import paymentMethodPage from '../views/buyers/paymentMethodPage.vue'
 import editAddressPage from '../views/buyers/editAddressPage.vue'
@@ -395,11 +394,6 @@ const routes = [{
         component: userAccountDetailPage,
     },
     {
-        path: '/Address Book',
-        name: 'userAddressBook',
-        component: userAddressBook,
-    },
-    {
         path: '/addnewaddress',
         name: 'addnewaddress',
         component: addUserAddressPage,
@@ -421,8 +415,8 @@ const routes = [{
     },
 
     {
-        path: '/Payment Method',
-        name: 'Payment Method',
+        path: '/paymentset',
+        name: 'paymentset',
         component: paymentMethodPage,
     },
 

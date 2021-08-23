@@ -1,7 +1,6 @@
 <template>
     <!-- footer -->
     <footer class="footer-one box">
-      <hr>
 		
         <div id="tiva-copyright">
             <div class="container">

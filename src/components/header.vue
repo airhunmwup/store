@@ -1,8 +1,14 @@
 <template>
-  <header class="row border-b-2">
+  <header class="row">
       
     <section class="row box">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3 text-xs">
+        
+
+              <i class="zmdi zmdi-account h4"></i>
+            Welcome {{ this.$store.state.full_name }}
+      </div>
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3 text-right ">
         
           <router-link
             to="/mechantregister"
@@ -38,22 +44,10 @@
     <ul class="nav  pr-3">
       <li v-if="this.$store.state.isLoggedIn" class="nav-item dropdown pt-3">
         <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-user"></i> Account
+          <i class="zmdi zmdi-account"></i> Account
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <div class="text-md nav flex-column">
-
-            <router-link
-              class="bg-light h6 text-left text-dark p-3 text-xs font-weight-bold"
-              to="/Summary"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="summary"
-            >
-              <i class="zmdi zmdi-account h4 pr-2"></i>
-            Hello {{ this.$store.state.full_name }}
-            </router-link>
-
             <!-- primary info buttons ends/-->
 
                 <router-link
@@ -107,7 +101,6 @@
 
             <!-- Account preferences Ends/-->
             <!-- Account preferences Ends/-->
-            <hr>
         <a
               class="dropdown-item text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
               data-toggle="collapse"
@@ -177,23 +170,13 @@
       <div class="text-right col-4 d-xs-none">
 
     <ul class="nav justify-content-center">
-      <li v-if="this.$store.state.isLoggedIn" class="nav-item dropdown pt-2">
+      <li v-if="this.$store.state.isLoggedIn" class="nav-item dropdown pt-3">
         <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-user"></i> Account
+          <i class="zmdi zmdi-account"></i> Account
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <div class="text-md nav flex-column">
 
-            <router-link
-              class="bg-light h6 text-left text-dark p-3 text-xs font-weight-bold"
-              to="/Summary"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="summary"
-            >
-              <i class="zmdi zmdi-account h4 pr-2"></i>
-            Hello {{ this.$store.state.full_name }}
-            </router-link>
 
             <!-- primary info buttons ends/-->
 
@@ -248,7 +231,6 @@
 
             <!-- Account preferences Ends/-->
             <!-- Account preferences Ends/-->
-            <hr>
         <a
               class="dropdown-item text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
               data-toggle="collapse"
@@ -280,7 +262,7 @@
         </div>
       </li>
 
-      <li class="nav-item pt-2 ">
+      <li class="nav-item pt-3 ">
           
         <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-question-circle"></i> Help

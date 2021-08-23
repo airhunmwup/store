@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="justify-content-center">
+  <div class="justify-content-center" >
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
         
@@ -14,7 +14,7 @@
                   <span class="text text-dark h4 font-weight-bold font-weight-normal">
                   Login & security
                   </span>
-                  <div class="card">
+                  <div class="card" >
   <div class="card-body border-b-2">
     <div class="row">
   <div class="col-8">
@@ -34,7 +34,7 @@
 </div>
   </div>
   <div class="card-body border-b-2">
-    <div class="row">
+    <div class="row" >
   <div class="col-8">
       <p class="font-weight-bold text-dark">E-mail:</p>
       <p class="text-dark">John@example.com</p>

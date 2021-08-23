@@ -18,7 +18,28 @@
 
 <!--Watching-->
                 <div class="row justify-center">
+<div class="card">
+  <div class="card-body">
 
+  <div class="row">
+    <div class="col-8">
+
+  <div class="row">
+    <div class="col-lg-5 col-md-5 col-xs-12 center">
+       <img src="img/product/1.jpg" class="" alt="Product" />
+    </div>
+    <div class="p-3 text-dark col-7">
+       <p class="pt-3 text-primary h6 underline"> Product name</p>
+    </div>
+  </div>
+    </div>
+    <div class="col">
+<button type="button" class="btn btn-light border btn-block">Remove</button>
+<button type="button" class="btn btn-light border btn-block">Add to basket</button>
+    </div>
+  </div>
+  </div>
+</div>
         <div class="col-lg-10 col-md-10 col-xs-12 col-sm-12 check-info">
             <ul class="cart-items card" v-for="list in this.$store.state.wishList" :key="list.id">
               <li class="cart-item">
