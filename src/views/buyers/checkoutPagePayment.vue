@@ -1,10 +1,12 @@
 <template>
   <div class="container">
+    <p class="h6 p-3"><span class="text-primary"></span> <span class=" "></span>
+</p>
     <!-- main content -->
     <!-- breadcrumb -->
 
     <!-- main -->
-    <div class="row pt-4 pb-4">
+    <div class="row pt-4 pb-4" style="height: 30rem;">
       <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <p class="text-dark h4">Select a payment method</p>
         <hr />

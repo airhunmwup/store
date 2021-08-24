@@ -13,7 +13,7 @@
           </p>
         </div>
         <!--Addresses-->
-        <div class="row pl-3">
+        <div class="row pl-3" style="height: 30rem;">
           <div class="col-12 row col-sm-12 col-md-12 col-lg-12">
             <div class="row">
               <div class="p-2 col-sm-4">
@@ -85,138 +85,6 @@
 
       <!-- end col-md-9-1 -->
     </div>
-    <section class="appion">
-              <div class="col-12">
-                <p class="h3 text-dark">Similer Items</p>
-                <p class="text-dark text-right">
-                  <b class=""> see all </b>
-                  <b class="fa fa-caret-square-o-right"></b>
-                </p>
-              </div>
-      <!-- breadcrumb -->
-        <div class="ul gs full">
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/1.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/2.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/3.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/4.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/5.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-          <li class="li itemi">
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-              <div class=" p-2">
-                <img src="img/product/6.jpg" class="" alt="Product" />
-                <div class="row">
-                  <div class="content col-12">
-                    <p class="text-lg text-dark underline">Product name</p>
-                    <p class="font-weight-bold text-lg text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-                  </div>
-                </div>
-              </div>
-            </router-link>
-          </li>
-        </div>
-    </section>
   </div>
 </template>
 

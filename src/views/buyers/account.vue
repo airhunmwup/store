@@ -2,14 +2,14 @@
   <!-- main content -->
   <div class="container"> 
     <div class="row p-4">
-      <div id="wrapper-site">
-        <div class="tab-content" id="v-pills-tabContent">
+      <div id="wrapper-site" >
+        <div class="tab-content" id="v-pills-tabContent" >
           <!--Sigin-and-security-->
           <div class="row">
             <span class="text text-dark h5 pl-4 font-weight-normal">
               <h1 class="title-page">Your Account</h1>
             </span>
-            <div class="row center ">
+            <div class="row center" >
               <div class="col-lg-4 col-md-4 col-sm-6 p-4">
                 <router-link
                   to="/purchasehistory"

@@ -95,6 +95,18 @@
   </li>
   </ul>
 </div>
+
+                        <div class="justify-content-center p-4">
+                <nav aria-label="Page navigation example" class="col-12">
+  <ul class="pagination justify-content-center">
+    <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
+    <li class="page-item"><a class="page-link underline" href="#">1</a></li>
+    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
+    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
+    <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
+  </ul>
+</nav>
+                      </div>
   </div>
     </div>
   </div>
