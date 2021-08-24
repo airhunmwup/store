@@ -20,12 +20,13 @@ class CreateAddressforbuyersTable extends Migration
             $table->string('country');
             $table->string('fullname');
             $table->string('phonenumber');
+            $table->string('postal_code');
             $table->string('address_line1');
-            $table->string('address_line2');
+            $table->string('address_line2')->nullable();
             $table->string('town_city');
-            $table->string('county');
-            $table->string('delivery_instruction');
-            $table->string('securitycode_callboxnumber');
+            $table->string('county')->nullable();
+            $table->string('delivery_instruction')->nullable();
+            $table->string('securitycode_callboxnumber')->nullable();
 
         });
     }

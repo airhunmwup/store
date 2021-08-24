@@ -16,6 +16,7 @@ export const store = new Vuex.Store({
         wishListUser: "",
         basket: JSON.parse(localStorage.getItem('basket')) ? JSON.parse(localStorage.getItem('basket')) : [],
         basketTotal: localStorage.getItem('basketTotal') ? localStorage.getItem('basketTotal') : 0,
+        address: '',
     },
     getters: {
         isLoggedIn: state => {
@@ -104,13 +105,28 @@ export const store = new Vuex.Store({
         showWishlist: (state, payload) => {
             state.wishList = payload;
             console.log(state.wishList);
-        }
+        },
+        addaddress: (state, payload) => {
+            state.address = payload;
+        },
+        getAddress: (state, payload) => {
+            state.address = payload;
+        },
+        deleteaddress: (state, payload) => {
+            console.log(state);
+            if(payload == 0){
+                console.log("error: unable to delete");
+            }else if(payload == 1){
+                state.address = "";
+            }
+        },
     },
     actions: {
         getuser: (context, payload) => {
             console.log(payload);
             User.mywishlist(payload).then((res) => {
                 context.commit('showWishlist', res.data);
+                context.dispatch('getAddress', payload);
               }).catch(err => {
                 console.log(err);
               });
@@ -158,10 +174,31 @@ export const store = new Vuex.Store({
         removeWishlist: (context, payload) => {
             console.log(payload);
             User.removeWishlist(payload).then((res) => {
+                console.log(res);
                 context.dispatch('getuser', context.getters.wishListUser);
             }).catch(err => {
                 console.log(err);
             });
+        },
+        addAddress: (context, payload) => {
+            context.commit('addaddress', payload);
+            context.dispatch('getAddress', payload.address.user_id);
+        },
+        getAddress: (context, payload) => {
+            User.getAddress(payload).then((res) => {
+                console.log(res);
+                context.commit('getAddress', res.data);
+            }).catch(err => {
+                console.log(err);
+            });
+        },
+        deleteaddress: (context, payload) => {
+            User.deleteaddress(payload).then((res) => {
+                context.commit('deleteaddress',res.data);
+            }).catch(err => {
+                console.log(err);
+            })
         }
+
     }
 });

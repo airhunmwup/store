@@ -22,16 +22,16 @@
                             id="checkout-guest-form"
                             role="tabpanel"
                           >
-                            <form
-                              action="#"
-                              class="js-customer-form"
-                              method="post"
-                            >
-                              <div>
-                                
-                                <div class="form-group row">
-                                  <label class="title text-dark font-weight-bold">Country/Region</label>
-                              <select id="country" name="country" class="border-secondary form-control">
+                            <form>
+                              <div> 
+                              <div class="form-group row">
+                              <label class="title text-dark font-weight-bold">Country/Region</label>
+                              <select id="country" 
+                              name="country" 
+                              class="border-secondary form-control"
+                              @change="countryChange($event)"
+                              v-model="formData.country"
+                              >
                                 <option value="United Kingdom">United Kingdom</option>
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands">Åland Islands</option>
@@ -280,39 +280,51 @@
                             </select>
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark font-weight-bold">Full name</label>
+                                  <label class="title text-dark font-weight-bold">Full name
+                                    <span style="color:red; font-size: 11px;" class="required" v-text="errors.fullname">*</span>
+                                  </label>
                                   <input
                                     class="form-control border-secondary"
                                     name="fullname"
                                     type="text"
                                     placeholder=""
+                                    v-model="formData.fullname"
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark font-weight-bold">Phone number</label>
+                                  <label class="title text-dark font-weight-bold">Phone number
+                                    <span style="color:red; font-size: 11px;" class="required" v-text="errors.phonenumber">*</span>
+                                  </label>
                                   <input
                                     class="form-control border-secondary"
                                     name="fullname"
                                     type="tel"
                                     placeholder=""
+                                    v-model="formData.phonenumber"
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark font-weight-bold">Postcode</label>
+                                  <label class="title text-dark font-weight-bold">Postcode
+                                    <span style="color:red; font-size: 11px;" class="required" v-text="errors.postal_code">*</span>
+                                  </label>
                                   <input
                                     class="form-control border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="Enter your area postcode"
+                                    v-model="formData.postal_code"
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark font-weight-bold">Address line 1</label>
+                                  <label class="title text-dark font-weight-bold">Address line 1
+                                    <span style="color:red; font-size: 11px;" class="required" v-text="errors.address_line1">*</span>
+                                  </label>
                                   <input
                                     class="form-control border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="type your address"
+                                    v-model="formData.address_line1"
                                   />
                                 </div>
                                 <div class="form-group row">
@@ -322,15 +334,19 @@
                                     name="firstname"
                                     type="text"
                                     placeholder=""
+                                    v-model="formData.address_line2"
                                   />
                                 </div>
                                 <div class="form-group row">
-                                  <label class="title text-dark font-weight-bold">Town/City</label>
+                                  <label class="title text-dark font-weight-bold">Town/City
+                                    <span style="color:red; font-size: 11px;" class="required" v-text="errors.town_city">*</span>
+                                  </label>
                                   <input
                                     class="form-control border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
+                                    v-model="formData.town_city"
                                   />
                                 </div>
                                 <div class="form-group row">
@@ -340,6 +356,7 @@
                                     name="firstname"
                                     type="text"
                                     placeholder=""
+                                    v-model="formData.county"
                                   />
                                 </div>
                                 <div class="form-group row">
@@ -356,6 +373,7 @@
                                     type="text"
                                     row="10"
                                     placeholder="Provide details such as building description, a nearby landmark, or other navigation instruction"
+                                    v-model="formData.delivery_instruction"
                                   ></textarea>
                                 </div>
                                 <div class="form-group row">
@@ -368,6 +386,7 @@
                                     name="firstname"
                                     type="text"
                                     placeholder="1234"
+                                    v-model="formData.securitycode"
                                   />
                                 </div>
                               </div>
@@ -378,7 +397,7 @@
                                 data-target=".navbar-collapse"
                                 title="Continue"
                               >
-                                <button type="button" class="btn btn-warning border">Add address</button></router-link
+                                <button type="button" class="btn btn-warning border" @click.prevent="addAddress">Add address</button></router-link
                               >
                                         </div>
                             </form>
@@ -394,4 +413,51 @@
     <hr>
   </div>
 </template>
+<script>
+
+import User from '../../apis/User';
+export default {
+  data() {
+    return {
+      formData: {
+        user_id: '',
+        country: 'United Kingdom',
+        fullname: '',
+        phonenumber: '',
+        postal_code: '',
+        address_line1: '',
+        address_line2: '',
+        town_city: '',
+        county: '',
+        delivery_instruction: '',
+        securitycode: '',
+      },
+      errors: {},
+      loading: false,
+    }
+  },
+  methods: {
+    addAddress() {
+      this.formData.user_id = this.$store.state.currentUser.id;
+      User.addaddress(this.formData).then((res) => {
+        this.formData.fullname = this.formData.phonenumber = this.formData.postal_code = this.formData.address_line1 = this.formData.address_line2 = this.formData.town_city = this.formData.county = this.formData.delivery_instruction = this.formData.securitycode = "";
+        this.$store.dispatch('addAddress', res.data);
+        this.$router.push('/buyeraddresssetting');
+      }).catch(errors => {
+        this.errors = {};
+          const err = Object.keys(errors.response.data.errors);
+          err.forEach((key)=>{
+            var strError = errors.response.data.errors[key][0];
+            this.errors[key] = strError;
+          })
+          console.log(err);
+      });
+    },
+    countryChange(event) {
+      console.log(event.target.value);
+    }
+  },  
+}
+
+</script>
         

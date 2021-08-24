@@ -49,6 +49,18 @@ export default{
 
     removeWishlist(id){
         return Api().delete("/removeWishlist/" + id);
-    }
+    },
+
+    addaddress(data){
+        return Api().post("/addaddress", data);
+    },
+
+    getAddress(id){
+        return Api().post("/getaddress/" + id);
+    },
+    
+    deleteaddress(data){
+        return Api().post("/deleteaddress", data);
+    },
 
 };

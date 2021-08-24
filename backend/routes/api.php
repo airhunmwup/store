@@ -6,6 +6,8 @@ use App\Http\Controllers\ProductsController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\InstockController;
+use App\Http\Controllers\AddressbuyersController;
+use App\Models\Addressforbuyers;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
@@ -49,6 +51,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/mywishlist/{user_id}', [WishlistController::class, 'mywishlist']);
     Route::delete('/removeWishlist/{id}', [WishlistController::class, 'destroy']);
     Route::post('/logout', [AuthController::class, 'logout']);
+    Route::post('/addaddress', [AddressbuyersController::class, 'store']);
+    Route::post('/getaddress/{user_id}', [AddressbuyersController::class, 'show']);
+    Route::post('/deleteaddress', [AddressbuyersController::class, 'destroy']);
 });
 
 

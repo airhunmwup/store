@@ -37,7 +37,7 @@
                 </div>
               </div>
               <div class="p-2 col-sm-3">
-                <div class="card border">
+                <div class="card border" v-if="this.$store.state.address">
                   <div class="card-header">
                     <p class="text-sm font-weight-bold text-dark">
                       Default:
@@ -52,18 +52,27 @@
                   </div>
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold text-dark">
-                      John Maxwell
+                      {{this.$store.state.address[0].fullname.toUpperCase()}}
                     </h5>
-                    <p class="text-dark">Address line 1</p>
-                    <p class="text-dark">City, Postcode</p>
-                    <p class="text-dark">Country</p>
+                    <p class="text-dark">{{this.$store.state.address[0].address_line1}}</p>
+                    <p class="text-dark">{{this.$store.state.address[0].town_city}}, {{this.$store.state.address[0].postal_code}}</p>
+                    <p class="text-dark">{{this.$store.state.address[0].country}}</p>
                   </div>
                   <p class="">
                     <button type="button" class="btn-sm text-primary underline">
+                      <router-link
+                        class=""
+                        to="/addnewaddress"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                        :pid="this.$store.state.address[0].id"
+                      >
                       Edit
+                      </router-link>
                     </button>
                     |
-                    <button type="button" class="btn-sm text-primary underline">
+                    <button type="button" class="btn-sm text-primary underline" v-bind:pid="this.$store.state.address[0].id" @click.prevent="deleteaddress">
                       Remove
                     </button>
                   </p>
@@ -210,4 +219,23 @@
     </section>
   </div>
 </template>
+
+<script>
+export default {
+  data(){
+    return{
+
+    }
+  },
+  methods: {
+    deleteaddress(event){
+      const id = event.target.attributes.pid.nodeValue;
+      const data = {
+        id : id
+      }
+      this.$store.dispatch('deleteaddress', data);
+    }
+  }
+}
+</script>
         

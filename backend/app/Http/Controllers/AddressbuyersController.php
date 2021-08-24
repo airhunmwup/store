@@ -42,12 +42,30 @@ class AddressbuyersController extends Controller
             'phonenumber' => 'required|string',
             'postal_code' => 'required|string',
             'address_line1' => 'required|string',
+            'address_line2' => 'string|nullable',
             'town_city' => 'required|string',
         ]);
 
         $address = Addressforbuyers::create([
-            'user_id'
+            'user_id' => $request->user_id,
+            'country' => $request->country,
+            'fullname' => $fields['fullname'],
+            'phonenumber' => $fields['phonenumber'],
+            'postal_code' => $fields['postal_code'],
+            'address_line1' => $fields['address_line1'],
+            'address_line2' => $fields['address_line2'],
+            'town_city' => $fields['town_city'],
+            'county' => $request->county,
+            'delivery_instruction' => $request->delivery_instruction,
+            'securitycode_callboxnumber' => $request->securitycode
+
         ]);
+
+        $response = [
+            'address' => $address 
+        ];
+
+        return response($response, 200);
     }
 
     /**
@@ -56,9 +74,10 @@ class AddressbuyersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show($user_id)
     {
         //
+        return Addressforbuyers::where('user_id', $user_id)->get();
     }
 
     /**
@@ -90,8 +109,9 @@ class AddressbuyersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
         //
+        return Addressforbuyers::where('id', $request->id)->delete();
     }
 }
