@@ -399,8 +399,8 @@ const routes = [{
         component: addUserAddressPage,
     },
     {
-        path: '/Edit Address',
-        name: 'editAddressPage',
+        path: '/editaddress',
+        name: 'editaddress',
         component: editAddressPage,
     },
     {

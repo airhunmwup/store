@@ -1,8 +1,13 @@
 <template>
   <!-- main content -->
   <div class="container">
-    <p class="h6 text-sm p-3"><span class="text-primary">Your Account</span> > <span class="text-primary">Your Orders</span> > <span class=" ">Cancelled Orders</span></p>
-
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
+    <li class="breadcrumb-item text-primary" aria-current="page">Your Orders</li>
+    <li class="breadcrumb-item active" aria-current="page">Cancelled Orders</li>
+  </ol>
+</nav>
         <div class="justify-content-center row  pb-4">
             
                 <div class="container pl-2">
@@ -35,62 +40,42 @@
                   </div>
                 </div>
 
-          <div class="p-4 col-sm-10 col-lg-10 col-md-10 product-container">
+          <div class="p-4 col-sm-12 col-lg-12 col-md-12 product-container">
 
-<!--Purchase History-->
+<!--Cancelled Orders-->
                 <div class="row">
-                  <div class="row col-xs-12 p-3">
-<div class="col-xs-4 col-md-3 col-lg-3 col-sm-6 p-2">
-    <div class="page-item text-xs">See Orders from:</div>
-    <div class="page-item">
-      <select class="form-control-sm text-xs btn-sm text-primary select btn border">
-                          <option>Last 60 Days</option>
-                          <option>2021</option>
-                          <option>2020</option>
-                        </select>
-    </div>
-</div>
-<div class="col-xs-4 col-md-3 col-lg-3 col-sm-6 p-2">
-    <div class="page-item text-xs">Filter by:</div>
-    <div class="page-item">
-        <select class="text-xs form-control-sm btn-sm text-primary select btn border">
-                          <option>All</option>
-                          <option>Shipped</option>
-                          <option>Ready for feed back</option>
-                        </select>
-    </div>
-</div>
-                  </div>
-                <hr>
-                <div class="">
-                  You do not have any orders to display in this view.
-TIP: Change the view using the filters at the top of the section.
-                </div>
-                </div>
-                <div class="row">
-                  <span class="text text-dark h5 font-weight-bold  p-3 font-weight-normal">
-                  Canceled items
-                  <hr>
-                  </span>
-                <div class="">
+                    <div class="pb-3 col-12">
+                        <form method="post" class="std" id="customer-form">
+                        <div class="input-group">
+                <div class="page-item p-2 font-weight-bold text-dark">0 Orders cancelled: </div>
+                                <select class="form-control-sm shadow-inner border text-xs text-primary btn select ">
+                                    <option>Last 30 Days</option>
+                                    <option>Past three months</option>
+                                    <option>2021</option>
+                                    <option>2020</option>
+                                    <option>2019</option>
+                                    </select>
 
+                        </div>
+                        </form>
+                    </div>
+                <div class="m-2">
                   <div class="card">
   <div class="border card-header">
-  <div class="text-dark row">
-    <div class="col">
-      <p>CANCELLED</p>
+  <div class="text-dark row text-xs">
+    <div class="m-1 col-2 col-xs-12">
+      <p class="font-weight-bold">ORDER CANCELLED</p>
     <p class="text-dark">4 August 2021</p>
     </div>
-    <div class="col">
-      <p>TOTAL</p>
+    <div class="m-1 col-2 col-xs-12">
+      <p class="font-weight-bold">TOTAL</p>
     <p class="text-dark">£0.00</p>
     </div>
-    <div class="col-4">
-      <p>DISPATCH TO</p>
-    <p class="text-dark"> </p>
+    <div class="m-1 col-3 col-xs-12">
+
     </div>
-    <div class="col-lg-4 p-2 col-md-4 col-xs-12">
-        <p>ORDER # 202-0274579-1617107</p>
+    <div class="m-1 col-4 col-xs-12">
+        <p class="font-weight-bold">ORDER # 202-0274579-1617107</p>
     <p class=""> <span class="text-primary text-sm" >View order details </span>|<span class="text-primary text-sm" > Invoice</span></p>
     </div>
   </div>
@@ -98,82 +83,101 @@ TIP: Change the view using the filters at the top of the section.
   <div class="card-body">
 
   <div class="row">
-    <div class="col-8">
+  <div class="row ml-2 col-8 col-xs-12">
+    <div class="col-12 m-1 p-2">
 
   <div class="row">
-    <div class="col-lg-5 col-md-5 col-xs-12 center">
-       <img src="img/product/1.jpg" class="" alt="Product" />
+    <div class="col-5 col-lg-4 center">
+       <img src="img/product/1.jpg" class="mt-3" alt="Product" />
     </div>
-    <div class="p-3 text-dark col-7">
-       <p class="pt-3 text-primary h6 underline"> Product name</p>
+    <div class="p-3 text-dark col-7 col-md-7 col-lg-8">
+       <p class="pt-3 mt-2 text-info text-sm h6 underline"> Product namenjnjbhvgcfcfcfgcfgcgfg</p>
+        <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text text-dark" id="basic-addon1"><i class="fa fa-refresh"></i></span>
+        <button type="button" class="btn border underline text-dark text-xs p-2 btn-sm">Buy it again</button>
+  </div>
+</div>
     </div>
   </div>
     </div>
-    <div class="col">
-<button type="button" class="btn border btn-warning btn-block">Track package</button>
-<button type="button" class="btn btn-light border btn-block">Problem with order</button>
-<button type="button" class="btn btn-light border btn-block">Return</button>
-<button type="button" class="btn btn-light border btn-block">Leave seller feedback</button>
+  </div>
+  <div class="row col-4 col-xs-12 justify-content-center">
+    <div class="content ml-4 mt-3">
+<button type="button" class="text-xs btn-sm  btn-light border btn-block">Leave seller feedback</button>
     </div>
+  </div>
   </div>
   </div>
   <div class="card-body border-t-2">
-<button type="button" class="text-primary underline"> Archive order</button>
   </div>
 </div>
-          
-                <hr>
-                You do not have any canceled unpaid items to display in this view.
+                 </div>
+
+                <div class="m-2">
+                  <div class="card">
+  <div class="border card-header">
+  <div class="text-dark row text-xs">
+    <div class="m-1 col-2 col-xs-12">
+      <p class="font-weight-bold">ORDER CANCELLED</p>
+    <p class="text-dark">4 August 2021</p>
+    </div>
+    <div class="m-1 col-2 col-xs-12">
+      <p class="font-weight-bold">TOTAL</p>
+    <p class="text-dark">£0.00</p>
+    </div>
+    <div class="m-1 col-3 col-xs-12">
+
+    </div>
+    <div class="m-1 col-4 col-xs-12">
+        <p class="font-weight-bold">ORDER # 202-0274579-1617107</p>
+    <p class=""> <span class="text-primary text-sm" >View order details </span>|<span class="text-primary text-sm" > Invoice</span></p>
+    </div>
+  </div>
+  </div>
+  <div class="card-body">
+
+  <div class="row">
+  <div class="row ml-2 col-8 col-xs-12">
+    <div class="col-12 m-1 p-2">
+
+  <div class="row">
+    <div class="col-5 col-lg-4 center">
+       <img src="img/product/1.jpg" class="mt-3" alt="Product" />
+    </div>
+    <div class="p-3 text-dark col-7 col-md-7 col-lg-8">
+       <p class="pt-3 mt-2 text-info text-sm h6 underline"> Product namenjnjbhvgcfcfcfgcfgcgfg</p>
+        <div class="input-group mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text text-dark" id="basic-addon1"><i class="fa fa-refresh"></i></span>
+        <button type="button" class="btn border underline text-dark text-xs p-2 btn-sm">Buy it again</button>
+  </div>
+</div>
+    </div>
+  </div>
+    </div>
+  </div>
+  <div class="row col-4 col-xs-12 justify-content-center">
+    <div class="content ml-4 mt-3">
+<button type="button" class="text-xs btn-sm  btn-light border btn-block">Leave seller feedback</button>
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="card-body border-t-2">
+  </div>
+</div>
+                  <p class="text-dark text-center">You do not have any orders to display in this view.</p>
                 </div>
                 </div>
-                <div class="row">
-                  <span class="text text-dark h5 font-weight-bold p-3 font-weight-normal">
-                  Canceled invoices
-                  <hr>
-                  </span>
-                <div class="">
-                <hr>
-                  You do not have any canceled invoices to display in this view.
-                </div>
-                </div>
-                <div class="row">
-                  <span class="text text-dark h5 font-weight-bold p-3 font-weight-normal">
-                  Returns and canceled orders
-                  <hr>
-                  </span>
-                <div class="">
-                <hr>
-                  You do not have any returned orders to display in this view.
-TIP: Change the view using the filters at the top of the section.
-                </div>
-                </div>
-                <div class="row">
-                  <span class="text text-dark h5 font-weight-bold p-3 font-weight-normal">
-                  Unpaid items
-                  <hr>
-                  </span>
-                <div class="">
-                <hr>
-                  You do not have any ready for payment items to display in this view.
-                </div>
-                </div>
-                <div class="row">
-                  <span class="text text-dark h5 p-3 font-weight-bold font-weight-normal">
-                  Unpaid items
-                  <hr>
-                  </span>
-                <div class="">
-                <hr>
-                  You do not have any invoices to display in this view.
-                </div>
-                </div>
+
+
 
           </div>
 
           <!-- end col-md-9-1 -->
         </div>
 
-    <hr>
   </div>
 </template>
         

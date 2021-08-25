@@ -43,51 +43,15 @@
                     class="p-2"
                     title="listing"
                     ><span>Listing</span></router-link>
-                  <router-link
-                    to="/Account Page"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="p-2"
-                    title="Account"
-                    ><span>Account</span></router-link>
                   </div>
                 </div>
               </div>
 
-                <div class="content justify-content-center text-center">
-              <div class="row box">
-                <div class="col-lg-4 col-md-4 col-sm-6 p-3">
-                              <p class="font-weight-bold">
-                                Unread messages
-                              </p>
-                              <p class="pt-3 text-dark h6 border-b-2">
-                                0
-                              </p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 p-3">
-                              <p class="font-weight-bold">
-                                Awaiting shipment
-                              </p>
-                              <p class="pt-3 text-dark h6 border-b-2">
-                                0
-                              </p>
-                </div>
-                <div class="col-lg-4 col-md-4 col-sm-6 p-3">
-                              <p class="font-weight-bold">
-                                Sales (31 days)
-                              </p>
-                              <p class="pt-3 text-dark h6 border-b-2">
-                                £12,000.00
-                              </p>
-                </div>
-                </div>
-              </div>
         <div class="row p-3">
           <div
             class="
               sidebar-3 
               col-lg-4 col-md-4 col-sm-12
-              pt-3
               font-weight-bold
             "
           >
@@ -124,7 +88,6 @@
             class="
               sidebar-3 
               col-lg-4 col-md-4 col-sm-12
-              pt-3
               font-weight-bold
             "
           >
@@ -151,11 +114,7 @@
                 </button>
             <div class="panel panel-default">
                 <div class="panel-heading">
-                    <h3>Line Series</h3>
-                </div>
-                    <div id="canvas"></div>
-                <div class="panel-body">
-                    <div id="canvas"></div>
+                    <p class="h6 text-dark">Total Sales: <span class="text-success h5" style="font-family: sans-serif;">£1,200.00</span></p>
                 </div>
             </div>
                 <hr>
@@ -167,11 +126,11 @@
                                         <td><p class="text-right text-dark">0</p></td>
                                     </tr>
                                     <tr>
-                                        <th class="first_item">Last 7days </th>
+                                        <th class="first_item">Last 7 days </th>
                                         <td><p class="text-right text-dark">0</p></td>
                                     </tr>
                                     <tr>
-                                        <th class="first_item">Last 31days </th>
+                                        <th class="first_item">Last 31 days </th>
                                         <td><p class="text-right text-dark">0</p></td>
                                     </tr>
                                 </tbody>
@@ -184,7 +143,6 @@
             class="
               sidebar-3 
               col-lg-4 col-md-4 col-sm-12
-              pt-3
               font-weight-bold
             "
           >

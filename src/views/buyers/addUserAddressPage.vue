@@ -31,7 +31,7 @@
                               class="border-secondary form-control"
                               @change="countryChange($event)"
                               v-model="formData.country"
-                              >
+                              disabled>
                                 <option value="United Kingdom">United Kingdom</option>
                                 <option value="Afghanistan">Afghanistan</option>
                                 <option value="Åland Islands">Åland Islands</option>

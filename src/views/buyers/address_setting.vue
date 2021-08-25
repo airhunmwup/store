@@ -1,6 +1,12 @@
 <template>
   <!-- main content -->
-  <div>
+  <div class="container">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Your Addresses</li>
+  </ol>
+</nav>
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left"></div>
     </div>
@@ -62,7 +68,7 @@
                     <button type="button" class="btn-sm text-primary underline">
                       <router-link
                         class=""
-                        to="/addnewaddress"
+                        to="/editaddress"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
                         title="Home"
