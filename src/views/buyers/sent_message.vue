@@ -1,9 +1,13 @@
 <template>
   <!-- main content -->
   <div class="container">
-  <div class="row">
-    <p class="h6 p-3"><span class="text-primary">Your Account</span> > <span class=" ">Message Centre</span>
-</p>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Message Centre</li>
+  </ol>
+</nav>
+  <div class="row pt-4">
     <div class="col-2">
       <div class="" style="width: 10rem;">
   <ul class="list-group list-group-flush">

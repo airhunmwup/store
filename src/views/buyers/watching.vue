@@ -3,14 +3,14 @@
   <div class="container">
     <p class="h6 text-sm p-3"><span class="text-primary">Your Account</span> > <span class=" ">Watchlist</span>
 </p>
-        <div class="row pt-3 pb-4 justify-content-center">
+        <div class="row pb-4 justify-content-center">
 
                 <div class="container pl-2">
                     <div class="row">
                     <div class="col-lg-6 col-xs-12">
                   <p class="text font-weight-bold">
                   <span class="p-3 font-weight-bolder text-dark h4 underline">Watchlist</span>
-                  <span>Purchases & Rentals</span>
+                  <span></span>
                   </p>
                     </div>
                     </div>
@@ -18,86 +18,97 @@
 
 <!--Watching-->
                 <div class="row justify-center">
-<div class="card">
-  <div class="card-body">
-
-  <div class="row">
-    <div class="col-8">
-
-  <div class="row">
-    <div class="col-lg-5 col-md-5 col-xs-12 center">
-       <img src="img/product/1.jpg" class="" alt="Product" />
+                  <nav>
+  <div class="row ">
+    <div class="col-sm">
+  <div class="nav nav-tabs" id="nav-tab" role="tablist">
+    <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span class="fa fa-list"></span></a>
+    <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="fa fa-th"></span></a>
     </div>
-    <div class="p-3 text-dark col-7">
-       <p class="pt-3 text-primary h6 underline"> Product name</p>
+    </div>
+    <div class="col-sm">
+<div class="input-group input-group-sm mb-3">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-search"></i></span>
+  </div>
+  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"><div class="input-group-append">
+    <button class="btn btn-outline-secondary" type="button">Search</button>
+  </div>
+</div>
+    </div>
+    <div class="col-sm">
+   <div class="dropdown">
+  <button class="btn btn-sm font-weight-bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Filters and Sort
+  </button>
+  <div class="dropdown-menu text-xs" aria-labelledby="dropdownMenuButton">
+    <a class="dropdown-item bg-secondary border-warning border text-light" href="#">Filter</a>
+    <a class="dropdown-item" href="#">Purchased</a>
+    <a class="dropdown-item" href="#">All items</a>
+    <a class="dropdown-item bg-secondary border-warning border text-light" href="#">Sort</a>
+    <a class="dropdown-item" href="#">Default</a>
+    <a class="dropdown-item" href="#">Priority (high to low)</a>
+    <a class="dropdown-item" href="#">Price(low to high)</a>
+    <a class="dropdown-item" href="#">Price(high to low)</a>
+  </div>
+</div>
     </div>
   </div>
+</nav>
+<div class="tab-content" id="nav-tabContent">
+  <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+<div class="card border m-2"  v-for="list in this.$store.state.wishList" :key="list.id">
+  <div class="row">
+    <div class="col-4 col-lg-4 pt-4 ml-3 img-fluid">
+      <img class="" style="width: 14rem; height: 100%" :src="'img/product/' + list['product_image']" />
     </div>
-    <div class="col">
-<button type="button" class="btn btn-light border btn-block">Remove</button>
-<button type="button" class="btn btn-light border btn-block">Add to basket</button>
+    <div class="col-8 col-lg-5">
+                      <p class="h4 mt-4 mt-5 text-info">
+                        {{list['product_name']}}hhhhhhhhhhhhhhhh
+                      </p>
+                          <p class="value text-md text-dark font-weight-bold">
+                            £{{list['product_price']}}
+                          &
+                          <span class="value text-xs"> 2 days delivery</span>
+                          </p>
+                      <p class="label-atrr underline mt-2">{{list['product_condition']}}</p>
     </div>
+    <div class="col-lg-3 col-sm-12">
+    <div class="p-3">
+      <p class="text-xs underline p-2">Item added 13 August 2021</p>
+<button type="button" class="btn btn-warning border btn-sm btn-block">Add to basktet</button>
+<button type="button" class="btn btn-light border btn-sm btn-block text-primary underline"
+                              @click="removeWishlist(list['id'])">Remove</button>
+    </div>
+  </div>
+  </div>
+</div>    
+
+  </div>
+
+  <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+
+  <div class="container">
+  <div class="row">
+  <div class="col-lg-3 col-sm-12" v-for="list in this.$store.state.wishList" :key="list.id">
+   <div class="card border">
+  <img class="card-img-top" :src="'img/product/' + list['product_image']">
+  <div class="card-body">
+    <p class="card-title h6 text-dark"> {{list['product_name']}}</p>
+    <p class="card-text text-dark">£{{list['product_price']}}</p>
+  </div>
+    <a href="#" class="m-2 btn btn-warning border text-sm btn-sm">Add to basket</a>
+    <a href="#" class="m-2 btn btn-light border text-primary underline text-sm btn-sm">Remove</a>
   </div>
   </div>
 </div>
-        <div class="col-lg-10 col-md-10 col-xs-12 col-sm-12 check-info">
-            <ul class="cart-items card" v-for="list in this.$store.state.wishList" :key="list.id">
-              <li class="cart-item">
-                <div class="product-line-grid row p-2 justify-content-between">
-                  <!--  product left content: image-->
-                  <div
-                    class="product-line-grid-center col-md-3 col-lg-3 col-sm-6 col-xs-6"
-                  >
-                    <img class="" :src="'img/product/' + list['product_image']" />
-                  </div>
-                  <div
-                    class="product-line-grid-body col-md-9 col-sm-6 col-xs-6"
-                  >
-                    <div class="product-line-info">
-                      <p class="h4 pt-4 text-dark">
-                        {{list['product_name']}}
-                      </p>
-                    </div>
-                    <div class="product-line-info">
-                      <span class="label-atrr">{{list['product_condition']}}</span>
-                    </div>
-                    <div class="row">
-                      <div class="col-md-6 col-sm-6 col text-dark">
-                        <div class="quantity pt-2">
-                          <p class="value text-lg text-dark font-weight-bold">
-                            £{{list['product_price']}}
-                          </p>
-                          <p class="value text-xs">2 days delivery</p>
-                        </div>
-                      </div>
-                    </div>
-                          <div class="pt-4">
-                            <p class="text-xs text-right">
-                              <span class="text-primary underline btn p-3"
-                              @click="removeWishlist(list['id'])"
-                              >
-                              <i class="fa fa-trash-o" aria-hidden="true"></i>
-                              Remove
-                              </span>
-                              <span class="text-primary underline btn p-3">
-                              <i class="fa fa-trash-o" aria-hidden="true"></i>
-                              ADD to basket
-                              </span>
-                            </p>
-                          </div>
-                  </div>
-                </div>
-                <hr />
-              </li>
-              
-            </ul>
-        </div>
+</div>
+  </div>
+</div>
                 </div>
 
           <!-- end col-md-9-1 -->
         </div>
-
-    <hr>
   </div>
 </template>
 <script>

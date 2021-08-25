@@ -1,5 +1,5 @@
 <template>
-  <header class="row">
+  <header class="row border-b border-secondary">
       
     <section class="row box">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3 text-xs">
@@ -8,12 +8,12 @@
               <i class="zmdi zmdi-account h4"></i>
             Welcome {{ this.$store.state.full_name }}
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3 text-right ">
+      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-2 text-right">
         
           <router-link
             to="/mechantregister"
             title="sell">
-        <p class="nav-link border-warning text-primary text-sm underling font-weight-bold underline" href="#"><span class="fa fa-star"></span> Sell on REJEE Stores </p>
+        <p class="nav-link border-warning text-primary text-sm font-weight-bold underline" href="#"><span class="fa fa-star"></span> Sell on REJEE Stores</p>
           </router-link>
 
 
@@ -70,7 +70,7 @@
               Watching
             </router-link>
 
-            <!-- Account preferences/-->
+            <!-- Account preferences/
 
             <router-link
               class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
@@ -79,7 +79,7 @@
               data-target=".navbar-collapse"
             >
               Recently viewed
-            </router-link>
+            </router-link>-->
 
             <router-link
               class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
@@ -200,7 +200,7 @@
               Watching
             </router-link>
 
-            <!-- Account preferences/-->
+            <!-- Account preferences/
 
             <router-link
               class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
@@ -209,7 +209,7 @@
               data-target=".navbar-collapse"
             >
               Recently viewed
-            </router-link>
+            </router-link>-->
 
             <router-link
               class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"

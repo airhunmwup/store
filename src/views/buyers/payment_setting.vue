@@ -1,13 +1,17 @@
 <template>
   <!-- main content -->
   <div class="container">
-    <p class="h6 text-sm p-3"><span class="text-primary">Your Account</span> > <span class=" ">Your payments</span>
-</p>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Your payments</li>
+  </ol>
+</nav>
 
-        <div class="justify-content-center row  pb-4">
+        <div class="justify-content-center row pt-4 pb-4">
             
 
-          <div class="col-sm-12 col-lg-12 col-md-12 product-container"  style="height: 30rem;">
+          <div class="col-sm-12 col-lg-12 col-md-12 product-container mb-4">
 
   <div class="row">
     <div class="col-8">
@@ -53,9 +57,17 @@
   <div class="card-body">
   <div class="row">
     <div class="col-sm">
-      <p class="text-left text-dark"><span class="font-weight-bold">Payment Method </span> <span class="font-weight-regular text-info underline">Change</span></p>
+      <p class="text-left text-dark"><span class="font-weight-bold">Payment Method </span> 
+                <router-link
+                  to="/addcard"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Personal Information"
+                ><span class="font-weight-regular text-info underline">Change</span>
+                </router-link></p>
     </div>
     <div class="col-sm">
+      <p class="text-info underline">Delete</p>
     </div>
   </div>
   </div>
@@ -66,12 +78,19 @@
 
 <div class="card border p-2">
   <div class="card-body">
-  <div class="row">
+  <div class="row ">
     <div class="col-1 h5 text-right text-default">
       <span class="fa fa-lg fa-plus"></span>
     </div>
-    <div class="col-11">
+    <div class="col-11"> 
+                <router-link
+                  to="/addcard"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Personal Information"
+                >
       <p class="text-left text-info underline">Add a purchase preference</p>
+                </router-link>
     </div>
   </div>
   </div>
