@@ -71,4 +71,22 @@ class AuthController extends Controller
 
         return response($response, 201);
     }
+
+    public function changeEmail(Request $request){
+        $fields = $request->validate([
+            'email' => 'required|email',
+        ]);
+
+        $email = User::find($request->id);
+        $email->email = $fields['email'];
+        $email->save();
+
+        $response = [
+            'email' => $email
+        ];
+
+        return response($response, 201);
+    }
+
+    
 }

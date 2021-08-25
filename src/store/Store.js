@@ -1,6 +1,7 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import router from '../router/index'
+import Router from 'vue-router'
 import User from "../apis/User";
 
 Vue.use(Vuex);
@@ -120,6 +121,14 @@ export const store = new Vuex.Store({
                 state.address = "";
             }
         },
+        error: (state, payload) => {
+            state.errors = payload;
+            console.log(payload);
+        },
+        changeemail: (state, payload) => {
+            console.log(payload);
+            state.currentUser.email = payload.email;
+        }
     },
     actions: {
         getuser: (context, payload) => {
@@ -198,6 +207,9 @@ export const store = new Vuex.Store({
             }).catch(err => {
                 console.log(err);
             })
+        },
+        changeemail: (context, payload) => {
+            context.commit('changeemail', payload);
         }
 
     }

@@ -63,4 +63,8 @@ export default{
         return Api().post("/deleteaddress", data);
     },
 
+    changeemail(data){
+        return Api().post("/changeemail", data);
+    }
+
 };

@@ -114,4 +114,6 @@ class AddressbuyersController extends Controller
         //
         return Addressforbuyers::where('id', $request->id)->delete();
     }
+
+
 }
