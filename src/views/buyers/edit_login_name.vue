@@ -10,7 +10,7 @@
         <div class="row justify-center">
 
 <!--recently viewed-->
-                <div class="row col-sm-12 p-3 col-lg-6 col-md-6">
+                <div class="row col-sm-10 p-3 col-lg-6 col-md-6">
                   <span class="text text-dark h4 font-weight-bold font-weight-normal">
                   Change Your Name
                   </span>
@@ -20,7 +20,11 @@
     <div class="row">
   <div class="col-8">
   <div class="form-group mx-sm-3 mb-2 pt-3">
-      <p class="font-weight-bold text-dark">New name:</p>
+      <p class="font-weight-bold text-dark">First name:</p>
+    <input type="text" class="form-control border-dark" placeholder="John">
+  </div>
+  <div class="form-group mx-sm-3 mb-3 pt-2">
+      <p class="font-weight-bold text-dark">Last name:</p>
     <input type="text" class="form-control border-dark" placeholder="John">
   </div>
 
