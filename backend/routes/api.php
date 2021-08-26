@@ -52,6 +52,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::delete('/removeWishlist/{id}', [WishlistController::class, 'destroy']);
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::post('/changeemail', [AuthController::class, 'changeEmail']);
+    Route::post('/changename', [AuthController::class, 'changeName']);
+    Route::post('/changepassword', [AuthController::class, 'changePassword']);
     Route::post('/addaddress', [AddressbuyersController::class, 'store']);
     Route::post('/getaddress/{user_id}', [AddressbuyersController::class, 'show']);
     Route::post('/deleteaddress', [AddressbuyersController::class, 'destroy']);

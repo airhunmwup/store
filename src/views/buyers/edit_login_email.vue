@@ -78,7 +78,6 @@ export default {
         this.$router.push("/buyersigninsecsetting");
       }).catch((errors) => {
         this.errors = errors.response.data.errors.email[0];
-        console.log(errors.response.data.errors.email[0]);
       });
       
     },

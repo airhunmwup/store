@@ -65,6 +65,14 @@ export default{
 
     changeemail(data){
         return Api().post("/changeemail", data);
+    },
+
+    changename(data){
+        return Api().post("/changename", data);
+    },
+
+    changepassword(data){
+        return Api().post("/changepassword", data);
     }
 
 };

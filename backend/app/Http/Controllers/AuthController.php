@@ -88,5 +88,46 @@ class AuthController extends Controller
         return response($response, 201);
     }
 
+    public function changeName(Request $request){
+        $fields = $request->validate([
+            'first_name' => 'required|string',
+            'last_name' => 'required|string',
+        ]);
+
+        $user = User::find($request->id);
+        $user->first_name = $fields['first_name'];
+        $user->last_name = $fields['last_name'];
+        $user->save(); 
+
+        $response = [
+            'user' => $user
+        ];
+
+        return response($response, 201); 
+    }
+
+    public function changePassword(Request $request){
+        $fields = $request->validate([
+            'currentpassword' => 'required|string',
+            'password' => 'confirmed|required|string',
+            'password_confirmation' => 'required|string'
+        ]);
+
+        $user = User::find($request->id);
+        if(!$user || !Hash::check($fields['currentpassword'], $user->password)){
+            throw validationException::withMessages([
+                'message' => '* Invalid login details'
+            ]);
+        }elseif(Hash::check($fields['currentpassword'], $user->password)){
+            $user->password = bcrypt($fields['password']);
+            $user->save(); 
+        }
+
+        $response = [
+            'user' => $user
+        ];
+
+        return response($response, 200); 
+    }
     
 }

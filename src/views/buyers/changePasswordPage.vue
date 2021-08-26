@@ -2,58 +2,122 @@
   <!-- main content -->
   <div class="justify-content-center">
     <div class="row">
-      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
-        
-      </div>
-
+      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left"></div>
     </div>
-        <div class="row justify-center">
-
-<!--recently viewed-->
-                <div class="row col-sm-12 p-3 col-lg-6 col-md-6">
-                  <span class="text text-dark h4 font-weight-bold font-weight-normal">
-                  Change Password
-                  </span>
-                  <div class="card border">
-      <p class="text-dark p-2">Use the form below to change the password for your REJEE Stores account</p>
-  <div class="card-body">
-    <div class="row">
-  <div class="col-8">
-  <div class="form-group mx-sm-3 mb-2 pt-3">
-      <p class="font-weight-bold text-dark">Current password:</p>
-    <input type="password" class="form-control border-dark" placeholder="">
-  </div>
-  <div class="form-group mx-sm-3 mb-2 pt-3">
-      <p class="font-weight-bold text-dark">New password:</p>
-    <input type="password" class="form-control border-dark" placeholder="">
-  </div>
-  <div class="form-group mx-sm-3 mb-2 pt-3">
-      <p class="font-weight-bold text-dark">Re-enter new password:</p>
-    <input type="password" class="form-control border-dark" placeholder="">
-  </div>
-
-                <p class="mx-sm-3 mt-4 mb-2 ">
-                  <router-link
-                    class=""
-                    to="/addcard"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    ><button type="button" class="btn border-dark btn-sm btn-warning">
-                      Save changes
-                    </button>
-                  </router-link>
-                </p>
-  </div>
-</div>
-  </div>
-</div>
+    <div class="row justify-center">
+      <!--recently viewed-->
+      <div class="row col-sm-12 p-3 col-lg-6 col-md-6">
+        <span class="text text-dark h4 font-weight-bold font-weight-normal">
+          Change Password
+        </span>
+        <div class="card border">
+          <p class="text-dark p-2">
+            Use the form below to change the password for your REJEE Stores
+            account
+          </p>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-8">
+                <div class="form-group mx-sm-3 mb-2 pt-3">
+                  <p class="font-weight-bold text-dark">Current password:
+                    <span style="color: red; font-size: 12px;" v-text="errors.currentpassword"></span>
+                    <span style="color: red; font-size: 12px;" v-text="errors.message"></span>
+                  </p>
+                  <input
+                    type="password"
+                    class="form-control border-dark"
+                    placeholder=""
+                    v-model="data.currentpassword"
+                  />
+                </div>
+                <div class="form-group mx-sm-3 mb-2 pt-3">
+                  <p class="font-weight-bold text-dark">New password:
+                    <span style="color: red; font-size: 12px;" v-text="errors.password_confirmation"></span>
+                  </p>
+                  <input
+                    type="password"
+                    class="form-control border-dark"
+                    placeholder=""
+                    v-model="data.password_confirmation"
+                  />
+                </div>
+                <div class="form-group mx-sm-3 mb-2 pt-3">
+                  <p class="font-weight-bold text-dark">
+                    Re-enter new password:
+                    <span style="color: red; font-size: 12px;" v-text="errors.password"></span>
+                  </p>
+                  <input
+                    type="password"
+                    class="form-control border-dark"
+                    placeholder=""
+                    v-model="data.password"
+                  />
                 </div>
 
-
-          <!-- end col-md-9-1 -->
+                <p class="mx-sm-3 mt-4 mb-2">
+                  <a
+                    class=""
+                    data-toggle="collapse"
+                    data-target=".navbar-collapse"
+                    @click="changePassword"
+                    ><button
+                      type="button"
+                      class="btn border-dark btn-sm btn-warning"
+                    >
+                      Save changes
+                    </button>
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
 
-    <hr>
+      <!-- end col-md-9-1 -->
+    </div>
+
+    <hr />
   </div>
 </template>
+<script>
+import User from "../../../src/apis/User";
+export default {
+  data(){
+    return{
+      data:{
+        currentpassword: '',
+        password: '',
+        password_confirmation: '',
+        id: ''
+      },
+      errors: ""
+    }
+  },
+  methods:{
+    changePassword(){
+      this.errors ="";
+      this.data.id = this.$store.state.currentUser.id;
+      console.log(this.data);
+      User.changepassword(this.data).then(res => {
+        console.log(res);
+        this.$store.state.dispatch('userloginInfo');
+        this.$router.push('/buyersigninsecsetting');
+      }).catch((errors) => {
+        this.errors = {};
+        if(errors.response.data.errors){
+          console.log(errors.response);
+          const err = Object.keys(errors.response.data.errors);
+          err.map(keys => {
+          this.errors[keys] = errors.response.data.errors[keys][0];
+        });
+          console.log(this.errors);
+        }else{
+          this.$router.push('/buyersigninsecsetting');
+        }
         
+      });
+    }
+  }
+}
+</script>
