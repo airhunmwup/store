@@ -808,7 +808,10 @@ textarea:focus {
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    background-color: #fff;
+    color: #3c3f41;
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
 }
 
 [class~=block-cart] [class~=dropdown-content] [class~=cart-content] table tr:last-child,
@@ -824,18 +827,8 @@ body {
     background-color: #cfc4a6;
 }
 
-body,
-#customer-form [class~=form-group] {
-    font-size: 10.5pt;
-}
-
 [class~=color][class~=beige] {
     background-color: #f5f5dc;
-}
-
-body,
-#customer-form [class~=form-control]:hover {
-    background: #fff;
 }
 
 [class~=ratings],
@@ -25109,5 +25102,50 @@ footer [class~=title-block],
     border-color: rgba(255, 255, 255, 0.1);
 }
 
+.user-wishlist #wrapper-site #block-history thead th {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+
+}
+.user-wishlist #wrapper-site #block-history thead th {
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+}
+.user-wishlist #wrapper-site #block-history thead th {
+    border-color: rgba(255,
+    255,
+    255,
+    0.1);
+}
+.user-wishlist #wrapper-site #block-history thead th {
+    border-color: rgba(255,
+    255,
+    255,
+    0.1);
+}
+.user-wishlist #wrapper-site #block-history thead th {
+    border-color: rgba(255,
+    255,
+    255,
+    0.1);
+}
+0.1);
+
+}
+.user-wishlist #wrapper-site #block-history thead th {
+    border-color: rgba(255,
+    255,
+    255,
+    0.1);
+}
+255,
+255,
+0.1);
+
+}
+255,
+0.1);
 
 }

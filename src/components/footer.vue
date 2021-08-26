@@ -1,8 +1,7 @@
 <template>
     <!-- footer -->
-    <footer class="footer-one box">
-		
-        <div id="tiva-copyright">
+    <footer class="footer-one">
+        <div id="tiva-copyright" class=" bg-light">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-xs-12 align-items-center justify-content-md-start justify-content-sm-center justify-content-xs-center">
