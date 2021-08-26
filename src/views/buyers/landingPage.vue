@@ -180,20 +180,20 @@
 </div>
     <div id="home3" class="pt-3">
       <footer class="footer-one">
-    <hr />
-        <div class="inner-footer">
-          <div class="container col-lg-12 col-md-12 col-xs-12 col-sm-12">
+        <div class="inner-footer bg-secondary">
+          <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
             <div class="footer-top">
-              <div class="row pl-5">
+              <div class="row pl-4">
                 <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                   <div class="block">
                     <div class="block-content">
-                      <div class="title-block">Buy</div>
+                      <div class="title-block text-light">Buy</div>
                       <ul>
-                        <li class="underline">
+                        <li class="underline text-light">
                           <router-link
                             to="/register"
                             data-toggle="collapse"
+                            class="text-light"
                             data-target=".navbar-collapse"
                             >Registration</router-link
                           >
@@ -201,6 +201,7 @@
                         <li class="underline">
                           <router-link
                             to="/money back guarantee"
+                            class="text-light"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             >REJEE Stores Money back Guarantee</router-link
@@ -209,11 +210,12 @@
                       </ul>
                     </div>
                     <div class="block-content pt-3">
-                      <div class="title-block">Sell</div>
+                      <div class="title-block text-light">Sell</div>
                       <ul>
                         <li class="underline">
                           <router-link
                             to="/Start selling"
+                            class="text-light"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             >Start Selling</router-link
@@ -222,6 +224,7 @@
                         <li class="underline">
                           <router-link
                             to="/Start selling guide"
+                            class="text-light"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             >How to sell</router-link
@@ -235,17 +238,19 @@
                 <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                   <div class="block">
                     <div class="block-content">
-                      <div class="title-block">About REJEE Stores</div>
+                      <div class="title-block text-light">About REJEE Stores</div>
                       <ul>
                         <li class="underline">
                           <a
                             href="https://find-and-update.company-information.service.gov.uk/company/13151308"
+                            class="text-light"
                             >Company info</a
                           >
                         </li>
                         <li class="underline">
                           <router-link
                             to="/User Privacy"
+                            class="text-light"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             >Policies</router-link
@@ -254,6 +259,7 @@
                         <li class="underline">
                           <router-link
                             to="/User Agreement"
+                            class="text-light"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             >User Agreement</router-link
@@ -267,11 +273,12 @@
                 <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                   <div class="block">
                     <div class="block-content">
-                      <div class="title-block">Help & Contact</div>
+                      <div class="title-block text-light">Help & Contact</div>
                       <ul>
                         <li class="underline">
                           <router-link
                             to="/Resolut Center"
+                            class="text-light"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             >Resolution Center</router-link
@@ -280,6 +287,7 @@
                         <li class="underline">
                           <router-link
                             to="/selling"
+                            class="text-light"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"
                             >Seller Center</router-link
@@ -289,6 +297,7 @@
                           <router-link
                             to="/managing returns missing items and refunds for sellers"
                             data-toggle="collapse"
+                            class="text-light"
                             data-target=".navbar-collapse"
                             >REJEE Stores Returns</router-link
                           >
@@ -301,20 +310,23 @@
                 <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
                   <div class="block">
                     <div class="block-content">
-                      <div class="title-block">Stay Connected</div>
+                      <div class="title-block text-light">Stay Connected</div>
                       <ul>
                         <li>
                           <a href="https://www.facebook.com/REJEELtd"
+                            class="text-light"
                             ><i class="fa fa-facebook"></i> Facebook</a
                           >
                         </li>
                         <li>
                           <a href="https://instagram.com/REJEEcompany"
+                            class="text-light"
                             ><i class="fa fa-instagram"></i> Instagram</a
                           >
                         </li>
                         <li>
                           <a href="https://twitter.com/REJEEcompany"
+                            class="text-light"
                             ><i class="fa fa-twitter"></i> Twitter</a
                           >
                         </li>
