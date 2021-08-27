@@ -114,7 +114,7 @@ class AuthController extends Controller
         ]);
 
         $user = User::find($request->id);
-        if(!$user || !Hash::check($fields['currentpassword'], $user->password)){
+        if(!Hash::check($fields['currentpassword'], optional($user)->password)){
             throw validationException::withMessages([
                 'message' => '* Invalid login details'
             ]);

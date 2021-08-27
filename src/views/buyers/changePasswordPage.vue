@@ -99,22 +99,18 @@ export default {
       this.errors ="";
       this.data.id = this.$store.state.currentUser.id;
       console.log(this.data);
-      User.changepassword(this.data).then(res => {
+      User.changepassword(this.data)
+      .then(res => {
         console.log(res);
-        this.$store.state.dispatch('userloginInfo');
+        this.$store.dispatch('userloginInfo');
         this.$router.push('/buyersigninsecsetting');
-      }).catch((errors) => {
+      })
+      .catch(error => {
         this.errors = {};
-        if(errors.response.data.errors){
-          console.log(errors.response);
-          const err = Object.keys(errors.response.data.errors);
-          err.map(keys => {
-          this.errors[keys] = errors.response.data.errors[keys][0];
+        const err = Object.keys(error.response.data.errors);
+        err.map(keys => {
+        this.errors[keys] = error.response.data.errors[keys][0];
         });
-          console.log(this.errors);
-        }else{
-          this.$router.push('/buyersigninsecsetting');
-        }
         
       });
     }
