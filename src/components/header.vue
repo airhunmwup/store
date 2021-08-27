@@ -98,6 +98,22 @@
             >
               Message (2)
             </router-link>
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/Overview"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              Sellers Hub
+            </router-link>
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/Overview"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              Help!
+            </router-link>
 
             <!-- Account preferences Ends/-->
             <!-- Account preferences Ends/-->
@@ -227,6 +243,14 @@
               data-target=".navbar-collapse"
             >
               Message (2)
+            </router-link>
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/Overview"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              Sellers Hub
             </router-link>
 
             <!-- Account preferences Ends/-->

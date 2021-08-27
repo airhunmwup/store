@@ -1,7 +1,7 @@
 <template>
   <!-- main content -->
   <div class="container">
-<nav aria-label="breadcrumb">
+<nav aria-label="breadcrumb" class="d-xs-none">
   <ol class="breadcrumb text-xs">
     <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
     <li class="breadcrumb-item text-primary" aria-current="page">Your Orders</li>

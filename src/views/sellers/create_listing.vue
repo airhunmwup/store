@@ -1,6 +1,14 @@
 <template>
   <!-- main content -->
   <div class="container">
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
+    <li class="breadcrumb-item text-primary" aria-current="page">Sellers hub</li>
+    <li class="breadcrumb-item text-primary" aria-current="page">Listings</li>
+    <li class="breadcrumb-item active" aria-current="page">Create Listings</li>
+  </ol>
+</nav>
 
 <!--All-Orders-->
                   
@@ -122,7 +130,7 @@
                         <option value="">Freight (Flat rate)</option>
                         </select>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-4 ">
+                    <div class="col-lg-4 col-md-4 col-sm-4">
         
                         <div class="form-group">
                             <label class="font-weight-bold"></label>
