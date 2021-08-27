@@ -13,35 +13,35 @@
   <div class="row">
     <div class="col-sm">
     <div class="row">
-    <div class="col-10">
+    <div class="col">
       <p class="text-sm font-weight-bold">Total Sales:</p>
     </div>
-    <div class="col">
-      0
+    <div class="col text-right">
+      £0.00
     </div>
     </div>
     <div class="row">
-    <div class="col-10">
+    <div class="col">
       <p class="text-sm font-weight-bold">Today:</p>
     </div>
-    <div class="col">
-      0
+    <div class="col text-right">
+      £0.00
     </div>
     </div>
     <div class="row">
-    <div class="col-10">
+    <div class="col">
       <p class="text-sm font-weight-bold">Last 7 days:</p>
     </div>
-    <div class="col">
-      0
+    <div class="col text-right">
+      £0.00
     </div>
     </div>
     <div class="row">
-    <div class="col-10">
+    <div class="col">
       <p class="text-sm font-weight-bold">Last 31 days:</p>
     </div>
-    <div class="col">
-      0
+    <div class="col text-right">
+      £0.00
     </div>
     </div>
   </div>
@@ -50,7 +50,7 @@
     <div class="col-10">
       <p class="text-sm font-weight-bold">Awaiting shipment:</p>
     </div>
-    <div class="col">
+    <div class="col text-right">
       0
     </div>
     </div>
@@ -58,15 +58,15 @@
     <div class="col-10">
       <p class="text-sm font-weight-bold">All Open returns/replace:</p>
     </div>
-    <div class="col">
+    <div class="col text-right">
       0
     </div>
     </div>
     <div class="row">
-    <div class="col-10">
+    <div class="col">
       <p class="text-sm font-weight-bold">Cancelled:</p>
     </div>
-    <div class="col">
+    <div class="col text-right">
       0
     </div>
     </div>
