@@ -8,39 +8,93 @@
                         <div class="row pt-2">
                                 
                             <div class="container align-content-center">
-                                <div class="register-form text-center">
-                                    <div class="pb-4 text-center">
-                                    <p class="h1 text-dark">Add listing</p>
-                                    </div>
-                            <form id="customer-form" action="#" method="post">
-                                <div class="container">
-                                    <p class="h6 text-dark">Select Category</p>
-                                    <div class="form-group p-3">
-                                        <select class="col-lg-10 col-md-10 col-sm-10 border p-2 border-dark " name="" type="text">
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    <option></option>
-                                    </select>
-                                    </div>
-                                    
-                                       
-                                </div> 
                                 
-                  <router-link
-                    to="/addsubcategory"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Next"
-                    >
-                                <div class="clearfix pt-3 pb-3 col-12">
-                                        <button class="col-lg-6 col-md-6 col-sm-6  btn border-primary text-primary" data-link-action="sign-in" type="submit">
-                                            Next
-                                        </button>
-                                </div>
-                  </router-link>
-                            </form>
-                                </div>
+                                <div class="card">
+  <div class="card-header text-center text-dark align-content-center">
+  <div class="row">
+    <div class="col-6">
+        <p class="text-left text-dark font-weight-bold h6 m-3">Select Category </p>
+    </div>
+    <div class="col-6 col-xs-12">
+            <form method="post" class="std" id="customer-form">
+              <div class="justify-content-center text-center input-group pt-2 pb-2">
+    <div class="input-group-prepend ">
+      <div class="input-group-text bg-light" id="btnGroupAddon"><i class="fa fa-search"></i></div>
+
+    </div>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Find category"
+                  class="form-control border"
+                  value=""
+                />
+                <button
+                  class="btn-light btn text-primary text-sm  border"
+                  type="submit"
+                  data-action="show-password"
+                  data-text-show="Show"
+                  data-text-hide="Hide"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+    </div>
+  </div>
+
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item border">
+  <div class="row">
+    <div class="col-sm">
+      Electronics
+    </div>
+    <div class="col-sm">
+      <p class="text-right text-xl">
+                <router-link
+                  to="/addsubcategory"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
+                </router-link></p>
+    </div>
+  </div>
+</li>
+    <li class="list-group-item border">
+  <div class="row">
+    <div class="col-sm">
+      Fashion
+    </div>
+    <div class="col-sm">
+      <p class="text-right text-xl">
+                <router-link
+                  to="/addsubcategory"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
+                </router-link></p>
+    </div>
+  </div></li>
+    <li class="list-group-item border">
+  <div class="row">
+    <div class="col-sm">
+       Others
+    </div>
+    <div class="col-sm">
+      <p class="text-right text-xl">
+                <router-link
+                  to="/addsubcategory"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
+                </router-link></p>
+    </div>
+  </div>
+       </li>
+  </ul>
+</div>
                             </div>
                         </div>
                      </div>

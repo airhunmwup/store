@@ -22,51 +22,36 @@
                               </p>
                             </div>
                             <div class="row pt-5">
-                              <p class="text-dark  text-left h1 font-weight-bold">
-                                    Actions for sellers
-                              </p>
                               <div class="col-lg-6 p-3 col-md-6 col-sm-8">
-                              <div class="border p-3">
+                              <div class="card border p-3">
                                 <p class="h4 text-primary">
                                   Cancel an order
                                 </p>
                                 <p class="text font-weight-bold">
-                                  You can cancel your paid and unpaid orders by going to the sold page on My REJEE Stores and selecting the cancel option next to the order.
+                                  You can cancel your Orders by going to the Your Orders page on My Account and select the cancel option on the item ordered.
                                 </p>
-                              <div class="p-3">
-                                <button class="btn text-primary border-primary" type="submit">Goto My REJEE Stores Sold</button>
-                              </div>
                               </div>
                               </div>
                               <div class="col-lg-6 p-3 col-md-6 col-sm-8">
-                              <div class="border p-3">
+                              <div class="card border p-3">
                                 <p class="h4 text-primary">
                                   Manage your buyer's requests and disputes
                                 </p>
                                 <p class="text font-weight-bold">
-                                  You can view all your issues from buyers next to the order in the My REJEE Stores Sold page.
+                                  You can view all your issues from your message page in the My REJEE Stores "Your Account page".
                                 </p>
-                              <div class="p-3">
-                                <button class="btn text-primary border-primary" type="submit">Goto My REJEE Stores Sold</button>
-                              </div>
                               </div>
                               </div>
                             </div>
                             <div class="row pt-5">
-                              <p class="text-dark  text-left h1 font-weight-bold">
-                                    Actions for buyers
-                              </p>
                               <div class="col-lg-6 p-3 col-md-6 col-sm-8">
-                              <div class="border p-3">
+                              <div class="card border p-3">
                                 <p class="h4 text-primary">
                                   Create or view a request
                                 </p>
                                 <p class="text font-weight-bold">
-                                  You can report that your item hasn't arrived, start a return, or view your past requests next to your order in Purchase History.
+                                  You can report that your item hasn't arrived, start a return, or view your past requests.
                                 </p>
-                              <div class="p-3">
-                                <button class="btn text-primary border-primary" type="submit">Goto Purchase History</button>
-                              </div>
                               </div>
                               </div>
                             </div>

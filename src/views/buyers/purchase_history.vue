@@ -3,7 +3,7 @@
   <div class="container">
 
 <nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
+  <ol class="breadcrumb text-xs">
     <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
     <li class="breadcrumb-item active" aria-current="page">Your Orders</li>
   </ol>
