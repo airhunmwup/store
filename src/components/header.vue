@@ -1,6 +1,11 @@
 <template>
   <header class="row border-b border-secondary">
-      
+      <div class="alert alert-warning text-sm alert-dismissible fade show fixed-top" role="alert">
+  <strong>Alert!</strong> You fit use this place take do notifications.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
     <section class="row box">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3 text-xs">
         

@@ -86,7 +86,7 @@
                       <img src="img/myaccount/orderimg.png" width="100%" />
                     </div>
                     <div class="col-9">
-                      <p class="text-dark h5">Orders</p>
+                      <p class="text-dark h5">Manage Orders</p>
                       <p class="text-dark">Manage your sold, cancelled and returns. </p>
                     </div>
                   </div>
@@ -105,7 +105,7 @@
                       <img src="img/myaccount/shield.png" width="100%" />
                     </div>
                     <div class="col-9">
-                      <p class="text-dark h5">Listings</p>
+                      <p class="text-dark h5">Your Listings</p>
                       <p class="text-dark">
                         List items and manage existing listings.
                       </p>
@@ -126,7 +126,7 @@
                       <img src="img/myaccount/address.png" width="100%" />
                     </div>
                     <div class="col-9">
-                      <p class="text-dark h5">Payout</p>
+                      <p class="text-dark h5">Your Payout</p>
                       <p class="text-dark">
                         Manage payout preferences
                       </p>
