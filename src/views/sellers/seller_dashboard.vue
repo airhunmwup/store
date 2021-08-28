@@ -102,7 +102,7 @@
                 >
                   <div class="text-left row">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/shield.png" width="100%" />
+                      <img src="img/myaccount/list.png" width="100%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Listings</p>
@@ -123,10 +123,31 @@
                 >
                   <div class="row text-left ">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/address.png" width="100%" />
+                      <img src="img/myaccount/payout.png" width="100%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Payout</p>
+                      <p class="text-dark">
+                        Manage payout preferences
+                      </p>
+                    </div>
+                  </div>
+                </router-link>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+                <router-link
+                  to="/buyeraddresssetting"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Your Addresses"
+                  class="card p-3"
+                >
+                  <div class="row text-left ">
+                    <div class="col-3 content-end">
+                      <img src="img/myaccount/subscription.png" width="100%" />
+                    </div>
+                    <div class="col-9">
+                      <p class="text-dark h5">Subscriptions</p>
                       <p class="text-dark">
                         Manage payout preferences
                       </p>

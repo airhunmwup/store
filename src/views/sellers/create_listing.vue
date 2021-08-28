@@ -68,7 +68,13 @@
     <div class="col">
   <div class="form-group">
     <label class="font-weight-bold">Condition</label>
-    <input type="text" class="form-control">
+                        <select class="col-lg-4 col-md-6 col-sm-12 form-control text-sm select-auto border" type="text" name="">
+                        <option value="">-</option>
+                        <option value="">New</option>
+                        <option value="">Seller refurbished</option><!-- for goods that fall under this-->
+                        <option value="">Used</option>
+                        <option value="">For parts or not working</option><!-- for goods that fall under this-->
+                        </select>
   </div>
     </div>
     <div class="col-12">

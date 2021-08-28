@@ -296,11 +296,10 @@
         <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-question-circle"></i> Help
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+        <div class="dropdown-menu text-sm text-dark font-weight-bold" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Resolution Center</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#"><span class="fa fa-phone"></span> Contact Support</a>
         </div>
       </li>
       <li class="nav-item ">
