@@ -1,15 +1,19 @@
 <template>
   <!-- main content -->
   <div class="container">
-    <p class="h6 text-sm p-3"><span class="text-primary">Your Account</span> > <span class=" ">Watchlist</span>
-</p>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Watchlist</li>
+  </ol>
+</nav>
         <div class="row pb-4 justify-content-center">
 
                 <div class="container pl-2">
                     <div class="row">
                     <div class="col-lg-6 col-xs-12">
                   <p class="text font-weight-bold">
-                  <span class="p-3 font-weight-bolder text-dark h4 underline">Watchlist</span>
+                  <span class="p-3 font-weight-bolder text-dark h4">Watchlist</span>
                   <span></span>
                   </p>
                     </div>

@@ -6,7 +6,7 @@
   <ol class="breadcrumb text-xs">
     <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
     <li class="breadcrumb-item text-primary" aria-current="page">Sellers hub</li>
-    <li class="breadcrumb-item active" aria-current="page">Orders</li>
+    <li class="breadcrumb-item active" aria-current="page">Listings</li>
   </ol>
 </nav>
 
@@ -16,7 +16,7 @@
                     <div class="row">
                     <div class="col-lg-6 col-xs-12">
                   <p class="text pl-3 text-dark h4 font-weight-bold font-weight-normal">
-                  Orders
+                  Listings
                   </p>
                     </div>
                     </div>
@@ -26,15 +26,14 @@
 
             <form method="post" class="std" id="customer-form">
               <div class="justify-content-center text-center input-group pt-2 pb-2 col-lg-6 col-xs-12">
-    <div class="input-group-prepend ">
+    <div class="input-group-prepend">
       <div class="input-group-text bg-light" id="btnGroupAddon"><i class="fa fa-search"></i></div>
-
     </div>
                 <input
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Search all Orders"
+                  placeholder="Search all Listings"
                   class="form-control border"
                   value=""
                 />
@@ -53,20 +52,20 @@
           <div class="pb-2 col-12">
 
 <!--Purchase History-->
-                <div class="row">
-                    <div class="pb-2 pt-2 col-lg-6 col-xs-12">
+                <div class="row border bg-light rounded">
+                    <div class="pb-2 pt-2 col-lg-6 col-xs-12 ">
                         <!-- Example single danger button -->
 <div class="btn-group">
   <!-- Example split danger button -->
-  <button type="button" class="btn btn-xs text-sm">0 Orders placed:</button>
   <button type="button" class="font-weight-bold text-dark btn-xs text-sm dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    All Orders <span class="sr-only">Toggle Dropdown</span>
+    All Listings <span class="sr-only">Toggle Dropdown</span>
   </button>
   <div class="dropdown-menu text-xs">
-    <a class="dropdown-item font-weight-bold" href="#">Awaiting delivery (2)</a>
-    <a class="dropdown-item font-weight-bold" href="#">Delivered (0)</a>
-    <a class="dropdown-item font-weight-bold" href="#">Cancelled (0)</a>
-    <a class="dropdown-item font-weight-bold" href="#">Returns (0)</a>
+    <a class="dropdown-item font-weight-bold" href="#">Active (2)</a>
+    <a class="dropdown-item font-weight-bold" href="#">Unsold (0)</a>
+    <a class="dropdown-item font-weight-bold" href="#">Scheduled (0)</a>
+    <a class="dropdown-item font-weight-bold" href="#">Ended (0)</a>
+    <a class="dropdown-item font-weight-bold" href="#">Drafts (0)</a>
   </div>
 </div>
 <div class="btn-group">
@@ -81,6 +80,21 @@
     <a class="dropdown-item">2019</a>
   </div>
 </div>
+
+  
+                <router-link
+                  to="/newlisting"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Create new listings"
+                  class="btn-sm m-1 text-xs underline"
+                >
+                Add new
+                </router-link>
+
+  <button type="button" class="btn-sm m-1 text-xs underline" >
+    Delete
+  </button>
                     </div>
                     
                 <div class="">
@@ -90,107 +104,116 @@
                     <div class="card-header font-weight-bold">
 
     <div class="row text-xs">
-    <div class="col">
-  <div class="input-group">
-      <span class="ml-2"> #ORDER ID</span>
-</div>
+    <div class="col-1">
+    <div class="input-group">
+      <span class="mr-2"> # </span>
+      <input type="checkbox" aria-label="Checkbox for following text input">
+    </div>
     </div>
     <div class="col">
-      <p class="">CREATED</p>
+      <p class="">Product title</p>
+    </div>
+    <div class="col text-center">
+      <p class="">Image</p>
     </div>
     <div class="col">
-      <p class="">CUSTOMER</p>
+      <p class="">SKU</p>
     </div>
     <div class="col">
-      <p class="">PRODUCT</p>
+      <p class="">Price</p>
     </div>
     <div class="col">
-      <p class="">STATUS</p>
+      <p class="">Category</p>
+    </div>
+    <div class="col text-center">
+      <p class="">in-stock</p>
+    </div>
+    <div class="col text-center">
+      <p class="">Status</p>
     </div>
     <div class="col">
-      <p class="">DELIVERY STATUS</p>
-    </div>
-    <div class="col">
-      <p class="text-right">PRICE</p>
+      <p class="text-right">Actions</p>
     </div>
     </div>
                     </div>
-                <router-link
-                  to="/processorder"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                  title="Personal Information"
-                >
                     <div class="card-body border-b-2 text-dark">
 
     <div class="row text-xs">
-    <div class="col">
-  <div class="input-group">
-      <span class="ml-2 font-weight-bold"> #76343</span>
-</div>
-    </div>
-    <div class="col">
-      <p class="">15 August 2020, 16:00</p>
-    </div>
-    <div class="col">
-      <p class="">John Phillips</p>
-    </div>
-    <div class="col">
-      <p class="">The first product name...</p>
-    </div>
-    <div class="col">
-      <span class="alert-xs p-1 mt-4 rounded alert-danger" style="height: 2rem;" role="alert">
-       Pending
-    </span>
-    </div>
-    <div class="col">
-      <p class="">awaiting delivery</p>
-    </div>
-    <div class="col">
-      <p class="text-right">£150.00</p>
+    <div class="col-1">
+    <div class="input-group">
+      <span class="mr-2"> 1 </span>
+      <input type="checkbox" aria-label="Checkbox for following text input">
     </div>
     </div>
-                    </div>
-                </router-link>
-
-
-                <router-link
-                  to="/processorder"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                  title="Personal Information"
-                >
-                    <div class="card-body border-b-2 text-dark">
-
-    <div class="row text-xs">
     <div class="col">
-  <div class="input-group">
-      <span class="ml-2 font-weight-bold"> #76343</span>
-</div>
+      <p class="">This na the product title</p>
     </div>
     <div class="col">
-      <p class="">15 August 2020, 16:00</p>
+  <img class="" style="width:70%;" src="img/product/11.jpg" alt="Card image cap">
     </div>
     <div class="col">
-      <p class="">John Phillips</p>
+      <p class="">P012S</p>
     </div>
     <div class="col">
-      <p class="">The first product name...</p>
+      <p class="">£150.00</p>
     </div>
     <div class="col">
+      <p class="">Electronics, TVs and DVDs</p>
+    </div>
+    <div class="col text-center">
+      <p class="">16</p>
+    </div>
+    <div class="col text-center">
       <span class="alert-xs p-1 mt-4 rounded alert-success" style="height: 2rem;" role="alert">
-       Delivered
+       Active
     </span>
     </div>
-    <div class="col">
-      <p class="">Delivered</p>
-    </div>
-    <div class="col">
-      <p class="text-right">£150.00</p>
+    <div class="col text-right">
+      <button type="button" class="btn text-light btn-danger btn-xs text-xs underline btn-block">Delete</button>
+      <button type="button" class="btn text-light btn-info btn-xs text-xs underline btn-block">Edit</button>
     </div>
     </div>
                     </div>
-                </router-link>
+                    <div class="card-body border-b-2 text-dark">
+
+    <div class="row text-xs">
+    <div class="col-1">
+    <div class="input-group">
+      <span class="mr-2"> 2 </span>
+      <input type="checkbox" aria-label="Checkbox for following text input">
+    </div>
+    </div>
+    <div class="col">
+      <p class="">This na the product title</p>
+    </div>
+    <div class="col">
+  <img class="" style="width:70%;" src="img/product/12.jpg" alt="Card image cap">
+    </div>
+    <div class="col">
+      <p class="">P012S</p>
+    </div>
+    <div class="col">
+      <p class="">£50.00</p>
+    </div>
+    <div class="col">
+      <p class="">Funiture, Chairs</p>
+    </div>
+    <div class="col text-center">
+      <p class="">16</p>
+    </div>
+    <div class="col text-center">
+      <span class="alert-xs p-1 mt-4 rounded alert-danger" style="height: 2rem;" role="alert">
+       Ended
+    </span>
+    </div>
+    <div class="col text-right">
+      <button type="button" class="btn text-light btn-danger btn-xs text-xs underline btn-block">Delete</button>
+      <button type="button" class="btn text-light btn-info btn-xs text-xs underline btn-block">Edit</button>
+    </div>
+    </div>
+                    </div>
+
+
 </div>
 
 <!--end Web view-->
@@ -201,10 +224,13 @@
 
     <div class="row text-xs">
     <div class="col">
-      <p class="text-left"> 15 August 2020, 16:00</p>
+    <div class="input-group">
+      <input type="checkbox" aria-label="Checkbox for following text input">
+      <span class="ml-2"> 1 </span>
+    </div>
     </div>
     <div class="col">
-      <p class="text-right">Order ID: <b>425251</b></p>
+      <p class="text-right">SKU: <b>P62X</b></p>
     </div>
     </div>
                     </div>
@@ -212,35 +238,27 @@
 
     <div class="row text-xs">
     <div class="col pt-2">
-      <span class="alert-xs p-1 mt-4 rounded alert-danger" style="height: 2rem;" role="alert">
-       Pending
-    </span>
+  <img class="" style="width:70%;" src="img/product/11.jpg" alt="Card image cap">
     </div>
     <div class="col">
-      <p class="text-right h5">
-                <router-link
-                  to="/processorder"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                  title="Personal Information"
-                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
-                </router-link></p>
+      <p class="text-left mt-4 text-lg text-dark font-weight-bold">
+          This na the product title</p>
     </div>
     </div>
                     </div>
   <div class="card-body text-xs">
   <div class="row">
     <div class="col-4">
-      <p class="m-1"> Customer:</p>
+      <p class="m-1"> Category:</p>
     </div>
     <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> John Phillips</p>
+      <p class="m-1 text-dark font-weight-bold"> Electronics, TVs and DVDs</p>
     </div>
     <div class="col-4">
-      <p class="m-1"> Product:</p>
+      <p class="m-1"> In-stock:</p>
     </div>
     <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> Door opening stuff na him be the product names</p>
+      <p class="m-1 text-dark font-weight-bold"> 16</p>
     </div>
     <div class="col-4">
       <p class="m-1"> Price:</p>
@@ -249,12 +267,18 @@
       <p class="m-1 text-dark font-weight-bold"> £150.00</p>
     </div>
     <div class="col-6">
-      <p class="m-1">Delivery status:</p>
+      <p class="m-1">Status:</p>
     </div>
-    <div class="col-6 text-right">
-      <p class="m-1 text-dark font-weight-bold">awaiting delivery</p>
+    <div class="col-6 pt-2 text-right">
+      <span class="alert-xs p-1 mt-4 rounded alert-success" style="height: 2rem;" role="alert">
+       Active
+    </span>
     </div>
   </div>
+  </div>
+  <div class="card-footer">
+      <a href="#" class="btn btn-danger text-light border m-1 btn-sm">Delete</a>
+      <a href="#" class="btn btn-info text-light border m-1 btn-sm">Edit</a>
   </div>
 </div>
 
@@ -263,10 +287,13 @@
 
     <div class="row text-xs">
     <div class="col">
-      <p class="text-left"> 15 August 2020, 16:00</p>
+    <div class="input-group">
+      <input type="checkbox" aria-label="Checkbox for following text input">
+      <span class="ml-2"> 2 </span>
+    </div>
     </div>
     <div class="col">
-      <p class="text-right">Order ID: <b>425251</b></p>
+      <p class="text-right">SKU: <b>P62X</b></p>
     </div>
     </div>
                     </div>
@@ -274,35 +301,27 @@
 
     <div class="row text-xs">
     <div class="col pt-2">
-      <span class="alert-xs p-1 mt-4 rounded alert-danger" style="height: 2rem;" role="alert">
-       Pending
-    </span>
+  <img class="" style="width:70%;" src="img/product/12.jpg" alt="Card image cap">
     </div>
     <div class="col">
-      <p class="text-right h5">
-                <router-link
-                  to="/processorder"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                  title="Personal Information"
-                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
-                </router-link></p>
+      <p class="text-left mt-4 text-lg text-dark font-weight-bold">
+          This na the product title</p>
     </div>
     </div>
                     </div>
   <div class="card-body text-xs">
   <div class="row">
     <div class="col-4">
-      <p class="m-1"> Customer:</p>
+      <p class="m-1"> Category:</p>
     </div>
     <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> John Phillips</p>
+      <p class="m-1 text-dark font-weight-bold"> Funitures, Chairs</p>
     </div>
     <div class="col-4">
-      <p class="m-1"> Product:</p>
+      <p class="m-1"> In-stock:</p>
     </div>
     <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> Door opening stuff na him be the product names</p>
+      <p class="m-1 text-dark font-weight-bold"> 16</p>
     </div>
     <div class="col-4">
       <p class="m-1"> Price:</p>
@@ -311,17 +330,23 @@
       <p class="m-1 text-dark font-weight-bold"> £150.00</p>
     </div>
     <div class="col-6">
-      <p class="m-1">Delivery status:</p>
+      <p class="m-1">Status:</p>
     </div>
-    <div class="col-6 text-right">
-      <p class="m-1 text-dark font-weight-bold">awaiting delivery</p>
+    <div class="col-6 pt-2 text-right">
+      <span class="alert-xs p-1 mt-4 rounded alert-danger" style="height: 2rem;" role="alert">
+       Pending
+    </span>
     </div>
   </div>
+  </div>
+  <div class="card-footer">
+      <a href="#" class="btn btn-danger text-light border m-1 btn-sm">Delete</a>
+      <a href="#" class="btn btn-info text-light border m-1 btn-sm">Edit</a>
   </div>
 </div>
 <!--end mobile view-->
 
-                  <p class="text-dark text-center">You do not have any orders to display in this view.</p>
+                  <p class="text-dark text-center">You do not have any listings to display in this view.</p>
 
                         <div class="justify-content-center p-2 text-sm">
                 <nav aria-label="Page navigation example" class="col-12">

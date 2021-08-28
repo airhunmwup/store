@@ -1,6 +1,11 @@
 <template>
   <header class="row border-b border-secondary">
-      
+      <div class="alert alert-warning text-sm alert-dismissible fade show fixed-top" role="alert">
+  <strong>Alert!</strong> You fit use this place take do notifications.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
     <section class="row box">
       <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3 text-xs">
         
@@ -97,6 +102,22 @@
               data-target=".navbar-collapse"
             >
               Message (2)
+            </router-link>
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/Overview"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              Sellers Hub
+            </router-link>
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/Overview"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              Help!
             </router-link>
 
             <!-- Account preferences Ends/-->
@@ -228,6 +249,14 @@
             >
               Message (2)
             </router-link>
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/Overview"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              Sellers Hub
+            </router-link>
 
             <!-- Account preferences Ends/-->
             <!-- Account preferences Ends/-->
@@ -267,11 +296,10 @@
         <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-question-circle"></i> Help
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
-          <a class="dropdown-item" href="#">Another action</a>
+        <div class="dropdown-menu text-sm text-dark font-weight-bold" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Resolution Center</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Something else here</a>
+          <a class="dropdown-item" href="#"><span class="fa fa-phone"></span> Contact Support</a>
         </div>
       </li>
       <li class="nav-item ">

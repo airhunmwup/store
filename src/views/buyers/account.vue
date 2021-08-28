@@ -13,7 +13,7 @@
                   to="/purchasehistory"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Personal Information"
+                  title="Your Orders"
                   class="card p-3"
                 >
                   <div class="row text-left ">
@@ -32,7 +32,7 @@
                   to="/buyersigninsecsetting"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Personal Information"
+                  title="Sign in & Security"
                   class="card p-3"
                 >
                   <div class="text-left row">
@@ -53,7 +53,7 @@
                   to="/buyeraddresssetting"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Personal Information"
+                  title="Your Addresses"
                   class="card p-3"
                 >
                   <div class="row text-left ">
@@ -74,7 +74,7 @@
                   to="/paymentsetting"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Personal Information"
+                  title="Your Payment"
                   class="card p-3"
                 >
                   <div class="row text-left ">
@@ -95,7 +95,7 @@
                   to="/My message"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Personal Information"
+                  title="Message Center"
                   class="card p-3"
                 >
                   <div class="row text-left">
@@ -107,6 +107,25 @@
                       <p class="text-dark">
                         View your REJEE Stores and Seller Messages
                       </p>
+                    </div>
+                  </div>
+                </router-link>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+                <router-link
+                  to="/overview"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Sellers Hub"
+                  class="card p-3"
+                >
+                  <div class="row text-left ">
+                    <div class="col-3 content-end">
+                      <img src="img/myaccount/sellershub.png" width="100%" />
+                    </div>
+                    <div class="col-9">
+                      <p class="text-dark h5">Sellers Hub</p>
+                      <p class="text-dark">Sale on Rejee Stores, manage sellers account. </p>
                     </div>
                   </div>
                 </router-link>

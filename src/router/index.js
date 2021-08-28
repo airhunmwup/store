@@ -51,6 +51,7 @@ import Dashboard from '../views/sellers/seller_dashboard.vue'
 import orders_page from '../views/sellers/orders_page.vue'
 import order_details from '../views/sellers/order_details.vue'
 import listing_page from '../views/sellers/listing_page.vue'
+import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
 import add_category from '../views/sellers/add_category.vue'
 import add_subcategory from '../views/sellers/add_subcategory.vue'
@@ -157,6 +158,11 @@ const routes = [{
         component: listing_page,
     },
     {
+        path: '/listings',
+        name: 'listings',
+        component: listings_page,
+    },
+    {
         path: '/activelisting',
         name: 'activelisting',
         component: active_listing,
@@ -182,8 +188,8 @@ const routes = [{
         component: unsold_listing,
     },
     {
-        path: '/Create listing',
-        name: 'Create listing',
+        path: '/newlisting',
+        name: 'newlisting',
         component: create_listing,
     },
     {
@@ -234,8 +240,8 @@ const routes = [{
         component: buy_again,
     },
     {
-        path: '/Process Order',
-        name: 'Order_process',
+        path: '/processorder',
+        name: 'processorder',
         component: Order_process,
     },
     {
