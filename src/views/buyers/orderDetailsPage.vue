@@ -1,125 +1,207 @@
 <template>
-<div class="user-acount">
-
+<div class="container">
     <!-- main content -->
-    <div class="main-content">
-        <div class="wrap-banner">
-
-            <!-- breadcrumb -->
-
-            <div class="acount head-acount  container">
-                <div class="container">
-                    <div id="main">
-                        <h1 class="title-page">Order Details</h1>
-                            <table class="std table" id="block-history">
-                                <tbody>
-                                    <tr>
-                                        <th class="first_item">
-                                            <p class="text-dark">IT'S DELIVERD!</p><span class="text-small">Delivered on 14 MAR 2021</span>
-                                            <hr>
-                                            <p><small>Your order has been delivered. We hope you love it!</small></p>
-                                            <br>
-                                            <p><small><b class="fa fa-truck"></b> Order No:  <span class="text-small"> 567328996</span></small></p>
-                                            <p><small><b class="fa fa-calendar-o"></b> Order date:  <span class="text-small"> 9 MAR 2021</span></small></p>
-                                            <p><small><b class="fa fa-calendar-check-o"></b> Shipping date:  <span class="text-small"> 11 MAR 2021</span></small></p>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item btn text-success">Track Order</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item box"><b class="fa fa-info-o"></b><small>MORE INFO</small></th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item box">DELIVERY DETAILS</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item">
-                                            <p>DELIVERY ADDRESS</p>
-                                            <p><small>David Johnson</small></p>
-                                            <p><small>139 Jervoise Road</small></p>
-                                            <p><small>West Midlands</small></p>
-                                            <p><small>Birmingham</small></p>
-                                            <p><small>UK</small></p>
-                                            <p><small>07746358183</small></p>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item">ESTIMATED DELIVERY
-                                            <p><small>Friday, 11 MAY 2021</small></p>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item">DELIVERY METHOD
-                                            <p><small>Fast Delivery</small></p>
-                                        </th>
-                                    </tr>
-                                </tbody>
-                            </table>
-
-                        <p class="box col"><b>Items (3)</b></p>
-                            <table class="std table" >
-                                <tbody>
-                                    <tr>
-                                        <th class="first_item">
-                                            <div class="row content col-12">
-                                                    <span class="col-6 col-sm-6 col-md-4 col-lg-3">
-                                                        <img src="img/product/6.jpg" class="" alt="Product">
-                                                        <p><span class="text-small"> 567328996</span></p>
-                                                        <p><span class="text-small"> 11 MAR 2021</span></p>
-                                                    </span>
-                                                    <span class="col-6 col-sm-6 col-md-4 col-lg-3">
-                                                        <img src="img/product/6.jpg" class="" alt="Product">
-                                                        <p><span class="text-small"> 567328996</span></p>
-                                                        <p><span class="text-small"> 11 MAR 2021</span></p>
-                                                    </span>
-                                            </div>
-                                        </th>
-                                    </tr>
-
-                                    <tr>
-                                        <th class="first_item box">PAYMENT DETAIL</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item">
-                                            <p class="col text"><i class="fa fa-cc-visa"> VISA Debit</i></p>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item box">ORDER TOTAL</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item">
-
-                                            <p>Sub-total:  <span class="text-small"> £12.60</span></p>
-                                            <p>Delivery:  <span class="text-small"> FREE</span></p>
-                                            <p><b>TOTAL: <span class="text-small"> £12.60</span></b></p>
-                                        </th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item box">NEED HELP WITH YOUR ORDER?</th>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item">
-                                            <p class="col text">Order issues FAQ</p>
-                                        </th>
-                                        <td class="btn item"><b class="fa fa-angle-right"></b></td>
-                                    </tr>
-                                    <tr>
-                                        <th class="first_item">
-                                            <p class="col text">Returns FAQ</p>
-                                        </th>
-                                        <td class="btn item"><b class="fa fa-angle-right"></b></td>
-                                    </tr>
-                                </tbody>
-
-                            </table>
-
-                    </div>
-
-                </div>
-            </div>
-        </div>
+<div class="card">
+  <div class="card-header">
+                        <p class="h5 text-dark">Order Details</p>
+  </div>
+  <div class="card-body text-sm text-dark">
+    <p class="">Order number: <span class="text-sm">#2534262</span></p>
+    <p class="">Order date: <span class="text-sm">25 August, 2020.</span></p>
+  </div>
+  <div class="card-footer">
+                        <p class="h5 text-dark">Shipping information</p>
+  </div>
+  <div class="card-body text-sm text-dark">
+  <div class="row">
+    <div class="col-sm">
+    <p class="font-weight-bold">Shipping information: </p>
+    <p class="">Full name </p>
+    <p class="">Address line 1 </p>
+    <p class="">city/town </p>
+    <p class="">Country , postcode</p>
     </div>
+    <div class="col-sm">
+    <p class="font-weight-bold">Shipping method: </p>
+    <p class="">Shipping rate table: Economy Service (2 to 9 business days)</p>
+    <p class="">Price: £5.23</p>
+    <p class="">Status:<span class="alert-info m-2 rounded"> out for delivery</span></p>
+  <div class="form-group m-2">
+    <p class="font-weight-bold">Tracking ID: 8374626263273723</p>
+        <p><a href="https://www.royalmail.com/track-your-item" class="text-primary underline">track your shipment</a></p>
+  </div>
+    </div>
+</div>
+  </div>
+  <!--for webview -->
+  <div class="card-footer text-xs d-xs-none">
+  <div class="row">
+    <div class="col-4">
+        <p class="h5 text-dark">Product</p>
+    </div>
+    <div class="col-2">
+    <p class="">Requested shipping date: </p>
+    </div>
+    <div class="col-2 ">
+    <p class="">status</p>
+    </div>
+    <div class="col-2 text-center">
+    <p class="">Qty</p>
+    </div>
+    <div class="col-1 ">
+    <p class="text-right">Each</p>
+    </div>
+    <div class="col-1">
+    <p class="text-right">Total</p>
+    </div>
+  </div>
+  </div>
+  <div class="card-body text-xs text-dark d-xs-none">
+  <div class="row">
+    <div class="col-4">
+  <div class="row">
+    <div class="col-6">
+         <img src="img/product/6.jpg" class="" alt="Product">
+    </div>
+    <div class="col-6">
+                        <p class="text-dark">Product name</p>
+                        <p class="text-dark">SKU: CTZ086DT</p>
+                        <p class="text-dark">Brand: basket</p>
+    </div>
+  </div>
+    </div>
+    <div class="col-2">
+    <p class="">29 August, 2020 </p>
+    </div>
+    <div class="col-2">
+    <p class="">Order processing</p>
+    </div>
+    <div class="col-2 text-center">
+    <p class="">4</p>
+    </div>
+    <div class="col-1 ">
+    <p class="text-right">£50 </p>
+    </div>
+    <div class="col-1 t">
+    <p class="text-right">£200 </p>
+    </div>
+  </div>
+  </div>
+  <div class="card-body text-xs text-dark d-xs-none">
+  <div class="row">
+    <div class="col-4">
+  <div class="row">
+    <div class="col-6">
+         <img src="img/product/16.jpg" class="" alt="Product">
+    </div>
+    <div class="col-6">
+                        <p class="text-dark">Product name</p>
+                        <p class="text-dark">SKU: CTZ086DT</p>
+                        <p class="text-dark">Brand: basket</p>
+    </div>
+  </div>
+    </div>
+    <div class="col-2">
+    <p class="">29 August, 2020 </p>
+    </div>
+    <div class="col-2">
+    <p class="">Order processing</p>
+    </div>
+    <div class="col-2 text-center">
+    <p class="">4</p>
+    </div>
+    <div class="col-1 ">
+    <p class="text-right">£50 </p>
+    </div>
+    <div class="col-1 t">
+    <p class="text-right">£200 </p>
+    </div>
+  </div>
+  </div>
+  <!--sub total -->
+  <!--end webview -->
+  <!--for mobileview -->
+<div class="card-footer d-md-none d-lg-none">
+  <div class="row">
+    <div class="col-sm">
+        <p class="h5 text-dark">Product</p>
+    </div>
+  </div>
+</div>
+<div class="card-body text-xs text-dark d-md-none d-lg-none">
+  <div class="row">
+    <div class="col-6 col-sm-6">
+         <img src="img/product/6.jpg" class="" alt="Product">
+    </div>
+    <div class="col-6 col-sm-6">
+    <p class="h6 text-dark">Product name</p>
+    <p class="">Requested shipping date: </p>
+    <p class="">status: Order processing</p>
+    <p class="">Qty: 4</p>
+    <p class="">Each: £50</p>
+    <p class="">Total:<span class="text-right"> £200</span></p>
+    </div>
+  </div>
+</div>
+<div class="card-body text-xs text-dark d-md-none d-lg-none">
+  <div class="row">
+    <div class="col-6">
+         <img src="img/product/16.jpg" class="" alt="Product">
+    </div>
+    <div class="col-6">
+    <p class="h6 text-dark">Product name</p>
+    <p class="">Requested shipping date: </p>
+    <p class="">status: Order processing</p>
+    <p class="">Qty: 4</p>
+    <p class="">Each: £50</p>
+    <p class="">Total:<span class="text-right"> £200</span></p>
+    </div>
+  </div>
+</div>
+  <div class="card-body border text-sm text-dark">
+  <div class="row">
+    <div class="col-3 text-left font-weight-bold">
+    <p class="">Order Subtotal: </p>
+    <p class="">Tax: </p>
+    <p class="">Shipping: </p>
+    <p class="">Order Total: </p>
+    </div>
+    <div class="col ">
+    <p class="">£200 </p>
+    <p class="">£2 </p>
+    <p class="">£5.9</p>
+    <p class="text-danger">£207.9</p>
+    </div>
+  </div>
+  </div>
+  <!--for mobileview -->
+  <div class="card-footer">
+                        <p class="h5 text-dark">Billing information</p>
+  </div>
+  <div class="card-body text-sm text-dark">
+  <div class="row">
+    <div class="mb-2 col-sm">
+    <p class="font-weight-bold">Billing information: </p>
+    <p class="">Full name </p>
+    <p class="">Address line 1 </p>
+    <p class="">city/town </p>
+    <p class="">Country , postcode</p>
+    </div>
+    <div class="mb-2 col-sm">
+    <p class="font-weight-bold">Payment method: card </p>
+    <p class="">******7645</p>
+    <p class="">23/20 </p>
+    </div>
+</div>
+  </div>
+  <div class="card-body text-sm text-dark">
+  <div class="row">
+    <div class="mb-2 col-sm">
+<button type="button" class="btn m-1 btn-light btn-sm border">Cancel</button>
+<button type="button" class="btn m-1 btn-warning btn-sm border">Print</button>
+    </div>
+</div>
+</div>
+</div>
 </div>
 </template>

@@ -324,8 +324,8 @@ const routes = [{
         component: userLogin,
     },
     {
-        path: '/Order Details',
-        name: 'orderDetailsPage',
+        path: '/orderdetails',
+        name: 'orderdetails',
         component: orderDetailsPage,
     },
     {
@@ -349,8 +349,8 @@ const routes = [{
         component: address_setting,
     },
     {
-        path: '/payoutsettings',
-        name: 'payoutsettings',
+        path: '/managepayout',
+        name: 'managepayout',
         component: payout_settings,
     },
 

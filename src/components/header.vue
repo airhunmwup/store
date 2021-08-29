@@ -7,7 +7,7 @@
   </button>
 </div>
     <section class="row box">
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-3 text-xs">
+      <div class="col-lg-6 col-md-6 d-xs-none d-sm-none col-sm-6 col-xs-6 pl-3 text-xs">
         
 
               <i class="zmdi zmdi-account h4"></i>

@@ -112,7 +112,11 @@
     </div>
     <div class="m-1 col-4 col-xs-12">
         <p class="font-weight-bold">ORDER # 202-0274579-1617107</p>
-    <p class=""> <span class="text-primary text-sm" >View order details </span>|<span class="text-primary text-sm" > Invoice</span></p>
+                                    <p><router-link
+                                      to="/orderdetails"
+                                      data-toggle="collapse"
+                                      data-target=".navbar-collapse"
+                                      ><span class="text-primary text-sm" >View order details </span></router-link>|<span class="text-primary text-sm" > Invoice</span></p>
     </div>
   </div>
   </div>
@@ -146,13 +150,18 @@
 <button type="button" class="text-xs btn-sm border btn-warning btn-block">Track package</button>
 <button type="button" class="text-xs btn-sm  btn-light border btn-block">Problem with order</button>
 <button type="button" class="text-xs btn-sm  btn-light border btn-block">Return</button>
-<button type="button" class="text-xs btn-sm  btn-light border btn-block">Leave seller feedback</button>
+  <button class="text-xs btn-sm  btn-light border btn-block" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+    Leave seller feedback
+  </button>
+<div class="collapse" id="collapseExample">
+  <div class="form-group m-2">
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">...</textarea>
+<button class="btn btn-sm m-1 btn-success" type="submit">send</button>
+  </div>
+</div>
     </div>
   </div>
   </div>
-  </div>
-  <div class="card-body border-t-2">
-<button type="button" class="text-primary underline"> Archive order</button>
   </div>
 </div>
                   <p class="text-dark text-center">You do not have any orders to display in this view.</p>
