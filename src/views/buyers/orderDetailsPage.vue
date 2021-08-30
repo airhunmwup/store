@@ -24,7 +24,6 @@
     <div class="col-sm">
     <p class="font-weight-bold">Shipping method: </p>
     <p class="">Shipping rate table: Economy Service (2 to 9 business days)</p>
-    <p class="">Price: £5.23</p>
     <p class="">Status:<span class="alert-info m-2 rounded"> out for delivery</span></p>
   <div class="form-group m-2">
     <p class="font-weight-bold">Tracking ID: 8374626263273723</p>
@@ -160,7 +159,7 @@
 </div>
   <div class="card-body border text-sm text-dark">
   <div class="row">
-    <div class="col-3 text-left font-weight-bold">
+    <div class="col text-left font-weight-bold">
     <p class="">Order Subtotal: </p>
     <p class="">Tax: </p>
     <p class="">Shipping: </p>

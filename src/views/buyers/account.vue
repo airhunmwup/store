@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="container justify-content-center"> 
+  <div class="container justify-content-center text-sm"> 
     <div class="row justify-content-center">
           <!--Sigin-and-security-->
           <div class="row pb-5">

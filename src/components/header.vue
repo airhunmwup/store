@@ -46,14 +46,16 @@
       </div>
       <div class="col-6 row d-md-none">
       <div class="col-6 text-left">
-    <ul class="nav  pr-3">
+    <ul class="nav">
       <li v-if="this.$store.state.isLoggedIn" class="nav-item dropdown pt-3">
+<a class="nav-link btn text-dark font-weight-bold " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  <p class="text-sm"><span  class="zmdi zmdi-account"></span> Account</p>
+</a> <!-- primary info buttons ends/
         <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="zmdi zmdi-account"></i> Account
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <div class="text-md nav flex-column">
-            <!-- primary info buttons ends/-->
 
                 <router-link
                   class="dropdown-item text-left underline pl-4 pb-2  font-weight-bold"
@@ -64,7 +66,6 @@
                             >
                   Your Account
                 </router-link>
-            <!-- Account preferences/-->
 
             <router-link
               class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
@@ -74,17 +75,6 @@
             >
               Watching
             </router-link>
-
-            <!-- Account preferences/
-
-            <router-link
-              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/recentlyviewed"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-            >
-              Recently viewed
-            </router-link>-->
 
             <router-link
               class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
@@ -120,8 +110,6 @@
               Help!
             </router-link>
 
-            <!-- Account preferences Ends/-->
-            <!-- Account preferences Ends/-->
         <a
               class="dropdown-item text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
               data-toggle="collapse"
@@ -131,9 +119,12 @@
               Sign out
          </a>
           </div>
-        </div>
+        </div>-->
       </li>
       <li v-else class="nav-item dropdown pt-3">
+<a class="nav-link btn text-dark font-weight-bold " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  <p class="text-sm"><span  class="zmdi zmdi-account"></span> Account</p>
+</a> <!--
         <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           <i class="fa fa-user"></i> Account
         </a>
@@ -151,13 +142,13 @@
           <a class="dropdown-item" href="#">Create an account</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
-        </div>
+        </div>-->
       </li>
     </ul>
       </div>
       <div class="col-6 justify-content-end">
     <ul class="nav">
-      <li class="nav-item pl-3">
+      <li class="nav-item">
                             <button type="button" class="text-dark pt-3 btn ">
           <router-link
                               to="/ViewCart"
@@ -318,6 +309,128 @@
       </li>
 </ul>
       </div>
+
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+  <div class="offcanvas-header">
+    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+    
+          <div v-if="this.$store.state.isLoggedIn"  class="text-md nav flex-column">
+            <!-- primary info buttons ends/-->
+
+    Hello {{ this.$store.state.full_name }}
+                <router-link
+                  class="dropdown-item text-left underline pl-4 pb-2  font-weight-bold"
+                            to="/account"
+                            data-toggle="collapse"
+                            data-target=".navbar-collapse"
+                            title="Personal Information"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+                            >
+                  Your Account
+                </router-link>
+            <!-- Account preferences/-->
+
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/watchingpage"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+            >
+              Watching
+            </router-link>
+
+            <!-- Account preferences/
+
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/recentlyviewed"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+              Recently viewed
+            </router-link>-->
+
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/purchasehistory"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+            >
+              Your Orders
+            </router-link>
+
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/My message"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+            >
+              Message (2)
+            </router-link>
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/Overview"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+            >
+              Sellers Hub
+            </router-link>
+            <router-link
+              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
+              to="/Overview"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+            >
+              Help!
+            </router-link>
+
+            <!-- Account preferences Ends/-->
+            <!-- Account preferences Ends/-->
+        <a
+              class="dropdown-item text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
+              data-toggle="collapse"
+              title="sign out"
+              @click="signOut"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+            ><i class="fa fa-sign-out fa-2x pr-2"></i>
+              Sign out
+         </a>
+          </div>
+          
+        <div v-else >
+        <div class="p-3"> <router-link
+            class="text-dark font-weight-bold"
+            to="/login"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="login"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+            >
+            <button type="button" class="btn btn-warning btn-sm border font-weight-bold btn-block">Sign in</button>
+            </router-link>
+        </div>
+          <div class="dropdown-divider">or</div>
+        <div class="p-3"> <router-link
+            class="text-dark font-weight-bold"
+            to="/register"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="register"
+            >
+            <button type="button" class="btn btn-light btn-sm border font-weight-bold btn-block">Create an account</button>
+            </router-link>
+        </div>
+          <div class="dropdown-divider"></div>
+        </div>
+  </div>
+</div>
   </header>
 </template>
 <script>
