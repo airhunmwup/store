@@ -2,113 +2,101 @@
   <!-- main -->
   <div class="container justify-content-center">
     <!-- breadcrumb -->
-      <section class="row pb-5">
-
-                    <div class="col-lg-6 col-xs-12">
-                  <p class="text pt-3 text-dark h3 font-weight-bold font-weight-normal">
-                  Shopping Basket
-                  </p>
-                    </div>
-    <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
-            <ul class="cart-items">
-              <li class="cart-item " v-for="cart in this.$store.state.basket" :key="cart.id">
-                <div class="product-line-grid border-2 row justify-content-between">
-                  <!--  product left content: image-->
-                  <div
-                    class=" p-3 product-line-grid-center col-md-3 col-lg-3 col-sm-6 col-xs-6"
-                  >
-                    <img class="" :src="'img/product/' + cart['product_image1']" />
-                  </div>
-                  <div
-                    class="product-line-grid-body col-md-9 col-sm-6 col-xs-6"
-                  >
-                    <div class="pl-3 product-line-info">
-                      <p class="pt-4 h4 text-dark">
-                        {{cart['product_name']}}
-                      </p>
-                    </div>
-                    <div class="pl-3 product-line-info">
-                      <span class="label-atrr">New</span>
-                    </div>
-                    <div class="pl-3 product-line-info">
-                      <span class="label-atrr">Color:</span>
-                      <span class="value">Blue</span>
-                    </div>
-                    <div class="pl-3 row">
-                      <div class="col-md-6 col-sm-6 col text-dark">
-                        <div class="quantity pt-2">
-                          <p class="value text-lg text-dark font-weight-bold">
-                            £{{cart['qnty_price']}}
-                          </p>
-                          <p class="value text-xs">2 days delivery</p>
-                        </div>
-                      </div>
-                      <div class="col-md-6 col-sm-6 col price">
-                        <div class="">
-                          <p class="label text-dark">
-                            Qty:
-                            <span class="value"
-                              ><input
-                                type="number"
-                                name="qty"
-                                value="3"
-                                max="5"
-                                min="1"
-                                class="form-control-lg border p-2"
-                                v-model.number="cart['qnty']"
-                            /></span>
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                          <div class="pt-3">
-                            <p class="">
-                              <span class="btn text-xs text-primary underline p-3" @click="removeBasket(cart['id'])">
-                              <i class="fa fa-trash-o" aria-hidden="true"></i>
-                              Remove
-                              </span>
-                              <span class="btn text-xs text-primary underline p-3">
-                               <i class="fa fa-trash-o" aria-hidden="true"></i>
-                              add to watching
-                              </span>
-                            </p>
-                          </div>
-                  </div>
-                </div>
-              </li>
-              
-            </ul>
-    </div>
-    <div class="col">
-      <div class="p-3 card">
-  <div class="border card-header">
-  <div class="text-dark">
-    <p class="text-primary underline">( {{ this.$store.state.basket.length }} ) Item in Cart</p>
-  </div>
-  </div>
-  <div class="card-body">
-
-  <div class="row text-dark font-weight-bold h6">
-    <div class="col">
-      Total:
-    </div>
-    <div class="col text-left">
-      £{{this.$store.state.basketTotal}}
-    </div>
-  </div>
-  </div>
-                      <router-link
-                        to="/checkoutAddress"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Process to Checkout"
-                      >
-<button type="button" class="col-12 border btn btn-warning btn-block">Process to Checkout</button>
-</router-link>
-      
+    <section class="row pb-5">
+      <div class="col-lg-6 col-xs-12">
+        <p class="text pt-3 text-dark h3 font-weight-bold font-weight-normal">
+          Shopping Basket
+        </p>
       </div>
-    </div>
-      </section>
+      <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div
+          class="card m-2 text-sm"
+          v-for="cart in this.$store.state.basket"
+          :key="cart.id"
+        >
+          <div class="card-body">
+            <div class="row">
+              <div class="col-12 col-lg-4">
+                <p class="text-xs text-dark">Seller: Sellers name</p>
+                <img class="" :src="'img/product/' + cart['product_image1']" />
+              </div>
+              <div class="col-12 col-lg-4">
+                <p class="mt-4 text-lg text-dark">
+                  {{ cart["product_name"] }}
+                </p>
+                <p class="value m-1 font-weight-bold text-dark">
+                  GBP £{{ cart["qnty_price"] }}
+                </p>
+                <p class="value m-1 text-dark">
+                  Quantity {{ cart["qnty_price"] }}
+                </p>
+
+                <p class="text-xs text-primary">
+                  Shipping: Economy Service (2 to 9 business days)
+                </p>
+              </div>
+              <div class="col-12 col-lg-4 mt-4 align-content-between">
+                <button
+                  type="button"
+                  class="btn m-1 underline border btn-block btn-sm"
+                  @click="removeBasket(cart['id'])"
+                >
+                  <i class="fa fa-trash-o" aria-hidden="true"></i>
+                  Remove
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="p-2 card">
+          <div class="card-body">
+            <div class="row text-sm text-dark">
+              <div class="col">
+                <p class="">
+                  Subtotal:
+                  <span class="text-xs"
+                    >( {{ this.$store.state.basket.length }} ) Item
+                  </span>
+                </p>
+              </div>
+              <div class="col text-right">
+                £{{ this.$store.state.basketTotal }}
+              </div>
+            </div>
+            <div class="row text-sm text-dark">
+              <div class="col">Shipping:</div>
+              <div class="col text-right">
+                £5.23
+              </div>
+            </div>
+            <div class="dropdown-divider"></div>
+            <div class="row m-1 text-dark font-weight-bold h6">
+              <div class="col">Total:</div>
+              <div class="col text-right">
+                £{{ this.$store.state.basketTotal }}
+              </div>
+            </div>
+          </div>
+          <div class="card-body">
+            <router-link
+              to="/checkoutAddress"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Process to Checkout"
+            >
+              <button
+                type="button"
+                class="col-12 text-sm border btn btn-warning btn-block"
+              >
+                Process to Checkout
+              </button>
+            </router-link>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -116,18 +104,17 @@
 export default {
   name: "productCart",
   data() {
-    return {
-    }
+    return {};
   },
-  methods:{
-    removeBasket: function (id){
+  methods: {
+    removeBasket: function (id) {
       var itemToRemove = id;
-      this.$store.dispatch('removeFromBasket', itemToRemove);
-    }
+      this.$store.dispatch("removeFromBasket", itemToRemove);
+    },
   },
   mounted() {
     console.log("productCart");
     console.log(this.$store.state.basket);
-  }
-}
+  },
+};
 </script>

@@ -6,7 +6,7 @@
     <!-- breadcrumb -->
 
     <!-- main -->
-    <div class="row pt-4 pb-4" style="height: 30rem;">
+    <div class="row pt-4 pb-4 text-sm" style="height: 30rem;">
       <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
         <p class="text-dark h4">Select a payment method</p>
         <hr />
