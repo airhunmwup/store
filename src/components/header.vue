@@ -416,7 +416,6 @@
             <button type="button" class="btn btn-warning btn-sm border font-weight-bold btn-block">Sign in</button>
             </router-link>
         </div>
-          <div class="dropdown-divider">or</div>
         <div class="p-3"> <router-link
             class="text-dark font-weight-bold"
             to="/register"
