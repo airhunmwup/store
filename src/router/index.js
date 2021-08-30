@@ -110,7 +110,8 @@ const routes = [{
         path: '/editloginemail',
         name: 'editloginemail',
         component: edit_login_email,
-    }, {
+    },
+    {
         path: '/editloginnumber',
         name: 'editloginnumber',
         component: edit_login_mobilenumber,
@@ -150,11 +151,6 @@ const routes = [{
         path: '/newlisting',
         name: 'newlisting',
         component: create_listing,
-    },
-    {
-        path: '/awaitingshipment',
-        name: 'awaitingshipment',
-        component: awaiting_shipped,
     },
 
     {

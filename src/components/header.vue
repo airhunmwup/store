@@ -316,10 +316,10 @@
   </div>
   <div class="offcanvas-body">
     
-          <div v-if="this.$store.state.isLoggedIn"  class="text-md nav flex-column">
+          <div v-if="this.$store.state.isLoggedIn"  class="text-md text-dark nav flex-column">
             <!-- primary info buttons ends/-->
 
-    Hello {{ this.$store.state.full_name }}
+    Hello! {{ this.$store.state.full_name }}
                 <router-link
                   class="dropdown-item text-left underline pl-4 pb-2  font-weight-bold"
                             to="/account"
