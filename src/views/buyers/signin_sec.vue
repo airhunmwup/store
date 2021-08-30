@@ -7,7 +7,7 @@
       </div>
 
     </div>
-        <div class="row justify-center">
+        <div class="row justify-center text-sm" >
 
 <!--recently viewed-->
                 <div class="row col-sm-12 p-3 col-lg-6 col-md-6">
