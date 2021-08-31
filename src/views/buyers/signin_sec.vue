@@ -19,7 +19,7 @@
     <div class="row">
   <div class="col-8">
       <p class="font-weight-bold text-dark">Name:</p>
-      <p class="text-dark">John</p>
+      <p class="text-dark">{{this.$store.state.currentUser.first_name}} {{this.$store.state.currentUser.last_name}}</p>
   </div>
   <div class="col-4 text-end">
                 <router-link
@@ -37,7 +37,7 @@
     <div class="row" >
   <div class="col-8">
       <p class="font-weight-bold text-dark">E-mail:</p>
-      <p class="text-dark">John@example.com</p>
+      <p class="text-dark">{{this.$store.state.currentUser.email}}</p>
   </div>
   <div class="col-4 text-end">
                 <router-link
