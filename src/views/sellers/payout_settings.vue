@@ -80,6 +80,9 @@
                         
                       </div>
                   </div>
+                  <div class="card">
+                    <span class="p-2"><button type="button" class="text-xs underline border btn btn-sm btn-warning">Remove</button></span>
+                  </div>
             </router-link>
                 </div>
               </div>
@@ -87,7 +90,7 @@
                 <div class="card border-dashed border-secondary">
             <router-link
               class=""
-              to="/addnewaddress"
+              to="/addpayout"
               data-toggle="collapse"
               data-target=".navbar-collapse"
               title="Add bank account"

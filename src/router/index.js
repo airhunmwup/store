@@ -62,7 +62,7 @@ import store_info from '../views/sellers/store_info.vue'
 import signin_security from '../views/sellers/signin_security.vue'
 import address_setting from '../views/sellers/address_setting.vue'
 import payout_settings from '../views/sellers/payout_settings.vue'
-
+import payout_add from '../views/sellers/payout_add.vue'
 
 import money_back_guarantee from '../views/rejee_money_back_guarantee.vue'
 import start_selling from '../views/start_selling.vue'
@@ -182,6 +182,12 @@ const routes = [{
         path: '/paymentsetting',
         name: 'paymentsetting',
         component: payment_setting,
+    },
+
+    {
+        path: '/addpayout',
+        name: 'addpayout',
+        component: payout_add,
     },
 
     {
