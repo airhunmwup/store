@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="container justify-content-center"> 
+  <div class="container justify-content-center text-sm"> 
     <div class="row justify-content-center">
           <!--Sigin-and-security-->
           <div class="row pb-5">
@@ -78,7 +78,7 @@
                   to="/Orders"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Orders"
+                  title="Manage Orders"
                   class="card p-3"
                 >
                   <div class="row text-left ">
@@ -97,7 +97,7 @@
                   to="/listings"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Listings"
+                  title="Manage Listings"
                   class="card p-3"
                 >
                   <div class="text-left row">
@@ -115,10 +115,10 @@
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 p-3">
                 <router-link
-                  to="/buyeraddresssetting"
+                  to="/managepayout"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Your Addresses"
+                  title="Your Payout"
                   class="card p-3"
                 >
                   <div class="row text-left ">
@@ -136,10 +136,10 @@
               </div>
               <div class="col-lg-4 col-md-4 col-sm-6 p-3">
                 <router-link
-                  to="/buyeraddresssetting"
+                  to="/Subscription"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Your Addresses"
+                  title="Subscriptions"
                   class="card p-3"
                 >
                   <div class="row text-left ">

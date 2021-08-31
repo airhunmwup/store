@@ -1,11 +1,10 @@
 <template>
-  <section class="">
-    <!-- breadcrumb -->
+  <section class="bg-light bg-gradient">
 <div class="container pt-2">
-  <!-- Content here -->
 
+  <!-- Content here -->
   <div class="row justify-content-center">
-    <div class="col-lg-3 col-md-3 col-sm-lg d-xs-none card">
+    <div class="col-lg-3 col-md-3 col-sm-lg d-xs-none card border">
   <ul class="list-group list-group-flush">
 
         <router-link
@@ -50,7 +49,6 @@
   </a>
 </div>
 <div class="container pt-2 card">
-
       <div class="row" >
       <div class="col-lg-6 col-sm-12">
                 <img src="img/banner/bannerrejee1.jpg" class="card-img-top" style="height: 8rem" alt="Product"/>
@@ -66,22 +64,70 @@
   </div>
 
 <div class="container">
+      <div class="row">
+      <div class="col-lg-3 col-6">
+        <div class="card p-2" style="">
+  <div class="card-body">
+    <p class="card-text text-dark font-weight-bold">REJEE Properties</p>
+  </div>
+  <img src="img/product/1.jpg" class="border card-img-top" alt="">
+  <div class="card-body">
+    <p class="text-xs text-primary font-weight-bold">See more</p>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="card p-2" style="">
+  <div class="card-body">
+    <p class="card-text text-dark font-weight-bold">Electronics</p>
+  </div>
+  <img src="img/product/15.jpg" class="border card-img-top" alt="">
+  <div class="card-body">
+    <p class="text-xs text-primary font-weight-bold">See more</p>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="card p-2" style="">
+  <div class="card-body">
+    <p class="card-text text-dark font-weight-bold">Funitures</p>
+  </div>
+  <img src="img/product/12.jpg" class="border card-img-top" alt="">
+  <div class="card-body">
+    <p class="text-xs text-primary font-weight-bold">See more</p>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="card p-2" style="">
+  <div class="card-body">
+    <p class="card-text text-dark font-weight-bold">Vehicles</p>
+  </div>
+  <img src="img/product/18.jpg" class="border card-img-top" alt="">
+  <div class="card-body">
+    <p class="text-xs text-primary font-weight-bold">See more</p>
+  </div>
+</div>
+      </div>
+</div>
+      </div>
+<div class="container text-sm">
   <div class="card">
-<nav class="navbar card-header navbar-expand-lg navbar-light bg-info">
+<nav class="navbar card-footer navbar-expand-sm navbar-light bg-gradient">
     <div class="col">
-  <a class="navbar-brand text-light" href="#">Home & Properties</a>
+  <a class="navbar-brand text-md font-weight-bold text-dark" href="#">Todays Listing</a>
     </div>
     <div class="col text-right">
     <p class="navbar-text">
-          <span class="text-light">
+          <span class="text-dark">
               <router-link
-                class="text-light"
+                class="text-dark"
                 to="/Product Page"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 >see all
               </router-link>
-            <b class="fa fa-caret-square-o-right"></b>
+            <b class="fa-bold fa fa-lg fa-angle-right"></b>
           </span>
     </p>
     </div>
@@ -125,25 +171,6 @@
 
 <div class="container">
   <div class="card">
-<nav class="navbar card-header navbar-expand-lg navbar-light bg-danger">
-    <div class="col">
-  <a class="navbar-brand text-light" href="#">Home & Properties</a>
-    </div>
-    <div class="col text-right">
-    <p class="navbar-text">
-          <span class="text-light">
-              <router-link
-                class="text-light"
-                to="/Product Page"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-                >see all
-              </router-link>
-            <b class="fa fa-caret-square-o-right"></b>
-          </span>
-    </p>
-    </div>
-</nav>
 <div class="card-body">
       <div class="row justify-content-center">
 <span v-for="listings of newListings"

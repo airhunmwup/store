@@ -2,39 +2,22 @@
   <!-- main content -->
 
   <section class="justify-content-center">
-      <!--adverts banners of store, product or anything related to banner adverts this will be set inrespect to the advertising actions-->
-      <div class="appion d-xs-none shadow">
-        <!-- breadcrumb -->
-        <div class="ul gs full">
-          <li class="lix  p-2">
-                <img src="img/home/effect2.jpg" class="malami" alt="banner" />
-          </li>
-          <li class="lix  p-2">
-                <img src="img/home/effect3.jpg" class="malami" alt="banner" />
-          </li>
-          <li class="lix  p-2">
-                <img src="img/home/effect4.jpg" class="malami" height="120px" alt="banner" />
-          </li>
-          <li class="lix  p-2">
-                <img src="img/home/effect4.jpg" class="malami" height="120px" alt="banner" />
-          </li>
-        </div>
-      </div>
-      <!-- breadcrumb -->
+  <div class="container">
+
+  <!-- main content -->
           <div class="row justify-content-center pt-3 ">
-              <div class="product-single col-sm-12 col-lg-9 col-md-9 row justify-content-center">
-                <div class="product-detail col-xs-12 col-lg-6 col-md-5 col-sm-12">
+                <div class="product-detail col-xs-12 col-lg-4 col-md-4 col-sm-12">
                   <div class="page-content" id="content">
                     <div class="images-container">
-                      <div class="js-qv-mask tab-content border">
+                      <div class="js-qv-mask tab-content">
                         <div v-bind:id="'item' + num" class="tab-pane fade "
                             v-for="num in nums" :key="num" v-bind:class="activeImage(num)"
                         >
                           <img v-bind:src="'img/product/' + img['product_image' + num]" alt="img" />
                         </div>
                       </div>
-                      <ul class="product-tab nav p-2 nav-tabs d-flex">
-                      <li class="col" v-for="num in nums" :key="num">
+                      <ul class="product-tab nav nav-tabs d-flex">
+                      <li class="col card" v-for="num in nums" :key="num">
                         <a
                           v-bind:href="'#item' + num"
                           data-toggle="tab"
@@ -44,345 +27,132 @@
                       </li>
                       
                       </ul>
-                      <hr>
                     </div>
                   </div>
                 </div>
-                <div class="product-info col-xs-12  pt-3 col-lg-6 col-md-7 col-sm-12">
+                <div class="row col-xs-12  pt-3 col-lg-4 col-md-4 col-sm-12">
+
+      <p class="lead text-primary mt-4">
+         {{ productDetails.product_name }} 
+      </p>
+            <div class="dropdown-divider"></div>
+      <p class="font-weight-bold mt-2 text-sm text-dark">
+         Price:<span class=""> {{ productDetails.product_price }}</span>
+      </p>
+      <p class="text-sm text-success mt-2">
+         In stock
+      </p>
+      <p class="font-weight-bold text-dark mt-2">
+         
+      </p>
+  <div class="form-group row">
+    <div class="col-4 text-right">
+    <p class="col text-dark text-right text-sm col-form-label">Quantity</p>
+    </div>
+    <div class="col-8">
+          <input type="number" max="4" min="1" value="1" class="form-control form-control-sm col-4 mx-sm-3">
+    </div>
+  </div>
+        <div class="form-group mt-2">
+<button @click="addToBasket" class="btn btn-warning btn-sm btn-block" type="submit">Move to basket</button>
+<button @click="addToWatchlist(productDetails['id'])" class="btn btn-secondary btn-sm btn-block" type="submit" >Add to watchlist</button>
+    </div>
                   <div class="">
-                    <div class="price-del">
-                    <span class="text-xl pb-4text-dark"> {{ productDetails.product_name }} </span>
-                      <span class="text-success float-right">
-                        <span class="text-xs">Availability: </span>
-                        <span class="check">
-                          <i class="fa fa-check-square-o" aria-hidden="true"></i
-                          >IN STOCK</span
-                        >
-                      </span>
-                    </div>
-                    <p class="description">
-                      <span class="text-xs text-danger">
-                      <i class="fa fa-fire"></i>
-                      1 viewed per hour
-                      </span>
-                    </p>
                     <!--the option below is suppose to show if the category has size, e.g shoes and cloths only sizes available displays-->
                     <div class="option has-border d-lg-flex size-color">
                       <div class="size">
                       </div>
                     </div>
-                      <div class="row">
-                      <div class="col-6 table-responsive">
-                        <table class="table std">
-                          <tbody>
-                            <tr>
-                              <td class="text-left">
-                                Condition:
-                              </td>
-                              <td class="text-left font-weight-bold">
-                                {{ productDetails.product_condition }}
-                              </td>
-                            </tr>
-                            <tr class="">
-                              <td class="text-left">
-                                Quantity:
-                              </td>
-                              <td class="text-left">
-                              <input
-                                type="number"
-                                name="qty"
-                                max="4"
-                                min="1"
-                                value="1"
-                                v-model.number="order_qnty"
-                                class="input-group form-control-sm"
-                              />
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div class="col-6 align-text-bottom">
-                        <p class="text-sm pt-5">4 available</p>
-                        <p class="text-sm text-danger underline">223 sold</p>
-                      </div>
-                      </div>
-                      <div class="clearfix border-b-0 border-t-2 border-l-2 border-r-2">
-
-                    <p class="text text-sm p-3 font-weight-bold">Price: <span class="font-weight-bold text-dark h5 border-dark pr-2"> £{{ productDetails.product_price }}</span></p>
-                    
-                                            <div class="pb-2"><router-link
-                                to="/Checkout"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                              >
-                                            <button class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" style="background-color: blue;" type="submit">
-                                                   Buy it now
-                                            </button></router-link>
-                                            </div>
-
-                                            <div class="pb-2">
-                                            <button 
-                                            @click="addToBasket"
-                                            class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" 
-                                            style="background-color: rgb(130, 231, 238)" 
-                                            type="submit">
-                                                    Add to basket
-                                                </button>
-                                            </div>
-                                            <div class="pb-2">
-                                            <button 
-                                            @click="addToWatchlist(productDetails['id'])"
-                                            class="p-2 shadow border-primary text-primary col-lg-12 col-md-12 col-sm-12 btn" 
-                                            type="submit">
-                                                    <i class="fa fa-heart"></i> Watch this item
-                                                </button>
-                                            </div>
-
-                        <table class="table std font-weight-bold">
-                          <tbody>
-                            <tr>
-                              <td class="border text-danger border-l-0 text-center">
-                                Click & Collect
-                              </td>
-                              <td class="border text-center">
-                                {{ watchCount }} watchers
-                              </td>
-                              <td class="border border-r-0 text-center">
-                                30-day return
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                      <div class="card">
+                          <div class="container">
+                            <div class="row text-center text-sm text-dark">
+                              <div class="col">
+                                <p class="">{{ watchCount }} watchers</p>
+                              </div>
+                              <div class="col">
+                                <p class="">30-day return</p>
+                              </div>
+                            </div>
+                          </div>
                                 </div>
+                  </div>
+                </div>
 
-                                            <div class="row">
+              <div class="col-sm-12 col-lg-4 col-md-4">
+                      <div class="mt-2">
+                      <div class="text-sm">
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">Description</button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Postage</button>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+    <div class="container text-dark">
+    <p class="text-md m-2 font-weight-bold">Item Specifications</p>
+  <div class="row">
+    <div class="col">
+    <p class="">Condition: </p>
+    <p class="">Type:</p>
+    <p class="">SKU:</p>
+    <p class=""></p>
+    </div>
+    <div class="col">
+    <p class=""> {{ productDetails.product_condition }}</p>
+    <p class=""> Furniture</p>
+    <p class="">w3324ercrt</p>
+    <p class=""></p>
+    </div>
+  </div>
+            <div class="dropdown-divider"></div>
+    <p class="text-md m-2 font-weight-bold">Sellers Information</p>
+  <div class="row">
+    <div class="col">
+    <p class="">Sellers name here </p>
+
+    <p class="mt-2">Sellers description here:</p>
+    <p class="text-xs underline text-primary">See other items from this seller</p>
+    </div>
+    </div>
+    </div>
+  </div>
+  <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                                <div class="container text-dark">
+                                    <div class="row  mt-2 text-sm">
                                             <div class="col-3">
-                                              Collection:
+                                              <p class="text-sm font-weight-bold">Postage:</p>
                                             </div>
-                                            <div class="col-9">
-                                              <p>Click & Collect - Select store at checkout.</p>
-                                            </div>
-                                            </div>
-                                            <div class="row">
-                                            <div class="col-3">
-                                              Postage:
-                                            </div>
-                                            <div class="col-9">
+                                            <div class="col-9 text-xs">
                                               <p class="text-success underline">Free 3 day postage</p>
                                               <p>Between Thu. 08 Jul. and Fri. 09 Jul.</p>
                                               <p>Item location:
                                               London, London, United Kingdom</p>
                                             </div>
                                             </div>
-                                            <div class="row">
+                                          <div class="dropdown-divider"></div>
+                                            <div class="row text-sm">
                                             <div class="col-3">
-                                              Payment
+                                              <p class="text-sm font-weight-bold"> Payment</p>
                                             </div>
                                             <div class="col-9">
                                               <p>card</p>
                                             </div>
                                             </div>
-                                            <div class="row">
-                                            <div class="col-3">
-                                              Returns:
-                                            </div>
-                                            <div class="col-9">
-                                              <p>30 days refund, buyer pays return postage</p>
-                                            </div>
-                                            </div>
+                                      </div>
 
-
-                            <span class="justify-content-end"
-                              >
-                            </span>
-                    <div class="content">
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-sm-12 col-lg-3 col-md-3">
-                    <div class="p-2 box border-l-2">
-                      <p class="text-dark h6 font-weight-bold ">Seller information</p>
-                      <p class="text-primary p-2 font-weight-bold">seller-account ID (23960 )</p>
-                      <hr>
-                      <p class="text-primary"><i class="fa fa-heart fa-lg"></i> Save Seller</p>
-                      <a href="mailto:#"><p class="text-primary p-2">Contact Seller</p></a>
-                  <!--to view thesame sellers listing-->
-                      <p class="text-primary">See other items</p>
-                      <hr>
-                      <p class="text p-3 text-xs">Registered as a business seller</p>
-                    </div>
+  </div>
+</div>
+                      </div>
+                      </div>
               </div>
 
             
           </div>
 
-
-              <section class="review col-12 text-dark">
-                <ul class="nav nav-tabs">
-                  <li class="active font-weight-bold text-dark p-2 border-l-2 border-r-2 border-b-0 border-t-2">
-                    <a data-toggle="tab" href="#description" class="active show"
-                      >Description</a
-                    >
-                  </li>
-                  <li class="p-2 font-weight-bold text-dark border-l-2 border-r-2 border-b-0 border-t-2">
-                    <a data-toggle="tab" href="#review">Postage and Payment</a>
-                  </li>
-                </ul>
-                <hr>
-                <p class="text-sm p-3">Seller assumes all responsibility for this listing.</p>
-                <div class="tab-content p-4 border">
-                  <div id="description" class="tab-pane fade in active show">
-                              <strong class="h5">Item specifics</strong> 
-                    
-                            <div class="p-3 table-responsive">
-                        <table class="table text-sm std ">
-                          <tbody>
-                            <tr>
-                              <td class="text-xs font-weight-bold">
-                                Condition:
-                              </td>
-                              <td class="text-xs">
-                              <p>A brand-new, unused, unopened and undamaged item. See the seller's listing for full details.</p>
-                              </td>
-                              <td class="text-xs font-weight-bold">
-                                Brand
-                              </td>
-                              <td class="text-xs">
-                                {{productDetails.product_brand}}
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs font-weight-bold">
-                                Type:
-                              </td>
-                              <td class="text-xs">
-                                Integrated Design Environments
-                              </td>
-                              <td class="text-xs font-weight-bold">
-                                Location:
-                              </td>
-                              <td class="text-xs">
-                                {{ productDetails.product_location}}
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs font-weight-bold">
-                                Sub-Type:
-                              </td>
-                              <td class="text-xs">
-                                Templates
-                              </td>
-                            <tr>
-                              <td class="text-xs font-weight-bold">
-                                MPN:
-                              </td>
-                              <td class="text-xs">
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                            </div>
-                  </div>
-
-                  <div id="review" class="tab-pane fade">
-                    <div class="spr-form">
-                      <div class="user-comment">
-                        <div class="spr-review">
-                          <div class="spr-review-header">
-                            <span class="spr-review-header-byline">
-                              <strong class="h5">Postage and packaging</strong> 
-                            </span>
-                              <div class="p-2">
-                              <p class=" "><b>Item location:</b> Item location from listing</p>
-                              <p class=" "><b>Postage to:</b> Worldwide</p>
-                              </div>
-                            <div class="p-3 table-responsive">
-                        <table class="table text-sm std ">
-                          <tbody>
-                            <tr class="font-weight-bold">
-                              <td class="text-xs">
-                                Postage and packaging
-                              </td>
-                              <td class="text-xs">
-                                To
-                              </td>
-                              <td class="text-xs">
-                                Service
-                              </td>
-                              <td class="text-xs">
-                                Delivery*
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs">
-                                <p>Free P&P</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>United Kingdom</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>Express Delivery (Royal Mail Special Delivery (TM) 11:00 am)</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>Delivery</p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                              <p class="text-xs text-primary">You’ll see an estimated delivery date based on the seller’s dispatch time and delivery service. Delivery times may vary, especially during peak periods and will depend on when your payment clears.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="spr-form">
-                      <div class="user-comment">
-                        <div class="spr-review">
-                          <div class="spr-review-header">
-                            <span class="spr-review-header-byline">
-                              <strong class="h5">Return Policy</strong> 
-                            </span>
-                            <div class="p-3 table-responsive">
-                        <table class="table text-sm std ">
-                          <tbody>
-                            <tr class="font-weight-bold">
-                              <td class="text-xs">
-                               After receiving the item, cancel the purchase within
-                              </td>
-                              <td class="text-xs">
-                                Return postage
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs">
-                                <p>30 days</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>Seller pays return postage</p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                              <p class="text">Take a look at our 
-                          <router-link
-                          class="text-primary underline"
-                            to="/managing_returns_missing_items_and_refunds_for_sellers"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            >Returning an item help page</router-link> for more details.</p>
-                            <p class="text-xs p-3">The seller is responsible for return postage costs.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
+</div>
 
     <section class="appion">
               <div class="col-12">

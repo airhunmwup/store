@@ -407,10 +407,18 @@
                 </div>
 
 
+    <div class=" br">
+   <div class="wrapper">
+      <div class="comment br animate w40"></div>
+      <div class="comment br animate w60"></div>
+      <div class="comment br animate w80"></div>
+      <div class="comment br animate"></div>
+      <div class="comment br animate"></div>
+   </div>
+    </div>
           <!-- end col-md-9-1 -->
         </div>
 
-    <hr>
   </div>
 </template>
 <script>

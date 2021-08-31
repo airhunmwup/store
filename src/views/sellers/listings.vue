@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="container">
+  <div class="">
 
 <nav aria-label="breadcrumb" class="d-xs-none">
   <ol class="breadcrumb text-xs">
@@ -97,7 +97,6 @@
   </button>
                     </div>
                     
-                <div class="">
 
 <!--start Web view-->
                   <div class="card m-2 border d-xs-none ">
@@ -216,31 +215,31 @@
 
 </div>
 
+                </div>
 <!--end Web view-->
 
 <!--start mobile view-->
-                  <div class="card m-2 d-md-none border">
+                  <div class="card m-2 d-md-none border text-xs">
                     <div class="card-header">
-
-    <div class="row text-xs">
-    <div class="col">
-    <div class="input-group">
-      <input type="checkbox" aria-label="Checkbox for following text input">
-      <span class="ml-2"> 1 </span>
-    </div>
-    </div>
-    <div class="col">
-      <p class="text-right">SKU: <b>P62X</b></p>
-    </div>
-    </div>
+                        <div class="row text-xs">
+                        <div class="col">
+                        <div class="input-group">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                        <span class="ml-2"> 2 </span>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <p class="text-right">SKU: <b>P62X</b></p>
+                        </div>
+                        </div>
                     </div>
     <div class="card-header">
 
     <div class="row text-xs">
-    <div class="col pt-2">
+    <div class="col-6 pt-2">
   <img class="" style="width:70%;" src="img/product/11.jpg" alt="Card image cap">
     </div>
-    <div class="col">
+    <div class="col-6">
       <p class="text-left mt-4 text-lg text-dark font-weight-bold">
           This na the product title</p>
     </div>
@@ -249,10 +248,10 @@
   <div class="card-body text-xs">
   <div class="row">
     <div class="col-4">
-      <p class="m-1"> Category:</p>
+      <p class=""> Category:</p>
     </div>
     <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> Electronics, TVs and DVDs</p>
+      <p class="text-dark font-weight-bold"> Electronics, TVs and DVDs</p>
     </div>
     <div class="col-4">
       <p class="m-1"> In-stock:</p>
@@ -261,10 +260,10 @@
       <p class="m-1 text-dark font-weight-bold"> 16</p>
     </div>
     <div class="col-4">
-      <p class="m-1"> Price:</p>
+      <p class=""> Price:</p>
     </div>
     <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> £150.00</p>
+      <p class="text-dark font-weight-bold"> £150.00</p>
     </div>
     <div class="col-6">
       <p class="m-1">Status:</p>
@@ -309,26 +308,32 @@
     </div>
     </div>
                     </div>
-  <div class="card-body text-xs">
-  <div class="row">
+  <div class="card-body">
+  <div class="row text-xs">
     <div class="col-4">
       <p class="m-1"> Category:</p>
     </div>
-    <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> Funitures, Chairs</p>
+    <div class="col-8">
+      <p class="m-1 text-right text-dark font-weight-bold"> Funitures, Chairs</p>
     </div>
+  </div>
+  <div class="row text-xs">
     <div class="col-4">
       <p class="m-1"> In-stock:</p>
     </div>
-    <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> 16</p>
+    <div class="col-8">
+      <p class="m-1 text-right text-dark font-weight-bold"> 16</p>
     </div>
+  </div>
+  <div class="row text-xs">
     <div class="col-4">
       <p class="m-1"> Price:</p>
     </div>
-    <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> £150.00</p>
+    <div class="col-8">
+      <p class="m-1 text-right text-dark font-weight-bold"> £150.00</p>
     </div>
+  </div>
+  <div class="row text-xs">
     <div class="col-6">
       <p class="m-1">Status:</p>
     </div>
@@ -359,8 +364,6 @@
   </ul>
 </nav>
                       </div>
-                </div>
-                </div>
 
           </div>
 
