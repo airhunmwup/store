@@ -16,21 +16,28 @@
                   </span>
                   <div class="p-4">
                     <div class="mb-3">
-                    <p class="text-dark form-label">Account name</p>
+                    <p class="text-dark font-weight-bold form-label">Currency</p>
+                    <input type="text" class="col-12 col-lg-6 form-control" placeholder="GBP" disabled>
+                    </div>
+                    <div class="mb-3">
+                    <p class="text-dark font-weight-bold form-label">Account name</p>
                     <input type="text" class="col-12 col-lg-6 form-control" placeholder="">
                     </div>
                     <div class="mb-3">
-                    <p class="text-dark form-label">Account Number</p>
-                    <input type="text" class="col-12 col-lg-6  form-control" placeholder="">
+                    <p class="text-dark font-weight-bold form-label">Sort code</p>
+                    <input type="text" class="col-4 form-control" placeholder="00-00-00">
                     </div>
                     <div class="mb-3">
-                    <p class="text-dark form-label">Sort code</p>
-                    <input type="text" class="col-4 form-control" placeholder="">
+                    <p class="text-dark font-weight-bold form-label">Account Number</p>
+                    <input type="text" class="col-12 col-lg-6  form-control" placeholder="0123456789">
                     </div>
-                    <button type="button" class="btn btn-warning btn-sm border">Submit</button>
+                    <button type="button" class="btn font-weight-bold btn-warning btn-sm border">Submit</button>
                 </div>
                 </div>
 
+    <div class="spinner-border" style="color: lightgreen; width: 3rem; height: 3rem;" role="status">
+  <span class="sr-only">Loading...</span>
+</div>
 
           <!-- end col-md-9-1 -->
         </div>
