@@ -4,9 +4,9 @@
     <div class="row justify-content-center">
           <!--Sigin-and-security-->
           <div class="row pb-5">
-            <span class="text text-dark h5 pl-4 font-weight-normal">
-              <h1 class="title-page">Your Account</h1>
-            </span>
+            <p class="text text-dark h5 pl-3 font-weight-bold">
+              Your Account
+            </p>
             <div class="row">
               <div class="col-lg-4 col-md-4 col-sm-6 p-3">
                 <router-link

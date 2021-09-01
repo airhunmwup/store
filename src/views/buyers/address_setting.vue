@@ -43,7 +43,7 @@
 <div class="input-group">
  
                     <p class="text-xs text-success"><span class="m-1">
-      <input class="text-sm" type="radio" aria-label="Radio button for following text input"></span>Default <span class="fa fa-check"></span>
+      <input class="text-sm" type="radio" aria-label="Radio button for following text input"></span>set as default <span class="fa fa-un-check"></span>
                     </p>
 </div>
                   </div>

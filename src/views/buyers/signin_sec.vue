@@ -28,7 +28,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-      <a class="btn-md btn text-sm-center btn-light border" href="#" role="button">Edit</a>
+      <a class="btn-md btn text-sm-center text-xs btn-light border" href="#" role="button">Edit</a>
                 </router-link>
   </div>
 </div>
@@ -46,7 +46,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-      <a class="btn-md btn text-sm-center btn-light border" href="#" role="button">Edit</a>
+      <a class="btn-md btn text-sm-center text-xs btn-light border" href="#" role="button">Edit</a>
                 </router-link>
   </div>
 </div>
@@ -64,7 +64,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-      <a class="btn-md btn text-sm-center btn-light border" href="#" role="button">Edit</a>
+      <a class="btn-md btn text-sm-center text-xs btn-light border" href="#" role="button">Edit</a>
                 </router-link>
   </div>
 </div>
@@ -82,7 +82,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-      <a class="btn-md btn text-sm-center btn-light border" href="#" role="button">Edit</a>
+      <a class="btn-md btn text-sm-center text-xs btn-light border" href="#" role="button">Edit</a>
                 </router-link>
   </div>
 </div>
@@ -100,7 +100,7 @@
                   data-target=".navbar-collapse"
                   title="Personal Information"
                 >
-      <a class="btn-md btn text-sm-center btn-light border" href="#" role="button">Edit</a>
+      <a class="btn-md btn text-sm-center text-xs btn-light border" href="#" role="button">Edit</a>
                 </router-link>
   </div>
 </div>
