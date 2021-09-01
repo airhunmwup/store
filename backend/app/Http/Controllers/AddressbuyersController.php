@@ -16,6 +16,11 @@ class AddressbuyersController extends Controller
     {
         //
     }
+    public function fetch($id)
+    {
+        $address = Addressforbuyers::where('id', $id)->get();
+        return $address;
+    }
 
     /**
      * Show the form for creating a new resource.
@@ -114,6 +119,8 @@ class AddressbuyersController extends Controller
         //
         return Addressforbuyers::where('id', $request->id)->delete();
     }
+    
+    
 
 
 }

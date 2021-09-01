@@ -329,9 +329,10 @@ const routes = [{
         component: addUserAddressPage,
     },
     {
-        path: '/editaddress',
+        path: '/editaddress/:pid',
         name: 'editaddress',
         component: editAddressPage,
+        props: true,
     },
     {
         path: '/changepassword',

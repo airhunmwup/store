@@ -33,6 +33,8 @@ Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 
+Route::post('/fetchAddress/{id}', [AddressbuyersController::class, 'fetch']);
+
 
 //Static Public Routes
 Route::get('/category', [CategoryController::class, 'index']);

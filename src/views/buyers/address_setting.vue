@@ -68,7 +68,8 @@
                     <button type="button" class="btn-sm text-primary underline">
                       <router-link
                         class=""
-                        to="/editaddress"
+                        v-bind:to="'/editaddress/' + this.$store.state.address[0].id"
+                       
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
                         title="Home"

@@ -390,6 +390,13 @@
                                   />
                                 </div>
                               </div>
+                               <input
+                                    class="form-control border-secondary"
+                                    name="pid"
+                                    type="hidden"
+                                    placeholder=""
+                                    v-model="formData.pid"
+                                  /> 
                                             <div class="">
                                             <router-link
                                 to="/checkoutpayment"
@@ -409,7 +416,7 @@
 
           <!-- end col-md-9-1 -->
         </div>
-
+        
     <hr>
   </div>
 </template>
@@ -417,6 +424,8 @@
 
 import User from '../../apis/User';
 export default {
+  props: ['pid'],
+address_details: {},
   data() {
     return {
       formData: {
@@ -431,7 +440,9 @@ export default {
         county: '',
         delivery_instruction: '',
         securitycode: '',
+        pid: this.pid,
       },
+      
       errors: {},
       loading: false,
     }
@@ -455,8 +466,28 @@ export default {
     },
     countryChange(event) {
       console.log(event.target.value);
-    }
-  },  
+    },
+    loadData(){
+        User.fetchAddress(this.pid)
+            .then(response=>{
+                        this.address_details = response.data;
+                        this.formData = response.data[0]; 
+                        this.formData.pid = response.data[0].id;                       
+                })
+                .catch(errors => {                    
+                        this.errors = {};
+          const err = Object.keys(errors.response.data.errors);
+          err.forEach((key)=>{
+            var strError = errors.response.data.errors[key][0];
+            this.errors[key] = strError;
+          })
+          console.log(err);                    
+                 });
+            }
+    },
+    created() {
+            this.loadData()
+        }  
 }
 
 </script>
