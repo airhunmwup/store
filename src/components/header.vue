@@ -57,10 +57,15 @@
   <p class="text-sm"><span  class="zmdi zmdi-account"></span> Account</p>
 </a> 
       </li>
-      <li v-else class="nav-item dropdown pt-3">
-<a class="nav-link btn text-dark font-weight-bold " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-  <p class="text-sm"><span  class="zmdi zmdi-account"></span> Account</p>
-</a> 
+      <li v-else class="nav-item dropdown pt-3"><router-link
+            to="/login"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="login"
+            >
+        <a class="nav-link text-sm btn text-dark font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="zmdi zmdi-lock"></i> Sign in
+        </a></router-link>
       </li>
     </ul>
       </div>
@@ -166,24 +171,16 @@
           </div>
         </div>
       </li>
-      <li v-else class="nav-item dropdown pt-2">
-        <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="fa fa-user"></i> Account
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <div class="p-3"> <router-link
+      <li v-else class="nav-item dropdown pt-2"><router-link
             class="text-dark font-weight-bold"
             to="/login"
             data-toggle="collapse"
             data-target=".navbar-collapse"
             title="login"
             >
-            <button type="button" class="btn btn-warning btn-sm border font-weight-bold btn-block">Sign in</button>
-            </router-link>
-        </div>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Create an account</a>
-        </div>
+        <a class="nav-link text-dark font-weight-bold m-2 " href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="zmdi zmdi-lock"></i> Sign in
+        </a></router-link>
       </li>
 
       <li class="nav-item pt-3 ">
@@ -246,17 +243,6 @@
               Watching
             </router-link>
 
-            <!-- Account preferences/
-
-            <router-link
-              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/recentlyviewed"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-            >
-              Recently viewed
-            </router-link>-->
-
             <router-link
               class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
               to="/purchasehistory"
@@ -295,8 +281,6 @@
               Help!
             </router-link>
 
-            <!-- Account preferences Ends/-->
-            <!-- Account preferences Ends/-->
         <a
               class="dropdown-item text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
               data-toggle="collapse"
