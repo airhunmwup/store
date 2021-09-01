@@ -399,12 +399,12 @@
                                   /> 
                                             <div class="">
                                             <router-link
-                                to="/checkoutpayment"
+                                v-bind:to="'/editaddress/' + pid"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Continue"
                               >
-                                <button type="button" class="btn btn-warning border" @click.prevent="addAddress">Add address</button></router-link
+                                <button type="button" class="btn btn-warning border" @click.prevent="editAddress">Edit address</button></router-link
                               >
                                         </div>
                             </form>
@@ -448,12 +448,10 @@ address_details: {},
     }
   },
   methods: {
-    addAddress() {
+    editAddress() {
       this.formData.user_id = this.$store.state.currentUser.id;
-      User.addaddress(this.formData).then((res) => {
-        this.formData.fullname = this.formData.phonenumber = this.formData.postal_code = this.formData.address_line1 = this.formData.address_line2 = this.formData.town_city = this.formData.county = this.formData.delivery_instruction = this.formData.securitycode = "";
-        this.$store.dispatch('addAddress', res.data);
-        this.$router.push('/buyeraddresssetting');
+      User.editaddress(this.formData).then((res) => {
+        document.getElementById("alat").innerHTML = "Address updated successfully";
       }).catch(errors => {
         this.errors = {};
           const err = Object.keys(errors.response.data.errors);

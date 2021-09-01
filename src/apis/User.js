@@ -54,7 +54,11 @@ export default{
     addaddress(data){
         return Api().post("/addaddress", data);
     },
-
+    
+    editaddress(data){
+        return Api().post("/editAddress", data);
+    },
+    
     getAddress(id){
         return Api().post("/getaddress/" + id);
     },

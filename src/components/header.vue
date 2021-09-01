@@ -1,7 +1,7 @@
 <template>
   <header class="row border-b border-secondary">
       <div class="alert alert-warning text-sm alert-dismissible fade show fixed-top" role="alert">
-  <strong>Alert!</strong> You fit use this place take do notifications.
+  <strong>Alert! </strong> <span id='alat'> You fit use this place take do notifications.</span>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>

@@ -91,9 +91,36 @@ class AddressbuyersController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //
+    public function edit(Request $request)
+    { 
+        $pid = request()->get('pid');
+        $fields = $request->validate([
+            'fullname' => 'required|string',
+            'phonenumber' => 'required|string',
+            'postal_code' => 'required|string',
+            'address_line1' => 'required|string',
+            'address_line2' => 'string|nullable',
+            'town_city' => 'required|string',
+        ]);
+       $address = Addressforbuyers::where('id', $pid)->update([
+            'user_id' => $request->user_id,
+            'country' => $request->country,
+            'fullname' => $fields['fullname'],
+            'phonenumber' => $fields['phonenumber'],
+            'postal_code' => $fields['postal_code'],
+            'address_line1' => $fields['address_line1'],
+            'address_line2' => $fields['address_line2'],
+            'town_city' => $fields['town_city'],
+            'county' => $request->county,
+            'delivery_instruction' => $request->delivery_instruction,
+            'securitycode_callboxnumber' => $request->securitycode
+
+        ]);      
+         $response = [
+            'address' => $address 
+        ];
+
+        return response($response, 200);
     }
 
     /**
