@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="container">
+  <div class="container text-sm">
 <nav aria-label="breadcrumb" class="d-xs-none">
   <ol class="breadcrumb text-xs">
     <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>

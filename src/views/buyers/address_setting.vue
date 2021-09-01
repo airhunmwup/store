@@ -1,26 +1,23 @@
 <template>
   <!-- main content -->
-  <div class="container">
-<nav aria-label="breadcrumb">
-  <ol class="breadcrumb">
+  <div class="container text-sm">
+<nav aria-label="breadcrumb ">
+  <ol class="breadcrumb d-xs-none">
     <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
     <li class="breadcrumb-item active" aria-current="page">Your Addresses</li>
   </ol>
 </nav>
-    <div class="row">
-      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left"></div>
-    </div>
 
-    <div class="pt-3 justify-content-center">
-      <div class="col-sm-12 col-lg-12 col-md-12 product-container">
+    <div class="justify-content-center">
+      <div class="col-sm-12 col-lg-12 col-md-12">
         <div class="col-lg-6 col-xs-12">
           <p class="text p-3 text-dark h5 font-weight-bold font-weight-normal">
             Your Addresses
           </p>
         </div>
         <!--Addresses-->
-        <div class="row pl-3" style="height: 30rem;">
-          <div class="col-12 row col-sm-12 col-md-12 col-lg-12">
+        <div class="row" style="height: 30rem;">
+          <div class="justify-content-center">
             <div class="row">
               <div class="p-2 col-sm-4">
                 <div class="card border-dashed border-secondary">
@@ -32,12 +29,10 @@
               title="Home"
             >
                   <div class="p-4 card-body">
-                  <div class="p-4 card-body">
                     <p class="text-center text-grey h1">
                       <i class="fa fa-plus"></i>
                     </p>
-                    <p class="text-center text-dark h5">Add Address</p>
-                  </div>
+                    <p class="text-center  h6">Add Address</p>
                   </div>
             </router-link>
                 </div>
@@ -45,16 +40,12 @@
               <div class="p-2 col-sm-3">
                 <div class="card border" v-if="this.$store.state.address">
                   <div class="card-header">
-                    <p class="text-sm font-weight-bold text-dark">
-                      Default:
-                      <span
-                        ><img
-                          class="logo-mobile img-fluid"
-                          src="img/home/logo.png"
-                          width="30px"
-                          alt="REJEE COMPANY"
-                      /></span>
+<div class="input-group">
+ 
+                    <p class="text-xs text-success"><span class="m-1">
+      <input class="text-sm" type="radio" aria-label="Radio button for following text input"></span>Default <span class="fa fa-check"></span>
                     </p>
+</div>
                   </div>
                   <div class="card-body">
                     <h5 class="card-title font-weight-bold text-dark">

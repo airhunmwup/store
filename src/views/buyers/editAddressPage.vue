@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="justify-content-center">
+  <div class="justify-content-center text-sm">
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
         
@@ -11,7 +11,7 @@
 
 <!--recently viewed-->
                 <div class="row col-sm-12 p-3 col-lg-8 col-md-8">
-                  <span class="text text-dark h4 font-weight-bold p-3 font-weight-normal">
+                  <span class="text  h5 font-weight-bold p-3 font-weight-normal">
                   Edit address
                   </span>
                   
@@ -28,7 +28,7 @@
                               <label class="title text-dark font-weight-bold">Country/Region</label>
                               <select id="country" 
                               name="country" 
-                              class="border-secondary form-control"
+                              class="border-secondary text-sm form-control"
                               @change="countryChange($event)"
                               v-model="formData.country"
                               disabled>
@@ -284,7 +284,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.fullname">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="fullname"
                                     type="text"
                                     placeholder=""
@@ -296,7 +296,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.phonenumber">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="fullname"
                                     type="tel"
                                     placeholder=""
@@ -308,7 +308,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.postal_code">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="Enter your area postcode"
@@ -320,7 +320,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.address_line1">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="type your address"
@@ -330,7 +330,7 @@
                                 <div class="form-group row">
                                   <label class="title text-dark font-weight-bold">Address line 2 (optional)</label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -342,7 +342,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.town_city">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -352,7 +352,7 @@
                                 <div class="form-group row">
                                   <label class="title text-dark font-weight-bold">County (if applicable)</label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -360,7 +360,7 @@
                                   />
                                 </div>
                                 <div class="form-group row">
-                                    <p class="text-dark text-lg"
+                                    <p class="text-dark text-md font-weight-bold"
                                       > Add delivery instructions (optional)
                                     </p>
                                       <p class="text-dark text-sm"
@@ -368,7 +368,7 @@
                                       </p>
 
                                   <textarea
-                                    class="form-control border-secondary text-xs"
+                                    class="form-control text-sm border-secondary text-xs"
                                     name="firstname"
                                     type="text"
                                     row="10"
@@ -382,7 +382,7 @@
                                       </p>
 
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="1234"
@@ -391,7 +391,7 @@
                                 </div>
                               </div>
                                <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="pid"
                                     type="hidden"
                                     placeholder=""
@@ -404,7 +404,7 @@
                                 data-target=".navbar-collapse"
                                 title="Continue"
                               >
-                                <button type="button" class="btn btn-warning border" @click.prevent="editAddress">Edit address</button></router-link
+                                <button type="button" class="btn btn-warning bg-gradient border" @click.prevent="editAddress">Edit address</button></router-link
                               >
                                         </div>
                             </form>
