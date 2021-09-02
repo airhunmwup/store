@@ -7,6 +7,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\InstockController;
 use App\Http\Controllers\AddressbuyersController;
+use App\Http\Controllers\ImageuploadController;
 use App\Models\Addressforbuyers;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -37,8 +38,8 @@ Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 //Static Public Routes
 Route::get('/category', [CategoryController::class, 'index']);
 Route::get('/sub_category', [SubcategoryController::class, 'index']);
-
 Route::post('/category', [CategoryController::class, 'store']);
+Route::get('/images', [ImageuploadController::class, 'index']);
 
 //Protected Routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
@@ -57,6 +58,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/addaddress', [AddressbuyersController::class, 'store']);
     Route::post('/getaddress/{user_id}', [AddressbuyersController::class, 'show']);
     Route::post('/deleteaddress', [AddressbuyersController::class, 'destroy']);
+    Route::post('/upload', [ImageuploadController::class, 'store']);
 });
 
 

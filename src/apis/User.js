@@ -23,6 +23,10 @@ export default{
         return Api().get("/category");
     },
 
+    getSubCategoryList(){
+        return Api().get("/sub_category");
+    },
+
     getNewListings(){
         return Api().get("/newlistings");
     },
@@ -73,6 +77,14 @@ export default{
 
     changepassword(data){
         return Api().post("/changepassword", data);
+    },
+
+    upload(data){
+        return Api().post("/upload", data);
+    },
+
+    image(){
+        return Api().get("/images");
     }
 
 };

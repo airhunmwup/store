@@ -38,7 +38,37 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
         //
-        return Products::create($request->all());
+        $fields = $request->validate([
+            'product_name' => 'required|string',
+            'product_price' => 'required|string',
+            'product_desc' => 'required|string',
+            'product_shipping_cost' => 'required|string',
+            'product_pakage_weight' => 'required|string',
+            'product_pakage_sizex' => 'required|string',
+            'product_pakage_sizey' => 'required|string',
+        ]);
+
+        return Products::create([
+            'product_subcat' => $request->product_subcat,
+            'product_userid' => $request->product_userid,
+            'product_name' => $fields['product_name'],
+            'product_condition' => $request->product_condition,
+            'product_desc' => $fields['product_desc'],
+            'product_price' => $fields['product_price'],
+            'product_image1' => $request->product_image1,
+            'product_image2' => $request->product_image2,
+            'product_image3' => $request->product_image3,
+            'product_image4' => $request->product_image4,
+            'product_image5' => $request->product_image5,
+            'product_shipping_type' => $request->product_shipping_type,
+            'product_shipping_rate' => $request->product_shipping_rate,
+            'product_shipping_cost' => $fields['product_shipping_cost'],
+            'product_package_type' => $request->product_package_type,
+            'product_package_weight' => $request->product_package_weight,
+            'product_package_sizex' => $request->product_package_sizex,
+            'product_package_sizey' => $request->product_package_sizey,
+            'product_location' => $request->product->location
+        ]);
     }
 
     /**
