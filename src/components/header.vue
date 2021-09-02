@@ -6,28 +6,6 @@
     <span aria-hidden="true">&times;</span>
   </button>
 </div>
-    <div class="row text-xs bg-dark bg-gradient-to-tl bg-blend-luminosity">
-    <div class="col">
-    </div>
-    <div class="col">
-            <router-link
-              to="/mechantregister"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-            >
-<div class="input-group ">
-  <img src="img/myaccount/sellershub.png" style="width: 1.2rem; height: 1.2rem" />
-        <span class="nav-link border-warning text-light text-xs font-weight-bold underline">Sell on REJEE Stores</span>
-  
-</div>
-            </router-link>
-    </div>
-    <div class="col">
-    </div>
-
-
-      <!-- header left mobie -->
-    </div>
       <div class="col-2 d-xs-none">
           <a href="index.html">
           <img

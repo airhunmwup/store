@@ -80,21 +80,18 @@
     <a class="dropdown-item">2019</a>
   </div>
 </div>
-
-  
+<div class="btn-group btn-group-md" role="group" aria-label="Basic example">
                 <router-link
                   to="/newlisting"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Create new listings"
-                  class="btn-sm m-1 text-xs underline"
+                  title="add new listings"
                 >
-                Add new
+  <button type="button" class="btn text-lg"><span class=" zmdi zmdi-plus-square"></span></button>
                 </router-link>
-
-  <button type="button" class="btn-sm m-1 text-xs underline" >
-    Delete
-  </button>
+  <button type="button" class="btn btn-sm text-lg"><span class=" zmdi zmdi-delete"></span></button>
+</div>
+  
                     </div>
                     
 
