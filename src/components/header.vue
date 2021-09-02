@@ -7,27 +7,23 @@
   </button>
 </div>
     <div class="row text-xs bg-dark bg-gradient-to-tl bg-blend-luminosity">
-      <div class="col-lg-6 col-md-6 d-xs-none d-sm-none col-sm-6 col-xs-6 pl-3 text-xs">
-        
-
-              <i class="zmdi zmdi-account h4"></i>
-            Welcome {{ this.$store.state.full_name }}
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6 pl-2 ">
-        
-          <router-link
-            to="/mechantregister"
-            title="sell">
-<div class="input-group ml-1">
+    <div class="col">
+    </div>
+    <div class="col">
+            <router-link
+              to="/mechantregister"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+            >
+<div class="input-group ">
   <img src="img/myaccount/sellershub.png" style="width: 1.2rem; height: 1.2rem" />
-  <div class="input-group-append">
         <span class="nav-link border-warning text-light text-xs font-weight-bold underline">Sell on REJEE Stores</span>
-  </div>
+  
 </div>
-          </router-link>
-
-
-      </div>
+            </router-link>
+    </div>
+    <div class="col">
+    </div>
 
 
       <!-- header left mobie -->
