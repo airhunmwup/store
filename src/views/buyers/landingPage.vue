@@ -1,9 +1,9 @@
 <template>
   <section class="bg-light bg-gradient">
-    <nav class="navbar  navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar  navbar-expand-lg navbar-warning bg-light bg-gradient">
   <div class="container-fluid ">
     <div class="dropdown">
-  <a class="btn text-light text-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+  <a class="btn text-dark text-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
    All Categories
   </a>
 
@@ -21,7 +21,7 @@
     <a class="navbar-brand" style="font-style: tahoma;" href="#"></a>
     <div class="btn-xs text-xs navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       
-          <p class="text-light"><img src="img/myaccount/sellershub.png" style="width: 1.0rem; height: 1.0rem" />
+          <p class="text-dark"><img src="img/myaccount/sellershub.png" style="width: 1.0rem; height: 1.0rem" />
           <span class="text-xs" href="#">Sell</span>
   </p>
     </div>
