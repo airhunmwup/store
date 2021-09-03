@@ -202,27 +202,8 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="card">
-        <nav class="navbar card-header navbar-expand-lg navbar-light bg-danger">
-          <div class="col">
-            <a class="navbar-brand text-light" href="#">Home & Properties</a>
-          </div>
-          <div class="col text-right">
-            <p class="navbar-text">
-              <span class="text-light">
-                <router-link
-                  class="text-light"
-                  to="/Product Page"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                  >see all
-                </router-link>
-                <b class="fa fa-caret-square-o-right"></b>
-              </span>
-            </p>
-          </div>
-        </nav>
+<div class="container">
+  <div class="card">
         <div class="card-body">
           <div class="row justify-content-center">
             <span

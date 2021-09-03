@@ -44,7 +44,6 @@
                       </li>
                       
                       </ul>
-                      <hr>
                     </div>
                   </div>
                 </div>
@@ -102,59 +101,14 @@
                           </tbody>
                         </table>
                       </div>
-                      <div class="col-6 align-text-bottom">
-                        <p class="text-sm pt-5">4 available</p>
-                        <p class="text-sm text-danger underline">223 sold</p>
-                      </div>
-                      </div>
-                      <div class="clearfix border-b-0 border-t-2 border-l-2 border-r-2">
-
-                    <p class="text text-sm p-3 font-weight-bold">Price: <span class="font-weight-bold text-dark h5 border-dark pr-2"> £{{ productDetails.product_price }}</span></p>
-                    
-                                            <div class="pb-2"><router-link
-                                to="/Checkout"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                              >
-                                            <button class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" style="background-color: blue;" type="submit">
-                                                   Buy it now
-                                            </button></router-link>
-                                            </div>
-
-                                            <div class="pb-2">
-                                            <button 
-                                            @click="addToBasket"
-                                            class="p-2 shadow border col-lg-12 col-md-12 col-sm-12 btn text-light" 
-                                            style="background-color: rgb(130, 231, 238)" 
-                                            type="submit">
-                                                    Add to basket
-                                                </button>
-                                            </div>
-                                            <div class="pb-2">
-                                            <button 
-                                            @click="addToWatchlist(productDetails['id'])"
-                                            class="p-2 shadow border-primary text-primary col-lg-12 col-md-12 col-sm-12 btn" 
-                                            type="submit">
-                                                    <i class="fa fa-heart"></i> Watch this item
-                                                </button>
-                                            </div>
-
-                        <table class="table std font-weight-bold">
-                          <tbody>
-                            <tr>
-                              <td class="border text-danger border-l-0 text-center">
-                                Click & Collect
-                              </td>
-                              <td class="border text-center">
-                                {{ watchCount }} watchers
-                              </td>
-                              <td class="border border-r-0 text-center">
-                                30-day return
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                              <div class="col">
+                                <p class="">30-day return</p>
+                              </div>
+                            </div>
+                          </div>
                                 </div>
+                  </div>
+                </div>
 
                                             <div class="row">
                                             <div class="col-3">
@@ -183,22 +137,8 @@
                                               <p>card</p>
                                             </div>
                                             </div>
-                                            <div class="row">
-                                            <div class="col-3">
-                                              Returns:
-                                            </div>
-                                            <div class="col-9">
-                                              <p>30 days refund, buyer pays return postage</p>
-                                            </div>
                                             </div>
 
-
-                            <span class="justify-content-end"
-                              >
-                            </span>
-                    <div class="content">
-                    </div>
-                  </div>
                 </div>
               </div>
 
@@ -287,102 +227,7 @@
                             </div>
                   </div>
 
-                  <div id="review" class="tab-pane fade">
-                    <div class="spr-form">
-                      <div class="user-comment">
-                        <div class="spr-review">
-                          <div class="spr-review-header">
-                            <span class="spr-review-header-byline">
-                              <strong class="h5">Postage and packaging</strong> 
-                            </span>
-                              <div class="p-2">
-                              <p class=" "><b>Item location:</b> Item location from listing</p>
-                              <p class=" "><b>Postage to:</b> Worldwide</p>
-                              </div>
-                            <div class="p-3 table-responsive">
-                        <table class="table text-sm std ">
-                          <tbody>
-                            <tr class="font-weight-bold">
-                              <td class="text-xs">
-                                Postage and packaging
-                              </td>
-                              <td class="text-xs">
-                                To
-                              </td>
-                              <td class="text-xs">
-                                Service
-                              </td>
-                              <td class="text-xs">
-                                Delivery*
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs">
-                                <p>Free P&P</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>United Kingdom</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>Express Delivery (Royal Mail Special Delivery (TM) 11:00 am)</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>Delivery</p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                              <p class="text-xs text-primary">You’ll see an estimated delivery date based on the seller’s dispatch time and delivery service. Delivery times may vary, especially during peak periods and will depend on when your payment clears.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="spr-form">
-                      <div class="user-comment">
-                        <div class="spr-review">
-                          <div class="spr-review-header">
-                            <span class="spr-review-header-byline">
-                              <strong class="h5">Return Policy</strong> 
-                            </span>
-                            <div class="p-3 table-responsive">
-                        <table class="table text-sm std ">
-                          <tbody>
-                            <tr class="font-weight-bold">
-                              <td class="text-xs">
-                               After receiving the item, cancel the purchase within
-                              </td>
-                              <td class="text-xs">
-                                Return postage
-                              </td>
-                            </tr>
-                            <tr>
-                              <td class="text-xs">
-                                <p>30 days</p>
-                              </td>
-                              <td class="text-xs">
-                                <p>Seller pays return postage</p>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                              <p class="text">Take a look at our 
-                          <router-link
-                          class="text-primary underline"
-                            to="/managing_returns_missing_items_and_refunds_for_sellers"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            >Returning an item help page</router-link> for more details.</p>
-                            <p class="text-xs p-3">The seller is responsible for return postage costs.</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </section>
-
+</div>
 
     <section class="appion">
               <div class="col-12">

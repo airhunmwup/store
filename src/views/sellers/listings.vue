@@ -97,7 +97,6 @@
   </button>
                     </div>
                     
-                <div class="">
 
 <!--start Web view-->
                   <div class="card m-2 border d-xs-none ">
@@ -359,8 +358,6 @@
   </ul>
 </nav>
                       </div>
-                </div>
-                </div>
 
           </div>
 
