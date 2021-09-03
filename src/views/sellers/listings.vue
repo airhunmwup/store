@@ -83,7 +83,7 @@
 
   
                 <router-link
-                  to="/newlisting"
+                  to="/newlisting3"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                   title="Create new listings"
