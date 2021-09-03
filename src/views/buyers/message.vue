@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="container">
+  <div class="container text-sm">
 <nav aria-label="breadcrumb" class="d-xs-none">
   <ol class="breadcrumb text-xs">
     <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
@@ -39,7 +39,7 @@
     </div>
   </div>
     </div>
-  <ul class="nav nav-tabs border border-b-0 bg-warning" id="myTab" role="tablist">
+  <ul class="nav nav-tabs border border-b-0 bg-light" id="myTab" role="tablist">
   <li class="nav-item">
     <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">All Messages</a>
   </li>

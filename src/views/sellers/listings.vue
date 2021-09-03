@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="container">
+  <div class="m-4">
 
 <nav aria-label="breadcrumb" class="d-xs-none">
   <ol class="breadcrumb text-xs">
@@ -12,7 +12,7 @@
 
         <div class="justify-content-center row  pb-4">
             
-                <div class="container pl-2">
+                <div class="container ">
                     <div class="row">
                     <div class="col-lg-6 col-xs-12">
                   <p class="text pl-3 text-dark h4 font-weight-bold font-weight-normal">
@@ -52,7 +52,7 @@
           <div class="pb-2 col-12">
 
 <!--Purchase History-->
-                <div class="row border bg-light rounded">
+                <div class="row rounded">
                     <div class="pb-2 pt-2 col-lg-6 col-xs-12 ">
                         <!-- Example single danger button -->
 <div class="btn-group">
@@ -80,21 +80,18 @@
     <a class="dropdown-item">2019</a>
   </div>
 </div>
-
-  
+<div class="btn-group btn-group-md" role="group" aria-label="Basic example">
                 <router-link
                   to="/newlisting"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Create new listings"
-                  class="btn-sm m-1 text-xs underline"
+                  title="add new listings"
                 >
-                Add new
+  <button type="button" class="btn text-lg"><span class=" zmdi zmdi-plus-square"></span></button>
                 </router-link>
-
-  <button type="button" class="btn-sm m-1 text-xs underline" >
-    Delete
-  </button>
+  <button type="button" class="btn btn-sm text-lg"><span class=" zmdi zmdi-delete"></span></button>
+</div>
+  
                     </div>
                     
 
@@ -129,6 +126,9 @@
     </div>
     <div class="col text-center">
       <p class="">Status</p>
+    </div>
+    <div class="col text-center">
+      <p class="">Watches</p>
     </div>
     <div class="col">
       <p class="text-right">Actions</p>
@@ -166,6 +166,9 @@
       <span class="alert-xs p-1 mt-4 rounded alert-success" style="height: 2rem;" role="alert">
        Active
     </span>
+    </div>
+    <div class="col text-center">
+      <p class="">160</p>
     </div>
     <div class="col text-right">
       <button type="button" class="btn text-light btn-danger btn-xs text-xs underline btn-block">Delete</button>
@@ -205,6 +208,9 @@
        Ended
     </span>
     </div>
+    <div class="col text-center">
+      <p class="">0</p>
+    </div>
     <div class="col text-right">
       <button type="button" class="btn text-light btn-danger btn-xs text-xs underline btn-block">Delete</button>
       <button type="button" class="btn text-light btn-info btn-xs text-xs underline btn-block">Edit</button>
@@ -215,31 +221,31 @@
 
 </div>
 
+                </div>
 <!--end Web view-->
 
 <!--start mobile view-->
-                  <div class="card m-2 d-md-none border">
+                  <div class="card m-1 d-md-none border text-xs">
                     <div class="card-header">
-
-    <div class="row text-xs">
-    <div class="col">
-    <div class="input-group">
-      <input type="checkbox" aria-label="Checkbox for following text input">
-      <span class="ml-2"> 1 </span>
-    </div>
-    </div>
-    <div class="col">
-      <p class="text-right">SKU: <b>P62X</b></p>
-    </div>
-    </div>
+                        <div class="row text-xs">
+                        <div class="col">
+                        <div class="input-group">
+                        <input type="checkbox" aria-label="Checkbox for following text input">
+                        <span class="ml-2"> 2 </span>
+                        </div>
+                        </div>
+                        <div class="col">
+                        <p class="text-right">SKU: <b>P62X</b></p>
+                        </div>
+                        </div>
                     </div>
     <div class="card-header">
 
     <div class="row text-xs">
-    <div class="col pt-2">
+    <div class="col-6 pt-2">
   <img class="" style="width:70%;" src="img/product/11.jpg" alt="Card image cap">
     </div>
-    <div class="col">
+    <div class="col-6">
       <p class="text-left mt-4 text-lg text-dark font-weight-bold">
           This na the product title</p>
     </div>
@@ -268,10 +274,16 @@
     <div class="col-6">
       <p class="m-1">Status:</p>
     </div>
-    <div class="col-6 pt-2 text-right">
+    <div class="col-6 p-2 text-right">
       <span class="alert-xs p-1 mt-4 rounded alert-success" style="height: 2rem;" role="alert">
        Active
     </span>
+    </div>
+    <div class="col-4">
+      <p class="m-1"> Watches</p>
+    </div>
+    <div class="col-8 text-right">
+      <p class="text-dark"> 160</p>
     </div>
   </div>
   </div>
@@ -281,7 +293,7 @@
   </div>
 </div>
 
-                  <div class="card m-2 d-md-none border">
+                  <div class="card m-1 d-md-none border">
                     <div class="card-header">
 
     <div class="row text-xs">
@@ -308,33 +320,45 @@
     </div>
     </div>
                     </div>
-  <div class="card-body text-xs">
-  <div class="row">
+  <div class="card-body">
+  <div class="row text-xs">
     <div class="col-4">
       <p class="m-1"> Category:</p>
     </div>
-    <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> Funitures, Chairs</p>
+    <div class="col-8">
+      <p class="m-1 text-right text-dark font-weight-bold"> Funitures, Chairs</p>
     </div>
+  </div>
+  <div class="row text-xs">
     <div class="col-4">
       <p class="m-1"> In-stock:</p>
     </div>
-    <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> 16</p>
+    <div class="col-8">
+      <p class="m-1 text-right text-dark font-weight-bold"> 16</p>
     </div>
+  </div>
+  <div class="row text-xs">
     <div class="col-4">
       <p class="m-1"> Price:</p>
     </div>
-    <div class="col-8 text-right">
-      <p class="m-1 text-dark font-weight-bold"> £150.00</p>
+    <div class="col-8">
+      <p class="m-1 text-right text-dark font-weight-bold"> £150.00</p>
     </div>
+  </div>
+  <div class="row text-xs">
     <div class="col-6">
       <p class="m-1">Status:</p>
     </div>
-    <div class="col-6 pt-2 text-right">
+    <div class="col-6 p-2 text-right">
       <span class="alert-xs p-1 mt-4 rounded alert-danger" style="height: 2rem;" role="alert">
        Pending
     </span>
+    </div>
+    <div class="col-4">
+      <p class=""> Watches</p>
+    </div>
+    <div class="col-8 text-right">
+      <p class="text-dark"> 160</p>
     </div>
   </div>
   </div>

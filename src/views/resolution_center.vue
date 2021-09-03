@@ -15,42 +15,67 @@
                         </div>
                           <div class="row">
                             <div
-                              class="col-lg-10col-md-10 pt-5 pl-5 col-sm-10"
+                              class="col-lg-10col-md-10 pt-3 pl-5 col-sm-10"
                             >
-                              <p class="text-dark  text-left h1 font-weight-bold">
+                              <p class="text-dark  text-left h3 font-weight-bold">
                                 We're here to help!
                               </p>
                             </div>
                             <div class="row pt-5">
-                              <div class="col-lg-6 p-3 col-md-6 col-sm-8">
+                              <div class="col-lg-6 col-md-6 col-sm-8">
                               <div class="card border p-3">
-                                <p class="h4 text-primary">
+                                <a class="h6 text-primary" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCancelanorder" aria-expanded="false" aria-controls="collapseCancelanorder">
                                   Cancel an order
+                                </a>
+                              <div class="collapse" id="collapseCancelanorder">
+                                <div class="card-body">
+                                <p class="text text-dark">
+                                  You can cancel your Orders by going to the Your Orders page select the cancel option on the item your ordered.
                                 </p>
-                                <p class="text font-weight-bold">
-                                  You can cancel your Orders by going to the Your Orders page on My Account and select the cancel option on the item ordered.
+                              </div>
+                            </div>
+                              </div>
+                              </div>
+                              <div class="col-lg-6 col-md-6 col-sm-8">
+                              <div class="card border p-3">
+                                <a class="h6 text-primary" href="#" data-bs-toggle="collapse" data-bs-target="#collapsemanagebuyer" aria-expanded="false" aria-controls="collapsemanagebuyer">
+                                  Manage your buyer's requests and disputes
+                                </a>
+                              <div class="collapse" id="collapsemanagebuyer">
+                                <div class="card-body">
+                                <p class="text text-dark">
+                                  You can view all your issues from your message page on My REJEE Stores.
                                 </p>
+                              </div>
+                            </div>
                               </div>
                               </div>
                               <div class="col-lg-6 p-3 col-md-6 col-sm-8">
                               <div class="card border p-3">
-                                <p class="h4 text-primary">
-                                  Manage your buyer's requests and disputes
+                                <a class="h6 text-primary" href="#" data-bs-toggle="collapse" data-bs-target="#collapsecreateorviewrequest" aria-expanded="false" aria-controls="collapsecreateorviewrequest">
+                                   Create or view a request
+                                </a>
+                              <div class="collapse" id="collapsecreateorviewrequest">
+                                <div class="card-body">
+                                <p class="text text-dark">
+                                  You can report that your item hasn't arrived, start a return, or view your past requests.
                                 </p>
-                                <p class="text font-weight-bold">
-                                  You can view all your issues from your message page in the My REJEE Stores "Your Account page".
-                                </p>
+                              </div>
+                            </div>
                               </div>
                               </div>
                             </div>
-                            <div class="row pt-5">
-                              <div class="col-lg-6 p-3 col-md-6 col-sm-8">
+                            <div class="row pt-2">
+                              <div class="col-lg-6 col-md-6 col-sm-8">
                               <div class="card border p-3">
                                 <p class="h4 text-primary">
-                                  Create or view a request
+                                  <span class="zmdi zmdi-comment-dots"></span> Contact Support
                                 </p>
-                                <p class="text font-weight-bold">
-                                  You can report that your item hasn't arrived, start a return, or view your past requests.
+                                <p class="text-sm">
+                                  Pin: #1029
+                                </p>
+                                <p class="text-sm">
+                                  Pin: #1029
                                 </p>
                               </div>
                               </div>

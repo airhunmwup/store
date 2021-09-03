@@ -1,9 +1,176 @@
 <template>
-  <section class="">
-    <!-- breadcrumb -->
-    <div class="container pt-2">
-      <!-- Content here -->
+  <section class="bg-light bg-gradient">
+    <nav class="navbar  navbar-expand-lg navbar-warning bg-light bg-gradient">
+  <div class="container-fluid ">
+    <div class="dropdown">
+  <a class="btn text-dark text-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+   All Categories
+  </a>
 
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"><router-link
+          v-for="category of categoryList"
+          :key="category.id"
+          to="/Categorie page"
+          class="dropright"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+    <li><a class="dropdown-item" href="#">{{category.cat_name}}</a></li></router-link>
+  </ul>
+</div>
+    <a class="navbar-brand" style="font-style: tahoma;" href="#"></a>
+    <div class="btn-xs text-xs navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      
+          <p class="text-dark"><img src="img/myaccount/sellershub.png" style="width: 1.0rem; height: 1.0rem" />
+          <span class="text-xs" href="#">Sell</span>
+  </p>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+        <span class=""><img src="img/myaccount/sellershub.png" style="width: 1.2rem; height: 1.2rem" /></span> 
+  </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sell on REJEE Stores</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav> <!-- 
+<div class="container pt-2">
+  
+  <div class="row justify-content-center">
+    <div class="col-lg-3 col-md-3 col-sm-lg d-xs-none card border">
+  <ul class="list-group list-group-flush">
+
+        <router-link
+          v-for="category of categoryList"
+          :key="category.id"
+          to="/Categorie page"
+          class="dropright"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+          <li class="font-weight-bold list-group-item text-xs text-dark">{{category.cat_name}}</li>
+
+        </router-link>
+
+  </ul>
+    </div>
+    <div class="col-lg-9 col-md-9 col-sm-12 row">
+<div id="carouselExampleIndicators" class="carousel slide card" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img class="d-block w-100" src="img/home/effect2.jpg" alt="First slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100 " src="img/home/effect1.jpg" alt="Second slide">
+    </div>
+    <div class="carousel-item">
+      <img class="d-block w-100" src="img/home/effect3.jpg" alt="Third slide">
+    </div>
+  </div>
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<div class="container pt-2 card">
+      <div class="row" >
+      <div class="col-lg-6 col-sm-12">
+                <img src="img/banner/bannerrejee1.jpg" class="card-img-top" style="height: 8rem" alt="Product"/>
+      </div>
+      <div class="col-lg-6 col-sm-12">
+                <img src="img/banner/bannerrejee2.webp" class="card-img-top" style="height: 8rem" alt="Product"/>
+      </div>
+</div>
+      </div>
+</div>
+    </div>
+
+  </div> -->
+
+<div class="container">
+      <div class="row">
+      <div class="col-lg-3 col-6">
+        <div class="card p-2" style="">
+  <div class="card-body">
+    <p class="card-text h6 text-dark font-weight-bold">Properties</p>
+  </div>
+  <img src="img/product/1.jpg" class="border card-img-top" alt="">
+  <div class="card-body">
+    <p class="text-xs text-primary font-weight-bold">See more</p>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="card p-2" style="">
+  <div class="card-body">
+    <p class="card-text h6 text-dark font-weight-bold">Electronics</p>
+  </div>
+  <img src="img/product/15.jpg" class="border card-img-top" alt="">
+  <div class="card-body">
+    <p class="text-xs text-primary font-weight-bold">See more</p>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="card p-2" style="">
+  <div class="card-body">
+    <p class="card-text text-dark font-weight-bold">Funitures</p>
+  </div>
+  <img src="img/product/12.jpg" class="border card-img-top" alt="">
+  <div class="card-body">
+    <p class="text-xs text-primary font-weight-bold">See more</p>
+  </div>
+</div>
+      </div>
+      <div class="col-lg-3 col-6">
+        <div class="card p-2" style="">
+  <div class="card-body">
+    <p class="card-text h6 text-dark font-weight-bold">Vehicles</p>
+  </div>
+  <img src="img/product/18.jpg" class="border card-img-top" alt="">
+  <div class="card-body">
+    <p class="text-xs text-primary font-weight-bold">See more</p>
+  </div>
+</div>
+      </div>
+</div>
+      </div>
+<div class="container text-sm">
+  <div class="card">
+<nav class="navbar card-footer navbar-expand-sm navbar-light bg-gradient">
+    <div class="col">
+  <a class="navbar-brand text-md font-weight-bold text-dark" href="#">Todays Listing</a>
+    </div>
+    <div class="col text-right">
+    <p class="navbar-text">
+          <span class="text-dark">
+              <router-link
+                class="text-dark"
+                to="/Product Page"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                >see all
+              </router-link>
+            <b class="fa-bold fa fa-lg fa-angle-right"></b>
+          </span>
+    </p>
+    </div>
+</nav>
+<div class="card-body">
       <div class="row justify-content-center">
         <div class="col-lg-3 col-md-3 col-sm-lg d-xs-none card">
           <ul class="list-group list-group-flush">
@@ -204,11 +371,12 @@
 
 <div class="container">
   <div class="card">
-        <div class="card-body">
-          <div class="row justify-content-center">
-            <span
-              v-for="listings of newListings"
-              :key="listings.id"
+<div class="card-body">
+      <div class="row justify-content-center">
+<span v-for="listings of newListings"
+            :key="listings.id"
+            v-bind:data-id="listings.id" class="list-item list-group-item-action col-lg-3 col-sm-3 col-xs-6 list-group" style="width: 10rem;">
+            <div
               v-bind:data-id="listings.id"
               class="
                 list-item list-group-item-action

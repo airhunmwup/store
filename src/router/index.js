@@ -55,9 +55,6 @@ import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
 import add_category from '../views/sellers/add_category.vue'
 import add_subcategory from '../views/sellers/add_subcategory.vue'
-import upload_image from '../views/sellers/upload_image.vue'
-import Account_Page from '../views/sellers/account_page.vue'
-import seller_message from '../views/sellers/message_page2.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
 
 import communication_settings from '../views/sellers/communication_settings.vue'
@@ -65,20 +62,7 @@ import store_info from '../views/sellers/store_info.vue'
 import signin_security from '../views/sellers/signin_security.vue'
 import address_setting from '../views/sellers/address_setting.vue'
 import payout_settings from '../views/sellers/payout_settings.vue'
-
-import active_listing from '../views/sellers/active_listing.vue'
-import ended_listing from '../views/sellers/ended_listing.vue'
-import scheduled_listing from '../views/sellers/scheduled_listing.vue'
-import draft_listing from '../views/sellers/draft_listing.vue'
-import unsold_listing from '../views/sellers/unsold_listing.vue'
-
-
-import awaiting_shipped from '../views/sellers/awaiting_shipment.vue'
-import paid_shipped from '../views/sellers/paid_shipped.vue'
-import cancellation from '../views/sellers/cancellations.vue'
-import returns from '../views/sellers/returns.vue'
-import awaiting_order from '../views/sellers/awaiting_order.vue'
-
+import payout_add from '../views/sellers/payout_add.vue'
 
 import money_back_guarantee from '../views/rejee_money_back_guarantee.vue'
 import start_selling from '../views/start_selling.vue'
@@ -126,7 +110,8 @@ const routes = [{
         path: '/editloginemail',
         name: 'editloginemail',
         component: edit_login_email,
-    }, {
+    },
+    {
         path: '/editloginnumber',
         name: 'editloginnumber',
         component: edit_login_mobilenumber,
@@ -163,65 +148,9 @@ const routes = [{
         component: listings_page,
     },
     {
-        path: '/activelisting',
-        name: 'activelisting',
-        component: active_listing,
-    },
-    {
-        path: '/endedlisting',
-        name: 'endedlisting',
-        component: ended_listing,
-    },
-    {
-        path: '/scheduledlisting',
-        name: 'scheduledlisting',
-        component: scheduled_listing,
-    },
-    {
-        path: '/draftisting',
-        name: 'draftisting',
-        component: draft_listing,
-    },
-    {
-        path: '/unsoldlisting',
-        name: 'unsoldlisting',
-        component: unsold_listing,
-    },
-    {
         path: '/newlisting',
         name: 'newlisting',
         component: create_listing,
-    },
-    {
-        path: '/Account Page',
-        name: 'Account Page',
-        component: Account_Page,
-    },
-
-    {
-        path: '/awaitingshipment',
-        name: 'awaitingshipment',
-        component: awaiting_shipped,
-    },
-    {
-        path: '/paidshipped',
-        name: 'paidshipped',
-        component: paid_shipped,
-    },
-    {
-        path: '/cancellationlist',
-        name: 'cancellationlist',
-        component: cancellation,
-    },
-    {
-        path: '/returnslist',
-        name: 'returns',
-        component: returns,
-    },
-    {
-        path: '/awaitingpayment',
-        name: 'awaitingpayment',
-        component: awaiting_order,
     },
 
     {
@@ -253,6 +182,12 @@ const routes = [{
         path: '/paymentsetting',
         name: 'paymentsetting',
         component: payment_setting,
+    },
+
+    {
+        path: '/addpayout',
+        name: 'addpayout',
+        component: payout_add,
     },
 
     {
@@ -289,11 +224,6 @@ const routes = [{
     },
 
     {
-        path: '/Upload Image',
-        name: 'Upload Image',
-        component: upload_image,
-    },
-    {
         path: '/User Agreement',
         name: 'UserAgreementPage',
         component: userAgreementPage,
@@ -324,8 +254,8 @@ const routes = [{
         component: userLogin,
     },
     {
-        path: '/Order Details',
-        name: 'orderDetailsPage',
+        path: '/orderdetails',
+        name: 'orderdetails',
         component: orderDetailsPage,
     },
     {
@@ -349,8 +279,8 @@ const routes = [{
         component: address_setting,
     },
     {
-        path: '/payoutsettings',
-        name: 'payoutsettings',
+        path: '/managepayout',
+        name: 'managepayout',
         component: payout_settings,
     },
 
@@ -405,9 +335,10 @@ const routes = [{
         component: addUserAddressPage,
     },
     {
-        path: '/editaddress',
+        path: '/editaddress/:pid',
         name: 'editaddress',
         component: editAddressPage,
+        props: true,
     },
     {
         path: '/changepassword',
@@ -532,11 +463,6 @@ const routes = [{
         path: '/sentmessage',
         name: 'sentmessage',
         component: sent_message,
-    },
-    {
-        path: '/Message',
-        name: 'Message',
-        component: seller_message,
     },
     {
         path: '/account',

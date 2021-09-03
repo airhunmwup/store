@@ -35,6 +35,7 @@ Route::post('/login', [AuthController::class, 'login']);
 Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 
 
+
 //Static Public Routes
 Route::get('/category', [CategoryController::class, 'index']);
 Route::get('/sub_category', [SubcategoryController::class, 'index']);
@@ -57,6 +58,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/changepassword', [AuthController::class, 'changePassword']);
     Route::post('/addaddress', [AddressbuyersController::class, 'store']);
     Route::post('/getaddress/{user_id}', [AddressbuyersController::class, 'show']);
+    Route::post('/fetchAddress/{id}', [AddressbuyersController::class, 'fetch']);
+    Route::post('/editAddress', [AddressbuyersController::class, 'edit']);
     Route::post('/deleteaddress', [AddressbuyersController::class, 'destroy']);
     Route::post('/upload', [ImageuploadController::class, 'store']);
 });

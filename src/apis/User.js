@@ -1,7 +1,7 @@
 import Api from "./Api.js";
 
 
-export default{
+export default{    
 
     register(formData){
         return Api().post("/register", formData);
@@ -58,11 +58,18 @@ export default{
     addaddress(data){
         return Api().post("/addaddress", data);
     },
-
+    
+    editaddress(data){
+        return Api().post("/editAddress", data);
+    },
+    
     getAddress(id){
         return Api().post("/getaddress/" + id);
     },
     
+    fetchAddress(id){
+        return Api().post("/fetchAddress/" + id);
+    },
     deleteaddress(data){
         return Api().post("/deleteaddress", data);
     },

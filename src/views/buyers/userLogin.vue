@@ -3,7 +3,7 @@
 
   <!-- main content -->
 
-  <div class="">
+  <div class="text-sm">
     <div class="content pt-5 pb-5">
       <div class="row pt-2">
         <div class="container align-content-center">
@@ -31,7 +31,7 @@
                 <div class="form-group p-2">
                   <input
                     class="
-                      col-lg-6 col-md-6 col-sm-6
+                      col-lg-4 col-md-4 col-sm-4
                       border-b border-dark border-t-0 border-l-0 border-r-0
                     "
                     name="email"
@@ -45,7 +45,7 @@
                 <div class="form-group p-2">
                   <input
                     class="
-                      col-lg-6 col-md-6 col-sm-6
+                      col-lg-4 col-md-4 col-sm-4
                       border-b border-dark border-t-0 border-l-0 border-r-0
                       js-visible-password
                     "
@@ -70,8 +70,7 @@
 
                 <div class="clearfix p-2">
                   <button
-                    class="col-lg-6 col-md-6 col-sm-6 btn text-light"
-                    style="background-color: rgb(209, 209, 208)"
+                    class="col-lg-4 col-md-4 col-sm-4 btn btn-warning bg-gradient border"
                     @click="login"
                   >
                     Submit
@@ -88,21 +87,9 @@
 
     <div v-if="loading" id="page-preloader" class="redit">
       <div class="page-loading">
-        <div class="dot text-center text-danger font-italic font-extrabold">
-          R
-        </div>
-        <div class="dot text-center text-danger font-italic font-extrabold">
-          E
-        </div>
-        <div class="dot text-center text-danger font-italic font-extrabold">
-          J
-        </div>
-        <div class="dot text-center text-danger font-italic font-extrabold">
-          E
-        </div>
-        <div class="dot text-center text-danger font-italic font-extrabold">
-          E
-        </div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
       </div>
     </div>
   </div>

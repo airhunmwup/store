@@ -1,426 +1,119 @@
 <template>
   <!-- main content -->
-  <div>
-              <div class="row box pl-4">
-                <div class="container pl-3">
-                  <div class="content text-dark p-2 border-b-2 font-weight-bold col-12  pl-2">
-                  <router-link
-                    to="/Overview"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="p-2"
-                    title="Overview"
-                    ><span>Overview</span></router-link
-                  >
-                  <router-link
-                    to="/Orders"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse" 
-                    class="p-2"
-                    title="Orders"
-                    ><span>Orders</span></router-link>
-                  <router-link
-                    to="/Listing"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="p-2"
-                    title="listing"
-                    ><span>Listing</span></router-link>
-                  <router-link
-                    to="/Account Page"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    class="border-primary border-b-4 p-2"
-                    title="Account"
-                    ><span class="text-primary">Account</span></router-link>
+  <div class="container">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">Sellers hub</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Your Payout</li>
+  </ol>
+</nav>
+
+        <div class="justify-content-center row pt-4 pb-4">
+            
+
+          <div class="col-sm-12 col-lg-12 col-md-12 product-container mb-4">
+
+  <div class="row">
+    <div class="col">
+                  <p class="h4 text-dark text-left">Your payout manager</p>
+                  <p class="text-dark text-sm text-left">Your default preferences are used for receiving payments.</p>
+    </div>
+    <div class="col-sm">
+    </div>
+  </div>
+
+
+    <p class="p-3"></p>
+  <div class="row">
+    <div class="col-sm">
+<div class="card m-1">
+  <div class="card-body m-3">
+    <p class="text-center text-success h1 font-weight-bold"><i class=" zmdi zmdi-balance-wallet"></i></p>
+    <p class="text-dark text-center h5 font-weight-bold">£150.00</p>
+    <p class="text-center text-xs">Available balance</p>
+  </div>
+  <div class="card-body border-t-2">
+    <button type="button" class="btn btn-success btn-sm btn-block">Manage preference</button>
+  </div>
+</div>
+    </div>
+    <div class="col-8 col-xs-12">
+<div class="card m-1">
+  <div class="card-header">
+    <p class="text-xs font-weight-bold"><span class="text-dark">Bank Accounts</span><span class=""> (for withdrawal)</span></p>
+  </div>
+  <div class="card-body shadow-inner">
+    <div class="row">
+              <div class="p-2 col-6 col-xs-12">
+                <div class="card backdrop-brightness-100 shadow text-sm">
+            <router-link
+              class=""
+              to="/addnewaddress"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="view"
+            >
+                  <div class="card-body">
+                      <div class="row">
+                        <div class="col-4 border-r-2">
+                    <p class="text-grey h1 m-3">
+                      <i class="fa fa-university fa-lg"></i>
+                    </p>
+                        </div>
+                        <div class="col-8">
+                    <p class="text-grey">
+                      Lloyds Bank
+                    </p>
+                    <p class="text-grey">
+                      6118293018
+                    </p>
+                    <p class="text-grey">
+                      30-03-01
+                    </p>
+                    <p>
+                        <span class="alert-xs text-xs rounded-3 p-1 mt-4 alert-success" style="height: 2rem;" role="alert">
+                          approved
+                        </span>
+                    </p>
+                        </div>
+                        
+                      </div>
                   </div>
+                  <div class="card">
+                    <span class="p-2"><button type="button" class="text-xs underline border btn btn-sm btn-warning">Remove</button></span>
+                  </div>
+            </router-link>
                 </div>
-
               </div>
-
-<div class="dropdown pt-2 d-lg-none h6 d-md-none justify-content-between pl-5">
-  <a href="#" class="text-primary underline  dropdown-toggle" data-toggle="dropdown">
-    Menu
-  </a>
-  <div class="dropdown-menu">
-              <div
-                class="text-sm block-content nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-            <!-- primary info buttons -->
-                <button
-                  class="text-left h6 font-weight-bold text-dark p-2 active"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="fa fa-xl fa-user pr-2"></i>Personal Info
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Personal-Information-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Personal-Information"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Personal-Information"
-                  aria-selected="false"
-                >
-                  Personal Information
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Sigin-and-security-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Sigin-and-security"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Sigin-and-security"
-                  aria-selected="false"
-                >
-                  Sign in and security
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Addresses-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Addresses"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Addresses"
-                  aria-selected="false"
-                >
-                  Addresses
-                </button>
-            <!-- primary info buttons ends/-->
-
-            <!-- Payment Information button/-->
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="zmdi zmdi-balance-wallet h4 pr-2"></i> Payment Info
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Payments-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Payments"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Payments"
-                  aria-selected="false"
-                >
-                  Payments
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Paypal-Account-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Paypal-Account"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Paypal-Account"
-                  aria-selected="true"
-                >
-                  Paypal Account
-                </button>
-            <!-- Payment Information button ends/-->
-            <!-- Account preferences/-->
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="zmdi zmdi-settings h4 pr-2"></i> Account preferences
-                </button>
-                <button
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                  id="v-pills-Communication-Preferences-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#v-pills-Communication-Preferences"
-                  type="button"
-                  role="tab"
-                  aria-controls="v-pills-Communication-Preferences"
-                  aria-selected="true"
-                >
-                  Communication Preferences
-                </button>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Product Listing"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Product Listing"
-                            >
-                  Close account
-                </router-link>
-            <!-- Account preferences Ends/-->
-            <!-- Selling/-->
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="fa fa-tag fa-2x h4 pr-2"></i> Selling
-                </button>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Overview"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Seller dashboard"
-                            >
-                Seller Dashboard
-                </router-link>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Subscription"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Subscription"
-                            >
-                  Subscriptions
-                </router-link>
-            <!-- Selling Ends/-->
-            <!-- Resolution center/-->
-                <button
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="fa fa-commenting-o fa-2x pr-2"></i> Resolution center
-                </button>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Resolution center"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Resolution center"
-                            >
-                  Resolution Center
-                </router-link>
-            <!-- Resolution center End/-->
+              <div class="p-2 col-4 col-xs-12">
+                <div class="card border-dashed border-secondary">
+            <router-link
+              class=""
+              to="/addpayout"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Add bank account"
+            >
+                  <div class="m-2 card-body">
+                    <p class="text-center text-grey h1">
+                      <i class="fa fa-plus"></i>
+                    </p>
+                  </div>
+            </router-link>
+                </div>
               </div>
+    </div>
   </div>
 </div>
-        <div class="row">
-          <div
-            class="pl-4
-              sidebar-3 
-              col-lg-3 col-md-3
-              d-xs-none
-              pt-3
-              font-weight-bold
-            "
-          >
-            <div class="sidebar-block text-dark">
-              <div class="block-content">
-              <div
-                class="block-content nav flex-column nav-pills"
-                id="v-pills-tab"
-                role="tablist"
-                aria-orientation="vertical"
-              >
-            <!-- primary info buttons -->
-                <div
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="fa fa-xl fa-user pr-2"></i>Account Info
-                </div>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Account Page"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Store information"
-                            >
-                  Store Information
-                </router-link>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/siginsec"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Sign in and security"
-                            >
-                  Sign in and security
-                </router-link>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/addresssetting"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Addresses"
-                            >
-                  Addresses
-                </router-link>
-            <!-- primary info buttons ends/-->
-
-            <!-- Payment Information button/-->
-                <div
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="zmdi zmdi-balance-wallet h4 pr-2"></i> Payments
-                </div>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/payoutsettings"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Payment Information"
-                            >
-                  Payment Info
-                </router-link>
-                <div
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="zmdi zmdi-settings h4 pr-2"></i> Account preferences
-                </div>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/communicationsettings"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Communication Preferences"
-                            >
-                  Communication Preferences
-                </router-link>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Product Listing"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Close account"
-                            >
-                  Close account
-                </router-link>
-            <!-- Account preferences Ends/-->
-            <!-- Selling/-->
-                <div
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="fa fa-tag fa-2x h4 pr-2"></i> Selling
-                </div>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Overview"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="seller dashboard"
-                            >
-                Seller Dashboard
-                </router-link>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Subscription"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Subscription"
-                            >
-                  Subscriptions
-                </router-link>
-            <!-- Selling Ends/-->
-            <!-- Resolution center/-->
-                <div
-                  class="text-left  font-weight-bold text-dark p-2"
-                  data-bs-toggle="pill"
-                  type="button"
-                  role="tab"
-                  aria-selected="true"
-                >
-                  <i class="fa fa-commenting-o fa-2x pr-2"></i> Resolution center
-                </div>
-                <router-link
-                  class="text-left text-primary pl-4 text-xs pb-2  font-weight-bold"
-                            to="/Resolution center"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Resolution center"
-                            >
-                  Resolution Center
-                </router-link>
-            <!-- Resolution center End/-->
-              </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-lg-9 col-md-9 product-container">
-            <div id="wrapper-site">
-
-              <div class="col-sm-12 col-lg-12 col-md-12 product-container">
-                <div id="wrapper-site">
-              <div class="tab-content" id="v-pills-tabContent">
-
-<!--Payments-->
-                  
-                <div class="row">
-                    <p class="h4 p-3 text-dark">Payment settings</p>
-                  
-                    <ul class="nav nav-tabs">
-                      <li class="active text-dark h6 p-2 "><a data-toggle="tab" href="#home">Payout Account</a></li>
-                      <li class="text-dark h6 p-2 "><a data-toggle="tab" href="#menu1">Preference</a></li>
-                    </ul>
-
-                    <div id="overlay">
-                    </div>
-                    <hr>
-
-<div class="tab-content">
-  <div id="home" class="tab-pane fade in active show">
-    <h3>HOME</h3>
-    <p>Some content.</p>
+    </div>
   </div>
-  <div id="menu1" class="tab-pane fade">
-    <h3>Menu 1</h3>
-    <p>Some content in menu 1.</p>
-  </div>
-  <div id="menu2" class="tab-pane fade">
-    <h3>Menu 2</h3>
-    <p>Some content in menu 2.</p>
-  </div>
-</div>
-  
-                </div>
-              </div>
-                </div>
-              </div>
-            </div>
+
           </div>
 
-              <div class="d-flex align-items-start p-5"></div>
           <!-- end col-md-9-1 -->
         </div>
 
-    <hr>
   </div>
 </template>
         

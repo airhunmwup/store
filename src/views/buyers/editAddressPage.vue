@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="justify-content-center">
+  <div class="justify-content-center text-sm">
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
         
@@ -11,7 +11,7 @@
 
 <!--recently viewed-->
                 <div class="row col-sm-12 p-3 col-lg-8 col-md-8">
-                  <span class="text text-dark h4 font-weight-bold p-3 font-weight-normal">
+                  <span class="text  h5 font-weight-bold p-3 font-weight-normal">
                   Edit address
                   </span>
                   
@@ -28,7 +28,7 @@
                               <label class="title text-dark font-weight-bold">Country/Region</label>
                               <select id="country" 
                               name="country" 
-                              class="border-secondary form-control"
+                              class="border-secondary text-sm form-control"
                               @change="countryChange($event)"
                               v-model="formData.country"
                               disabled>
@@ -284,7 +284,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.fullname">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="fullname"
                                     type="text"
                                     placeholder=""
@@ -296,7 +296,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.phonenumber">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="fullname"
                                     type="tel"
                                     placeholder=""
@@ -308,7 +308,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.postal_code">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="Enter your area postcode"
@@ -320,7 +320,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.address_line1">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="type your address"
@@ -330,7 +330,7 @@
                                 <div class="form-group row">
                                   <label class="title text-dark font-weight-bold">Address line 2 (optional)</label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -342,7 +342,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.town_city">*</span>
                                   </label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -352,7 +352,7 @@
                                 <div class="form-group row">
                                   <label class="title text-dark font-weight-bold">County (if applicable)</label>
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -360,7 +360,7 @@
                                   />
                                 </div>
                                 <div class="form-group row">
-                                    <p class="text-dark text-lg"
+                                    <p class="text-dark text-md font-weight-bold"
                                       > Add delivery instructions (optional)
                                     </p>
                                       <p class="text-dark text-sm"
@@ -368,7 +368,7 @@
                                       </p>
 
                                   <textarea
-                                    class="form-control border-secondary text-xs"
+                                    class="form-control text-sm border-secondary text-xs"
                                     name="firstname"
                                     type="text"
                                     row="10"
@@ -382,7 +382,7 @@
                                       </p>
 
                                   <input
-                                    class="form-control border-secondary"
+                                    class="form-control text-sm border-secondary"
                                     name="firstname"
                                     type="text"
                                     placeholder="1234"
@@ -390,14 +390,21 @@
                                   />
                                 </div>
                               </div>
+                               <input
+                                    class="form-control text-sm border-secondary"
+                                    name="pid"
+                                    type="hidden"
+                                    placeholder=""
+                                    v-model="formData.pid"
+                                  /> 
                                             <div class="">
                                             <router-link
-                                to="/checkoutpayment"
+                                v-bind:to="'/editaddress/' + pid"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                                 title="Continue"
                               >
-                                <button type="button" class="btn btn-warning border" @click.prevent="addAddress">Add address</button></router-link
+                                <button type="button" class="btn btn-warning bg-gradient border" @click.prevent="editAddress">Edit address</button></router-link
                               >
                                         </div>
                             </form>
@@ -409,7 +416,7 @@
 
           <!-- end col-md-9-1 -->
         </div>
-
+        
     <hr>
   </div>
 </template>
@@ -417,6 +424,8 @@
 
 import User from '../../apis/User';
 export default {
+  props: ['pid'],
+address_details: {},
   data() {
     return {
       formData: {
@@ -431,18 +440,18 @@ export default {
         county: '',
         delivery_instruction: '',
         securitycode: '',
+        pid: this.pid,
       },
+      
       errors: {},
       loading: false,
     }
   },
   methods: {
-    addAddress() {
+    editAddress() {
       this.formData.user_id = this.$store.state.currentUser.id;
-      User.addaddress(this.formData).then((res) => {
-        this.formData.fullname = this.formData.phonenumber = this.formData.postal_code = this.formData.address_line1 = this.formData.address_line2 = this.formData.town_city = this.formData.county = this.formData.delivery_instruction = this.formData.securitycode = "";
-        this.$store.dispatch('addAddress', res.data);
-        this.$router.push('/buyeraddresssetting');
+      User.editaddress(this.formData).then((res) => {
+        document.getElementById("alat").innerHTML = "Address updated successfully";
       }).catch(errors => {
         this.errors = {};
           const err = Object.keys(errors.response.data.errors);
@@ -455,8 +464,28 @@ export default {
     },
     countryChange(event) {
       console.log(event.target.value);
-    }
-  },  
+    },
+    loadData(){
+        User.fetchAddress(this.pid)
+            .then(response=>{
+                        this.address_details = response.data;
+                        this.formData = response.data[0]; 
+                        this.formData.pid = response.data[0].id;                       
+                })
+                .catch(errors => {                    
+                        this.errors = {};
+          const err = Object.keys(errors.response.data.errors);
+          err.forEach((key)=>{
+            var strError = errors.response.data.errors[key][0];
+            this.errors[key] = strError;
+          })
+          console.log(err);                    
+                 });
+            }
+    },
+    created() {
+            this.loadData()
+        }  
 }
 
 </script>
