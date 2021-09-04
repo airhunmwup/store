@@ -82,7 +82,7 @@
 </div>
 <div class="btn-group btn-group-md" role="group" aria-label="Basic example">
                 <router-link
-                  to="/newlisting"
+                  to="/newlisting3"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                   title="add new listings"
