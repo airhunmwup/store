@@ -8,7 +8,7 @@
               Your Account
             </p>
             <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
                   to="/purchasehistory"
                   data-toggle="collapse"
@@ -18,7 +18,7 @@
                 >
                   <div class="row text-left ">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/orderimg.png" width="100%" />
+                      <img src="img/myaccount/orderimg.png" width="70%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Orders</p>
@@ -27,7 +27,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
                   to="/buyersigninsecsetting"
                   data-toggle="collapse"
@@ -37,7 +37,7 @@
                 >
                   <div class="text-left row">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/shield.png" width="100%" />
+                      <img src="img/myaccount/siginsec4.png" width="100%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Sign in & Security</p>
@@ -48,7 +48,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
                   to="/buyeraddresssetting"
                   data-toggle="collapse"
@@ -58,7 +58,7 @@
                 >
                   <div class="row text-left ">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/address.png" width="100%" />
+                      <img src="img/myaccount/address.png" width="60%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Addresses</p>
@@ -69,7 +69,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
                   to="/paymentsetting"
                   data-toggle="collapse"
@@ -79,7 +79,7 @@
                 >
                   <div class="row text-left ">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/payment.png" width="100%" />
+                      <img src="img/myaccount/payment.png" width="80%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Payment</p>
@@ -90,7 +90,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
                   to="/My message"
                   data-toggle="collapse"
@@ -100,7 +100,7 @@
                 >
                   <div class="row text-left">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/message.png" width="100%" />
+                      <img src="img/myaccount/message.png" width="70%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Message Center</p>
@@ -111,7 +111,7 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
                   to="/overview"
                   data-toggle="collapse"
@@ -121,7 +121,7 @@
                 >
                   <div class="row text-left ">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/sellershub.png" width="100%" />
+                      <img src="img/myaccount/sellershub.png" width="70%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Sellers Hub</p>
@@ -130,17 +130,17 @@
                   </div>
                 </router-link>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-3">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
-                  to="/Resolution center"
+                  to="/help"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Personal Information"
+                  title="help"
                   class="card p-3"
                 >
                   <div class="row text-left ">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/help.ico" width="100%" />
+                      <img src="img/myaccount/help.ico" width="70%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Help</p>

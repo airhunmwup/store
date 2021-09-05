@@ -20,7 +20,7 @@
                                             data-target=".navbar-collapse"
                                             class="text-dark underline font-weight-bold "
                                             title="sign in"
-                                          ><button class="rounded border-2 border-dark p-3 text-md text font-weight-bold">Sign in again <i class="fa fa-arrow-right"></i></button>
+                                          ><button class=" border-2 border-dark p-3 text-md text font-weight-bold">Sign in again <i class="fa fa-arrow-right"></i></button>
                                 </router-link>
                               </div>
                         </section>

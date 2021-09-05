@@ -3,33 +3,18 @@
 
   <!-- main content -->
   <div id="home4">
-    <div class="main-content pt-4">
+    <div class="main-content text-sm pt-2">
       <div class="container justify-content-center content-bottom">
 
-                  <span class="p-2 text-primary font-weight-normal">
-                  Home
-                  </span>>
-                  <span class="text text-primary pont-weight-normal">
-                  Help
-                  </span>>
-                  <span class="text  text-primary  pont-weight-normal">
-                  selling
-                  </span>>
-                  <span class="text font-weight-bold pont-weight-normal">
-                  Manage returns, missing items, and refunds for sellers
-                  </span>
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">Help</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">selling</a></li>
+    <li class="breadcrumb-item " aria-current="page">Manage returns, missing items, and refunds for sellers</li>
+  </ol>
+</nav>
       </div>
-      <div id="wrapper-site">
-        <div id="content-wrapper">
-          <div id="main">
-            <div class="page-home">
-              <!-- breadcrumb -->
-              <div class="container">
-                <div class="content">
-                  <!-- main content -->
-                  <div class="main-content">
-                    <div id="wrapper-site">
-                      <div id="content-wrapper">
                         <section class="page-home">
                           <div class="container">
                             <div class="row">
@@ -111,15 +96,6 @@ You can exclude certain buyers from having orders canceled automatically when yo
                             </div>
                           </div>
                         </section>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
                         <hr>
   </div>

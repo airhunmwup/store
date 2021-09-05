@@ -209,8 +209,9 @@
 
 <div class="container">
   <div class="card">
-<div class="card-body">
-      <div class="row justify-content-center">
+<div class="card-body"> <div class="row justify-content-center">
+
+
 <span v-for="listings of newListings"
             :key="listings.id"
             v-bind:data-id="listings.id" class="list-item list-group-item-action col-lg-3 col-sm-3 col-xs-6 list-group" style="width: 10rem;">
@@ -222,14 +223,36 @@
               data-target=".navbar-collapse"
               @click="product_detail_link"
             >
-                <img v-bind:src="'img/product/' + listings.product_image1" class="rounded img-fluid " style="width: 100%" alt="Product" v-bind:data-id="listings.id" />
-  <div class="card-body">
-    <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
-    <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
-  </div>
+              <div
+                v-bind:data-id="listings.id"
+                style="width: 11rem"
+                href="#"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                @click="product_detail_link"
+              >
+                <img
+                  v-bind:src="'img/product/' + listings.product_image1"
+                  class="rounded img-fluid"
+                  style="width: 100%"
+                  alt="Product"
+                  v-bind:data-id="listings.id"
+                />
+                <div class="card-body">
+                  <p class="title text-dark" v-bind:data-id="listings.id">
+                    {{ listings.product_name }}
+                  </p>
+                  <p
+                    class="font-weight-bold text-dark"
+                    v-bind:data-id="listings.id"
+                  >
+                    £{{ listings.product_price }}
+                  </p>
+                </div>
+              </div>
             </div>
-</span>
-      </div>
+            </span>
+          </div>
 </div>
 </div>
 </div>
@@ -407,6 +430,7 @@
     </div>
   </section>
 </template>
+
 
 
 <script>

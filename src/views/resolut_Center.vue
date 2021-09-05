@@ -1,30 +1,22 @@
 <template>
-  <!-- main content -->
-
-  <!-- main content -->
   <div>
-    <div class=" pt-4">
-      <div id="">
-              <!-- breadcrumb -->
               
                 <!-- main content -->
-                      <section class="">
+                      <section class="text-sm">
                         <div class="container">
-      <div class="container justify-content-center content-bottom">
-
-                  <span class="p-2 text-primary font-weight-normal">
-                  Home
-                  </span>>
-                  <span class="text font-weight-bold pont-weight-normal">
-                  Resolution center
-                  </span>
-      </div>
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
+    <li class="breadcrumb-item text-primary" aria-current="page">Help</li>
+    <li class="breadcrumb-item active" aria-current="page">Resolution center</li>
+  </ol>
+</nav>
                             
                           <div class="row">
                             <div
                               class="col-lg-10col-md-10 pt-3 pl-5 col-sm-10"
                             >
-                              <p class="text-dark  text-left h6 font-weight-bold">
+                              <p class="text-dark  text-left h4 font-weight-bold">
                                 Resolution Center
                               </p>
                             </div>
@@ -121,8 +113,5 @@
                           </div>
                         </div>
                       </section>
-      </div>
-<hr>
-    </div>
   </div>
 </template>

@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <!-- main content -->
-    <!-- breadcrumb -->
+        <!-- breadcrumb -->
 
         <!-- main -->
   <div class="row p-4 text-sm">
@@ -413,24 +413,5 @@
                                   />
                                 
                   </div>
-                </div>
-                <div class="">
-                  <router-link
-                    to="/checkoutpayment"
-                    data-toggle="collapse"
-                    data-target=".navbar-collapse"
-                    title="Continue"
-                  >
-                    <button type="button" class="btn btn-warning border">
-                      Add address
-                    </button></router-link
-                  >
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 </template>
