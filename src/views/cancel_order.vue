@@ -1,23 +1,19 @@
 <template>
   <!-- main content -->
 
-  <!-- main content -->
-  <div id="home4">
-    <div class="main-content pt-4">
-          <div id="main">
+    <div class="main-content text-sm pt-4">
             <div class="page-home">
               <!-- breadcrumb -->
       <div class="container justify-content-center font-weight-bold content-bottom">
 
-                  <span class="p-2 text-primary font-weight-normal">
-                  Home
-                  </span>>
-                  <span class="text text-primary font-weight-normal">
-                  Resolution center
-                  </span>>
-                  <span class="text font-weight-bold">
-                  How sellers can cancel an order
-                  </span>
+                            
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">Resolution center</a></li>
+    <li class="breadcrumb-item text-primary" aria-current="page">How sellers can cancel an order</li>
+  </ol>
+</nav>
       </div>
                   <!-- main content -->
                   <div class="main-content">
@@ -162,8 +158,5 @@
                         </section>
                   </div>
             </div>
-          </div>
     </div>
-                      <hr>
-  </div>
 </template>

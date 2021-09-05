@@ -1,11 +1,6 @@
 <template>
-  <!-- main content -->
-
-  <!-- main content -->
   <div>
     <div class=" pt-4">
-      <div id="">
-              <!-- breadcrumb -->
               
                 <!-- main content -->
                       <section class="">
@@ -21,8 +16,8 @@
                                 We're here to help!
                               </p>
                             </div>
-                            <div class="row pt-5">
-                              <div class="col-lg-6 col-md-6 col-sm-8">
+                            <div class="row pt-4">
+                              <div class="col-lg-6 p-3 col-md-6 col-sm-8">
                               <div class="card border p-3">
                                 <a class="h6 text-primary" href="#" data-bs-toggle="collapse" data-bs-target="#collapseCancelanorder" aria-expanded="false" aria-controls="collapseCancelanorder">
                                   Cancel an order
@@ -36,10 +31,10 @@
                             </div>
                               </div>
                               </div>
-                              <div class="col-lg-6 col-md-6 col-sm-8">
+                              <div class="col-lg-6 p-3 col-md-6 col-sm-8">
                               <div class="card border p-3">
                                 <a class="h6 text-primary" href="#" data-bs-toggle="collapse" data-bs-target="#collapsemanagebuyer" aria-expanded="false" aria-controls="collapsemanagebuyer">
-                                  Manage your buyer's requests and disputes
+                                  Manage your requests and disputes
                                 </a>
                               <div class="collapse" id="collapsemanagebuyer">
                                 <div class="card-body">
@@ -65,29 +60,36 @@
                               </div>
                               </div>
                             </div>
+                            <div
+                              class="col-lg-10col-md-10 pt-3 pl-5 col-sm-10"
+                            >
+                              <p class="text-dark  text-left h3 font-weight-bold">
+                               Do you need futher to help?
+                              </p>
+                            </div>
                             <div class="row pt-2">
                               <div class="col-lg-6 col-md-6 col-sm-8">
                               <div class="card border p-3">
+          <router-link
+                              to="/Resolution Center"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="Resolution Center"
+                            >
                                 <p class="h4 text-primary">
-                                  <span class="zmdi zmdi-comment-dots"></span> Contact Support
+                                  <span class="zmdi zmdi-pin-help"></span> Visit resolution Center
                                 </p>
-                                <p class="text-sm">
-                                  Pin: #1029
-                                </p>
-                                <p class="text-sm">
-                                  Pin: #1029
-                                </p>
+                                
+                <p class="text-sm text-dark p-3">
+                  <b>Need more help?:</b> Learn more about resolving issues as a seller or resolving issues as a buyer.
+                </p></router-link>
                               </div>
                               </div>
                             </div>
                           </div>
                         </div>
                       </section>
-      </div>
 
-                <p class="text-sm text-dark p-3">
-                  <b>Need more help?:</b> Learn more about resolving issues as a seller or resolving issues as a buyer.
-                </p>
     </div>
   </div>
 </template>

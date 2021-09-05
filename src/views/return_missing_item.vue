@@ -1,29 +1,25 @@
 <template>
   <!-- main content -->
 
-  <!-- main content -->
-  <div id="home4">
-    <div class="main-content pt-4">
+    <div class="main-content text-sm pt-2">
       <div class="container justify-content-center font-weight-bold content-bottom">
 
-                  <span class="p-2 text-primary font-weight-normal">
-                  Home
-                  </span>>
-                  <span class="text text-primary font-weight-normal">
-                  Resolution center
-                  </span>>
-                  <span class="text font-weight-bold">
-                  Returns, missing items, and refunds for buyers
-                  </span>
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">Resolution center</a></li>
+    <li class="breadcrumb-item " aria-current="page">Returns, missing items, and refunds for buyers</li>
+  </ol>
+</nav>
       </div>
           <div id="main">
             <div class="page-home">
               <!-- breadcrumb -->
-                                <p class="p-4 h1 text-dark">Customer service</p>
+                                <p class="p-4 h3 text-dark">Customer service</p>
                         <section class="page-home p-3" style="background-color: orange;">
                               <div class="col-lg-10 pt-3 pb-3 pl-5 col-sm-10">
                                 <small class="pl-4 text-primary font-weight-bold">5 min Overview</small>
-                                <p class="pl-5 h1 text-dark">Returns, missing items, and refunds for buyers</p>
+                                <p class="pl-5 h4 text-dark">Returns, missing items, and refunds for buyers</p>
                                 <p class="text-dark font-weight-bold">In most cases, if your order doesn’t arrive, or if it’s faulty or damaged, you’ll get your money back or a replacement. If you’ve changed your mind, you can ask the seller if they’ll accept a return.</p>
                               </div>
                         </section>
@@ -145,6 +141,4 @@ If the seller hasn’t fixed things for you in 3 business days, let us know and 
             </div>
           </div>
     </div>
-                      <hr>
-  </div>
 </template>

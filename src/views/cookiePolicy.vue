@@ -2,49 +2,20 @@
   <!-- main content -->
 
   <!-- main content -->
-  <div id="home4">
-    <div class="main-content pt-4">
-      <div id="wrapper-site">
-        <div id="content-wrapper">
-          <div id="main">
-            <div class="page-home">
-              <!-- breadcrumb -->
-              <div class="container">
-                <div class="content">
-                  <!-- main content -->
-                  <div class="main-content">
-                    <div id="wrapper-site">
-                      <div id="content-wrapper">
+              <div class="container text-sm text-dark">
+                
                         <section class="page-home">
-                          <div class="container">
                             <div class="row">
-                              <div class="col-lg-10 pt-5 pl-5 col-sm-10">
-                                <small class="pl-4 text-info">5 min article</small>
-                                <h1 class="title-page pl-5">Cookies, web beacons, and similar technology ("Cookie Notice")</h1>
+                              <div class="col-lg-11 pt-5 pl-5 col-sm-11">
+                                <small class="pl-4 text-primary">5 min article</small>
+                                <p class="h3 pl-4">Cookies, web beacons, and similar technology ("Cookie Notice")</p>
                               </div>
+                              <hr>
                               <div class="col-lg-4 col-sm-4 pb-3">
-                                <div
-                                  id="search_widget"
-                                  class="align-items-center justify-content-left d-flex"
-                                >
-                                  <form method="get" action="#">
-                                    <input
-                                      type="text"
-                                      name="s"
-                                      value=""
-                                      placeholder="Help ..."
-                                      class="ui-autocomplete-input large col-12"
-                                      autocomplete="off"
-                                    />
-                                    <button type="submit">
-                                      <i class="fa fa-question"></i>
-                                    </button>
-                                  </form>
-                                </div>
                                 <ul class="pt-3">
-                                    <li class="text-info"><a href="#Introduction">1. Information regarding the technologies we use</a></li>
-                                    <li class="text-info"><a href="#About REJEE">2. Your Choices</a></li>
-                                    <li class="text-info"><a href="#Using REJEE">3. Do Not Track</a></li>
+                                    <li class="text-primary"><a href="#Introduction">1. Information regarding the technologies we use</a></li>
+                                    <li class="text-primary"><a href="#About REJEE">2. Your Choices</a></li>
+                                    <li class="text-primary"><a href="#Using REJEE">3. Do Not Track</a></li>
                                 </ul>
                               </div>
                               <div class="col-lg-8 col-sm-8">
@@ -527,17 +498,6 @@
                                 </div>
                               </div>
                             </div>
-                          </div>
                         </section>
-                      </div>
-                    </div>
-                  </div>
-                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
 </template>

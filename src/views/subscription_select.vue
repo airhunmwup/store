@@ -2,24 +2,18 @@
   <!-- main content -->
 
   <!-- main content -->
-    <div class="main-content box pt-4">
+    <div class="main-content text-sm box pt-4">
       <div class="container justify-content-center font-weight-bold content-bottom">
 
-                  <span class="p-2 text-primary font-weight-normal">
-                  Home
-                  </span>>
-                  <span class="text text-primary font-weight-normal">
-                  My REJEE Stores
-                  </span>>
-                  <span class="text  text-primary  font-weight-normal">
-                  My Account
-                  </span>>
-                  <span class="text text-primary font-weight-normal">
-                  Subscriptions
-                  </span>>
-                  <span class="text font-weight-normal">
-                  Subscribe
-                  </span>
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">My REJEE Stores</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">My Account</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">Subscriptions</a></li>
+    <li class="breadcrumb-item " aria-current="page">Subscribe</li>
+  </ol>
+</nav>
       </div>
       <div id="wrapper-site">
         <div id="content-wrapper">

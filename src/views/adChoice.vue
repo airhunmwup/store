@@ -1,12 +1,7 @@
 <template>
-    <div id="page-404" class="blog">
     <!-- main content -->
     
-    <!-- main content -->
-    <div class="main-content">
-        <div id="wrapper-site">
-            <div id="content-wrapper">
-                    <div class="container pt-3">
+                    <div class="container text-sm pt-3">
                         <div class="row center">
                             <div class="col-lg-10 col-sm-12 text-left">
 
@@ -36,10 +31,5 @@
                             </div>
                         </div>
                      </div>
-            </div>
-        </div>
-    </div>
-<hr>
-    </div>
 
 </template>
