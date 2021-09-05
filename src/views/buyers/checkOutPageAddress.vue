@@ -411,23 +411,7 @@
                                     type="text-sm"
                                     placeholder="1234"
                                   />
-                                </div>
-                              </div>
-                                            <div class="">
-                                            <router-link
-                                to="/checkoutpayment"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Continue"
-                              >
-                                <button type="button" class="text-sm btn btn-warning border">Add address</button></router-link
-                              >
-                                        </div>
-                            </form>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
+                                
                   </div>
                 </div>
                 <div class="">

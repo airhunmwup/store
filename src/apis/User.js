@@ -87,11 +87,11 @@ export default{
     },
 
     upload(data){
-        return Api().post("/upload", data);
+        return Api().post("/uploader", data);
     },
 
-    image(){
-        return Api().get("/images");
+    createlisting(data){
+        return Api().post("/createlisting", data);
     }
 
 };
