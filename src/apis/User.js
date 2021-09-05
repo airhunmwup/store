@@ -92,6 +92,15 @@ export default{
 
     createlisting(data){
         return Api().post("/createlisting", data);
+    },
+
+    getlistings(userid){
+        return Api().post("/getlistings/"+ userid);
+    },
+
+    productdelete(id){
+        return Api().delete("/productdelete/" + id);
     }
+
 
 };

@@ -45,7 +45,7 @@ Route::get('/images', [ImageuploadController::class, 'index']);
 //Protected Routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::put('/products/{id}', [ProductsController::class, 'update']);
-    Route::delete('/products/{id}', [ProductsController::class, 'destroy']);
+    Route::delete('/productdelete/{id}', [ProductsController::class, 'destroy']);
     Route::post('/wishlist', [WishlistController::class, 'store']);
     Route::post('/checkwishlist', [WishlistController::class, 'show']);
     Route::post('/watcherCount', [WishlistController::class, 'index']);
@@ -61,6 +61,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/editAddress', [AddressbuyersController::class, 'edit']);
     Route::post('/deleteaddress', [AddressbuyersController::class, 'destroy']);
     Route::post('/createlisting', [ProductsController::class, 'store']);
+    Route::post('/getlistings/{userid}', [ProductsController::class, 'getlistins']);
     Route::post('/uploader', [ProductsController::class, 'imageUploader']);
 });
 

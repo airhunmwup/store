@@ -125,6 +125,19 @@ class ProductsController extends Controller
         return Products::find($id);
     }
 
+
+     /**
+     * Display the specified resource.
+     *
+     * @param  int  $id
+     * @return \Illuminate\Http\Response
+     */
+    public function getlistins($userid)
+    {
+        //
+        return Products::where('product_userid', $userid)->get();
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
