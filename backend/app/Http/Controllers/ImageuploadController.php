@@ -21,7 +21,7 @@ class ImageuploadController extends Controller
         //
         $images = array();
         $path = public_path('storage/images/');
-        $files = \File::allFiles($path);
+        $files = File::allFiles($path);
 
         foreach ($files as $key => $file) {
             // loop through all images...

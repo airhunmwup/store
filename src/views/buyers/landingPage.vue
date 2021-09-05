@@ -183,7 +183,7 @@
               data-target=".navbar-collapse"
               @click="product_detail_link"
             >
-                <img v-bind:src="'img/product/' + listings.product_image1" class="rounded img-fluid " style="width: 100%" alt="Product" v-bind:data-id="listings.id" />
+                <img v-bind:src="'http://127.0.0.1:8000/storage/images/' + listings.product_image1" class="rounded img-fluid " style="width: 100%" alt="Product" v-bind:data-id="listings.id" />
   <div class="card-body">
     <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
     <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
@@ -232,7 +232,7 @@
                 @click="product_detail_link"
               >
                 <img
-                  v-bind:src="'img/product/' + listings.product_image1"
+                  v-bind:src="'http://127.0.0.1:8000/storage/images/' + listings.product_image1"
                   class="rounded img-fluid"
                   style="width: 100%"
                   alt="Product"
