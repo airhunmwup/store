@@ -232,7 +232,7 @@
                 @click="product_detail_link"
               >
                 <img
-                  v-bind:src="'http://127.0.0.1:8000/storage/images/' + listings.product_image1"
+                  v-bind:src="API_BASE_URL + listings.product_image1"
                   class="rounded img-fluid"
                   style="width: 100%"
                   alt="Product"
@@ -436,13 +436,15 @@
 <script>
 
 import User from "../../apis/User";
+import Constants from "../../common/constants";
 
 export default {
   name: "landingPage",
   data() {
     return {
       categoryList: [],
-      newListings:[]
+      newListings:[],
+      API_BASE_URL: Constants.API_BASE_URL,
     };
   },
   methods: {
