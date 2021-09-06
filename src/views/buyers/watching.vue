@@ -68,7 +68,7 @@
     </div>
     <div class="col-8 col-lg-5">
                       <p class="h4 mt-4 mt-5 text-info">
-                        {{list['product_name']}}hhhhhhhhhhhhhhhh
+                        {{list['product_name']}}
                       </p>
                           <p class="value text-md text-dark font-weight-bold">
                             £{{list['product_price']}}
