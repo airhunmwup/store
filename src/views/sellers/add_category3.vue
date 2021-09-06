@@ -12,8 +12,8 @@
                                 <div class="card">
   <div class="card-header text-center text-dark align-content-center">
   <div class="row">
-    <div class="col-12 col-lg-6">
-        <p class="text-left text-dark font-weight-bold h6 m-3">Select Subcategory </p>
+    <div class="col-6">
+        <p class="text-left text-dark font-weight-bold h6 m-3">Select Category </p>
     </div>
     <div class="col-6 col-xs-12">
             <form method="post" class="std" id="customer-form">
@@ -26,7 +26,7 @@
                   type="text"
                   id="name"
                   name="name"
-                  placeholder="Find subcategory..."
+                  placeholder="Find category"
                   class="form-control border"
                   value=""
                 />
@@ -46,6 +46,22 @@
 
   </div>
   <ul class="list-group list-group-flush">
+    <li v-for="category in categories" v-bind:key="category.id" class="list-group-item border">
+  <div class="row">
+    <div class="col-sm">
+      {{category.cat_name}}
+    </div>
+    <div class="col-sm">
+      <p class="text-right text-xl">
+                <router-link
+                  v-bind:to="'/addsubcategory3/' + category.id"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
+                </router-link></p>
+    </div>
+  </div>
+</li>
     <li class="list-group-item border">
   <div class="row">
     <div class="col-sm">
@@ -54,7 +70,7 @@
     <div class="col-sm">
       <p class="text-right text-xl">
                 <router-link
-                  to="/newlisting3"
+                  to="/addsubcategory"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                 ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
@@ -70,7 +86,7 @@
     <div class="col-sm">
       <p class="text-right text-xl">
                 <router-link
-                  to="/newlisting3"
+                  to="/addsubcategory"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                 ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
@@ -85,7 +101,7 @@
     <div class="col-sm">
       <p class="text-right text-xl">
                 <router-link
-                  to="/newlisting"
+                  to="/addsubcategory"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                 ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
@@ -103,3 +119,26 @@
 
 
 </template>
+<script>
+import User from '../../apis/User';
+    export default {
+        data(){
+            return{
+                categories: {},
+            }
+        },
+        methods:{
+            
+            loadCategories(){
+                User.getCategoryList()
+                .then(response=>{
+                        this.categories = response.data;
+                     });
+            }
+        },
+        created() {
+            this.loadCategories()
+        }
+    }
+</script>
+

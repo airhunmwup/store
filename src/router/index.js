@@ -55,7 +55,9 @@ import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
 import create_listing3 from '../views/sellers/create_listing3.vue'
 import add_category from '../views/sellers/add_category.vue'
+import add_category3 from '../views/sellers/add_category3.vue'
 import add_subcategory from '../views/sellers/add_subcategory.vue'
+import add_subcategory3 from '../views/sellers/add_subcategory3.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
 
 import communication_settings from '../views/sellers/communication_settings.vue'
@@ -157,6 +159,12 @@ const routes = [{
         path: '/newlisting3',
         name: 'newlisting3',
         component: create_listing3,
+    },
+    {
+        path: '/newlisting3/:sid',
+        name: 'newlisting3',
+        component: create_listing3,
+        props: true,
     },
     {
         path: '/buyerreturns',
@@ -440,9 +448,20 @@ const routes = [{
         component: add_category,
     },
     {
+        path: '/addcategory3',
+        name: 'addcategory3',
+        component: add_category3,
+    },
+    {
         path: '/addsubcategory',
         name: 'addsubcategory',
         component: add_subcategory,
+    },
+    {
+        path: '/addsubcategory3/:cid',
+        name: 'addsubcategory3',
+        component: add_subcategory3,
+        props: true,
     },
     {
         path: '/Sellers can cancel order',

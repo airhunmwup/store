@@ -12,4 +12,8 @@ class Categories extends Model
     protected $fillable = [
         'cat_name'
     ];
+    public function subcategories()
+    {
+        return $this->hasMany(Subcategories::class);
+    }
 }

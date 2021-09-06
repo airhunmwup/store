@@ -38,6 +38,8 @@ Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 //Static Public Routes
 Route::get('/category', [CategoryController::class, 'index']);
 Route::get('/sub_category', [SubcategoryController::class, 'index']);
+Route::get('/subcategory/{id}', [SubcategoryController::class, 'fetch']);
+Route::get('/subcat/{id}', [SubcategoryController::class, 'get']);
 
 Route::post('/category', [CategoryController::class, 'store']);
 

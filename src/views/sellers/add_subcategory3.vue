@@ -46,6 +46,22 @@
 
   </div>
   <ul class="list-group list-group-flush">
+    <li v-for="subcategory in subcategories" v-bind:key="subcategory.id" class="list-group-item border">
+  <div class="row">
+    <div class="col-sm">
+      {{subcategory.sub_catname}}
+    </div>
+    <div class="col-sm">
+      <p class="text-right text-xl">
+                <router-link
+                  v-bind:to="'/newlisting3/' + subcategory.id"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
+                </router-link></p>
+    </div>
+  </div>
+</li>
     <li class="list-group-item border">
   <div class="row">
     <div class="col-sm">
@@ -103,3 +119,26 @@
 
 
 </template>
+<script>
+import User from '../../apis/User';
+    export default {
+        props: ['cid'],
+        data(){
+            return{
+                subcategories: {},
+            }
+        },
+        methods:{
+            
+            loadSubCategories(){
+                User.getSubCategoryList(this.cid)
+                .then(response=>{
+                        this.subcategories = response.data;
+                     });
+            }
+        },
+        created() {
+            this.loadSubCategories()
+        }
+    }
+</script>

@@ -18,9 +18,15 @@ export default{
     getUser(){
         return Api().get("/user");
     },
-
     getCategoryList(){
         return Api().get("/category");
+    },
+    
+    getSubCategoryList(id){
+        return Api().get("/subcategory/" + id);
+    },
+    catInfo(id){
+        return Api().get("/subcat/" + id);
     },
 
     getNewListings(){

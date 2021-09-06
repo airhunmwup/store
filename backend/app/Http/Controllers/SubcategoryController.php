@@ -16,7 +16,16 @@ class SubcategoryController extends Controller
     {
         return Subcategories::all();
     }
-
+    public function fetch($id)
+    {
+        $subcategories = Subcategories::where('cat_id', $id)->get();
+        return $subcategories;
+    }
+    public function get($id)
+    {
+        $subcategories = Subcategories::where('id', $id)->with('categories')->get();
+        return $subcategories;
+    }
     /**
      * Show the form for creating a new resource.
      *

@@ -25,14 +25,15 @@
     <div class="col-12 col-lg-10 p-2">
     <label class="font-weight-bold">Category</label>
                 <router-link
-                  to="/addcategory"
+                  to="/addcategory3"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                   title="Select category"
                 >
     <p class="ml-4 btn btn-sm border btn-light"><span class="fa fa-angle-double-right rounded"></span>
                 </p></router-link>
-    <p class="ml-4 btn">Category name, Its sub category</p>
+    <p class="ml-4 btn" v-if="cat_info[0]">{{ cat_info[0].categories.cat_name }}, {{ cat_info[0].sub_catname }}</p>
+   <p class="ml-4 btn" v-else>Categories, Subcategories</p>
     </div>
     <div class="col-12 p-2">
   <div class="form-group">
@@ -43,8 +44,9 @@
     <button type="file" @click="triggerFileUpload" class="btn btn-lg btn-light border rounded-circle"><span class="fa fa-plus"></span></button>
     </div>
     <div class="row">
-    <div class="col-6 col-lg-3" v-for="(img, i) in formData.imageList" :key=i>
+    <div style="text-align:center;" class="col-6 col-lg-3" v-for="(img, i) in formData.imageList" :key=i>
         <img :src="img" style="width: 10rem">
+        <a href="#" @click="removeImg(i)" class="text-danger">remove</a>
     </div>
     <div class="col-6 col-lg-3">
         <img src="img/product/6.jpg" style="width: 10rem"/>
@@ -227,8 +229,10 @@
 <script>
 import User from '../../apis/User';
 export default {
+  props: ['sid'],
   data() {
     return {
+      cat_info: {},
       imageData: '',      
       formData: {
         user_id: '',
@@ -271,7 +275,28 @@ export default {
     triggerFileUpload(){
         document.getElementById("imageFile").click()
     },
-  },  
+    removeImg(i){
+     this.formData.imageList.splice(i, 1);
+    },
+    getCatInfo(){
+        User.catInfo(this.sid)
+            .then(response=>{               
+                this.cat_info = response.data;
+                console.log(this.cat_info[0]);
+                }).catch(errors => {                    
+                        this.errors = {};
+          const err = Object.keys(errors.response.data.errors);
+          err.forEach((key)=>{
+            var strError = errors.response.data.errors[key][0];
+            this.errors[key] = strError;
+          })
+          console(err);                    
+                 });
+            }
+  }, 
+  created() {
+            this.getCatInfo()
+        } 
 }
 
 </script>
