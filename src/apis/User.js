@@ -29,6 +29,10 @@ export default{
         return Api().get("/subcat/" + id);
     },
 
+    getSubCategoryList(){
+        return Api().get("/sub_category");
+    },
+
     getNewListings(){
         return Api().get("/newlistings");
     },
@@ -86,6 +90,23 @@ export default{
 
     changepassword(data){
         return Api().post("/changepassword", data);
+    },
+
+    upload(data){
+        return Api().post("/uploader", data);
+    },
+
+    createlisting(data){
+        return Api().post("/createlisting", data);
+    },
+
+    getlistings(userid){
+        return Api().post("/getlistings/"+ userid);
+    },
+
+    productdelete(id){
+        return Api().delete("/productdelete/" + id);
     }
+
 
 };

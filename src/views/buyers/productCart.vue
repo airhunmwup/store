@@ -18,7 +18,7 @@
             <div class="row">
               <div class="col-12 col-lg-4">
                 <p class="text-xs text-dark">Seller: Sellers name</p>
-                <img class="" :src="'img/product/' + cart['product_image1']" />
+                <img class="" :src="API_BASE_URL + cart['product_image1']" />
               </div>
               <div class="col-12 col-lg-4">
                 <p class="mt-4 text-lg text-dark">
@@ -101,10 +101,13 @@
 </template>
 
 <script>
+import Constants from "../../common/constants";
 export default {
   name: "productCart",
   data() {
-    return {};
+    return {
+      API_BASE_URL: Constants.API_BASE_URL,
+    };
   },
   methods: {
     removeBasket: function (id) {

@@ -10,16 +10,24 @@ class Products extends Model
     use HasFactory;
 
     protected $fillable = [
+        'product_subcat',
+        'product_userid',
         'product_name',
+        'product_condition',
+        'product_desc',
+        'product_price',
         'product_image1',
         'product_image2',
         'product_image3',
         'product_image4',
-        'product_image5',
-        'product_price',
-        'product_condition',
-        'product_brand',
-        'product_location',
+        'product_shipping_type',
+        'product_shipping_rate',
+        'product_shipping_cost',
+        'product_package_type',
+        'product_package_weight',
+        'product_package_length',
+        'product_package_width',
+        'product_total',
 
     ];
 }

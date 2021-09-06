@@ -2,36 +2,24 @@
   <!-- main content -->
 
   <!-- main content -->
-  <div id="home4">
-    <div class="main-content pt-4">
+    <div class="main-content text-sm pt-2">
       <div class="container justify-content-center  font-weight-bold content-bottom">
 
-                  <span class="p-2 text-primary font-weight-normal">
-                  Home
-                  </span>>
-                  <span class="text text-primary font-weight-normal">
-                  Help
-                  </span>>
-                  <span class="text  text-primary  font-weight-normal">
-                  selling
-                  </span>>
-                  <span class="text font-weight-bold font-weight-normal">
-                  Creating a listing
-                  </span>
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">Help</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">selling</a></li>
+    <li class="breadcrumb-item " aria-current="page">Creating a listing</li>
+  </ol>
+</nav>
       </div>
-      <div id="wrapper-site">
-          <div id="main">
-            <div class="page-home">
-              <!-- breadcrumb -->
-                  <!-- main content -->
-                    <div id="wrapper-site">
-                      <div id="content-wrapper">
                         <section class="page-home">
                           <div class="container">
                             <div class="row">
-                              <div class="col-lg-10 pt-5 pl-5 pb-4 col-sm-10">
+                              <div class="col-lg-10 pt-3 pl-5 pb-2 col-sm-10">
                                 <small class="pl-4 text-primary font-weight-bold">3 min article</small>
-                                <p class="h1 font-weight-bold text-dark ">Creating a listing</p>
+                                <p class="h3 font-weight-bold text-dark ">Creating a listing</p>
                               </div>
                               <hr>
                               <div class="col-lg-4 col-sm-4 underline pb-3">
@@ -179,11 +167,5 @@
                             </div>
                           </div>
                         </section>
-                      </div>
-                    </div>
-            </div>
-          </div>
-      </div>
     </div>
-  </div>
 </template>

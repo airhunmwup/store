@@ -2,26 +2,21 @@
   <!-- main content -->
 
   <!-- main content -->
-  <div id="home4">
-        <div id="content-wrapper">
-          <div id="main">
-            <div class="page-home">
+            <div class="page-home text-sm">
               <!-- breadcrumb -->
       <div class="container justify-content-center font-weight-bold content-bottom">
 
-                  <span class="p-2 text-primary font-weight-normal">
-                  Home
-                  </span>>
-                  <span class="text text-primary font-weight-normal">
-                  Resolution center
-                  </span>>
-                  <span class="text font-weight-bold">
-                  Resolving unpaid items with buyers
-                  </span>
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">Resolution center</a></li>
+    <li class="breadcrumb-item " aria-current="page">Resolving unpaid items with buyers</li>
+  </ol>
+</nav>
       </div>
                   <!-- main content -->
                   <div class="main-content">
-                                <p class="p-4 h1 text-dark">Customer service</p>
+                                <p class="p-4 h3 text-dark">Customer service</p>
                               <div class="col-lg-12 pt-4 pl-5 pb-3 col-sm-12"  style="background-color: orange;">
                                 <small class="pl-4 text-primary font-weight-bold">2 min Overview</small>
                                 <h1 class="title-page pl-5">Resolving unpaid items with buyers</h1>
@@ -120,8 +115,4 @@
                         </section>
                   </div>
             </div>
-          </div>
-        </div>
-                      <hr>
-  </div>
 </template>

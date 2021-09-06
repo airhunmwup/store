@@ -2,16 +2,16 @@
   <!-- main content -->
 
   <!-- main content -->
-  <div id="home4">
-    <div class="main-content pt-4">
+  <div id="home4" class="text-sm">
+    <div class="main-content pt-2">
       <div class="container justify-content-center  font-weight-bold content-bottom">
-
-                  <span class="p-2 text-primary font-weight-normal">
-                  Home
-                  </span>>
-                  <span class="text font-weight-bold font-weight-normal">
-                  User Agreement
-                  </span>
+                
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+    <li class="breadcrumb-item " aria-current="page">User Agreement</li>
+  </ol>
+</nav>
       </div>
             <div class="page-home">
               <!-- breadcrumb -->

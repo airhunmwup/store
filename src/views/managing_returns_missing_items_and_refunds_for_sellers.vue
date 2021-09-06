@@ -2,24 +2,18 @@
   <!-- main content -->
 
   <!-- main content -->
-  <div id="home4">
+  <div class="text-sm">
       <div class="container justify-content-center font-weight-bold content-bottom">
 
-                  <span class="p-2 text-primary font-weight-normal">
-                  Home
-                  </span>>
-                  <span class="text text-primary font-weight-normal">
-                  Help
-                  </span>>
-                  <span class="text  text-primary  font-weight-normal">
-                  selling
-                  </span>>
-                  <span class="text font-weight-bold font-weight-normal">
-                  Manage returns, missing items, and refunds for sellers
-                  </span>
+<nav aria-label="breadcrumb" class="d-xs-none">
+  <ol class="breadcrumb text-xs">
+    <li class="breadcrumb-item text-primary"><a href="#">Home</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">Help</a></li>
+    <li class="breadcrumb-item text-primary"><a href="#">selling</a></li>
+    <li class="breadcrumb-item " aria-current="page">Manage returns, missing items, and refunds for sellers</li>
+  </ol>
+</nav>
       </div>
-    <div class="main-content pt-4">
-          <div id="main">
             <div class="page-home pt-3">
               <!-- breadcrumb -->
                   <!-- main content -->
@@ -140,8 +134,5 @@
                           </div>
                         </section>
             </div>
-          </div>
-    </div>
-                        <hr>
   </div>
 </template>

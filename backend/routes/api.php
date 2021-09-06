@@ -7,6 +7,7 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\InstockController;
 use App\Http\Controllers\AddressbuyersController;
+use App\Http\Controllers\ImageuploadController;
 use App\Models\Addressforbuyers;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -42,12 +43,13 @@ Route::get('/subcategory/{id}', [SubcategoryController::class, 'fetch']);
 Route::get('/subcat/{id}', [SubcategoryController::class, 'get']);
 
 Route::post('/category', [CategoryController::class, 'store']);
+Route::get('/images', [ImageuploadController::class, 'index']);
 
 //Protected Routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/products', [ProductsController::class, 'store']);
     Route::put('/products/{id}', [ProductsController::class, 'update']);
-    Route::delete('/products/{id}', [ProductsController::class, 'destroy']);
+    Route::delete('/productdelete/{id}', [ProductsController::class, 'destroy']);
     Route::post('/wishlist', [WishlistController::class, 'store']);
     Route::post('/checkwishlist', [WishlistController::class, 'show']);
     Route::post('/watcherCount', [WishlistController::class, 'index']);

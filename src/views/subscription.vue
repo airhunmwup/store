@@ -3,7 +3,7 @@
 
   <!-- main content -->
   <div>
-    <div class="box pt-4">
+    <div class="box pt-2 text-sm">
               <!-- breadcrumb -->
               
                 <!-- main content -->

@@ -1,7 +1,6 @@
 import Vue from "vue";
 import Vuex from "vuex";
 import router from '../router/index'
-import Router from 'vue-router'
 import User from "../apis/User";
 
 Vue.use(Vuex);
@@ -18,6 +17,8 @@ export const store = new Vuex.Store({
         basket: JSON.parse(localStorage.getItem('basket')) ? JSON.parse(localStorage.getItem('basket')) : [],
         basketTotal: localStorage.getItem('basketTotal') ? localStorage.getItem('basketTotal') : 0,
         address: '',
+        setCategoryList: [],
+        setSubCategoryList: [],
     },
     getters: {
         isLoggedIn: state => {
@@ -34,6 +35,12 @@ export const store = new Vuex.Store({
         login: state => {
             state.token = localStorage.getItem("token");
             state.isLoggedIn = localStorage.getItem('isLoggedIn');
+        },
+        setCategoryList: (state, payload) => {
+            state.setCategoryList = payload;
+        },
+        setSubCategoryList: (state, payload) => {
+            state.setSubCategoryList = payload;
         },
         userloginInfo: (state, payload) => {    
             state.currentUser = payload;
@@ -136,9 +143,31 @@ export const store = new Vuex.Store({
             User.mywishlist(payload).then((res) => {
                 context.commit('showWishlist', res.data);
                 context.dispatch('getAddress', payload);
+                context.dispatch('setCategoryList');
               }).catch(err => {
                 console.log(err);
               });
+        },
+        setCategoryList: (context) => {
+            User.getCategoryList()
+            .then((response) => {
+            context.commit('setCategoryList', response.data);
+            context.dispatch("setSubCategoryList");
+            })
+            .catch((errors) => {
+            console.log(errors);
+            console.log("cat list info api call error");
+            });
+        },
+        setSubCategoryList: (context) => {
+            User.getSubCategoryList()
+            .then((response) => {
+            context.commit('setSubCategoryList', response.data);
+            })
+            .catch((errors) => {
+            console.log(errors);
+            console.log("cat list info api call error");
+            });
         },
         login: context => {
             context.commit('login');

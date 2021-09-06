@@ -158,15 +158,16 @@
       </li>
 
       <li class="nav-item pt-3 ">
-          
-        <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        
+          <router-link
+                              to="/help"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="help"
+                            >  
+        <a class="nav-link text-dark font-weight-bold " href="#">
           <i class="fa fa-question-circle"></i> Help
-        </a>
-        <div class="dropdown-menu text-sm text-dark font-weight-bold" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Resolution Center</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><span class="fa fa-phone"></span> Contact Support</a>
-        </div>
+        </a></router-link>
       </li>
       <li class="nav-item ">
           <router-link

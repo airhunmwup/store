@@ -53,7 +53,6 @@ import order_details from '../views/sellers/order_details.vue'
 import listing_page from '../views/sellers/listing_page.vue'
 import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
-import create_listing3 from '../views/sellers/create_listing3.vue'
 import add_category from '../views/sellers/add_category.vue'
 import add_category3 from '../views/sellers/add_category3.vue'
 import add_subcategory from '../views/sellers/add_subcategory.vue'
@@ -155,11 +154,7 @@ const routes = [{
         name: 'newlisting',
         component: create_listing,
     },
-    {
-        path: '/newlisting3',
-        name: 'newlisting3',
-        component: create_listing3,
-    },
+
     {
         path: '/newlisting3/:sid',
         name: 'newlisting3',
@@ -494,13 +489,13 @@ const routes = [{
         component: Account,
     },
     {
-        path: '/Resolution center',
-        name: 'Resolution_center',
+        path: '/help',
+        name: 'help',
         component: resolution_center,
     },
     {
-        path: '/Resolut Center',
-        name: 'Resolut Center',
+        path: '/Resolution Center',
+        name: 'Resolution Center',
         component: resolut_Center,
 
     },

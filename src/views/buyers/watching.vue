@@ -116,7 +116,6 @@
   </div>
 </template>
 <script>
-import User from '../../apis/User'
 export default {
   data () {
     return {
