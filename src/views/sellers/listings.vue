@@ -182,11 +182,11 @@
                 </div>
               </div>
             </div>
-            <div class="card-body border-b-2 text-dark" v-for="prods in products" :key="prods.id" >
+            <div class="card-body border-b-2 text-dark" v-for="prods in this.$store.state.mylistings" :key="prods.id" >
               <div class="row text-xs">
                 <div class="col-1">
                   <div class="input-group">
-                    <span class="mr-2"> {{prodIncrement}}</span>
+                    <span class="mr-2"></span>
                     <input
                       type="checkbox"
                       aria-label="Checkbox for following text input"
@@ -482,19 +482,10 @@ export default {
     return {
       products: [],
       API_BASE_URL: Constants.API_BASE_URL,
-      prodIncrement: 0,
+      prodIncrement: 1,
     };
   },
   methods: {
-    getlistings() {
-      User.getlistings(2).then(response => {
-        console.log(response);
-        this.products = response.data;
-        this.prodIncrement = response.data.length;
-      }).catch(error => {
-        console.log(error);
-      });
-    },
     deleteProduct(id) {
       User.getlistings(2).then(response => {
         console.log(response);
@@ -505,9 +496,6 @@ export default {
       });
     }
   },
-  mounted() {
-    this.getlistings();
-  }
 };
 </script>
         

@@ -64,6 +64,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/fetchAddress/{id}', [AddressbuyersController::class, 'fetch']);
     Route::post('/editAddress', [AddressbuyersController::class, 'edit']);
     Route::post('/deleteaddress', [AddressbuyersController::class, 'destroy']);
+    Route::post('/createlisting', [ProductsController::class, 'store']);
+    Route::post('/uploader', [ProductsController::class, 'imageUploader']);
+    Route::post('/getlistings/{userid}', [ProductsController::class, 'getlistings']);
 });
 
 

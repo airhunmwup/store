@@ -155,12 +155,12 @@ const routes = [{
         component: create_listing,
     },
 
-    {
+    /* {
         path: '/newlisting3/:sid',
         name: 'newlisting3',
         component: create_listing3,
         props: true,
-    },
+    } */,
     {
         path: '/buyerreturns',
         name: 'buyerreturns',
