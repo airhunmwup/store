@@ -34,7 +34,6 @@ class ProductsController extends Controller
 
     public function imageUploader(Request $request)
     {
-
         $imageCount = count($request->all());
         $image = Products::where('id', $request->id)->first();
 
@@ -58,14 +57,12 @@ class ProductsController extends Controller
                 'status' => 200,
                 'data'   => 'Image upload success'
             ];
-
             return response($data);
         } else {
             $data = [
                 'status' => 422,
                 'data'   => 'Invalid Image upload, failure!'
             ];
-
             return response($data, $data['status']);
         }
     }
@@ -79,7 +76,6 @@ class ProductsController extends Controller
     public function store(Request $request)
     {
         //
-
         $fields = $request->validate([
             'product_subcat' => 'required|string',
             'product_name' => 'required|string',
@@ -132,7 +128,7 @@ class ProductsController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function getlistins($userid)
+    public function getlistings($userid)
     {
         //
         return Products::where('product_userid', $userid)->get();

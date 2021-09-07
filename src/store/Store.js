@@ -19,6 +19,7 @@ export const store = new Vuex.Store({
         address: '',
         setCategoryList: [],
         setSubCategoryList: [],
+        mylistings: '',
     },
     getters: {
         isLoggedIn: state => {
@@ -135,6 +136,9 @@ export const store = new Vuex.Store({
         changeemail: (state, payload) => {
             console.log(payload);
             state.currentUser.email = payload.email;
+        },
+        getlistings: (state, payload) => {
+            state.mylistings = payload;
         }
     },
     actions: {
@@ -179,6 +183,7 @@ export const store = new Vuex.Store({
                   context.commit('userloginInfo',response.data);
                   console.log(response.data.id);
                   context.dispatch('getuser', response.data.id);
+                  context.dispatch('getlistings', response.data.id);
                 }).catch((errors) => {
                   console.log(errors);
                 });
@@ -239,6 +244,14 @@ export const store = new Vuex.Store({
         },
         changeemail: (context, payload) => {
             context.commit('changeemail', payload);
+        },
+        getlistings: (context, payload) => {
+            User.getlistings(payload).then(response => {
+                console.log(response);
+                context.commit('getlistings', response.data);
+            }).catch(error => {
+                console.log(error);
+            });
         }
 
     }

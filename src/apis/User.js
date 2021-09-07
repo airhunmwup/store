@@ -112,8 +112,8 @@ export default{
         return Api().post("/getlistings/"+ userid);
     },
 
-    productdelete(id){
-        return Api().delete("/productdelete/" + id);
+    deletelisting(id){
+        return Api().delete("/deletelisting/" + id);
     }
 
 

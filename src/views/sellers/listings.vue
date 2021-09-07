@@ -182,11 +182,11 @@
                 </div>
               </div>
             </div>
-            <div class="card-body border-b-2 text-dark" v-for="prods in products" :key="prods.id" >
+            <div class="card-body border-b-2 text-dark" v-for="prods in this.$store.state.mylistings" :key="prods.id" >
               <div class="row text-xs">
                 <div class="col-1">
                   <div class="input-group">
-                    <span class="mr-2"> {{prodIncrement}}</span>
+                    <span class="mr-2"></span>
                     <input
                       type="checkbox"
                       aria-label="Checkbox for following text input"
@@ -239,7 +239,7 @@
                       underline
                       btn-block
                     "
-                    @click="deleteProduct(prods.id)"
+                    @click="deletelisting(prods.id)"
                   >
                     Delete
                   </button>
@@ -434,6 +434,7 @@
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-danger text-light border m-1 btn-sm"
+            
               >Delete</a
             >
             <a href="#" class="btn btn-info text-light border m-1 btn-sm"
@@ -443,7 +444,7 @@
         </div>
         <!--end mobile view-->
 
-        <p class="text-dark text-center" v-if="prodIncrement == 0">
+        <p class="text-dark text-center" v-if="this.$store.state.mylistings">
           You do not have any listings to display in this view.
         </p>
 
@@ -480,34 +481,20 @@ import Constants from '../../common/constants';
 export default {
   data() {
     return {
-      products: [],
       API_BASE_URL: Constants.API_BASE_URL,
-      prodIncrement: 0,
+      prodIncrement: 1,
     };
   },
   methods: {
-    getlistings() {
-      User.getlistings(2).then(response => {
+    deletelisting(id) {
+      User.deletelisting(id).then(response => {
         console.log(response);
-        this.products = response.data;
-        this.prodIncrement = response.data.length;
-      }).catch(error => {
-        console.log(error);
-      });
-    },
-    deleteProduct(id) {
-      User.getlistings(2).then(response => {
-        console.log(response);
-        this.products = response.data;
-        this.getlistings();
+        this.$store.dispatch('getlistings', this.$store.state.currentUser.id);
       }).catch(error => {
         console.log(error);
       });
     }
   },
-  mounted() {
-    this.getlistings();
-  }
 };
 </script>
         
