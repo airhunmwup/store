@@ -53,6 +53,7 @@ import order_details from '../views/sellers/order_details.vue'
 import listing_page from '../views/sellers/listing_page.vue'
 import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
+import create_listing3 from '../views/sellers/create_listing3.vue'
 import add_category from '../views/sellers/add_category.vue'
 import add_category3 from '../views/sellers/add_category3.vue'
 import add_subcategory from '../views/sellers/add_subcategory.vue'
@@ -153,6 +154,11 @@ const routes = [{
         path: '/newlisting',
         name: 'newlisting',
         component: create_listing,
+    },
+    {
+        path: '/newlisting3',
+        name: 'newlisting3',
+        component: create_listing3,
     },
 
     {
@@ -474,9 +480,10 @@ const routes = [{
         component: Mymessage,
     },
     {
-        path: '/messageopen',
+        path: '/messageopen/:mid',
         name: 'messageopen',
         component: Mymessage_open,
+        props: true,
     },
     {
         path: '/sentmessage',

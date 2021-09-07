@@ -131,7 +131,7 @@ import User from '../../apis/User';
         methods:{
             
             loadSubCategories(){
-                User.getSubCategoryList(this.cid)
+                User.getSubCategoryList2(this.cid)
                 .then(response=>{
                         this.subcategories = response.data;
                      });

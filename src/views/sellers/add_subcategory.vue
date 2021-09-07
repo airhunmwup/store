@@ -9,9 +9,9 @@
           <div class="card">
             <div class="card-header text-center text-dark align-content-center">
               <div class="row">
-                <div class="col-12 col-lg-6">
+                <div class="col-6">
                   <p class="text-left text-dark font-weight-bold h6 m-3">
-                    Select Subcategory
+                    Select Category
                   </p>
                 </div>
                 <div class="col-6 col-xs-12">
@@ -37,7 +37,7 @@
                         type="text"
                         id="name"
                         name="name"
-                        placeholder="Find subcategory..."
+                        placeholder="Find category"
                         class="form-control border"
                         value=""
                       />
@@ -55,17 +55,20 @@
                 </div>
               </div>
             </div>
-            <ul class="list-group list-group-flush">
-              <template v-for="subcat of setSubCategoryList" >
-                <li class="list-group-item border" :key="subcat.id" v-if="subcat.cat_id == pid">
+            <ul class="list-group list-group-flush" v-for="category of setCategoryList" :key="category.id">
+              <li class="list-group-item border">
                 <div class="row">
-                  <div class="col-sm">{{subcat.sub_catname}}</div>
+                  <div class="col-sm">
+                      <a href="#"
+                        data-target=".navbar-collapse"
+                        @click="subcatpagelink(category.id)"
+                        >{{ category.cat_name }}</a></div>
                   <div class="col-sm">
                     <p class="text-right text-xl">
-                      <a
+                      <a href="#"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
-                        @click="category(subcat.sub_catname)"
+                        @click="subcatpagelink(category.id)"
                         ><b
                           class="
                             fa fa-angle-right fa-lg
@@ -78,8 +81,6 @@
                   </div>
                 </div>
               </li>
-              </template>
-              
             </ul>
           </div>
         </div>
@@ -87,89 +88,18 @@
     </div>
     <hr />
   </div>
-<<<<<<< HEAD
-
-  </div>
-  <ul class="list-group list-group-flush">
-    <li class="list-group-item border">
-  <div class="row">
-    <div class="col-sm">
-      Electronics
-    </div>
-    <div class="col-sm">
-      <p class="text-right text-xl">
-                <router-link
-                  to="/newlisting3"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
-                </router-link></p>
-    </div>
-  </div>
-</li>
-    <li class="list-group-item border">
-  <div class="row">
-    <div class="col-sm">
-      Fashion
-    </div>
-    <div class="col-sm">
-      <p class="text-right text-xl">
-                <router-link
-                  to="/newlisting3"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
-                </router-link></p>
-    </div>
-  </div></li>
-    <li class="list-group-item border">
-  <div class="row">
-    <div class="col-sm">
-       Others
-    </div>
-    <div class="col-sm">
-      <p class="text-right text-xl">
-                <router-link
-                  to="/newlisting"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                ><b class="fa fa-angle-right fa-lg text-dark font-weight-bold"></b>
-                </router-link></p>
-    </div>
-  </div>
-       </li>
-  </ul>
-</div>
-                            </div>
-                        </div>
-                     </div>
-                        <hr>
-    </div>
-
-
-=======
->>>>>>> aa005930b5022dc77cca335639f23b9fd1f01561
 </template>
 <script>
 import { mapState } from 'vuex'
 export default {
-  data() {
-    return {
-      pid : this.$route.params.data,
-    }
-  },
   methods: {
-    category(name){
-      this.$router.push(
-        { name: 'newlisting',
-          params: {data: name}
-          }
-      );
+    subcatpagelink(pid) {
+        this.$router.push({
+        name: 'addsubcategory',
+        params: {data: pid}
+      });
     }
   },
-  computed: mapState(['setSubCategoryList']),
-  created() {
-    console.log(this.$route.params);
-  }
+  computed: mapState(['setCategoryList','setSubCategoryList'])
 }
 </script>

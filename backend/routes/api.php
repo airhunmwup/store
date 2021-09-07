@@ -8,6 +8,7 @@ use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\InstockController;
 use App\Http\Controllers\AddressbuyersController;
 use App\Http\Controllers\ImageuploadController;
+use App\Http\Controllers\MessagesController;
 use App\Models\Addressforbuyers;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -64,6 +65,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/fetchAddress/{id}', [AddressbuyersController::class, 'fetch']);
     Route::post('/editAddress', [AddressbuyersController::class, 'edit']);
     Route::post('/deleteaddress', [AddressbuyersController::class, 'destroy']);
+    Route::post('/sendmessage', [MessagesController::class, 'store']);
+    Route::get('/fetchmessages/{id}', [MessagesController::class, 'index']);
+    Route::get('/getmessage/{id}', [MessagesController::class, 'get']);
 });
 
 

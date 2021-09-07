@@ -22,7 +22,7 @@ export default{
         return Api().get("/category");
     },
     
-    getSubCategoryList(id){
+    getSubCategoryList2(id){
         return Api().get("/subcategory/" + id);
     },
     catInfo(id){
@@ -32,7 +32,15 @@ export default{
     getSubCategoryList(){
         return Api().get("/sub_category");
     },
-
+    sendmessage(data){
+        return Api().post("/sendmessage", data);
+    },
+    fetchMessages(id){
+        return Api().get("/fetchmessages/" + id);
+    },
+    getMessage(id){
+        return Api().get("/getmessage/" + id);
+    },
     getNewListings(){
         return Api().get("/newlistings");
     },

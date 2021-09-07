@@ -40,6 +40,25 @@
     </div>
 <div class="card pt-2" style="height: 20rem;">
   <ul class="list-group list-group-flush">
+        <li class="list-group-item" v-for="sent_message in sent_messages" v-bind:key="sent_message.id">
+          <router-link
+                              to="/messageopen"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="view Shopping basket"
+                            >
+  <div class="row">
+    <div class="col-9">
+      <p class="text-left text-sm">
+      {{sent_message.message}}
+      </p>
+    </div>
+    <div class="col">
+      <p class="text-right text-xs">{{new Date(sent_message.created_at).toLocaleString()}}</p>
+    </div>
+  </div>
+          </router-link>
+  </li>
     <li class="list-group-item">
           <router-link
                               to="/messageopen"
@@ -115,4 +134,40 @@
     </div>
   </div>
 </template>
+<script>
+
+import User from '../../apis/User';
+export default {
+  data() {
+    return {
+      sent_messages: {},
+      inbox_messages: {},
+      errors: {},
+      loading: false,
+    }
+  },
+  methods: {
+    loadData(){
+        User.fetchMessages(this.$store.state.currentUser.id)
+            .then(res=>{
+                    this.sent_messages = res.data.sent;  
+                    this.inbox_messages = res.data.inbox;                  
+                })
+                .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+           // document.getElementById("alat").innerHTML = error.response.data.message;
+        }
+      })
+            }
+    },
+    created() {
+            this.loadData()
+        }  
+}
+
+</script>
         
