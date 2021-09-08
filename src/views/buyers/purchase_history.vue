@@ -372,9 +372,11 @@ export default {
         if (!error.response) {
             // network error
             this.errorStatus = 'Error: Network Error';
+            document.getElementById("alat").innerHTML = "message not sent";
         } else {
             this.errorStatus = error.response.data.message;
             // document.getElementById("alat").innerHTML = error.response.data.message;
+           document.getElementById("alat").innerHTML = "message not sent";
         }
       })
     }else{
