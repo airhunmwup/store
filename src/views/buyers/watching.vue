@@ -61,10 +61,11 @@
 </nav>
 <div class="tab-content" id="nav-tabContent">
   <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+
 <div class="card border m-2"  v-for="list in this.$store.state.wishList" :key="list.id">
   <div class="row">
     <div class="col-4 col-lg-4 pt-4 ml-3 img-fluid">
-      <img class="" style="width: 14rem; height: 100%" :src="'img/product/' + list['product_image']" />
+      <img class="" style="width: 14rem; height: 100%" :src="API_BASE_URL + list['product_image']" />
     </div>
     <div class="col-8 col-lg-5">
                       <p class="h4 mt-4 mt-5 text-info">
@@ -88,6 +89,9 @@
   </div>
 </div>    
 
+        <p class="text-dark text-center" v-if="this.$store.state.wishList">
+          You do not have any listings to display in this view.
+        </p>
   </div>
 
   <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">

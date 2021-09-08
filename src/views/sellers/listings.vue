@@ -125,7 +125,7 @@
               aria-label="Basic example"
             >
               <router-link
-                to="/newlisting3"
+                to="/newlisting"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="add new listings"
@@ -264,7 +264,7 @@
         <!--end Web view-->
 
         <!--start mobile view-->
-        <div class="card m-1 d-md-none border text-xs">
+        <div class="card m-1 d-md-none border text-xs" v-for="prods in this.$store.state.mylistings" :key="prods.id" >
           <div class="card-header">
             <div class="row text-xs">
               <div class="col">
@@ -273,7 +273,7 @@
                     type="checkbox"
                     aria-label="Checkbox for following text input"
                   />
-                  <span class="ml-2"> 2 </span>
+                  <span class="ml-2">  </span>
                 </div>
               </div>
               <div class="col">
@@ -287,13 +287,13 @@
                 <img
                   class=""
                   style="width: 70%"
-                  src="img/product/11.jpg"
+                  :src="API_BASE_URL + prods.product_image1"
                   alt="Card image cap"
                 />
               </div>
               <div class="col-6">
                 <p class="text-left mt-4 text-lg text-dark font-weight-bold">
-                  This na the product title
+                  {{prods.product_name}}
                 </p>
               </div>
             </div>
@@ -305,7 +305,7 @@
               </div>
               <div class="col-8 text-right">
                 <p class="m-1 text-dark font-weight-bold">
-                  Electronics, TVs and DVDs
+                  {{prods.product_subcat}}
                 </p>
               </div>
               <div class="col-4">
@@ -318,7 +318,7 @@
                 <p class="m-1">Price:</p>
               </div>
               <div class="col-8 text-right">
-                <p class="m-1 text-dark font-weight-bold">£150.00</p>
+                <p class="m-1 text-dark font-weight-bold">{{prods.product_price}}</p>
               </div>
               <div class="col-6">
                 <p class="m-1">Status:</p>
@@ -342,6 +342,7 @@
           </div>
           <div class="card-footer">
             <a href="#" class="btn btn-danger text-light border m-1 btn-sm"
+               @click="deletelisting(prods.id)"
               >Delete</a
             >
             <a href="#" class="btn btn-info text-light border m-1 btn-sm"
@@ -350,98 +351,6 @@
           </div>
         </div>
 
-        <div class="card m-1 d-md-none border">
-          <div class="card-header">
-            <div class="row text-xs">
-              <div class="col">
-                <div class="input-group">
-                  <input
-                    type="checkbox"
-                    aria-label="Checkbox for following text input"
-                  />
-                  <span class="ml-2"> 2 </span>
-                </div>
-              </div>
-              <div class="col">
-                <p class="text-right">SKU: <b>P62X</b></p>
-              </div>
-            </div>
-          </div>
-          <div class="card-header">
-            <div class="row text-xs">
-              <div class="col pt-2">
-                <img
-                  class=""
-                  style="width: 70%"
-                  src="img/product/12.jpg"
-                  alt="Card image cap"
-                />
-              </div>
-              <div class="col">
-                <p class="text-left mt-4 text-lg text-dark font-weight-bold">
-                  This na the product title
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="card-body">
-            <div class="row text-xs">
-              <div class="col-4">
-                <p class="m-1">Category:</p>
-              </div>
-              <div class="col-8">
-                <p class="m-1 text-right text-dark font-weight-bold">
-                  Funitures, Chairs
-                </p>
-              </div>
-            </div>
-            <div class="row text-xs">
-              <div class="col-4">
-                <p class="m-1">In-stock:</p>
-              </div>
-              <div class="col-8">
-                <p class="m-1 text-right text-dark font-weight-bold">16</p>
-              </div>
-            </div>
-            <div class="row text-xs">
-              <div class="col-4">
-                <p class="m-1">Price:</p>
-              </div>
-              <div class="col-8">
-                <p class="m-1 text-right text-dark font-weight-bold">£150.00</p>
-              </div>
-            </div>
-            <div class="row text-xs">
-              <div class="col-6">
-                <p class="m-1">Status:</p>
-              </div>
-              <div class="col-6 p-2 text-right">
-                <span
-                  class="alert-xs p-1 mt-4 rounded alert-danger"
-                  style="height: 2rem"
-                  role="alert"
-                >
-                  Pending
-                </span>
-              </div>
-              <div class="col-4">
-                <p class="">Watches</p>
-              </div>
-              <div class="col-8 text-right">
-                <p class="text-dark">160</p>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <a href="#" class="btn btn-danger text-light border m-1 btn-sm"
-            
-              >Delete</a
-            >
-            <a href="#" class="btn btn-info text-light border m-1 btn-sm"
-              >Edit</a
-            >
-          </div>
-        </div>
         <!--end mobile view-->
 
         <p class="text-dark text-center" v-if="this.$store.state.mylistings">

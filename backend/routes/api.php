@@ -68,6 +68,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/sendmessage', [MessagesController::class, 'store']);
     Route::get('/fetchmessages/{id}', [MessagesController::class, 'index']);
     Route::get('/getmessage/{id}', [MessagesController::class, 'get']);
+    Route::get('/listings/{id}', [productsController::class, 'get']);
 });
 
 
