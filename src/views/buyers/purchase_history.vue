@@ -155,8 +155,16 @@
   </button>
 <div class="collapse" id="productfeedback-1">
   <div class="form-group m-2">
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3">...</textarea>
-<button class="btn btn-sm m-1 btn-success" type="submit">send</button>
+    <form>
+    <textarea class="form-control" id="exampleFormControlTextarea1" v-model="formData.message" rows="3" required></textarea>
+        <router-link
+            to="purchase_history"
+            title="send message"
+        >
+             <button class="btn btn-sm m-1 btn-success" @click.prevent="sendMessage" type="submit">send</button>
+        
+        </router-link>
+    </form>
   </div>
 </div>
     </div>
@@ -336,4 +344,48 @@
     <hr>
   </div>
 </template>
+<script>
+import User from '../../apis/User';
+export default {
+  data() {
+    return {
+      formData: {
+        sender_id: '',
+        reciever_id: '',
+        sender_name: '',
+        message: '',
+      },  
+      errors: {},   
+    }
+  },
+  methods: {
+    sendMessage() {
+    if (this.formData.message !==""){
+      this.formData.sender_id = this.$store.state.currentUser.id;
+      this.formData.reciever_id = this.$store.state.currentUser.id;
+      this.formData.sender_name = this.$store.state.currentUser.first_name + ' ' + this.$store.state.currentUser.last_name;
+      User.sendmessage(this.formData).then((response) => {
+        document.getElementById("alat").innerHTML = "Message sent successfully";
+        document.getElementById("exampleFormControlTextarea1").value = null;
+        document.getElementById("exampleFormControlTextarea1").style.borderColor  = "";
+      }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+            document.getElementById("alat").innerHTML = "message not sent";
+        } else {
+            this.errorStatus = error.response.data.message;
+            // document.getElementById("alat").innerHTML = error.response.data.message;
+           document.getElementById("alat").innerHTML = "message not sent";
+        }
+      })
+    }else{
+        document.getElementById("alat").innerHTML = "message box empty";
+        document.getElementById("exampleFormControlTextarea1").style.borderColor  = "red";
+    }
+    },
+    },
+}
+
+</script>
         
