@@ -21,9 +21,17 @@ export default{
     getCategoryList(){
         return Api().get("/category");
     },
-    
-    getSubCategoryList(id){
+    getCategory(id){
+        return Api().get("/categorie/" + id);
+    },
+    getListing(id){
+        return Api().get("/getlisting/" + id);
+    },
+    getSubCategoryList2(id){
         return Api().get("/subcategory/" + id);
+    },
+    getSubCategoryList3(){
+        return Api().post("/getsubcategories");
     },
     catInfo(id){
         return Api().get("/subcat/" + id);
@@ -32,7 +40,15 @@ export default{
     getSubCategoryList(){
         return Api().get("/sub_category");
     },
-
+    sendmessage(data){
+        return Api().post("/sendmessage", data);
+    },
+    fetchMessages(id){
+        return Api().get("/fetchmessages/" + id);
+    },
+    getMessage(id){
+        return Api().get("/getmessage/" + id);
+    },
     getNewListings(){
         return Api().get("/newlistings");
     },

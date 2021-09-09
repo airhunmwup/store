@@ -8,6 +8,7 @@ use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\InstockController;
 use App\Http\Controllers\AddressbuyersController;
 use App\Http\Controllers\ImageuploadController;
+use App\Http\Controllers\MessagesController;
 use App\Models\Addressforbuyers;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -38,8 +39,10 @@ Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 
 //Static Public Routes
 Route::get('/category', [CategoryController::class, 'index']);
+Route::get('/categorie/{id}', [CategoryController::class, 'getcat']);
 Route::get('/sub_category', [SubcategoryController::class, 'index']);
 Route::get('/subcategory/{id}', [SubcategoryController::class, 'fetch']);
+Route::post('/getsubcategories', [SubcategoryController::class, 'load']);
 Route::get('/subcat/{id}', [SubcategoryController::class, 'get']);
 
 Route::post('/category', [CategoryController::class, 'store']);
@@ -48,6 +51,9 @@ Route::get('/images', [ImageuploadController::class, 'index']);
 //Protected Routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/products', [ProductsController::class, 'store']);
+    Route::post('/createlisting', [ProductsController::class, 'store']);
+    Route::post('/getlistings/{user_id}', [ProductsController::class, 'getlistings']);
+    Route::get('/getlisting/{id}', [ProductsController::class, 'getlisting']);
     Route::put('/products/{id}', [ProductsController::class, 'update']);
     Route::delete('/productdelete/{id}', [ProductsController::class, 'destroy']);
     Route::post('/wishlist', [WishlistController::class, 'store']);
@@ -64,13 +70,18 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/fetchAddress/{id}', [AddressbuyersController::class, 'fetch']);
     Route::post('/editAddress', [AddressbuyersController::class, 'edit']);
     Route::post('/deleteaddress', [AddressbuyersController::class, 'destroy']);
+ 
     Route::post('/createlisting', [ProductsController::class, 'store']);
     Route::post('/uploader', [ProductsController::class, 'imageUploader']);
     Route::post('/getlistings/{userid}', [ProductsController::class, 'getlistings']);
     Route::delete('/deletelisting/{id}', [ProductsController::class, 'destroy']);
     Route::post('/purchase', [PurchaseController::class, 'purchase']);
-});
+    Route::post('/sendmessage', [MessagesController::class, 'store']);
+    Route::get('/fetchmessages/{id}', [MessagesController::class, 'index']);
+    Route::get('/getmessage/{id}', [MessagesController::class, 'get']);
+    Route::get('/listings/{id}', [productsController::class, 'get']);
 
+});
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

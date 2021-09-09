@@ -65,19 +65,47 @@
   <div class="card-header">
     <p class="h6 text-dark">Delivery enquiry from REJEE Stores. customer Ivan (Order: 202-0274579-1617107).</p>
   </div>
-    <p class="text-dark border-b-2 card-title"><b>From:</b> <span class="text-info"> GVX Machandise UK</span> <span class="text-dark"> 08/04 11:59:47</span> </p>
-    <p class="card-text">No.
-
-Purchase date and time below
-04-Aug-2021 08:31
-
-Item has been packed and sent through Royal mail
-
-Thank you</p>
+    <p class="text-dark border-b-2 card-title"><b>From:</b> <span class="text-info"> {{message.sender_name}}</span> <span class="text-dark" v-if="message.created_at"> {{new Date(message.created_at).toLocaleString()}}</span> </p>
+    <p class="card-text">{{message.message}}</p>
   </div>
 </div>
     </div>
   </div>
   </div>
 </template>
+<script>
+
+import User from '../../apis/User';
+export default {
+  props: ['mid'],
+  data() {
+    return {
+      message: {},
+      errors: {},
+      loading: false,
+    }
+  },
+  methods: {
+    loadData(){
+        User.getMessage(this.mid)
+            .then(res=>{
+                    this.message = res.data[0];                  
+                })
+                .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            // document.getElementById("alat").innerHTML = error.response.data.message;
+        }
+      })
+            }
+    },
+    created() {
+            this.loadData()
+        }  
+}
+
+</script>
         

@@ -451,14 +451,15 @@ export default {
             console.log(res.data);
             this.tableId = res.data.id;
             this.imageUploadHandler();
-          }).catch(errors => {
-            this.errors = {};
-            const err = Object.keys(errors.response.data.errors);
-            err.forEach((keys) => {
-              this.errors[keys] = '*' + ' ' + errors.response.data.errors[keys][0];
-          });
-          return this.errors;
-        });
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            document.getElementById("alat").innerHTML = error.response.data.message;
+        }
+      })
       }else{
         console.log('no image');
       }

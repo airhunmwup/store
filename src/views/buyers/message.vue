@@ -50,80 +50,23 @@
 <div class="tab-content  border-t-0" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-<div class="card pt-2" style="height: 20rem;" data-spy="scroll">
+<div class="card pt-2" style="height: 20rem;" data-spy="scroll"> 
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">
-          <router-link
-                              to="/messageopen"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
+    <li class="list-group-item" v-for="inbox_message in inbox_messages" v-bind:key="inbox_message.id">
+        <router-link
+            v-bind:to="'/messageopen/' + inbox_message.id"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="open message"
+        >
   <div class="row">
     <div class="col-9">
       <p class="text-left text-sm">
-      Ivan, regarding your recent order at REJEEStores.com.
+      {{inbox_message.message}}
       </p>
     </div>
     <div class="col">
-      <p class="text-right text-xs">18/12 00:14:32</p>
-    </div>
-  </div>
-          </router-link>
-  </li>
-    <li class="list-group-item">
-          <router-link
-                              to="/messageopen"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
-  <div class="row">
-    <div class="col-9">
-      <p class="text-left text-sm">
-      Ivan, regarding your recent order at REJEEStores.com.
-      </p>
-    </div>
-    <div class="col">
-      <p class="text-right text-xs">18/12 00:14:32</p>
-    </div>
-  </div>
-          </router-link>
-  </li>
-    <li class="list-group-item">
-          <router-link
-                              to="/messageopen"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
-  <div class="row">
-    <div class="col-9">
-      <p class="text-left text-sm">
-      Ivan, regarding your recent order at REJEEStores.com.
-      </p>
-    </div>
-    <div class="col">
-      <p class="text-right text-xs">18/12 00:14:32</p>
-    </div>
-  </div>
-          </router-link>
-  </li>
-    <li class="list-group-item">
-          <router-link
-                              to="/messageopen"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
-  <div class="row">
-    <div class="col-9">
-      <p class="text-left text-sm">
-      Ivan, regarding your recent order at REJEEStores.com.
-      </p>
-    </div>
-    <div class="col">
-      <p class="text-right text-xs">18/12 00:14:32</p>
+      <p class="text-right text-xs">{{new Date(inbox_message.created_at).toLocaleString()}}</p>
     </div>
   </div>
           </router-link>
@@ -147,46 +90,24 @@
     
 <div class="card pt-2" style="height: 20rem;">
   <ul class="list-group list-group-flush">
-    <li class="list-group-item">
+    <li class="list-group-item" v-for="inbox_message in inbox_messages" v-bind:key="inbox_message.id">
           <router-link
-                              to="/messageopen"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
+            v-bind:to="'/messageopen/' + inbox_message.id"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="open message"
+        >
   <div class="row">
     <div class="col">
         <b class="text-xs text-uppercase">FX stores uk</b>
     </div>
     <div class="col-6">
       <p class="text-xs">
-      Ivan, regarding your recent order at REJEEStores.com.
+      {{inbox_message.message}}
       </p>
     </div>
     <div class="col">
-      <p class="text-right text-xs">18/12 00:14:32</p>
-    </div>
-  </div>
-          </router-link>
-  </li>
-    <li class="list-group-item">
-          <router-link
-                              to="/messageopen"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
-  <div class="row">
-    <div class="col">
-        <b class="text-xs text-uppercase">FX stores uk</b>
-    </div>
-    <div class="col-6">
-      <p class="text-xs">
-      Ivan, regarding your recent order at REJEEStores.com.
-      </p>
-    </div>
-    <div class="col">
-      <p class="text-right text-xs">18/12 00:14:32</p>
+      <p class="text-right text-xs">{{new Date(inbox_message.created_at).toLocaleString()}}</p>
     </div>
   </div>
           </router-link>
@@ -211,4 +132,40 @@
   </div>
   </div>
 </template>
+<script>
+
+import User from '../../apis/User';
+export default {
+  data() {
+    return {
+      sent_messages: {},
+      inbox_messages: {},
+      errors: {},
+      loading: false,
+    }
+  },
+  methods: {
+    loadData(){
+        User.fetchMessages(this.$store.state.currentUser.id)
+            .then(res=>{
+                    this.sent_messages = res.data.sent;  
+                    this.inbox_messages = res.data.inbox;                  
+                })
+                .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+           // document.getElementById("alat").innerHTML = error.response.data.message;
+        }
+      })
+            }
+    },
+    created() {
+            this.loadData()
+        }  
+}
+
+</script>
         

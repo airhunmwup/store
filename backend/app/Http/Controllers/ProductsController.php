@@ -133,7 +133,11 @@ class ProductsController extends Controller
         //
         return Products::where('product_userid', $userid)->get();
     }
-
+    public function getlisting($id)
+    {
+        //
+        return Products::where('product_userid', $id)->get();
+    }
     /**
      * Show the form for editing the specified resource.
      *

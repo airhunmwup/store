@@ -13,6 +13,7 @@ import userRegistrationPage from '../views/buyers/userRegistrationPage.vue'
 import userLogin from '../views/buyers/userLogin.vue'
 import userCategoriePage from '../views/buyers/userCategoriePage.vue'
 import productPage from '../views/buyers/productPage.vue'
+import propertyPage from '../views/buyers/propertyPage.vue'
 import productDetails from '../views/buyers/productDetails.vue'
 import checkOutPage from '../views/buyers/checkOutPage.vue'
 import productcart from '../views/buyers/productCart.vue'
@@ -36,6 +37,7 @@ import paymentgate from '../views/buyers/paymentgate.vue'
 import edit_login_name from '../views/buyers/edit_login_name.vue'
 import edit_login_email from '../views/buyers/edit_login_email.vue'
 import edit_login_mobilenumber from '../views/buyers/edit_login_mobilenumber.vue'
+import paymentsuccess from '../views/buyers/paymentsuccess.vue'
 
 
 
@@ -53,6 +55,7 @@ import order_details from '../views/sellers/order_details.vue'
 import listing_page from '../views/sellers/listing_page.vue'
 import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
+import property_listing from '../views/sellers/Property_listing.vue'
 import add_category from '../views/sellers/add_category.vue'
 import add_category3 from '../views/sellers/add_category3.vue'
 import add_subcategory from '../views/sellers/add_subcategory.vue'
@@ -145,6 +148,11 @@ const routes = [{
         component: listing_page,
     },
     {
+        path: '/paymentsuccess',
+        name: 'paymentsuccess',
+        component: paymentsuccess,
+    },
+    {
         path: '/listings',
         name: 'listings',
         component: listings_page,
@@ -154,13 +162,18 @@ const routes = [{
         name: 'newlisting',
         component: create_listing,
     },
+    {
+        path: '/propertylisting',
+        name: 'propertylisting',
+        component: property_listing,
+    },
 
-    /* {
-        path: '/newlisting3/:sid',
-        name: 'newlisting3',
-        component: create_listing3,
+   {
+        path: '/propertyPage',
+        name: 'propertyPage',
+        component: propertyPage,
         props: true,
-    } */,
+    },
     {
         path: '/buyerreturns',
         name: 'buyerreturns',
@@ -252,7 +265,7 @@ const routes = [{
         component: adChoice,
     },
     {
-        path: '/Categorie Page',
+        path: '/CategoriePage',
         name: 'UserCategoriePage',
         component: userCategoriePage,
     },
@@ -293,9 +306,10 @@ const routes = [{
     },
 
     {
-        path: '/Categorie Page',
+        path: '/CategoriePage/:cid',
         name: 'UserCategoriePage',
         component: userCategoriePage,
+        props: true,
     },
     {
         path: '/orderpage',
@@ -474,9 +488,10 @@ const routes = [{
         component: Mymessage,
     },
     {
-        path: '/messageopen',
+        path: '/messageopen/:mid',
         name: 'messageopen',
         component: Mymessage_open,
+        props: true,
     },
     {
         path: '/sentmessage',

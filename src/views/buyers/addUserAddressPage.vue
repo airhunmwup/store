@@ -383,7 +383,6 @@
 
                                   <input
                                     class="form-control text-sm border-secondary"
-                                    name="firstname"
                                     type="text"
                                     placeholder="1234"
                                     v-model="formData.securitycode"

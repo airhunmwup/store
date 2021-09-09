@@ -1,107 +1,89 @@
 <template>
+  <!-- main content -->
+    <div class="container pt-2">
               <!-- breadcrumb -->
               <div class="container">
-              <!-- breadcrumb -->
                   <div class="row">
 
-                    <!-- ####Side bar Cataloge starts here the categorie active wouldnt ###
-                    #########collapse other can and should have text-primary underline ####
-                    ######### to indicate its active,###################################-->
-                    <div
-                      class="
-                        sidebar-3 sidebar-collection
-                        col-lg-3 col-md-3 col-sm-3 d-xs-none border-r-2
-                      "
-                    >
-                      <!-- ###category menu### -->
-                      <div class="sidebar-block">
-                        <div class="title-block">All Categories</div>
-                        <div class="block-content font-weight-bold text-dark">
-                          <div v-for="category in categoryList" v-bind:key="category.id" class="cateTitle hasSubCategory open level1">
-                            <span
-                              class="arrow collapsed collapse-icons"
-                              data-toggle="collapse"
-                              v-bind:data-target="'#livingroom' + category.id" 
-                              aria-expanded="false"
-                              role="status"
-                            >
-                              <i class="zmdi zmdi-minus"></i>
-                              <i class="zmdi zmdi-plus"></i>
-                            </span>
-                            <router-link 
-                              v-bind:to="'/CategoriePage/' + category.id"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                            ><a class="cateItem" href="#">{{ category.cat_name }}</a>
-                           </router-link>
-                            
-                            <div
-                              class="subCategory "
-                              v-bind:id="'livingroom' + category.id"
-                              aria-expanded="true"
-                              role="status"
-                            >
-                              <div  v-for="subcategory in category.subcategories" v-bind:key="subcategory.id" class="cateTitle">
-                                <a href="#" class="cateItem">{{ subcategory.sub_catname }}</a>
-                              </div>
-                              
-                            </div>
-                          </div>
-                          
-                        </div>
-                      </div>
-
-                      <!-- best seller -->
-                      <div class="sidebar-block"></div>
-                    </div>
-
-
-
-                    <div class="col-lg-9 col-md-9 col-sm-12">
+                    <div class="col-lg-12 col-md-12 col-sm-9">
                       <p class="text p-3 text-dark h5 font-weight-bold font-weight-normal">
-                        {{ categorie.cat_name }}
-                      </p>
+                    REJEE Properties
+                  </p>
+              <div class="card">
+                  <nav class="navbar navbar-expand-sm navbar-light bg-light">
+  <a class="navbar-brand text-sm font-weight-bold" href="#">For sale</a><a class="navbar-brand text-sm font-weight-bold" href="#">To rent</a>
+</nav>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="navbar-collapse" id="navbarSupportedContent">
+
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2 m-1" type="search" placeholder="Search area" aria-label="Search">
+    
+  <select class="custom-select m-1" aria-label="Example select with button addon">
+    <option value="">Search radius</option>
+                        <option value="">This area</option>
+                        <option value="">+1 mile</option>
+                        <option value="">+3 miles</option>
+                        <option value="">+5 miles</option>
+                        <option value="">+10 miles</option>
+                        <option value="">+15 miles</option>
+                        <option value="">+20 miles</option>
+                        <option value="">+30 miles</option>
+                        <option value="">+40 miles</option>
+                        </select>
+      
+<select class="custom-select m-1" aria-label="Example select with button addon">
+    <option value="">Property type</option>
+                        <option value="">House</option>
+                        <option value="">Flats</option>
+                        <option value="">Farm/Land</option>
+                        </select>
+  <select class="custom-select m-1" aria-label="Example select with button addon">
+    <option value="">Bedrooms</option>
+                        <option value="">Studio</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                        <option value="">9</option>
+                        <option value="">10+</option>
+                        </select>
+                        <div class="dropdown">
+  <button class="btn border bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Price Range
+  </button>
+        <div class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
+          <a class="text-sm">Min</a>
+          <div class="input-group input-group-sm ">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">£</span>
+  </div>
+  <input type="text" class="form-control " placeholder="" aria-describedby="basic-addon1">
+</div>
+          <div class="dropdown-divider"></div>
+          <a class="text-sm">Max</a>
+          <div class="input-group input-group-sm">
+  <div class="input-group-prepend">
+    <span class="input-group-text" id="basic-addon1">£</span>
+  </div>
+  <input type="text" class="form-control " placeholder="" aria-describedby="basic-addon1">
+</div>
+        </div>
+</div>
+      <button class="btn btn-outline-success m-1 " type="submit">Search</button>
+    </form>
+  </div>
+</nav>
+
+              </div>
                       <br />
-                      <!-- FEATURED CATEGORIES -->
-                        <div class="row pt-4 pb-4">
-                          <div v-for="subcategory in categorie.subcategories" v-bind:key="subcategory.id" 
-                            class="
-                              col-6 col-sm-6 col-md-4 col-lg-3
-                            "
-                          >
-                              <p class="underline h6  text-dark">
-                                {{ subcategory.sub_catname }}
-                              </p>
-                          </div>
-                          
-                        </div>
-                      <!-- spot light'any random product under the selected category -->
-                      
                       <!-- FEATURED Listings -->
                       <div class="title-product">
                         <div class="row">
-                            <div v-for="listing in newListings" v-bind:key="listing.id"
-                               class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                            >
-                            <router-link
-                                class=""
-                                to="/Product Detail"
-                                data-toggle="collapse"
-                                data-target=".navbar-collapse"
-                                title="Home"
-                            >
-                            <div class="card" style="width: 11rem;">
-                                <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-                            <div class="card-body">
-                                <p class="h6 text-dark">{{ listing.product_name }}</p>
-                                <p class="font-weight-bold h6 text-dark">£{{ listing.product_price }}</p>
-                                <p class="text-dark">RRP: <del> £350</del></p>
-                            </div>
-
-                            <button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-                            </div>
-                            </router-link>
-                       </div>
                 <div
                   class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
@@ -383,6 +365,8 @@
 
                   </div>
               </div>
+    </div>
+
 </template>
 
 <script>
@@ -390,11 +374,9 @@
 import User from "../../apis/User";
 
 export default {
-  props: ['cid'],
   name: "landingPage",
   data() {
     return {
-      categorie: [],
       categoryList: [],
       newListings:[]
     };
@@ -403,28 +385,10 @@ export default {
     getCategoryList() {
       User.getCategoryList().then(response => {
       this.categoryList = response.data;
-    }).catch(error => {
-        if (!error.response) {
-            // network error
-            this.errorStatus = 'Error: Network Error';
-        } else {
-            this.errorStatus = error.response.data.message;
-            //document.getElementById("alat").innerHTML = error.response.data.message;
-        }
-      })
-    },
-    getCategory() {
-      User.getCategory(this.cid).then(response => {
-      this.categorie = response.data[0];
-    }).catch(error => {
-        if (!error.response) {
-            // network error
-            this.errorStatus = 'Error: Network Error';
-        } else {
-            this.errorStatus = error.response.data.message;
-           // document.getElementById("alat").innerHTML = error.response.data.message;
-        }
-      })
+    }).catch((errors) => {
+        console.log(errors);
+        console.log("cat list info api call error");
+      });
     },
     getNewListings() {
       User.getNewListings().then(response => {
@@ -441,7 +405,6 @@ export default {
 
   },
   mounted() {
-    this.getCategory();
     this.getCategoryList();
     this.getNewListings();
     console.log(this.categoryList);

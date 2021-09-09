@@ -5,15 +5,14 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Categories extends Model
+class messages extends Model
 {
     use HasFactory;
-
+    
     protected $fillable = [
-        'cat_name'
+        'sender_id',
+        'sender_name',
+        'reciever_id',
+        'message',
     ];
-    public function subcategories()
-    {
-        return $this->hasMany('App\Models\Subcategories', 'cat_id');
-    }
 }

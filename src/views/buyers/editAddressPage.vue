@@ -451,6 +451,7 @@ address_details: {},
     editAddress() {
       this.formData.user_id = this.$store.state.currentUser.id;
       User.editaddress(this.formData).then((res) => {
+        this.$router.push('/buyeraddresssetting');
         document.getElementById("alat").innerHTML = "Address updated successfully";
       }).catch(errors => {
         this.errors = {};
