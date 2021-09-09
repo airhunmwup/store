@@ -110,7 +110,13 @@
   </div>
   <img src="img/product/1.jpg" class="border card-img-top" alt="">
   <div class="card-body">
-    <p class="text-xs text-primary font-weight-bold">See more</p>
+              <router-link
+                class="text-dark"
+                to="/propertyPage"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                >
+    <p class="text-xs text-primary font-weight-bold">See more</p></router-link>
   </div>
 </div>
       </div>

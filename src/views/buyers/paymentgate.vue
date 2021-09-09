@@ -10,7 +10,7 @@
         <div class="row justify-center">
 
 <!--recently viewed-->
-                <div class="row col-sm-12 col-xs-12 p-3 col-lg-8 col-md-8">
+                <div class="row col-sm-12 col-xs-12 p-3 col-lg-6 col-md-6">
                     
                   
                       <div class="content">
@@ -36,7 +36,7 @@
 
             <div class="row">
 
-              <div class="col-md-8 mb-3">
+              <div class="mb-3">
                 <label for="cc-name">Name on card</label>
                 <input type="text" class="border-dark form-control" id="cc-name" placeholder="" required>
                 <small class="text-muted">Full name as displayed on card</small>
@@ -44,7 +44,7 @@
                   Name on card is required
                 </div>
               </div>
-              <div class="col-md-8 mb-3">
+              <div class="mb-3">
                 <label for="cc-number">Card number</label>
                 <input type="text" class="border-dark form-control" id="cc-number" placeholder="xxxx xxxx xxxx xxxx" required>
                 <div class="invalid-feedback">
@@ -102,7 +102,7 @@
               </div>
             </div>
 <hr>
-              <div class="p-2 col-lg-4">
+              <div class="p-2 col-lg-6">
                 <div class="card border-secondary border-dashed ">
                   <div class="card-header">
                     <p class="text-sm font-weight-bold text-dark">

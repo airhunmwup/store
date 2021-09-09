@@ -160,25 +160,22 @@
                     </p>
 
                     <div class="row">
-                      <div class="col">
-                        <p class="">Condition:</p>
-
-                        <p class="">Type:</p>
-
-                        <p class="">SKU:</p>
-
-                        <p class=""></p>
-                      </div>
-
-                      <div class="col">
-                        <p class="">{{ productDetails.product_condition }}</p>
-
-                        <p class="">Furniture</p>
-
-                        <p class="">w3324ercrt</p>
-
-                        <p class=""></p>
-                      </div>
+                      <table class="table table-borderless">
+  <tbody>
+    <tr>
+      <th scope="row">Condition:</th>
+      <td>{{ productDetails.product_condition }}</td>
+    </tr>
+    <tr class="bg-white">
+      <th scope="row">Type:</th>
+      <td>{{productDetails.product_subcat}}</td>
+    </tr>
+    <tr>
+      <th scope="row">SKU:</th>
+      <td colspan="2">Lw3324ercrt</td>
+    </tr>
+  </tbody>
+</table>
                     </div>
 
                     <div class="dropdown-divider"></div>
@@ -214,11 +211,11 @@
                       </div>
 
                       <div class="col-9 text-xs">
-                        <p class="text-success underline">Free 3 day postage</p>
+                        <p class="text-success underline">{{productDetails.product_shipping_rate}}</p>
 
-                        <p>Between Thu. 08 Jul. and Fri. 09 Jul.</p>
+                        <p>{{productDetails.product_shipping_type}}.</p>
+                        <p><span class="font-weight-bold">Shipping cost:</span> <span class="font-weight-bold"> £{{productDetails.product_shipping_cost}}.</span></p>
 
-                        <p>Item location: London, London, United Kingdom</p>
                       </div>
                     </div>
 
@@ -226,11 +223,11 @@
 
                     <div class="row text-sm">
                       <div class="col-3">
-                        <p class="text-sm font-weight-bold">Payment</p>
+                        <p class="text-sm font-weight-bold">Payment:</p>
                       </div>
 
                       <div class="col-9">
-                        <p>card</p>
+                        <p>Credit/debit card <span class="fa fa-credit-card"></span></p>
                       </div>
                     </div>
                   </div>
