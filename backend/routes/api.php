@@ -68,6 +68,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/uploader', [ProductsController::class, 'imageUploader']);
     Route::post('/getlistings/{userid}', [ProductsController::class, 'getlistings']);
     Route::delete('/deletelisting/{id}', [ProductsController::class, 'destroy']);
+    Route::post('/purchase', [PurchaseController::class, 'purchase']);
 });
 
 

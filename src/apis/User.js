@@ -106,6 +106,10 @@ export default{
 
     deletelisting(id){
         return Api().delete("/deletelisting/" + id);
+    },
+
+    purchase(data){
+        return Api().post("/purchase", id);
     }
 
 
