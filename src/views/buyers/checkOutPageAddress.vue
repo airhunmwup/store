@@ -35,7 +35,7 @@
 
               <p class="card-text text-dark">{{this.$store.state.address[0].town_city}}, {{this.$store.state.address[0].postal_code}}</p>
 
-              <p class="card-text text-dark">{{this.$store.state.addadress[0].country}}</p>
+              <p class="card-text text-dark">{{this.$store.state.address[0].country}}</p>
             </div>
 
             <p class="p-2">
