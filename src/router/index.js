@@ -37,6 +37,7 @@ import paymentgate from '../views/buyers/paymentgate.vue'
 import edit_login_name from '../views/buyers/edit_login_name.vue'
 import edit_login_email from '../views/buyers/edit_login_email.vue'
 import edit_login_mobilenumber from '../views/buyers/edit_login_mobilenumber.vue'
+import paymentsuccess from '../views/buyers/paymentsuccess.vue'
 
 
 
@@ -145,6 +146,11 @@ const routes = [{
         path: '/Listing',
         name: 'listing Page',
         component: listing_page,
+    },
+    {
+        path: '/paymentsuccess',
+        name: 'paymentsuccess',
+        component: paymentsuccess,
     },
     {
         path: '/listings',
