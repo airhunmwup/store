@@ -21,7 +21,12 @@ export default{
     getCategoryList(){
         return Api().get("/category");
     },
-    
+    getCategory(id){
+        return Api().get("/categorie/" + id);
+    },
+    getListing(id){
+        return Api().get("/getlisting/" + id);
+    },
     getSubCategoryList2(id){
         return Api().get("/subcategory/" + id);
     },

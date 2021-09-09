@@ -265,7 +265,7 @@ const routes = [{
         component: adChoice,
     },
     {
-        path: '/Categorie Page',
+        path: '/CategoriePage',
         name: 'UserCategoriePage',
         component: userCategoriePage,
     },
@@ -306,9 +306,10 @@ const routes = [{
     },
 
     {
-        path: '/Categorie Page',
+        path: '/CategoriePage/:cid',
         name: 'UserCategoriePage',
         component: userCategoriePage,
+        props: true,
     },
     {
         path: '/orderpage',

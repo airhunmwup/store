@@ -17,7 +17,11 @@ class CategoryController extends Controller
         //
         return Categories::with('subcategories')->get();
     }
-
+    public function getcat($id)
+    {
+        //
+        return Categories::where('id', $id)->with('subcategories')->get();
+    }
     /**
      * Show the form for creating a new resource.
      *

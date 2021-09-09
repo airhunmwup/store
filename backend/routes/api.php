@@ -39,6 +39,7 @@ Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 
 //Static Public Routes
 Route::get('/category', [CategoryController::class, 'index']);
+Route::get('/categorie/{id}', [CategoryController::class, 'getcat']);
 Route::get('/sub_category', [SubcategoryController::class, 'index']);
 Route::get('/subcategory/{id}', [SubcategoryController::class, 'fetch']);
 Route::post('/getsubcategories', [SubcategoryController::class, 'load']);
@@ -52,6 +53,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/products', [ProductsController::class, 'store']);
     Route::post('/createlisting', [ProductsController::class, 'store']);
     Route::post('/getlistings/{user_id}', [ProductsController::class, 'getlistings']);
+    Route::get('/getlisting/{id}', [ProductsController::class, 'getlisting']);
     Route::put('/products/{id}', [ProductsController::class, 'update']);
     Route::delete('/productdelete/{id}', [ProductsController::class, 'destroy']);
     Route::post('/wishlist', [WishlistController::class, 'store']);
