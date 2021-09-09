@@ -25,6 +25,9 @@ export default{
     getSubCategoryList2(id){
         return Api().get("/subcategory/" + id);
     },
+    getSubCategoryList3(){
+        return Api().post("/getsubcategories");
+    },
     catInfo(id){
         return Api().get("/subcat/" + id);
     },

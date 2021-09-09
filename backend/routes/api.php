@@ -41,6 +41,7 @@ Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 Route::get('/category', [CategoryController::class, 'index']);
 Route::get('/sub_category', [SubcategoryController::class, 'index']);
 Route::get('/subcategory/{id}', [SubcategoryController::class, 'fetch']);
+Route::post('/getsubcategories', [SubcategoryController::class, 'load']);
 Route::get('/subcat/{id}', [SubcategoryController::class, 'get']);
 
 Route::post('/category', [CategoryController::class, 'store']);
@@ -49,6 +50,8 @@ Route::get('/images', [ImageuploadController::class, 'index']);
 //Protected Routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/products', [ProductsController::class, 'store']);
+    Route::post('/createlisting', [ProductsController::class, 'store']);
+    Route::post('/getlistings/{user_id}', [ProductsController::class, 'getlistings']);
     Route::put('/products/{id}', [ProductsController::class, 'update']);
     Route::delete('/productdelete/{id}', [ProductsController::class, 'destroy']);
     Route::post('/wishlist', [WishlistController::class, 'store']);
@@ -69,7 +72,6 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/fetchmessages/{id}', [MessagesController::class, 'index']);
     Route::get('/getmessage/{id}', [MessagesController::class, 'get']);
 });
-
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();

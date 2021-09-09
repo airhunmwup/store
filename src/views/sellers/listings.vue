@@ -125,18 +125,26 @@
               aria-label="Basic example"
             >
               <router-link
-                to="/newlisting3"
+                to="/newlisting"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="add new listings"
               >
-                <button type="button" class="btn text-lg">
+                <button type="button" class="btn btn-success btn-xs text-lg">
                   <span class="zmdi zmdi-plus-square"></span>
                 </button>
               </router-link>
-              <button type="button" class="btn btn-sm text-lg">
+              <router-link
+                to="/newlisting"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                title="add new listings"
+              >
+                <button type="button" class="btn btn-danger btn-xs text-lg">
                 <span class="zmdi zmdi-delete"></span>
               </button>
+              </router-link>
+              
             </div>
           </div>
 
@@ -229,32 +237,29 @@
                   <p class="">160</p>
                 </div>
                 <div class="col text-right">
+                 
                   <button
                     type="button"
                     class="
                       btn
                       text-light
                       btn-danger btn-xs
-                      text-xs
-                      underline
-                      btn-block
                     "
                     @click="deletelisting(prods.id)"
                   >
-                    Delete
+                    <span class="zmdi zmdi-delete"></span>
                   </button>
+                  
                   <button
                     type="button"
                     class="
                       btn
                       text-light
                       btn-info btn-xs
-                      text-xs
-                      underline
-                      btn-block
+                      ml-1
                     "
                   >
-                    Edit
+                   <i class="zmdi zmdi-edit"></i>
                   </button>
                 </div>
               </div>
@@ -474,6 +479,7 @@
       <!-- end col-md-9-1 -->
     </div>
   </div>
+
 </template>
 <script>
 import User from '../../apis/User';

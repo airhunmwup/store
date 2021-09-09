@@ -18,26 +18,26 @@
                       <div class="sidebar-block">
                         <div class="title-block">All Categories</div>
                         <div class="block-content font-weight-bold text-dark">
-                          <div class="cateTitle hasSubCategory open level1">
+                          <div v-for="category in categoryList" v-bind:key="category.id" class="cateTitle hasSubCategory open level1">
                             <span
                               class="arrow collapsed collapse-icons"
                               data-toggle="collapse"
-                              data-target="#livingroom"
+                              v-bind:data-target="'#livingroom' + category.id" 
                               aria-expanded="false"
                               role="status"
                             >
                               <i class="zmdi zmdi-minus"></i>
                               <i class="zmdi zmdi-plus"></i>
                             </span>
-                            <a class="cateItem " href="#">Category</a>
+                            <a class="cateItem " href="#">{{ category.cat_name }}</a>
                             <div
                               class="subCategory "
-                              id="livingroom"
+                              v-bind:id="'livingroom' + category.id"
                               aria-expanded="true"
                               role="status"
                             >
-                              <div class="cateTitle">
-                                <a href="#" class="cateItem text-primary underline">subcategory</a>
+                              <div  v-for="subcategory in category.subcategories" v-bind:key="subcategory.id" class="cateTitle">
+                                <a href="#" class="cateItem">{{ subcategory.sub_catname }}</a>
                               </div>
                               <div class="cateTitle">
                                 <a href="#" class="cateItem">subcategory</a>
@@ -195,7 +195,7 @@
 
                     <div class="col-lg-9 col-md-9 col-sm-9">
                       <p class="text p-3 text-dark h5 font-weight-bold font-weight-normal">
-                    The link name here
+                    All Listings
                   </p>
                       <br />
   <div class="row">
@@ -855,7 +855,7 @@
                       <!-- FEATURED Listings -->
                       <div class="title-product">
                         <div class="row">
-                <div
+                <div v-for="listing in newListings" v-bind:key="listing.id"
                   class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
             <router-link
@@ -868,8 +868,8 @@
             <div class="card" style="width: 11rem;">
   <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
+                    <p class="h6 text-dark">{{ listing.product_name }}</p>
+                    <p class="font-weight-bold h6 text-dark">£{{ listing.product_price }}</p>
                     <p class="text-dark">RRP: <del> £350</del></p>
   </div>
 
@@ -943,6 +943,7 @@
 </div>
             </router-link>
                 </div>
+                
                 <div
                   class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
                 >
@@ -1156,10 +1157,15 @@ export default {
     getCategoryList() {
       User.getCategoryList().then(response => {
       this.categoryList = response.data;
-    }).catch((errors) => {
-        console.log(errors);
-        console.log("cat list info api call error");
-      });
+    }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            //document.getElementById("alat").innerHTML = error.response.data.message;
+        }
+      })
     },
     getNewListings() {
       User.getNewListings().then(response => {
