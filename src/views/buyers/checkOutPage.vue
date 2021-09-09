@@ -15,7 +15,7 @@
                   
                       <div class="content">
 
-              <p class="text-dark font-weight-bold h5 text-lg">Checkout</p>
+              <p class="text-center text-dark font-weight-bold h5 text-lg">Checkout</p>
                         <div class="tab-content">
                           <div
                             class="tab-pane fade in active show justify-content-center  col-sm-12 col-xs-12 p-3 col-lg-12 col-md-12"
