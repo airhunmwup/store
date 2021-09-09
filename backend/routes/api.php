@@ -70,10 +70,17 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/fetchAddress/{id}', [AddressbuyersController::class, 'fetch']);
     Route::post('/editAddress', [AddressbuyersController::class, 'edit']);
     Route::post('/deleteaddress', [AddressbuyersController::class, 'destroy']);
+ 
+    Route::post('/createlisting', [ProductsController::class, 'store']);
+    Route::post('/uploader', [ProductsController::class, 'imageUploader']);
+    Route::post('/getlistings/{userid}', [ProductsController::class, 'getlistings']);
+    Route::delete('/deletelisting/{id}', [ProductsController::class, 'destroy']);
+    Route::post('/purchase', [PurchaseController::class, 'purchase']);
     Route::post('/sendmessage', [MessagesController::class, 'store']);
     Route::get('/fetchmessages/{id}', [MessagesController::class, 'index']);
     Route::get('/getmessage/{id}', [MessagesController::class, 'get']);
     Route::get('/listings/{id}', [productsController::class, 'get']);
+
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

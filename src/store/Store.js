@@ -30,6 +30,12 @@ export const store = new Vuex.Store({
         },
         wishList: state => {
             return state.wishList;
+        },
+        getCurrentUser: state => {
+            return state.currentUser;
+        },
+        getAddress: state => {
+            return state.address;
         }
     },
     mutations: {
