@@ -30,7 +30,7 @@
             <div class="row">
 
               <div class="mb-3">
-                <label for="cc-name">Name on card</label>
+                <label for="cc-name" class="text-sm">Name on card</label>
                 <input type="text" class="border-dark form-control" id="cc-name" placeholder="" required>
                 <small class="text-muted">Full name as displayed on card</small>
                 <div class="invalid-feedback">
@@ -38,7 +38,7 @@
                 </div>
               </div>
               <div class="mb-3">
-                <label for="cc-number">Card number</label>
+                <label for="cc-number" class="text-sm">Card number</label>
                 <input type="text" class="border-dark form-control" id="cc-number" placeholder="xxxx xxxx xxxx xxxx" required>
                 <div class="invalid-feedback">
                   Credit card number is required
@@ -47,7 +47,7 @@
             </div>
             <div class="row">
               <div class="row col-md-6 col-sm-6 col-xs-12 mb-3">
-                <label for="cc-expiration">Expiration</label>
+                <label for="cc-expiration" class="text-sm">Expiration</label>
               <div class="col mb-2">
                 <select type="text" class="border-dark form-control" id="cc-expiration" placeholder="" required>
                     <option>01</option>
@@ -87,7 +87,7 @@
               </div>
               </div>
               <div class="col-4 mb-3">
-                <label for="cc-expiration">CVV</label>
+                <label for="cc-expiration" class="text-sm">CVV</label>
                 <input type="text" class="border-dark col-xs-4 col-sm-5  form-control" id="cc-cvv" placeholder="" required>
                 <div class="invalid-feedback">
                   Security code required
