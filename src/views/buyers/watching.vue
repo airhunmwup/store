@@ -64,7 +64,7 @@
 
 <div class="card border m-2"  v-for="list in this.$store.state.wishList" :key="list.id">
   <div class="row">
-    <div class="col-4 col-lg-4 pt-4 ml-3 img-fluid">
+    <div class="col-4 col-lg-4 pt-4 p-4 img-fluid">
       <img class="" style="width: 14rem; height: 100%" :src="API_BASE_URL + list['product_image']" />
     </div>
     <div class="col-8 col-lg-5">
@@ -105,8 +105,8 @@
     <p class="card-title h6 text-dark"> {{list['product_name']}}</p>
     <p class="card-text text-dark">£{{list['product_price']}}</p>
   </div>
-    <a href="#" class="m-2 btn btn-warning border text-sm btn-sm">Add to basket</a>
-    <a href="#" class="m-2 btn btn-light border text-primary underline text-sm btn-sm">Remove</a>
+    <a @click="addToBasket" class="m-2 btn btn-warning border text-sm btn-sm">Add to basket</a>
+    <a class="m-2 btn btn-light border text-primary underline text-sm btn-sm" @click="removeWishlist(list['id'])">Remove</a>
   </div>
   </div>
 </div>
@@ -140,6 +140,11 @@ export default {
     }
   },
   created(){
+  },
+  data() {
+    return {
+      API_BASE_URL: Constants.API_BASE_URL,
+    };
   },
   updated(){
     console.log(this.getUser);

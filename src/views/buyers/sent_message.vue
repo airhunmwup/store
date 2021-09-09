@@ -59,63 +59,6 @@
   </div>
           </router-link>
   </li>
-    <li class="list-group-item">
-          <router-link
-                              to="/messageopen"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
-  <div class="row">
-    <div class="col-9">
-      <p class="text-left text-sm">
-      <b>Ivan,</b> regarding your recent order at REJEEStores.com.
-      </p>
-    </div>
-    <div class="col">
-      <p class="text-right text-xs">18/12 00:14:32</p>
-    </div>
-  </div>
-          </router-link>
-  </li>
-    <li class="list-group-item">
-          <router-link
-                              to="/messageopen"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
-  <div class="row">
-    <div class="col-9">
-      <p class="text-left text-sm">
-      <b>Ivan,</b> regarding your recent order at REJEEStores.com.
-      </p>
-    </div>
-    <div class="col">
-      <p class="text-right text-xs">18/12 00:14:32</p>
-    </div>
-  </div>
-          </router-link>
-  </li>
-    <li class="list-group-item">
-          <router-link
-                              to="/messageopen"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
-  <div class="row">
-    <div class="col-9">
-      <p class="text-left text-sm">
-      <b>Ivan,</b> regarding your recent order at REJEEStores.com.
-      </p>
-    </div>
-    <div class="col">
-      <p class="text-right text-xs">18/12 00:14:32</p>
-    </div>
-  </div>
-          </router-link>
-  </li>
   </ul>
 </div>
 

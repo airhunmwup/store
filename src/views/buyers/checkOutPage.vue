@@ -1,303 +1,122 @@
 <template>
-  <div class="">
-    <!-- main content -->
-    <!-- breadcrumb -->
+  <!-- main content -->
+  <div class="justify-content-center">
+    <div class="row">
+      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
+        
+      </div>
 
-    <!-- main -->
-    <div class="container">
-      <div class="row">
-        <div id="main">
-          <div class="row">
-            <div class="col-md-8 check-info">
-              <div class="checkout-personal-step">
-                <h3 class="step-title text-dark h5 info">
-                  PERSONAL INFORMATION
-                </h3>
+    </div>
+        <div class="row justify-center">
+
+<!--recently viewed-->
+                <div class="row col-sm-12 col-xs-12 p-3 col-lg-6 col-md-6">
+                    
+                  
+                      <div class="content">
+
+              <p class="text-dark font-weight-bold h5 text-lg">Checkout</p>
+                        <div class="tab-content">
+                          <div
+                            class="tab-pane fade in active show justify-content-center  col-sm-12 col-xs-12 p-3 col-lg-12 col-md-12"
+                            id="checkout-guest-form"
+                            role="tabpanel"
+                          >
+                            <div class="card ">
+                            <div class="card-body">
+
+<form>
+
+            <div class="row">
+
+              <div class="mb-3">
+                <label for="cc-name">Name on card</label>
+                <input type="text" class="border-dark form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Full name as displayed on card</small>
+                <div class="invalid-feedback">
+                  Name on card is required
+                </div>
               </div>
-              <div class="content">
-                <ul class="nav nav-inline">
-                  <li class="nav-item">
-                    <a
-                      class="
-                        nav-link
-                        active
-                        underline
-                        text-dark
-                        font-weight-bold
-                      "
-                      data-toggle="tab"
-                      href="#checkout-guest-form"
-                    >
-                      ORDER AS A GUEST
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a
-                      class="nav-link underline text-dark font-weight-bold"
-                      data-toggle="tab"
-                      href="#checkout-login-form"
-                    >
-                      SIGN IN
-                    </a>
-                  </li>
-                </ul>
-                <div class="tab-content">
-                  <div
-                    class="
-                      tab-pane
-                      fade
-                      in
-                      active
-                      show
-                      col-md-8 col-lg-8 col-sm-8
-                    "
-                    id="checkout-guest-form"
-                    role="tabpanel"
-                  >
-                    <form action="#" class="js-customer-form" method="post">
-                      <div>
-                        <input type="hidden" name="id_customer" value="" />
-                        <div class="form-group row">
-                          <input
-                            class="
-                              form-control
-                              border-b-2 border-t-0 border-l-0 border-r-0
-                            "
-                            name="firstname"
-                            type="text"
-                            placeholder="Full name"
-                          />
-                        </div>
-                        <div class="form-group row">
-                          <input
-                            class="
-                              form-control
-                              border-b-2 border-t-0 border-l-0 border-r-0
-                            "
-                            name="email"
-                            type="email"
-                            placeholder="Email"
-                          />
-                        </div>
-                        <div class="form-group row">
-                          <input
-                            class="
-                              form-control
-                              border-b-2 border-t-0 border-l-0 border-r-0
-                            "
-                            name="phone"
-                            type="number"
-                            placeholder="Phone"
-                          />
-                        </div>
-                        <div class="desc-password">
-                          <span class="text-dark font-weight-bold"
-                            >Create an account</span
-                          >
-                          <span>(optional)</span>
-                          <br />
-                          <span class="text-muted"
-                            >And save time on your next order!</span
-                          >
-                        </div>
-                        <div class="form-group row">
-                          <input
-                            class="
-                              form-control
-                              border-b-2 border-t-0 border-l-0 border-r-0
-                            "
-                            name="password"
-                            type="password"
-                            placeholder=" Password"
-                          />
-                        </div>
-                        <div class="form-group row check-input">
-                          <p>
-                            <input
-                              class="check"
-                              name="optin"
-                              type="checkbox"
-                              value="1"
-                            />
-                            <span class="text-primary">
-                              Receive offers from our partners</span
-                            >
-                          </p>
-                        </div>
-                        <div class="form-group row">
-                          <p>
-                            <input
-                              class="pt-2"
-                              name="newsletter"
-                              type="checkbox"
-                              value="1"
-                            />
-                            <span class="text-primary">
-                              Sign up for our newsletter
-                              <br />
-                              <em
-                                >You may unsubscribe at any moment. For that
-                                purpose, please find our contact info in the
-                                legal notice.
-                              </em>
-                            </span>
-                          </p>
-                        </div>
-                      </div>
-                      <div class="p-3">
-                        <router-link
-                          to="/checkoutAddress"
-                          data-toggle="collapse"
-                          data-target=".navbar-collapse"
-                          title="Continue"
-                        >
-                          <button
-                            class="
-                              col-lg-12 col-md-12 col-sm-12
-                              btn btn-warning
-                              form-control
-                              add-to-cart
-                            "
-                            data-button-action="add-to-cart"
-                            type="submit"
-                          >
-                            Continue
-                          </button></router-link
-                        >
-                      </div>
-                    </form>
-                  </div>
-                  <div
-                    class="tab-pane fade col-md-8 col-lg-8 col-sm-8"
-                    id="checkout-login-form"
-                    role="tabpanel"
-                  >
-                    <form
-                      id="login-form"
-                      action="#"
-                      method="post"
-                      class="customer-form"
-                    >
-                      <div>
-                        <input type="hidden" name="back" value="" />
-                        <div class="form-group row">
-                          <input
-                            class="
-                              form-control
-                              border-b-2 border-t-0 border-l-0 border-r-0
-                            "
-                            name="email"
-                            type="email"
-                            placeholder="Email"
-                          />
-                        </div>
-                        <div class="form-group row">
-                          <input
-                            class="
-                              form-control
-                              border-b-2 border-t-0 border-l-0 border-r-0
-                            "
-                            name="password"
-                            type="password"
-                            placeholder="Password"
-                          />
-                        </div>
-                        <div class="row p-2">
-                          <div class="forgot-password text-primary underline">
-                            <router-link
-                              to="/passwordrecovery"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              class="text-primary underline font-weight-bold"
-                              title="Forget your password?"
-                            >
-                              Forgot your password?
-                            </router-link>
+              <div class="mb-3">
+                <label for="cc-number">Card number</label>
+                <input type="text" class="border-dark form-control" id="cc-number" placeholder="xxxx xxxx xxxx xxxx" required>
+                <div class="invalid-feedback">
+                  Credit card number is required
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="row col-md-6 col-sm-6 col-xs-12 mb-3">
+                <label for="cc-expiration">Expiration</label>
+              <div class="col mb-2">
+                <select type="text" class="border-dark form-control" id="cc-expiration" placeholder="" required>
+                    <option>01</option>
+                    <option>02</option>
+                    <option>03</option>
+                    <option>04</option>
+                    <option>05</option>
+                    <option>06</option>
+                    <option>07</option>
+                    <option>08</option>
+                    <option>09</option>
+                    <option>10</option>
+                    <option>11</option>
+                    <option>12</option>
+                </select>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              <div class="col mb-3">
+                <select type="text" class="border-dark form-control" id="cc-expiration" placeholder="" required>
+                    <option>2020</option>
+                    <option>2021</option>
+                    <option>2022</option>
+                    <option>2023</option>
+                    <option>2024</option>
+                    <option>2025</option>
+                    <option>2026</option>
+                    <option>2027</option>
+                    <option>2028</option>
+                    <option>2029</option>
+                    <option>2030</option>
+                </select>
+                <div class="invalid-feedback">
+                  Expiration date required
+                </div>
+              </div>
+              </div>
+              <div class="col-4 mb-3">
+                <label for="cc-expiration">CVV</label>
+                <input type="text" class="border-dark col-xs-4 col-sm-5  form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Security code required
+                </div>
+              </div>
+            </div>
+<hr>
+            <hr class="mb-4">
+                               <div class="p-2">
+                                 <button type="button" class="btn btn-warning border border-dark  btn-sm btn-block">Pay</button>
+                                        </div>
+</form>
+
+                            </div>
+                            </div>
+                              <div>
+
+                            
+                              </div>
                           </div>
                         </div>
                       </div>
-                      <div class="p-3">
-                        <router-link
-                          to="/Checkout"
-                          data-toggle="collapse"
-                          data-target=".navbar-collapse"
-                          title="Home"
-                        >
-                          <button
-                            class="
-                              col-lg-12 col-md-12 col-sm-12
-                              btn btn-warning
-                              form-control
-                              add-to-cart
-                            "
-                            data-button-action="add-to-cart"
-                            type="submit"
-                          >
-                            Continue
-                          </button></router-link
-                        >
-                      </div>
-                    </form>
-                  </div>
                 </div>
-                <div class="checkout-personal-step p-2">
-                  <h3 class="step-title h5">Addresses.</h3>
-                </div>
-                <div class="checkout-personal-step p-2">
-                  <h3 class="step-title h5">Payment.</h3>
-                </div>
-              </div>
-            </div>
-            <div class="col-xs-12 col-lg-4">
-              <div class="border p-3">
-                <table class="std">
-                  <tbody>
-                    <tr v-for="cart in this.$store.state.basket" :key="cart.id">
-                      <td colspan="3">
-                        <div class="text-dark font-weight-bold">
-                          <a href="product-detail.html"
-                            >{{cart['product_name']}}</a
-                          >
-                        </div>
-                        <div>
-                          {{cart['qnty']}}x
-                          <span class="product-price">£{{cart['qnty_price']}}</span>
-                        </div>
-                      </td>
-                      <td class="action text-right" @click="removeBasket(cart['id'])">
-                        <a class="remove" href="#">
-                          <i class="fa fa-trash-o" aria-hidden="true"></i>
-                        </a>
-                      </td>
-                    </tr>
-                    <tr class="total font-weight-bold h5 text-dark">
-                      <td class="p-3" colspan="2">Total:</td>
-                      <td class="p-3" colspan="2">£{{this.$store.state.basketTotal}}</td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+
+
+          <!-- end col-md-9-1 -->
         </div>
-      </div>
-    </div>
+
+    <hr>
   </div>
 </template>
-
-<script>
-export default {
-  name: "productCart",
-  data() {
-    return {
-
-    }
-  },
-  methods: {
-    removeBasket: function (id){
-      var itemToRemove = id;
-      this.$store.dispatch('removeFromBasket', itemToRemove);
-    }
-  }
-}
-</script>
+        

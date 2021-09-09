@@ -57,25 +57,25 @@
             </div>
             <ul class="list-group list-group-flush" v-for="category of setCategoryList" :key="category.id">
               <li class="list-group-item border">
-                <div class="row">
-                  <div class="col-sm">{{ category.cat_name }}</div>
-                  <div class="col-sm">
-                    <p class="text-right text-xl">
-                      <a
+                      <a href=""
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
                         @click="subcatpagelink(category.id)"
-                        ><b
+                        >
+                <div class="row">
+                  <div class="col-sm">{{ category.cat_name }}</div>
+                  <div class="col-sm">
+                    <p class="text-right text-xl"><b
                           class="
                             fa fa-angle-right fa-lg
                             text-dark
                             font-weight-bold
                           "
                         ></b>
-                      </a>
                     </p>
                   </div>
                 </div>
+                      </a>
               </li>
             </ul>
           </div>

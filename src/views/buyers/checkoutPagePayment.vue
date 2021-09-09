@@ -20,7 +20,7 @@
                 <div class="card rounded border border-success shadow text-sm">
             <router-link
               class=""
-              to="/addnewaddress"
+              to="/Checkout"
               data-toggle="collapse"
               data-target=".navbar-collapse"
               title="Pay now"
@@ -56,7 +56,7 @@
         <p class="card bg-light border">
           <router-link
             class=""
-            to="/checkoutpayment"
+            to="/Checkout"
             data-toggle="collapse"
             data-target=".navbar-collapse"
             title="Home"
