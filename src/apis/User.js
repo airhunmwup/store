@@ -125,7 +125,7 @@ export default{
     },
 
     purchase(data){
-        return Api().post("/purchase", id);
+        return Api().post("/purchase", data);
     }
 
 

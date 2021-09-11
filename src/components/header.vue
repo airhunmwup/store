@@ -1,11 +1,11 @@
 <template>
   <header class="row border-b border-danger border-secondary">
-      <div class="alert alert-warning text-sm alert-dismissible fade hide fixed-top" role="alert">
+      <!-- <div class="alert alert-warning text-sm alert-dismissible fade hide fixed-top" role="alert">
   <strong>Alert! </strong> <span id='alat'> You fit use this place take do notifications.</span>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
   </button>
-</div>
+</div> -->
       <div class="col-2 d-xs-none">
           <a href="index.html">
           <img
