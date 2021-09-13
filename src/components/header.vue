@@ -1,6 +1,6 @@
 <template>
   <header class="row border-b border-danger border-secondary">
-      <div class="alert alert-warning text-sm alert-dismissible fade hide fixed-top" role="alert">
+      <div class="alert alert-warning text-sm alert-dismissible fade show fixed-top" style="display: none;" id="alertBox" role="alert">
   <strong>Alert! </strong> <span id='alat'> You fit use this place take do notifications.</span>
   <button type="button" class="close" data-dismiss="alert" aria-label="Close">
     <span aria-hidden="true">&times;</span>
@@ -66,13 +66,12 @@
       <div class="col-lg-6 col-md-6 col-xs-12">
             <form method="post" class="" id="customer-form">
               <div class="input-group pt-2">
-  <div class="input-group-prepend">
-    <span class="input-group-text  bg-white border-l-2 border-t-2 border-b-2 border"><i class="fa fa-search"></i></span>
-  </div>
-  <input type="text" class="form-control text-sm border-t-2 border-b-2 border-l-0 border p-2 shadow-inner" placeholder="Search for anything" aria-label="Amount (to the nearest dollar)">
-  <div class="input-group-append">
-    <span class="btn btn-dark text-sm border input-group-text">Search</span>
-  </div>
+  
+  <input type="text" id="searchBox" v-model="keywords" class="form-control text-sm border-t-2 border-b-2 border-l-0 border p-2 shadow-inner" placeholder="Search for anything" aria-label="Amount (to the nearest dollar)">
+  <div class="input-group-prepend border-r-2" @click.prevent="search">
+    <span id="searchFa" class="btn btn-default input-group-text bg-white border"><i class="fa fa-search"></i></span>
+  </div>  
+
 </div>
             </form>
       </div>
@@ -296,11 +295,12 @@
   </header>
 </template>
 <script>
-
+import { mapState } from 'vuex'
 export default {
   data() {
     return {
-      loading: false,  
+      loading: false, 
+      keywords: '', 
     };
   },
   computed:{
@@ -311,6 +311,17 @@ export default {
   methods: {
     login() {
       this.$store.dispatch("userloginInfo");
+    },
+    search() {
+    if (this.keywords !==""){
+      this.$router.push({
+        name: 'searching',
+        params: {data: this.keywords},
+        });
+    }else{
+        document.getElementById("alat").innerHTML = "search box empty";
+             
+    }
     },
     signOut() {
       this.$store.dispatch("logout");

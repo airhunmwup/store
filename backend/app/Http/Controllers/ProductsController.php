@@ -138,6 +138,18 @@ class ProductsController extends Controller
         //
         return Products::where('product_userid', $id)->get();
     }
+    public function getResults(Request $request)
+    {
+        $data = array();
+        $strings = preg_replace('#\s+#',',',trim($request->keywords));
+        $array_strings = explode(',', $strings);
+        foreach($array_strings as $keyword){
+            $results = Products::where('product_name', 'LIKE','%'.$keyword.'%')->get();
+            array_push($data, $results);
+        }
+        $data = array_unique($data);
+        return $data;
+    }
     /**
      * Show the form for editing the specified resource.
      *

@@ -26,6 +26,8 @@ import sent_message from '../views/buyers/sent_message.vue'
 import Summary from '../views/buyers/summary.vue'
 import saved_seller from '../views/buyers/saved_seller.vue'
 import saved_search from '../views/buyers/saved_search.vue'
+import search from '../views/buyers/search.vue'
+import searching from '../views/buyers/searching.vue'
 import watching from '../views/buyers/watching.vue'
 import purchase_history from '../views/buyers/purchase_history.vue'
 import recently_viewed from '../views/buyers/recently_viewed.vue'
@@ -481,6 +483,16 @@ const routes = [{
         path: '/Summary',
         name: 'Summary',
         component: Summary,
+    },
+    {
+        path: '/search',
+        name: 'search',
+        component: search,
+    },
+    {
+        path: '/searching',
+        name: 'searching',
+        component: searching,
     },
     {
         path: '/My Message',

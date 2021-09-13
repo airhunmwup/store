@@ -143,7 +143,7 @@ export default {
             this.$router.push({
                 name: 'newlisting',
                 params: { data: name }
-            });
+            }).catch(()=>{});
         }
     },
     computed: mapState(['setSubCategoryList']),

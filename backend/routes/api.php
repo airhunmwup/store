@@ -14,6 +14,7 @@ use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | API Routes
@@ -44,6 +45,7 @@ Route::get('/sub_category', [SubcategoryController::class, 'index']);
 Route::get('/subcategory/{id}', [SubcategoryController::class, 'fetch']);
 Route::post('/getsubcategories', [SubcategoryController::class, 'load']);
 Route::get('/subcat/{id}', [SubcategoryController::class, 'get']);
+Route::post('/getResults', [ProductsController::class, 'getResults']);
 
 Route::post('/category', [CategoryController::class, 'store']);
 Route::get('/images', [ImageuploadController::class, 'index']);
