@@ -17,6 +17,7 @@ class CreateMyOrdersTable extends Migration
             $table->id();
             $table->string('user_id');
             $table->integer('order_id');
+            $table->string('order_code');
             $table->string('order_status')->default('pending'); 
             $table->string('product_name');
             $table->string('product_image');
