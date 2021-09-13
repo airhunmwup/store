@@ -10,7 +10,7 @@
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"><router-link
           v-for="category of categoryList"
           :key="category.id"
-          to="/Categorie page"
+          v-bind:to="'/CategoriePage/' + category.id"
           class="dropright"
           data-toggle="collapse"
           data-target=".navbar-collapse"

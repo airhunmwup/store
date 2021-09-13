@@ -7,6 +7,8 @@ use App\Models\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
+use App\Models\Categories;
+use App\Models\Subcategories;
 
 class ProductsController extends Controller
 {
@@ -78,6 +80,9 @@ class ProductsController extends Controller
         //
         $fields = $request->validate([
             'product_subcat' => 'required|string',
+            'product_catname' => 'required|string',
+            'product_cat_id' => 'required|integer',
+            'product_subcat_id' => 'required|integer',
             'product_name' => 'required|string',
             'product_price' => 'required|integer',
             'product_condition' => 'required|string',
@@ -93,6 +98,9 @@ class ProductsController extends Controller
 
         return Products::create([
             'product_subcat' => $fields['product_subcat'],
+            'product_catname' => $fields['product_catname'],
+            'product_cat_id' => $fields['product_cat_id'],
+            'product_subcat_id' => $fields['product_subcat_id'],
             'product_userid' => $request->product_userid,
             'product_name' => $fields['product_name'],
             'product_condition' => $fields['product_condition'],
@@ -137,6 +145,21 @@ class ProductsController extends Controller
     {
         //
         return Products::where('product_userid', $id)->get();
+    }
+    public function getResults(Request $request)
+    {
+        $data = array();
+        $strings = preg_replace('#\s+#',',',trim($request->keywords));
+        $array_strings = explode(',', $strings);
+        foreach($array_strings as $keyword){ 
+            $results = Products::where('product_name', 'LIKE','%'.$keyword.'%')
+            ->orWhere('product_subcat', 'LIKE','%'.$keyword.'%')
+            ->orWhere('product_catname', 'LIKE','%'.$keyword.'%')
+            ->get();        
+            array_push($data, $results);
+        }
+        $data = array_unique($data);
+        return $data;
     }
     /**
      * Show the form for editing the specified resource.

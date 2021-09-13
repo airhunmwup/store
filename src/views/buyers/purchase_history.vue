@@ -161,7 +161,7 @@
             to="purchase_history"
             title="send message"
         >
-             <button class="btn btn-sm m-1 btn-success" @click.prevent="sendMessage" type="submit">send</button>
+        <button class="btn btn-sm m-1 btn-success" @click.prevent="sendMessage" type="submit">send</button>
         
         </router-link>
     </form>

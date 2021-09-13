@@ -119,6 +119,9 @@ export default{
     getlistings(userid){
         return Api().post("/getlistings/"+ userid);
     },
+    getResults(data){
+        return Api().post("/getResults", data);
+    },
 
     deletelisting(id){
         return Api().delete("/deletelisting/" + id);
