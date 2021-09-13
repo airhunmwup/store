@@ -32,4 +32,9 @@ class UserPayment extends Model
     {
         return $this->hasMany(Order::class);
     }
+
+    public function myorders()
+    {
+        return $this->hasMany(MyOrder::class);
+    }
 }

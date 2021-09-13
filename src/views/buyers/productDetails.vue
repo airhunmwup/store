@@ -63,10 +63,11 @@
             <div class="col-8">
               <input
                 type="number"
-                max="4"
+                max="10"
                 min="1"
                 value="1"
                 class="form-control form-control-sm col-4 mx-sm-3"
+                v-model.number="order_qnty"
               />
             </div>
           </div>
@@ -161,21 +162,21 @@
 
                     <div class="row">
                       <table class="table table-borderless">
-  <tbody>
-    <tr>
-      <th scope="row">Condition:</th>
-      <td>{{ productDetails.product_condition }}</td>
-    </tr>
-    <tr class="bg-white">
-      <th scope="row">Type:</th>
-      <td>{{productDetails.product_subcat}}</td>
-    </tr>
-    <tr>
-      <th scope="row">SKU:</th>
-      <td colspan="2">Lw3324ercrt</td>
-    </tr>
-  </tbody>
-</table>
+                    <tbody>
+                      <tr>
+                        <th scope="row">Condition:</th>
+                        <td>{{ productDetails.product_condition }}</td>
+                      </tr>
+                      <tr class="bg-white">
+                        <th scope="row">Type:</th>
+                        <td>{{productDetails.product_subcat}}</td>
+                      </tr>
+                      <tr>
+                        <th scope="row">SKU:</th>
+                        <td colspan="2">Lw3324ercrt</td>
+                      </tr>
+                    </tbody>
+                  </table>
                     </div>
 
                     <div class="dropdown-divider"></div>
@@ -516,11 +517,13 @@ export default {
     },
     addToBasket() {
       if (this.$store.state.basket.length == 0) {
+        console.log(this.order_qnty);
         this.productDetails["qnty"] = this.order_qnty;
         this.productDetails["qnty_price"] =
           this.productDetails.product_price * this.order_qnty;
         this.$store.dispatch("addToBasket", this.productDetails);
       } else if (this.$store.state.basket.length > 0) {
+        console.log(this.order_qnty);
         var basketStore = this.$store.state.basket;
         var updateBasket = basketStore.find(this.findBasket);
         //if product exists in basket and qnty is not equals to the qnty in the basket

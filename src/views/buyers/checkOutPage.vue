@@ -84,7 +84,7 @@ export default {
       customer: {
         first_name: "",
         last_name: "",
-        email: "houseintellects@gmail.com",
+        email: "",
         address: "",
         city: "",
         state: "",
@@ -150,7 +150,7 @@ export default {
     getCurrentUser() {
       this.customer.first_name = this.$store.getters.getCurrentUser.first_name;
       this.customer.last_name = this.$store.getters.getCurrentUser.last_name;
-      //this.customer.email = this.$store.getters.getCurrentUser.email;
+      this.customer.email = "houseintellects@gmail.com";
       this.customer.address = this.$store.getters.getAddress[0].address_line1;
       this.customer.city = this.$store.getters.getAddress[0].town_city;
       this.customer.state = this.$store.getters.getAddress[0].county;

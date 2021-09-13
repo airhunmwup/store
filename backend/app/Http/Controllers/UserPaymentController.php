@@ -44,12 +44,12 @@ class UserPaymentController extends Controller
                     'total' => $payment->charges->data[0]->amount
                 ]);
 
-            foreach (json_decode($request->input('cart'), true) as $item) {
+            /* foreach (json_decode($request->input('cart'), true) as $item) {
                 $order->products()
                     ->attach($item['id'], ['quantity' => $item['quantity']]);
             }
 
-            $order->load('products');
+            $order->load('products'); */
             return $order;
 
         } catch (\Exception $e) {

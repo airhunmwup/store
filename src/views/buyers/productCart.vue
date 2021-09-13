@@ -21,18 +21,18 @@
                 <img class="" :src="API_BASE_URL + cart['product_image1']" />
               </div>
               <div class="col-12 col-lg-4">
-                <p class="mt-4 text-lg text-dark">
+                <p class="mt-4  m-1 text-lg text-dark font-weight-bold">
                   {{ cart["product_name"] }}
                 </p>
                 <p class="value m-1 font-weight-bold text-dark">
                   GBP £{{ cart["qnty_price"] }}
                 </p>
-                <p class="value m-1 text-dark">
-                  Quantity {{ cart["qnty_price"] }}
+                <p class="value m-1 font-weight-bold  text-dark">
+                  Quantity: {{ cart["qnty"] }}
                 </p>
 
-                <p class="text-xs text-primary">
-                  Shipping: Economy Service (2 to 9 business days)
+                <p class="text-xs m-1  text-primary">
+                  {{cart.product_shipping_rate}}
                 </p>
               </div>
               <div class="col-12 col-lg-4 mt-4 align-content-between">
@@ -68,7 +68,7 @@
             <div class="row text-sm text-dark">
               <div class="col">Shipping:</div>
               <div class="col text-right">
-                £5.23
+                £{{this.$store.state.basket[0].product_shipping_cost}}
               </div>
             </div>
             <div class="dropdown-divider"></div>
