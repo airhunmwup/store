@@ -60,7 +60,7 @@
                       <a href=""
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
-                        @click="subcatpagelink(category.id)"
+                        @click="subcatpagelink(category.id, category.cat_name)"
                         >
                 <div class="row">
                   <div class="col-sm">{{ category.cat_name }}</div>
@@ -89,10 +89,10 @@
 import { mapState } from 'vuex'
 export default {
   methods: {
-    subcatpagelink(pid) {
+    subcatpagelink(pid,catname) {
         this.$router.push({
         name: 'addsubcategory',
-        params: {data: pid}
+        params: {data: pid,cat_name: catname}
       });
     }
   },

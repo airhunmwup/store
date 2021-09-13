@@ -40,7 +40,7 @@
                 <p class="ml-4 btn btn-sm border btn-light">
                   <span class="fa fa-angle-double-right rounded"></span></p
               ></router-link>
-              <p class="ml-4 btn">{{category}}</p>
+              <p class="ml-4 btn">{{cat_name}} , {{category}}</p>
               <span style="color: red; font-size: 12px;" v-text="errors.product_subcat"></span>
             </div>
             <div class="col-12 p-2">
@@ -371,6 +371,9 @@ export default {
   data() {
     return {
       category: this.$route.params.data,
+      cat_name : this.$route.params.cat_name,
+      cat_id : this.$route.params.cat_id,
+      subcat_id : this.$route.params.subcat_id,
       imagePreview: [],
       image: [],
       num: 1,
@@ -378,7 +381,10 @@ export default {
       tableId: "",
       formData: {
         product_subcat: this.$route.params.data,
+        product_catname: this.$route.params.cat_name,
         product_userid: this.$store.state.currentUser.id,
+        product_cat_id : this.$route.params.cat_id,
+        product_subcat_id : this.$route.params.subcat_id,
         product_name: "",
         product_condition: "",
         product_desc: "",
@@ -457,7 +463,7 @@ export default {
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-            document.getElementById("alat").innerHTML = error.response.data.message;
+            //document.getElementById("alat").innerHTML = error.response.data.message;
         }
       })
       }else{

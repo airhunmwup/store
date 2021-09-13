@@ -95,7 +95,7 @@
     
                             data-target=".navbar-collapse"
     
-                            @click="category(subcat.sub_catname)"
+                            @click="category(subcat.sub_catname,subcat.id)"
     
                             ><b
     
@@ -136,13 +136,14 @@ export default {
     data() {
         return {
             pid: this.$route.params.data,
+            cat_name: this.$route.params.cat_name,
         }
     },
     methods: {
-        category(name) {
+        category(name,id) {
             this.$router.push({
                 name: 'newlisting',
-                params: { data: name }
+                params: { data: name, subcat_id: id, cat_id: this.pid, cat_name: this.cat_name }
             }).catch(()=>{});
         }
     },

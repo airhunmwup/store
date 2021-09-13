@@ -17,6 +17,9 @@ class CreateProductsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->string("product_subcat");
+            $table->string("product_catname");
+            $table->string("product_cat_id");
+            $table->string("product_subcat_id");
             $table->string("product_userid");
             $table->string("product_name");
             $table->string("product_condition");

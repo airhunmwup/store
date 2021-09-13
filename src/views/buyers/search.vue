@@ -59,7 +59,7 @@
 
                     <div class="col-lg-9 col-md-9 col-sm-12">
                       <p class="text p-3 text-dark h5 font-weight-bold font-weight-normal">
-                        {{ formData.keywords }}
+                        <span id="dis"></span> {{ keywords }}
                       </p>
                     
                       
@@ -382,6 +382,7 @@ export default {
   name: "landingPage",
   data() {
     return {
+     keywords: this.$route.params.data,
      formData: {
         keywords: this.$route.params.data,
       },      
@@ -406,7 +407,11 @@ export default {
     },
     getResults() {
       User.getResults(this.formData).then(response => {
+      if (response.data[0].length !==0){
       this.newListings = response.data[0];
+      }else{
+        document.getElementById("dis").innerHTML = "No results found on";
+      }
       console.log(this.newListings);
     }).catch(error => {
         if (!error.response) {
@@ -414,7 +419,7 @@ export default {
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-            document.getElementById("alat").innerHTML = error.response.data.message;
+           // document.getElementById("alat").innerHTML = error.response.data.message;
         }
       })
     },
