@@ -71,6 +71,8 @@ export const store = new Vuex.Store({
             total.forEach(key => {
                 state.basketTotal += state.basket[key]['qnty_price'];
             });
+
+            
             //OPTIMIZATION NEEDED
             localStorage.setItem('basketTotal', state.basketTotal);
             state.basketTotal = parseInt(localStorage.getItem('basketTotal'));

@@ -88,7 +88,7 @@ export default {
         address: "",
         city: "",
         state: "",
-        zip_code: "",
+        zip_code: "533416",
       },
       paymentProcessing: false,
     };
@@ -108,13 +108,12 @@ export default {
   methods: {
     async processPayment() {
       this.paymentProcessing = true;
-
       const { paymentMethod, error } = await this.stripe.createPaymentMethod(
         "card",
         this.cardElement,
         {
           billing_details: {
-            name: this.customer.first_name + " " + this.customer.lastname_name,
+            name: this.customer.first_name + " " + this.customer.last_name,
             email: this.customer.email,
             address: {
               line1: this.customer.address,
@@ -132,19 +131,13 @@ export default {
       } else {
         console.log(paymentMethod);
         this.customer.payment_method_id = paymentMethod.id;
-        this.customer.amount = this.$store.state.cart.reduce(
-          (acc, item) => acc + item.price * item.quantity,
-          0
-        );
-        this.customer.cart = JSON.stringify(this.$store.state.cart);
+        this.customer.amount = this.$store.state.basket[0].product_total;
+        this.customer.cart = JSON.stringify(this.$store.state.basket[0]);
 
         User.purchase(this.customer)
           .then((response) => {
             this.paymentProcessing = false;
             console.log(response);
-            this.$store.commit("updateOrder", response.data);
-            this.$store.dispatch("clearCart");
-            this.$router.push({ name: "order.summary" });
           })
           .catch((error) => {
             this.paymentProcessing = false;
@@ -157,11 +150,10 @@ export default {
     getCurrentUser() {
       this.customer.first_name = this.$store.getters.getCurrentUser.first_name;
       this.customer.last_name = this.$store.getters.getCurrentUser.last_name;
-      this.customer.email = this.$store.getters.getCurrentUser.email;
+      this.customer.email = "houseintellects@gmail.com";
       this.customer.address = this.$store.getters.getAddress[0].address_line1;
       this.customer.city = this.$store.getters.getAddress[0].town_city;
       this.customer.state = this.$store.getters.getAddress[0].county;
-      this.customer.zip_code = "";
     },
   },
 };
