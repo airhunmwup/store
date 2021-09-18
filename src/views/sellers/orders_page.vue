@@ -424,12 +424,18 @@
   </div>
 </template>
 <script>
+import { mapState } from 'vuex';
+import User from "../../apis/User";
 export default {
   data() {
     return {
       
     }
   },
+  methods: {
+
+  },
+  computed: mapState(['setCategoryList','setSubCategoryList'])
 }
 </script>
         

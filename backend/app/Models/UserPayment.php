@@ -38,4 +38,14 @@ class UserPayment extends Model
     {
         return $this->hasMany(MyOrder::class);
     }
+
+    public function products()
+    {
+        return $this->hasMany(Products::class);
+    }
+
+    public function orderProducts()
+    {
+        return $this->hasMany(OrderProduct::class);
+    }
 }

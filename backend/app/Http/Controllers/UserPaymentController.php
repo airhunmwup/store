@@ -3,18 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\UserPayment;
+use App\Models\OrderProduct;
+use App\Models\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
+use Illuminate\Validation\ValidationException;
+use stdClass;
 
 class UserPaymentController extends Controller
 {
     //
     public function purchase(Request $request){
-
-        $fields = $request->validate([
-            'email' => 'required|string|unique:users,email',
-        ]);
 
         $user = UserPayment::firstOrCreate(
             [
@@ -56,5 +56,55 @@ class UserPaymentController extends Controller
             return response()->json(['message' => $e->getMessage()], 500);
         }
 
+    }
+
+    public function myorders(Request $request){
+        
+        $user = UserPayment::where('email', "alfredgreemie@gmail.com")->first();
+
+        if(!$user){
+            throw validationException::withMessages([
+                'message' => '* Invalid User'
+            ]);
+        };
+
+        $user_id = $user->id;
+        $myorders = $user->orders()->where('user_payment_id',$user_id)->get();
+        
+        $myorders_id = [];
+        foreach($myorders as $myorder){
+            array_push($myorders_id, $myorder->id);
+        }
+
+        $myproducts = [];
+        foreach($myorders_id as $id){
+            array_push($myproducts, OrderProduct::where('order_id',$id)->get());
+        }
+
+        $myproduct_id = [];
+        foreach($myproducts[0] as $key=>$id){
+            array_push($myproduct_id, $id->products_id);
+        }
+
+        $products = [];
+        foreach($myproduct_id as $id){
+            array_push($products, Products::where('id',$id)->get());
+        }
+
+        $products_main = [];
+        foreach($products as $id){
+            array_push($products_main, $id[0]);
+        } 
+
+        $response = [
+            'user' => $user,
+            'myorders' => $myorders,
+            'myorders_id' => $myorders_id,
+            'myproducts' => $myproducts,
+            'myproduct_id' => $myproduct_id,
+            'products' => $products_main 
+        ];
+
+        return response($response, 201);
     }
 }
