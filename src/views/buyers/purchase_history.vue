@@ -131,17 +131,17 @@
                   <div class="m-1 col-4 col-xs-12">
                     <p class="font-weight-bold">ORDER # 202-0274579-1617107</p>
                     <p>
-                      <router-link
-                        to="/orderdetails"
+                      <a
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
+                        @click.prevent="orderDetails()"
                         ><span 
-                        @click="orderDetails(data,order_info)"
+                        
                         class="text-primary text-sm"
                           >View order details </span>|
                           <span class="text-primary text-sm">
                           Invoice</span
-                        ></router-link>
+                        ></a>
                     </p>
                     <button> </button>
                   </div>
@@ -460,6 +460,7 @@ export default {
       },
       data: "",
       order_info: '',
+      myproducts: '',
       fullname: "",
       API_BASE_URL: Constants.API_BASE_URL,
     }
@@ -471,15 +472,19 @@ export default {
         console.log(res.data.products);
         this.data = res.data.products;
         this.order_info = res.data.myorders;
+        this.myproducts = res.data.myproducts;
         this.fullname = res.data.user;
       }).catch(errors => {
         console.log(errors);
       });
     },
-    orderDetails(data, order_info) {
+    orderDetails() {
         this.$router.push({
-        name: 'orderDetailsPage',
-        params: {data: data, order_info: order_info}
+        name: 'orderdetails',
+        params: {
+          data: this.data, order_info: this.order_info, 
+          myproducts: this.myproducts, fullname: this.fullname
+          }
       });
     }
   },

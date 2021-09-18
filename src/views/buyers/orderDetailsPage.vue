@@ -69,62 +69,31 @@
           </div>
         </div>
       </div>
-      <div class="card-body text-xs text-dark d-xs-none">
+      <div class="card-body text-xs text-dark d-xs-none" v-for="(products, index) in data" :key="index">
         <div class="row">
           <div class="col-4">
             <div class="row">
               <div class="col-6">
-                <img src="img/product/6.jpg" class="" alt="Product" />
+                <img v-bind:src="API_BASE_URL + products.product_image1" class="" alt="Product" />
               </div>
               <div class="col-6">
-                <p class="text-dark">Product name</p>
+                <p class="text-dark">{{products.product_name}}</p>
                 <p class="text-dark">SKU: CTZ086DT</p>
                 <p class="text-dark">Brand: basket</p>
               </div>
             </div>
           </div>
           <div class="col-2">
-            <p class="">29 August, 2020</p>
+            <p class="">{{order_info[0].created_at.substring(0,10)}}</p>
           </div>
           <div class="col-2">
             <p class="">Order processing</p>
           </div>
           <div class="col-2 text-center">
-            <p class="">4</p>
+            <p class="">{{myproducts[0][index].quantity}}</p>
           </div>
           <div class="col-1">
-            <p class="text-right">£50</p>
-          </div>
-          <div class="col-1 t">
-            <p class="text-right">£200</p>
-          </div>
-        </div>
-      </div>
-      <div class="card-body text-xs text-dark d-xs-none">
-        <div class="row">
-          <div class="col-4">
-            <div class="row">
-              <div class="col-6">
-                <img src="img/product/16.jpg" class="" alt="Product" />
-              </div>
-              <div class="col-6">
-                <p class="text-dark">Product name</p>
-                <p class="text-dark">SKU: CTZ086DT</p>
-                <p class="text-dark">Brand: basket</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-2">
-            <p class="">29 August, 2020</p>
-          </div>
-          <div class="col-2">
-            <p class="">Order processing</p>
-          </div>
-          <div class="col-2 text-center">
-            <p class="">4</p>
-          </div>
-          <div class="col-1">
-            <p class="text-right">£50</p>
+            <p class="text-right">£{{products.product_price}}</p>
           </div>
           <div class="col-1 t">
             <p class="text-right">£200</p>
@@ -162,7 +131,7 @@
             <img src="img/product/16.jpg" class="" alt="Product" />
           </div>
           <div class="col-6">
-            <p class="h6 text-dark">Product name</p>
+            <p class="h6 text-dark"></p>
             <p class="">Requested shipping date:</p>
             <p class="">status: Order processing</p>
             <p class="">Qty: 4</p>
@@ -183,7 +152,7 @@
             <p class="">£200</p>
             <p class="">£2</p>
             <p class="">£5.9</p>
-            <p class="text-danger">£207.9</p>
+            <p class="text-danger">£{{order_info[0].total}}</p>
           </div>
         </div>
       </div>
@@ -223,15 +192,21 @@
   </div>
 </template>
 <script>
+import Constants from "../../common/constants";
 export default {
   data () {
     return {
       //
       data: this.$route.params.data,
-      order_info: this.$route.params.order_info
+      order_info: this.$route.params.order_info,
+      myproducts: this.$route.params.myproducts,
+      API_BASE_URL: Constants.API_BASE_URL,
     }
   },
   methods: {
+    //
+  },
+  async created () {
     //
   }
 }
