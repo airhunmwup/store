@@ -81,6 +81,7 @@ class UserPaymentController extends Controller
             array_push($myproducts, OrderProduct::where('order_id',$id)->get());
         }
 
+
         $myproduct_id = [];
         foreach($myproducts[0] as $key=>$id){
             array_push($myproduct_id, $id->products_id);
@@ -96,13 +97,24 @@ class UserPaymentController extends Controller
             array_push($products_main, $id[0]);
         } 
 
+        $productHistory = [];
+        $unique_orders = array_unique($myorders_id);
+        foreach($unique_orders as $order_id){
+            foreach($myproducts[0] as $key=>$product){
+                if($order_id == $product->order_id){
+                    $productHistory[$order_id][] = $product->products_id;
+                }
+            }
+
+            
+        }
+
         $response = [
             'user' => $user,
             'myorders' => $myorders,
-            'myorders_id' => $myorders_id,
             'myproducts' => $myproducts,
-            'myproduct_id' => $myproduct_id,
-            'products' => $products_main 
+            'products' => $products_main,
+            'productHistory' => $productHistory
         ];
 
         return response($response, 201);
