@@ -13,84 +13,36 @@
     <div class="justify-content-center row pb-4">
       <div class="container pl-2">
         <div class="row">
-          <div class="col-lg-6 col-xs-12">
+          <div class="col-lg-6">
             <p
-              class="text p-3 text-dark h4 font-weight-bold font-weight-normal"
+              class="text p-2 text-dark h4 font-weight-bold font-weight-normal"
             >
               Your Orders
             </p>
           </div>
-          <div class="col-lg-6 col-xs-9">
-            <div class="pt-2">
-              <form method="post" class="std" id="customer-form">
-                <div
-                  class="justify-content-center text-center input-group col-12"
-                >
-                  <div class="input-group-prepend">
-                    <div class="input-group-text" id="btnGroupAddon">
-                      <i class="fa fa-search"></i>
-                    </div>
-                  </div>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Search all Orders"
-                    class="form-control border"
-                    value=""
-                  />
-                  <button
-                    class="btn-light btn text-primary border-l-2"
-                    type="submit"
-                    data-action="show-password"
-                    data-text-show="Show"
-                    data-text-hide="Hide"
-                  >
-                    Search
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div
-          class="content text-dark p-2 border-b-2 font-weight-bold col-12 pl-2"
-        >
-          <router-link
-            to="/purchasehistory"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="border-warning border-b-4 p-2"
-            title="Orders"
-            ><span>Orders</span></router-link>
-          <router-link
-            to="/cancelledorder"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-2"
-            title="Cancelled Orders"
-            ><span>Cancelled Orders</span></router-link
-          >
-          <router-link
-            to="/buyerreturns"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            class="p-2"
-            title="Returns"
-            ><span>Returns</span></router-link
-          >
         </div>
       </div>
 
-      <div class="p-4 col-12 product-container">
+      <div class="col-12">
         <!--Purchase History-->
         <div class="row">
-          <div class="pb-3 col-12">
+<nav class="navbar navbar-expand-lg navbar-light">
             <form method="post" class="std" id="customer-form">
               <div class="input-group">
-                <div class="page-item p-2 font-weight-bold text-dark">
-                  {{data.length}} Orders placed:
-                </div>
+                <select
+                  class="
+                    form-control-sm
+                    border
+                    mr-2
+                    text-sn 
+                    btn
+                    select
+                  "
+                >
+                  <option>{{data.length}} Orders</option>
+                  <option>{{data.length}} Cancelled</option>
+                  <option>{{data.length}} Returned</option>
+                </select>
                 <select
                   class="
                     form-control-sm
@@ -109,8 +61,8 @@
                 </select>
               </div>
             </form>
-          </div>
-          <div class="">
+</nav>
+          <div class="p-4">
             <div class="card" v-for="(products, index) in data" :key="index">
               <div class="border card-header">
                 <div class="text-dark row text-xs">
@@ -254,7 +206,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-dark text-center">
+            <p class="text-dark text-sm text-center">
               You do not have any orders to display in this view.
             </p>
           </div>
@@ -264,14 +216,8 @@
       <!-- end col-md-9-1 -->
     </div>
     <hr />
-    <section class="appion">
-      <div class="col-12">
-        <p class="h3 text-dark">Recently viewed</p>
-        <p class="text-dark text-right">
-          <b class=""> see all </b>
-          <b class="fa fa-caret-square-o-right"></b>
-        </p>
-      </div>
+    <section class="appion text-sm">
+        <p class="h6 text-dark">Recently viewed</p>
       <!-- breadcrumb -->
       <div class="ul gs full">
         <li class="li itemi">

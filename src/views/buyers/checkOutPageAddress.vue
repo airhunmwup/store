@@ -80,7 +80,7 @@
                   btn btn-light
                 "
               >
-                Delete
+                Remove
               </button>
             </p>
           </div>

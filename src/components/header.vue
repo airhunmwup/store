@@ -28,7 +28,7 @@
     <ul class="nav">
       <li v-if="this.$store.state.isLoggedIn" class="nav-item dropdown pt-3">
 <a class="nav-link btn text-dark font-weight-bold " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-  <p class="text-sm"><span  class="zmdi zmdi-account"></span> Account</p>
+  <p class="text-sm"><span  class="zmdi zmdi-account"></span><span class="text-xs"> {{ this.$store.state.full_name }}</span></p>
 </a> 
       </li>
       <li v-else class="nav-item dropdown pt-3"><router-link
@@ -64,23 +64,21 @@
       </div>
       </div>
       <div class="col-lg-6 col-md-6 col-xs-12">
-            <form method="post" class="" id="customer-form">
               <div class="input-group pt-2">
   
-  <input type="text" id="searchBox" v-model="keywords" class="form-control text-sm border-t-2 border-b-2 border-l-0 border p-2 shadow-inner" placeholder="Search for anything" aria-label="Amount (to the nearest dollar)">
-  <div class="input-group-prepend border-r-2" @click.prevent="search">
-    <span id="searchFa" class="btn btn-default input-group-text bg-white border"><i class="fa fa-search"></i></span>
+  <input type="text" id="searchBox" v-model="keywords" class="form-control text-sm border-t-2 border-b-2 border-l-0 border p-2 shadow-inner" placeholder="Search store" aria-label="Amount (to the nearest dollar)">
+  <div class="input-group-prepend shadow border-r-2" @click.prevent="search">
+    <span id="searchFa" class="btn btn-default input-group-text bg-dark text-light rounded  border"><i class="fa fa-search"></i></span>
   </div>  
 
 </div>
-            </form>
       </div>
       <div class="text-right col-4 d-xs-none">
 
     <ul class="nav justify-content-center">
       <li v-if="this.$store.state.isLoggedIn" class="nav-item dropdown pt-3">
         <a class="nav-link text-dark font-weight-bold dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="zmdi zmdi-account"></i> Account
+          <i class="zmdi zmdi-account"></i>  <span class="text-xs"> {{ this.$store.state.full_name }}</span>
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <div class="text-md nav flex-column">
@@ -295,7 +293,6 @@
   </header>
 </template>
 <script>
-import { mapState } from 'vuex'
 export default {
   data() {
     return {
