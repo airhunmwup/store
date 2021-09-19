@@ -409,15 +409,7 @@
       </div>
     </div>
 
-<div class="container pt-2">
-
-      <div class="row" >
-      <div class="col-lg-12 col-sm-12 card p-2">
-                <img src="img/banner/bannerrejee1.jpg" class="card-img-top" style="height: 12rem" alt="Product"/>
-      </div>
-</div>
-</div>
-    <div id="home3" class="pt-3">
+    <div id="home3" class="">
       <footer class="footer-one">
         <div class="inner-footer bg-secondary">
           <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
@@ -448,7 +440,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="block-content pt-3">
+                    <div class="block-content pt-2">
                       <div class="title-block text-light">Sell</div>
                       <ul>
                         <li class="underline">
@@ -479,13 +471,6 @@
                     <div class="block-content">
                       <div class="title-block text-light">About REJEE Stores</div>
                       <ul>
-                        <li class="underline">
-                          <a
-                            href="https://find-and-update.company-information.service.gov.uk/company/13151308"
-                            class="text-light"
-                            >Company info</a
-                          >
-                        </li>
                         <li class="underline">
                           <router-link
                             to="/User Privacy"
