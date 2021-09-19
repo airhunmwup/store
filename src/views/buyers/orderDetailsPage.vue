@@ -69,7 +69,7 @@
           </div>
         </div>
       </div>
-      <div class="card-body text-xs text-dark d-xs-none" v-for="(products, index) in data" :key="index">
+      <div class="card-body text-xs text-dark d-xs-none" v-for="(products, index) in orders" :key="index">
         <div class="row">
           <div class="col-4">
             <div class="row">
@@ -96,7 +96,7 @@
             <p class="text-right">£{{products.product_price}}</p>
           </div>
           <div class="col-1 t">
-            <p class="text-right">£200</p>
+            <p class="text-right">{{myproducts[0][index].quantity * products.product_price}}</p>
           </div>
         </div>
       </div>
@@ -200,14 +200,30 @@ export default {
       data: this.$route.params.data,
       order_info: this.$route.params.order_info,
       myproducts: this.$route.params.myproducts,
+      id: this.$route.params.id,
+      orders: [],
       API_BASE_URL: Constants.API_BASE_URL,
     }
   },
   methods: {
-    //
+    async products(){
+      let objkeys = Object.keys(this.$route.params.productHistory);
+      objkeys.map((key) => {
+        if(this.$route.params.id == key){
+          for(let i=0;i<this.$route.params.productHistory[key].length;i++){
+            if(this.$route.params.productHistory[key][i] == this.$route.params.data[i].id){
+              this.orders.push(this.$route.params.data[i]);
+            }
+          }
+        }
+      });
+      console.log(this.$route.params.productHistory[7]);
+      console.log(this.data[0].id);
+    }
+  
   },
-  async created () {
-    //
+  async mounted () {
+    this.products();
   }
 }
 </script>

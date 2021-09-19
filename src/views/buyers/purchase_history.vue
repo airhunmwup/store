@@ -89,7 +89,7 @@
             <form method="post" class="std" id="customer-form">
               <div class="input-group">
                 <div class="page-item p-2 font-weight-bold text-dark">
-                  {{data.length}} Orders placed:
+                  {{orders.length}} Orders placed:
                 </div>
                 <select
                   class="
@@ -111,16 +111,16 @@
             </form>
           </div>
           <div class="">
-            <div class="card" v-for="(products, index) in data" :key="index">
+            <div class="card" v-for="(products, index) in orders" :key="index">
               <div class="border card-header">
                 <div class="text-dark row text-xs">
                   <div class="m-1 col-2 col-xs-12">
                     <p class="font-weight-bold">ORDER PLACED</p>
-                    <p class="text-dark"><!-- {{order_info[index].created_at.substring(0,10)}} --></p>
+                    <p class="text-dark">{{order_info[index].created_at.substring(0,10)}}</p>
                   </div>
                   <div class="m-1 col-2 col-xs-12">
                     <p class="font-weight-bold">TOTAL</p>
-                    <p class="text-dark">£{{products.product_price}}</p>
+                    <p class="text-dark">£{{order_info[index].total}}</p>
                   </div>
                   <div class="m-1 col-3 col-xs-12">
                     <p class="font-weight-bold">DISPATCH TO</p>
@@ -134,7 +134,7 @@
                       <a
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
-                        @click.prevent="orderDetails()"
+                        @click.prevent="orderDetails(order_id[index])"
                         ><span 
                         
                         class="text-primary text-sm"
@@ -254,7 +254,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-dark text-center">
+            <p class="text-dark text-center" v-show="!orders">
               You do not have any orders to display in this view.
             </p>
           </div>
@@ -462,6 +462,11 @@ export default {
       order_info: '',
       myproducts: '',
       fullname: "",
+      productHistory: "",
+      myorders_id: "",
+      orders: [],
+      order_id: [],
+      orderDetail_id : "",
       API_BASE_URL: Constants.API_BASE_URL,
     }
   },
@@ -469,27 +474,39 @@ export default {
   methods:{
     getMyOrders(){
       User.myOrders(this.user).then(res => {
-        console.log(res.data.products);
         this.data = res.data.products;
         this.order_info = res.data.myorders;
         this.myproducts = res.data.myproducts;
         this.fullname = res.data.user;
+        this.productHistory = res.data.productHistory;
+        this.products();
       }).catch(errors => {
         console.log(errors);
       });
     },
-    orderDetails() {
+    orderDetails(id) {
+      this.orderDetail_id = id;
         this.$router.push({
         name: 'orderdetails',
         params: {
           data: this.data, order_info: this.order_info, 
-          myproducts: this.myproducts, fullname: this.fullname
+          myproducts: this.myproducts, fullname: this.fullname,
+          id: this.orderDetail_id, productHistory: this.productHistory,
           }
+      });
+    },
+    async products(){
+      let order = Object.keys(this.productHistory);
+      order.map((key,index) => {
+        this.order_id.push(key);
+        if(this.productHistory[key][0] == this.data[index].id){
+          this.orders.push(this.data[index]);
+        }
       });
     }
   },
   async mounted() {
-    this.getMyOrders();
+    this.getMyOrders(); 
   },
 };
 </script>
