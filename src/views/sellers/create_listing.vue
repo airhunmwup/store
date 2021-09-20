@@ -139,6 +139,27 @@
                 </div>
               </div>
             </div>
+            <div class="col-4 col-lg-2">
+              <div class="form-group">
+                <label class="font-weight-bold">Quantity</label>
+                <div class="input-group input-group-sm mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-md"
+                    :style="errorStyle(errors.product_quantity)"
+                      >#</span
+                    >
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    aria-label="Small"
+                    placeholder=""
+                    aria-describedby="inputGroup-sizing-sm"
+                    v-model.number="formData.product_quantity"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -389,6 +410,7 @@ export default {
         product_condition: "",
         product_desc: "",
         product_price: "",
+        product_quantity: "",
         imageData: [],
         product_shipping_type: "",
         product_shipping_rate: "",
@@ -465,6 +487,7 @@ export default {
                formData2.append('product_condition', this.formData.product_condition);
                formData2.append('product_desc', this.formData.product_desc); 
                formData2.append('product_price', this.formData.product_price);
+               formData2.append('product_quantity', this.formData.product_quantity);
                formData2.append('product_shipping_type', this.formData.product_shipping_type);
                formData2.append('product_shipping_rate', this.formData.product_shipping_rate);
                formData2.append('product_shipping_cost', this.formData.product_shipping_cost);
@@ -474,8 +497,8 @@ export default {
                formData2.append('product_package_width', this.formData.product_package_width);
                formData2.append('product_total', this.formData.product_total);
                $.each(this.image, function (key, image) {
-        formData2.append(`images[${key}]`, image)
-      })
+                  formData2.append(`images[${key}]`, image)
+                })
            
           User.createlisting(formData2,{
             headers: { 'Content-Type': "multipart/form-data; charset=utf-8; boundary=" + Math.random().toString().substr(2)}
@@ -483,7 +506,7 @@ export default {
             this.errors = {};
             console.log(res.data);
             this.tableId = res.data.id;
-            this.imageUploadHandler();
+            this.$router.push("/listings");
           }).catch(error => {
         if (!error.response) {
             // network error
