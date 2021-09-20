@@ -21,6 +21,7 @@
     <!--All-Orders-->
 
     <div class="card">
+    <form ref="myForm" enctype="multipart/form-data">
       <div class="card-header p-3">
         <span class="text h5 font-weight-bold font-weight-normal">
           Create Listings
@@ -49,15 +50,14 @@
                 <div class="col-12 shadow-inner rounded">
                   <div class="pt-3 pb-3">
                     <input type="file" class="rounded btn"
-                    style="display: none;" 
+                    style="display:none"
                     @change="uploadImage($event)"
                     ref="imageupload"/>
-                    <button
-                      type="file"
+                    <a
                       class="btn btn-lg btn-light border rounded-circle"
                       @click="$refs.imageupload.click()">
                       <span class="fa fa-plus"></span>
-                    </button>
+                    </a>
                     <span style="color: red; font-size: 12px;" v-text="errors.product_image1"></span>
                   </div>
                   <div class="row">
@@ -360,7 +360,7 @@
         </button>
       </div>
     </div>
-
+    </form>
     <!-- end col-md-9-1 -->
   </div>
   </div>
@@ -398,6 +398,7 @@ export default {
         product_package_length: "",
         product_package_width: "",
         product_total: "0.00",
+        testImage: "",
       },
       errors: {
 
@@ -410,6 +411,8 @@ export default {
       if(file){
         if(this.num <= 4){
           this.image.push(file);
+          this.formData.imageData.push(file);
+          this.formData.testImage = file;
           this.imagePreview.push(URL.createObjectURL(file));
           this.num++;
         }else{
@@ -452,7 +455,31 @@ export default {
     },
     createListing(){
       if(this.image.length >= 1){
-          User.createlisting(this.formData).then(res =>{
+        const  formData2 = new FormData(this.$refs.myForm); 
+               formData2.append('product_subcat', this.formData.product_subcat); 
+               formData2.append('product_catname', this.formData.product_catname);
+               formData2.append('product_userid', this.formData.product_userid);
+               formData2.append('product_cat_id', this.formData.product_cat_id);  
+               formData2.append('product_subcat_id', this.formData.product_subcat_id); 
+               formData2.append('product_name', this.formData.product_name);  
+               formData2.append('product_condition', this.formData.product_condition);
+               formData2.append('product_desc', this.formData.product_desc); 
+               formData2.append('product_price', this.formData.product_price);
+               formData2.append('product_shipping_type', this.formData.product_shipping_type);
+               formData2.append('product_shipping_rate', this.formData.product_shipping_rate);
+               formData2.append('product_shipping_cost', this.formData.product_shipping_cost);
+               formData2.append('product_package_type', this.formData.product_package_type);
+               formData2.append('product_package_weight', this.formData.product_package_weight);
+               formData2.append('product_package_length', this.formData.product_package_length);
+               formData2.append('product_package_width', this.formData.product_package_width);
+               formData2.append('product_total', this.formData.product_total);
+               $.each(this.image, function (key, image) {
+        formData2.append(`images[${key}]`, image)
+      })
+           
+          User.createlisting(formData2,{
+            headers: { 'Content-Type': "multipart/form-data; charset=utf-8; boundary=" + Math.random().toString().substr(2)}
+            }).then(res =>{
             this.errors = {};
             console.log(res.data);
             this.tableId = res.data.id;
@@ -463,7 +490,7 @@ export default {
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-            //document.getElementById("alat").innerHTML = error.response.data.message;
+             document.getElementById("alat").innerHTML = error.response.data.message;
         }
       })
       }else{

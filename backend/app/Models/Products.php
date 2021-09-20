@@ -33,4 +33,8 @@ class Products extends Model
         'product_total',
 
     ];
+    public function product_images()
+    {
+        return $this->hasMany('App\Models\ProductImages','product_id');
+    }
 }
