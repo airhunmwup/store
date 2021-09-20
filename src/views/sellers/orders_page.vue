@@ -20,7 +20,7 @@
             <p
               class="text pl-3 text-dark h4 font-weight-bold font-weight-normal"
             >
-              Orders
+              Manage Orders
             </p>
           </div>
         </div>

@@ -38,14 +38,13 @@
 
                     <div class="col-lg-10 col-md-10 col-sm-12">
                       <p class="text text-dark h5 font-weight-bold font-weight-normal">
-                    All Listings
+                   
                   </p>
                       <br />
   <div class="row">
-    <div class="col justify-content-end">
-  <div class="form-group mx-sm-3 mb-2 ">
-                            <form class="form-inline">
-                          <div class="text-right">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <div class="">
     <select class="select-title text-xs">
                                 <option value="">Sort by</option>
                                 <option value="">Name, A to Z</option>
@@ -53,14 +52,8 @@
                                 <option value="">Price, low to high</option>
                                 <option value="">Price, high to low</option>
                               </select>
-  </div>
-</form>
-                          </div>
-    </div>
-    <div class="col">
-                          <div class="text-right">
                             <a
-                              class="cateItem"
+                              class="ml-1 cateItem"
                               data-toggle="collapse"
                               data-target="#filter"
                               href="#"
@@ -68,7 +61,16 @@
                               <span class="pr-2 pt-2 text-xs"
                                 ><b>filter <i class="fa fa-th"></i></b></span
                             ></a>
+    </div>
+  </div>
+</nav>
+    <div class="col justify-content-end">
+  <div class="form-group mx-sm-3 mb-2 ">
+                            <form class="form-inline">
+</form>
                           </div>
+    </div>
+    <div class="col">
     </div>
   </div>
                       <div

@@ -37,15 +37,14 @@
 
 
                     <div class="col-lg-10 col-md-10 col-sm-12">
-                      <p class="text p-2 text-dark h5 font-weight-bold font-weight-normal">
+                      <p class="text pt-2 text-dark h5 font-weight-bold font-weight-normal">
                         {{ categorie.cat_name }}
                       </p>
-                      <br />
                       <!-- FEATURED CATEGORIES -->
-                        <div class="row m-2 pb-4">
+                        <div class="row m-1 pb-4">
                           <div v-for="subcategory in categorie.subcategories" v-bind:key="subcategory.id" 
                             class="
-                              col-6 col-sm-6 p-2 col-md-4 col-lg-4
+                              col-sm-6 p-2 col-md-4 col-lg-4
                             "
                           >
                               <p class="underline text-sm  text-dark">
