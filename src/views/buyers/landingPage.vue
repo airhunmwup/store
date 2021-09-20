@@ -110,8 +110,7 @@
             </div>
 </div>
       </div>
-<div class="m-4 text-sm">
-  <div class="card">
+<div class="m-2 text-sm">
 <nav class="navbar card-footer navbar-expand-sm navbar-light bg-gradient">
     <div class="col">
   <a class="navbar-brand text-sm font-weight-bold text-dark" href="#">Todays Listing</a>
@@ -131,26 +130,26 @@
     </p>
     </div>
 </nav>
-<div class="card-body">
-      <div class="row justify-content-center">
-<span v-for="listings of newListings"
+<div class="p-2">
+  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div v-for="listings of newListings"
             :key="listings.id"
-            v-bind:data-id="listings.id" class="list-item list-group-item-action col-lg-3 col-sm-3 col-xs-6 list-group" style="width: 10rem;">
-            <div
+            v-bind:data-id="listings.id" class="col">
+            <a 
               v-bind:data-id="listings.id"
               href="#"
               data-toggle="collapse"
               data-target=".navbar-collapse"
-              @click="product_detail_link"
-            >
-                <img v-bind:src="'http://127.0.0.1:8000/storage/images/' + listings.product_image1" class="rounded img-fluid " style="width: 100%" alt="Product" v-bind:data-id="listings.id" />
-  <div class="card-body">
+              @click="product_detail_link">
+    <div class="card h-100">
+      <img v-bind:src="'http://127.0.0.1:8000/storage/images/' + listings.product_image1" class="card-img-top" alt="Product" v-bind:data-id="listings.id" />
+      <div class="card-body">
     <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
     <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
-  </div>
-            </div>
-</span>
       </div>
+    </div>
+            </a>
+  </div>
 </div>
 </div>
 </div>
@@ -167,53 +166,26 @@
 </div>
 </div>
 
-<div class="m-4">
-  <div class="card">
-<div class="card-body"> <div class="row justify-content-center">
-
-
-<span v-for="listings of newListings"
+<div class="p-2">
+  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div v-for="listings of newListings"
             :key="listings.id"
-            v-bind:data-id="listings.id" class="list-item list-group-item-action col-lg-3 col-sm-3 col-xs-6 list-group" style="width: 10rem;">
-            <div
+            v-bind:data-id="listings.id" class="col">
+            <a 
               v-bind:data-id="listings.id"
-              style="width: 11rem;"
               href="#"
               data-toggle="collapse"
               data-target=".navbar-collapse"
-              @click="product_detail_link"
-            >
-              <div
-                v-bind:data-id="listings.id"
-                style="width: 11rem"
-                href="#"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-                @click="product_detail_link"
-              >
-                <img
-                  v-bind:src="API_BASE_URL + listings.product_image1"
-                  class="rounded img-fluid"
-                  style="width: 100%"
-                  alt="Product"
-                  v-bind:data-id="listings.id"
-                />
-                <div class="card-body">
-                  <p class="text-dark" v-bind:data-id="listings.id">
-                    {{ listings.product_name }}
-                  </p>
-                  <p
-                    class="font-weight-bold text-dark"
-                    v-bind:data-id="listings.id"
-                  >
-                    £{{ listings.product_price }}
-                  </p>
-                </div>
-              </div>
-            </div>
-            </span>
-          </div>
-</div>
+              @click="product_detail_link">
+    <div class="card h-100">
+      <img v-bind:src="'http://127.0.0.1:8000/storage/images/' + listings.product_image1" class="card-img-top" alt="Product" v-bind:data-id="listings.id" />
+      <div class="card-body">
+    <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
+    <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
+      </div>
+    </div>
+            </a>
+  </div>
 </div>
 </div>
 
