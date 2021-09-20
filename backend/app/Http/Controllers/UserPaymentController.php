@@ -143,12 +143,17 @@ class UserPaymentController extends Controller
         
         $get_unique_transaction_id = array_unique($get_transaction_id);
 
+        $get_product_id = [];
+        foreach($orders as $order){
+            array_push($get_product_id, $order->orderid);
+        }
+
         $manageorders = [];
         foreach($get_unique_transaction_id as $key=>$id){
             foreach($orders as $order){
-                if($order->transaction_id == $id){
+                if($order->transaction_id == $id && $order->orderid == $get_product_id[0]){
                     array_push($manageorders, $order);
-                    //
+                    
                 }
             }
             
@@ -157,7 +162,8 @@ class UserPaymentController extends Controller
         $response = [
             'orders' => $orders,
             'transaction_id' => $get_transaction_id,
-            'manageorders' => $manageorders
+            'manageorders' => $manageorders,
+            'product_id' => $get_product_id
         ];
 
         return response($response, 201);
