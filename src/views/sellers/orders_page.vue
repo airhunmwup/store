@@ -20,7 +20,7 @@
             <p
               class="text pl-3 text-dark h4 font-weight-bold font-weight-normal"
             >
-              Orders
+              Manage Orders
             </p>
           </div>
         </div>
@@ -424,12 +424,18 @@
   </div>
 </template>
 <script>
+import { mapState } from 'vuex';
+import User from "../../apis/User";
 export default {
   data() {
     return {
       
     }
   },
+  methods: {
+
+  },
+  computed: mapState(['setCategoryList','setSubCategoryList'])
 }
 </script>
         

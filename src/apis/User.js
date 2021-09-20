@@ -131,6 +131,7 @@ export default{
         return Api().post("/purchase", data);
     },
     
-
-
+    myOrders(data){
+        return Api().post("/myorders", data);
+    }
 };

@@ -4,7 +4,7 @@
   <div class="container-fluid ">
     <div class="dropdown">
   <a class="btn text-dark text-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-   All Categories
+   Shop by Categories
   </a>
 
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"><router-link
@@ -101,65 +101,20 @@
 
   </div> -->
 
-<div class="container">
+<div class="m-4">
       <div class="row">
-      <div class="col-lg-3 col-6">
-        <div class="card p-2" style="">
-  <div class="card-body">
-    <p class="card-text h6 text-dark font-weight-bold">Properties</p>
-  </div>
-  <img src="img/product/1.jpg" class="border card-img-top" alt="">
-  <div class="card-body">
-              <router-link
-                class="text-dark"
-                to="/propertyPage"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-                >
-    <p class="text-xs text-primary font-weight-bold">See more</p></router-link>
-  </div>
+            <div class="col-md-12 mb-2">
+              <div class="card">
+                <img class="" style="height: 19rem" src="img/mainbanner.png" alt="courses" />
+              </div>
+            </div>
 </div>
       </div>
-      <div class="col-lg-3 col-6">
-        <div class="card p-2" style="">
-  <div class="card-body">
-    <p class="card-text h6 text-dark font-weight-bold">Electronics</p>
-  </div>
-  <img src="img/product/15.jpg" class="border card-img-top" alt="">
-  <div class="card-body">
-    <p class="text-xs text-primary font-weight-bold">See more</p>
-  </div>
-</div>
-      </div>
-      <div class="col-lg-3 col-6">
-        <div class="card p-2" style="">
-  <div class="card-body">
-    <p class="card-text text-dark font-weight-bold">Funitures</p>
-  </div>
-  <img src="img/product/12.jpg" class="border card-img-top" alt="">
-  <div class="card-body">
-    <p class="text-xs text-primary font-weight-bold">See more</p>
-  </div>
-</div>
-      </div>
-      <div class="col-lg-3 col-6">
-        <div class="card p-2" style="">
-  <div class="card-body">
-    <p class="card-text h6 text-dark font-weight-bold">Vehicles</p>
-  </div>
-  <img src="img/product/18.jpg" class="border card-img-top" alt="">
-  <div class="card-body">
-    <p class="text-xs text-primary font-weight-bold">See more</p>
-  </div>
-</div>
-      </div>
-</div>
-      </div>
-<div class="container text-sm">
+<div class="m-4 text-sm">
   <div class="card">
 <nav class="navbar card-footer navbar-expand-sm navbar-light bg-gradient">
     <div class="col">
-  <a class="navbar-brand text-md font-weight-bold text-dark" href="#">Todays Listing</a>
+  <a class="navbar-brand text-sm font-weight-bold text-dark" href="#">Todays Listing</a>
     </div>
     <div class="col text-right">
     <p class="navbar-text">
@@ -183,7 +138,6 @@
             v-bind:data-id="listings.id" class="list-item list-group-item-action col-lg-3 col-sm-3 col-xs-6 list-group" style="width: 10rem;">
             <div
               v-bind:data-id="listings.id"
-              style="width: 11rem;"
               href="#"
               data-toggle="collapse"
               data-target=".navbar-collapse"
@@ -201,7 +155,7 @@
 </div>
 </div>
 
-<div class="container pt-2">
+<div class="m-4 pt-2">
 
       <div class="row" >
       <div class="col-lg-6 col-sm-12 card p-2">
@@ -213,7 +167,7 @@
 </div>
 </div>
 
-<div class="container">
+<div class="m-4">
   <div class="card">
 <div class="card-body"> <div class="row justify-content-center">
 
@@ -245,7 +199,7 @@
                   v-bind:data-id="listings.id"
                 />
                 <div class="card-body">
-                  <p class="title text-dark" v-bind:data-id="listings.id">
+                  <p class="text-dark" v-bind:data-id="listings.id">
                     {{ listings.product_name }}
                   </p>
                   <p
@@ -263,16 +217,199 @@
 </div>
 </div>
 
+    <div class="appion">
 
-<div class="container pt-2">
-
-      <div class="row" >
-      <div class="col-lg-12 col-sm-12 card p-2">
-                <img src="img/banner/bannerrejee1.jpg" class="card-img-top" style="height: 12rem" alt="Product"/>
+      <div class="col-12">
+        <p class="text-dark">Recently viewed</p>
       </div>
-</div>
-</div>
-    <div id="home3" class="pt-3">
+
+      <div class="ul gs full">
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="">
+              <div class="">
+                <img
+                  class="card-img-top"
+                  src="img/product/1.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="text-dark">Product name</p>
+
+                  <p class="font-weight-bold text-dark">£149.99</p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="">
+              <div class="">
+                <img
+                  class="card-img-top"
+                  src="img/product/9.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="text-dark">Product name</p>
+
+                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="">
+              <div class="">
+                <img
+                  class="card-img-top"
+                  src="img/product/7.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="text-dark">Product name</p>
+
+                  <p class="font-weight-bold text-dark">£149.99</p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="">
+              <div class="">
+                <img
+                  class="card-img-top"
+                  src="img/product/10.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="text-dark">Product name</p>
+
+                  <p class="font-weight-bold text-dark">£149.99</p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="">
+              <div class="">
+                <img
+                  class="card-img-top"
+                  src="img/product/8.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="text-dark">Product name</p>
+
+                  <p class="font-weight-bold text-dark">£149.99</p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="">
+              <div class="">
+                <img
+                  class="card-img-top"
+                  src="img/product/13.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="text-dark">Product name</p>
+
+                  <p class="font-weight-bold text-dark">£149.99</p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="">
+              <div class="">
+                <img
+                  class="card-img-top"
+                  src="img/product/11.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="text-dark">Product name</p>
+
+                  <p class="font-weight-bold text-dark">£149.99</p>
+
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+      </div>
+    </div>
+
+    <div id="home3" class="">
       <footer class="footer-one">
         <div class="inner-footer bg-secondary">
           <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
@@ -303,7 +440,7 @@
                         </li>
                       </ul>
                     </div>
-                    <div class="block-content pt-3">
+                    <div class="block-content pt-2">
                       <div class="title-block text-light">Sell</div>
                       <ul>
                         <li class="underline">
@@ -334,13 +471,6 @@
                     <div class="block-content">
                       <div class="title-block text-light">About REJEE Stores</div>
                       <ul>
-                        <li class="underline">
-                          <a
-                            href="https://find-and-update.company-information.service.gov.uk/company/13151308"
-                            class="text-light"
-                            >Company info</a
-                          >
-                        </li>
                         <li class="underline">
                           <router-link
                             to="/User Privacy"
@@ -434,6 +564,45 @@
         </div>
       </footer>
     </div>
+    
+        <div id="tiva-copyright" class="text-xs bg-light">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-xs-12 align-items-center justify-content-md-start justify-content-sm-center justify-content-xs-center">
+                        <span>
+                            <b>Copyright © 2021 REJEE COMPANY LIMITED. All Rights Reserved.</b>
+                      <router-link
+                        to="/User Agreement"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="User Agreement"
+                      > User Agreement | </router-link>
+                      <router-link
+                        to="/User Privacy"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="User Privacy"
+                      >Privacy | </router-link>
+                      <router-link
+                        to="/Cookie Policy"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Cookies"
+                      >Cookies </router-link>
+                      <router-link
+                        to="/Ad Choice"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Ad Choice"
+                      >and AdChoice</router-link>
+                        </span>
+                    </div>
+                    <div class="col-md-4 col-xs-12 align-items-center justify-content-md-end d-flex justify-content-xs-center">
+                        <img src="img/SSL/PositiveSSL_SectigoTag_72dpi.png" class="col-6 img-thumbnail" alt="img">
+                    </div>
+                </div>
+            </div>
+        </div>
   </section>
 </template>
 

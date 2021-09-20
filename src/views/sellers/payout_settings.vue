@@ -47,13 +47,6 @@
     <div class="row">
               <div class="p-2 col-6 col-xs-12">
                 <div class="card backdrop-brightness-100 shadow text-sm">
-            <router-link
-              class=""
-              to="/addnewaddress"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="view"
-            >
                   <div class="card-body">
                       <div class="row">
                         <div class="col-4 border-r-2">
@@ -83,7 +76,6 @@
                   <div class="card">
                     <span class="p-2"><button type="button" class="text-xs underline border btn btn-sm btn-warning">Remove</button></span>
                   </div>
-            </router-link>
                 </div>
               </div>
               <div class="p-2 col-4 col-xs-12">

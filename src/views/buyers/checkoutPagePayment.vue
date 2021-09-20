@@ -16,46 +16,10 @@
               <p class="text-dark">
                 REJEE Stores accepts major credit and debit cards.
               </p>
-              <div class="p-2 col-4 col-xs-12">
-                <div class="card rounded border border-success shadow text-sm">
-            <router-link
-              class=""
-              to="/Checkout"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Pay now"
-            >
-                  <div class="card-body">
-                      <div class="row">
-                        <div class="col-4 border-r-2">
-                    <p class="text-grey h3 m-3">
-                      <i class="fa fa-credit-card fa-lg"></i>
-                    </p>
-                        </div>
-                        <div class="col-8">
-                    <p class="text-grey">
-                      **** **** **** 2319
-                    </p>
-                    <p class="text-grey">
-                      01/24
-                    </p>
-                    <p class="m-1 font-weight-bold text-grey">
-                      JOHN MAXWELL .A
-                    </p>
-                        </div>
-                        
-                      </div>
-                  </div>
-            </router-link>
-                </div>
-              </div>
-            <div class="col-6">
+            <div class="col-6 m-3">
 
-              <div class="col-8 pt-4">
-                <p class="">
         <p class="card bg-light border">
           <router-link
-            class=""
             to="/Checkout"
             data-toggle="collapse"
             data-target=".navbar-collapse"
@@ -64,12 +28,11 @@
               type="button"
               class="btn border btn-sm btn-warning btn-block"
             >
-              Pay with new Credit/Debit card
+              Continue
             </button>
           </router-link>
         </p>
 
-              </div>
             </div>
 
           </div>
@@ -101,7 +64,7 @@
             <div class="col">
                       <div
                         ><img
-                          class="logo-mobile img-fluid p-3 border"
+                          class="bg-dark rounded bg-gradient logo-mobile img-fluid p-3 border"
                           src="img/home/logo.png"
                           width="100px"
                           alt="REJEE COMPANY"

@@ -94,6 +94,7 @@ export default {
     };
   },
   async mounted() {
+    this.getCurrentUser;
     this.stripe = await loadStripe(
       "pk_test_51JSfU7ED6G9gw43fSzGj5UjJH8cvfKlZVrGi5FQ3EqYlHIlxw8EpeMJWjbbd7waAQoSvdagHvsNYAnf3lpCGp56j00t9EsvJji"
     );
@@ -131,8 +132,10 @@ export default {
       } else {
         console.log(paymentMethod);
         this.customer.payment_method_id = paymentMethod.id;
-        this.customer.amount = this.$store.state.basket[0].product_total;
-        this.customer.cart = JSON.stringify(this.$store.state.basket[0]);
+        this.customer.amount = this.$store.state.basket.reduce((acc, item) => acc + (item.product_price * item.qnty), 0);
+        this.customer.cart = JSON.stringify(this.$store.state.basket);
+
+        console.log(this.customer.amount);
 
         User.purchase(this.customer)
           .then((response) => {
@@ -145,17 +148,18 @@ export default {
           });
       }
     },
+    
   },
   computed: {
-    getCurrentUser() {
+    async getCurrentUser() {
       this.customer.first_name = this.$store.getters.getCurrentUser.first_name;
       this.customer.last_name = this.$store.getters.getCurrentUser.last_name;
-      this.customer.email = "houseintellects@gmail.com";
+      this.customer.email = this.$store.getters.getCurrentUser.email;
       this.customer.address = this.$store.getters.getAddress[0].address_line1;
       this.customer.city = this.$store.getters.getAddress[0].town_city;
       this.customer.state = this.$store.getters.getAddress[0].county;
     },
-  },
+  }
 };
 </script
 
