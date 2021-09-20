@@ -11,7 +11,7 @@
                   <span class="text m-4 text-dark h4 font-weight-bold font-weight-normal">
                   Sign in & security preference
                   </span>
-                  <div class="card" >
+                  <div class="" >
   <div class="card-body border-b-2">
     <div class="row">
   <div class="col-8">
