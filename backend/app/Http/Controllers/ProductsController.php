@@ -241,4 +241,9 @@ return $product;
         //
         return Products::with('product_images')->orderBy('id', 'desc')->take(6)->get();
     }
+    public function newlisting2($id)
+    {
+        //
+        return Products::where('product_subcat_id', $id)->with('product_images')->orderBy('id', 'desc')->take(6)->get();
+    }
 }

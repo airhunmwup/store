@@ -48,7 +48,14 @@
                             "
                           >
                               <p class="underline text-sm  text-dark">
-                                {{ subcategory.sub_catname }}
+                                <router-link
+                                    class="text-dark"
+                                    v-bind:to="'/ProductPage/' + subcategory.id"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
+                                    >{{ subcategory.sub_catname }}
+                                </router-link>
+                                
                               </p>
                           </div>
                           

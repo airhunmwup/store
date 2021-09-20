@@ -26,6 +26,7 @@ class SubcategoryController extends Controller
         $subcategories = Subcategories::where('id', $id)->with('categories')->get();
         return $subcategories;
     }
+    
     public function load()
     {
         $subcategories = Subcategories::with('categories')->get();

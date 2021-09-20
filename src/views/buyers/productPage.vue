@@ -45,6 +45,9 @@
     <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <div class="">
+    <p class="text pt-2 text-dark h5 font-weight-bold font-weight-normal">
+        {{ subcat }}
+    </p>
     <select class="select-title text-xs">
                                 <option value="">Sort by</option>
                                 <option value="">Name, A to Z</option>
@@ -742,11 +745,13 @@
 import User from "../../apis/User";
 
 export default {
+  props: ['cid'],
   name: "landingPage",
   data() {
     return {
       categoryList: [],
-      newListings:[]
+      newListings:[],
+      subcat: '',
     };
   },
   methods: {
@@ -763,8 +768,26 @@ export default {
         }
       })
     },
+    
     getNewListings() {
       User.getNewListings().then(response => {
+      this.newListings = response.data;
+    }).catch((errors) => {
+        console.log(errors);
+        console.log("new listing api call error");
+      });
+    },
+     getSubcat(){
+        User.catInfo(this.cid).then(response => {
+        this.subcat = response.data[0].sub_catname;
+        console.log(this.subcat);
+    }).catch((errors) => {
+        console.log(errors);
+        console.log("new listing api call error");
+      });
+     },
+     getNewListings2() {
+      User.getNewListings2(this.cid).then(response => {
       this.newListings = response.data;
     }).catch((errors) => {
         console.log(errors);
@@ -779,7 +802,12 @@ export default {
   },
   mounted() {
     this.getCategoryList();
-    this.getNewListings();
+    if (this.cid){
+       this.getNewListings2();
+       this.getSubcat();
+    }else{
+       this.getNewListings();
+    }
     console.log(this.categoryList);
   },
 }

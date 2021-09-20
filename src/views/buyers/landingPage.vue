@@ -121,7 +121,7 @@
           <span class="text-dark">
               <router-link
                 class="text-dark"
-                to="/Product Page"
+                to="/ProductPage"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 >see all
