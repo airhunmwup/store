@@ -456,9 +456,3 @@ export default {
   },
 };
 </script>
-<<<<<<< HEAD
-        z
-=======
-        
-        
->>>>>>> 24149d43b29966a0f7946a241d4bbc5809c4acb1

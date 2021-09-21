@@ -117,9 +117,7 @@ class UserPaymentController extends Controller
                 if($order_id == $product->order_id){
                     $productHistory[$order_id][] = $product->products_id;
                 }
-            }
-
-            
+            } 
         }
 
         $response = [
@@ -151,19 +149,29 @@ class UserPaymentController extends Controller
         $manageorders = [];
         foreach($get_unique_transaction_id as $key=>$id){
             foreach($orders as $order){
-                if($order->transaction_id == $id && $order->orderid == $get_product_id[0]){
-                    array_push($manageorders, $order);
-                    
+                if($order->transaction_id == $id && $order->orderid == $get_product_id[$key]){
+                    array_push($manageorders, $order); 
                 }
             }
             
+        }
+
+        $ordetails = [];
+        foreach($get_unique_transaction_id as $key=>$id){
+            foreach($orders as $order){
+                if($order->transaction_id == $id){
+                    $products = Products::where('id', $order->orderid)->get();
+                    $ordetails[$id][] = $products[0];
+                }
+            }
         }
 
         $response = [
             'orders' => $orders,
             'transaction_id' => $get_transaction_id,
             'manageorders' => $manageorders,
-            'product_id' => $get_product_id
+            'product_id' => $get_product_id,
+            'orderdetails' => $ordetails
         ];
 
         return response($response, 201);

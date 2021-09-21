@@ -153,13 +153,14 @@
                   </div>
                 </div>
               </div>
-              <router-link
-                to="/processorder"
+              <a
+                
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="Personal Information"
                 v-for="(order, index) in manageorders"
                 :key="index"
+                @click.prevent="orderDetails(order.transaction_id)"
               >
                 <div class="card-body border-b-2 text-dark">
                   <div class="row text-xs">
@@ -194,7 +195,7 @@
                     </div>
                   </div>
                 </div>
-              </router-link>
+              </a>
 
             </div>
 
@@ -392,18 +393,31 @@ export default {
   data() {
     return {
       id: 2,
-      manageorders: ''
+      manageorders: '',
+      orderdetails: '',
+      data: '',
     }
   },
   methods: {
     async getMyOrders(){
       User.manageorders(this.id).then(res => {
         this.manageorders = res.data.manageorders;
+        this.orderdetails = res.data.orderdetails;
         console.log(res.data);
       }).catch(errors => {
         console.log(errors);
       });
-    }
+    },
+    orderDetails(data) {
+      this.data = data;
+      console.log(data);
+        this.$router.push({
+        name: 'processorder',
+        params: {
+          data: this.data, orderdetails: this.orderdetails,
+          }
+      });
+    },
   },
   computed: mapState(['setCategoryList','setSubCategoryList']),
   async mounted() {
