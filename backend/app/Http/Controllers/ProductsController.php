@@ -248,4 +248,23 @@ return $product;
         //
         return Products::where('product_subcat_id', $id)->with('product_images')->orderBy('id', 'desc')->take(6)->get();
     }
+    public function sortListings($id)
+    {
+        if ($id =="0"){
+        return Products::with('product_images')->orderBy('id', 'desc')->get();
+        }else{
+            if ($id =="1"){
+                return Products::with('product_images')->orderBy('product_name')->get();
+            }
+            if ($id =="2"){
+                return Products::with('product_images')->orderBy('product_name', 'desc')->get();
+            }
+            if ($id =="3"){
+                return Products::with('product_images')->orderBy('product_price')->get();
+            }
+            if ($id =="4"){
+                return Products::with('product_images')->orderBy('product_price', 'desc')->get();
+            }
+        }
+    }
 }

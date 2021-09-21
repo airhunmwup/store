@@ -48,12 +48,12 @@
     <p class="text pt-2 text-dark h5 font-weight-bold font-weight-normal">
         {{ subcat }}
     </p>
-    <select class="select-title text-xs">
-                                <option value="">Sort by</option>
-                                <option value="">Name, A to Z</option>
-                                <option value="">Name, Z to A</option>
-                                <option value="">Price, low to high</option>
-                                <option value="">Price, high to low</option>
+    <select class="select-title text-xs" @change="sort_by($event)">
+                                <option value="0">Sort by</option>
+                                <option value="1">Name, A to Z</option>
+                                <option value="2">Name, Z to A</option>
+                                <option value="3">Price, low to high</option>
+                                <option value="4">Price, high to low</option>
                               </select>
                             <a
                               class="ml-1 cateItem"
@@ -794,6 +794,21 @@ export default {
         console.log("new listing api call error");
       });
     },
+    sort_by(event){
+      User.sortListings(event.target.value).then(response => {
+      this.newListings = response.data;
+      //console.log(this.newListings);
+    }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            //document.getElementById("alat").innerHTML = error.response.data.message;
+        }
+      })
+    },
+   
     product_detail_link(event){
       var id = event.target.getAttribute("data-id");
       this.$store.dispatch("product_detail_page", id);
