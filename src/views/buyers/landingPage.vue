@@ -142,7 +142,7 @@
               data-target=".navbar-collapse"
               @click="product_detail_link">
     <div class="card h-100">
-      <img src="'../images/uploads/0AmYJvycHXsecMqRdtLxCdtP25DDh4dBWvbwV7ec.jpg'" class="card-img-top" alt="Product" v-bind:data-id="listings.id" />
+      <img v-bind:src="'http://127.0.0.1:8000/storage/images/' + listings.product_image1" class="card-img-top" alt="Product" v-bind:data-id="listings.id" />
       <div class="card-body">
     <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
     <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
