@@ -36,6 +36,7 @@ Route::post('/login', [AuthController::class, 'login']);
 
 Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 Route::get('/newlistings2/{id}', [ProductsController::class, 'newlisting2']);
+Route::get('/sortListings/{id}', [ProductsController::class, 'sortListings']);
 
 
 

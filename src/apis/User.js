@@ -56,7 +56,9 @@ export default{
     getNewListings2(id){
         return Api().get("/newlistings2/" + id);
     },
-
+    sortListings(id){
+        return Api().get("/sortListings/" + id);
+    },
     product_detail_page(id){
         return Api().get("/products/" + id);
     },
