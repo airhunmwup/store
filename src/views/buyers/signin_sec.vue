@@ -8,10 +8,10 @@
 
 <!--recently viewed-->
                 <div class="row col-sm-12 p-3 col-lg-6 col-md-6">
-                  <span class="text text-dark h4 font-weight-bold font-weight-normal">
-                  Login & security
+                  <span class="text m-4 text-dark h4 font-weight-bold font-weight-normal">
+                  Sign in & security preference
                   </span>
-                  <div class="card" >
+                  <div class="" >
   <div class="card-body border-b-2">
     <div class="row">
   <div class="col-8">
@@ -112,7 +112,6 @@
       <!-- end col-md-9-1 -->
     </div>
 
-    <hr />
   </div>
 </template>
         

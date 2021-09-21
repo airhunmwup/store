@@ -319,9 +319,15 @@ const routes = [{
         component: UserOrderPage,
     },
     {
-        path: '/Product Page',
+        path: '/ProductPage',
         name: 'ProductPage',
         component: productPage,
+    },
+    {
+        path: '/ProductPage/:cid',
+        name: 'ProductPage',
+        component: productPage,
+        props: true,
     },
     {
         path: '/productDetail',

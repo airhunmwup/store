@@ -19,6 +19,7 @@ class Products extends Model
         'product_condition',
         'product_desc',
         'product_price',
+        'product_quantity',
         'product_image1',
         'product_image2',
         'product_image3',
@@ -33,4 +34,8 @@ class Products extends Model
         'product_total',
 
     ];
+    public function product_images()
+    {
+        return $this->hasMany('App\Models\ProductImages','product_id');
+    }
 }

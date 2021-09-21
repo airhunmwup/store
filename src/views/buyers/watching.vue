@@ -28,19 +28,7 @@
   <div class="nav nav-tabs" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true"><span class="fa fa-list"></span></a>
     <a class="nav-item nav-link" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="false"><span class="fa fa-th"></span></a>
-    </div>
-    </div>
-    <div class="col-sm">
-<div class="input-group input-group-sm mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-sm"><i class="fa fa-search"></i></span>
-  </div>
-  <input type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"><div class="input-group-append">
-    <button class="btn btn-outline-secondary" type="button">Search</button>
-  </div>
-</div>
-    </div>
-    <div class="col-sm">
+    
    <div class="dropdown">
   <button class="btn btn-sm font-weight-bold dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
     Filters and Sort
@@ -56,6 +44,7 @@
     <a class="dropdown-item" href="#">Price(high to low)</a>
   </div>
 </div>
+    </div>
     </div>
   </div>
 </nav>
@@ -140,11 +129,6 @@ export default {
     }
   },
   created(){
-  },
-  data() {
-    return {
-      API_BASE_URL: Constants.API_BASE_URL,
-    };
   },
   updated(){
     console.log(this.getUser);

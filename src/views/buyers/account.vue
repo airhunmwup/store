@@ -4,7 +4,7 @@
     <div class="row justify-content-center">
           <!--Sigin-and-security-->
           <div class="row pb-5">
-            <p class="text text-dark h5 pl-3 font-weight-bold">
+            <p class="text text-dark h5 p-4 font-weight-bold">
               Your Account
             </p>
             <div class="row">
@@ -69,6 +69,7 @@
                   </div>
                 </router-link>
               </div>
+              <!--
               <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
                   to="/paymentsetting"
@@ -90,6 +91,7 @@
                   </div>
                 </router-link>
               </div>
+              -->
               <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
                   to="/My message"

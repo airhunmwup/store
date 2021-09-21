@@ -3,7 +3,7 @@
 
   <!-- main content -->
 
-  <div class="">
+  <div class="text-sm">
     <p class="pb-4 pr-4 text-dark text-right">
       Already a member?
 
@@ -36,17 +36,13 @@
           >
         </p>
 
-        <div class="col-lg-6 col-sm-6 pb-3 pt-4 justify-content-center">
-          <div id="content" class="page-content">
-            <div class="register-form text-center">
-              <div>
-                <div class="text-center">
+                <div class="justify-content-center">
                   <div class="row">
                     <div
                       class="
                         form-group
                         text-left
-                        col-lg-6 col-md-6 col-sm-6
+                        col-lg-4 col-md-6 col-sm-6
                         pb-3
                       "
                     >
@@ -68,7 +64,7 @@
                       class="
                         form-group
                         text-left
-                        col-lg-6 col-md-6 col-sm-6
+                        col-lg-4 col-md-6 col-sm-6
                         pb-3
                       "
                     >
@@ -89,7 +85,7 @@
                     <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
                       <input
                         class="
-                          col-lg-12 col-md-12 col-sm-12
+                          col-lg-8 col-md-12 col-sm-12
                           border-b border-dark border-t-0 border-l-0 border-r-0
                         "
                         name="Email"
@@ -104,7 +100,7 @@
                     <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
                       <input
                         class="
-                          col-lg-12 col-md-12 col-sm-12
+                          col-lg-8 col-md-12 col-sm-12
                           border-b border-dark border-t-0 border-l-0 border-r-0
                         "
                         name="Pass_word"
@@ -116,9 +112,8 @@
                       <p class="text-danger text-left" v-text="errors.password"></p>
                     </div>
                   </div>
-                </div>
 
-                <div>
+                <div class="col-8">
                   <p class="text-left pt-2 pb-2">
                     By Creating an account, you agree to our
 
@@ -147,61 +142,14 @@
                 <div class="clearfix">
                   <div>
                     <button
-                      class="col-lg-12 col-md-12 col-sm-12 btn text-light"
+                      class="col-lg-8 col-md-12 col-sm-12 btn text-light"
                       style="background-color: rgb(209, 209, 208)"
                       @click='userRegister'>
                       Create account
                     </button>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-sm-6">
-          <div class="clearfix p-3 justify-content-center text-center">
-            <p class="text-dark pb-3">Continue with:</p>
-
-            <div class="pt-3 pb-3">
-              <button
-                class="
-                  p-2
-                  shadow
-                  border
-                  col-lg-12 col-md-12 col-sm-12
-                  btn
-                  text-light
-                "
-                style="background-color: blue"
-                data-link-action="sign-in"
-                type="submit"
-              >
-                <i class="text-lg fa fa-facebook"></i>
-              </button>
-            </div>
-
-            <div class="pt-3 pb-3">
-              <button
-                class="
-                  p-2
-                  shadow
-                  border
-                  col-lg-12 col-md-12 col-sm-12
-                  btn
-                  text-light
-                "
-                style="background-color: red"
-                data-link-action="sign-in"
-                type="submit"
-              >
-                <i class="text-lg fa fa-google"></i>
-              </button>
-            </div>
-          </div>
-
-          <hr />
-        </div>
+                </div>
       </div>
     </div>
 

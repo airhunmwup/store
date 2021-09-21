@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use Carbon\Carbon;
 use App\Models\Categories;
 use App\Models\Subcategories;
+use App\Models\ProductImages;
 
 class ProductsController extends Controller
 {
@@ -77,7 +78,7 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        
         $fields = $request->validate([
             'product_subcat' => 'required|string',
             'product_catname' => 'required|string',
@@ -85,6 +86,7 @@ class ProductsController extends Controller
             'product_subcat_id' => 'required|integer',
             'product_name' => 'required|string',
             'product_price' => 'required|integer',
+            'product_quantity' => 'required|integer',
             'product_condition' => 'required|string',
             'product_desc' => 'required|string',
             'product_shipping_type' => 'required|string',
@@ -96,7 +98,7 @@ class ProductsController extends Controller
             'product_package_width' => 'required|integer',
         ]);
 
-        return Products::create([
+        $product = Products::create([
             'product_subcat' => $fields['product_subcat'],
             'product_catname' => $fields['product_catname'],
             'product_cat_id' => $fields['product_cat_id'],
@@ -106,6 +108,7 @@ class ProductsController extends Controller
             'product_condition' => $fields['product_condition'],
             'product_desc' => $fields['product_desc'],
             'product_price' => $fields['product_price'],
+            'product_quantity' => $fields['product_quantity'],
             'product_shipping_type' => $fields['product_shipping_type'],
             'product_shipping_rate' => $fields['product_shipping_rate'],
             'product_shipping_cost' => $fields['product_shipping_cost'],
@@ -115,6 +118,30 @@ class ProductsController extends Controller
             'product_package_width' => $fields['product_package_width'],
             'product_total' => $request->product_total,
         ]);
+        //if ($request->hasFile('testImage')) {
+           // $image = $request->file('testImage');
+           // $randomNumber = random_int(100000, 999999);
+            //$filename = "uploads";
+            //$imagePath = $images->store('images','public');
+            //$imagePath = Storage::disk('images')->put($filename,$image);
+        //return $request;
+        //}else{
+           // return "none";
+       // }
+        $images = $request->file('images');
+        if($request->hasFile('images'))
+{
+        foreach($images as $image) {
+            $filename = "uploads";
+            //$imagePath = $images->store('images','public');
+            $imagePath = Storage::disk('images')->put($filename,$image);
+            ProductImages::create([
+                    'product_image_path' => '/public/images/' . $imagePath,
+                    'product_id' => $product->id,
+                   ]);
+            }          
+}
+return $product;
     }
 
     /**
@@ -214,6 +241,11 @@ class ProductsController extends Controller
     public function newlisting()
     {
         //
-        return Products::orderBy('id', 'desc')->take(6)->get();
+        return Products::with('product_images')->orderBy('id', 'desc')->take(6)->get();
+    }
+    public function newlisting2($id)
+    {
+        //
+        return Products::where('product_subcat_id', $id)->with('product_images')->orderBy('id', 'desc')->take(6)->get();
     }
 }

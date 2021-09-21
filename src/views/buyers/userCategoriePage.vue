@@ -1,6 +1,6 @@
 <template>
               <!-- breadcrumb -->
-              <div class="container">
+              <div class="m-4">
               <!-- breadcrumb -->
                   <div class="row">
 
@@ -10,24 +10,14 @@
                     <div
                       class="
                         sidebar-3 sidebar-collection
-                        col-lg-3 col-md-3 col-sm-3 d-xs-none border-r-2
+                        col-lg-2 col-md-2 d-xs-none border-r-2
                       "
                     >
                       <!-- ###category menu### -->
                       <div class="sidebar-block">
-                        <div class="title-block">All Categories</div>
-                        <div class="block-content font-weight-bold text-dark">
+                        <div class="h6">Shop by Categories</div>
+                        <div class="text-sm block-content text-dark">
                           <div v-for="category in categoryList" v-bind:key="category.id" class="cateTitle hasSubCategory open level1">
-                            <span
-                              class="arrow collapsed collapse-icons"
-                              data-toggle="collapse"
-                              v-bind:data-target="'#livingroom' + category.id" 
-                              aria-expanded="false"
-                              role="status"
-                            >
-                              <i class="zmdi zmdi-minus"></i>
-                              <i class="zmdi zmdi-plus"></i>
-                            </span>
                             <router-link 
                               v-bind:to="'/CategoriePage/' + category.id"
                               data-toggle="collapse"
@@ -35,17 +25,6 @@
                             ><a class="cateItem" href="#">{{ category.cat_name }}</a>
                            </router-link>
                             
-                            <div
-                              class="subCategory "
-                              v-bind:id="'livingroom' + category.id"
-                              aria-expanded="true"
-                              role="status"
-                            >
-                              <div  v-for="subcategory in category.subcategories" v-bind:key="subcategory.id" class="cateTitle">
-                                <a href="#" class="cateItem">{{ subcategory.sub_catname }}</a>
-                              </div>
-                              
-                            </div>
                           </div>
                           
                         </div>
@@ -57,20 +36,26 @@
 
 
 
-                    <div class="col-lg-9 col-md-9 col-sm-12">
-                      <p class="text p-3 text-dark h5 font-weight-bold font-weight-normal">
+                    <div class="col-lg-10 col-md-10 col-sm-12">
+                      <p class="text pt-2 text-dark h5 font-weight-bold font-weight-normal">
                         {{ categorie.cat_name }}
                       </p>
-                      <br />
                       <!-- FEATURED CATEGORIES -->
-                        <div class="row pt-4 pb-4">
+                        <div class="row m-1 pb-4">
                           <div v-for="subcategory in categorie.subcategories" v-bind:key="subcategory.id" 
                             class="
-                              col-6 col-sm-6 col-md-4 col-lg-3
+                              col-sm-6 p-2 col-md-4 col-lg-4
                             "
                           >
-                              <p class="underline h6  text-dark">
-                                {{ subcategory.sub_catname }}
+                              <p class="underline text-sm  text-dark">
+                                <router-link
+                                    class="text-dark"
+                                    v-bind:to="'/ProductPage/' + subcategory.id"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
+                                    >{{ subcategory.sub_catname }}
+                                </router-link>
+                                
                               </p>
                           </div>
                           
@@ -88,284 +73,17 @@
                                 to="/Product Detail"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
-                                title="Home"
                             >
-                            <div class="card" style="width: 11rem;">
                                 <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="h6 text-dark">{{ listing.product_name }}</p>
-                                <p class="font-weight-bold h6 text-dark">£{{ listing.product_price }}</p>
-                                <p class="text-dark">RRP: <del> £350</del></p>
+                                <p class="text-dark text-sm">{{ listing.product_name }}</p>
+                                <p class="font-weight-bold p-2 text-sm text-dark">£{{ listing.product_price }}</p>
+                            <button type="button" class="border btn btn-sm mr-1"><span class="fa fa-shopping-cart"></span></button>
+                            <button type="button" class="border btn btn-sm ml-1"><span class="fa fa-eye"></span></button>
                             </div>
 
-                            <button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-                            </div>
                             </router-link>
                        </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
                         </div>
                       </div>
                         <div class="justify-content-center p-4">

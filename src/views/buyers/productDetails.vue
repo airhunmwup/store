@@ -25,7 +25,7 @@
               </div>
 
               <ul class="product-tab nav nav-tabs d-flex">
-                <li class="col card" v-for="num in nums" :key="num">
+                <li class="col" v-for="num in nums" :key="num">
                   <a v-bind:href="'#item' + num" data-toggle="tab">
                     <img
                       v-bind:src="API_BASE_URL + img['product_image' + num]"
