@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\UserPayment;
 use App\Models\OrderProduct;
 use App\Models\Products;
+use App\Models\ManageOrder;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -43,6 +44,18 @@ class UserPaymentController extends Controller
                     'transaction_id' => $payment->charges->data[0]->id,
                     'total' => $payment->charges->data[0]->amount
                 ]);
+
+            foreach (json_decode($request->input('cart'), true) as $key=>$item) { 
+                ManageOrder::create([
+                    'user_id' => $request->input('user_id') ,
+                    'customername' => $request->input('first_name') . ' ' . $request->input('last_name'),
+                    'price' => $payment->charges->data[0]->amount,
+                    'sellerid' => $item['product_userid'],
+                    'transaction_id' => $payment->charges->data[0]->id,
+                    'orderid' => $item['id'],
+                ]);
+            }
+
 
             foreach (json_decode($request->input('cart'), true) as $item) {
                 $order->products()
@@ -115,6 +128,42 @@ class UserPaymentController extends Controller
             'myproducts' => $myproducts,
             'products' => $products_main,
             'productHistory' => $productHistory
+        ];
+
+        return response($response, 201);
+    }
+
+    public function manageorders(Request $request){
+        $orders = ManageOrder::where('sellerid', 2)->get();
+
+        $get_transaction_id = [];
+        foreach($orders as $order){
+            array_push($get_transaction_id, $order->transaction_id);
+        }
+        
+        $get_unique_transaction_id = array_unique($get_transaction_id);
+
+        $get_product_id = [];
+        foreach($orders as $order){
+            array_push($get_product_id, $order->orderid);
+        }
+
+        $manageorders = [];
+        foreach($get_unique_transaction_id as $key=>$id){
+            foreach($orders as $order){
+                if($order->transaction_id == $id && $order->orderid == $get_product_id[0]){
+                    array_push($manageorders, $order);
+                    
+                }
+            }
+            
+        }
+
+        $response = [
+            'orders' => $orders,
+            'transaction_id' => $get_transaction_id,
+            'manageorders' => $manageorders,
+            'product_id' => $get_product_id
         ];
 
         return response($response, 201);

@@ -206,7 +206,7 @@
                 </div>
               </div>
             </div>
-            <p class="text-dark text-sm text-center">
+            <p class="text-dark text-center" v-show="!orders">
               You do not have any orders to display in this view.
             </p>
           </div>
@@ -456,5 +456,9 @@ export default {
   },
 };
 </script>
+<<<<<<< HEAD
+        z
+=======
         
         
+>>>>>>> 24149d43b29966a0f7946a241d4bbc5809c4acb1

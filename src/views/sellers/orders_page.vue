@@ -71,7 +71,7 @@
             <div class="btn-group">
               <!-- Example split danger button -->
               <button type="button" class="btn btn-xs text-sm">
-                0 Orders placed:
+                {{manageorders.length}} Orders placed:
               </button>
               <button
                 type="button"
@@ -158,6 +158,8 @@
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="Personal Information"
+                v-for="(order, index) in manageorders"
+                :key="index"
               >
                 <div class="card-body border-b-2 text-dark">
                   <div class="row text-xs">
@@ -167,10 +169,10 @@
                       </div>
                     </div>
                     <div class="col">
-                      <p class="">15 August 2020, 16:00</p>
+                      <p class="">{{order.created_at.substring(0,10)}}</p>
                     </div>
                     <div class="col">
-                      <p class="">John Phillips</p>
+                      <p class="">{{order.customername}}</p>
                     </div>
                     <div class="col">
                       <p class="">The first product name...</p>
@@ -185,55 +187,15 @@
                       </span>
                     </div>
                     <div class="col">
-                      <p class="">awaiting delivery</p>
+                      <p class="">{{order.status}}</p>
                     </div>
                     <div class="col">
-                      <p class="text-right">£150.00</p>
+                      <p class="text-right">£{{order.price}}</p>
                     </div>
                   </div>
                 </div>
               </router-link>
 
-              <router-link
-                to="/processorder"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
-                title="Personal Information"
-              >
-                <div class="card-body border-b-2 text-dark">
-                  <div class="row text-xs">
-                    <div class="col">
-                      <div class="input-group">
-                        <span class="ml-2 font-weight-bold"> #76343</span>
-                      </div>
-                    </div>
-                    <div class="col">
-                      <p class="">15 August 2020, 16:00</p>
-                    </div>
-                    <div class="col">
-                      <p class="">John Phillips</p>
-                    </div>
-                    <div class="col">
-                      <p class="">The first product name...</p>
-                    </div>
-                    <div class="col">
-                      <span
-                        class="alert-xs p-1 mt-4 rounded alert-success"
-                        style="height: 2rem"
-                        role="alert"
-                      >
-                        Delivered
-                      </span>
-                    </div>
-                    <div class="col">
-                      <p class="">Delivered</p>
-                    </div>
-                    <div class="col">
-                      <p class="text-right">£150.00</p>
-                    </div>
-                  </div>
-                </div>
-              </router-link>
             </div>
 
             <!--end Web view-->
@@ -390,7 +352,7 @@
             </div>
             <!--end mobile view-->
 
-            <p class="text-dark text-center">
+            <p class="text-dark text-center" v-show="!manageorders">
               You do not have any orders to display in this view.
             </p>
 
@@ -429,13 +391,24 @@ import User from "../../apis/User";
 export default {
   data() {
     return {
-      
+      id: 2,
+      manageorders: ''
     }
   },
   methods: {
-
+    async getMyOrders(){
+      User.manageorders(this.id).then(res => {
+        this.manageorders = res.data.manageorders;
+        console.log(res.data);
+      }).catch(errors => {
+        console.log(errors);
+      });
+    }
   },
-  computed: mapState(['setCategoryList','setSubCategoryList'])
+  computed: mapState(['setCategoryList','setSubCategoryList']),
+  async mounted() {
+    this.getMyOrders();
+  },
 }
 </script>
         

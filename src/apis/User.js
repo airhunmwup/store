@@ -138,6 +138,11 @@ export default{
     },
     
     myOrders(data){
-        return Api().post("/myorders", data);
+        return Ap,i().post("/myorders", data);
+    },
+
+    manageorders(data){
+        return Api().post("/manageorders", data);
     }
+
 };
