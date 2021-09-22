@@ -410,7 +410,6 @@ export default {
         product_condition: "",
         product_desc: "",
         product_price: "",
-        product_quantity: "",
         imageData: [],
         product_shipping_type: "",
         product_shipping_rate: "",
@@ -420,10 +419,8 @@ export default {
         product_package_length: "",
         product_package_width: "",
         product_total: "0.00",
-        testImage: "",
       },
       errors: {
-
       }
     }
   },
@@ -433,8 +430,6 @@ export default {
       if(file){
         if(this.num <= 4){
           this.image.push(file);
-          this.formData.imageData.push(file);
-          this.formData.testImage = file;
           this.imagePreview.push(URL.createObjectURL(file));
           this.num++;
         }else{
@@ -459,16 +454,13 @@ export default {
         fd.append('product_image3', this.image[2]);
         fd.append('product_image4', this.image[3]);
       }
-
       let config = {
         header : {
           'Content-Type' : 'image/jpeg',
           'Access-Control-Allow-Origin': '*'
         }
       }
-
       fd.append('id', this.tableId);
-
       User.upload(fd, config).then(res => {
         console.log(res);
       }).catch(err => {
@@ -477,43 +469,18 @@ export default {
     },
     createListing(){
       if(this.image.length >= 1){
-        const  formData2 = new FormData(this.$refs.myForm); 
-               formData2.append('product_subcat', this.formData.product_subcat); 
-               formData2.append('product_catname', this.formData.product_catname);
-               formData2.append('product_userid', this.formData.product_userid);
-               formData2.append('product_cat_id', this.formData.product_cat_id);  
-               formData2.append('product_subcat_id', this.formData.product_subcat_id); 
-               formData2.append('product_name', this.formData.product_name);  
-               formData2.append('product_condition', this.formData.product_condition);
-               formData2.append('product_desc', this.formData.product_desc); 
-               formData2.append('product_price', this.formData.product_price);
-               formData2.append('product_quantity', this.formData.product_quantity);
-               formData2.append('product_shipping_type', this.formData.product_shipping_type);
-               formData2.append('product_shipping_rate', this.formData.product_shipping_rate);
-               formData2.append('product_shipping_cost', this.formData.product_shipping_cost);
-               formData2.append('product_package_type', this.formData.product_package_type);
-               formData2.append('product_package_weight', this.formData.product_package_weight);
-               formData2.append('product_package_length', this.formData.product_package_length);
-               formData2.append('product_package_width', this.formData.product_package_width);
-               formData2.append('product_total', this.formData.product_total);
-               $.each(this.image, function (key, image) {
-                  formData2.append(`images[${key}]`, image)
-                })
-           
-          User.createlisting(formData2,{
-            headers: { 'Content-Type': "multipart/form-data; charset=utf-8; boundary=" + Math.random().toString().substr(2)}
-            }).then(res =>{
+          User.createlisting(this.formData).then(res =>{
             this.errors = {};
             console.log(res.data);
             this.tableId = res.data.id;
-            this.$router.push("/listings");
+            this.imageUploadHandler();
           }).catch(error => {
         if (!error.response) {
             // network error
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-             document.getElementById("alat").innerHTML = error.response.data.message;
+            //document.getElementById("alat").innerHTML = error.response.data.message;
         }
       })
       }else{

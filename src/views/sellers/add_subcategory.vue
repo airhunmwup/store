@@ -80,7 +80,15 @@
                             <template v-for="subcat of setSubCategoryList">
     
                     <li class="list-group-item border" :key="subcat.id" v-if="subcat.cat_id == pid">
+                          <a
+                            href="#"
+                            data-toggle="collapse"
     
+                            data-target=".navbar-collapse"
+    
+                            @click="category(subcat.sub_catname,subcat.id)"
+    
+                            >
                     <div class="row">
     
                       <div class="col-sm">{{subcat.sub_catname}}</div>
@@ -88,16 +96,7 @@
                       <div class="col-sm">
     
                         <p class="text-right text-xl">
-    
-                          <a
-    
-                            data-toggle="collapse"
-    
-                            data-target=".navbar-collapse"
-    
-                            @click="category(subcat.sub_catname,subcat.id)"
-    
-                            ><b
+                            <b
     
                               class="
     
@@ -110,14 +109,12 @@
                               "
     
                             ></b>
-    
-                          </a>
-    
                         </p>
     
                       </div>
     
                     </div>
+                          </a>
     
                   </li>
 </template>

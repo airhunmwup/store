@@ -161,9 +161,6 @@ export default {
     },
   }
 };
-</script
+</script>
 
-    <hr>
-  </div>
-</template>
         

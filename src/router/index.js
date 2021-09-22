@@ -23,7 +23,6 @@ import Mymessage from '../views/buyers/message.vue'
 import Mymessage_open from '../views/buyers/message_open.vue'
 import sent_message from '../views/buyers/sent_message.vue'
 
-import Summary from '../views/buyers/summary.vue'
 import saved_seller from '../views/buyers/saved_seller.vue'
 import saved_search from '../views/buyers/saved_search.vue'
 import search from '../views/buyers/search.vue'
@@ -40,6 +39,7 @@ import edit_login_name from '../views/buyers/edit_login_name.vue'
 import edit_login_email from '../views/buyers/edit_login_email.vue'
 import edit_login_mobilenumber from '../views/buyers/edit_login_mobilenumber.vue'
 import paymentsuccess from '../views/buyers/paymentsuccess.vue'
+import checkoutsummary from '../views/buyers/checkoutsummary.vue'
 
 
 
@@ -153,6 +153,11 @@ const routes = [{
         path: '/paymentsuccess',
         name: 'paymentsuccess',
         component: paymentsuccess,
+    },
+    {
+        path: '/checkoutsummary',
+        name: 'checkoutsummary',
+        component: checkoutsummary,
     },
     {
         path: '/listings',
@@ -484,11 +489,6 @@ const routes = [{
         path: '/Sellers can cancel order',
         name: 'Sellers can cancel order',
         component: sellers_can_cancel_order,
-    },
-    {
-        path: '/Summary',
-        name: 'Summary',
-        component: Summary,
     },
     {
         path: '/search',
