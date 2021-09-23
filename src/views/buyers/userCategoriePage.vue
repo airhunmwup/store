@@ -76,10 +76,8 @@
                             >
                                 <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
                             <div class="card-body">
-                                <p class="text-dark text-sm">{{ listing.product_name }}</p>
-                                <p class="font-weight-bold p-2 text-sm text-dark">£{{ listing.product_price }}</p>
-                            <button type="button" class="border btn btn-sm mr-1"><span class="fa fa-shopping-cart"></span></button>
-                            <button type="button" class="border btn btn-sm ml-1"><span class="fa fa-eye"></span></button>
+                                <p class="text-dark h6 text-sm">{{ listing.product_name }}</p>
+                                <p class="font-weight-bold text-sm text-dark">£{{ listing.product_price }}</p>
                             </div>
 
                             </router-link>

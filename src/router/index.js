@@ -23,16 +23,11 @@ import Mymessage from '../views/buyers/message.vue'
 import Mymessage_open from '../views/buyers/message_open.vue'
 import sent_message from '../views/buyers/sent_message.vue'
 
-import saved_seller from '../views/buyers/saved_seller.vue'
-import saved_search from '../views/buyers/saved_search.vue'
 import search from '../views/buyers/search.vue'
 import searching from '../views/buyers/searching.vue'
 import watching from '../views/buyers/watching.vue'
 import purchase_history from '../views/buyers/purchase_history.vue'
-import recently_viewed from '../views/buyers/recently_viewed.vue'
 import signin_sec from '../views/buyers/signin_sec.vue'
-import buyer_returns from '../views/buyers/returns.vue'
-import cancelled_order from '../views/buyers/cancelled_orders.vue'
 import buy_again from '../views/buyers/buyagain.vue'
 import paymentgate from '../views/buyers/paymentgate.vue'
 import edit_login_name from '../views/buyers/edit_login_name.vue'
@@ -182,16 +177,6 @@ const routes = [{
         props: true,
     },
     {
-        path: '/buyerreturns',
-        name: 'buyerreturns',
-        component: buyer_returns,
-    },
-    {
-        path: '/cancelledorder',
-        name: 'cancelledorder',
-        component: cancelled_order,
-    },
-    {
         path: '/buyagain',
         name: 'buyagain',
         component: buy_again,
@@ -229,15 +214,8 @@ const routes = [{
         name: 'buyersigninsecsetting',
         component: signin_sec,
     },
+    
     {
-        path: '/savedseller',
-        name: 'savedseller',
-        component: saved_seller,
-    }, {
-        path: '/savedsearch',
-        name: 'savedsearch',
-        component: saved_search,
-    }, {
         path: '/purchasehistory',
         name: 'purchasehistory',
         component: purchase_history,
@@ -245,10 +223,6 @@ const routes = [{
         path: '/watchingpage',
         name: 'watchingpage',
         component: watching,
-    }, {
-        path: '/recentlyviewed',
-        name: 'recentlyviewed',
-        component: recently_viewed,
     },
 
     {
