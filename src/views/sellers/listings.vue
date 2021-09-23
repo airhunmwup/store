@@ -346,11 +346,11 @@
             </div>
           </div>
           <div class="card-footer">
-            <a href="#" class="btn btn-danger text-light border m-1 btn-sm"
+            <a href="#" class="btn border text-dark border m-1 btn-sm"
                @click="deletelisting(prods.id)"
               >Delete</a
             >
-            <a href="#" class="btn btn-info text-light border m-1 btn-sm"
+            <a href="#" class="btn bborder text-dark border m-1 btn-sm"
               >Edit</a
             >
           </div>

@@ -48,7 +48,6 @@ import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vu
 import seller_changepassword from '../views/sellers/seller_changepassword.vue'
 import Dashboard from '../views/sellers/seller_dashboard.vue'
 import orders_page from '../views/sellers/orders_page.vue'
-import order_details from '../views/sellers/order_details.vue'
 import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
 import property_listing from '../views/sellers/Property_listing.vue'
@@ -131,11 +130,6 @@ const routes = [{
         path: '/editpassword',
         name: 'editpassword',
         component: changePasswordPage,
-    },
-    {
-        path: '/Order details',
-        name: 'Orders details',
-        component: order_details,
     },
     {
         path: '/paymentsuccess',

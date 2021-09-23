@@ -202,11 +202,14 @@
             <!--end Web view-->
 
             <!--start mobile view-->
-            <div class="card m-2 d-md-none border">
+            <div class="card m-2 d-md-none border"
+                v-for="(order, index) in manageorders"
+                :key="index"
+                @click.prevent="orderDetails(order.transaction_id)">
               <div class="card-header">
                 <div class="row text-xs">
                   <div class="col">
-                    <p class="text-left">15 August 2020, 16:00</p>
+                    <p class="text-left">{{order.created_at.substring(0,10)}}</p>
                   </div>
                   <div class="col">
                     <p class="text-right">Order ID: <b>425251</b></p>
@@ -249,7 +252,7 @@
                     <p class="m-1">Customer:</p>
                   </div>
                   <div class="col-8 text-right">
-                    <p class="m-1 text-dark font-weight-bold">John Phillips</p>
+                    <p class="m-1 text-dark font-weight-bold">{{order.customername}}</p>
                   </div>
                   <div class="col-4">
                     <p class="m-1">Product:</p>
@@ -263,94 +266,20 @@
                     <p class="m-1">Price:</p>
                   </div>
                   <div class="col-8 text-right">
-                    <p class="m-1 text-dark font-weight-bold">£150.00</p>
+                    <p class="m-1 text-dark font-weight-bold">£{{order.price}}</p>
                   </div>
                   <div class="col-6">
                     <p class="m-1">Delivery status:</p>
                   </div>
                   <div class="col-6 text-right">
                     <p class="m-1 text-dark font-weight-bold">
-                      awaiting delivery
+                      {{order.status}}
                     </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="card m-2 d-md-none border">
-              <div class="card-header">
-                <div class="row text-xs">
-                  <div class="col">
-                    <p class="text-left">15 August 2020, 16:00</p>
-                  </div>
-                  <div class="col">
-                    <p class="text-right">Order ID: <b>425251</b></p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-header">
-                <div class="row text-xs">
-                  <div class="col pt-2">
-                    <span
-                      class="alert-xs p-1 mt-4 rounded alert-danger"
-                      style="height: 2rem"
-                      role="alert"
-                    >
-                      Pending
-                    </span>
-                  </div>
-                  <div class="col">
-                    <p class="text-right h5">
-                      <router-link
-                        to="/processorder"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Personal Information"
-                        ><b
-                          class="
-                            fa fa-angle-right fa-lg
-                            text-dark
-                            font-weight-bold
-                          "
-                        ></b>
-                      </router-link>
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="card-body text-xs">
-                <div class="row">
-                  <div class="col-4">
-                    <p class="m-1">Customer:</p>
-                  </div>
-                  <div class="col-8 text-right">
-                    <p class="m-1 text-dark font-weight-bold">John Phillips</p>
-                  </div>
-                  <div class="col-4">
-                    <p class="m-1">Product:</p>
-                  </div>
-                  <div class="col-8 text-right">
-                    <p class="m-1 text-dark font-weight-bold">
-                      Door opening stuff na him be the product names
-                    </p>
-                  </div>
-                  <div class="col-4">
-                    <p class="m-1">Price:</p>
-                  </div>
-                  <div class="col-8 text-right">
-                    <p class="m-1 text-dark font-weight-bold">£150.00</p>
-                  </div>
-                  <div class="col-6">
-                    <p class="m-1">Delivery status:</p>
-                  </div>
-                  <div class="col-6 text-right">
-                    <p class="m-1 text-dark font-weight-bold">
-                      awaiting delivery
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
             <!--end mobile view-->
 
             <p class="text-dark text-center" v-show="!manageorders">
