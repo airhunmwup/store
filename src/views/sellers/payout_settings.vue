@@ -17,7 +17,7 @@
   <div class="row">
     <div class="col">
                   <p class="h4 text-dark text-left">Your payout manager</p>
-                  <p class="text-dark text-sm text-left">Your default preferences are used for receiving payments.</p>
+                  <p class="text-dark text-sm text-left">Your default preferences are used for receiving payments and will be credited after orders has been processed.</p>
     </div>
     <div class="col-sm">
     </div>
@@ -26,24 +26,28 @@
 
     <p class="p-3"></p>
   <div class="row">
-    <div class="col-sm">
-<div class="card m-1">
-  <div class="card-body m-3">
-    <p class="text-center text-success h1 font-weight-bold"><i class=" zmdi zmdi-balance-wallet"></i></p>
-    <p class="text-dark text-center h5 font-weight-bold">£150.00</p>
-    <p class="text-center text-xs">Available balance</p>
-  </div>
-  <div class="card-body border-t-2">
-    <button type="button" class="btn btn-success btn-sm btn-block">Manage preference</button>
-  </div>
-</div>
-    </div>
     <div class="col-8 col-xs-12">
-<div class="card m-1">
-  <div class="card-header">
-    <p class="text-xs font-weight-bold"><span class="text-dark">Bank Accounts</span><span class=""> (for withdrawal)</span></p>
-  </div>
-  <div class="card-body shadow-inner">
+<div class="m-1">
+    <div class="row">
+                  <p class="text-dark text-sm text-left">Add Bank details</p>
+              <div class="p-2 col-4 col-xs-12">
+                <div class="card border-dashed border-secondary">
+            <router-link
+              class=""
+              to="/addpayout"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Add bank account"
+            >
+                  <div class="m-2 card-body">
+                    <p class="text-center text-grey h1">
+                      <i class="fa fa-plus"></i>
+                    </p>
+                  </div>
+            </router-link>
+                </div>
+              </div>
+    </div>
     <div class="row">
               <div class="p-2 col-6 col-xs-12">
                 <div class="card backdrop-brightness-100 shadow text-sm">
@@ -78,25 +82,7 @@
                   </div>
                 </div>
               </div>
-              <div class="p-2 col-4 col-xs-12">
-                <div class="card border-dashed border-secondary">
-            <router-link
-              class=""
-              to="/addpayout"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Add bank account"
-            >
-                  <div class="m-2 card-body">
-                    <p class="text-center text-grey h1">
-                      <i class="fa fa-plus"></i>
-                    </p>
-                  </div>
-            </router-link>
-                </div>
-              </div>
     </div>
-  </div>
 </div>
     </div>
   </div>

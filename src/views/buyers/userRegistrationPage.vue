@@ -18,7 +18,7 @@
     </p>
 
     <div class="container pb-5">
-      <div class="row container align-content-center">
+      <div class="row align-content-center">
         <div class="pb-4 text-center">
           <p class="h1 text-dark">Create an account</p>
         </div>
@@ -32,90 +32,66 @@
             data-target=".navbar-collapse"
             class="text-primary underline font-weight-bold"
             title="Create Business Account"
-            >Create a business account</router-link
+            >Create sellers account</router-link
           >
         </p>
 
-                <div class="justify-content-center">
-                  <div class="row">
-                    <div
-                      class="
-                        form-group
-                        text-left
-                        col-lg-4 col-md-6 col-sm-6
-                        pb-3
-                      "
-                    >
+        <div class="row justify-center text-sm" >
+
+<!--recently viewed-->
+                <div class="col-sm-12 col-lg-4 col-md-4">
+<form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">First name</label>
                       <input
-                        class="
-                          col-lg-12 col-md-12 col-sm-12
-                          border-b border-dark border-t-0 border-l-0 border-r-0
-                        "
+                        class="form-control text-sm"
                         name="First_Name"
                         type="text"
                         value=""
                         placeholder="First Name"
                         v-model="formData.first_name"
                       />
-                      <p class="text-danger text-left" v-text="errors.first_name"></p>
-                    </div>
-
-                    <div
-                      class="
-                        form-group
-                        text-left
-                        col-lg-4 col-md-6 col-sm-6
-                        pb-3
-                      "
-                    >
+    <div id="emailHelp" class="form-text"><p class="text-danger text-left" v-text="errors.first_name"></p></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Last name</label>
                       <input
-                        class="
-                          col-lg-12 col-md-12 col-sm-12
-                          border-b border-dark border-t-0 border-l-0 border-r-0
-                        "
+                        class="form-control text-sm"
                         name="Last_name"
                         type="text"
                         value=""
                         placeholder="Last Name"
                         v-model="formData.last_name"
                       />
-                      <p class="text-danger text-left" v-text="errors.last_name"></p>
-                    </div>
-
-                    <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
+    <div id="emailHelp" class="form-text"><p class="text-danger text-left" v-text="errors.last_name"></p></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
                       <input
-                        class="
-                          col-lg-8 col-md-12 col-sm-12
-                          border-b border-dark border-t-0 border-l-0 border-r-0
-                        "
+                        class="form-control text-sm"
                         name="Email"
                         type="email"
                         value=""
                         placeholder="Email"
                         v-model="formData.email"
                       />
-                      <p class="text-danger text-left" v-text="errors.email"></p>
-                    </div>
-
-                    <div class="form-group col-lg-12 col-md-12 col-sm-12 pb-3">
+    <div id="emailHelp" class="form-text"><p class="text-danger text-left" v-text="errors.email"></p></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
                       <input
-                        class="
-                          col-lg-8 col-md-12 col-sm-12
-                          border-b border-dark border-t-0 border-l-0 border-r-0
-                        "
+                        class="form-control text-sm"
                         name="Pass_word"
                         type="password"
                         value=""
                         placeholder="Password"
                         v-model="formData.password"
                       />
-                      <p class="text-danger text-left" v-text="errors.password"></p>
-                    </div>
-                  </div>
-
-                <div class="col-8">
-                  <p class="text-left pt-2 pb-2">
-                    By Creating an account, you agree to our
+    <div id="emailHelp" class="form-text"><p class="text-danger text-left" v-text="errors.password"></p></div>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+    <label class="form-check-label text-xs" for="exampleCheck1">By Creating an account, you agree to our
 
                     <router-link
                       to="/User Agreement"
@@ -135,21 +111,19 @@
                       class="text-primary"
                       title="User Privacy"
                       >User Privacy Notice</router-link
-                    >
-                  </p>
-                </div>
-
-                <div class="clearfix">
-                  <div>
+                    ></label>
+  </div><div class="d-grid gap-2">
                     <button
-                      class="col-lg-8 col-md-12 col-sm-12 btn text-light"
-                      style="background-color: rgb(209, 209, 208)"
+                    class="btn btn-warning bg-gradient border"
                       @click='userRegister'>
                       Create account
                     </button>
-                  </div>
+</div>
+</form>
                 </div>
-                </div>
+
+      <!-- end col-md-9-1 -->
+    </div>
       </div>
     </div>
 
@@ -157,11 +131,9 @@
 
     <div v-if="loading" id="page-preloader" class="redit">
         <div class="page-loading">
-            <div class="dot text-center text-danger font-italic font-extrabold">R</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">J</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
         </div>
     </div>
   </div>

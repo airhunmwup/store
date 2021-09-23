@@ -15,25 +15,33 @@
                         <div class="row pt-2">
                                 
                             <div class="container align-content-center">
-                                <div class="register-form text-center">
+                                <div class="register-form">
                                     <div class="pb-4 text-center">
                                     <p class="h3 text-dark">Create an account</p>
-                                    <p class="text-dark font-weight-bold underline">Business account</p>
+                                    <p class="text-dark font-weight-bold underline">Sellers account</p>
                                     </div>
-                            <form id="customer-form" action="#" method="post">
-                                <div class="container">
-                                    <input type="hidden" name="back" value="my-account">
-                                    <div class="form-group p-3">
-                                        <input class="col-lg-4 col-md-4 col-sm-4 border-b border-dark border-t-0 border-l-0 border-r-0" name="Business_name" type="text" value="" placeholder="Business Name">
-                                    </div>
-                                    <div class="form-group p-3">
-                                        <input class="col-lg-4 col-md-4 col-sm-4 border-b border-dark border-t-0 border-l-0 border-r-0" name="email" type="email" value="" placeholder="Business Email">
-                                    </div>
-                                    <div class="form-group p-3">
-                                            <input class="col-lg-4 col-md-4 col-sm-4 border-b border-dark border-t-0 border-l-0 border-r-0 js-visible-password" name="password" type="password" value="" placeholder="Password">
-                                    </div>
-                                    <div class="form-group p-3">
-                                     <p class="pt-2  text-xs pb-2">By Creating an account, you agree to our 
+        <div class="row justify-center text-sm" >
+
+<!--recently viewed-->
+                <div class="row col-sm-12 col-lg-4 col-md-4"><form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Business name</label>
+    <input type="text" class="form-control">
+    <div class="form-text">error code here</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <div class="form-text">error code here</div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1">
+    <div class="form-text">error code here</div>
+  </div>
+  <div class="mb-3 form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label text-xs" for="exampleCheck1">By Creating an account, you agree to our 
                               <router-link
                                 to="/User Agreement"
                                 data-toggle="collapse"
@@ -47,17 +55,15 @@
                                 data-target=".navbar-collapse"
                                 class="text-primary"
                                 title="User Privacy"
-                              >User Privacy Notice</router-link></p>
-                                    </div>
-                                    
-                                        
-                                <div class="clearfix p-2">
-                                        <button class="col-lg-4 col-md-4 col-sm-4  btn btn-warning border" data-link-action="sign-in" type="submit">
-                                            Submit
-                                        </button>
-                                </div>
-                                </div>
-                            </form>
+                              >User Privacy Notice</router-link></label>
+  </div><div class="d-grid gap-2">
+  <button class="btn btn-warning bg-gradient border" type="button">Create account</button>
+</div>
+</form>
+      </div>
+
+      <!-- end col-md-9-1 -->
+    </div>
                                 </div>
                             </div>
                         </div>

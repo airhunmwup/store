@@ -342,7 +342,7 @@
               data-target=".navbar-collapse"
               title="Home"
             >
-            <div class="card" style="width: 11rem;">
+            <div class="" style="width: 11rem;">
   <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
   <div class="card-body">
                     <p class="h6 text-dark">Product name</p>
@@ -376,7 +376,6 @@
 <script>
 
 import User from "../../apis/User";
-import { mapState } from 'vuex'
 export default {
   props: ['cid'],
   name: "landingPage",

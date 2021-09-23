@@ -7,11 +7,11 @@
     <div class="content pt-5 pb-5">
       <div class="row pt-2">
         <div class="container align-content-center">
-          <div class="register-form text-center">
+          <div class="register-form">
             <div class="pb-4">
-              <p class="h1 text-dark">Hello</p>
+              <p class="h1 text-dark text-center">Hello</p>
 
-              <p class="pb-4 text-dark">
+              <p class="pb-4 text-dark text-center">
                 Sign in to REJEE Stores or
 
                 <router-link
@@ -23,41 +23,37 @@
                   >create an account</router-link
                 >
               </p>
-              <p class="pb-4 text-danger" v-text="errors.message"></p>
+              <p class="pb-2 text-danger" v-text="errors.message"></p>
             </div>
 
-            <div>
-              <div class="container">
-                <div class="form-group p-2">
+        <div class="row justify-center text-sm" >
+
+<!--recently viewed-->
+                <div class="row col-sm-12 col-lg-4 col-md-4"><form>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">Email address</label>
                   <input
-                    class="
-                      col-lg-4 col-md-4 col-sm-4
-                      border-b border-dark border-t-0 border-l-0 border-r-0
-                    "
+                    class="form-control"
                     name="email"
                     type="email"
                     placeholder=" Email"
                     v-model="formData.email"
                   />
-                  <p class="text-danger" v-text="errors.email"></p>
-                </div>
-
-                <div class="form-group p-2">
+    <div id="emailHelp" class="form-text"><p class="text-danger" v-text="errors.email"></p></div>
+  </div>
+  <div class="mb-3">
+    <label for="exampleInputPassword1" class="form-label">Password</label>
                   <input
-                    class="
-                      col-lg-4 col-md-4 col-sm-4
-                      border-b border-dark border-t-0 border-l-0 border-r-0
-                      js-visible-password
-                    "
+                    class="form-control"
                     name="password"
                     type="password"
                     placeholder="Password"
                     v-model="formData.password"
                   />
 
-                  <p class="text-danger" v-text="errors.password"></p>
-                </div>
-
+    <div id="emailHelp" class="form-text"><p class="text-danger" v-text="errors.password"></p></div>
+  </div>
+  <div class="mb-3 form-check">
                 <router-link
                   to="/passwordrecovery"
                   data-toggle="collapse"
@@ -67,23 +63,20 @@
                 >
                   Forgot your password?
                 </router-link>
+  </div>
+                  <div class="d-grid gap-2">
+  <button class="btn btn-warning bg-gradient border" type="button" @click="login">Submit</button>
+</div>
+</form>
+      </div>
 
-                <div class="clearfix p-2">
-                  <button
-                    class="col-lg-4 col-md-4 col-sm-4 btn btn-warning bg-gradient border"
-                    @click="login"
-                  >
-                    Submit
-                  </button>
-                </div>
-              </div>
-            </div>
+      <!-- end col-md-9-1 -->
+    </div>
           </div>
         </div>
       </div>
     </div>
 
-    <hr />
 
     <div v-if="loading" id="page-preloader" class="redit">
       <div class="page-loading">

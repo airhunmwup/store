@@ -23,16 +23,11 @@ import Mymessage from '../views/buyers/message.vue'
 import Mymessage_open from '../views/buyers/message_open.vue'
 import sent_message from '../views/buyers/sent_message.vue'
 
-import saved_seller from '../views/buyers/saved_seller.vue'
-import saved_search from '../views/buyers/saved_search.vue'
 import search from '../views/buyers/search.vue'
 import searching from '../views/buyers/searching.vue'
 import watching from '../views/buyers/watching.vue'
 import purchase_history from '../views/buyers/purchase_history.vue'
-import recently_viewed from '../views/buyers/recently_viewed.vue'
 import signin_sec from '../views/buyers/signin_sec.vue'
-import buyer_returns from '../views/buyers/returns.vue'
-import cancelled_order from '../views/buyers/cancelled_orders.vue'
 import buy_again from '../views/buyers/buyagain.vue'
 import paymentgate from '../views/buyers/paymentgate.vue'
 import edit_login_name from '../views/buyers/edit_login_name.vue'
@@ -53,8 +48,6 @@ import registerBusinessAccount from '../views/sellers/registerBusinessAccount.vu
 import seller_changepassword from '../views/sellers/seller_changepassword.vue'
 import Dashboard from '../views/sellers/seller_dashboard.vue'
 import orders_page from '../views/sellers/orders_page.vue'
-import order_details from '../views/sellers/order_details.vue'
-import listing_page from '../views/sellers/listing_page.vue'
 import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
 import property_listing from '../views/sellers/Property_listing.vue'
@@ -64,7 +57,6 @@ import add_subcategory from '../views/sellers/add_subcategory.vue'
 import add_subcategory3 from '../views/sellers/add_subcategory3.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
 
-import communication_settings from '../views/sellers/communication_settings.vue'
 import store_info from '../views/sellers/store_info.vue'
 import signin_security from '../views/sellers/signin_security.vue'
 import address_setting from '../views/sellers/address_setting.vue'
@@ -140,16 +132,6 @@ const routes = [{
         component: changePasswordPage,
     },
     {
-        path: '/Order details',
-        name: 'Orders details',
-        component: order_details,
-    },
-    {
-        path: '/Listing',
-        name: 'listing Page',
-        component: listing_page,
-    },
-    {
         path: '/paymentsuccess',
         name: 'paymentsuccess',
         component: paymentsuccess,
@@ -180,16 +162,6 @@ const routes = [{
         name: 'propertyPage',
         component: propertyPage,
         props: true,
-    },
-    {
-        path: '/buyerreturns',
-        name: 'buyerreturns',
-        component: buyer_returns,
-    },
-    {
-        path: '/cancelledorder',
-        name: 'cancelledorder',
-        component: cancelled_order,
     },
     {
         path: '/buyagain',
@@ -229,15 +201,8 @@ const routes = [{
         name: 'buyersigninsecsetting',
         component: signin_sec,
     },
+    
     {
-        path: '/savedseller',
-        name: 'savedseller',
-        component: saved_seller,
-    }, {
-        path: '/savedsearch',
-        name: 'savedsearch',
-        component: saved_search,
-    }, {
         path: '/purchasehistory',
         name: 'purchasehistory',
         component: purchase_history,
@@ -245,10 +210,6 @@ const routes = [{
         path: '/watchingpage',
         name: 'watchingpage',
         component: watching,
-    }, {
-        path: '/recentlyviewed',
-        name: 'recentlyviewed',
-        component: recently_viewed,
     },
 
     {
@@ -285,11 +246,6 @@ const routes = [{
         path: '/orderdetails',
         name: 'orderdetails',
         component: orderDetailsPage,
-    },
-    {
-        path: '/communicationsettings',
-        name: 'Orders details',
-        component: communication_settings,
     },
     {
         path: '/storeinfo',

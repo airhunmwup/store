@@ -57,15 +57,13 @@
                                 data-target=".navbar-collapse"
                                 title="Home"
                             >
-                            <div class="card" style="width: 11rem;">
+                            <div class="" style="width: 11rem;">
                                 <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
                             <div class="card-body">
                                 <p class="h6 text-dark">{{ listing.product_name }}</p>
                                 <p class="font-weight-bold h6 text-dark">£{{ listing.product_price }}</p>
-                                <p class="text-dark">RRP: <del> £350</del></p>
                             </div>
 
-                            <button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
                             </div>
                             </router-link>
                        </div>
