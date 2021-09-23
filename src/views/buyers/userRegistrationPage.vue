@@ -18,7 +18,7 @@
     </p>
 
     <div class="container pb-5">
-      <div class="row container align-content-center">
+      <div class="row align-content-center">
         <div class="pb-4 text-center">
           <p class="h1 text-dark">Create an account</p>
         </div>
@@ -39,7 +39,7 @@
         <div class="row justify-center text-sm" >
 
 <!--recently viewed-->
-                <div class="row col-sm-12 col-lg-6 col-md-6">
+                <div class="col-sm-12 col-lg-4 col-md-4">
 <form>
   <div class="mb-3">
     <label for="exampleInputEmail1" class="form-label">First name</label>
@@ -90,8 +90,8 @@
     <div id="emailHelp" class="form-text"><p class="text-danger text-left" v-text="errors.password"></p></div>
   </div>
   <div class="mb-3 form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
-    <label class="form-check-label text-sm" for="exampleCheck1">By Creating an account, you agree to our
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+    <label class="form-check-label text-xs" for="exampleCheck1">By Creating an account, you agree to our
 
                     <router-link
                       to="/User Agreement"
@@ -131,11 +131,9 @@
 
     <div v-if="loading" id="page-preloader" class="redit">
         <div class="page-loading">
-            <div class="dot text-center text-danger font-italic font-extrabold">R</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">J</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
-            <div class="dot text-center text-danger font-italic font-extrabold">E</div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
         </div>
     </div>
   </div>
