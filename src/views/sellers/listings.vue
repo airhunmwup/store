@@ -130,8 +130,8 @@
                 data-target=".navbar-collapse"
                 title="add new listings"
               >
-                <button type="button" class="btn btn-success btn-xs text-lg">
-                  <span class="zmdi zmdi-plus-square"></span>
+                <button type="button" class="m-1 btn border btn-xs text-sm">
+                  <span class="zmdi zmdi-plus-square"></span> Create listing
                 </button>
               </router-link>
               <router-link
@@ -140,8 +140,8 @@
                 data-target=".navbar-collapse"
                 title="add new listings"
               >
-                <button type="button" class="btn btn-danger btn-xs text-lg">
-                <span class="zmdi zmdi-delete"></span>
+                <button type="button" class="m-1 btn border btn-xs text-sm">
+                <span class="zmdi zmdi-delete"></span> Delete
               </button>
               </router-link>
               
@@ -242,8 +242,8 @@
                     type="button"
                     class="
                       btn
-                      text-light
-                      btn-danger btn-xs
+                      text-dark
+                      border btn-xs
                     "
                     @click="deletelisting(prods.id)"
                   >
@@ -254,8 +254,8 @@
                     type="button"
                     class="
                       btn
-                      text-light
-                      btn-info btn-xs
+                      text-dark
+                      border btn-xs
                       ml-1
                     "
                   >

@@ -49,7 +49,6 @@ import seller_changepassword from '../views/sellers/seller_changepassword.vue'
 import Dashboard from '../views/sellers/seller_dashboard.vue'
 import orders_page from '../views/sellers/orders_page.vue'
 import order_details from '../views/sellers/order_details.vue'
-import listing_page from '../views/sellers/listing_page.vue'
 import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
 import property_listing from '../views/sellers/Property_listing.vue'
@@ -59,7 +58,6 @@ import add_subcategory from '../views/sellers/add_subcategory.vue'
 import add_subcategory3 from '../views/sellers/add_subcategory3.vue'
 import Order_process from '../views/sellers/orderprocess.vue'
 
-import communication_settings from '../views/sellers/communication_settings.vue'
 import store_info from '../views/sellers/store_info.vue'
 import signin_security from '../views/sellers/signin_security.vue'
 import address_setting from '../views/sellers/address_setting.vue'
@@ -138,11 +136,6 @@ const routes = [{
         path: '/Order details',
         name: 'Orders details',
         component: order_details,
-    },
-    {
-        path: '/Listing',
-        name: 'listing Page',
-        component: listing_page,
     },
     {
         path: '/paymentsuccess',
@@ -259,11 +252,6 @@ const routes = [{
         path: '/orderdetails',
         name: 'orderdetails',
         component: orderDetailsPage,
-    },
-    {
-        path: '/communicationsettings',
-        name: 'Orders details',
-        component: communication_settings,
     },
     {
         path: '/storeinfo',

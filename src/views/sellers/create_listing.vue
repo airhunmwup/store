@@ -127,15 +127,12 @@
                     :style="errorStyle(errors.product_price)"
                       >£</span
                     >
-                  </div>
-                  <input
-                    type="number"
-                    class="form-control"
-                    aria-label="Small"
-                    placeholder="0.00"
+                  </div> 
+                  <input type="number" class="form-control" placeholder="0.00" required name="price" min="0" value="0" step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" onblur="
+this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this.value)?'inherit':'red'
+"
                     aria-describedby="inputGroup-sizing-sm"
-                    v-model.number="formData.product_price"
-                  />
+                    v-model.number="formData.product_price">
                 </div>
               </div>
             </div>
