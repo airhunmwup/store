@@ -22,6 +22,7 @@
 
     <div class="card">
     <form ref="myForm" enctype="multipart/form-data">
+<span id="alat"></span>
       <div class="card-header p-3">
         <span class="text h5 font-weight-bold font-weight-normal">
           Create Listings
@@ -480,7 +481,7 @@ export default {
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-            //document.getElementById("alat").innerHTML = error.response.data.message;
+            document.getElementById("alat").innerHTML = error.response.data.message;
         }
       })
       }else{
