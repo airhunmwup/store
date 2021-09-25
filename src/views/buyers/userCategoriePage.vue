@@ -22,7 +22,7 @@
                               :to="{ name: 'UserCategoriePage', params: { cid: category.id, catname: category.cat_name}}"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
-                            ><a class="cateItem" href="#">{{ category.cat_name }}</a>
+                            ><a @click="doThis(category.id)" class="cateItem" href="#">{{ category.cat_name }}</a>
                            </router-link>
                             
                           </div>
@@ -70,7 +70,7 @@
                             >
                             <router-link
                                 class=""
-                                to="/Product Detail"
+                                to="/ProductDetail"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                             >
@@ -143,7 +143,26 @@ export default {
       })
     },
     getNewListings() {
-      User.getNewListings().then(response => {
+      User.getNewLists(this.cid).then(response => {
+      this.newListings = response.data;
+    }).catch((errors) => {
+        console.log(errors);
+        console.log("new listing api call error");
+      });
+    },
+    doThis(id){
+    User.getCategory(id).then(response => {
+      this.categorie = response.data[0];
+    }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+           // document.getElementById("alat").innerHTML = error.response.data.message;
+        }
+      });
+    User.getNewLists(id).then(response => {
       this.newListings = response.data;
     }).catch((errors) => {
         console.log(errors);
@@ -156,6 +175,7 @@ export default {
     }
 
   },
+  
   mounted() {
     this.getCategory();
     this.getCategoryList();

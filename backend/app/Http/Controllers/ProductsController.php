@@ -245,7 +245,12 @@ class ProductsController extends Controller
     public function newlisting2($id)
     {
         //
-        return Products::where('product_subcat_id', $id)->with('product_images')->orderBy('id', 'desc')->take(6)->get();
+        return Products::where('product_subcat_id', $id)->with('product_images')->orderBy('id', 'desc')->get();
+    }
+    public function newlists($id)
+    {
+        //
+        return Products::where('product_cat_id', $id)->with('product_images')->orderBy('id', 'desc')->get();
     }
     public function sortListings($id)
     {

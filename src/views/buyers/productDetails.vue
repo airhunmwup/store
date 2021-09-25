@@ -492,7 +492,7 @@ export default {
             }
           });
           console.log(this.productDetails);
-          this.saveRecentView(this.productDetails[0].id);
+          this.saveRecentView(this.$store.state.product_detail_id);
         })
         .catch((error) => {
           console.log(error);
