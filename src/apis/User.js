@@ -56,11 +56,17 @@ export default{
     getNewListings2(id){
         return Api().get("/newlistings2/" + id);
     },
+    getNewLists(id){
+        return Api().get("/newlists/" + id);
+    },
     sortListings(id){
         return Api().get("/sortListings/" + id);
     },
     product_detail_page(id){
         return Api().get("/products/" + id);
+    },
+    saveRecentView(data){
+        return Api().post("/saveRecentView", data);
     },
 
     addToWishlist(productData){

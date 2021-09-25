@@ -1,30 +1,14 @@
 <template>
   <!-- main content -->
   <div class="container">
-    <nav aria-label="breadcrumb" class="d-xs-none">
-      <ol class="breadcrumb text-xs">
-        <li class="breadcrumb-item text-primary">
-          <a href="#">Your Account</a>
-        </li>
-        <li class="breadcrumb-item text-primary" aria-current="page">
-          Sellers hub
-        </li>
-        <li class="breadcrumb-item text-primary" aria-current="page">
-          Listings
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Create Listings
-        </li>
-      </ol>
-    </nav>
 
     <!--All-Orders-->
 
-    <div class="card">
+    <div class="">
     <form ref="myForm" enctype="multipart/form-data">
-      <div class="card-header p-3">
+      <div class="p-3">
         <span class="text h5 font-weight-bold font-weight-normal">
-          Create Listings
+          Create New Listing
         </span>
       </div>
       <div class="card-body">
@@ -477,7 +461,7 @@ export default {
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-            //document.getElementById("alat").innerHTML = error.response.data.message;
+            document.getElementById("alat").innerHTML = error.response.data.message;
         }
       })
       }else{

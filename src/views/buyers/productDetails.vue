@@ -491,12 +491,34 @@ export default {
               index++;
             }
           });
-          console.log(this.img);
+          console.log(this.productDetails);
+          this.saveRecentView(this.$store.state.product_detail_id);
         })
         .catch((error) => {
           console.log(error);
         });
       console.log(this.productDetails);
+    },
+    saveRecentView(pid) {
+      const data = {
+        product_id: pid,
+        user_id: this.$store.state.currentUser.id,
+      };
+      console.log(pid);
+      User.saveRecentView(data)
+        .then((response) => {         
+          console.log(response);
+        })
+        .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            console.log(error.response.data.message);
+        }
+      })
+      
     },
     getImages() {
       const img = Object.keys(this.productDetails);

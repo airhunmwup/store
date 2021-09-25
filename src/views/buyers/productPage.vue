@@ -19,7 +19,7 @@
                         <div class="text-sm block-content text-dark">
                           <div v-for="category in categoryList" v-bind:key="category.id" class="cateTitle hasSubCategory open level1">
                             <router-link 
-                              v-bind:to="'/CategoriePage/' + category.id"
+                              :to="{ name: 'UserCategoriePage', params: { cid: category.id, catname: category.cat_name}}"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                             ><a class="cateItem" href="#">{{ category.cat_name }}</a>
@@ -707,17 +707,20 @@
                             >
                             <router-link
                                 class=""
-                                to="/Product Detail"
+                                to="/ProductDetail"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                             >
                                 <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
+                            </router-link>
                             <div class="card-body">
                                 <p class="text-dark text-sm">{{ listing.product_name }}</p>
                                 <p class="font-weight-bold p-2 text-sm text-dark">£{{ listing.product_price }}</p>
+                            <button type="button" class="border btn btn-sm mr-1" ><span class="fa fa-shopping-cart"></span></button>
+                            <button type="button" class="border btn btn-sm ml-1"><span class="fa fa-eye"></span></button>
                             </div>
 
-                            </router-link>
+                            
                        </div>
                         </div>
                         <div class="justify-content-center p-4">
@@ -743,10 +746,10 @@
 import User from "../../apis/User";
 
 export default {
-  props: ['cid'],
   name: "landingPage",
   data() {
     return {
+      cid: this.$route.params.cid,
       categoryList: [],
       newListings:[],
       subcat: '',
