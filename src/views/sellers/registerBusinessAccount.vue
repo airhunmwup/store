@@ -18,7 +18,7 @@
                                 <div class="register-form">
                                     <div class="pb-4 text-center">
                                     <p class="h3 text-dark">Create an account</p>
-                                    <p class="text-dark font-weight-bold underline">Sellers account</p>
+                                    <p class="text-info p-2 font-weight-bold">Start Selling on REJEE Stores.</p>
                                     </div>
         <div class="row justify-center text-sm" >
 

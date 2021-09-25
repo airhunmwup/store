@@ -108,7 +108,7 @@
       <div class="card-body border text-sm text-dark">
         <div class="row">
           <div class="col text-left font-weight-bold">
-            <p class="">Order Subtotal:</p>
+            <p class="">Order Subtotal:</p> 
             <p class="">Tax:</p>
             <p class="">Shipping:</p>
             <p class="">Order Total:</p>

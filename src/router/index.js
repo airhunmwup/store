@@ -361,8 +361,8 @@ const routes = [{
     },
 
     {
-        path: '/mechantregister',
-        name: 'Register Business Account',
+        path: '/registertosell',
+        name: 'registertosell',
         component: registerBusinessAccount,
     },
     {
