@@ -31,9 +31,11 @@ class UserPaymentController extends Controller
             ]
         );
 
+        $amount = intval($request->input('amount') * 100);
+
         try {
             $payment = $user->charge(
-                $request->input('amount'),
+                $amount,
                 $request->input('payment_method_id')
             );
 

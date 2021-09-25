@@ -135,10 +135,8 @@ export default {
         this.customer.payment_method_id = paymentMethod.id;
         this.customer.amount = this.$store.state.basket.reduce((acc, item) => acc + (item.product_price * item.qnty), 0);
         this.customer.cart = JSON.stringify(this.$store.state.basket);
-        console.log(this.customer.cart);
 
         console.log(this.customer.amount);
-        console.log(this.customer.email);
 
         User.purchase(this.customer)
           .then((response) => {
