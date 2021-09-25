@@ -19,12 +19,12 @@
   </ul>
 </div>
     <a class="navbar-brand" style="font-style: tahoma;" href="#"></a>
-    <div class="btn-xs text-xs navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      
-          <p class="text-dark"><img src="img/myaccount/sellershub.png" style="width: 1.0rem; height: 1.0rem" />
-          <span class="text-xs" href="#">Sell</span>
-  </p>
-    </div>
+                      <router-link
+                        to="/registertosell"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="tart Selling."
+                      >
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -36,7 +36,18 @@
           <a class="nav-link" href="#">Sell on REJEE Stores</a>
         </li>
       </ul>
-    </div>
+    </div></router-link>
+                      <router-link
+                      class="d-md-none d-lg-none"
+                        to="/registertosell"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Start Selling."
+                      >
+          <p class="text-dark text-right"><img src="img/myaccount/sellershub.png" style="width: 1.3rem; height: 1.3rem" />
+          
+  </p></router-link>
+      
   </div>
 </nav> <!-- 
 <div class="container pt-2">

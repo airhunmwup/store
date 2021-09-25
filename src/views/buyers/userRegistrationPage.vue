@@ -27,7 +27,7 @@
           Are you a business or nonprofit? <br />
 
           <router-link
-            to="/mechantregister"
+            to="/registertosell"
             data-toggle="collapse"
             data-target=".navbar-collapse"
             class="text-primary underline font-weight-bold"
