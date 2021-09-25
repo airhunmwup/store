@@ -78,7 +78,7 @@ class ProductsController extends Controller
      */
     public function store(Request $request)
     {
-        
+
         $fields = $request->validate([
             'product_subcat' => 'required|string',
             'product_catname' => 'required|string',
@@ -119,29 +119,28 @@ class ProductsController extends Controller
             'product_total' => $request->product_total,
         ]);
         //if ($request->hasFile('testImage')) {
-           // $image = $request->file('testImage');
-           // $randomNumber = random_int(100000, 999999);
-            //$filename = "uploads";
-            //$imagePath = $images->store('images','public');
-            //$imagePath = Storage::disk('images')->put($filename,$image);
+        // $image = $request->file('testImage');
+        // $randomNumber = random_int(100000, 999999);
+        //$filename = "uploads";
+        //$imagePath = $images->store('images','public');
+        //$imagePath = Storage::disk('images')->put($filename,$image);
         //return $request;
         //}else{
-           // return "none";
-       // }
+        // return "none";
+        // }
         $images = $request->file('images');
-        if($request->hasFile('images'))
-{
-        foreach($images as $image) {
-            $filename = "uploads";
-            //$imagePath = $images->store('images','public');
-            $imagePath = Storage::disk('images')->put($filename,$image);
-            ProductImages::create([
+        if ($request->hasFile('images')) {
+            foreach ($images as $image) {
+                $filename = "uploads";
+                //$imagePath = $images->store('images','public');
+                $imagePath = Storage::disk('images')->put($filename, $image);
+                ProductImages::create([
                     'product_image_path' => '/public/images/' . $imagePath,
                     'product_id' => $product->id,
-                   ]);
-            }          
-}
-return $product;
+                ]);
+            }
+        }
+        return $product;
     }
 
     /**
@@ -157,7 +156,7 @@ return $product;
     }
 
 
-     /**
+    /**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -176,13 +175,13 @@ return $product;
     public function getResults(Request $request)
     {
         $data = array();
-        $strings = preg_replace('#\s+#',',',trim($request->keywords));
+        $strings = preg_replace('#\s+#', ',', trim($request->keywords));
         $array_strings = explode(',', $strings);
-        foreach($array_strings as $keyword){ 
-            $results = Products::where('product_name', 'LIKE','%'.$keyword.'%')
-            ->orWhere('product_subcat', 'LIKE','%'.$keyword.'%')
-            ->orWhere('product_catname', 'LIKE','%'.$keyword.'%')
-            ->get();        
+        foreach ($array_strings as $keyword) {
+            $results = Products::where('product_name', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('product_subcat', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('product_catname', 'LIKE', '%' . $keyword . '%')
+                ->get();
             array_push($data, $results);
         }
         $data = array_unique($data);
@@ -250,19 +249,19 @@ return $product;
     }
     public function sortListings($id)
     {
-        if ($id =="0"){
-        return Products::with('product_images')->orderBy('id', 'desc')->get();
-        }else{
-            if ($id =="1"){
+        if ($id == "0") {
+            return Products::with('product_images')->orderBy('id', 'desc')->get();
+        } else {
+            if ($id == "1") {
                 return Products::with('product_images')->orderBy('product_name')->get();
             }
-            if ($id =="2"){
+            if ($id == "2") {
                 return Products::with('product_images')->orderBy('product_name', 'desc')->get();
             }
-            if ($id =="3"){
+            if ($id == "3") {
                 return Products::with('product_images')->orderBy('product_price')->get();
             }
-            if ($id =="4"){
+            if ($id == "4") {
                 return Products::with('product_images')->orderBy('product_price', 'desc')->get();
             }
         }
