@@ -47,7 +47,7 @@ class UserPaymentController extends Controller
 
             foreach (json_decode($request->input('cart'), true) as $key=>$item) { 
                 ManageOrder::create([
-                    'user_id' => $request->input('user_id') ,
+                    'user_id' => $request->input('user_id'),
                     'customername' => $request->input('first_name') . ' ' . $request->input('last_name'),
                     'price' => $payment->charges->data[0]->amount,
                     'sellerid' => $item['product_userid'],

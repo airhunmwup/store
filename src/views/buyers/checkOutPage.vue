@@ -82,6 +82,7 @@ export default {
       stripe: {},
       cardElement: {},
       customer: {
+        user_id: "",
         first_name: "",
         last_name: "",
         email: "",
@@ -134,8 +135,10 @@ export default {
         this.customer.payment_method_id = paymentMethod.id;
         this.customer.amount = this.$store.state.basket.reduce((acc, item) => acc + (item.product_price * item.qnty), 0);
         this.customer.cart = JSON.stringify(this.$store.state.basket);
+        console.log(this.customer.cart);
 
         console.log(this.customer.amount);
+        console.log(this.customer.email);
 
         User.purchase(this.customer)
           .then((response) => {
@@ -152,6 +155,7 @@ export default {
   },
   computed: {
     async getCurrentUser() {
+      this.customer.user_id = this.$store.getters.getCurrentUser.id;
       this.customer.first_name = this.$store.getters.getCurrentUser.first_name;
       this.customer.last_name = this.$store.getters.getCurrentUser.last_name;
       this.customer.email = this.$store.getters.getCurrentUser.email;
