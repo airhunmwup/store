@@ -321,21 +321,23 @@ import User from "../../apis/User";
 export default {
   data() {
     return {
-      id: 2,
       manageorders: '',
       orderdetails: '',
       data: '',
     }
   },
   methods: {
-    async getMyOrders(){
-      User.manageorders(this.id).then(res => {
+    async getMyOrders(id){
+      if(id){
+        console.log(id);
+        User.manageorders(id).then(res => {
         this.manageorders = res.data.manageorders;
         this.orderdetails = res.data.orderdetails;
         console.log(res.data);
       }).catch(errors => {
         console.log(errors);
       });
+      }
     },
     orderDetails(data) {
       this.data = data;
@@ -347,11 +349,19 @@ export default {
           }
       });
     },
+    getuser() {
+      User.getUser(this.$store.state.token).then((response)=>{ 
+        console.log(response.data.id);
+        this.getMyOrders(response.data.id);
+      }).catch((errors) => {
+        console.log(errors);
+      });
+    }
   },
-  computed: mapState(['setCategoryList','setSubCategoryList']),
-  async mounted() {
-    this.getMyOrders();
-  },
+  computed: mapState(['setCategoryList','setSubCategoryList','getCurrentUser']),
+  created() {
+    this.getuser();
+  }
 }
 </script>
         

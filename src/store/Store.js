@@ -36,6 +36,9 @@ export const store = new Vuex.Store({
         },
         getAddress: state => {
             return state.address;
+        },
+        seller_id: state => {
+            return state.currentUser['id'];
         }
     },
     mutations: {
