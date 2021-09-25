@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="container">
+  <div class="container text-sm">
     <nav aria-label="breadcrumb">
       <ol class="breadcrumb text-xs">
         <li class="breadcrumb-item text-primary">
@@ -116,13 +116,11 @@
                   />
                 </div>
                 <div class="col-8 col-lg-5">
-                  <p class="h4 mt-4 mt-5 text-info">
+                  <p class="h5 mt-4 mt-5 text-info">
                     {{ list["product_name"] }}
                   </p>
                   <p class="value text-md text-dark font-weight-bold">
                     £{{ list["product_price"] }}
-                    &
-                    <span class="value text-xs"> 2 days delivery</span>
                   </p>
                   <p class="label-atrr underline mt-2">
                     {{ list["product_condition"] }}

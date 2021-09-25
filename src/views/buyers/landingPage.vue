@@ -19,7 +19,25 @@
   </ul>
 </div>
     <a class="navbar-brand" style="font-style: tahoma;" href="#"></a>
-                      <router-link
+                      <router-link v-if="this.$store.state.isLoggedIn" 
+                        to="/newlisting"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="tart Selling."
+                      >
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">
+        <span class=""><img src="img/myaccount/sellershub.png" style="width: 1.2rem; height: 1.2rem" /></span> 
+  </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Sell on REJEE Stores</a>
+        </li>
+      </ul>
+    </div></router-link>
+                      <router-link  v-else  
                         to="/registertosell"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
@@ -37,7 +55,17 @@
         </li>
       </ul>
     </div></router-link>
-                      <router-link
+                      <router-link v-if="this.$store.state.isLoggedIn" 
+                      class="d-md-none d-lg-none"
+                        to="/newlisting"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Start Selling."
+                      >
+          <p class="text-dark text-right"><img src="img/myaccount/sellershub.png" style="width: 1.3rem; height: 1.3rem" />
+          
+  </p></router-link>
+                      <router-link  v-else  
                       class="d-md-none d-lg-none"
                         to="/registertosell"
                         data-toggle="collapse"
