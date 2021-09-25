@@ -232,11 +232,7 @@ const routes = [{
         name: 'AdChoice',
         component: adChoice,
     },
-    {
-        path: '/CategoriePage',
-        name: 'UserCategoriePage',
-        component: userCategoriePage,
-    },
+    
     {
         path: '/Login buyers',
         name: 'userAccountDetailPage',
@@ -269,26 +265,25 @@ const routes = [{
     },
 
     {
-        path: '/CategoriePage/:cid',
+        path: '/CategoriePage/:catname',
         name: 'UserCategoriePage',
         component: userCategoriePage,
-        props: true,
     },
     {
         path: '/orderpage',
         name: 'Orderpage',
         component: UserOrderPage,
     },
+    
     {
-        path: '/ProductPage',
+        path: '/ProductPage/:subcatname',
         name: 'ProductPage',
         component: productPage,
     },
     {
-        path: '/ProductPage/:cid',
+        path: '/ProductPage',
         name: 'ProductPage',
         component: productPage,
-        props: true,
     },
     {
         path: '/productDetail',

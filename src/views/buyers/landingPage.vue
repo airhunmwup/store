@@ -10,7 +10,7 @@
   <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"><router-link
           v-for="category of categoryList"
           :key="category.id"
-          v-bind:to="'/CategoriePage/' + category.id"
+          :to="{ name: 'UserCategoriePage', params: { cid: category.id, catname: category.cat_name}}"
           class="dropright"
           data-toggle="collapse"
           data-target=".navbar-collapse"
@@ -592,7 +592,7 @@
 
 
 <script>
-
+import { mapState } from 'vuex';
 import User from "../../apis/User";
 import Constants from "../../common/constants";
 

@@ -19,7 +19,7 @@
                         <div class="text-sm block-content text-dark">
                           <div v-for="category in categoryList" v-bind:key="category.id" class="cateTitle hasSubCategory open level1">
                             <router-link 
-                              v-bind:to="'/CategoriePage/' + category.id"
+                              :to="{ name: 'UserCategoriePage', params: { cid: category.id, catname: category.cat_name}}"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                             ><a class="cateItem" href="#">{{ category.cat_name }}</a>
@@ -50,7 +50,7 @@
                               <p class="underline text-sm  text-dark">
                                 <router-link
                                     class="text-dark"
-                                    v-bind:to="'/ProductPage/' + subcategory.id"
+                                    :to="{ name: 'ProductPage', params: { cid: subcategory.id, subcatname: subcategory.sub_catname}}"
                                     data-toggle="collapse"
                                     data-target=".navbar-collapse"
                                     >{{ subcategory.sub_catname }}
@@ -104,12 +104,12 @@
 <script>
 
 import User from "../../apis/User";
-
+import { mapState } from 'vuex';
 export default {
-  props: ['cid'],
   name: "landingPage",
   data() {
     return {
+      cid: this.$route.params.cid,
       categorie: [],
       categoryList: [],
       newListings:[]
