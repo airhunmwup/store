@@ -62,6 +62,9 @@ export default{
     product_detail_page(id){
         return Api().get("/products/" + id);
     },
+    saveRecentView(data){
+        return Api().post("/saveRecentView", data);
+    },
 
     addToWishlist(productData){
         return Api().post("/wishlist", productData);

@@ -9,6 +9,7 @@ use App\Http\Controllers\AddressbuyersController;
 use App\Http\Controllers\ImageuploadController;
 use App\Http\Controllers\MessagesController;
 use App\Http\Controllers\UserPaymentController;
+use App\Http\Controllers\RecentViewsController;
 use App\Models\Addressforbuyers;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -55,6 +56,7 @@ Route::get('/images', [ImageuploadController::class, 'index']);
 //Protected Routes
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/products', [ProductsController::class, 'store']);
+    Route::post('/saveRecentView', [RecentViewsController::class, 'store']);
     Route::post('/createlisting', [ProductsController::class, 'store']);
     Route::post('/getlistings/{user_id}', [ProductsController::class, 'getlistings']);
     Route::get('/getlisting/{id}', [ProductsController::class, 'getlisting']);
