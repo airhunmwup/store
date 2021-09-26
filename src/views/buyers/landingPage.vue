@@ -55,26 +55,6 @@
         </li>
       </ul>
     </div></router-link>
-                      <router-link v-if="this.$store.state.isLoggedIn" 
-                      class="d-md-none d-lg-none"
-                        to="/newlisting"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Start Selling."
-                      >
-          <p class="text-dark text-right"><img src="img/myaccount/sellershub.png" style="width: 1.3rem; height: 1.3rem" />
-          
-  </p></router-link>
-                      <router-link  v-else  
-                      class="d-md-none d-lg-none"
-                        to="/registertosell"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Start Selling."
-                      >
-          <p class="text-dark text-right"><img src="img/myaccount/sellershub.png" style="width: 1.3rem; height: 1.3rem" />
-          
-  </p></router-link>
       
   </div>
 </nav> <!-- 

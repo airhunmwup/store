@@ -9,54 +9,14 @@
             alt="REJEE COMPANY"
           /></a>
       </div>
-      <div class="col-6 d-md-none">
+      <div class="col-12 d-md-none justify-content-center">
           <a href="index.html">
           <img
             src="img/home/logo.png"
-            width="150px"
+            width="120px"
             alt="REJEE COMPANY"
           />
            </a>
-      </div>
-      <div class="col-6 row d-md-none">
-      <div class="col-6 text-left">
-    <ul class="nav">
-      <li v-if="this.$store.state.isLoggedIn" class="nav-item dropdown pt-3">
-<a class="nav-link btn text-dark font-weight-bold " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-  <p class="text-sm"><span  class="zmdi zmdi-account"></span><span class="text-xs"> {{ this.$store.state.full_name }}</span></p>
-</a> 
-      </li>
-      <li v-else class="nav-item dropdown pt-3"><router-link
-            to="/login"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="login"
-            >
-        <a class="nav-link text-sm btn text-dark font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="zmdi zmdi-lock"></i> Sign in
-        </a></router-link>
-      </li>
-    </ul>
-      </div>
-      <div class="col-6 justify-content-end">
-    <ul class="nav">
-      <li class="nav-item">
-                            <button type="button" class="text-dark pt-3 btn ">
-          <router-link
-                              to="/ViewCart"
-                              data-toggle="collapse"
-                              data-target=".navbar-collapse"
-                              title="view Shopping basket"
-                            >
-  <i
-                  class="fa fa-lg p-2 fa-shopping-cart"
-                  aria-hidden="true"
-                ></i><span class="badge badge-danger">{{basketState}}</span>
-                </router-link>
-</button>
-      </li>
-    </ul>
-      </div>
       </div>
       <div class="col-lg-6 col-md-6 col-xs-12">
               <div class="input-group pt-2">

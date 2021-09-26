@@ -123,9 +123,8 @@
             </div>
           </div>
 
-          <div class="">
             <!--start Web view-->
-            <div class="card m-2 border d-xs-none">
+            <div class="m-2 border d-xs-none">
               <div class="card-header font-weight-bold">
                 <div class="row text-xs">
                   <div class="col">
@@ -157,7 +156,7 @@
                 
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
-                title="Personal Information"
+                title="View Order details"
                 v-for="(order, index) in manageorders"
                 :key="index"
                 @click.prevent="orderDetails(order.transaction_id)"
@@ -202,7 +201,7 @@
             <!--end Web view-->
 
             <!--start mobile view-->
-            <div class="card m-2 d-md-none border"
+            <div class="m-2 d-md-none border"
                 v-for="(order, index) in manageorders"
                 :key="index"
                 @click.prevent="orderDetails(order.transaction_id)">
@@ -229,19 +228,22 @@
                   </div>
                   <div class="col">
                     <p class="text-right h5">
-                      <router-link
-                        to="/processorder"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Personal Information"
-                        ><b
+               <a
+                
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                title="View Order details"
+                v-for="(order, index) in manageorders"
+                :key="index"
+                @click.prevent="orderDetails(order.transaction_id)"
+              ><b
                           class="
                             fa fa-angle-right fa-lg
                             text-dark
                             font-weight-bold
                           "
                         ></b>
-                      </router-link>
+              </a>
                     </p>
                   </div>
                 </div>
@@ -307,7 +309,6 @@
                 </ul>
               </nav>
             </div>
-          </div>
         </div>
       </div>
 

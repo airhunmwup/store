@@ -37,18 +37,15 @@
 
 
                     <div class="col-lg-10 col-md-10 col-sm-12">
-                      <p class="text text-dark h5 font-weight-bold font-weight-normal">
-                   
-                  </p>
                       <br />
   <div class="row">
     <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
     <div class="">
-    <p class="text pt-2 text-dark h5 font-weight-bold font-weight-normal">
+    <p class="text m-1 text-dark h5 font-weight-bold font-weight-normal">
         {{ subcat }}
     </p>
-    <select class="select-title text-xs" @change="sort_by($event)">
+    <select class="select-title mr-4 text-center text-xs" @change="sort_by($event)">
                                 <option value="0">Sort by</option>
                                 <option value="1">Name, A to Z</option>
                                 <option value="2">Name, Z to A</option>
