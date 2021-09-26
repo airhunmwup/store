@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="m-4">
+  <div class="m-2">
     <nav aria-label="breadcrumb" class="d-xs-none">
       <ol class="breadcrumb text-xs">
         <li class="breadcrumb-item text-primary">
@@ -14,19 +14,17 @@
     </nav>
 
     <div class="justify-content-center row pb-4">
-      <div class="container">
         <div class="row">
           <div class="col-lg-6 col-xs-12">
             <p
-              class="text pl-3 text-dark h4 font-weight-bold font-weight-normal"
+              class="text pl-3 text-dark h5 font-weight-bold font-weight-normal"
             >
               Listings
             </p>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-12 col-xs-12">
+      <div class="col-lg-12 m-1 col-xs-12">
         <form method="post" class="std" id="customer-form">
           <div
             class="
@@ -62,11 +60,6 @@
             </button>
           </div>
         </form>
-      </div>
-      <div class="pb-2 col-12">
-        <!--Purchase History-->
-        <div class="row rounded">
-          <div class="pb-2 pt-2 col-lg-6 col-xs-12">
             <!-- Example single danger button -->
             <div class="btn-group">
               <!-- Example split danger button -->
@@ -146,7 +139,10 @@
               </router-link>
               
             </div>
-          </div>
+      </div>
+      <div class="pb-2 col-12">
+        <!--Purchase History-->
+        <div class="row m-1 rounded">
 
           <!--start Web view-->
           <div class="card m-2 border d-xs-none">
@@ -269,7 +265,7 @@
         <!--end Web view-->
 
         <!--start mobile view-->
-        <div class="card m-1 d-md-none border text-xs" v-for="prods in this.$store.state.mylistings" :key="prods.id" >
+        <div class="d-md-none card text-xs" v-for="prods in this.$store.state.mylistings" :key="prods.id" >
           <div class="card-header">
             <div class="row text-xs">
               <div class="col">
@@ -358,9 +354,9 @@
 
         <!--end mobile view-->
 
-        <p class="text-dark text-center" v-if="this.$store.state.mylistings">
-          You do not have any listings to display in this view.
-        </p>
+            <p class="text-dark text-center" v-if="!this.$store.state.mylistings">
+              You do not have any item to display in this view.
+            </p>
 
         <div class="justify-content-center p-2 text-sm">
           <nav aria-label="Page navigation example" class="col-12">

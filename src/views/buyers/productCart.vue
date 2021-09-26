@@ -4,7 +4,7 @@
     <!-- breadcrumb -->
     <section class="row pb-5">
       <div class="col-lg-6 col-xs-12">
-        <p class="text pt-3 text-dark h3 font-weight-bold font-weight-normal">
+        <p class="text pt-3 text-dark h5 font-weight-bold font-weight-normal">
           Shopping Basket
         </p>
       </div>
@@ -17,7 +17,6 @@
           <div class="card-body">
             <div class="row">
               <div class="col-12 col-lg-4">
-                <p class="text-xs text-dark">Seller: Sellers name</p>
                 <img class="" :src="API_BASE_URL + cart['product_image1']" />
               </div>
               <div class="col-12 col-lg-4">

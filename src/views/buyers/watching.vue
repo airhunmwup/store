@@ -206,6 +206,10 @@
                     >
                   </div>
                 </div>
+
+            <p class="text-dark text-center" v-if="!this.$store.state.wishList">
+              You do not have any item to display in this view.
+            </p>
               </div>
             </div>
           </div>

@@ -153,7 +153,7 @@
                 </div>
               </div>
               <a
-                
+                href="#"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="View Order details"
@@ -229,7 +229,7 @@
                   <div class="col">
                     <p class="text-right h5">
                <a
-                
+                href="#"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="View Order details"

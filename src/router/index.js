@@ -234,7 +234,7 @@ const routes = [{
     },
     
     {
-        path: '/Login buyers',
+        path: '/Login',
         name: 'userAccountDetailPage',
         component: userLogin,
     },

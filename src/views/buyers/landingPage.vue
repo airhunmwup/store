@@ -57,71 +57,10 @@
     </div></router-link>
       
   </div>
-</nav> <!-- 
-<div class="container pt-2">
-  
-  <div class="row justify-content-center">
-    <div class="col-lg-3 col-md-3 col-sm-lg d-xs-none card border">
-  <ul class="list-group list-group-flush">
+</nav> 
 
-        <router-link
-          v-for="category of categoryList"
-          :key="category.id"
-          to="/Categorie page"
-          class="dropright"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-        >
-          <li class="font-weight-bold list-group-item text-xs text-dark">{{category.cat_name}}</li>
-
-        </router-link>
-
-  </ul>
-    </div>
-    <div class="col-lg-9 col-md-9 col-sm-12 row">
-<div id="carouselExampleIndicators" class="carousel slide card" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="img/home/effect2.jpg" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100 " src="img/home/effect1.jpg" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="img/home/effect3.jpg" alt="Third slide">
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-<div class="container pt-2 card">
-      <div class="row" >
-      <div class="col-lg-6 col-sm-12">
-                <img src="img/banner/bannerrejee1.jpg" class="card-img-top" style="height: 8rem" alt="Product"/>
-      </div>
-      <div class="col-lg-6 col-sm-12">
-                <img src="img/banner/bannerrejee2.webp" class="card-img-top" style="height: 8rem" alt="Product"/>
-      </div>
-</div>
-      </div>
-</div>
-    </div>
-
-  </div> -->
-
-<div class="m-4">
-      <div class="row">
+<div class="m-1">
+      <div class="row d-xs-none">
             <div class="col-md-12 mb-2">
               <div class="card">
                 <img class="" style="height: 19rem" src="img/mainbanner.png" alt="courses" />
@@ -130,9 +69,9 @@
 </div>
       </div>
 <div class="m-2 text-sm">
-<nav class="navbar card-footer navbar-expand-sm navbar-light bg-gradient">
+<nav class="navbar card-footer bg-light navbar-expand-sm navbar-light bg-gradient">
     <div class="col">
-  <a class="navbar-brand text-sm font-weight-bold text-dark" href="#">Todays Listing</a>
+  <a class="navbar-brand text-sm font-weight-bold text-dark" href="#">New Listing</a>
     </div>
     <div class="col text-right">
     <p class="navbar-text">
@@ -180,7 +119,7 @@
                 <img src="img/banner/bannerrejee1.jpg" class="card-img-top" style="height: 12rem" alt="Product"/>
       </div>
       <div class="col-lg-6 col-sm-12 card p-2">
-                <img src="img/banner/bannerrejee2.webp" class="card-img-top" style="height: 12rem" alt="Product"/>
+                <img src="img/banner/bannerrejee1.jpg" class="card-img-top" style="height: 12rem" alt="Product"/>
       </div>
 </div>
 </div>
@@ -594,6 +533,7 @@
                 </div>
             </div>
         </div>
+        <div class="d-md-none pb-5"></div>
   </section>
 </template>
 

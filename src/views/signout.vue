@@ -15,7 +15,7 @@
                                 <p class="h3 text-dark">You've signed out.</p>
                                 <p class="text-sm p-2 text-dark">Return to your account to enjoy buying and selling.</p>
                                 <router-link
-                                            to="/Login buyers"
+                                            to="/login"
                                             data-toggle="collapse"
                                             data-target=".navbar-collapse"
                                             class="text-dark underline font-weight-bold "

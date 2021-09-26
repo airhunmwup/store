@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="">
+  <div class="container">
 
     <!--All-Orders-->
 
