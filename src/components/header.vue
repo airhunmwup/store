@@ -13,7 +13,7 @@
           <a href="index.html">
           <img
             src="img/home/logo.png"
-            width="100px"
+            width="120px"
             alt="REJEE COMPANY"
           />
            </a>

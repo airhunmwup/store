@@ -284,7 +284,7 @@
 
             <!--end mobile view-->
 
-            <p class="text-dark text-center" v-show="!manageorders">
+            <p class="text-dark p-4 text-center" v-show="!manageorders">
               You do not have any orders to display in this view.
             </p>
 

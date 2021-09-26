@@ -1,78 +1,14 @@
 <template>
   <!-- main content -->
   <div class="container justify-content-center text-sm"> 
-    <div class="row justify-content-center">
+    <div class="justify-content-center">
           <!--Sigin-and-security-->
-          <div class="row pb-5">
-            <span class="text text-dark h5 pl-4 font-weight-normal">
-              <h1 class="title-page">Seller Hub
-              <span class="text-dark text-sm"> UserID (0)</span></h1>
+            <span class="text text-dark pl-4 font-weight-normal">
+              <p class="font-weight-bold h4">Seller Hub
+              <span class="text-dark text-sm"></span></p>
+            <p class=""><span class="text-dark font-weight-bold text-sm">Markus.</span> Welcome to your REJEE Sellers Dashboard. <span class="text-sm text-info">(start selling on with your sellers hub).</span> </p>
             </span>
             <div class="row">
-              <div class="alert alert-info border text-dark" role="alert">
-  <div class="row">
-    <div class="col-sm">
-    <div class="row">
-    <div class="col">
-      <p class="text-sm font-weight-bold">Total Sales:</p>
-    </div>
-    <div class="col text-right">
-      £0.00
-    </div>
-    </div>
-    <div class="row">
-    <div class="col">
-      <p class="text-sm font-weight-bold">Today:</p>
-    </div>
-    <div class="col text-right">
-      £0.00
-    </div>
-    </div>
-    <div class="row">
-    <div class="col">
-      <p class="text-sm font-weight-bold">Last 7 days:</p>
-    </div>
-    <div class="col text-right">
-      £0.00
-    </div>
-    </div>
-    <div class="row">
-    <div class="col">
-      <p class="text-sm font-weight-bold">Last 31 days:</p>
-    </div>
-    <div class="col text-right">
-      £0.00
-    </div>
-    </div>
-  </div>
-    <div class="col-sm">
-    <div class="row">
-    <div class="col-10">
-      <p class="text-sm font-weight-bold">Awaiting shipment:</p>
-    </div>
-    <div class="col text-right">
-      0
-    </div>
-    </div>
-    <div class="row">
-    <div class="col-10">
-      <p class="text-sm font-weight-bold">All Open returns/replace:</p>
-    </div>
-    <div class="col text-right">
-      0
-    </div>
-    </div>
-    <div class="row">
-    <div class="col">
-      <p class="text-sm font-weight-bold">Cancelled:</p>
-    </div>
-    <div class="col text-right">
-      0
-    </div>
-    </div>
-  </div>
-</div>
-</div>
               <div class="col-lg-4 col-md-4 col-sm-6 p-3">
                 <router-link
                   to="/Orders"
@@ -83,11 +19,12 @@
                 >
                   <div class="row text-left ">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/orderimg.png" width="100%" />
+                      <img src="img/myaccount/orderimg.png" width="70%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Manage Orders</p>
-                      <p class="text-dark">Manage your sold, cancelled and returns. </p>
+                      <span class=" text-xs">(Manage your sold, cancelled and returns).</span>
+
                     </div>
                   </div>
                 </router-link>
@@ -102,13 +39,13 @@
                 >
                   <div class="text-left row">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/list.png" width="100%" />
+                      <img src="img/myaccount/list.png" width="70%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Listings</p>
-                      <p class="text-dark">
-                        List items and manage existing listings.
-                      </p>
+                      <span class=" text-xs">
+                        (List items and manage existing listings).
+                      </span>
                     </div>
                   </div>
                 </router-link>
@@ -123,13 +60,13 @@
                 >
                   <div class="row text-left ">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/payout.png" width="100%" />
+                      <img src="img/myaccount/payout.png" width="70%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Payout</p>
-                      <p class="text-dark">
-                        Manage payout preferences
-                      </p>
+                      <span class=" text-xs">
+                        (Manage payout preferences).
+                      </span>
                     </div>
                   </div>
                 </router-link>
@@ -144,19 +81,18 @@
                 >
                   <div class="row text-left ">
                     <div class="col-3 content-end">
-                      <img src="img/myaccount/subscription.png" width="100%" />
+                      <img src="img/myaccount/subscription.png" width="70%" />
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Subscriptions</p>
-                      <p class="text-dark">
-                        Manage payout preferences
-                      </p>
+                      <span class=" text-xs">
+                        (Manage Subscription plans).
+                      </span>
                     </div>
                   </div>
                 </router-link>
               </div>
             </div>
-          </div>
       <!-- end col-md-9-1 -->
     </div>
   </div>

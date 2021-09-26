@@ -1,13 +1,12 @@
 <template>
   <!-- main content -->
   <div class="container justify-content-center text-sm"> 
-    <div class="row justify-content-center">
+    <div class="justify-content-center">
           <!--Sigin-and-security-->
-          <div class="row pb-5">
-            <p class="text text-dark h5 p-4 font-weight-bold">
+            <p class="text text-dark h4 p-3 font-weight-bold">
               Your Account
             </p>
-            <div class="row">
+            <div class="row pb-5">
               <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
                   to="/purchasehistory"
@@ -22,7 +21,7 @@
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Orders</p>
-                      <p class="text-dark">Track,return, or buy things again</p>
+                      <span class=" text-xs">Track,return, or cancel orders.</span>
                     </div>
                   </div>
                 </router-link>
@@ -41,9 +40,9 @@
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Sign in & Security</p>
-                      <p class="text-dark">
-                        Edit Sign in, name, and mobile number
-                      </p>
+                      <span class=" text-xs">
+                        Edit Sign in, name, and mobile number.
+                      </span>
                     </div>
                   </div>
                 </router-link>
@@ -62,9 +61,9 @@
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Your Addresses</p>
-                      <p class="text-dark">
-                        Edit address and delivery preferences
-                      </p>
+                      <span class=" text-xs">
+                        Edit address and delivery preferences.
+                      </span>
                     </div>
                   </div>
                 </router-link>
@@ -106,9 +105,9 @@
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Message Center</p>
-                      <p class="text-dark">
-                        View your REJEE Stores and Seller Messages
-                      </p>
+                      <span class=" text-xs">
+                        View your REJEE Stores and Seller Messages.
+                      </span>
                     </div>
                   </div>
                 </router-link>
@@ -127,7 +126,7 @@
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Sellers Hub</p>
-                      <p class="text-dark">Sale on Rejee Stores, manage sellers account. </p>
+                      <span class=" text-xs">Sale on Rejee Stores, manage sellers account. </span>
                     </div>
                   </div>
                 </router-link>
@@ -146,13 +145,12 @@
                     </div>
                     <div class="col-9">
                       <p class="text-dark h5">Help</p>
-                      <p class="text-dark">Browes available help topics</p>
+                      <span class=" text-xs">Browes available help topics</span>
                     </div>
                   </div>
                 </router-link>
               </div>
             </div>
-          </div>
       <!-- end col-md-9-1 -->
     </div>
   </div>
