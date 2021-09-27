@@ -59,6 +59,9 @@
   </div>
           </router-link>
   </li>
+  <li class="list-group-item" >
+      <p class="text-center text-xs" >Empty! you do not have any sent messages.</p>
+    </li>
   </ul>
 </div>
 

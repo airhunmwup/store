@@ -71,6 +71,9 @@
   </div>
           </router-link>
   </li>
+  <li class="list-group-item" >
+      <p class="text-center text-xs">Empty! you do not have any message here.</p>
+    </li>
   </ul>
 
 </div>
@@ -112,6 +115,9 @@
   </div>
           </router-link>
   </li>
+  <li class="list-group-item" >
+      <p class="text-center text-xs" >Empty! you do not have any message here.</p>
+    </li>
   </ul>
 </div>
 

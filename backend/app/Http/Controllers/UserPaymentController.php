@@ -133,8 +133,8 @@ class UserPaymentController extends Controller
         return response($response, 201);
     }
 
-    public function manageorders(Request $request){
-        $orders = ManageOrder::where('sellerid', 2)->get();
+    public function manageorders($id){
+        $orders = ManageOrder::where('sellerid', $id)->get();
 
         $get_transaction_id = [];
         foreach($orders as $order){
@@ -173,7 +173,7 @@ class UserPaymentController extends Controller
             'transaction_id' => $get_transaction_id,
             'manageorders' => $manageorders,
             'product_id' => $get_product_id,
-            'orderdetails' => $ordetails
+            'orderdetails' => $ordetails,
         ];
 
         return response($response, 201);

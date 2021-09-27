@@ -2,9 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 
 import LandingPage from '../views/buyers/landingPage.vue'
-import UserOrderPage from '../views/buyers/userOrderPage.vue'
 import orderDetailsPage from '../views/buyers/orderDetailsPage.vue'
-import userAccountDetailPage from '../views/buyers/userAccountDetailPage.vue'
 import changeUserPasswordPage from '../views/buyers/changeUserPasswordPage.vue'
 import paymentMethodPage from '../views/buyers/paymentMethodPage.vue'
 import editAddressPage from '../views/buyers/editAddressPage.vue'
@@ -28,13 +26,13 @@ import searching from '../views/buyers/searching.vue'
 import watching from '../views/buyers/watching.vue'
 import purchase_history from '../views/buyers/purchase_history.vue'
 import signin_sec from '../views/buyers/signin_sec.vue'
-import buy_again from '../views/buyers/buyagain.vue'
 import paymentgate from '../views/buyers/paymentgate.vue'
 import edit_login_name from '../views/buyers/edit_login_name.vue'
 import edit_login_email from '../views/buyers/edit_login_email.vue'
 import edit_login_mobilenumber from '../views/buyers/edit_login_mobilenumber.vue'
 import paymentsuccess from '../views/buyers/paymentsuccess.vue'
 import checkoutsummary from '../views/buyers/checkoutsummary.vue'
+import regaddresscreate from '../views/buyers/regaddresscreate.vue'
 
 
 
@@ -164,11 +162,6 @@ const routes = [{
         props: true,
     },
     {
-        path: '/buyagain',
-        name: 'buyagain',
-        component: buy_again,
-    },
-    {
         path: '/processorder',
         name: 'processorder',
         component: Order_process,
@@ -234,8 +227,8 @@ const routes = [{
     },
     
     {
-        path: '/Login buyers',
-        name: 'userAccountDetailPage',
+        path: '/Login',
+        name: 'Login',
         component: userLogin,
     },
     {
@@ -268,11 +261,6 @@ const routes = [{
         path: '/CategoriePage/:catname',
         name: 'UserCategoriePage',
         component: userCategoriePage,
-    },
-    {
-        path: '/orderpage',
-        name: 'Orderpage',
-        component: UserOrderPage,
     },
     
     {
@@ -311,11 +299,6 @@ const routes = [{
         component: checkOutPageAddress,
     },
     {
-        path: '/User Detail',
-        name: 'userAccountDetailPage',
-        component: userAccountDetailPage,
-    },
-    {
         path: '/addnewaddress',
         name: 'addnewaddress',
         component: addUserAddressPage,
@@ -328,12 +311,12 @@ const routes = [{
     },
     {
         path: '/changepassword',
-        name: 'Change Password',
+        name: 'changepassword',
         component: changeUserPasswordPage,
     },
     {
         path: '/passwordrecovery',
-        name: 'Password Recovery',
+        name: 'passwordrecovery',
         component: PasswordRecovery,
     },
 
@@ -351,8 +334,13 @@ const routes = [{
 
     {
         path: '/register',
-        name: 'Register Personal Account',
+        name: 'register',
         component: userRegistrationPage,
+    },
+    {
+        path: '/regaddress',
+        name: 'regaddress',
+        component: regaddresscreate,
     },
 
     {

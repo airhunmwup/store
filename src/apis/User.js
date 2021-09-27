@@ -148,7 +148,7 @@ export default{
     },
 
     manageorders(data){
-        return Api().post("/manageorders", data);
+        return Api().post("/manageorders/" + data);
     }
 
 };

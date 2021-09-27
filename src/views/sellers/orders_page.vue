@@ -123,9 +123,8 @@
             </div>
           </div>
 
-          <div class="">
             <!--start Web view-->
-            <div class="card m-2 border d-xs-none">
+            <div class="m-2 border d-xs-none">
               <div class="card-header font-weight-bold">
                 <div class="row text-xs">
                   <div class="col">
@@ -154,10 +153,10 @@
                 </div>
               </div>
               <a
-                
+                href="#"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
-                title="Personal Information"
+                title="View Order details"
                 v-for="(order, index) in manageorders"
                 :key="index"
                 @click.prevent="orderDetails(order.transaction_id)"
@@ -202,7 +201,7 @@
             <!--end Web view-->
 
             <!--start mobile view-->
-            <div class="card m-2 d-md-none border"
+            <div class="m-2 d-md-none border"
                 v-for="(order, index) in manageorders"
                 :key="index"
                 @click.prevent="orderDetails(order.transaction_id)">
@@ -229,19 +228,22 @@
                   </div>
                   <div class="col">
                     <p class="text-right h5">
-                      <router-link
-                        to="/processorder"
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        title="Personal Information"
-                        ><b
+               <a
+                href="#"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                title="View Order details"
+                v-for="(order, index) in manageorders"
+                :key="index"
+                @click.prevent="orderDetails(order.transaction_id)"
+              ><b
                           class="
                             fa fa-angle-right fa-lg
                             text-dark
                             font-weight-bold
                           "
                         ></b>
-                      </router-link>
+              </a>
                     </p>
                   </div>
                 </div>
@@ -282,7 +284,7 @@
 
             <!--end mobile view-->
 
-            <p class="text-dark text-center" v-show="!manageorders">
+            <p class="text-dark p-4 text-center" v-show="!manageorders">
               You do not have any orders to display in this view.
             </p>
 
@@ -307,7 +309,6 @@
                 </ul>
               </nav>
             </div>
-          </div>
         </div>
       </div>
 
@@ -321,21 +322,23 @@ import User from "../../apis/User";
 export default {
   data() {
     return {
-      id: 2,
       manageorders: '',
       orderdetails: '',
       data: '',
     }
   },
   methods: {
-    async getMyOrders(){
-      User.manageorders(this.id).then(res => {
+    async getMyOrders(id){
+      if(id){
+        console.log(id);
+        User.manageorders(id).then(res => {
         this.manageorders = res.data.manageorders;
         this.orderdetails = res.data.orderdetails;
         console.log(res.data);
       }).catch(errors => {
         console.log(errors);
       });
+      }
     },
     orderDetails(data) {
       this.data = data;
@@ -347,11 +350,19 @@ export default {
           }
       });
     },
+    getuser() {
+      User.getUser(this.$store.state.token).then((response)=>{ 
+        console.log(response.data.id);
+        this.getMyOrders(response.data.id);
+      }).catch((errors) => {
+        console.log(errors);
+      });
+    }
   },
-  computed: mapState(['setCategoryList','setSubCategoryList']),
-  async mounted() {
-    this.getMyOrders();
-  },
+  computed: mapState(['setCategoryList','setSubCategoryList','getCurrentUser']),
+  created() {
+    this.getuser();
+  }
 }
 </script>
         

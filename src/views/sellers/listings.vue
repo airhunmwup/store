@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="m-4">
+  <div class="m-2">
     <nav aria-label="breadcrumb" class="d-xs-none">
       <ol class="breadcrumb text-xs">
         <li class="breadcrumb-item text-primary">
@@ -14,19 +14,17 @@
     </nav>
 
     <div class="justify-content-center row pb-4">
-      <div class="container">
         <div class="row">
           <div class="col-lg-6 col-xs-12">
             <p
-              class="text pl-3 text-dark h4 font-weight-bold font-weight-normal"
+              class="text pl-3 text-dark h5 font-weight-bold font-weight-normal"
             >
               Listings
             </p>
           </div>
         </div>
-      </div>
 
-      <div class="col-lg-12 col-xs-12">
+      <div class="col-lg-12 m-1 col-xs-12">
         <form method="post" class="std" id="customer-form">
           <div
             class="
@@ -62,11 +60,6 @@
             </button>
           </div>
         </form>
-      </div>
-      <div class="pb-2 col-12">
-        <!--Purchase History-->
-        <div class="row rounded">
-          <div class="pb-2 pt-2 col-lg-6 col-xs-12">
             <!-- Example single danger button -->
             <div class="btn-group">
               <!-- Example split danger button -->
@@ -83,7 +76,7 @@
                 aria-haspopup="true"
                 aria-expanded="false"
               >
-                All Listings <span class="sr-only">Toggle Dropdown</span>
+                0 Listings <span class="sr-only">Toggle Dropdown</span>
               </button>
               <div class="dropdown-menu text-xs">
                 <a class="dropdown-item font-weight-bold" href="#"
@@ -93,11 +86,7 @@
                   >Unsold (0)</a
                 >
                 <a class="dropdown-item font-weight-bold" href="#"
-                  >Scheduled (0)</a
-                >
-                <a class="dropdown-item font-weight-bold" href="#">Ended (0)</a>
-                <a class="dropdown-item font-weight-bold" href="#"
-                  >Drafts (0)</a
+                  >Out of Stock (0)</a
                 >
               </div>
             </div>
@@ -146,7 +135,10 @@
               </router-link>
               
             </div>
-          </div>
+      </div>
+      <div class="pb-2 col-12">
+        <!--Purchase History-->
+        <div class="row m-1 rounded">
 
           <!--start Web view-->
           <div class="card m-2 border d-xs-none">
@@ -154,7 +146,6 @@
               <div class="row text-xs">
                 <div class="col-1">
                   <div class="input-group">
-                    <span class="mr-2"> # </span>
                     <input
                       type="checkbox"
                       aria-label="Checkbox for following text input"
@@ -168,13 +159,10 @@
                   <p class="">Image</p>
                 </div>
                 <div class="col">
-                  <p class="">SKU</p>
+                  <p class="">Category</p>
                 </div>
                 <div class="col">
                   <p class="">Price</p>
-                </div>
-                <div class="col">
-                  <p class="">Category</p>
                 </div>
                 <div class="col text-center">
                   <p class="">in-stock</p>
@@ -194,7 +182,6 @@
               <div class="row text-xs">
                 <div class="col-1">
                   <div class="input-group">
-                    <span class="mr-2"></span>
                     <input
                       type="checkbox"
                       aria-label="Checkbox for following text input"
@@ -213,13 +200,10 @@
                   />
                 </div>
                 <div class="col">
-                  <p class="">P012S</p>
+                  <p class="">{{prods.product_subcat}}</p>
                 </div>
                 <div class="col">
                   <p class="">£{{prods.product_price}}</p>
-                </div>
-                <div class="col">
-                  <p class="">{{prods.product_subcat}}</p>
                 </div>
                 <div class="col text-center">
                   <p class="">16</p>
@@ -269,7 +253,7 @@
         <!--end Web view-->
 
         <!--start mobile view-->
-        <div class="card m-1 d-md-none border text-xs" v-for="prods in this.$store.state.mylistings" :key="prods.id" >
+        <div class="d-md-none card mt-2 text-xs" v-for="prods in this.$store.state.mylistings" :key="prods.id" >
           <div class="card-header">
             <div class="row text-xs">
               <div class="col">
@@ -278,11 +262,18 @@
                     type="checkbox"
                     aria-label="Checkbox for following text input"
                   />
-                  <span class="ml-2">  </span>
+                  <span class="ml-2 "> 
+                <span
+                  class="alert-xs p-1 mt-4 rounded alert-success"
+                  style="height: 2rem"
+                  role="alert"
+                >
+                  Active
+                </span> </span>
                 </div>
               </div>
               <div class="col">
-                <p class="text-right">SKU: <b>P62X</b></p>
+                <p class="text-right"><b></b></p>
               </div>
             </div>
           </div>
@@ -325,18 +316,6 @@
               <div class="col-8 text-right">
                 <p class="m-1 text-dark font-weight-bold">{{prods.product_price}}</p>
               </div>
-              <div class="col-6">
-                <p class="m-1">Status:</p>
-              </div>
-              <div class="col-6 p-2 text-right">
-                <span
-                  class="alert-xs p-1 mt-4 rounded alert-success"
-                  style="height: 2rem"
-                  role="alert"
-                >
-                  Active
-                </span>
-              </div>
               <div class="col-4">
                 <p class="m-1">Watches</p>
               </div>
@@ -358,9 +337,9 @@
 
         <!--end mobile view-->
 
-        <p class="text-dark text-center" v-if="this.$store.state.mylistings">
-          You do not have any listings to display in this view.
-        </p>
+            <p class="text-dark text-center" v-if="!this.$store.state.mylistings">
+              You do not have any item to display in this view.
+            </p>
 
         <div class="justify-content-center p-2 text-sm">
           <nav aria-label="Page navigation example" class="col-12">

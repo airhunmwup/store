@@ -4,11 +4,11 @@
 
     <!--All-Orders-->
 
-    <div class="">
+    <div class="pb-5">
     <form ref="myForm" enctype="multipart/form-data">
       <div class="p-3">
         <span class="text h5 font-weight-bold font-weight-normal">
-          Create New Listing
+          ADD new listing
         </span>
       </div>
       <div class="card-body">
@@ -31,7 +31,8 @@
             <div class="col-12 p-2">
               <div class="form-group">
                 <label class="font-weight-bold">Add Photos</label>
-                <div class="col-12 shadow-inner rounded">
+                <p class="text-xs">(Add a maximum of 4 images in .png, .jpg format only.)</p>
+                <div class="col-12 col-md-8 shadow-inner rounded">
                   <div class="pt-3 pb-3">
                     <input type="file" class="rounded btn"
                     style="display:none"
@@ -90,7 +91,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-12">
+            <div class="col-12 col-md-6">
               <div class="form-group">
                 <label class="font-weight-bold">Description</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_desc"></span>
@@ -275,9 +276,9 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
                 <div class="form-group">
                   <div class="input-group input-group-sm mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-md"
+                      <span class="input-group-text text-xs" id="inputGroup-sizing-md"
                       :style="errorStyle(errors.product_package_weight)"
-                        >weight</span
+                        >weight (kg)</span
                       >
                     </div>
                     <input
@@ -346,7 +347,7 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
       </div>
     </div>
 
-    <div class="row">
+    <div class="row m-4">
       <div class="col-lg-6 col-12 p-2">
         <button type="button" class="form-control btn-sm btn btn-light border">
           Cancel
