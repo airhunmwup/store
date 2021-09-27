@@ -461,7 +461,7 @@ export default {
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-            document.getElementById("alat").innerHTML = error.response.data.message;
+            console.log(error.response.data.message);
         }
       })
       }else{
