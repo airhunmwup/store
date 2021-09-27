@@ -1,14 +1,30 @@
 <template>
   <!-- main content -->
   <div class="container">
+    <nav aria-label="breadcrumb" class="d-xs-none">
+      <ol class="breadcrumb text-xs">
+        <li class="breadcrumb-item text-primary">
+          <a href="#">Your Account</a>
+        </li>
+        <li class="breadcrumb-item text-primary" aria-current="page">
+          Sellers hub
+        </li>
+        <li class="breadcrumb-item text-primary" aria-current="page">
+          Listings
+        </li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Create Listings
+        </li>
+      </ol>
+    </nav>
 
     <!--All-Orders-->
 
-    <div class="pb-5">
+    <div class="card">
     <form ref="myForm" enctype="multipart/form-data">
-      <div class="p-3">
+      <div class="card-header p-3">
         <span class="text h5 font-weight-bold font-weight-normal">
-          ADD new listing
+          Create Listings
         </span>
       </div>
       <div class="card-body">
@@ -31,8 +47,7 @@
             <div class="col-12 p-2">
               <div class="form-group">
                 <label class="font-weight-bold">Add Photos</label>
-                <p class="text-xs">(Add a maximum of 4 images in .png, .jpg format only.)</p>
-                <div class="col-12 col-md-8 shadow-inner rounded">
+                <div class="col-12 shadow-inner rounded">
                   <div class="pt-3 pb-3">
                     <input type="file" class="rounded btn"
                     style="display:none"
@@ -91,7 +106,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12">
               <div class="form-group">
                 <label class="font-weight-bold">Description</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_desc"></span>
@@ -110,14 +125,17 @@
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-md"
                     :style="errorStyle(errors.product_price)"
-                      >£</span
+                      >Â£</span
                     >
-                  </div> 
-                  <input type="number" class="form-control" placeholder="0.00" required name="price" min="0" value="0" step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" onblur="
-this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this.value)?'inherit':'red'
-"
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    aria-label="Small"
+                    placeholder="0.00"
                     aria-describedby="inputGroup-sizing-sm"
-                    v-model.number="formData.product_price">
+                    v-model.number="formData.product_price"
+                  />
                 </div>
               </div>
             </div>
@@ -229,7 +247,7 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="inputGroup-sizing-md"
                       :style="errorStyle(errors.product_shipping_cost)"
-                        >£</span
+                        >Â£</span
                       >
                     </div>
                     <input
@@ -276,9 +294,9 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
                 <div class="form-group">
                   <div class="input-group input-group-sm mb-3">
                     <div class="input-group-prepend">
-                      <span class="input-group-text text-xs" id="inputGroup-sizing-md"
+                      <span class="input-group-text" id="inputGroup-sizing-md"
                       :style="errorStyle(errors.product_package_weight)"
-                        >weight (kg)</span
+                        >weight</span
                       >
                     </div>
                     <input
@@ -341,13 +359,13 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
             <p class="pt-3 h6 text-dark">Total:</p>
           </div>
           <div class="col-6 col-lg-10">
-            <p class="pt-3 h6 text-primary">£{{product_total ? product_total : "0.00"}}</p>
+            <p class="pt-3 h6 text-primary">Â£{{product_total ? product_total : "0.00"}}</p>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row m-4">
+    <div class="row">
       <div class="col-lg-6 col-12 p-2">
         <button type="button" class="form-control btn-sm btn btn-light border">
           Cancel
@@ -392,6 +410,7 @@ export default {
         product_condition: "",
         product_desc: "",
         product_price: "",
+        product_quantity: "",
         imageData: [],
         product_shipping_type: "",
         product_shipping_rate: "",
@@ -401,8 +420,10 @@ export default {
         product_package_length: "",
         product_package_width: "",
         product_total: "0.00",
+        testImage: "",
       },
       errors: {
+
       }
     }
   },
@@ -412,6 +433,8 @@ export default {
       if(file){
         if(this.num <= 4){
           this.image.push(file);
+          this.formData.imageData.push(file);
+          this.formData.testImage = file;
           this.imagePreview.push(URL.createObjectURL(file));
           this.num++;
         }else{
@@ -436,13 +459,16 @@ export default {
         fd.append('product_image3', this.image[2]);
         fd.append('product_image4', this.image[3]);
       }
+
       let config = {
         header : {
           'Content-Type' : 'image/jpeg',
           'Access-Control-Allow-Origin': '*'
         }
       }
+
       fd.append('id', this.tableId);
+
       User.upload(fd, config).then(res => {
         console.log(res);
       }).catch(err => {
@@ -451,18 +477,43 @@ export default {
     },
     createListing(){
       if(this.image.length >= 1){
-          User.createlisting(this.formData).then(res =>{
+        const  formData2 = new FormData(this.$refs.myForm); 
+               formData2.append('product_subcat', this.formData.product_subcat); 
+               formData2.append('product_catname', this.formData.product_catname);
+               formData2.append('product_userid', this.formData.product_userid);
+               formData2.append('product_cat_id', this.formData.product_cat_id);  
+               formData2.append('product_subcat_id', this.formData.product_subcat_id); 
+               formData2.append('product_name', this.formData.product_name);  
+               formData2.append('product_condition', this.formData.product_condition);
+               formData2.append('product_desc', this.formData.product_desc); 
+               formData2.append('product_price', this.formData.product_price);
+               formData2.append('product_quantity', this.formData.product_quantity);
+               formData2.append('product_shipping_type', this.formData.product_shipping_type);
+               formData2.append('product_shipping_rate', this.formData.product_shipping_rate);
+               formData2.append('product_shipping_cost', this.formData.product_shipping_cost);
+               formData2.append('product_package_type', this.formData.product_package_type);
+               formData2.append('product_package_weight', this.formData.product_package_weight);
+               formData2.append('product_package_length', this.formData.product_package_length);
+               formData2.append('product_package_width', this.formData.product_package_width);
+               formData2.append('product_total', this.formData.product_total);
+               $.each(this.image, function (key, image) {
+                  formData2.append(`images[${key}]`, image)
+                })
+           
+          User.createlisting(formData2,{
+            headers: { 'Content-Type': "multipart/form-data; charset=utf-8; boundary=" + Math.random().toString().substr(2)}
+            }).then(res =>{
             this.errors = {};
             console.log(res.data);
             this.tableId = res.data.id;
-            this.imageUploadHandler();
+            this.$router.push("/listings");
           }).catch(error => {
         if (!error.response) {
             // network error
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-            console.log(error.response.data.message);
+             console.log(error.response.data.message);
         }
       })
       }else{

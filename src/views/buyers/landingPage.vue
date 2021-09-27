@@ -100,10 +100,11 @@
               data-target=".navbar-collapse"
               @click="product_detail_link">
     <div class="card h-100">
-      <img v-bind:src="'http://127.0.0.1:8000/storage/images/' + listings.product_image1" class="card-img-top" alt="Product" v-bind:data-id="listings.id" />
+      <div v-for="img in listings.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:180px; width: 100%;" v-bind:data-id="img.id" /></div>
       <div class="card-body">
     <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
     <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
+      
       </div>
     </div>
             </a>
@@ -136,7 +137,7 @@
               data-target=".navbar-collapse"
               @click="product_detail_link">
     <div class="card h-100">
-      <img v-bind:src="'http://127.0.0.1:8000/storage/images/' + listings.product_image1" class="card-img-top" alt="Product" v-bind:data-id="listings.id" />
+      <div v-for="img in listings.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" style="height:180px; width: 100%;" alt="Product" v-bind:data-id="img.id" /></div>
       <div class="card-body">
     <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
     <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
@@ -565,10 +566,17 @@ export default {
     getNewListings() {
       User.getNewListings().then(response => {
       this.newListings = response.data;
-    }).catch((errors) => {
-        console.log(errors);
-        console.log("new listing api call error");
-      });
+      console.log(this.newListings);
+    }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+            console.log('Error: Network Error');
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      })
     },
     product_detail_link(event){
       var id = event.target.getAttribute("data-id");

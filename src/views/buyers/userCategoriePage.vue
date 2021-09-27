@@ -74,7 +74,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                             >
-                                <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
+                                <div v-for="img in listing.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:200px; width: 100%;" v-bind:data-id="img.id" /></div>
                             <div class="card-body">
                                 <p class="text-dark h6 text-sm">{{ listing.product_name }}</p>
                                 <p class="font-weight-bold text-sm text-dark">£{{ listing.product_price }}</p>
@@ -105,6 +105,7 @@
 
 import User from "../../apis/User";
 import { mapState } from 'vuex';
+import Constants from "../../common/constants";
 export default {
   name: "landingPage",
   data() {
@@ -112,7 +113,8 @@ export default {
       cid: this.$route.params.cid,
       categorie: [],
       categoryList: [],
-      newListings:[]
+      newListings:[],
+      API_BASE_URL: Constants.API_BASE_URL,
     };
   },
   methods: {

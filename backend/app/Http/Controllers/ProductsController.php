@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Image;
 use App\Models\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -10,6 +9,7 @@ use Carbon\Carbon;
 use App\Models\Categories;
 use App\Models\Subcategories;
 use App\Models\ProductImages;
+use Intervention\Image\Facades\Image;
 
 class ProductsController extends Controller
 {
@@ -118,24 +118,16 @@ class ProductsController extends Controller
             'product_package_width' => $fields['product_package_width'],
             'product_total' => $request->product_total,
         ]);
-        //if ($request->hasFile('testImage')) {
-        // $image = $request->file('testImage');
-        // $randomNumber = random_int(100000, 999999);
-        //$filename = "uploads";
-        //$imagePath = $images->store('images','public');
-        //$imagePath = Storage::disk('images')->put($filename,$image);
-        //return $request;
-        //}else{
-        // return "none";
-        // }
+        
         $images = $request->file('images');
         if ($request->hasFile('images')) {
             foreach ($images as $image) {
                 $filename = "uploads";
-                //$imagePath = $images->store('images','public');
                 $imagePath = Storage::disk('images')->put($filename, $image);
+                //$image = Image::make(public_path("images/{$imagePath}"))->fit(600,600);
+                //$image->save();
                 ProductImages::create([
-                    'product_image_path' => '/public/images/' . $imagePath,
+                    'product_image_path' => $imagePath,
                     'product_id' => $product->id,
                 ]);
             }
