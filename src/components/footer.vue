@@ -3,6 +3,11 @@
     <footer class="justify-content-center footer-one d-md-none d-lg-none fixed-bottom"><div class="card container">
   <div class="row">
     <div class="col center ">
+<a href="index.html"  class="btn p-2 text-dark font-weight-bold ">
+  <span  class="fa fa-lg fa-home"></span>
+</a> 
+    </div>
+    <div class="col center ">
 <a v-if="this.$store.state.isLoggedIn"  class="btn p-2 text-dark font-weight-bold " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
   <span  class="fa fa-lg fa-user"></span>
 </a> 
@@ -39,7 +44,7 @@
   </p></router-link>
     </div>
     <div class="col center ">
-                            <button type="button" class="text-dark btn ">
+      <button type="button" class="btn ">
           <router-link
                               to="/ViewCart"
                               data-toggle="collapse"
@@ -47,9 +52,12 @@
                               title="view Shopping basket"
                             >
   <i
-                  class="fa fa-lg p-2 fa-shopping-cart"
+                  class="fa fa-lg p-2 fa-shopping-cart position-relative"
                   aria-hidden="true"
-                ></i><span class="badge badge-danger">{{basketState}}</span>
+                >
+  <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+   {{basketState}}
+  </span></i>
                 </router-link>
 </button>
     </div>

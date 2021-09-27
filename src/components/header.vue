@@ -1,6 +1,6 @@
 <template>
-  <header class="row border-b border-danger border-secondary">
-      
+<header>
+  <div class="row border-b border-danger border-secondary">
       <div class="col-2 d-xs-none">
           <a href="index.html">
           <img
@@ -9,14 +9,20 @@
             alt="REJEE COMPANY"
           /></a>
       </div>
-      <div class="col-12 d-md-none justify-content-center">
+      <div class="col-12 d-md-none">
+  <div class="row">
+    <div class="col justify-center">
           <a href="index.html">
-          <img
-            src="img/home/logo.png"
-            width="120px"
+          <img  class="pt-2 pl-2"
+            src="img/home/logo2.png"
+            width="65%"
             alt="REJEE COMPANY"
           />
            </a>
+    </div>
+    <div class="col-9">
+    </div>
+  </div>
       </div>
       <div class="col-lg-6 col-md-6 col-xs-12">
               <div class="input-group pt-2">
@@ -139,75 +145,150 @@
       </div>
 
 <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
-  <div class="offcanvas-header">
+  
+        
+          <div v-if="this.$store.state.isLoggedIn"  class="p-2 text-md text-dark nav flex-column">
+            <!-- primary info buttons ends/-->
+<div class="offcanvas-header">
+            <p class="text text-dark h4 font-weight-bold">
+    Hello! {{ this.$store.state.full_name }}
+            </p>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-  <div class="offcanvas-body">
-    
-          <div v-if="this.$store.state.isLoggedIn"  class="text-md text-dark nav flex-column">
-            <!-- primary info buttons ends/-->
-
-    Hello! {{ this.$store.state.full_name }}
+          <!--Sigin-and-security-->
+            <div class="row">
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
                 <router-link
-                  class="dropdown-item text-left underline pl-4 pb-2  font-weight-bold"
-                            to="/account"
-                            data-toggle="collapse"
-                            data-target=".navbar-collapse"
-                            title="Personal Information"
-            data-bs-dismiss="offcanvas" aria-label="Close"
-                            >
-                  Your Account
+                  to="/purchasehistory"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Your Orders"
+                  class="card p-3"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <div class="row text-left ">
+                    <div class="col-3 content-end">
+                      <img src="img/myaccount/orderimg.png" width="70%" />
+                    </div>
+                    <div class="col-9">
+                      <p class="text-dark h5">Your Orders</p>
+                      <span class=" text-xs">Track,return, or cancel orders.</span>
+                    </div>
+                  </div>
                 </router-link>
-            <!-- Account preferences/-->
-
-            <router-link
-              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/watchingpage"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-            data-bs-dismiss="offcanvas" aria-label="Close"
-            >
-              Watching
-            </router-link>
-
-            <router-link
-              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/purchasehistory"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-            data-bs-dismiss="offcanvas" aria-label="Close"
-            >
-              Your Orders
-            </router-link>
-
-            <router-link
-              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/My message"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-            data-bs-dismiss="offcanvas" aria-label="Close"
-            >
-              Message (2)
-            </router-link>
-            <router-link
-              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/Overview"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-            data-bs-dismiss="offcanvas" aria-label="Close"
-            >
-              Sellers Hub
-            </router-link>
-            <router-link
-              class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
-              to="/Overview"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-            data-bs-dismiss="offcanvas" aria-label="Close"
-            >
-              Help!
-            </router-link>
-
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
+                <router-link
+                  to="/buyersigninsecsetting"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Sign in & Security"
+                  class="card p-3"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <div class="text-left row">
+                    <div class="col-3 content-end">
+                      <img src="img/myaccount/siginsec4.png" width="100%" />
+                    </div>
+                    <div class="col-9">
+                      <p class="text-dark h5">Sign in & Security</p>
+                      <span class=" text-xs">
+                        Edit Sign in, name, and mobile number.
+                      </span>
+                    </div>
+                  </div>
+                </router-link>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
+                <router-link
+                  to="/buyeraddresssetting"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Your Addresses"
+                  class="card p-3"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <div class="row text-left ">
+                    <div class="col-3 content-end">
+                      <img src="img/myaccount/address.png" width="60%" />
+                    </div>
+                    <div class="col-9">
+                      <p class="text-dark h5">Your Addresses</p>
+                      <span class=" text-xs">
+                        Edit address and delivery preferences.
+                      </span>
+                    </div>
+                  </div>
+                </router-link>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
+                <router-link
+                  to="/My message"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Message Center"
+                  class="card p-3"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <div class="row text-left">
+                    <div class="col-3 content-end">
+                      <img src="img/myaccount/message.png" width="70%" />
+                    </div>
+                    <div class="col-9">
+                      <p class="text-dark h5">Message Center</p>
+                      <span class=" text-xs">
+                        View your REJEE Stores and Seller Messages.
+                      </span>
+                    </div>
+                  </div>
+                </router-link>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
+                <router-link
+                  to="/overview"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Sellers Hub"
+                  class="card p-3"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <div class="row text-left ">
+                    <div class="col-3 content-end">
+                      <img src="img/myaccount/sellershub.png" width="70%" />
+                    </div>
+                    <div class="col-9">
+                      <p class="text-dark h5">Sellers Hub</p>
+                      <span class=" text-xs">Sale on Rejee Stores, manage sellers account. </span>
+                    </div>
+                  </div>
+                </router-link>
+              </div>
+              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
+                <router-link
+                  to="/help"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="help"
+                  class="card p-3"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+                  <div class="row text-left ">
+                    <div class="col-3 content-end">
+                      <img src="img/myaccount/help.ico" width="70%" />
+                    </div>
+                    <div class="col-9">
+                      <p class="text-dark h5">Help</p>
+                      <span class=" text-xs">Browes available help topics</span>
+                    </div>
+                  </div>
+                </router-link>
+              </div>
         <a
               class="dropdown-item text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
               data-toggle="collapse"
@@ -217,6 +298,9 @@
             ><i class="fa fa-sign-out fa-2x pr-2"></i>
               Sign out
          </a>
+            </div>
+      <!-- end col-md-9-1 -->
+
           </div>
           
         <div v-else >
@@ -243,8 +327,8 @@
         </div>
           <div class="dropdown-divider"></div>
         </div>
-  </div>
 </div>
+  </div>
   </header>
 </template>
 <script>
