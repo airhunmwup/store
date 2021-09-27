@@ -95,6 +95,7 @@
             </div>
       <!-- end col-md-9-1 -->
     </div>
+        <div class="d-md-none pb-5"></div>
   </div>
 </template>
         
