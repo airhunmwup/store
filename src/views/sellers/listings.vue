@@ -192,12 +192,7 @@
                   <p class="">{{prods.product_name}}</p>
                 </div>
                 <div class="col">
-                  <img
-                    class=""
-                    style="width: 70%"
-                    :src="API_BASE_URL + prods.product_image1"
-                    alt="Card image cap"
-                  />
+                  <div v-for="img in prods.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path"  alt="Product" style="height:50px; margin:auto;" v-bind:data-id="img.id" /></div>
                 </div>
                 <div class="col">
                   <p class="">{{prods.product_subcat}}</p>

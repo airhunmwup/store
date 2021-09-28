@@ -157,7 +157,7 @@ class ProductsController extends Controller
     public function getlistings($userid)
     {
         //
-        return Products::where('product_userid', $userid)->get();
+        return Products::where('product_userid', $userid)->with('product_images')->get();
     }
     public function getlisting($id)
     {
@@ -172,7 +172,7 @@ class ProductsController extends Controller
         foreach ($array_strings as $keyword) {
             $results = Products::where('product_name', 'LIKE', '%' . $keyword . '%')
                 ->orWhere('product_subcat', 'LIKE', '%' . $keyword . '%')
-                ->orWhere('product_catname', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('product_catname', 'LIKE', '%' . $keyword . '%')->with('product_images')
                 ->get();
             array_push($data, $results);
         }
@@ -226,7 +226,7 @@ class ProductsController extends Controller
     public function search($name)
     {
         //
-        return Products::where($name, 'like', '%' . 'product_name' . '%')->get();
+        return Products::where($name, 'like', '%' . 'product_name' . '%')->with('product_images')->get();
     }
 
     public function newlisting()
