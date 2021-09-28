@@ -44,6 +44,16 @@
   </p></router-link>
     </div>
     <div class="col center ">
+                      <router-link   class="btn p-2 text-dark font-weight-bold "
+                        to="/watchingpage"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Watchlist"
+                      >
+  <span  class="fa fa-lg fa-heart"></span>
+                      </router-link>
+    </div>
+    <div class="col center ">
       <button type="button" class="btn ">
           <router-link
                               to="/ViewCart"

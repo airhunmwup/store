@@ -3,7 +3,14 @@
   <div class="container text-sm">
 <nav aria-label="breadcrumb ">
   <ol class="breadcrumb d-xs-none">
-    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
+        <li class="breadcrumb-item text-primary"> <router-link
+                            to="/account"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Your Account</router-link>
+        </li>
     <li class="breadcrumb-item active" aria-current="page">Your Addresses</li>
   </ol>
 </nav>
