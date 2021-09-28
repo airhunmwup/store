@@ -8,7 +8,6 @@ $baseDir = dirname($vendorDir);
 return array(
     'Attribute' => $vendorDir . '/symfony/polyfill-php80/Resources/stubs/Attribute.php',
     'Collator' => $vendorDir . '/symfony/polyfill-intl-icu/Resources/stubs/Collator.php',
-    'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'Dompdf\\Cpdf' => $vendorDir . '/dompdf/dompdf/lib/Cpdf.php',
     'HTML5_Data' => $vendorDir . '/dompdf/dompdf/lib/html5lib/Data.php',
     'HTML5_InputStream' => $vendorDir . '/dompdf/dompdf/lib/html5lib/InputStream.php',
@@ -71,6 +70,7 @@ return array(
     'Nette\\Utils\\Reflection' => $vendorDir . '/nette/utils/src/Utils/Reflection.php',
     'Nette\\Utils\\RegexpException' => $vendorDir . '/nette/utils/src/Utils/exceptions.php',
     'Nette\\Utils\\Strings' => $vendorDir . '/nette/utils/src/Utils/Strings.php',
+    'Nette\\Utils\\Type' => $vendorDir . '/nette/utils/src/Utils/Type.php',
     'Nette\\Utils\\UnknownImageFileException' => $vendorDir . '/nette/utils/src/Utils/exceptions.php',
     'Nette\\Utils\\Validators' => $vendorDir . '/nette/utils/src/Utils/Validators.php',
     'Normalizer' => $vendorDir . '/symfony/polyfill-intl-normalizer/Resources/stubs/Normalizer.php',

@@ -67,7 +67,7 @@
             <div class="row text-sm text-dark">
               <div class="col">Shipping:</div>
               <div class="col text-right">
-                £{{this.$store.state.basket[0].product_shipping_cost}}
+                £{{this.$store.state.basket.product_shipping_cost}}
               </div>
             </div>
             <div class="dropdown-divider"></div>
