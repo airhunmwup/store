@@ -144,7 +144,7 @@ class ProductsController extends Controller
     public function show($id)
     {
         //
-        return Products::find($id);
+        return Products::where('id', $id)->with('product_images')->get();
     }
 
 

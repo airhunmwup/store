@@ -17,7 +17,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col-12 col-lg-4">
-                <img class="" :src="API_BASE_URL + cart['product_image1']" />
+                <div v-for="img in cart['product_images'].slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:200px; width: 100%;" v-bind:data-id="img.id" /></div>
               </div>
               <div class="col-12 col-lg-4">
                 <p class="mt-4  m-1 text-lg text-dark font-weight-bold">

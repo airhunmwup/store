@@ -13,6 +13,7 @@ import userCategoriePage from '../views/buyers/userCategoriePage.vue'
 import productPage from '../views/buyers/productPage.vue'
 import propertyPage from '../views/buyers/propertyPage.vue'
 import productDetails from '../views/buyers/productDetails.vue'
+import productDetails_1 from '../views/buyers/productDetails_1.vue'
 import checkOutPage from '../views/buyers/checkOutPage.vue'
 import productcart from '../views/buyers/productCart.vue'
 import checkOutPageAddress from '../views/buyers/checkOutPageAddress.vue'
@@ -277,6 +278,11 @@ const routes = [{
         path: '/productDetail',
         name: 'ProductDetail',
         component: productDetails,
+    },
+    {
+        path: '/productDetails_1/:pname',
+        name: 'productDetails_1',
+        component: productDetails_1,
     },
     {
         path: '/ViewCart',

@@ -7,7 +7,8 @@
    Shop by Categories
   </a>
 
-  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink"><router-link
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+        <router-link
           v-for="category of categoryList"
           :key="category.id"
           :to="{ name: 'UserCategoriePage', params: { cid: category.id, catname: category.cat_name}}"
@@ -92,12 +93,12 @@
   <div v-for="listings of newListings"
             :key="listings.id"
             v-bind:data-id="listings.id" class="col">
-            <a 
-              v-bind:data-id="listings.id"
-              href="#"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              @click="product_detail_link">
+            <router-link         
+          :to="{ name: 'productDetails_1', params: { pid: listings.id, pname: listings.product_name}}"
+          class="dropright"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
     <div class="card h-100">
       <div v-for="img in listings.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:180px; width: 100%;" v-bind:data-id="img.id" /></div>
       <div class="card-body">
@@ -106,7 +107,7 @@
       
       </div>
     </div>
-            </a>
+            </router-link>
   </div>
 </div>
 </div>
@@ -129,12 +130,13 @@
   <div v-for="listings of newListings"
             :key="listings.id"
             v-bind:data-id="listings.id" class="col">
-            <a 
-              v-bind:data-id="listings.id"
-              href="#"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              @click="product_detail_link">
+         <router-link         
+          :to="{ name: 'productDetails_1', params: { pid: listings.id, pname: listings.product_name}}"
+          class="dropright"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+            
     <div class="card h-100">
       <div v-for="img in listings.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" style="height:180px; width: 100%;" alt="Product" v-bind:data-id="img.id" /></div>
       <div class="card-body">
@@ -142,7 +144,7 @@
     <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
       </div>
     </div>
-            </a>
+            </router-link>
   </div>
 </div>
 </div>
