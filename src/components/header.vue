@@ -15,7 +15,7 @@
           <a href="index.html">
           <img  class="pt-2 pl-2"
             src="img/home/logo2.png"
-            width="65%"
+            width="70%"
             alt="REJEE COMPANY"
           />
            </a>
@@ -150,7 +150,7 @@
           <div v-if="this.$store.state.isLoggedIn"  class="p-2 text-md text-dark nav flex-column">
             <!-- primary info buttons ends/-->
 <div class="offcanvas-header">
-            <p class="text text-dark h4 font-weight-bold">
+            <p class="text text-dark h5 font-weight-bold">
     Hello! {{ this.$store.state.full_name }}
             </p>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -172,7 +172,7 @@
                       <img src="img/myaccount/orderimg.png" width="70%" />
                     </div>
                     <div class="col-9">
-                      <p class="text-dark h5">Your Orders</p>
+                      <p class="text-dark h6">Your Orders</p>
                       <span class=" text-xs">Track,return, or cancel orders.</span>
                     </div>
                   </div>
@@ -193,7 +193,7 @@
                       <img src="img/myaccount/siginsec4.png" width="100%" />
                     </div>
                     <div class="col-9">
-                      <p class="text-dark h5">Sign in & Security</p>
+                      <p class="text-dark h6">Sign in & Security</p>
                       <span class=" text-xs">
                         Edit Sign in, name, and mobile number.
                       </span>
@@ -216,7 +216,7 @@
                       <img src="img/myaccount/address.png" width="60%" />
                     </div>
                     <div class="col-9">
-                      <p class="text-dark h5">Your Addresses</p>
+                      <p class="text-dark h6">Your Addresses</p>
                       <span class=" text-xs">
                         Edit address and delivery preferences.
                       </span>
@@ -239,7 +239,7 @@
                       <img src="img/myaccount/message.png" width="70%" />
                     </div>
                     <div class="col-9">
-                      <p class="text-dark h5">Message Center</p>
+                      <p class="text-dark h6">Message Center</p>
                       <span class=" text-xs">
                         View your REJEE Stores and Seller Messages.
                       </span>
@@ -262,7 +262,7 @@
                       <img src="img/myaccount/sellershub.png" width="70%" />
                     </div>
                     <div class="col-9">
-                      <p class="text-dark h5">Sellers Hub</p>
+                      <p class="text-dark h6">Sellers Hub</p>
                       <span class=" text-xs">Sale on Rejee Stores, manage sellers account. </span>
                     </div>
                   </div>
@@ -283,7 +283,7 @@
                       <img src="img/myaccount/help.ico" width="70%" />
                     </div>
                     <div class="col-9">
-                      <p class="text-dark h5">Help</p>
+                      <p class="text-dark h6">Help</p>
                       <span class=" text-xs">Browes available help topics</span>
                     </div>
                   </div>

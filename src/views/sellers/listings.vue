@@ -109,7 +109,7 @@
               </div>
             </div>
             <div
-              class="btn-group btn-group-md"
+              class="btn-group btn-group-sm"
               role="group"
               aria-label="Basic example"
             >
@@ -119,8 +119,8 @@
                 data-target=".navbar-collapse"
                 title="add new listings"
               >
-                <button type="button" class="m-1 btn border btn-xs text-sm">
-                  <span class="zmdi zmdi-plus-square"></span> Create listing
+                <button type="button" class="btn border btn-xs">
+                  <span class="zmdi zmdi-plus-square"></span> 
                 </button>
               </router-link>
               <router-link
@@ -129,8 +129,8 @@
                 data-target=".navbar-collapse"
                 title="add new listings"
               >
-                <button type="button" class="m-1 btn border btn-xs text-sm">
-                <span class="zmdi zmdi-delete"></span> Delete
+                <button type="button" class="btn border btn-xs">
+                <span class="zmdi zmdi-delete"></span> 
               </button>
               </router-link>
               
@@ -275,12 +275,13 @@
           <div class="card-header">
             <div class="row text-xs">
               <div class="col-6 pt-2">
+                <div v-for="img in prods.product_images.slice(0,1)" v-bind:key="img.id">
                 <img
                   class=""
                   style="width: 70%"
-                  :src="API_BASE_URL + prods.product_image1"
+                  v-bind:src="API_BASE_URL + img.product_image_path"
                   alt="Card image cap"
-                />
+                /></div>
               </div>
               <div class="col-6">
                 <p class="text-left mt-4 text-lg text-dark font-weight-bold">
