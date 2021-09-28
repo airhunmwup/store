@@ -3,14 +3,29 @@
   <div class="container">
     <nav aria-label="breadcrumb" class="d-xs-none">
       <ol class="breadcrumb text-xs">
-        <li class="breadcrumb-item text-primary">
-          <a href="#">Your Account</a>
+        <li class="breadcrumb-item text-primary"> <router-link
+                            to="/account"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Your Account</router-link>
         </li>
-        <li class="breadcrumb-item text-primary" aria-current="page">
-          Sellers hub
+        <li class="breadcrumb-item text-primary" aria-current="page"> <router-link
+                            to="/Overview"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Sellers hub</router-link>
         </li>
-        <li class="breadcrumb-item text-primary" aria-current="page">
-          Listings
+        <li class="breadcrumb-item text-primary" aria-current="page"> <router-link
+                            to="/listings"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Listings</router-link>
         </li>
         <li class="breadcrumb-item active" aria-current="page">
           Create Listings
@@ -20,36 +35,39 @@
 
     <!--All-Orders-->
 
-    <div class="card">
-    <form ref="myForm" enctype="multipart/form-data">
-      <div class="card-header p-3">
-        <span class="text h5 font-weight-bold font-weight-normal">
-          Create Listings
-        </span>
-      </div>
-      <div class="card-body">
-        <div class="row justify-content-center">
-          <div class="row text-sm">
-            <div class="col-12 col-lg-10 p-2">
-              <label class="font-weight-bold">Category</label>
+        <div class="row justify-center text-sm" >
+
+<!--recently viewed-->
+                <div class="row col-sm-12 col-lg-6 col-md-6">
+                  <span class="text m-4 text-dark h4 font-weight-bold">
+          Create an item to sell.
+                  </span>
+                  <div class="" >
+                    <div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="inputPassword6" class="col-form-label">Categories</label>
+  </div>
+  <div class="col-auto">
               <router-link
                 to="/addcategory"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="Select category"
               >
-                <p class="ml-4 btn btn-sm border btn-light">
+                <p class="btn btn-sm border btn-light">
                   <span class="fa fa-angle-double-right rounded"></span></p
               ></router-link>
-              <p class="ml-4 btn">{{cat_name}} , {{category}}</p>
-              <span style="color: red; font-size: 12px;" v-text="errors.product_subcat"></span>
-            </div>
-            <div class="col-12 p-2">
+  </div>
+  <div class="col-auto">
+              <p class="text-sm underline">{{cat_name}} , {{category}}</p>
+              <span class="text-xs" v-text="errors.product_subcat"></span>
+  </div>
+  <div class="col-12">
               <div class="form-group">
                 <label class="font-weight-bold">Add Photos</label>
-                <div class="col-12 shadow-inner rounded">
+                <div class="p-2 shadow-inner rounded">
                   <div class="pt-3 pb-3">
-                    <input type="file" class="rounded btn"
+                    <input type="file" class="rounded btn-sm btn"
                     style="display:none"
                     @change="uploadImage($event)"
                     ref="imageupload"/>
@@ -73,6 +91,7 @@
                 </div> -->
               </div>
             </div>
+  </div>
             <div class="col-12 col-lg-6">
               <div class="form-group">
                 <label class="font-weight-bold">Title</label>
@@ -86,7 +105,6 @@
                 <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
                 <select
                   class="
-                    col-lg-4 col-md-6 col-sm-12
                     form-control
                     text-sm
                     select-auto
@@ -118,14 +136,14 @@
                 ></textarea>
               </div>
             </div>
-            <div class="col-4 col-lg-2">
+            <div class="col-8 col-lg-3">
               <div class="form-group">
                 <label class="font-weight-bold">Price</label>
                 <div class="input-group input-group-sm mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-md"
                     :style="errorStyle(errors.product_price)"
-                      >Â£</span
+                      >£</span
                     >
                   </div>
                   <input
@@ -139,7 +157,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-4 col-lg-2">
+            <div class="col-8 col-lg-3">
               <div class="form-group">
                 <label class="font-weight-bold">Quantity</label>
                 <div class="input-group input-group-sm mb-3">
@@ -160,22 +178,15 @@
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
       <div class="card-header p-2 col-lg-12 col-md-12 col-sm-12">
         <div class="p-2">
           <p class="h6 text-dark">Shipping details</p>
         </div>
       </div>
-      <div class="card-body text-sm">
-        <div class="row p-2 col-lg-12 col-md-12 col-sm-12">
-          <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="row mt-2">
+          <div class="col">
             <span style="color: red; font-size: 12px;" v-text="errors.product_shipping_type"></span>
             <label class="font-weight-bold">Domestic shipping</label>
-          </div>
-          <div class="row col-lg-9 col-md-9 col-sm-12">
-            <div class="col-lg-8 col-md-8 col-sm-12">
               <select
                 class="border-2 form-control text-sm select-auto"
                 type="text"
@@ -193,8 +204,8 @@
                 <option value="No shipping: Local pickup only">
                   No shipping: Local pickup only</option>
               </select>
-            </div>
-            <div class="pt-3 row col-lg-6 col-12">
+          </div>
+            <div class="row col-lg-6 col-12">
               <label class="font-weight-bold">Shipping rate table    
                 <span style="color: red; font-size: 12px;" v-text="errors.product_shipping_rate"></span>
               </label>
@@ -239,7 +250,7 @@
                   <option value="Freight (Flat rate)">Freight (Flat rate)</option>
                 </select>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="col-lg-8 col-md-4 col-sm-4">
                 <div class="form-group">
                   <label class="font-weight-bold">
                   </label>
@@ -247,7 +258,7 @@
                     <div class="input-group-prepend">
                       <span class="input-group-text" id="inputGroup-sizing-md"
                       :style="errorStyle(errors.product_shipping_cost)"
-                        >Â£</span
+                        >£</span
                       >
                     </div>
                     <input
@@ -262,15 +273,11 @@
                 </div>
               </div>
             </div>
-          </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-3">
             <label class="font-weight-bold mb-2"
               >Package weight & dimensions</label
             >
-          </div>
-          <div class="row col-lg-8 col-md-8">
             <div class="col-lg-6 col-md-6 col-sm-6">
               <label class="font-weight-bold">Type</label>
               <span style="color: red; font-size: 12px;" v-text="errors.product_package_type"></span>
@@ -290,26 +297,6 @@
             </div>
             <div class="row">
               <label class="font-weight-bold">Dimensions</label>
-              <div class="col-lg-4 col-md-4 col-sm-8">
-                <div class="form-group">
-                  <div class="input-group input-group-sm mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text" id="inputGroup-sizing-md"
-                      :style="errorStyle(errors.product_package_weight)"
-                        >weight</span
-                      >
-                    </div>
-                    <input
-                      type="number"
-                      class="form-control"
-                      aria-label="Small"
-                      placeholder="0.00"
-                      aria-describedby="inputGroup-sizing-sm"
-                      v-model.number="formData.product_package_weight"
-                    />
-                  </div>
-                </div>
-              </div>
               <div class="col-lg-4 col-md-4 col-sm-8">
                 <div class="form-group">
                   <div class="input-group input-group-sm mb-3">
@@ -350,7 +337,58 @@
                 </div>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <label class="font-weight-bold">Weight</label>
+              <div class="col-lg-4 col-md-4 col-sm-8">
+                <div class="form-group">
+                  <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-md"
+                      :style="errorStyle(errors.product_package_weight)"
+                        >kg</span
+                      >
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      aria-label="Small"
+                      placeholder="0.00"
+                      aria-describedby="inputGroup-sizing-sm"
+                      v-model.number="formData.product_package_weight"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      <div class="card-header p-2 col-lg-12 col-md-12 col-sm-12">
+        <div class="p-2">
+          <p class="h6 text-dark">Returns Policy</p>
+            <span class="mb-2 font-weight-italic">If the buyer wants to return an item to you. <br>
+              If the item is damaged, faulty, or doesn’t match the listing description, they’re covered by the REJEE Stores Money Back Guarantee, and you’ll have to refund them or replace the item, even if you don’t offer returns. If they’ve changed their mind, your options depend on your 
+                          <router-link
+                            to="/managing returns missing items and refunds for sellers"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >return policy.</router-link>
+            </span>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-6">
+              <span style="color: red; font-size: 12px;"></span>
+              <select
+                class="form-control text-sm select-auto border"
+                type="text"
+                name=""
+              >
+                <option value="">Select return option</option>
+                <option value="Letter">7 days</option>
+                <option value="Large Envelope">14 days</option>
+                <option value="Package(or thick envelope)">30 days</option>
+                <option value="No shipping: Local pickup only">No returns</option>
+              </select>
+            </div>
         </div>
       </div>
       <div class="card-footer text-sm">
@@ -359,12 +397,12 @@
             <p class="pt-3 h6 text-dark">Total:</p>
           </div>
           <div class="col-6 col-lg-10">
-            <p class="pt-3 h6 text-primary">Â£{{product_total ? product_total : "0.00"}}</p>
+            <p class="pt-3 h6 text-dark">£{{product_total ? product_total : "0.00"}}</p>
           </div>
         </div>
       </div>
-    </div>
 
+</div>
     <div class="row">
       <div class="col-lg-6 col-12 p-2">
         <button type="button" class="form-control btn-sm btn btn-light border">
@@ -381,9 +419,12 @@
         </button>
       </div>
     </div>
-    </form>
-    <!-- end col-md-9-1 -->
-  </div>
+        </div>
+      </div>
+
+          <div class="pb-5"></div>
+      <!-- end col-md-9-1 -->
+    </div>
   </div>
 </template>
 <script>

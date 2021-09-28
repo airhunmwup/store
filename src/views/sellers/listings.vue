@@ -3,11 +3,21 @@
   <div class="m-2">
     <nav aria-label="breadcrumb" class="d-xs-none">
       <ol class="breadcrumb text-xs">
-        <li class="breadcrumb-item text-primary">
-          <a href="#">Your Account</a>
+        <li class="breadcrumb-item text-primary"> <router-link
+                            to="/account"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Your Account</router-link>
         </li>
-        <li class="breadcrumb-item text-primary" aria-current="page">
-          Sellers hub
+        <li class="breadcrumb-item text-primary" aria-current="page"> <router-link
+                            to="/Overview"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Sellers hub</router-link>
         </li>
         <li class="breadcrumb-item active" aria-current="page">Listings</li>
       </ol>

@@ -2,19 +2,14 @@
   <!-- main content -->
   <div class="container text-sm">
     <nav aria-label="breadcrumb">
-      <ol class="breadcrumb text-xs">
-        <li class="breadcrumb-item text-primary">
-          <a href="#">Your Account</a>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">Watchlist</li>
-      </ol>
     </nav>
     <div class="row pb-4 justify-content-center">
+        <div class="col-10">
       <div class="container pl-2">
         <div class="row">
           <div class="col-lg-6 col-xs-12">
-            <p class="text font-weight-bold">
-              <span class="p-3 font-weight-bolder text-dark h4">Watchlist</span>
+            <p class="text p-4  font-weight-bold">
+              <span class="font-weight-bolder text-dark h4">Watchlist</span>
               <span></span>
             </p>
           </div>
@@ -23,7 +18,6 @@
 
       <!--Watching-->
       <div class="row justify-center">
-        <nav>
           <div class="row">
             <div class="col-sm">
               <div class="nav nav-tabs" id="nav-tab" role="tablist">
@@ -94,7 +88,6 @@
               </div>
             </div>
           </div>
-        </nav>
         <div class="tab-content" id="nav-tabContent">
           <div
             class="tab-pane fade show active"
@@ -215,7 +208,7 @@
           </div>
         </div>
       </div>
-
+        </div>
       <!-- end col-md-9-1 -->
     </div>
   </div>
