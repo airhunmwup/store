@@ -2,7 +2,7 @@
   <!-- main content -->
 
   <section class="justify-content-center">
-    <div class="container">
+    <div class="">
       <!-- main content -->
 
       <div class="row justify-content-center pt-3">
@@ -16,7 +16,7 @@
                   class="tab-pane fade show active"
                   v-bind:key="img.id"
                 >
-                  <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="max-height:300px; width:100%; margin: 10px;" v-bind:data-id="img.id" />
+                  <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="max-height:300px; width:100%; margin: 5px;" v-bind:data-id="img.id" />
                 </div>
                 <div
                   v-for="img in productDetails.product_images"
@@ -24,14 +24,14 @@
                   class="tab-pane fade show"
                   v-bind:key="img.id"
                 >
-                  <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="max-height:300px; margin: 10px;" v-bind:data-id="img.id" />
+                  <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="max-height:300px; width:100%; margin: 5px;" v-bind:data-id="img.id" />
                 </div>
               </div>
 
               <ul class="product-tab nav nav-tabs d-flex">
                 <li class="col" v-for="img in productDetails.product_images" v-bind:key="img.id">
                   <a v-bind:href="'#item' + img.id" data-toggle="tab">
-                    <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="height:100px;" v-bind:data-id="img.id" />
+                    <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="height:100px; width:100%;" v-bind:data-id="img.id" />
                   </a>
                 </li>
               </ul>
@@ -53,24 +53,16 @@
           <p class="text-sm text-success mt-2">In stock</p>
 
           <p class="font-weight-bold text-dark mt-2"></p>
-
-          <div class="form-group row">
-            <div class="col-4 text-right">
-              <p class="col text-dark text-right text-sm col-form-label">
-                Quantity
-              </p>
-            </div>
-
-            <div class="col-8">
-              <input
-                type="number"
-                max="10"
-                min="1"
-                value="1"
-                class="form-control form-control-sm col-4 mx-sm-3"
-                v-model.number="order_qnty"
-              />
-            </div>
+          <div class="input-group input-group-sm mb-3">
+            <span class="input-group-text bg-white border-0" id="inputGroup-sizing-sm">Quantity</span>
+                        <input
+                          type="number"
+                          max="10"
+                          min="1"
+                          value="1"
+                          class="form-control form-control-sm col-2 mx-sm-3"
+                          v-model.number="order_qnty"
+                        />
           </div>
 
           <div class="form-group mt-2">
@@ -244,15 +236,18 @@
     </div>
 
     <section class="appion">
-      <div class="col-12">
+  <div class="row">
+    <div class="col">
         <p class="h3 text-dark">Similer Items</p>
-
-        <span class="text-dark text-right">
+    </div>
+    <div class="col text-right">
+        <span class="text-dark text-right text-xs">
           <b class=""> see all </b>
 
           <b class="fa fa-caret-square-o-right"></b>
         </span>
-      </div>
+    </div>
+  </div>
 
       <!-- breadcrumb -->
 
@@ -454,6 +449,7 @@
         </li>
       </div>
     </section>
+      <div class="p-2"></div>
   </section>
 </template>
 
