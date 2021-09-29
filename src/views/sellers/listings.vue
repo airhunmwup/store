@@ -27,7 +27,7 @@
         <div class="row">
           <div class="col-lg-6 col-xs-12">
             <p
-              class="text pl-3 text-dark h5 font-weight-bold font-weight-normal"
+              class="text pl-3 pt-3 text-dark h5 font-weight-bold font-weight-normal"
             >
               Listings
             </p>
