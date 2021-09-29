@@ -2,7 +2,7 @@
   <!-- main content -->
 
   <section class="justify-content-center">
-    <div class="">
+    <div class="container">
       <!-- main content -->
 
       <div class="row justify-content-center pt-3">
@@ -11,27 +11,26 @@
             <div class="images-container">
               <div class="js-qv-mask tab-content">
                 <div
-                  v-for="img in productDetails.product_images.slice(0,1)"
-                  v-bind:id="'item' + img.id"
-                  class="tab-pane fade show active"
-                  v-bind:key="img.id"
+                  v-bind:id="'item' + num"
+                  class="tab-pane fade"
+                  v-for="num in nums"
+                  :key="num"
+                  v-bind:class="activeImage(num)"
                 >
-                  <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="max-height:300px; width:100%; margin: 5px;" v-bind:data-id="img.id" />
-                </div>
-                <div
-                  v-for="img in productDetails.product_images"
-                  v-bind:id="'item' + img.id"
-                  class="tab-pane fade show"
-                  v-bind:key="img.id"
-                >
-                  <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="max-height:300px; width:100%; margin: 5px;" v-bind:data-id="img.id" />
+                  <img
+                    v-bind:src="API_BASE_URL + img['product_image' + num]"
+                    alt="img"
+                  />
                 </div>
               </div>
 
               <ul class="product-tab nav nav-tabs d-flex">
-                <li class="col" v-for="img in productDetails.product_images" v-bind:key="img.id">
-                  <a v-bind:href="'#item' + img.id" data-toggle="tab">
-                    <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="height:100px; width:100%;" v-bind:data-id="img.id" />
+                <li class="col" v-for="num in nums" :key="num">
+                  <a v-bind:href="'#item' + num" data-toggle="tab">
+                    <img
+                      v-bind:src="API_BASE_URL + '0AmYJvycHXsecMqRdtLxCdtP25DDh4dBWvbwV7ec.jpg'"
+                      alt="img"
+                    />
                   </a>
                 </li>
               </ul>
@@ -41,39 +40,34 @@
 
         <div class="row col-xs-12 pt-3 col-lg-4 col-md-4 col-sm-12">
           <p class="lead text-dark mt-4">
-            {{ productDetails.product_name }}
+            {{ productDetails.product_name }} 
           </p>
 
           <div class="dropdown-divider"></div>
 
           <p class="font-weight-bold mt-2 text-sm text-dark">
-            Price:<span class=""> {{ productDetails.product_price }}</span>
+            Price:<span class=""> {{ productDetails.product_price }}</span><span class="text-secondary">/month</span>
           </p>
 
-          <p class="text-sm text-success mt-2">In stock</p>
 
-          <p class="font-weight-bold text-dark mt-2"></p>
-          <div class="input-group input-group-sm mb-3">
-            <span class="input-group-text bg-white border-0" id="inputGroup-sizing-sm">Quantity</span>
-                        <input
-                          type="number"
-                          max="10"
-                          min="1"
-                          value="1"
-                          class="form-control form-control-sm col-2 mx-sm-3"
-                          v-model.number="order_qnty"
-                        />
-          </div>
+                    <div class="dropdown-divider"></div>
+          <p class="font-weight-bold text-dark mt-2">About this vehicle</p>
+  <div class="row pt-2">
+    <div class="col">
+          <p class="text-sm"><i class="zmdi zmdi-time-restore-setting"></i></p>
+          <p class="text-sm"><i class="zmdi zmdi-input-composite"></i></p>
+          <p class="text-sm"><i class="fa fa-map-marker"></i></p>
+    </div>
+  </div>
 
-          <div class="form-group mt-2">
+
+          <div class="form-group mt-2 p-2">
             <button
-              @click="addToBasket"
               class="btn btn-warning btn-sm btn-block"
               type="submit"
             >
-              <i class="fa fa-shopping-cart"></i> Move to basket
+              <i class="fa fa-commenting"></i> Message Seller
             </button>
-
             <button
               @click="addToWatchlist(productDetails['id'])"
               class="btn btn-secondary btn-sm btn-block"
@@ -90,19 +84,6 @@
               <div class="size"></div>
             </div>
 
-            <div class="card">
-              <div class="container">
-                <div class="row text-center text-sm text-dark">
-                  <div class="col">
-                    <p class="">{{ watchCount }} watchers</p>
-                  </div>
-
-                  <div class="col">
-                    <p class="">30-day return</p>
-                  </div>
-                </div>
-              </div>
-            </div>
           </div>
         </div>
 
@@ -136,7 +117,7 @@
                     aria-controls="profile"
                     aria-selected="false"
                   >
-                    Postage
+                    Sellers Location
                   </button>
                 </li>
               </ul>
@@ -149,29 +130,10 @@
                   aria-labelledby="home-tab"
                 >
                   <div class="container text-dark">
-                    <p class="text-md m-2 font-weight-bold">
-                      Item Specifications
+
+                    <p class="text-md m-2">
+                      description goes here.
                     </p>
-
-                    <div class="row">
-                      <table class="table table-borderless">
-                    <tbody>
-                      <tr>
-                        <th scope="row">Condition:</th>
-                        <td>{{ productDetails.product_condition }}</td>
-                      </tr>
-                      <tr class="bg-white">
-                        <th scope="row">Type:</th>
-                        <td>{{productDetails.product_subcat}}</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">SKU:</th>
-                        <td colspan="2">Lw3324ercrt</td>
-                      </tr>
-                    </tbody>
-                  </table>
-                    </div>
-
                     <div class="dropdown-divider"></div>
 
                     <p class="text-md m-2 font-weight-bold">
@@ -236,18 +198,15 @@
     </div>
 
     <section class="appion">
-  <div class="row">
-    <div class="col">
+      <div class="col-12">
         <p class="h3 text-dark">Similer Items</p>
-    </div>
-    <div class="col text-right">
-        <span class="text-dark text-right text-xs">
+
+        <span class="text-dark text-right">
           <b class=""> see all </b>
 
           <b class="fa fa-caret-square-o-right"></b>
         </span>
-    </div>
-  </div>
+      </div>
 
       <!-- breadcrumb -->
 
@@ -449,7 +408,6 @@
         </li>
       </div>
     </section>
-      <div class="p-2"></div>
   </section>
 </template>
 
@@ -462,7 +420,7 @@ export default {
   data() {
     return {
       productDetails: [],
-      p_id: this.$route.params.pid,
+      p_id: this.$store.state.product_detail_id,
       img: [],
       nums: 4,
       order_qnty: 1,
@@ -477,21 +435,24 @@ export default {
   },
   methods: {
     getProductDetails(pid) {
+console.log(this.API_BASE_URL);
       User.product_detail_page(pid)
         .then((response) => {
-          this.productDetails = response.data[0];
+          this.productDetails = response.data;
+          const img = Object.keys(response.data);
+          let index = 1;
+          img.map((key) => {
+            if (key == `product_image${index}`) {
+              this.img[key] = response.data[key];
+              index++;
+            }
+          });
           console.log(this.productDetails);
           this.saveRecentView(this.$store.state.product_detail_id);
         })
-        .catch(error => {
-        if (!error.response) {
-            // network error
-            this.errorStatus = 'Error: Network Error';
-        } else {
-            this.errorStatus = error.response.data.message;
-            console.log(error.response.data.message);
-        }
-      });
+        .catch((error) => {
+          console.log(error);
+        });
       console.log(this.productDetails);
     },
     saveRecentView(pid) {
@@ -566,7 +527,7 @@ export default {
     addToWatchlist(product_id) {
       var data = {
         product_name: this.productDetails.product_name,
-        product_image: this.productDetails.product_images[0].product_image_path,
+        product_image: this.productDetails.product_image1,
         product_price: this.productDetails.product_price,
         product_condition: this.productDetails.product_condition,
         user_id: this.$store.state.currentUser.id,
@@ -588,15 +549,9 @@ export default {
                   console.log("Added to wish list");
                   this.$store.dispatch("getuser", data.user_id);
                 })
-                .catch(error => {
-        if (!error.response) {
-            // network error
-            this.errorStatus = 'Error: Network Error';
-        } else {
-            this.errorStatus = error.response.data.message;
-            console.log(error.response.data.message);
-        }
-      });
+                .catch((error) => {
+                  console.log(error);
+                });
             }
           })
           .catch((error) => {
