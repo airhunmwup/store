@@ -1,37 +1,6 @@
 <template>
   <!-- main content -->
   <div class="container">
-    <nav aria-label="breadcrumb" class="d-xs-none">
-      <ol class="breadcrumb text-xs">
-        <li class="breadcrumb-item text-primary"> <router-link
-                            to="/account"
-                            data-toggle="collapse"
-                            class="text-primary underline"
-                            data-target=".navbar-collapse"
-                            >
-          Your Account</router-link>
-        </li>
-        <li class="breadcrumb-item text-primary" aria-current="page"> <router-link
-                            to="/Overview"
-                            data-toggle="collapse"
-                            class="text-primary underline"
-                            data-target=".navbar-collapse"
-                            >
-          Sellers hub</router-link>
-        </li>
-        <li class="breadcrumb-item text-primary" aria-current="page"> <router-link
-                            to="/listings"
-                            data-toggle="collapse"
-                            class="text-primary underline"
-                            data-target=".navbar-collapse"
-                            >
-          Listings</router-link>
-        </li>
-        <li class="breadcrumb-item active" aria-current="page">
-          Create Listings
-        </li>
-      </ol>
-    </nav>
 
     <!--All-Orders-->
 
@@ -39,8 +8,8 @@
 
 <!--recently viewed-->
                 <div class="row col-sm-12 col-lg-6 col-md-6">
-                  <span class="text m-4 text-dark h4 font-weight-bold">
-          Create an item to sell.
+                  <span class="text p-4 text-dark h4 font-weight-bold">
+          New Listings
                   </span>
                   <div class="" >
                     <div class="row g-3 align-items-center">
@@ -64,7 +33,6 @@
   </div>
   <div class="col-12">
               <div class="form-group">
-                <label class="font-weight-bold">Add Photos</label>
                 <div class="p-2 shadow-inner rounded">
                   <div class="pt-3 pb-3">
                     <input type="file" class="rounded btn-sm btn"
@@ -72,10 +40,11 @@
                     @change="uploadImage($event)"
                     ref="imageupload"/>
                     <a
-                      class="btn btn-lg btn-light border rounded-circle"
+                      class="btn btn-sm btn-light border rounded"
                       @click="$refs.imageupload.click()">
                       <span class="fa fa-plus"></span>
                     </a>
+                <span class="font-weight-bold"> Add Photos</span>
                     <span style="color: red; font-size: 12px;" v-text="errors.product_image1"></span>
                   </div>
                   <div class="row">
@@ -90,6 +59,7 @@
                   >Delete</button>
                 </div> -->
               </div>
+              <p class="text-xs">Photo: 0/4 . Choose your listing's main photo first.</p>
             </div>
   </div>
             <div class="col-12 col-lg-6">
@@ -180,7 +150,7 @@
             </div>
       <div class="card-header p-2 col-lg-12 col-md-12 col-sm-12">
         <div class="p-2">
-          <p class="h6 text-dark">Shipping details</p>
+          <p class="h6 text-dark">Packaging and shipping</p>
         </div>
       </div>
         <div class="row mt-2">
@@ -297,7 +267,7 @@
             </div>
             <div class="row">
               <label class="font-weight-bold">Dimensions</label>
-              <div class="col-lg-4 col-md-4 col-sm-8">
+              <div class="col-8 col-lg-3">
                 <div class="form-group">
                   <div class="input-group input-group-sm mb-3">
                     <div class="input-group-prepend">
@@ -317,7 +287,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-8">
+              <div class="col-8 col-lg-3">
                 <div class="form-group">
                   <div class="input-group input-group-sm mb-3">
                     <div class="input-group-prepend">
@@ -339,7 +309,7 @@
             </div>
             <div class="row">
               <label class="font-weight-bold">Weight</label>
-              <div class="col-lg-4 col-md-4 col-sm-8">
+              <div class="col-8 col-lg-3">
                 <div class="form-group">
                   <div class="input-group input-group-sm mb-3">
                     <div class="input-group-prepend">
@@ -361,10 +331,10 @@
               </div>
             </div>
         </div>
-      <div class="card-header p-2 col-lg-12 col-md-12 col-sm-12">
+      <div class="p-2 col-lg-12 col-md-12 col-sm-12">
         <div class="p-2">
           <p class="h6 text-dark">Returns Policy</p>
-            <span class="mb-2 font-weight-italic">If the buyer wants to return an item to you. <br>
+            <span class="mb-2 text-xs">If the buyer wants to return an item to you. <br>
               If the item is damaged, faulty, or doesn’t match the listing description, they’re covered by the REJEE Stores Money Back Guarantee, and you’ll have to refund them or replace the item, even if you don’t offer returns. If they’ve changed their mind, your options depend on your 
                           <router-link
                             to="/managing returns missing items and refunds for sellers"
@@ -375,7 +345,7 @@
             </span>
         </div>
         <div class="row">
-            <div class="col-lg-6 col-md-6 col-sm-6">
+            <div class="col-12 col-lg-6">
               <span style="color: red; font-size: 12px;"></span>
               <select
                 class="form-control text-sm select-auto border"
@@ -399,6 +369,17 @@
           <div class="col-6 col-lg-10">
             <p class="pt-3 h6 text-dark">£{{product_total ? product_total : "0.00"}}</p>
           </div>
+        </div>
+      </div>
+      <div class="card-header p-2 col-lg-12 col-md-12 col-sm-12">
+        <div class="p-2">
+            <span class="mb-2 text-xs">By creating this listing, you confirm that it complies with REJEE Stores <router-link
+                            to="/User Privacy"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >User policies</router-link> and all applicable laws.
+            </span>
         </div>
       </div>
 

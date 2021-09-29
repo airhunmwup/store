@@ -50,6 +50,7 @@ import orders_page from '../views/sellers/orders_page.vue'
 import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
 import property_listing from '../views/sellers/Property_listing.vue'
+import vehicle_listing from '../views/sellers/vehicle_listing.vue'
 import add_category from '../views/sellers/add_category.vue'
 import add_category3 from '../views/sellers/add_category3.vue'
 import add_subcategory from '../views/sellers/add_subcategory.vue'
@@ -156,6 +157,11 @@ const routes = [{
         component: property_listing,
     },
 
+    {
+        path: '/vehiclelisting',
+        name: 'vehiclelisting',
+        component: vehicle_listing,
+    },
    {
         path: '/propertyPage',
         name: 'propertyPage',
