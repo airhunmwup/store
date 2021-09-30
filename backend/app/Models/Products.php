@@ -38,4 +38,8 @@ class Products extends Model
     {
         return $this->hasMany('App\Models\ProductImages','product_id');
     }
+    public function recent_views()
+    {
+        return $this->hasMany('App\Models\recentViews','product_id');
+    }
 }

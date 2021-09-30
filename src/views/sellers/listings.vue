@@ -3,11 +3,21 @@
   <div class="m-2">
     <nav aria-label="breadcrumb" class="d-xs-none">
       <ol class="breadcrumb text-xs">
-        <li class="breadcrumb-item text-primary">
-          <a href="#">Your Account</a>
+        <li class="breadcrumb-item text-primary"> <router-link
+                            to="/account"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Your Account</router-link>
         </li>
-        <li class="breadcrumb-item text-primary" aria-current="page">
-          Sellers hub
+        <li class="breadcrumb-item text-primary" aria-current="page"> <router-link
+                            to="/Overview"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Sellers hub</router-link>
         </li>
         <li class="breadcrumb-item active" aria-current="page">Listings</li>
       </ol>
@@ -17,7 +27,7 @@
         <div class="row">
           <div class="col-lg-6 col-xs-12">
             <p
-              class="text pl-3 text-dark h5 font-weight-bold font-weight-normal"
+              class="text pl-3 pt-3 text-dark h5 font-weight-bold font-weight-normal"
             >
               Listings
             </p>
@@ -109,7 +119,7 @@
               </div>
             </div>
             <div
-              class="btn-group btn-group-md"
+              class="btn-group btn-group-sm"
               role="group"
               aria-label="Basic example"
             >
@@ -119,8 +129,8 @@
                 data-target=".navbar-collapse"
                 title="add new listings"
               >
-                <button type="button" class="m-1 btn border btn-xs text-sm">
-                  <span class="zmdi zmdi-plus-square"></span> Create listing
+                <button type="button" class="btn border btn-xs">
+                  <span class="zmdi zmdi-plus-square"></span> 
                 </button>
               </router-link>
               <router-link
@@ -129,8 +139,8 @@
                 data-target=".navbar-collapse"
                 title="add new listings"
               >
-                <button type="button" class="m-1 btn border btn-xs text-sm">
-                <span class="zmdi zmdi-delete"></span> Delete
+                <button type="button" class="btn border btn-xs">
+                <span class="zmdi zmdi-delete"></span> 
               </button>
               </router-link>
               
@@ -192,12 +202,7 @@
                   <p class="">{{prods.product_name}}</p>
                 </div>
                 <div class="col">
-                  <img
-                    class=""
-                    style="width: 70%"
-                    :src="API_BASE_URL + prods.product_image1"
-                    alt="Card image cap"
-                  />
+                  <div v-for="img in prods.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path"  alt="Product" style="height:50px; margin:auto;" v-bind:data-id="img.id" /></div>
                 </div>
                 <div class="col">
                   <p class="">{{prods.product_subcat}}</p>
@@ -280,12 +285,13 @@
           <div class="card-header">
             <div class="row text-xs">
               <div class="col-6 pt-2">
+                <div v-for="img in prods.product_images.slice(0,1)" v-bind:key="img.id">
                 <img
                   class=""
                   style="width: 70%"
-                  :src="API_BASE_URL + prods.product_image1"
+                  v-bind:src="API_BASE_URL + img.product_image_path"
                   alt="Card image cap"
-                />
+                /></div>
               </div>
               <div class="col-6">
                 <p class="text-left mt-4 text-lg text-dark font-weight-bold">

@@ -33,7 +33,8 @@ Route::get('/products', [ProductsController::class, 'index']);
 Route::get('/products/{id}', [ProductsController::class, 'show']);
 Route::get('/products/{name}', [ProductsController::class, 'search']);
 Route::post('/register', [AuthController::class, 'register']);
-Route::post('/login', [AuthController::class, 'login']);
+Route::post('/login', [AuthController::class, 'login']); 
+Route::post('/getSimilarItems', [ProductsController::class, 'similarItems']);
 
 Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 Route::get('/newlistings2/{id}', [ProductsController::class, 'newlisting2']);
@@ -58,6 +59,7 @@ Route::get('/images', [ImageuploadController::class, 'index']);
 Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/products', [ProductsController::class, 'store']);
     Route::post('/saveRecentView', [RecentViewsController::class, 'store']);
+    Route::get('/getRecentViews/{id}', [RecentViewsController::class, 'index']);
     Route::post('/createlisting', [ProductsController::class, 'store']);
     Route::post('/getlistings/{user_id}', [ProductsController::class, 'getlistings']);
     Route::get('/getlisting/{id}', [ProductsController::class, 'getlisting']);

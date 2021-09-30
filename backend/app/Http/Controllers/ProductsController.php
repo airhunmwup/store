@@ -2,7 +2,6 @@
 
 namespace App\Http\Controllers;
 
-use Image;
 use App\Models\Products;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
@@ -10,6 +9,7 @@ use Carbon\Carbon;
 use App\Models\Categories;
 use App\Models\Subcategories;
 use App\Models\ProductImages;
+use Intervention\Image\Facades\Image;
 
 class ProductsController extends Controller
 {
@@ -118,24 +118,16 @@ class ProductsController extends Controller
             'product_package_width' => $fields['product_package_width'],
             'product_total' => $request->product_total,
         ]);
-        //if ($request->hasFile('testImage')) {
-        // $image = $request->file('testImage');
-        // $randomNumber = random_int(100000, 999999);
-        //$filename = "uploads";
-        //$imagePath = $images->store('images','public');
-        //$imagePath = Storage::disk('images')->put($filename,$image);
-        //return $request;
-        //}else{
-        // return "none";
-        // }
+        
         $images = $request->file('images');
         if ($request->hasFile('images')) {
             foreach ($images as $image) {
                 $filename = "uploads";
-                //$imagePath = $images->store('images','public');
                 $imagePath = Storage::disk('images')->put($filename, $image);
+                //$image = Image::make(public_path("images/{$imagePath}"))->fit(600,600);
+                //$image->save();
                 ProductImages::create([
-                    'product_image_path' => '/public/images/' . $imagePath,
+                    'product_image_path' => $imagePath,
                     'product_id' => $product->id,
                 ]);
             }
@@ -152,7 +144,7 @@ class ProductsController extends Controller
     public function show($id)
     {
         //
-        return Products::find($id);
+        return Products::where('id', $id)->with('product_images')->get();
     }
 
 
@@ -165,7 +157,7 @@ class ProductsController extends Controller
     public function getlistings($userid)
     {
         //
-        return Products::where('product_userid', $userid)->get();
+        return Products::where('product_userid', $userid)->with('product_images')->get();
     }
     public function getlisting($id)
     {
@@ -180,12 +172,24 @@ class ProductsController extends Controller
         foreach ($array_strings as $keyword) {
             $results = Products::where('product_name', 'LIKE', '%' . $keyword . '%')
                 ->orWhere('product_subcat', 'LIKE', '%' . $keyword . '%')
-                ->orWhere('product_catname', 'LIKE', '%' . $keyword . '%')
+                ->orWhere('product_catname', 'LIKE', '%' . $keyword . '%')->with('product_images')
                 ->get();
             array_push($data, $results);
         }
         $data = array_unique($data);
         return $data;
+    }
+    public function similarItems(Request $request)
+    {
+        $pid = $request->pid;
+        $catid = $request->cat_id;
+        $subcatid = $request->subcat_id;
+        return Products::where('id', '!=' , $pid)
+                ->where(function($q) use ($catid,$subcatid) {
+                $q->where('product_cat_id', $catid)
+                ->orWhere('product_subcat_id', $subcatid);
+                })->with('product_images')->take(10)              
+                ->get();
     }
     /**
      * Show the form for editing the specified resource.
@@ -234,7 +238,7 @@ class ProductsController extends Controller
     public function search($name)
     {
         //
-        return Products::where($name, 'like', '%' . 'product_name' . '%')->get();
+        return Products::where($name, 'like', '%' . 'product_name' . '%')->with('product_images')->get();
     }
 
     public function newlisting()

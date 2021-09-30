@@ -49,6 +49,9 @@ export default{
     getMessage(id){
         return Api().get("/getmessage/" + id);
     },
+    getRecentViews(id){
+        return Api().get("/getRecentViews/" + id);
+    },
     getNewListings(){
         return Api().get("/newlistings");
     },
@@ -68,7 +71,9 @@ export default{
     saveRecentView(data){
         return Api().post("/saveRecentView", data);
     },
-
+    getSimilarItems(data){
+        return Api().post("/getSimilarItems", data);
+    },
     addToWishlist(productData){
         return Api().post("/wishlist", productData);
     },

@@ -1,172 +1,383 @@
 <template>
   <!-- main content -->
   <div class="container">
-<nav aria-label="breadcrumb" class="d-xs-none">
-  <ol class="breadcrumb text-xs">
-    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
-    <li class="breadcrumb-item text-primary" aria-current="page">Sellers hub</li>
-    <li class="breadcrumb-item text-primary" aria-current="page">Listings</li>
-    <li class="breadcrumb-item active" aria-current="page">Create Listings</li>
-  </ol>
-</nav>
 
-<!--All-Orders-->
-                  
+    <!--All-Orders-->
 
-                <div class="card">
-                <div class="card-header p-3 ">
-                  <span class="text h5 font-weight-bold  font-weight-normal">
-                  <i class="fa fa-building"></i> Property Listings
+        <div class="row justify-center text-sm" >
+
+<!--recently viewed-->
+                <div class="row col-sm-12 col-lg-6 col-md-6">
+                  <span class="text p-4 text-dark h4 font-weight-bold">
+                   New Property Listing
                   </span>
-                </div>
-                <div class="card-body">
-  <div class="row justify-content-center">
-      <div class="row text-sm">
-    <div class="col-12 p-2">
-  <div class="form-group">
-    <label class="font-weight-bold">Add Photos</label>
-    <div class="col-12 shadow-inner rounded">
-    <div class="pt-3 pb-3">
-        <input type="file"  id="imageFile" class="rounded btn"/>
-    <button type="file" class="btn btn-lg btn-light border rounded-circle"><span class="fa fa-plus"></span></button>
-    </div>
-    <div class="row">
-    <div style="text-align:center;" class="col-6 col-lg-3">
-        <img :src="img" style="width: 10rem">
-        <a href="#" class="text-danger">remove</a>
-    </div>
-    <div class="col-6 col-lg-3">
-        <img src="img/product/6.jpg" style="width: 10rem"/>
-    </div>
-    <div class="col-6 col-lg-3">
-        <img src="img/product/4.jpg" style="width: 10rem"/>
-    </div>
-    <div class="col-6 col-lg-3">
-        <img src="img/product/3.jpg" style="width: 10rem"/>
-    </div>
-    <div class="col-6 col-lg-3">
-        <img src="img/product/13.jpg" style="width: 10rem"/>
-    </div>
-    </div>
-</div>
+                  <div class="" >
+                    <div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="inputPassword6" class="col-form-label">Categories</label>
   </div>
-    </div>
-    <div class="col-12">
-  <div class="form-group">
-    <label class="font-weight-bold">Description</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  <div class="col-auto">
+              <router-link
+                to="/addcategory"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                title="Select category"
+              >
+                <p class="btn btn-sm border btn-light">
+                  <span class="fa fa-angle-double-right rounded"></span></p
+              ></router-link>
   </div>
+  <div class="col-auto">
+              <p class="text-sm underline">{{cat_name}} , {{category}}</p>
+              <span class="text-xs" v-text="errors.product_subcat"></span>
   </div>
-    <label class="font-weight-bold text-dark">Where is this building located</label>
-    <div class="col-12 col-lg-6">
-  <div class="form-group">
-    <label class="font-weight-bold">Address</label>
-    <input type="text" class="form-control">
-  </div>
-    </div>
-    <div class="col-12 col-lg-3">
-  <div class="form-group">
-    <label class="font-weight-bold">City</label>
-    <input type="text" class="form-control">
-  </div>
-    </div>
-    <div class="col-12 col-lg-3">
-  <div class="form-group">
-    <label class="font-weight-bold">State</label>
-    <input type="text" class="form-control">
-  </div>
-    </div>
-    <div class="col-12 col-lg-3">
-  <div class="form-group">
-    <label class="font-weight-bold">Postcode</label>
-    <input type="text" class="form-control">
-  </div>
-    </div>
-    <div class="col-12 col-lg-3">
-  <div class="form-group">
-    <label class="font-weight-bold">Country</label>
-    <input type="text" class="form-control" placeholder="United Kingdom" disabled>
-  </div>
-    </div>
-    <div class="row col-12">
-    <div class="col-12 col-lg-4">
-  <div class="form-group">
-    <label class="font-weight-bold">Property types</label>
-                        <select class="form-control text-sm select-auto border" type="text" name="">
-                        <option value=""></option>
-                        <option value="">House</option>
-                        <option value="">Flats</option>
-                        <option value="">Farm/Land</option>
-                        </select>
-  </div>
-    </div>
-    <div class="col-12 col-lg-4">
-  <div class="form-group">
-    <label class="font-weight-bold">Bedrooms</label>
-                        <select class="form-control text-sm select-auto border" type="text" name="">
-                        <option value=""></option>
-                        <option value="">Studio</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10+</option>
-                        </select>
-  </div>
-    </div>
-    <div class="col-12 col-lg-4">
-  <div class="form-group">
-    <label class="font-weight-bold">Bedrooms</label>
-                        <select class="col-lg-4 col-md-6 col-sm-12 form-control text-sm select-auto border" type="text" name="">
-                        <option value="">-</option>
-                        <option value="">New</option>
-                        <option value="">Seller refurbished</option><!-- for goods that fall under this-->
-                        <option value="">Used</option>
-                        <option value="">For parts or not working</option><!-- for goods that fall under this-->
-                        </select>
-  </div>
-    </div>
-  </div>
-    <div class="col-4 col-lg-2">
-        
-  <div class="form-group">
-    <label class="font-weight-bold">Price</label>
-<div class="input-group input-group-sm mb-3">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="inputGroup-sizing-md">£</span>
-  </div>
-  <input type="text" class="form-control" aria-label="Small" placeholder="0.00" aria-describedby="inputGroup-sizing-sm">
-</div>
-  </div>
-    </div>
-      </div>
-  </div>                         
-                </div>
-                <div class="card-footer text-sm">
-                <div class="row p-2 col-lg-12 col-md-12 col-sm-12 ">
-                    <div class="col-6 col-lg-2">
-                        <p class="pt-3 h6 text-dark">Total:</p>
+  <div class="col-12">
+              <div class="form-group">
+                <div class="p-2 shadow-inner rounded">
+                  <div class="pt-3 pb-3">
+                    <input type="file" class="rounded btn-sm btn"
+                    style="display:none"
+                    @change="uploadImage($event)"
+                    ref="imageupload"/>
+                    <a
+                      class="btn btn-sm btn-light border rounded"
+                      @click="$refs.imageupload.click()">
+                      <span class="fa fa-plus"></span>
+                    </a>
+                <span class="font-weight-bold"> Add Photos</span>
+                    <span style="color: red; font-size: 12px;" v-text="errors.product_image1"></span>
+                  </div>
+                  <div class="row">
+                    <div class="col-6 col-lg-3" v-for="img in imagePreview" :key="img">
+                      <img :src="img" style="width: 10rem" />
                     </div>
-                    <div class="col-6 col-lg-10">
-                        <p class="pt-3 h6 text-primary">£ <span ></span></p>
-                    </div>
-                </div>
-                </div>
-                </div>
-                <div class="row">
-                <div class="col-lg-6 col-12 p-2">
-                    <button type="button" class="form-control btn-sm btn btn-light border">Cancel</button>
-                </div>
-                <div class="col-lg-6 col-12 p-2">
-                    <button type="button" class="form-control btn-sm btn btn-success border">Save</button>
-                </div>
-                </div>
-          <!-- end col-md-9-1 -->
+                  </div>
+                  <div class="col-6 col-lg-3" >
+                    <img :src="imgreq" style="width: 10rem" />
+                  </div>
+                  <!-- <button class="btn btn-sm btn-primary" 
+                  >Delete</button>
+                </div> -->
+              </div>
+              <p class="text-xs">Photo: 0/4 . Choose your listing's main photo first.</p>
+            </div>
+  </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label class="font-weight-bold">Property for sale or rent</label>
+                <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
+                <select
+                  class="
+                    form-control
+                    text-sm
+                    select-auto
+                    border
+                  "
+                  type="text"
+                  name=""
+                >
+                  <option value=""></option>
+                  <option value="New">For Sale</option>
+                  <option value="Seller refurbished">For Rent</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label class="font-weight-bold">Title</label>
+                <span style="color: red; font-size: 12px;" v-text="errors.product_name"></span>
+                <input type="text" class="form-control" v-model="formData.product_name" />
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label class="font-weight-bold">Property type</label>
+                <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
+                <select
+                  class="
+                    form-control
+                    text-sm
+                    select-auto
+                    border
+                  "
+                  type="text"
+                  name=""
+                  @change="conditionOption($event)"
+                >
+                  <option value=""></option>
+                  <option value="Flat">Flat</option>
+                  <option value="House">House</option>
+                  <option value="Room only">Room only</option>
+                  <option value="Town house">Town house</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label class="font-weight-bold">Bedroom</label>
+                <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
+                <select
+                  class="
+                    form-control
+                    text-sm
+                    select-auto
+                    border
+                  "
+                  type="text"
+                  name=""
+                >
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="4">5</option>
+                  <option value="4">6</option>
+                  <option value="4">7</option>
+                  <option value="4">8</option>
+                  <option value="4">9</option>
+                  <option value="4">10</option>
+                </select>
+              </div>
+            </div>
+            <div class="col">
+              <div class="form-group">
+                <label class="font-weight-bold">Bathroom</label>
+                <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
+                <select
+                  class="
+                    form-control
+                    text-sm
+                    select-auto
+                    border
+                  "
+                  type="text"
+                  name=""
+                >
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="4">5</option>
+                  <option value="4">6</option>
+                  <option value="4">7</option>
+                  <option value="4">8</option>
+                  <option value="4">9</option>
+                  <option value="4">10</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label class="font-weight-bold">Property description</label>
+                <span style="color: red; font-size: 12px;" v-text="errors.product_desc"></span>
+                <textarea
+                  class="form-control"
+                  id="exampleFormControlTextarea1"
+                  rows="3"
+                  v-model="formData.product_desc"
+                ></textarea>
+              </div>
+            </div>
+      <div class="card-header p-2 col-lg-12 col-md-12 col-sm-12">
+        <div class="p-2">
+            <span class="mb-2 text-xs">By creating this listing, you confirm that it complies with REJEE Stores <router-link
+                            to="/User Privacy"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >User policies</router-link> and all applicable laws.
+            </span>
         </div>
+      </div>
 
+</div>
+    <div class="row">
+      <div class="col-lg-6 col-12 p-2">
+        <button type="button" class="form-control btn-sm btn btn-light border">
+          Cancel
+        </button>
+      </div>
+      <div class="col-lg-6 col-12 p-2">
+        <button
+          type="button"
+          class="form-control btn-sm btn btn-success border"
+          @click="createListing"
+        >
+          Save
+        </button>
+      </div>
+    </div>
+        </div>
+      </div>
+
+          <div class="pb-5"></div>
+      <!-- end col-md-9-1 -->
+    </div>
+  </div>
 </template>
+<script>
+import User from '../../apis/User';
+export default {
+  data() {
+    return {
+      category: this.$route.params.data,
+      cat_name : this.$route.params.cat_name,
+      cat_id : this.$route.params.cat_id,
+      subcat_id : this.$route.params.subcat_id,
+      imagePreview: [],
+      image: [],
+      num: 1,
+      imgreq: "",
+      tableId: "",
+      formData: {
+        product_subcat: this.$route.params.data,
+        product_catname: this.$route.params.cat_name,
+        product_userid: this.$store.state.currentUser.id,
+        product_cat_id : this.$route.params.cat_id,
+        product_subcat_id : this.$route.params.subcat_id,
+        product_name: "",
+        product_condition: "",
+        product_desc: "",
+        product_price: "",
+        product_quantity: "",
+        imageData: [],
+        product_shipping_type: "",
+        product_shipping_rate: "",
+        product_shipping_cost: "",
+        product_package_type: "",
+        product_package_weight: "",
+        product_package_length: "",
+        product_package_width: "",
+        product_total: "0.00",
+        testImage: "",
+      },
+      errors: {
+
+      }
+    }
+  },
+  methods: {
+    uploadImage(event) {
+      const file = event.target.files[0];
+      if(file){
+        if(this.num <= 4){
+          this.image.push(file);
+          this.formData.imageData.push(file);
+          this.formData.testImage = file;
+          this.imagePreview.push(URL.createObjectURL(file));
+          this.num++;
+        }else{
+          console.log('max 4');
+        }
+      }
+    },
+    imageUploadHandler(){
+      const fd = new FormData();
+      if(this.image.length == 1){
+        fd.append('product_image1', this.image[0]);
+      }else if(this.image.length == 2){
+        fd.append('product_image1', this.image[0]);
+        fd.append('product_image2', this.image[1]);
+      }else if(this.image.length == 3){
+        fd.append('product_image1', this.image[0]);
+        fd.append('product_image2', this.image[1]);
+        fd.append('product_image3', this.image[2]);
+      }else if(this.image.length == 4){
+        fd.append('product_image1', this.image[0]);
+        fd.append('product_image2', this.image[1]);
+        fd.append('product_image3', this.image[2]);
+        fd.append('product_image4', this.image[3]);
+      }
+
+      let config = {
+        header : {
+          'Content-Type' : 'image/jpeg',
+          'Access-Control-Allow-Origin': '*'
+        }
+      }
+
+      fd.append('id', this.tableId);
+
+      User.upload(fd, config).then(res => {
+        console.log(res);
+      }).catch(err => {
+        console.log(err);
+      });
+    },
+    createListing(){
+      if(this.image.length >= 1){
+        const  formData2 = new FormData(this.$refs.myForm); 
+               formData2.append('product_subcat', this.formData.product_subcat); 
+               formData2.append('product_catname', this.formData.product_catname);
+               formData2.append('product_userid', this.formData.product_userid);
+               formData2.append('product_cat_id', this.formData.product_cat_id);  
+               formData2.append('product_subcat_id', this.formData.product_subcat_id); 
+               formData2.append('product_name', this.formData.product_name);  
+               formData2.append('product_condition', this.formData.product_condition);
+               formData2.append('product_desc', this.formData.product_desc); 
+               formData2.append('product_price', this.formData.product_price);
+               formData2.append('product_quantity', this.formData.product_quantity);
+               formData2.append('product_shipping_type', this.formData.product_shipping_type);
+               formData2.append('product_shipping_rate', this.formData.product_shipping_rate);
+               formData2.append('product_shipping_cost', this.formData.product_shipping_cost);
+               formData2.append('product_package_type', this.formData.product_package_type);
+               formData2.append('product_package_weight', this.formData.product_package_weight);
+               formData2.append('product_package_length', this.formData.product_package_length);
+               formData2.append('product_package_width', this.formData.product_package_width);
+               formData2.append('product_total', this.formData.product_total);
+               $.each(this.image, function (key, image) {
+                  formData2.append(`images[${key}]`, image)
+                })
+           
+          User.createlisting(formData2,{
+            headers: { 'Content-Type': "multipart/form-data; charset=utf-8; boundary=" + Math.random().toString().substr(2)}
+            }).then(res =>{
+            this.errors = {};
+            console.log(res.data);
+            this.tableId = res.data.id;
+            this.$router.push("/listings");
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      })
+      }else{
+        console.log('no image');
+      }
+      
+      },
+    conditionOption(event){
+      this.formData.product_condition = event.target.value;
+      console.log(this.formData);
+    },
+    shippingtypeOption(event){
+      this.formData.product_shipping_type = event.target.value;
+    },
+    shippingRateOption(event){
+      this.formData.product_shipping_rate = event.target.value;
+    },
+    packageTypeOption(event){
+      this.formData.product_package_type = event.target.value;
+    },
+    errorStyle(err){
+      if(err){
+        return {
+          color: 'red',
+          fontSize: '12px'
+        }
+      }
+    }
+  },
+  computed: {
+    product_total(){
+      return this.formData.product_total = this.formData.product_price + this.formData.product_shipping_cost;
+    }
+  }
+}
+</script>

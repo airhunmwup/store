@@ -20,6 +20,7 @@ export const store = new Vuex.Store({
         setCategoryList: [],
         setSubCategoryList: [],
         mylistings: '',
+        myRecentViews: [],
     },
     getters: {
         isLoggedIn: state => {
@@ -150,6 +151,10 @@ export const store = new Vuex.Store({
         },
         getlistings: (state, payload) => {
             state.mylistings = payload;
+        },
+        getRecentViews: (state, payload) => {
+            state.myRecentViews = payload;
+            console.log(state.myRecentViews);
         }
     },
     actions: {
@@ -195,6 +200,7 @@ export const store = new Vuex.Store({
                   console.log(response.data.id);
                   context.dispatch('getuser', response.data.id);
                   context.dispatch('getlistings', response.data.id);
+                  context.dispatch('getRecentViews', response.data.id);
                 }).catch((errors) => {
                   console.log(errors);
                 });
@@ -263,6 +269,21 @@ export const store = new Vuex.Store({
             }).catch(error => {
                 console.log(error);
             });
+        },
+        getRecentViews: (context, payload) => {
+            User.getRecentViews(payload).then(response => {
+                console.log(response);
+                context.commit('getRecentViews', response.data);
+                
+            }).catch(error => {
+        if (!error.response) {
+            // network error
+            console.log('Error: Network Error');
+        } else {
+
+            console.log(error.response.data.message);
+        }
+      });
         }
 
     }

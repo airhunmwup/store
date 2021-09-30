@@ -3,13 +3,27 @@
   <div class="container">
 <nav aria-label="breadcrumb">
   <ol class="breadcrumb text-xs">
-    <li class="breadcrumb-item text-primary"><a href="#">Your Account</a></li>
-    <li class="breadcrumb-item text-primary"><a href="#">Sellers hub</a></li>
+        <li class="breadcrumb-item text-primary"> <router-link
+                            to="/account"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Your Account</router-link>
+        </li>
+        <li class="breadcrumb-item text-primary" aria-current="page"> <router-link
+                            to="/Overview"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >
+          Sellers hub</router-link>
+        </li>
     <li class="breadcrumb-item active" aria-current="page">Your Payout</li>
   </ol>
 </nav>
 
-        <div class="justify-content-center row pt-4 pb-4">
+        <div class="justify-center row pt-4 pb-4">
             
 
           <div class="col-sm-12 col-lg-12 col-md-12 product-container mb-4">

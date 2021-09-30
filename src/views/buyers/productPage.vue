@@ -45,7 +45,7 @@
     <p class="text m-1 text-dark h5 font-weight-bold font-weight-normal">
         {{ subcat }}
     </p>
-    <select class="select-title mr-4 text-center text-xs" @change="sort_by($event)">
+    <select class=" mr-4 text-center text-xs" @change="sort_by($event)">
                                 <option value="0">Sort by</option>
                                 <option value="1">Name, A to Z</option>
                                 <option value="2">Name, Z to A</option>
@@ -83,162 +83,6 @@
                           text-dark
                         "
                       >
-                        <!--sort section-->
-
-                        <div
-                          class="subCategory collapse"
-                          id="sort"
-                          aria-expanded="true"
-                          role="status"
-                        >
-                          <div class="cateTitle">
-                            <div class="row product-container">
-                              <div
-                                class="
-                                  thumbnail-container
-                                  pb-3
-                                  col-6 col-sm-6 col-md-4 col-lg-3
-                                "
-                              >
-                                <div class="content">
-                                  <div class="new-item-content">
-                                    <h3 class="title-product"><b></b></h3>
-                                    <ul class="scroll-product">
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" checked />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#"> Recommended </a>
-                                      </li>
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Price</b> - lowest first
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Price</b> - Highest first
-                                        </a>
-                                      </li>
-
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Year</b> - Newest first
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Year</b> - Oldest first
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="
-                                  thumbnail-container
-                                  pb-3
-                                  col-6 col-sm-6 col-md-4 col-lg-4
-                                "
-                              >
-                                <div class="content">
-                                  <div class="new-item-content">
-                                    <h3 class="title-product"><b></b></h3>
-                                    <ul class="scroll-product">
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Distance</b> - lowest first
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Distance</b> - Nearest first
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Date listed</b> - Newest first
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Date listed</b> - Oldest first
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                              <div
-                                class="
-                                  thumbnail-container
-                                  pb-3
-                                  col-6 col-sm-6 col-md-4 col-lg-4
-                                "
-                              >
-                                <div class="content">
-                                  <div class="new-item-content">
-                                    <h3 class="title-product"><b></b></h3>
-                                    <ul class="scroll-product">
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Mileage</b> - lowest first
-                                        </a>
-                                      </li>
-                                      <li>
-                                        <label class="check">
-                                          <input type="checkbox" />
-                                          <span class="checkmark"></span>
-                                        </label>
-                                        <a href="#">
-                                          <b> Mileage</b> - Highest first
-                                        </a>
-                                      </li>
-                                    </ul>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
                         <!--filter section-->
                         <div
                           class="pt-2 collapse"
@@ -246,20 +90,20 @@
                           aria-expanded="true"
                           role="status"
                         >
-                            <div class="row product-container">
+                            <div class="row product-container border-b">
   <div class="row">
     <div class="col-12 col-md-4 row">
-    <label for="inputminprice" class="m-1 font-weight-bold">Price</label>
+    <label for="inputminprice" class="m-1 font-weight-bold text-xs">Price</label>
   <div class="col-5">
-    <input type="number" class="form-control m-1" placeholder="min">
+    <input type="number" class="form-control m-1 text-xs" placeholder="min">
   </div>
   <div class="col-5">
-    <input type="number" class="form-control m-1" placeholder="max">
+    <input type="number" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
     <div class="col-12 col-md-4">
-    <label for="inputcondition" class="m-1 font-weight-bold">Items condition</label>
-    <select type="number" id="inputcondition" class="form-control m-1 col-5" placeholder="max">
+    <label for="inputcondition" class="m-1 font-weight-bold text-xs">Items condition</label>
+    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
       <option>Any</option>
       <option>New</option>
       <option>Used</option>
@@ -284,7 +128,7 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                             >
-                                <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
+                                <div v-for="img in listing.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:200px; width: 100%;" v-bind:data-id="img.id" /></div>
                             </router-link>
                             <div class="card-body">
                                 <p class="text-dark text-sm">{{ listing.product_name }}</p>
@@ -315,7 +159,7 @@
 <script>
 
 import User from "../../apis/User";
-
+import Constants from "../../common/constants";
 export default {
   name: "landingPage",
   data() {
@@ -324,6 +168,7 @@ export default {
       categoryList: [],
       newListings:[],
       subcat: '',
+      API_BASE_URL: Constants.API_BASE_URL,
     };
   },
   methods: {

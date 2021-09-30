@@ -1,13 +1,13 @@
 <template>
   <!-- main content -->
   <div class="justify-content-center">
+  <div class="justify-content-center">
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left"></div>
     </div>
         <div class="row justify-center text-sm" >
 
-<!--recently viewed-->
-                <div class="row col-sm-12 p-3 col-lg-6 col-md-6">
+                <div class="row col-sm-12 p-2 col-lg-6 col-md-6">
                   <span class="text m-4 text-dark h4 font-weight-bold font-weight-normal">
                   Sign in & security preference
                   </span>
@@ -109,8 +109,9 @@
         </div>
       </div>
 
-      <!-- end col-md-9-1 -->
     </div>
+
+  </div>
 
   </div>
 </template>

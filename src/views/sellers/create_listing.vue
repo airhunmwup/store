@@ -4,45 +4,47 @@
 
     <!--All-Orders-->
 
-    <div class="pb-5">
-    <form ref="myForm" enctype="multipart/form-data">
-      <div class="p-3">
-        <span class="text h5 font-weight-bold font-weight-normal">
-          ADD new listing
-        </span>
-      </div>
-      <div class="card-body">
-        <div class="row justify-content-center">
-          <div class="row text-sm">
-            <div class="col-12 col-lg-10 p-2">
-              <label class="font-weight-bold">Category</label>
+        <div class="row justify-center text-sm" >
+
+<!--recently viewed-->
+                <div class="row col-sm-12 col-lg-6 col-md-6">
+                  <span class="text p-4 text-dark h4 font-weight-bold">
+          New Listings
+                  </span>
+                  <div class="" >
+                    <div class="row g-3 align-items-center">
+  <div class="col-auto">
+    <label for="inputPassword6" class="col-form-label">Categories</label>
+  </div>
+  <div class="col-auto">
               <router-link
                 to="/addcategory"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="Select category"
               >
-                <p class="ml-4 btn btn-sm border btn-light">
+                <p class="btn btn-sm border btn-light">
                   <span class="fa fa-angle-double-right rounded"></span></p
               ></router-link>
-              <p class="ml-4 btn">{{cat_name}} , {{category}}</p>
-              <span style="color: red; font-size: 12px;" v-text="errors.product_subcat"></span>
-            </div>
-            <div class="col-12 p-2">
+  </div>
+  <div class="col-auto">
+              <p class="text-sm underline">{{cat_name}} , {{category}}</p>
+              <span class="text-xs" v-text="errors.product_subcat"></span>
+  </div>
+  <div class="col-12">
               <div class="form-group">
-                <label class="font-weight-bold">Add Photos</label>
-                <p class="text-xs">(Add a maximum of 4 images in .png, .jpg format only.)</p>
-                <div class="col-12 col-md-8 shadow-inner rounded">
+                <div class="p-2 shadow-inner rounded">
                   <div class="pt-3 pb-3">
-                    <input type="file" class="rounded btn"
+                    <input type="file" class="rounded btn-sm btn"
                     style="display:none"
                     @change="uploadImage($event)"
                     ref="imageupload"/>
                     <a
-                      class="btn btn-lg btn-light border rounded-circle"
+                      class="btn btn-sm btn-light border rounded"
                       @click="$refs.imageupload.click()">
                       <span class="fa fa-plus"></span>
                     </a>
+                <span class="font-weight-bold"> Add Photos</span>
                     <span style="color: red; font-size: 12px;" v-text="errors.product_image1"></span>
                   </div>
                   <div class="row">
@@ -57,7 +59,9 @@
                   >Delete</button>
                 </div> -->
               </div>
+              <p class="text-xs">Photo: 0/4 . Choose your listing's main photo first.</p>
             </div>
+  </div>
             <div class="col-12 col-lg-6">
               <div class="form-group">
                 <label class="font-weight-bold">Title</label>
@@ -71,7 +75,6 @@
                 <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
                 <select
                   class="
-                    col-lg-4 col-md-6 col-sm-12
                     form-control
                     text-sm
                     select-auto
@@ -91,7 +94,7 @@
                 </select>
               </div>
             </div>
-            <div class="col-12 col-md-6">
+            <div class="col-12">
               <div class="form-group">
                 <label class="font-weight-bold">Description</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_desc"></span>
@@ -103,7 +106,7 @@
                 ></textarea>
               </div>
             </div>
-            <div class="col-4 col-lg-2">
+            <div class="col-8 col-lg-3">
               <div class="form-group">
                 <label class="font-weight-bold">Price</label>
                 <div class="input-group input-group-sm mb-3">
@@ -112,16 +115,19 @@
                     :style="errorStyle(errors.product_price)"
                       >£</span
                     >
-                  </div> 
-                  <input type="number" class="form-control" placeholder="0.00" required name="price" min="0" value="0" step="0.01" title="Currency" pattern="^\d+(?:\.\d{1,2})?$" onblur="
-this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this.value)?'inherit':'red'
-"
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    aria-label="Small"
+                    placeholder="0.00"
                     aria-describedby="inputGroup-sizing-sm"
-                    v-model.number="formData.product_price">
+                    v-model.number="formData.product_price"
+                  />
                 </div>
               </div>
             </div>
-            <div class="col-4 col-lg-2">
+            <div class="col-8 col-lg-3">
               <div class="form-group">
                 <label class="font-weight-bold">Quantity</label>
                 <div class="input-group input-group-sm mb-3">
@@ -142,22 +148,15 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
                 </div>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
       <div class="card-header p-2 col-lg-12 col-md-12 col-sm-12">
         <div class="p-2">
-          <p class="h6 text-dark">Shipping details</p>
+          <p class="h6 text-dark">Packaging and shipping</p>
         </div>
       </div>
-      <div class="card-body text-sm">
-        <div class="row p-2 col-lg-12 col-md-12 col-sm-12">
-          <div class="col-lg-3 col-md-3 col-sm-12">
+        <div class="row mt-2">
+          <div class="col">
             <span style="color: red; font-size: 12px;" v-text="errors.product_shipping_type"></span>
             <label class="font-weight-bold">Domestic shipping</label>
-          </div>
-          <div class="row col-lg-9 col-md-9 col-sm-12">
-            <div class="col-lg-8 col-md-8 col-sm-12">
               <select
                 class="border-2 form-control text-sm select-auto"
                 type="text"
@@ -175,8 +174,8 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
                 <option value="No shipping: Local pickup only">
                   No shipping: Local pickup only</option>
               </select>
-            </div>
-            <div class="pt-3 row col-lg-6 col-12">
+          </div>
+            <div class="row col-lg-6 col-12">
               <label class="font-weight-bold">Shipping rate table    
                 <span style="color: red; font-size: 12px;" v-text="errors.product_shipping_rate"></span>
               </label>
@@ -221,7 +220,7 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
                   <option value="Freight (Flat rate)">Freight (Flat rate)</option>
                 </select>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="col-lg-8 col-md-4 col-sm-4">
                 <div class="form-group">
                   <label class="font-weight-bold">
                   </label>
@@ -244,15 +243,11 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
                 </div>
               </div>
             </div>
-          </div>
         </div>
         <div class="row">
-          <div class="col-lg-3 col-md-3">
             <label class="font-weight-bold mb-2"
               >Package weight & dimensions</label
             >
-          </div>
-          <div class="row col-lg-8 col-md-8">
             <div class="col-lg-6 col-md-6 col-sm-6">
               <label class="font-weight-bold">Type</label>
               <span style="color: red; font-size: 12px;" v-text="errors.product_package_type"></span>
@@ -272,27 +267,7 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
             </div>
             <div class="row">
               <label class="font-weight-bold">Dimensions</label>
-              <div class="col-lg-4 col-md-4 col-sm-8">
-                <div class="form-group">
-                  <div class="input-group input-group-sm mb-3">
-                    <div class="input-group-prepend">
-                      <span class="input-group-text text-xs" id="inputGroup-sizing-md"
-                      :style="errorStyle(errors.product_package_weight)"
-                        >weight (kg)</span
-                      >
-                    </div>
-                    <input
-                      type="number"
-                      class="form-control"
-                      aria-label="Small"
-                      placeholder="0.00"
-                      aria-describedby="inputGroup-sizing-sm"
-                      v-model.number="formData.product_package_weight"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-8">
+              <div class="col-8 col-lg-3">
                 <div class="form-group">
                   <div class="input-group input-group-sm mb-3">
                     <div class="input-group-prepend">
@@ -312,7 +287,7 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
                   </div>
                 </div>
               </div>
-              <div class="col-lg-4 col-md-4 col-sm-8">
+              <div class="col-8 col-lg-3">
                 <div class="form-group">
                   <div class="input-group input-group-sm mb-3">
                     <div class="input-group-prepend">
@@ -332,7 +307,58 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
                 </div>
               </div>
             </div>
-          </div>
+            <div class="row">
+              <label class="font-weight-bold">Weight</label>
+              <div class="col-8 col-lg-3">
+                <div class="form-group">
+                  <div class="input-group input-group-sm mb-3">
+                    <div class="input-group-prepend">
+                      <span class="input-group-text" id="inputGroup-sizing-md"
+                      :style="errorStyle(errors.product_package_weight)"
+                        >kg</span
+                      >
+                    </div>
+                    <input
+                      type="number"
+                      class="form-control"
+                      aria-label="Small"
+                      placeholder="0.00"
+                      aria-describedby="inputGroup-sizing-sm"
+                      v-model.number="formData.product_package_weight"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      <div class="p-2 col-lg-12 col-md-12 col-sm-12">
+        <div class="p-2">
+          <p class="h6 text-dark">Returns Policy</p>
+            <span class="mb-2 text-xs">If the buyer wants to return an item to you. <br>
+              If the item is damaged, faulty, or doesn’t match the listing description, they’re covered by the REJEE Stores Money Back Guarantee, and you’ll have to refund them or replace the item, even if you don’t offer returns. If they’ve changed their mind, your options depend on your 
+                          <router-link
+                            to="/managing returns missing items and refunds for sellers"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >return policy.</router-link>
+            </span>
+        </div>
+        <div class="row">
+            <div class="col-12 col-lg-6">
+              <span style="color: red; font-size: 12px;"></span>
+              <select
+                class="form-control text-sm select-auto border"
+                type="text"
+                name=""
+              >
+                <option value="">Select return option</option>
+                <option value="Letter">7 days</option>
+                <option value="Large Envelope">14 days</option>
+                <option value="Package(or thick envelope)">30 days</option>
+                <option value="No shipping: Local pickup only">No returns</option>
+              </select>
+            </div>
         </div>
       </div>
       <div class="card-footer text-sm">
@@ -341,13 +367,24 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
             <p class="pt-3 h6 text-dark">Total:</p>
           </div>
           <div class="col-6 col-lg-10">
-            <p class="pt-3 h6 text-primary">£{{product_total ? product_total : "0.00"}}</p>
+            <p class="pt-3 h6 text-dark">£{{product_total ? product_total : "0.00"}}</p>
           </div>
         </div>
       </div>
-    </div>
+      <div class="card-header p-2 col-lg-12 col-md-12 col-sm-12">
+        <div class="p-2">
+            <span class="mb-2 text-xs">By creating this listing, you confirm that it complies with REJEE Stores <router-link
+                            to="/User Privacy"
+                            data-toggle="collapse"
+                            class="text-primary underline"
+                            data-target=".navbar-collapse"
+                            >User policies</router-link> and all applicable laws.
+            </span>
+        </div>
+      </div>
 
-    <div class="row m-4">
+</div>
+    <div class="row">
       <div class="col-lg-6 col-12 p-2">
         <button type="button" class="form-control btn-sm btn btn-light border">
           Cancel
@@ -363,9 +400,12 @@ this.parentNode.parentNode.style.backgroundColor=/^\d+(?:\.\d{1,2})?$/.test(this
         </button>
       </div>
     </div>
-    </form>
-    <!-- end col-md-9-1 -->
-  </div>
+        </div>
+      </div>
+
+          <div class="pb-5"></div>
+      <!-- end col-md-9-1 -->
+    </div>
   </div>
 </template>
 <script>
@@ -392,6 +432,7 @@ export default {
         product_condition: "",
         product_desc: "",
         product_price: "",
+        product_quantity: "",
         imageData: [],
         product_shipping_type: "",
         product_shipping_rate: "",
@@ -401,8 +442,10 @@ export default {
         product_package_length: "",
         product_package_width: "",
         product_total: "0.00",
+        testImage: "",
       },
       errors: {
+
       }
     }
   },
@@ -412,6 +455,8 @@ export default {
       if(file){
         if(this.num <= 4){
           this.image.push(file);
+          this.formData.imageData.push(file);
+          this.formData.testImage = file;
           this.imagePreview.push(URL.createObjectURL(file));
           this.num++;
         }else{
@@ -436,13 +481,16 @@ export default {
         fd.append('product_image3', this.image[2]);
         fd.append('product_image4', this.image[3]);
       }
+
       let config = {
         header : {
           'Content-Type' : 'image/jpeg',
           'Access-Control-Allow-Origin': '*'
         }
       }
+
       fd.append('id', this.tableId);
+
       User.upload(fd, config).then(res => {
         console.log(res);
       }).catch(err => {
@@ -451,18 +499,43 @@ export default {
     },
     createListing(){
       if(this.image.length >= 1){
-          User.createlisting(this.formData).then(res =>{
+        const  formData2 = new FormData(this.$refs.myForm); 
+               formData2.append('product_subcat', this.formData.product_subcat); 
+               formData2.append('product_catname', this.formData.product_catname);
+               formData2.append('product_userid', this.formData.product_userid);
+               formData2.append('product_cat_id', this.formData.product_cat_id);  
+               formData2.append('product_subcat_id', this.formData.product_subcat_id); 
+               formData2.append('product_name', this.formData.product_name);  
+               formData2.append('product_condition', this.formData.product_condition);
+               formData2.append('product_desc', this.formData.product_desc); 
+               formData2.append('product_price', this.formData.product_price);
+               formData2.append('product_quantity', this.formData.product_quantity);
+               formData2.append('product_shipping_type', this.formData.product_shipping_type);
+               formData2.append('product_shipping_rate', this.formData.product_shipping_rate);
+               formData2.append('product_shipping_cost', this.formData.product_shipping_cost);
+               formData2.append('product_package_type', this.formData.product_package_type);
+               formData2.append('product_package_weight', this.formData.product_package_weight);
+               formData2.append('product_package_length', this.formData.product_package_length);
+               formData2.append('product_package_width', this.formData.product_package_width);
+               formData2.append('product_total', this.formData.product_total);
+               $.each(this.image, function (key, image) {
+                  formData2.append(`images[${key}]`, image)
+                })
+           
+          User.createlisting(formData2,{
+            headers: { 'Content-Type': "multipart/form-data; charset=utf-8; boundary=" + Math.random().toString().substr(2)}
+            }).then(res =>{
             this.errors = {};
             console.log(res.data);
             this.tableId = res.data.id;
-            this.imageUploadHandler();
+            this.$router.push("/listings");
           }).catch(error => {
         if (!error.response) {
             // network error
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-            document.getElementById("alat").innerHTML = error.response.data.message;
+             console.log(error.response.data.message);
         }
       })
       }else{

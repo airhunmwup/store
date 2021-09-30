@@ -17,7 +17,7 @@
           <div class="card-body">
             <div class="row">
               <div class="col-12 col-lg-4">
-                <img class="" :src="API_BASE_URL + cart['product_image1']" />
+                <img v-bind:src="API_BASE_URL + cart['product_images'][0].product_image_path" class="card-img-top" alt="Product" style="height:200px; width: 100%;"  />
               </div>
               <div class="col-12 col-lg-4">
                 <p class="mt-4  m-1 text-lg text-dark font-weight-bold">
@@ -67,7 +67,7 @@
             <div class="row text-sm text-dark">
               <div class="col">Shipping:</div>
               <div class="col text-right">
-                £{{this.$store.state.basket[0].product_shipping_cost}}
+                £{{this.$store.state.basket.product_shipping_cost}}
               </div>
             </div>
             <div class="dropdown-divider"></div>

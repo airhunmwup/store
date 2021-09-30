@@ -28,7 +28,7 @@
                 <li class="col" v-for="num in nums" :key="num">
                   <a v-bind:href="'#item' + num" data-toggle="tab">
                     <img
-                      v-bind:src="API_BASE_URL + img['product_image' + num]"
+                      v-bind:src="API_BASE_URL + '0AmYJvycHXsecMqRdtLxCdtP25DDh4dBWvbwV7ec.jpg'"
                       alt="img"
                     />
                   </a>
@@ -480,6 +480,7 @@ export default {
   },
   methods: {
     getProductDetails(pid) {
+console.log(this.API_BASE_URL);
       User.product_detail_page(pid)
         .then((response) => {
           this.productDetails = response.data;
