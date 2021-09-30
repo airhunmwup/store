@@ -18,6 +18,10 @@ class CreateManageOrdersTable extends Migration
             $table->timestamps();
             $table->integer('user_id')->unsigned();
             $table->string('customername');
+            $table->string('customeraddress');
+            $table->string('customercity');
+            $table->string('customertown');
+            $table->string('customerpostalcode')->nullable();
             $table->string('status')->default('Awaiting Delivery');
             $table->string('price');
             $table->string('sellerid');
