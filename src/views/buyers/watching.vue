@@ -4,7 +4,7 @@
     <nav aria-label="breadcrumb">
     </nav>
     <div class="row pb-4 justify-content-center">
-        <div class="col-10">
+        <div class="col-12 col-lg-10">
       <div class="container pl-2">
         <div class="row">
           <div class="col-lg-6 col-xs-12">
@@ -101,15 +101,16 @@
               :key="list.id"
             >
               <div class="row">
-                <div class="col-4 col-lg-4 pt-4 p-4 img-fluid">
+                <div class="col-6 col-lg-4">
                   <img
                     class=""
-                    style="width: 14rem; height: 100%"
+                    style="width: 100%; height: 100%"
                     :src="API_BASE_URL + list['product_image']"
                   />
                 </div>
-                <div class="col-8 col-lg-5">
-                  <p class="h5 mt-4 mt-5 text-info">
+                <div class="row col-6 pt-2 col-lg-8">
+                <div class="col-12 col-lg-8">
+                  <p class="h5 text-info">
                     {{ list["product_name"] }}
                   </p>
                   <p class="value text-md text-dark font-weight-bold">
@@ -119,8 +120,29 @@
                     {{ list["product_condition"] }}
                   </p>
                 </div>
-                <div class="col-lg-3 col-sm-12">
-                  <div class="p-3">
+                <div class="col-lg-4 col-12">
+                  <div class="mt-2 mb-1 d-md-none d-lg-none">
+                    <button
+                      type="button"
+                      class="btn btn-warning border btn-sm"
+                    >
+                      <i class="fa fa-shopping-cart"></i>
+                    </button>
+                    <button
+                      type="button"
+                      class="
+                        btn btn-light
+                        border
+                        btn-sm
+                        text-dark
+                        underline
+                      "
+                      @click="removeWishlist(list['id'])"
+                    >
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </div>
+                  <div class="p-3 d-xs-none">
                     <p class="text-xs underline p-2">
                       Item added 13 August 2021
                     </p>
@@ -144,6 +166,7 @@
                       Remove
                     </button>
                   </div>
+                </div>
                 </div>
               </div>
             </div>

@@ -1,413 +1,588 @@
 <template>
   <!-- main content -->
-    <div class="container pt-2">
-              <!-- breadcrumb -->
-              <div class="container">
-                  <div class="row">
 
-                    <div class="col-lg-12 col-md-12 col-sm-9">
-                      <p class="text p-3 text-dark h5 font-weight-bold font-weight-normal">
-                    REJEE Properties
-                  </p>
-              <div class="card">
-                  <nav class="navbar navbar-expand-sm navbar-light bg-light">
-  <a class="navbar-brand text-sm font-weight-bold" href="#">For sale</a><a class="navbar-brand text-sm font-weight-bold" href="#">To rent</a>
-</nav>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="navbar-collapse" id="navbarSupportedContent">
+  <section class="justify-content-center">
+    <div class="container">
+      <!-- main content -->
 
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2 m-1" type="search" placeholder="Search area" aria-label="Search">
-    
-  <select class="custom-select m-1" aria-label="Example select with button addon">
-    <option value="">Search radius</option>
-                        <option value="">This area</option>
-                        <option value="">+1 mile</option>
-                        <option value="">+3 miles</option>
-                        <option value="">+5 miles</option>
-                        <option value="">+10 miles</option>
-                        <option value="">+15 miles</option>
-                        <option value="">+20 miles</option>
-                        <option value="">+30 miles</option>
-                        <option value="">+40 miles</option>
-                        </select>
-      
-<select class="custom-select m-1" aria-label="Example select with button addon">
-    <option value="">Property type</option>
-                        <option value="">House</option>
-                        <option value="">Flats</option>
-                        <option value="">Farm/Land</option>
-                        </select>
-  <select class="custom-select m-1" aria-label="Example select with button addon">
-    <option value="">Bedrooms</option>
-                        <option value="">Studio</option>
-                        <option value="">1</option>
-                        <option value="">2</option>
-                        <option value="">3</option>
-                        <option value="">4</option>
-                        <option value="">5</option>
-                        <option value="">6</option>
-                        <option value="">7</option>
-                        <option value="">8</option>
-                        <option value="">9</option>
-                        <option value="">10+</option>
-                        </select>
-                        <div class="dropdown">
-  <button class="btn border bg-white dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-    Price Range
-  </button>
-        <div class="dropdown-menu p-2" aria-labelledby="navbarDropdown">
-          <a class="text-sm">Min</a>
-          <div class="input-group input-group-sm ">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">£</span>
-  </div>
-  <input type="text" class="form-control " placeholder="" aria-describedby="basic-addon1">
-</div>
-          <div class="dropdown-divider"></div>
-          <a class="text-sm">Max</a>
-          <div class="input-group input-group-sm">
-  <div class="input-group-prepend">
-    <span class="input-group-text" id="basic-addon1">£</span>
-  </div>
-  <input type="text" class="form-control " placeholder="" aria-describedby="basic-addon1">
-</div>
-        </div>
-</div>
-      <button class="btn btn-outline-success m-1 " type="submit">Search</button>
-    </form>
-  </div>
-</nav>
-
+      <div class="row justify-content-center pt-3">
+        <div class="product-detail col-xs-12 col-lg-4 col-md-4 col-sm-12">
+          <div class="page-content" id="content">
+            <div class="images-container">
+              <div class="js-qv-mask tab-content">
+                <div
+                  v-bind:id="'item' + num"
+                  class="tab-pane fade"
+                  v-for="num in nums"
+                  :key="num"
+                  v-bind:class="activeImage(num)"
+                >
+                  <img
+                    v-bind:src="API_BASE_URL + img['product_image' + num]"
+                    alt="img"
+                  />
+                </div>
               </div>
-                      <br />
-                      <!-- FEATURED Listings -->
-                      <div class="title-product">
-                        <div class="row">
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
+
+              <ul class="product-tab nav nav-tabs d-flex">
+                <li class="col" v-for="num in nums" :key="num">
+                  <a v-bind:href="'#item' + num" data-toggle="tab">
+                    <img
+                      v-bind:src="API_BASE_URL + '0AmYJvycHXsecMqRdtLxCdtP25DDh4dBWvbwV7ec.jpg'"
+                      alt="img"
+                    />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row col-xs-12 pt-3 col-lg-4 col-md-4 col-sm-12">
+          <p class="lead text-dark mt-4">
+            {{ productDetails.product_name }} For RENT or SELL
+          </p>
+
+          <div class="dropdown-divider"></div>
+
+          <p class="font-weight-bold mt-2 text-sm text-dark">
+            Price:<span class=""> {{ productDetails.product_price }}</span><span class="text-secondary">/month</span>
+          </p>
+
+          <p class="text-sm"><i class="fa fa-map-marker"></i></p>
+
+                    <div class="dropdown-divider"></div>
+          <p class="font-weight-bold text-dark mt-2">Unit details</p>
+  <div class="row pt-2">
+    <div class="col">
+          <p class="text-sm"><i class="fa fa-home"></i></p>
+          <p class="text-sm"><i class="fa fa-car"></i></p>
+          <p class="text-sm"><i class="fa fa-envira"></i></p>
+    </div>
+    <div class="col">
+          <p class="text-sm"><i class="fa fa-hotel"></i></p>
+          <p class="text-sm"><i class="fa fa-s15"></i></p>
+    </div>
   </div>
 
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
 
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
+          <div class="form-group mt-2 p-2">
+            <button
+              class="btn btn-warning btn-sm btn-block"
+              type="submit"
             >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
+              <i class="fa fa-commenting"></i> Message Seller
+            </button>
+            <button
+              @click="addToWatchlist(productDetails['id'])"
+              class="btn btn-secondary btn-sm btn-block"
+              type="submit"
             >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
+              <i class="fa fa-bookmark"></i> Add to watchlist
+            </button>
+          </div>
 
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
+          <div class="">
+            <!--the option below is suppose to show if the category has size, e.g shoes and cloths only sizes available displays-->
+
+            <div class="option has-border d-lg-flex size-color">
+              <div class="size"></div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="col-sm-12 col-lg-4 col-md-4">
+          <div class="mt-2">
+            <div class="text-sm">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link active"
+                    id="home-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#home"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                  >
+                    Description
+                  </button>
+                </li>
+
+                <li class="nav-item" role="presentation">
+                  <button
+                    class="nav-link text-dark"
+                    id="profile-tab"
+                    data-bs-toggle="tab"
+                    data-bs-target="#profile"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                  >
+                    Property Location
+                  </button>
+                </li>
+              </ul>
+
+              <div class="tab-content" id="myTabContent">
                 <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
+                  class="tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
                 >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
+                  <div class="container text-dark">
 
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
+                    <p class="text-md m-2">
+                      description goes here.
+                    </p>
+                    <div class="dropdown-divider"></div>
 
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
+                    <p class="text-md m-2 font-weight-bold">
+                      Sellers Information
+                    </p>
 
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
+                    <div class="row">
+                      <div class="col">
+                        <p class="">Sellers name here</p>
 
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
+                        <p class="mt-2">Sellers description here:</p>
 
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                <div
-                  class=" p-2 col-6 col-sm-6 col-md-3 col-lg-3"
-                >
-            <router-link
-              class=""
-              to="/Product Detail"
-              data-toggle="collapse"
-              data-target=".navbar-collapse"
-              title="Home"
-            >
-            <div class="card" style="width: 11rem;">
-  <img class="card-img-top" src="img/product/22.jpg" alt="Card image cap">
-  <div class="card-body">
-                    <p class="h6 text-dark">Product name</p>
-                    <p class="font-weight-bold h6 text-dark">£149.99</p>
-                    <p class="text-dark">RRP: <del> £350</del></p>
-  </div>
-
-<button type="button" class="border btn btn-sm btn-warning">Add to Cart</button>
-</div>
-            </router-link>
-                </div>
-                        </div>
+                        <p class="text-xs underline text-primary">
+                          See other items from this seller
+                        </p>
                       </div>
-                        <div class="justify-content-center p-4">
-                <nav aria-label="Page navigation example" class="col-12">
-  <ul class="pagination justify-content-center">
-    <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link underline" href="#">1</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
-  </ul>
-</nav>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="container text-dark">
+                    <div class="row mt-2 text-sm">
+                      <div class="col-3">
+                        <p class="text-sm font-weight-bold">Postage:</p>
+                      </div>
+
+                      <div class="col-9 text-xs">
+                        <p class="text-success underline">{{productDetails.product_shipping_rate}}</p>
+
+                        <p>{{productDetails.product_shipping_type}}.</p>
+                        <p><span class="font-weight-bold">Shipping cost:</span> <span class="font-weight-bold"> £{{productDetails.product_shipping_cost}}.</span></p>
+
                       </div>
                     </div>
 
+                    <div class="dropdown-divider"></div>
+
+                    <div class="row text-sm">
+                      <div class="col-3">
+                        <p class="text-sm font-weight-bold">Payment:</p>
+                      </div>
+
+                      <div class="col-9">
+                        <p>Credit/debit card <span class="fa fa-credit-card"></span></p>
+                      </div>
+                    </div>
                   </div>
+                </div>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dropdown-divider"></div>
     </div>
 
+    <section class="appion">
+      <div class="col-12">
+        <p class="h3 text-dark">Similer Items</p>
+
+        <span class="text-dark text-right">
+          <b class=""> see all </b>
+
+          <b class="fa fa-caret-square-o-right"></b>
+        </span>
+      </div>
+
+      <!-- breadcrumb -->
+
+      <div class="ul gs full">
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="p-2">
+              <div class="card" style="width: 11rem">
+                <img
+                  class="card-img-top"
+                  src="img/product/1.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="h6 text-dark">Product name</p>
+
+                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+
+                  <p class="text-dark">RRP: <del> £350</del></p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="p-2">
+              <div class="card" style="width: 11rem">
+                <img
+                  class="card-img-top"
+                  src="img/product/9.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="h6 text-dark">Product name</p>
+
+                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+
+                  <p class="text-dark">RRP: <del> £350</del></p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="p-2">
+              <div class="card" style="width: 11rem">
+                <img
+                  class="card-img-top"
+                  src="img/product/7.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="h6 text-dark">Product name</p>
+
+                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+
+                  <p class="text-dark">RRP: <del> £350</del></p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="p-2">
+              <div class="card" style="width: 11rem">
+                <img
+                  class="card-img-top"
+                  src="img/product/10.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="h6 text-dark">Product name</p>
+
+                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+
+                  <p class="text-dark">RRP: <del> £350</del></p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="p-2">
+              <div class="card" style="width: 11rem">
+                <img
+                  class="card-img-top"
+                  src="img/product/8.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="h6 text-dark">Product name</p>
+
+                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+
+                  <p class="text-dark">RRP: <del> £350</del></p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="p-2">
+              <div class="card" style="width: 11rem">
+                <img
+                  class="card-img-top"
+                  src="img/product/13.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="h6 text-dark">Product name</p>
+
+                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+
+                  <p class="text-dark">RRP: <del> £350</del></p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+
+        <li class="li itemi">
+          <router-link
+            class=""
+            to="/Product Detail"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="Home"
+          >
+            <div class="p-2">
+              <div class="card" style="width: 11rem">
+                <img
+                  class="card-img-top"
+                  src="img/product/11.jpg"
+                  alt="Card image cap"
+                />
+
+                <div class="card-body">
+                  <p class="h6 text-dark">Product name</p>
+
+                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+
+                  <p class="text-dark">RRP: <del> £350</del></p>
+                </div>
+              </div>
+            </div>
+          </router-link>
+        </li>
+      </div>
+    </section>
+  </section>
 </template>
 
 <script>
-
 import User from "../../apis/User";
+import Constants from "../../common/constants";
 
 export default {
-  name: "landingPage",
+  name: "productDetails",
   data() {
     return {
-      categoryList: [],
-      newListings:[]
+      productDetails: [],
+      p_id: this.$store.state.product_detail_id,
+      img: [],
+      nums: 4,
+      order_qnty: 1,
+      watchCount: 0,
+      API_BASE_URL: Constants.API_BASE_URL,
     };
   },
+  computed: {
+    basket: function () {
+      return this.$store.state.basket;
+    },
+  },
   methods: {
-    getCategoryList() {
-      User.getCategoryList().then(response => {
-      this.categoryList = response.data;
-    }).catch((errors) => {
-        console.log(errors);
-        console.log("cat list info api call error");
-      });
+    getProductDetails(pid) {
+console.log(this.API_BASE_URL);
+      User.product_detail_page(pid)
+        .then((response) => {
+          this.productDetails = response.data;
+          const img = Object.keys(response.data);
+          let index = 1;
+          img.map((key) => {
+            if (key == `product_image${index}`) {
+              this.img[key] = response.data[key];
+              index++;
+            }
+          });
+          console.log(this.productDetails);
+          this.saveRecentView(this.$store.state.product_detail_id);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+      console.log(this.productDetails);
     },
-    getNewListings() {
-      User.getNewListings().then(response => {
-      this.newListings = response.data;
-    }).catch((errors) => {
-        console.log(errors);
-        console.log("new listing api call error");
-      });
+    saveRecentView(pid) {
+      const data = {
+        product_id: pid,
+        user_id: this.$store.state.currentUser.id,
+      };
+      console.log(pid);
+      User.saveRecentView(data)
+        .then((response) => {         
+          console.log(response);
+        })
+        .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            console.log(error.response.data.message);
+        }
+      })
+      
     },
-    product_detail_link(event){
-      var id = event.target.getAttribute("data-id");
-      this.$store.dispatch("product_detail_page", id);
-    }
+    getImages() {
+      const img = Object.keys(this.productDetails);
+      img.map((key) => {
+        this.img[key] = this.getProductDetails;
+      });
+      console.log(this.img);
+    },
+    activeImage(id) {
+      if (id == 1) {
+        return "active in show";
+      } else {
+        return "";
+      }
+    },
+    findBasket(index) {
+      return index.id == this.productDetails.id;
+    },
+    addToBasket() {
+      if (this.$store.state.basket.length == 0) {
+        console.log(this.order_qnty);
+        this.productDetails["qnty"] = this.order_qnty;
+        this.productDetails["qnty_price"] =
+          this.productDetails.product_price * this.order_qnty;
+        this.$store.dispatch("addToBasket", this.productDetails);
+      } else if (this.$store.state.basket.length > 0) {
+        console.log(this.order_qnty);
+        var basketStore = this.$store.state.basket;
+        var updateBasket = basketStore.find(this.findBasket);
+        //if product exists in basket and qnty is not equals to the qnty in the basket
+        if (
+          basketStore.findIndex(this.findBasket) >= 0 &&
+          updateBasket.qnty != this.order_qnty
+        ) {
+          this.productDetails["qnty"] = this.order_qnty;
+          this.productDetails["qnty_price"] =
+            this.productDetails.product_price * this.order_qnty;
+          this.$store.dispatch("updateBasket", this.productDetails);
+          //if product does not exist in basket
+        } else if (basketStore.findIndex(this.findBasket) == -1) {
+          this.productDetails["qnty"] = this.order_qnty;
+          this.productDetails["qnty_price"] =
+            this.productDetails.product_price * this.order_qnty;
+          this.$store.dispatch("addToBasket", this.productDetails);
+        } else if (basketStore.findIndex(this.findBasket) >= 0) {
+          console.log("Already Added");
+        }
+      }
+    },
+    addToWatchlist(product_id) {
+      var data = {
+        product_name: this.productDetails.product_name,
+        product_image: this.productDetails.product_image1,
+        product_price: this.productDetails.product_price,
+        product_condition: this.productDetails.product_condition,
+        user_id: this.$store.state.currentUser.id,
+      };
 
+      const checkWishlist = {
+        product_name: this.productDetails.product_name,
+        user_id: this.$store.state.currentUser.id,
+      };
+
+      if (this.$store.state.token) {
+        User.checkwishlist(checkWishlist)
+          .then((response) => {
+            if (response.data.status == 1) {
+              console.log("Already in wishlist");
+            } else if (response.data.status == 0) {
+              User.addToWishlist(data)
+                .then((response) => {
+                  console.log("Added to wish list");
+                  this.$store.dispatch("getuser", data.user_id);
+                })
+                .catch((error) => {
+                  console.log(error);
+                });
+            }
+          })
+          .catch((error) => {
+            console.log(error);
+          });
+      } else if (!this.$store.state.token) {
+        this.$router.push("/login");
+        console.log(product_id);
+      }
+    },
+    watchCounter() {
+      const data = { product_name: this.productDetails.product_name };
+      console.log(this.productDetails.product_name);
+      return User.watchersCounter(data)
+        .then((response) => {
+          this.watchCount = response.data.status;
+          console.log(this.watchCount);
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
   },
   mounted() {
-    this.getCategoryList();
-    this.getNewListings();
-    console.log(this.categoryList);
+    this.getProductDetails(this.p_id);
+    this.watchCounter();
   },
-}
+};
 </script>

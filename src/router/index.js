@@ -12,6 +12,7 @@ import userLogin from '../views/buyers/userLogin.vue'
 import userCategoriePage from '../views/buyers/userCategoriePage.vue'
 import productPage from '../views/buyers/productPage.vue'
 import propertyPage from '../views/buyers/propertyPage.vue'
+import vehiclePage from '../views/buyers/vehiclePage.vue'
 import productDetails from '../views/buyers/productDetails.vue'
 import productDetails_1 from '../views/buyers/productDetails_1.vue'
 import checkOutPage from '../views/buyers/checkOutPage.vue'
@@ -50,6 +51,7 @@ import orders_page from '../views/sellers/orders_page.vue'
 import listings_page from '../views/sellers/listings.vue'
 import create_listing from '../views/sellers/create_listing.vue'
 import property_listing from '../views/sellers/Property_listing.vue'
+import vehicle_listing from '../views/sellers/vehicle_listing.vue'
 import add_category from '../views/sellers/add_category.vue'
 import add_category3 from '../views/sellers/add_category3.vue'
 import add_subcategory from '../views/sellers/add_subcategory.vue'
@@ -156,12 +158,23 @@ const routes = [{
         component: property_listing,
     },
 
+    {
+        path: '/vehiclelisting',
+        name: 'vehiclelisting',
+        component: vehicle_listing,
+    },
    {
         path: '/propertyPage',
         name: 'propertyPage',
         component: propertyPage,
         props: true,
     },
+    {
+         path: '/vehiclepage',
+         name: 'vehiclepage',
+         component: vehiclePage,
+         props: true,
+     },
     {
         path: '/processorder',
         name: 'processorder',

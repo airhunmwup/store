@@ -9,7 +9,7 @@
 <!--recently viewed-->
                 <div class="row col-sm-12 col-lg-6 col-md-6">
                   <span class="text p-4 text-dark h4 font-weight-bold">
-                   New Property Listing
+                   New vehicle Listing
                   </span>
                   <div class="" >
                     <div class="row g-3 align-items-center">
@@ -62,9 +62,9 @@
               <p class="text-xs">Photo: 0/4 . Choose your listing's main photo first.</p>
             </div>
   </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-3">
               <div class="form-group">
-                <label class="font-weight-bold">Property for sale or rent</label>
+                <label class="font-weight-bold">Year</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
                 <select
                   class="
@@ -77,44 +77,75 @@
                   name=""
                 >
                   <option value=""></option>
-                  <option value="New">For Sale</option>
-                  <option value="Seller refurbished">For Rent</option>
+                  <option value="2022">2022</option>
+                  <option value="2021">2021</option>
+                  <option value="2020">2020</option>
+                  <option value="2019">2019</option>
+                  <option value="2018">2018</option>
+                  <option value="2017">2017</option>
+                  <option value="2016">2016</option>
+                  <option value="2015">2015</option>
+                  <option value="2014">2014</option>
+                  <option value="2013">2013</option>
+                  <option value="2012">2012</option>
+                  <option value="2011">2011</option>
+                  <option value="2010">2010</option>
+                  <option value="2009">2009</option>
+                  <option value="2008">2008</option>
+                  <option value="2007">2007</option>
+                  <option value="2006">2006</option>
+                  <option value="2005">2005</option>
+                  <option value="2004">2004</option>
+                  <option value="2003">2003</option>
+                  <option value="2002">2002</option>
+                  <option value="2001">2001</option>
+                  <option value="2000">2000</option>
+                  <option value="1999">1999</option>
+                  <option value="1998">1998</option>
+                  <option value="1997">1997</option>
+                  <option value="1996">1996</option>
+                  <option value="1995">1995</option>
+                  <option value="1994">1994</option>
+                  <option value="1993">1993</option>
+                  <option value="1992">1992</option>
+                  <option value="1991">1991</option>
+                  <option value="1990">1990</option>
+                  <option value="1989">1989</option>
+                  <option value="1988">1988</option>
+                  <option value="1987">1987</option>
+                  <option value="1986">1986</option>
+                  <option value="1985">1985</option>
+                  <option value="1984">1984</option>
+                  <option value="1983">1983</option>
+                  <option value="1982">1982</option>
+                  <option value="1981">1981</option>
+                  <option value="1980">1980</option>
+                  <option value="1979">1979</option>
+                  <option value="1978">1978</option>
+                  <option value="1977">1977</option>
+                  <option value="1976">1976</option>
+                  <option value="1975">1975</option>
+                  <option value="1976">1976</option>
                 </select>
               </div>
             </div>
-            <div class="col-12 col-lg-6">
+            <div class="col-12 col-lg-9">
               <div class="form-group">
-                <label class="font-weight-bold">Title</label>
+                <label class="font-weight-bold">Make</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_name"></span>
                 <input type="text" class="form-control" v-model="formData.product_name" />
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-9">
               <div class="form-group">
-                <label class="font-weight-bold">Property type</label>
-                <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
-                <select
-                  class="
-                    form-control
-                    text-sm
-                    select-auto
-                    border
-                  "
-                  type="text"
-                  name=""
-                  @change="conditionOption($event)"
-                >
-                  <option value=""></option>
-                  <option value="Flat">Flat</option>
-                  <option value="House">House</option>
-                  <option value="Room only">Room only</option>
-                  <option value="Town house">Town house</option>
-                </select>
+                <label class="font-weight-bold">Model</label>
+                <span style="color: red; font-size: 12px;" v-text="errors.product_name"></span>
+                <input type="text" class="form-control" v-model="formData.product_name" />
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
               <div class="form-group">
-                <label class="font-weight-bold">Bedroom</label>
+                <label class="font-weight-bold">Number of owners</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
                 <select
                   class="
@@ -129,48 +160,35 @@
                   <option value=""></option>
                   <option value="1">1</option>
                   <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="4">5</option>
-                  <option value="4">6</option>
-                  <option value="4">7</option>
-                  <option value="4">8</option>
-                  <option value="4">9</option>
-                  <option value="4">10</option>
+                  <option value="3+">3+</option>
+                  <option value="Not sure">Not sure</option>
                 </select>
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
               <div class="form-group">
-                <label class="font-weight-bold">Bathroom</label>
-                <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
-                <select
-                  class="
-                    form-control
-                    text-sm
-                    select-auto
-                    border
-                  "
-                  type="text"
-                  name=""
-                >
-                  <option value=""></option>
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="4">5</option>
-                  <option value="4">6</option>
-                  <option value="4">7</option>
-                  <option value="4">8</option>
-                  <option value="4">9</option>
-                  <option value="4">10</option>
-                </select>
+                <label class="font-weight-bold">Price</label>
+                <div class="input-group input-group-sm mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-md"
+                    :style="errorStyle(errors.product_price)"
+                      >£</span
+                    >
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    aria-label="Small"
+                    placeholder="0.00"
+                    aria-describedby="inputGroup-sizing-sm"
+                    v-model.number="formData.product_price"
+                  />
+                </div>
               </div>
             </div>
             <div class="col-12">
               <div class="form-group">
-                <label class="font-weight-bold">Property description</label>
+                <label class="font-weight-bold">Description</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_desc"></span>
                 <textarea
                   class="form-control"
