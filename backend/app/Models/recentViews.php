@@ -13,4 +13,8 @@ class recentViews extends Model
         'product_id',
         'userid',
     ];
+    public function products()
+    {
+        return $this->belongsTo('App\Models\Products','product_id');
+    }
 }

@@ -257,201 +257,29 @@
       <!-- breadcrumb -->
 
       <div class="ul gs full">
-        <li class="li itemi">
+        <li class="li itemi" v-for="listings of similarItems" :key="listings.id">
           <router-link
             class=""
-            to="/Product Detail"
+            :to="{ name: 'productDetails_1', params: { pid: listings.id, pname: listings.product_name}}"
             data-toggle="collapse"
             data-target=".navbar-collapse"
             title="Home"
           >
             <div class="p-2">
               <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/1.jpg"
-                  alt="Card image cap"
-                />
+                <div v-for="img in listings.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" style="height:180px; width: 100%;" alt="Product" v-bind:data-id="img.id" /></div>
 
                 <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
+                  <p class="h6 text-dark">{{ listings.product_name }}</p>
 
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+                  <p class="font-weight-bold h6 text-dark">£{{ listings.product_price }}</p>
 
-                  <p class="text-dark">RRP: <del> £350</del></p>
                 </div>
               </div>
             </div>
           </router-link>
         </li>
 
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/9.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/7.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/10.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/8.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/13.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/11.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
       </div>
     </section>
   </section>
@@ -472,6 +300,7 @@ export default {
       order_qnty: 1,
       watchCount: 0,
       API_BASE_URL: Constants.API_BASE_URL,
+      similarItems: [],
     };
   },
   computed: {
@@ -485,7 +314,8 @@ export default {
         .then((response) => {
           this.productDetails = response.data[0];
           console.log(this.productDetails);
-          this.saveRecentView(this.$store.state.product_detail_id);
+          this.saveRecentView(pid);
+          this.getSimilarItems(this.productDetails.product_cat_id,this.productDetails.product_subcat_id,pid);
         })
         .catch(error => {
         if (!error.response) {
@@ -506,7 +336,7 @@ export default {
       console.log(pid);
       User.saveRecentView(data)
         .then((response) => {         
-          console.log(response);
+          console.log(response.data);
         })
         .catch(error => {
         if (!error.response) {
@@ -519,6 +349,28 @@ export default {
       })
       
     },
+    getSimilarItems(a,b,c){
+    const data = {
+        cat_id: a,
+        subcat_id: b,
+        pid: c,
+      };
+      User.getSimilarItems(data)
+        .then((response) => {   
+          this.similarItems = response.data;      
+          console.log(response.data);
+        })
+        .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            console.log(error.response.data.message);
+        }
+      })
+    },
+    
     getImages() {
       const img = Object.keys(this.productDetails);
       img.map((key) => {

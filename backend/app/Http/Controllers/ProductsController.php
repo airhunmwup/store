@@ -179,6 +179,18 @@ class ProductsController extends Controller
         $data = array_unique($data);
         return $data;
     }
+    public function similarItems(Request $request)
+    {
+        $pid = $request->pid;
+        $catid = $request->cat_id;
+        $subcatid = $request->subcat_id;
+        return Products::where('id', '!=' , $pid)
+                ->where(function($q) use ($catid,$subcatid) {
+                $q->where('product_cat_id', $catid)
+                ->orWhere('product_subcat_id', $subcatid);
+                })->with('product_images')->take(10)              
+                ->get();
+    }
     /**
      * Show the form for editing the specified resource.
      *

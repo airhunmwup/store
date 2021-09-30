@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\recentViews;
+use App\Models\Products;
 use Illuminate\Http\Request;
 
 class RecentViewsController extends Controller
@@ -12,9 +13,18 @@ class RecentViewsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index($id)
     {
-        //
+        $data = array();
+        $recent_views = recentViews::where('userid', $id)->groupBy('product_id')->orderBy('id', 'desc')->take(10)->pluck('product_id')->toArray();
+        foreach ($recent_views as $pid) {
+            $results = Products::where('id', $pid)->with('product_images')->get();
+            
+            array_push($data, $results[0]);
+        }
+        $data = array_unique($data);
+        return $data;
+        
     }
 
     /**
@@ -35,10 +45,15 @@ class RecentViewsController extends Controller
      */
     public function store(Request $request)
     {
+        $recent = recentViews::orderBy('id', 'desc')->take(1)->value('product_id');
+        $productid = $request->product_id;
+        
+        if ($recent != $productid){
         $recentView = recentViews::create([
             'product_id' => $request->product_id,
             'userid' => $request->user_id,
         ]);
+        }
     }
 
     /**

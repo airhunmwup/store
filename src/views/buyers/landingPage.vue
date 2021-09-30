@@ -156,188 +156,28 @@
       </div>
 
       <div class="ul gs full">
-        <li class="li itemi">
+        <li class="li itemi" v-for="listings of this.$store.state.myRecentViews" :key="listings.id">
           <router-link
             class=""
-            to="/Product Detail"
+            :to="{ name: 'productDetails_1', params: { pid: listings.id, pname: listings.product_name}}"
             data-toggle="collapse"
             data-target=".navbar-collapse"
             title="Home"
           >
             <div class="">
               <div class="">
-                <img
-                  class="card-img-top"
-                  src="img/product/1.jpg"
-                  alt="Card image cap"
-                />
-
+                
+                <div v-for="img in listings.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" style="height:180px; width: 100%;" alt="Product" v-bind:data-id="img.id" /></div>
                 <div class="card-body">
-                  <p class="text-dark">Product name</p>
+                  <p class="text-dark">{{ listings.product_name }}</p>
 
-                  <p class="font-weight-bold text-dark">£149.99</p>
+                  <p class="font-weight-bold text-dark">£{{ listings.product_price }}</p>
                 </div>
               </div>
             </div>
           </router-link>
         </li>
 
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="">
-              <div class="">
-                <img
-                  class="card-img-top"
-                  src="img/product/9.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="">
-              <div class="">
-                <img
-                  class="card-img-top"
-                  src="img/product/7.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="text-dark">Product name</p>
-
-                  <p class="font-weight-bold text-dark">£149.99</p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="">
-              <div class="">
-                <img
-                  class="card-img-top"
-                  src="img/product/10.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="text-dark">Product name</p>
-
-                  <p class="font-weight-bold text-dark">£149.99</p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="">
-              <div class="">
-                <img
-                  class="card-img-top"
-                  src="img/product/8.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="text-dark">Product name</p>
-
-                  <p class="font-weight-bold text-dark">£149.99</p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="">
-              <div class="">
-                <img
-                  class="card-img-top"
-                  src="img/product/13.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="text-dark">Product name</p>
-
-                  <p class="font-weight-bold text-dark">£149.99</p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="">
-              <div class="">
-                <img
-                  class="card-img-top"
-                  src="img/product/11.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="text-dark">Product name</p>
-
-                  <p class="font-weight-bold text-dark">£149.99</p>
-
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
       </div>
     </div>
 
@@ -552,7 +392,9 @@ export default {
     return {
       categoryList: [],
       newListings:[],
+      recentlyViews:[],
       API_BASE_URL: Constants.API_BASE_URL,
+      userid: this.$store.state.currentUser.id,
     };
   },
   methods: {
@@ -564,6 +406,7 @@ export default {
         console.log("cat list info api call error");
       });
     },
+   
     getNewListings() {
       User.getNewListings().then(response => {
       this.newListings = response.data;
@@ -585,7 +428,7 @@ export default {
     }
 
   },
-  mounted() {
+  mounted() {   
     this.getCategoryList();
     this.getNewListings();
     console.log(this.categoryList);
