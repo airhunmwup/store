@@ -62,12 +62,24 @@
 
 
           <div class="form-group mt-2 p-2">
-            <button
-              class="btn btn-warning btn-sm btn-block"
-              type="submit"
-            >
-              <i class="fa fa-commenting"></i> Message Seller
-            </button>
+              <div class="pb-2">
+            <button class="btn btn-warning btn-sm btn-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fa fa-commenting"></i> Message Seller</button>
+
+              </div>
+<div class="offcanvas offcanvas-bottom" tabindex="5" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+<div class="offcanvas-body justify-center small">
+  <div class="row">
+    <div class="col-12 col-md-10">
+<div class="mb-3">
+  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+</div>
+    </div>
+    <div class="col">
+<button type="button" class="btn btn-success btn-block"><i class="fa fa-send-o"></i> Send</button>
+    </div>
+  </div>
+</div>
+</div>
             <button
               @click="addToWatchlist(productDetails['id'])"
               class="btn btn-secondary btn-sm btn-block"
