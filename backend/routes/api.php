@@ -3,6 +3,8 @@
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\SubcategoryController;
 use App\Http\Controllers\ProductsController;
+use App\Http\Controllers\VehiclesController;
+use App\Http\Controllers\PropertiesController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\WishlistController;
 use App\Http\Controllers\AddressbuyersController;
@@ -35,8 +37,14 @@ Route::get('/products/{name}', [ProductsController::class, 'search']);
 Route::post('/register', [AuthController::class, 'register']);
 Route::post('/login', [AuthController::class, 'login']); 
 Route::post('/getSimilarItems', [ProductsController::class, 'similarItems']);
+Route::post('/getSimilarItems2', [VehiclesController::class, 'similarItems']);
+Route::post('/getSimilarItems3', [PropertiesController::class, 'similarItems']);
 
 Route::get('/newlistings', [ProductsController::class, 'newlisting']);
+Route::get('/newvehicles', [VehiclesController::class, 'newvehicles']);
+Route::get('/newproperties', [PropertiesController::class, 'newproperties']);
+Route::get('/vehicle/{id}', [VehiclesController::class, 'show']);
+Route::get('/property/{id}', [PropertiesController::class, 'show']);
 Route::get('/newlistings2/{id}', [ProductsController::class, 'newlisting2']);
 Route::get('/newlists/{id}', [ProductsController::class, 'newlists']);
 Route::get('/sortListings/{id}', [ProductsController::class, 'sortListings']);
@@ -61,6 +69,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/saveRecentView', [RecentViewsController::class, 'store']);
     Route::get('/getRecentViews/{id}', [RecentViewsController::class, 'index']);
     Route::post('/createlisting', [ProductsController::class, 'store']);
+    Route::post('/createvehiclelisting', [VehiclesController::class, 'store']);
+    Route::post('/createpropertylisting', [PropertiesController::class, 'store']);
     Route::post('/getlistings/{user_id}', [ProductsController::class, 'getlistings']);
     Route::get('/getlisting/{id}', [ProductsController::class, 'getlisting']);
     Route::put('/products/{id}', [ProductsController::class, 'update']);

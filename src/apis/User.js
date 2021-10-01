@@ -55,7 +55,12 @@ export default{
     getNewListings(){
         return Api().get("/newlistings");
     },
-    
+    getNewVehicles(){
+        return Api().get("/newvehicles");
+    },
+    getNewProperties(){
+        return Api().get("/newproperties");
+    },
     getNewListings2(id){
         return Api().get("/newlistings2/" + id);
     },
@@ -68,11 +73,23 @@ export default{
     product_detail_page(id){
         return Api().get("/products/" + id);
     },
+    vehicle_detail_page(id){
+        return Api().get("/vehicle/" + id);
+    },
+    property_detail_page(id){
+        return Api().get("/property/" + id);
+    },
     saveRecentView(data){
         return Api().post("/saveRecentView", data);
     },
     getSimilarItems(data){
         return Api().post("/getSimilarItems", data);
+    },
+    getSimilarItems2(data){
+        return Api().post("/getSimilarItems2", data);
+    },
+    getSimilarItems3(data){
+        return Api().post("/getSimilarItems3", data);
     },
     addToWishlist(productData){
         return Api().post("/wishlist", productData);
@@ -132,7 +149,12 @@ export default{
     createlisting(data){
         return Api().post("/createlisting", data);
     },
-
+    createvehiclelisting(data){
+        return Api().post("/createvehiclelisting", data);
+    },
+    createpropertylisting(data){
+        return Api().post("/createpropertylisting", data);
+    },
     getlistings(userid){
         return Api().post("/getlistings/"+ userid);
     },

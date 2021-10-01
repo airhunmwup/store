@@ -111,6 +111,90 @@
   </div>
 </div>
 </div>
+<nav v-if="newVehicles" class="navbar card-footer bg-light navbar-expand-sm navbar-light bg-gradient">
+    <div class="col">
+  <a class="navbar-brand text-sm font-weight-bold text-dark" href="#">Vehicles</a>
+    </div>
+    <div class="col text-right">
+    <p class="navbar-text">
+          <span class="text-dark">
+              <router-link
+                class="text-dark"
+                to="/ProductPage"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                >see all
+              </router-link>
+            <b class="fa-bold fa fa-lg fa-angle-right"></b>
+          </span>
+    </p>
+    </div>
+</nav>
+<div class="p-2">
+  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div v-for="listings of newVehicles"
+            :key="listings.id"
+            v-bind:data-id="listings.id" class="col">
+            <router-link         
+          :to="{ name: 'vehiclepage', params: { pid: listings.id, pname: listings.vehicle_make + ' ' + listings.vehicle_model}}"
+          class="dropright"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+    <div class="card h-100">
+      <div v-for="img in listings.vehicle_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:180px; width: 100%;" v-bind:data-id="img.id" /></div>
+      <div class="card-body">
+    <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.vehicle_make + ' ' + listings.vehicle_model }}</p>
+    <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.vehicle_price }}</p>
+      
+      </div>
+    </div>
+            </router-link>
+  </div>
+</div>
+</div>
+<nav class="navbar card-footer bg-light navbar-expand-sm navbar-light bg-gradient">
+    <div class="col">
+  <a class="navbar-brand text-sm font-weight-bold text-dark" href="#">Properties</a>
+    </div>
+    <div class="col text-right">
+    <p class="navbar-text">
+          <span class="text-dark">
+              <router-link
+                class="text-dark"
+                to="/ProductPage"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                >see all
+              </router-link>
+            <b class="fa-bold fa fa-lg fa-angle-right"></b>
+          </span>
+    </p>
+    </div>
+</nav>
+<div class="p-2">
+  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div v-for="listings of newProperties"
+            :key="listings.id"
+            v-bind:data-id="listings.id" class="col">
+            <router-link         
+          :to="{ name: 'propertyPage', params: { pid: listings.id, pname: listings.property_name}}"
+          class="dropright"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
+    <div class="card h-100">
+      <div v-for="img in listings.property_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:180px; width: 100%;" v-bind:data-id="img.id" /></div>
+      <div class="card-body">
+    <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.property_name }}</p>
+    <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.property_price }}</p>
+      
+      </div>
+    </div>
+            </router-link>
+  </div>
+</div>
+</div>
 </div>
 
 <div class="m-4 pt-2">
@@ -155,7 +239,7 @@
         <p class="text-dark">Recently viewed</p>
       </div>
 
-      <div class="ul gs full">
+      <div v-if="this.$store.state.myRecentViews" class="ul gs full">
         <li class="li itemi" v-for="listings of this.$store.state.myRecentViews" :key="listings.id">
           <router-link
             class=""
@@ -382,7 +466,6 @@
 
 
 <script>
-import { mapState } from 'vuex';
 import User from "../../apis/User";
 import Constants from "../../common/constants";
 
@@ -392,6 +475,8 @@ export default {
     return {
       categoryList: [],
       newListings:[],
+      newVehicles:[],
+      newProperties:[],
       recentlyViews:[],
       API_BASE_URL: Constants.API_BASE_URL,
       userid: this.$store.state.currentUser.id,
@@ -422,6 +507,36 @@ export default {
         }
       })
     },
+     getNewVehicles() {
+      User.getNewVehicles().then(response => {
+      this.newVehicles = response.data;
+      console.log(this.newVehicles);
+    }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+            console.log('Error: Network Error');
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      })
+    },
+    getNewProperties() {
+      User.getNewProperties().then(response => {
+      this.newProperties = response.data;
+      console.log(this.newProperties);
+    }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+            console.log('Error: Network Error');
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      })
+    },
     product_detail_link(event){
       var id = event.target.getAttribute("data-id");
       this.$store.dispatch("product_detail_page", id);
@@ -431,6 +546,8 @@ export default {
   mounted() {   
     this.getCategoryList();
     this.getNewListings();
+    this.getNewVehicles();
+    this.getNewProperties();
     console.log(this.categoryList);
   },
 }

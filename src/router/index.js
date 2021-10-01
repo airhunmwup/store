@@ -164,13 +164,13 @@ const routes = [{
         component: vehicle_listing,
     },
    {
-        path: '/propertyPage',
+        path: '/propertyPage/:pname',
         name: 'propertyPage',
         component: propertyPage,
         props: true,
     },
     {
-         path: '/vehiclepage',
+         path: '/vehiclepage/:pname',
          name: 'vehiclepage',
          component: vehiclePage,
          props: true,

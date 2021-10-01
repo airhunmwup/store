@@ -238,7 +238,7 @@
     <section class="appion">
   <div class="row">
     <div class="col">
-        <p class="h3 text-dark">Similer Items</p>
+        <p class="h3 text-dark">Similar Items</p>
     </div>
     <div class="col text-right">
         <span class="text-dark text-right text-xs">
@@ -251,7 +251,7 @@
 
       <!-- breadcrumb -->
 
-      <div class="ul gs full">
+      <div v-if="similarItems" class="ul gs full">
         <li class="li itemi" v-for="listings of similarItems" :key="listings.id">
           <router-link
             class=""

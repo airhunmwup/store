@@ -96,10 +96,24 @@ export default {
     },
     methods: {
         category(name,id) {
+            if (this.cat_name == 'Vehicles'){
             this.$router.push({
+                name: 'vehiclelisting',
+                params: { data: name, subcat_id: id, cat_id: this.pid, cat_name: this.cat_name }
+            }).catch(()=>{});
+            }else{
+                if (this.cat_name == 'Properties'){
+                this.$router.push({
+                name: 'propertylisting',
+                params: { data: name, subcat_id: id, cat_id: this.pid, cat_name: this.cat_name }
+            }).catch(()=>{});
+                }else{
+                this.$router.push({
                 name: 'newlisting',
                 params: { data: name, subcat_id: id, cat_id: this.pid, cat_name: this.cat_name }
             }).catch(()=>{});
+                }
+                 }
         }
     },
     computed: mapState(['setSubCategoryList']),

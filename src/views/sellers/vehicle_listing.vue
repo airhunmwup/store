@@ -71,8 +71,9 @@
                     form-control
                     text-sm
                     select-auto
-                    border
+                    border                   
                   "
+                  @change="vehicle_year($event)"
                   type="text"
                   name=""
                 >
@@ -132,15 +133,15 @@
             <div class="col-12 col-lg-9">
               <div class="form-group">
                 <label class="font-weight-bold">Make</label>
-                <span style="color: red; font-size: 12px;" v-text="errors.product_name"></span>
-                <input type="text" class="form-control" v-model="formData.product_name" />
+                <span style="color: red; font-size: 12px;" v-text="errors.vehicle_make"></span>
+                <input type="text" class="form-control" v-model="formData.vehicle_make" />
               </div>
             </div>
             <div class="col-12 col-lg-9">
               <div class="form-group">
                 <label class="font-weight-bold">Model</label>
-                <span style="color: red; font-size: 12px;" v-text="errors.product_name"></span>
-                <input type="text" class="form-control" v-model="formData.product_name" />
+                <span style="color: red; font-size: 12px;" v-text="errors.vehicle_model"></span>
+                <input type="text" class="form-control" v-model="formData.vehicle_model" />
               </div>
             </div>
             <div class="col-12 col-lg-3">
@@ -154,6 +155,7 @@
                     select-auto
                     border
                   "
+                  @change="vehicle_owner_no($event)"
                   type="text"
                   name=""
                 >
@@ -171,7 +173,7 @@
                 <div class="input-group input-group-sm mb-3">
                   <div class="input-group-prepend">
                     <span class="input-group-text" id="inputGroup-sizing-md"
-                    :style="errorStyle(errors.product_price)"
+                    :style="errorStyle(errors.vehicle_price)"
                       >£</span
                     >
                   </div>
@@ -181,7 +183,7 @@
                     aria-label="Small"
                     placeholder="0.00"
                     aria-describedby="inputGroup-sizing-sm"
-                    v-model.number="formData.product_price"
+                    v-model.number="formData.vehicle_price"
                   />
                 </div>
               </div>
@@ -189,12 +191,12 @@
             <div class="col-12">
               <div class="form-group">
                 <label class="font-weight-bold">Description</label>
-                <span style="color: red; font-size: 12px;" v-text="errors.product_desc"></span>
+                <span style="color: red; font-size: 12px;" v-text="errors.vehicle_desc"></span>
                 <textarea
                   class="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
-                  v-model="formData.product_desc"
+                  v-model="formData.vehicle_desc"
                 ></textarea>
               </div>
             </div>
@@ -221,7 +223,7 @@
         <button
           type="button"
           class="form-control btn-sm btn btn-success border"
-          @click="createListing"
+          @click="createVehicleListing"
         >
           Save
         </button>
@@ -255,21 +257,13 @@ export default {
         product_userid: this.$store.state.currentUser.id,
         product_cat_id : this.$route.params.cat_id,
         product_subcat_id : this.$route.params.subcat_id,
-        product_name: "",
-        product_condition: "",
-        product_desc: "",
-        product_price: "",
-        product_quantity: "",
+        vehicle_make: "",
+        vehicle_model: "",
+        vehicle_year: "",
+        vehicle_owner_no: "",
+        vehicle_price: "",
+        vehicle_desc: "",
         imageData: [],
-        product_shipping_type: "",
-        product_shipping_rate: "",
-        product_shipping_cost: "",
-        product_package_type: "",
-        product_package_weight: "",
-        product_package_length: "",
-        product_package_width: "",
-        product_total: "0.00",
-        testImage: "",
       },
       errors: {
 
@@ -324,32 +318,25 @@ export default {
         console.log(err);
       });
     },
-    createListing(){
+    createVehicleListing(){
       if(this.image.length >= 1){
-        const  formData2 = new FormData(this.$refs.myForm); 
+        const  formData2 = new FormData(); 
                formData2.append('product_subcat', this.formData.product_subcat); 
                formData2.append('product_catname', this.formData.product_catname);
                formData2.append('product_userid', this.formData.product_userid);
                formData2.append('product_cat_id', this.formData.product_cat_id);  
-               formData2.append('product_subcat_id', this.formData.product_subcat_id); 
-               formData2.append('product_name', this.formData.product_name);  
-               formData2.append('product_condition', this.formData.product_condition);
-               formData2.append('product_desc', this.formData.product_desc); 
-               formData2.append('product_price', this.formData.product_price);
-               formData2.append('product_quantity', this.formData.product_quantity);
-               formData2.append('product_shipping_type', this.formData.product_shipping_type);
-               formData2.append('product_shipping_rate', this.formData.product_shipping_rate);
-               formData2.append('product_shipping_cost', this.formData.product_shipping_cost);
-               formData2.append('product_package_type', this.formData.product_package_type);
-               formData2.append('product_package_weight', this.formData.product_package_weight);
-               formData2.append('product_package_length', this.formData.product_package_length);
-               formData2.append('product_package_width', this.formData.product_package_width);
-               formData2.append('product_total', this.formData.product_total);
+               formData2.append('product_subcat_id', this.formData.product_subcat_id);
+               formData2.append('vehicle_make', this.formData.vehicle_make); 
+               formData2.append('vehicle_model', this.formData.vehicle_model); 
+               formData2.append('vehicle_year', this.formData.vehicle_year);  
+               formData2.append('vehicle_owner_no', this.formData.vehicle_owner_no);
+               formData2.append('vehicle_price', this.formData.vehicle_price);
+               formData2.append('vehicle_desc', this.formData.vehicle_desc);              
                $.each(this.image, function (key, image) {
                   formData2.append(`images[${key}]`, image)
                 })
            
-          User.createlisting(formData2,{
+          User.createvehiclelisting(formData2,{
             headers: { 'Content-Type': "multipart/form-data; charset=utf-8; boundary=" + Math.random().toString().substr(2)}
             }).then(res =>{
             this.errors = {};
@@ -377,11 +364,11 @@ export default {
     shippingtypeOption(event){
       this.formData.product_shipping_type = event.target.value;
     },
-    shippingRateOption(event){
-      this.formData.product_shipping_rate = event.target.value;
+    vehicle_owner_no(event){
+      this.formData.vehicle_owner_no = event.target.value;
     },
-    packageTypeOption(event){
-      this.formData.product_package_type = event.target.value;
+    vehicle_year(event){
+      this.formData.vehicle_year = event.target.value;
     },
     errorStyle(err){
       if(err){

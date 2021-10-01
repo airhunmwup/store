@@ -62,31 +62,33 @@
               <p class="text-xs">Photo: 0/4 . Choose your listing's main photo first.</p>
             </div>
   </div>
+            
             <div class="col-12 col-lg-6">
               <div class="form-group">
-                <label class="font-weight-bold">Property for sale or rent</label>
-                <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
-                <select
-                  class="
-                    form-control
-                    text-sm
-                    select-auto
-                    border
-                  "
-                  type="text"
-                  name=""
-                >
-                  <option value=""></option>
-                  <option value="New">For Sale</option>
-                  <option value="Seller refurbished">For Rent</option>
-                </select>
+                <label class="font-weight-bold">Title</label>
+                <span style="color: red; font-size: 12px;" v-text="errors.property_name"></span>
+                <input type="text" class="form-control" v-model="formData.property_name" />
               </div>
             </div>
             <div class="col-12 col-lg-6">
               <div class="form-group">
-                <label class="font-weight-bold">Title</label>
-                <span style="color: red; font-size: 12px;" v-text="errors.product_name"></span>
-                <input type="text" class="form-control" v-model="formData.product_name" />
+                <label class="font-weight-bold">Price</label>
+                <div class="input-group input-group-sm mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="inputGroup-sizing-md"
+                    :style="errorStyle(errors.property_price)"
+                      >£</span
+                    >
+                  </div>
+                  <input
+                    type="number"
+                    class="form-control"
+                    aria-label="Small"
+                    placeholder="0.00"
+                    aria-describedby="inputGroup-sizing-sm"
+                    v-model.number="formData.property_price"
+                  />
+                </div>
               </div>
             </div>
             <div class="col">
@@ -102,7 +104,7 @@
                   "
                   type="text"
                   name=""
-                  @change="conditionOption($event)"
+                  @change="property_type($event)"
                 >
                   <option value=""></option>
                   <option value="Flat">Flat</option>
@@ -123,6 +125,7 @@
                     select-auto
                     border
                   "
+                  @change="property_bedroom_no($event)"
                   type="text"
                   name=""
                 >
@@ -151,6 +154,7 @@
                     select-auto
                     border
                   "
+                  @change="property_bathroom_no($event)"
                   type="text"
                   name=""
                 >
@@ -176,7 +180,7 @@
                   class="form-control"
                   id="exampleFormControlTextarea1"
                   rows="3"
-                  v-model="formData.product_desc"
+                  v-model="formData.property_desc"
                 ></textarea>
               </div>
             </div>
@@ -203,7 +207,7 @@
         <button
           type="button"
           class="form-control btn-sm btn btn-success border"
-          @click="createListing"
+          @click="createPropertyListing"
         >
           Save
         </button>
@@ -237,21 +241,13 @@ export default {
         product_userid: this.$store.state.currentUser.id,
         product_cat_id : this.$route.params.cat_id,
         product_subcat_id : this.$route.params.subcat_id,
-        product_name: "",
-        product_condition: "",
-        product_desc: "",
-        product_price: "",
-        product_quantity: "",
+        property_name: "",
+        property_price: "",
+        property_type: "",
+        property_bedroom_no: "",
+        property_bathroom_no: "",
+        property_desc: "",
         imageData: [],
-        product_shipping_type: "",
-        product_shipping_rate: "",
-        product_shipping_cost: "",
-        product_package_type: "",
-        product_package_weight: "",
-        product_package_length: "",
-        product_package_width: "",
-        product_total: "0.00",
-        testImage: "",
       },
       errors: {
 
@@ -306,32 +302,25 @@ export default {
         console.log(err);
       });
     },
-    createListing(){
+    createPropertyListing(){
       if(this.image.length >= 1){
-        const  formData2 = new FormData(this.$refs.myForm); 
+        const  formData2 = new FormData(); 
                formData2.append('product_subcat', this.formData.product_subcat); 
                formData2.append('product_catname', this.formData.product_catname);
                formData2.append('product_userid', this.formData.product_userid);
                formData2.append('product_cat_id', this.formData.product_cat_id);  
                formData2.append('product_subcat_id', this.formData.product_subcat_id); 
-               formData2.append('product_name', this.formData.product_name);  
-               formData2.append('product_condition', this.formData.product_condition);
-               formData2.append('product_desc', this.formData.product_desc); 
-               formData2.append('product_price', this.formData.product_price);
-               formData2.append('product_quantity', this.formData.product_quantity);
-               formData2.append('product_shipping_type', this.formData.product_shipping_type);
-               formData2.append('product_shipping_rate', this.formData.product_shipping_rate);
-               formData2.append('product_shipping_cost', this.formData.product_shipping_cost);
-               formData2.append('product_package_type', this.formData.product_package_type);
-               formData2.append('product_package_weight', this.formData.product_package_weight);
-               formData2.append('product_package_length', this.formData.product_package_length);
-               formData2.append('product_package_width', this.formData.product_package_width);
-               formData2.append('product_total', this.formData.product_total);
+               formData2.append('property_name', this.formData.property_name);  
+               formData2.append('property_price', this.formData.property_price);
+               formData2.append('property_type', this.formData.property_type);
+               formData2.append('property_bedroom_no', this.formData.property_bedroom_no); 
+               formData2.append('property_bathroom_no', this.formData.property_bathroom_no);
+               formData2.append('property_desc', this.formData.property_desc);
                $.each(this.image, function (key, image) {
                   formData2.append(`images[${key}]`, image)
                 })
            
-          User.createlisting(formData2,{
+          User.createpropertylisting(formData2,{
             headers: { 'Content-Type': "multipart/form-data; charset=utf-8; boundary=" + Math.random().toString().substr(2)}
             }).then(res =>{
             this.errors = {};
@@ -352,15 +341,15 @@ export default {
       }
       
       },
-    conditionOption(event){
-      this.formData.product_condition = event.target.value;
+    property_type(event){
+      this.formData.property_type = event.target.value;
       console.log(this.formData);
     },
-    shippingtypeOption(event){
-      this.formData.product_shipping_type = event.target.value;
+    property_bedroom_no(event){
+      this.formData.property_bedroom_no = event.target.value;
     },
-    shippingRateOption(event){
-      this.formData.product_shipping_rate = event.target.value;
+    property_bathroom_no(event){
+      this.formData.property_bathroom_no = event.target.value;
     },
     packageTypeOption(event){
       this.formData.product_package_type = event.target.value;

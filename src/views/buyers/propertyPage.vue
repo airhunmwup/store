@@ -11,26 +11,27 @@
             <div class="images-container">
               <div class="js-qv-mask tab-content">
                 <div
-                  v-bind:id="'item' + num"
-                  class="tab-pane fade"
-                  v-for="num in nums"
-                  :key="num"
-                  v-bind:class="activeImage(num)"
+                  v-for="img in productDetails.property_images.slice(0,1)"
+                  v-bind:id="'item' + img.id"
+                  class="tab-pane fade show active"
+                  v-bind:key="img.id"
                 >
-                  <img
-                    v-bind:src="API_BASE_URL + img['product_image' + num]"
-                    alt="img"
-                  />
+                  <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="max-height:300px; width:100%; margin: 5px;" v-bind:data-id="img.id" />
                 </div>
-              </div>
+                <div
+                  v-for="img in productDetails.property_images"
+                  v-bind:id="'item' + img.id"
+                  class="tab-pane fade show"
+                  v-bind:key="img.id"
+                >
+                  <img v-bind:src="API_BASE_URL + img.vehicle_image_path" alt="Product" style="max-height:300px; width:100%; margin: 5px;" v-bind:data-id="img.id" />
+                </div>
+                 </div>
 
               <ul class="product-tab nav nav-tabs d-flex">
-                <li class="col" v-for="num in nums" :key="num">
-                  <a v-bind:href="'#item' + num" data-toggle="tab">
-                    <img
-                      v-bind:src="API_BASE_URL + '0AmYJvycHXsecMqRdtLxCdtP25DDh4dBWvbwV7ec.jpg'"
-                      alt="img"
-                    />
+                <li class="col" v-for="img in productDetails.property_images" v-bind:key="img.id">
+                  <a v-bind:href="'#item' + img.id" data-toggle="tab">
+                    <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="height:100px;" v-bind:data-id="img.id" />
                   </a>
                 </li>
               </ul>
@@ -40,13 +41,13 @@
 
         <div class="row col-xs-12 pt-3 col-lg-4 col-md-4 col-sm-12">
           <p class="lead text-dark mt-4">
-            {{ productDetails.product_name }} For RENT or SELL
+            {{ productDetails.property_name }} For RENT or SELL
           </p>
 
           <div class="dropdown-divider"></div>
 
           <p class="font-weight-bold mt-2 text-sm text-dark">
-            Price:<span class=""> {{ productDetails.product_price }}</span><span class="text-secondary">/month</span>
+            Price:<span class=""> {{ productDetails.property_price }}</span><span class="text-secondary">/month</span>
           </p>
 
           <p class="text-sm"><i class="fa fa-map-marker"></i></p>
@@ -137,7 +138,7 @@
                   <div class="container text-dark">
 
                     <p class="text-md m-2">
-                      description goes here.
+                      {{ productDetails.property_desc }}
                     </p>
                     <div class="dropdown-divider"></div>
 
@@ -204,7 +205,7 @@
 
     <section class="appion">
       <div class="col-12">
-        <p class="h3 text-dark">Similer Items</p>
+        <p class="h3 text-dark">Similar Items</p>
 
         <span class="text-dark text-right">
           <b class=""> see all </b>
@@ -215,202 +216,30 @@
 
       <!-- breadcrumb -->
 
-      <div class="ul gs full">
-        <li class="li itemi">
+      <div  class="ul gs full">
+        <li class="li itemi" v-for="listing in similarItems" :key="listing.id">
           <router-link
             class=""
-            to="/Product Detail"
+            :to="{ name: 'vehiclepage', params: { pid: listing.id, pname: listing.property_name}}"
             data-toggle="collapse"
             data-target=".navbar-collapse"
             title="Home"
           >
             <div class="p-2">
               <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/1.jpg"
-                  alt="Card image cap"
-                />
+                <div v-for="img in listing.property_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" style="height:180px; width: 100%;" alt="Product" v-bind:data-id="img.id" /></div>
 
                 <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
+                  <p class="h6 text-dark">{{ listing.property_name }}</p>
 
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
+                  <p class="font-weight-bold h6 text-dark">£{{ listing.property_price }}</p>
 
-                  <p class="text-dark">RRP: <del> £350</del></p>
                 </div>
               </div>
             </div>
           </router-link>
         </li>
 
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/9.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/7.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/10.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/8.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/13.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
-
-        <li class="li itemi">
-          <router-link
-            class=""
-            to="/Product Detail"
-            data-toggle="collapse"
-            data-target=".navbar-collapse"
-            title="Home"
-          >
-            <div class="p-2">
-              <div class="card" style="width: 11rem">
-                <img
-                  class="card-img-top"
-                  src="img/product/11.jpg"
-                  alt="Card image cap"
-                />
-
-                <div class="card-body">
-                  <p class="h6 text-dark">Product name</p>
-
-                  <p class="font-weight-bold h6 text-dark">£149.99</p>
-
-                  <p class="text-dark">RRP: <del> £350</del></p>
-                </div>
-              </div>
-            </div>
-          </router-link>
-        </li>
       </div>
     </section>
   </section>
@@ -425,12 +254,13 @@ export default {
   data() {
     return {
       productDetails: [],
-      p_id: this.$store.state.product_detail_id,
+      p_id: this.$route.params.pid,
       img: [],
       nums: 4,
       order_qnty: 1,
       watchCount: 0,
       API_BASE_URL: Constants.API_BASE_URL,
+      similarItems: [],
     };
   },
   computed: {
@@ -440,20 +270,12 @@ export default {
   },
   methods: {
     getProductDetails(pid) {
-console.log(this.API_BASE_URL);
-      User.product_detail_page(pid)
+      User.property_detail_page(pid)
         .then((response) => {
-          this.productDetails = response.data;
-          const img = Object.keys(response.data);
-          let index = 1;
-          img.map((key) => {
-            if (key == `product_image${index}`) {
-              this.img[key] = response.data[key];
-              index++;
-            }
-          });
+          this.productDetails = response.data[0];
+          this.getSimilarItems(this.productDetails.product_cat_id,this.productDetails.product_subcat_id,pid);
           console.log(this.productDetails);
-          this.saveRecentView(this.$store.state.product_detail_id);
+          //this.saveRecentView(this.$store.state.product_detail_id);
         })
         .catch((error) => {
           console.log(error);
@@ -481,19 +303,26 @@ console.log(this.API_BASE_URL);
       })
       
     },
-    getImages() {
-      const img = Object.keys(this.productDetails);
-      img.map((key) => {
-        this.img[key] = this.getProductDetails;
-      });
-      console.log(this.img);
-    },
-    activeImage(id) {
-      if (id == 1) {
-        return "active in show";
-      } else {
-        return "";
-      }
+ getSimilarItems(a,b,c){
+    const data = {
+        cat_id: a,
+        subcat_id: b,
+        pid: c,
+      };
+      User.getSimilarItems3(data)
+        .then((response) => {   
+          this.similarItems = response.data;      
+          console.log(this.similarItems);
+        })
+        .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            console.log(error.response.data.message);
+        }
+      })
     },
     findBasket(index) {
       return index.id == this.productDetails.id;
