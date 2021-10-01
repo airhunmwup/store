@@ -57,7 +57,7 @@
 <div class="tab-content  border-t-0" id="myTabContent">
   <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
 
-<div class="card pt-2" style="height: 20rem;" data-spy="scroll"> 
+<div class="pt-2" style="height: 20rem;" data-spy="scroll"> 
   <ul class="list-group list-group-flush">
     <li class="list-group-item" v-for="inbox_message in inbox_messages" v-bind:key="inbox_message.id">
         <router-link
@@ -84,21 +84,10 @@
   </ul>
 
 </div>
-                        <div class="justify-content-center p-4">
-                <nav aria-label="Page navigation example" class="col-12">
-  <ul class="pagination justify-content-center">
-    <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link underline" href="#">1</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
-  </ul>
-</nav>
-                      </div>
   </div>
   <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
     
-<div class="card pt-2" style="height: 20rem;">
+<div class="pt-2" style="height: 20rem;">
   <ul class="list-group list-group-flush">
     <li class="list-group-item" v-for="inbox_message in inbox_messages" v-bind:key="inbox_message.id">
           <router-link
@@ -128,19 +117,9 @@
   </ul>
 </div>
 
-                        <div class="justify-content-center p-4">
-                <nav aria-label="Page navigation example" class="col-12">
-  <ul class="pagination justify-content-center">
-    <li class="page-item"><a class="page-link text-dark" href="#">Previous</a></li>
-    <li class="page-item"><a class="page-link underline" href="#">1</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">2</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">3</a></li>
-    <li class="page-item"><a class="page-link text-dark" href="#">Next</a></li>
-  </ul>
-</nav>
-                      </div>
   </div>
 </div>
+
     </div>
   </div>
   </div>

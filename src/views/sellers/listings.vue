@@ -120,8 +120,6 @@
             </div>
             <div
               class="btn-group btn-group-sm"
-              role="group"
-              aria-label="Basic example"
             >
               <router-link
                 to="/newlisting"

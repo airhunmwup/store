@@ -45,7 +45,7 @@
     </div>
   </div>
     </div>
-<div class="card pt-2" style="height: 20rem;">
+<div class="pt-2" style="height: 20rem;">
   <ul class="list-group list-group-flush">
         <li class="list-group-item" v-for="sent_message in sent_messages" v-bind:key="sent_message.id">
           <router-link
