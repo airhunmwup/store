@@ -24,7 +24,7 @@
                         to="/newlisting"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
-                        title="tart Selling."
+                        title="Sell"
                       >
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
@@ -34,7 +34,7 @@
   </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Sell on REJEE Stores</a>
+          <a class="nav-link text-dark" href="#">Sell</a>
         </li>
       </ul>
     </div></router-link>
@@ -235,7 +235,7 @@
 
     <div class="appion">
 
-      <div class="col-12">
+      <div class="col-12" v-if="this.$store.state.myRecentViews">
         <p class="text-dark">Recently viewed</p>
       </div>
 

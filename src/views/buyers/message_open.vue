@@ -43,7 +43,7 @@
           
   </div>
     </div>
-      <div class="card" style="height: 30rem;">
+      <div class="" style="height: 30rem;">
   <div class="card-body">
 
 <div class="collapse" id="replymessage">

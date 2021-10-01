@@ -17,8 +17,8 @@
             data-target=".navbar-collapse"
             title="login"
             >
-        <a class="text-sm btn p-2 text-dark font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          <i class="zmdi zmdi-lock"></i> Sign in
+        <a class="btn p-2 text-dark font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-lg fa-sign-in"></i> 
         </a></router-link>
     </div>
     <div class="col center "> 
@@ -43,14 +43,14 @@
           
   </p></router-link>
     </div>
-    <div class="col center ">
+    <div class="col center " v-if="this.$store.state.isLoggedIn"  >
                       <router-link   class="btn p-2 text-dark font-weight-bold "
                         to="/watchingpage"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
                         title="Watchlist"
                       >
-  <span  class="fa fa-lg fa-heart"></span>
+  <span  class="fa fa-lg fa-bookmark"></span>
                       </router-link>
     </div>
     <div class="col center ">
