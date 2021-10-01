@@ -40,14 +40,14 @@
         </div>
 
         <div class="row col-xs-12 pt-3 col-lg-4 col-md-4 col-sm-12">
-          <p class="lead text-dark mt-4">
+          <p class="lead text-dark mt-4 font-weight-bold">
             {{ productDetails.product_name }}
           </p>
 
           <div class="dropdown-divider"></div>
 
           <p class="font-weight-bold mt-2 text-sm text-dark">
-            Price:<span class=""> {{ productDetails.product_price }}</span>
+            Price:<span class=""> £{{ productDetails.product_price }}</span>
           </p>
 
           <p class="text-sm text-success mt-2">In stock</p>
@@ -163,10 +163,6 @@
                       <tr class="bg-white">
                         <th scope="row">Type:</th>
                         <td>{{productDetails.product_subcat}}</td>
-                      </tr>
-                      <tr>
-                        <th scope="row">SKU:</th>
-                        <td colspan="2">Lw3324ercrt</td>
                       </tr>
                     </tbody>
                   </table>
