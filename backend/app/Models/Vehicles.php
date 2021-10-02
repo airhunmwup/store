@@ -19,6 +19,10 @@ class Vehicles extends Model
         'vehicle_year',
         'vehicle_owner_no',
         'vehicle_price',
+        'vehicle_millage',
+        'vehicle_enginetype',
+        'vehicle_fueltype',
+        'vehicle_enginesize',
         'vehicle_desc',
 
     ];

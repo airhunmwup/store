@@ -188,6 +188,93 @@
                 </div>
               </div>
             </div>
+            <div class="col-12 col-lg-6">
+              <div class="form-group">
+                <label class="font-weight-bold">Millage</label>
+                <span style="color: red; font-size: 12px;" v-text="errors.vehicle_millage"></span>
+                <input type="number" class="form-control" v-model="formData.vehicle_mmillage" />
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="form-group">
+                <label class="font-weight-bold">Engine type</label>
+                <span style="color: red; font-size: 12px;"></span>
+                <select
+                  class="
+                    form-control
+                    text-sm
+                    select-auto
+                    border
+                  "
+                  type="text"
+                  name=""
+                >
+                  <option value=""></option>
+                  <option value="Manual transmission">Manual transmission</option>
+                  <option value="Automatic transmission">Automatic transmission</option>
+                  <option value="Hybrid">Hybrid</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="form-group">
+                <label class="font-weight-bold">Fuel type</label>
+                <span style="color: red; font-size: 12px;"></span>
+                <select
+                  class="
+                    form-control
+                    text-sm
+                    select-auto
+                    border
+                  "
+                  type="text"
+                  name=""
+                >
+                  <option value=""></option>
+                  <option value="Petrol">Petrol</option>
+                  <option value="Diesel">Diesel</option>
+                  <option value="Electric">Electric</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-12 col-lg-3">
+              <div class="form-group">
+                <label class="font-weight-bold">Engine size</label>
+                <span style="color: red; font-size: 12px;"></span>
+                <select
+                  class="
+                    form-control
+                    text-sm
+                    select-auto
+                    border
+                  "
+                  type="text"
+                  name=""
+                >
+                  <option value=""></option>
+                  <option value="+1">+1</option>
+                  <option value="+2">+2</option>
+                  <option value="+3">+3</option>
+                  <option value="+3">+4</option>
+                  <option value="+3">+5</option>
+                  <option value="+3">+6</option>
+                  <option value="+3">+7</option>
+                  <option value="+3">+8</option>
+                  <option value="+2">+9</option>
+                  <option value="+3">+10</option>
+                  <option value="+3">+11</option>
+                  <option value="+3">+12</option>
+                  <option value="+3">+13</option>
+                  <option value="+3">+14</option>
+                  <option value="+3">+15</option>
+                  <option value="+3">+16</option>
+                  <option value="+3">+17</option>
+                  <option value="+3">+18</option>
+                  <option value="+2">+19</option>
+                  <option value="+3">+20</option>
+                </select>
+              </div>
+            </div>
             <div class="col-12">
               <div class="form-group">
                 <label class="font-weight-bold">Description</label>
@@ -262,6 +349,7 @@ export default {
         vehicle_year: "",
         vehicle_owner_no: "",
         vehicle_price: "",
+        vehicle_millage: "",
         vehicle_desc: "",
         imageData: [],
       },
@@ -331,6 +419,7 @@ export default {
                formData2.append('vehicle_year', this.formData.vehicle_year);  
                formData2.append('vehicle_owner_no', this.formData.vehicle_owner_no);
                formData2.append('vehicle_price', this.formData.vehicle_price);
+               formData2.append('vehicle_millage', this.formData.vehicle_millage);
                formData2.append('vehicle_desc', this.formData.vehicle_desc);              
                $.each(this.image, function (key, image) {
                   formData2.append(`images[${key}]`, image)

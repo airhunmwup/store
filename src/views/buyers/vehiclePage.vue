@@ -50,13 +50,12 @@
           </p>
 
 
-                    <div class="dropdown-divider"></div>
           <p class="font-weight-bold text-dark mt-2">About this vehicle</p>
   <div class="row pt-2">
     <div class="col">
-          <p class="text-sm"><i class="zmdi zmdi-time-restore-setting"></i> {{ productDetails.vehicle_year }}</p>
-          <p class="text-sm"><i class="zmdi zmdi-input-composite"></i></p>
-          <p class="text-sm"><i class="fa fa-map-marker"></i></p>
+          <p class="text-sm"><i class="fa fa-tachometer"></i> <span class="text-xs"> Driven {{ productDetails.vehicle_millage }} kilometers</span></p>
+          <p class="text-sm"><i class="fa fa-steam"></i><span class="text-xs"> {{ productDetails.vehicle_enginetype }} </span> </p>
+          <p class="text-sm"><i class="zmdi zmdi-gas-station"></i> <span class="text-xs"> {{ productDetails.vehicle_fueltype }} </span></p>
     </div>
   </div>
 
