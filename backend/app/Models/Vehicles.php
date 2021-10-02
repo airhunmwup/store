@@ -24,6 +24,6 @@ class Vehicles extends Model
     ];
     public function vehicle_images()
     {
-        return $this->hasMany('App\Models\ProductImages','product_id');
+        return $this->hasMany('App\Models\VehicleImages','product_id');
     }
 }

@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Properties;
-use App\Models\ProductImages;
+use App\Models\PropertyImages;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
@@ -72,7 +72,7 @@ class PropertiesController extends Controller
                 $imagePath = Storage::disk('images')->put($filename, $image);
                 //$image = Image::make(public_path("images/{$imagePath}"))->fit(600,600);
                 //$image->save();
-                ProductImages::create([
+                PropertyImages::create([
                     'product_image_path' => $imagePath,
                     'product_id' => $property->id,
                 ]);

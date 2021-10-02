@@ -24,6 +24,6 @@ class Properties extends Model
     ];
     public function property_images()
     {
-        return $this->hasMany('App\Models\ProductImages','product_id');
+        return $this->hasMany('App\Models\PropertyImages','product_id');
     }
 }
