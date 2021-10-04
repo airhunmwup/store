@@ -385,7 +385,7 @@ export default {
               console.log("Already in wishlist");
             } else if (response.data.status == 0) {
               User.addToWishlist(data)
-                .then((response) => {
+                .then(() => {
                   console.log("Added to wish list");
                   this.$store.dispatch("getuser", data.user_id);
                 })
