@@ -123,7 +123,7 @@
                             >
                             <router-link
                                 class=""
-                                to="/ProductDetail"
+                                :to="{ name: 'productDetails_1', params: { pid: listing.id, pname: listing.product_name}}"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                             >

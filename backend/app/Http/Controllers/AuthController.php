@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\User;
+use App\Models\Addressforbuyers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
@@ -17,7 +18,12 @@ class AuthController extends Controller
             'last_name' => 'required|string',
             'email' => 'required|string|unique:users,email',
             'password' => 'required|string',
-            'user_type' => 'required|string'
+            'user_type' => 'required|string',
+            'phonenumber' => 'required|string',
+            'postal_code' => 'required|string',
+            'address_line1' => 'required|string',
+            'address_line2' => 'string|nullable',
+            'town_city' => 'required|string',
         ]);
 
         $user = User::create([
@@ -26,6 +32,23 @@ class AuthController extends Controller
             'email' => $fields['email'],
             'password' => bcrypt($fields['password']),
             'user_type' => $fields['user_type']
+        ]);
+        
+        
+        $fullname = $fields['first_name']." ".$fields['last_name'];
+        $address = Addressforbuyers::create([
+            'user_id' => $user->id,
+            'country' => $request->country,
+            'fullname' => $fullname,
+            'phonenumber' => $fields['phonenumber'],
+            'postal_code' => $fields['postal_code'],
+            'address_line1' => $fields['address_line1'],
+            'address_line2' => $request->address_line2,
+            'town_city' => $fields['town_city'],
+            'county' => $request->county,
+            'delivery_instruction' => $request->delivery_instruction,
+            'securitycode_callboxnumber' => $request->securitycode
+
         ]);
 
         $token = $user->createToken('AppToken')->plainTextToken;

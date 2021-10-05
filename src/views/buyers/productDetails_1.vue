@@ -31,7 +31,7 @@
               <ul class="product-tab nav nav-tabs d-flex">
                 <li class="col" v-for="img in productDetails.product_images" v-bind:key="img.id">
                   <a v-bind:href="'#item' + img.id" data-toggle="tab">
-                    <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="height:100px; width:100%;" v-bind:data-id="img.id" />
+                    <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="height:100px;" v-bind:data-id="img.id" />
                   </a>
                 </li>
               </ul>
@@ -256,6 +256,7 @@
             data-target=".navbar-collapse"
             title="Home"
           >
+           <a @click="getData(listings.id)">
             <div class="p-2">
               <div class="card" style="width: 11rem">
                 <div v-for="img in listings.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" style="height:180px; width: 100%;" alt="Product" v-bind:data-id="img.id" /></div>
@@ -268,6 +269,7 @@
                 </div>
               </div>
             </div>
+            </a>
           </router-link>
         </li>
 
@@ -362,7 +364,24 @@ export default {
         }
       })
     },
-    
+    getData(pid){
+    User.product_detail_page(pid)
+        .then((response) => {
+          this.productDetails = response.data[0];
+          console.log(this.productDetails);
+          this.saveRecentView(pid);
+          this.getSimilarItems(this.productDetails.product_cat_id,this.productDetails.product_subcat_id,pid);
+        })
+        .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            console.log(error.response.data.message);
+        }
+      });
+    },
     getImages() {
       const img = Object.keys(this.productDetails);
       img.map((key) => {
