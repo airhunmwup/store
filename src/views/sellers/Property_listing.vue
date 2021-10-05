@@ -91,7 +91,7 @@
                 </div>
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
               <div class="form-group">
                 <label class="font-weight-bold">Property type</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
@@ -114,7 +114,7 @@
                 </select>
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
               <div class="form-group">
                 <label class="font-weight-bold">Bedroom</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
@@ -143,7 +143,7 @@
                 </select>
               </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg-3">
               <div class="form-group">
                 <label class="font-weight-bold">Bathroom</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.product_condition"></span>
