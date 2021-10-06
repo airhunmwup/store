@@ -253,6 +253,147 @@
             </div>
           </div>
         </div>
+        
+        <div class="card m-2 border d-xs-none">
+        <h3><b>Vehicles</b></h3>
+        <div class="card-body border-b-2 text-dark" v-for="listing in this.$store.state.myvehicles" :key="listing.id" >
+            
+              <div class="row text-xs">
+                <div class="col-1">
+                  <div class="input-group">
+                    <input
+                      type="checkbox"
+                      aria-label="Checkbox for following text input"
+                    />
+                  </div>
+                </div>
+                <div class="col">
+                  <p class="">{{ listing.vehicle_make + ' ' + listing.vehicle_model }}</p>
+                </div>
+                <div class="col">
+                  <div v-for="img in listing.vehicle_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path"  alt="Product" style="height:50px; margin:auto;" v-bind:data-id="img.id" /></div>
+                </div>
+                <div class="col">
+                  <p class="">{{listing.product_subcat}}</p>
+                </div>
+                <div class="col">
+                  <p class="">£{{listing.vehicle_price}}</p>
+                </div>
+                <div class="col text-center">
+                  <p class="">16</p>
+                </div>
+                <div class="col text-center">
+                  <span
+                    class="alert-xs p-1 mt-4 rounded alert-success"
+                    style="height: 2rem"
+                    role="alert"
+                  >
+                    Active
+                  </span>
+                </div>
+                <div class="col text-center">
+                  <p class="">160</p>
+                </div>
+                <div class="col text-right">
+                 
+                  <button
+                    type="button"
+                    class="
+                      btn
+                      text-dark
+                      border btn-xs
+                    "
+                    @click="deletelisting(listing.id)"
+                  >
+                    <span class="zmdi zmdi-delete"></span>
+                  </button>
+                  
+                  <button
+                    type="button"
+                    class="
+                      btn
+                      text-dark
+                      border btn-xs
+                      ml-1
+                    "
+                  >
+                   <i class="zmdi zmdi-edit"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        <div class="card m-2 border d-xs-none">
+            <h3><b>Properties</b></h3>
+            <div class="card-body border-b-2 text-dark" v-for="listing in this.$store.state.myproperties" :key="listing.id" >
+                <div class="row text-xs">
+                    <div class="col-1">
+                       <div class="input-group">
+                            <input
+                               type="checkbox"
+                               aria-label="Checkbox for following text input"
+                            />
+                        </div>
+                    </div>
+                    <div class="col">
+                       <p class="">{{ listing.property_name }}</p>
+                    </div>
+                    <div class="col">
+                  <div v-for="img in listing.property_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path"  alt="Product" style="height:50px; margin:auto;" v-bind:data-id="img.id" /></div>
+                </div>
+                <div class="col">
+                  <p class="">{{listing.product_subcat}}</p>
+                </div>
+                <div class="col">
+                  <p class="">£{{listing.property_price}}</p>
+                </div>
+                <div class="col text-center">
+                  <p class="">16</p>
+                </div>
+                <div class="col text-center">
+                  <span
+                    class="alert-xs p-1 mt-4 rounded alert-success"
+                    style="height: 2rem"
+                    role="alert"
+                  >
+                    Active
+                  </span>
+                </div>
+                <div class="col text-center">
+                  <p class="">160</p>
+                </div>
+                <div class="col text-right">
+                 
+                  <button
+                    type="button"
+                    class="
+                      btn
+                      text-dark
+                      border btn-xs
+                    "
+                    @click="deletelisting(listing.id)"
+                  >
+                  <span class="zmdi zmdi-delete"></span>
+                  </button>
+                  <button
+                    type="button"
+                    class="
+                      btn
+                      text-dark
+                      border btn-xs
+                      ml-1
+                    "
+                  >
+                   <i class="zmdi zmdi-edit"></i>
+                  </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        
+        
         <!--end Web view-->
 
         <!--start mobile view-->
@@ -338,7 +479,171 @@
             >
           </div>
         </div>
+        <div class="d-md-none card mt-2 text-xs" v-for="listing in this.$store.state.myvehicles" :key="listing.id" >
+          <div class="card-header">
+            <div class="row text-xs">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="checkbox"
+                    aria-label="Checkbox for following text input"
+                  />
+                  <span class="ml-2 "> 
+                <span
+                  class="alert-xs p-1 mt-4 rounded alert-success"
+                  style="height: 2rem"
+                  role="alert"
+                >
+                  Active
+                </span> </span>
+                </div>
+              </div>
+              <div class="col">
+                <p class="text-right"><b></b></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-header">
+            <div class="row text-xs">
+              <div class="col-6 pt-2">
+                <div v-for="img in listing.vehicle_images.slice(0,1)" v-bind:key="img.id">
+                <img
+                  class=""
+                  style="width: 70%"
+                  v-bind:src="API_BASE_URL + img.product_image_path"
+                  alt="Card image cap"
+                /></div>
+              </div>
+              <div class="col-6">
+                <p class="text-left mt-4 text-lg text-dark font-weight-bold">
+                  {{ listing.vehicle_make + ' ' + listing.vehicle_model }}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-xs">
+            <div class="row">
+              <div class="col-4">
+                <p class="m-1">Category:</p>
+              </div>
+              <div class="col-8 text-right">
+                <p class="m-1 text-dark font-weight-bold">
+                  {{listing.product_subcat}}
+                </p>
+              </div>
+              <div class="col-4">
+                <p class="m-1">In-stock:</p>
+              </div>
+              <div class="col-8 text-right">
+                <p class="m-1 text-dark font-weight-bold">16</p>
+              </div>
+              <div class="col-4">
+                <p class="m-1">Price:</p>
+              </div>
+              <div class="col-8 text-right">
+                <p class="m-1 text-dark font-weight-bold">{{listing.vehicle_price}}</p>
+              </div>
+              <div class="col-4">
+                <p class="m-1">Watches</p>
+              </div>
+              <div class="col-8 text-right">
+                <p class="text-dark">160</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn border text-dark border m-1 btn-sm"
+               @click="deletelisting(listing.id)"
+              >Delete</a
+            >
+            <a href="#" class="btn bborder text-dark border m-1 btn-sm"
+              >Edit</a
+            >
+          </div>
+        </div>
 
+        <div class="d-md-none card mt-2 text-xs" v-for="listing in this.$store.state.myproperties" :key="listing.id" >
+          <div class="card-header">
+            <div class="row text-xs">
+              <div class="col">
+                <div class="input-group">
+                  <input
+                    type="checkbox"
+                    aria-label="Checkbox for following text input"
+                  />
+                  <span class="ml-2 "> 
+                <span
+                  class="alert-xs p-1 mt-4 rounded alert-success"
+                  style="height: 2rem"
+                  role="alert"
+                >
+                  Active
+                </span> </span>
+                </div>
+              </div>
+              <div class="col">
+                <p class="text-right"><b></b></p>
+              </div>
+            </div>
+          </div>
+          <div class="card-header">
+            <div class="row text-xs">
+              <div class="col-6 pt-2">
+                <div v-for="img in listing.property_images.slice(0,1)" v-bind:key="img.id">
+                <img
+                  class=""
+                  style="width: 70%"
+                  v-bind:src="API_BASE_URL + img.product_image_path"
+                  alt="Card image cap"
+                /></div>
+              </div>
+              <div class="col-6">
+                <p class="text-left mt-4 text-lg text-dark font-weight-bold">
+                  {{ listing.property_name }}
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card-body text-xs">
+            <div class="row">
+              <div class="col-4">
+                <p class="m-1">Category:</p>
+              </div>
+              <div class="col-8 text-right">
+                <p class="m-1 text-dark font-weight-bold">
+                  {{listing.product_subcat}}
+                </p>
+              </div>
+              <div class="col-4">
+                <p class="m-1">In-stock:</p>
+              </div>
+              <div class="col-8 text-right">
+                <p class="m-1 text-dark font-weight-bold">16</p>
+              </div>
+              <div class="col-4">
+                <p class="m-1">Price:</p>
+              </div>
+              <div class="col-8 text-right">
+                <p class="m-1 text-dark font-weight-bold">{{listing.property_price}}</p>
+              </div>
+              <div class="col-4">
+                <p class="m-1">Watches</p>
+              </div>
+              <div class="col-8 text-right">
+                <p class="text-dark">160</p>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a href="#" class="btn border text-dark border m-1 btn-sm"
+               @click="deletelisting(listing.id)"
+              >Delete</a
+            >
+            <a href="#" class="btn bborder text-dark border m-1 btn-sm"
+              >Edit</a
+            >
+          </div>
+        </div>
         <!--end mobile view-->
 
             <p class="text-dark text-center" v-if="!this.$store.state.mylistings">

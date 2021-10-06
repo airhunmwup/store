@@ -170,6 +170,12 @@ export default{
     getlistings(userid){
         return Api().post("/getlistings/"+ userid);
     },
+    getmyvehicles(userid){
+        return Api().post("/getmyvehicles/"+ userid);
+    },
+    getmyproperties(userid){
+        return Api().post("/getmyproperties/"+ userid);
+    },
     getResults(data){
         return Api().post("/getResults", data);
     },

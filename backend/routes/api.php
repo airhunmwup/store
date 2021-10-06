@@ -76,6 +76,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/createvehiclelisting', [VehiclesController::class, 'store']);
     Route::post('/createpropertylisting', [PropertiesController::class, 'store']);
     Route::post('/getlistings/{user_id}', [ProductsController::class, 'getlistings']);
+    Route::post('/getmyvehicles/{user_id}', [VehiclesController::class, 'getmyvehicles']);
+    Route::post('/getmyproperties/{user_id}', [PropertiesController::class, 'getmyproperties']);
     Route::get('/getlisting/{id}', [ProductsController::class, 'getlisting']);
     Route::put('/products/{id}', [ProductsController::class, 'update']);
     Route::delete('/productdelete/{id}', [ProductsController::class, 'destroy']);

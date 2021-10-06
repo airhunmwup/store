@@ -20,6 +20,8 @@ export const store = new Vuex.Store({
         setCategoryList: [],
         setSubCategoryList: [],
         mylistings: '',
+        myvehicles: '',
+        myproperties: '',
         myRecentViews: [],
     },
     getters: {
@@ -152,6 +154,12 @@ export const store = new Vuex.Store({
         getlistings: (state, payload) => {
             state.mylistings = payload;
         },
+        getvehicles: (state, payload) => {
+            state.myvehicles = payload;
+        },
+        getproperties: (state, payload) => {
+            state.myproperties = payload;
+        },
         getRecentViews: (state, payload) => {
             state.myRecentViews = payload;
             console.log(state.myRecentViews);
@@ -200,6 +208,8 @@ export const store = new Vuex.Store({
                   console.log(response.data.id);
                   context.dispatch('getuser', response.data.id);
                   context.dispatch('getlistings', response.data.id);
+                  context.dispatch('getvehicles', response.data.id);
+                  context.dispatch('getproperties', response.data.id);
                   context.dispatch('getRecentViews', response.data.id);
                 }).catch((errors) => {
                   console.log(errors);
@@ -266,6 +276,22 @@ export const store = new Vuex.Store({
             User.getlistings(payload).then(response => {
                 console.log(response);
                 context.commit('getlistings', response.data);
+            }).catch(error => {
+                console.log(error);
+            });
+        },
+        getvehicles: (context, payload) => {
+            User.getmyvehicles(payload).then(response => {
+                console.log(response);
+                context.commit('getvehicles', response.data);
+            }).catch(error => {
+                console.log(error);
+            });
+        },
+        getproperties: (context, payload) => {
+            User.getmyproperties(payload).then(response => {
+                console.log(response);
+                context.commit('getproperties', response.data);
             }).catch(error => {
                 console.log(error);
             });

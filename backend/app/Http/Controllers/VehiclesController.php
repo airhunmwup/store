@@ -103,6 +103,11 @@ class VehiclesController extends Controller
         //
         return Vehicles::where('id', $id)->with('vehicle_images')->get();
     }
+    public function getmyvehicles($userid)
+    {
+        //
+        return Vehicles::where('product_userid', $userid)->with('vehicle_images')->get();
+    }
     public function similarItems(Request $request)
     {
         $pid = $request->pid;

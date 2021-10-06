@@ -101,6 +101,11 @@ class PropertiesController extends Controller
         //
         return Properties::where('id', $id)->with('property_images')->get();
     }
+    public function getmyproperties($userid)
+    {
+        //
+        return Properties::where('product_userid', $userid)->with('property_images')->get();
+    }
     public function similarItems(Request $request)
     {
         $pid = $request->pid;
