@@ -144,161 +144,106 @@
 </ul>
       </div>
 
-<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+<div class="offcanvas offcanvas-start text-lg" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
   
         
           <div v-if="this.$store.state.isLoggedIn"  class="p-2 text-md text-dark nav flex-column">
             <!-- primary info buttons ends/-->
-<div class="offcanvas-header">
+
+  
+  <div class="flex-shrink-0 bg-white" style="">
+   <div class="offcanvas-header">
             <p class="text text-dark h5 font-weight-bold">
     Hello! {{ this.$store.state.full_name }}
             </p>
     <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
   </div>
-          <!--Sigin-and-security-->
-            <div class="row">
-              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
+    <ul class="list-unstyled ps-0">
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded" >
                 <router-link
                   to="/purchasehistory"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                   title="Your Orders"
-                  class="card p-3"
                   aria-label="Close"
                   data-bs-dismiss="offcanvas"
                 >
-                  <div class="row text-left ">
-                    <div class="col-3 content-end">
-                      <img src="img/myaccount/orderimg.png" width="70%" />
-                    </div>
-                    <div class="col-9">
-                      <p class="text-dark h6">Your Orders</p>
-                      <span class=" text-xs">Track,return, or cancel orders.</span>
-                    </div>
-                  </div>
+                      <p class="text-dark"><i class="fa fa-shopping-bag pr-2"></i> <span class="h5"> Your Orders</span></p>
                 </router-link>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
-                <router-link
-                  to="/buyersigninsecsetting"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                  title="Sign in & Security"
-                  class="card p-3"
-                  aria-label="Close"
-                  data-bs-dismiss="offcanvas"
-                >
-                  <div class="text-left row">
-                    <div class="col-3 content-end">
-                      <img src="img/myaccount/siginsec4.png" width="100%" />
-                    </div>
-                    <div class="col-9">
-                      <p class="text-dark h6">Sign in & Security</p>
-                      <span class=" text-xs">
-                        Edit Sign in, name, and mobile number.
-                      </span>
-                    </div>
-                  </div>
-                </router-link>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
-                <router-link
-                  to="/buyeraddresssetting"
-                  data-toggle="collapse"
-                  data-target=".navbar-collapse"
-                  title="Your Addresses"
-                  class="card p-3"
-                  aria-label="Close"
-                  data-bs-dismiss="offcanvas"
-                >
-                  <div class="row text-left ">
-                    <div class="col-3 content-end">
-                      <img src="img/myaccount/address.png" width="60%" />
-                    </div>
-                    <div class="col-9">
-                      <p class="text-dark h6">Your Addresses</p>
-                      <span class=" text-xs">
-                        Edit address and delivery preferences.
-                      </span>
-                    </div>
-                  </div>
-                </router-link>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
+        </button>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded" >
                 <router-link
                   to="/My message"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
                   title="Message Center"
-                  class="card p-3"
                   aria-label="Close"
                   data-bs-dismiss="offcanvas"
                 >
-                  <div class="row text-left">
-                    <div class="col-3 content-end">
-                      <img src="img/myaccount/message.png" width="70%" />
-                    </div>
-                    <div class="col-9">
-                      <p class="text-dark h6">Message Center</p>
-                      <span class=" text-xs">
-                        View your REJEE Stores and Seller Messages.
-                      </span>
-                    </div>
-                  </div>
+                      <p class="text-dark"><i class="fa fa-envelope pr-2"></i> <span class="h5"> Message Center</span></p>
                 </router-link>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
+        </button>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
+          <p class="text-dark font-weight-bold"><i class="fa fa-user "></i><span class="h5"> Account</span></p>
+        </button>
+        <div class="collapse" id="account-collapse">
+          <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
+            <li class="p-2">
                 <router-link
-                  to="/overview"
+                  to="/buyeraddresssetting"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="Sellers Hub"
-                  class="card p-3"
+                  title="Your Addresses"
                   aria-label="Close"
                   data-bs-dismiss="offcanvas"
                 >
-                  <div class="row text-left ">
-                    <div class="col-3 content-end">
-                      <img src="img/myaccount/sellershub.png" width="70%" />
-                    </div>
-                    <div class="col-9">
-                      <p class="text-dark h6">Sellers Hub</p>
-                      <span class=" text-xs">Sale on Rejee Stores, manage sellers account. </span>
-                    </div>
-                  </div>
-                </router-link>
-              </div>
-              <div class="col-lg-4 col-md-4 col-sm-6 p-2">
+                      <p class="text-dark"><i class="fa fa-address-card-o pr-2"></i><span class="h6">Your Addresses</span></p>
+                </router-link></li>
+            <li class="p-2">
                 <router-link
-                  to="/help"
+                  to="/buyersigninsecsetting"
                   data-toggle="collapse"
                   data-target=".navbar-collapse"
-                  title="help"
-                  class="card p-3"
+                  title="Sign in & Security"
                   aria-label="Close"
                   data-bs-dismiss="offcanvas"
-                >
-                  <div class="row text-left ">
-                    <div class="col-3 content-end">
-                      <img src="img/myaccount/help.ico" width="70%" />
-                    </div>
-                    <div class="col-9">
-                      <p class="text-dark h6">Help</p>
-                      <span class=" text-xs">Browes available help topics</span>
-                    </div>
-                  </div>
-                </router-link>
-              </div>
+                ><p class="text-dark"><i class="fa fa-cogs pr-2"></i> <span class="h6"> Sign in & Security</span></p>
+                </router-link></li>
+          </ul>
+        </div>
+      </li>
+      <li class="border-top my-3"></li>
+            <li class="p-2">
+        <button class="btn btn-toggle align-items-center rounded" >
         <a
-              class="dropdown-item text-left text-dark pt-2 pl-2 text-xs pb-2 font-weight-bold"
+              class="font-weight-bold"
               data-toggle="collapse"
               title="sign out"
               @click="signOut"
             data-bs-dismiss="offcanvas" aria-label="Close"
-            ><i class="fa fa-sign-out fa-2x pr-2"></i>
-              Sign out
-         </a>
-            </div>
+            ><i class="fa fa-question-circle-o "></i>
+              <span class="h5"> Help</span>
+         </a></button></li>
+      
+            <li class="p-2">
+        <button class="btn btn-toggle align-items-center rounded" >
+        <a
+              class="font-weight-bold"
+              data-toggle="collapse"
+              title="sign out"
+              @click="signOut"
+            data-bs-dismiss="offcanvas" aria-label="Close"
+            ><i class="fa fa-sign-out"></i>
+              <span class="h5"> Sign out</span>
+         </a></button></li>
+        
+    </ul>
+  </div>
       <!-- end col-md-9-1 -->
 
           </div>

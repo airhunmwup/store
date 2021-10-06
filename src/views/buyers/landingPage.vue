@@ -3,7 +3,7 @@
     <nav class="navbar  navbar-expand-lg navbar-warning bg-light bg-gradient">
   <div class="container-fluid ">
     <div class="dropdown">
-  <a class="btn text-dark text-sm dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+  <a class="btn text-dark text-sm dropdown-toggle font-weight-bold" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
    Shop by Categories
   </a>
 
@@ -16,7 +16,7 @@
           data-toggle="collapse"
           data-target=".navbar-collapse"
         >
-    <li><a class="dropdown-item" href="#">{{category.cat_name}}</a></li></router-link>
+    <li><a class="dropdown-item font-weight-bold" href="#">{{category.cat_name}}</a></li></router-link>
   </ul>
 </div>
     <a class="navbar-brand" style="font-style: tahoma;" href="#"></a>
