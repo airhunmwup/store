@@ -89,7 +89,7 @@
     </div>
 </nav>
 <div class="p-2">
-  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div  class="row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xs-6 g-4">
   <div v-for="listings of newListings"
             :key="listings.id"
             v-bind:data-id="listings.id" class="col">
@@ -131,7 +131,7 @@
     </div>
 </nav>
 <div class="p-2">
-  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div  class="row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xs-6 g-4">
   <div v-for="listings of newVehicles"
             :key="listings.id"
             v-bind:data-id="listings.id" class="col">
@@ -173,7 +173,7 @@
     </div>
 </nav>
 <div class="p-2">
-  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div  class="row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xs-6 g-4">
   <div v-for="listings of newProperties"
             :key="listings.id"
             v-bind:data-id="listings.id" class="col">
@@ -210,7 +210,7 @@
 </div>
 
 <div class="p-2">
-  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div  class="row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xs-6 g-4">
   <div v-for="listings of newListings"
             :key="listings.id"
             v-bind:data-id="listings.id" class="col">
