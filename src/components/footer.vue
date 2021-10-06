@@ -29,7 +29,7 @@
   </p></router-link>
                       <router-link  v-else  
                       class="d-md-none d-lg-none"
-                        to="/registertosell"
+                        to="/login"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
                         title="Start Selling."

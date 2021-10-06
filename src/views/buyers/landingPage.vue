@@ -39,7 +39,7 @@
       </ul>
     </div></router-link>
                       <router-link  v-else  
-                        to="/registertosell"
+                        to="/login"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
                         title="tart Selling."

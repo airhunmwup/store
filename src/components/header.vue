@@ -189,7 +189,7 @@
       </li>
       <li class="mb-1">
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-          <p class="text-dark font-weight-bold"><i class="fa fa-user "></i><span class="h5"> Account</span></p>
+          <p class="text-dark font-weight-bold"><i class="fa fa-user pr-2"></i><span class="h5"> Account</span></p>
         </button>
         <div class="collapse" id="account-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -216,6 +216,20 @@
                 </router-link></li>
           </ul>
         </div>
+      </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded" >
+                <router-link
+                  to="/Overview"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Sellers Hub"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+                      <p class="text-dark"><i class="fa fa-dashboard pr-2"></i><span class="h5"> Sellers Hub</span></p>
+                </router-link>
+        </button>
       </li>
       <li class="border-top my-3"></li>
             <li class="p-2">
