@@ -140,5 +140,6 @@ If the seller hasn’t fixed things for you in 3 business days, let us know and 
                   </div>
             </div>
           </div>
+            <div class="pb-4"></div>
     </div>
 </template>

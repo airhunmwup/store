@@ -220,15 +220,15 @@
       <li class="border-top my-3"></li>
             <li class="p-2">
         <button class="btn btn-toggle align-items-center rounded" >
-        <a
-              class="font-weight-bold"
-              data-toggle="collapse"
-              title="sign out"
-              @click="signOut"
-            data-bs-dismiss="offcanvas" aria-label="Close"
-            ><i class="fa fa-question-circle-o "></i>
+                <router-link
+                  to="/help"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                ><i class="fa fa-question-circle-o "></i>
               <span class="h5"> Help</span>
-         </a></button></li>
+                </router-link></button></li>
       
             <li class="p-2">
         <button class="btn btn-toggle align-items-center rounded" >

@@ -90,6 +90,6 @@
                             </div>
                             </div>
                         </section>
-                      <hr>
+            <div class="pb-4"></div>
   </div>
 </template>

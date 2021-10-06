@@ -357,7 +357,7 @@
                       <ul>
                         <li class="underline">
                           <router-link
-                            to="/Resolut Center"
+                            to="/help"
                             class="text-light"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"

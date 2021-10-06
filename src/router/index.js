@@ -503,8 +503,8 @@ const routes = [{
         component: resolution_center,
     },
     {
-        path: '/Resolution Center',
-        name: 'Resolution Center',
+        path: '/resolutioncenter',
+        name: 'resolutioncenter',
         component: resolut_Center,
 
     },
