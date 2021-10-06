@@ -209,7 +209,7 @@
 </div>
 </div>
 
-    <div class="appion">
+    <div class="appion"  v-if="this.$store.state.isLoggedIn">
 
       <div class="col-12" v-if="this.$store.state.myRecentViews">
         <p class="text-dark">Recently viewed</p>
