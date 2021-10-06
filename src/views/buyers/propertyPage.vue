@@ -47,7 +47,7 @@
           <div class="dropdown-divider"></div>
 
           <p class="font-weight-bold mt-2 text-sm text-dark">
-            Price:<span class=""> {{ productDetails.property_price }}</span><span class="text-secondary">/month</span>
+            Price:<span class=""> £{{ productDetails.property_price }}</span><span class="text-secondary"></span>
           </p>
 
           <p class="text-sm"><i class="fa fa-map-marker"></i></p>
@@ -56,13 +56,13 @@
           <p class="font-weight-bold text-dark mt-2">Unit details</p>
   <div class="row pt-2">
     <div class="col">
-          <p class="text-sm"><i class="fa fa-home"></i></p>
+          <p class="text-sm"><i class="fa fa-home"></i> {{ productDetails.property_type }}</p>
           <p class="text-sm"><i class="fa fa-car"></i></p>
           <p class="text-sm"><i class="fa fa-envira"></i></p>
     </div>
     <div class="col">
-          <p class="text-sm"><i class="fa fa-hotel"></i></p>
-          <p class="text-sm"><i class="fa fa-s15"></i></p>
+          <p class="text-sm"><i class="fa fa-hotel"></i> {{ productDetails.property_bedroom_no }} bedroom</p>
+          <p class="text-sm"><i class="fa fa-s15"></i> {{ productDetails.property_bathroom_no }} bathroom</p>
     </div>
   </div>
 
@@ -165,7 +165,7 @@
                         <p class="mt-2">Sellers description here:</p>
 
                         <p class="text-xs underline text-primary">
-                          See other items from this seller
+                          See other properties from this seller
                         </p>
                       </div>
                     </div>

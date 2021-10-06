@@ -3,7 +3,7 @@
 
   <!-- main content -->
 
-  <div class="text-sm">
+  <div class="">
     <div class="content pt-5 pb-5">
       <div class="row pt-2">
         <div class="container align-content-center">
@@ -26,12 +26,12 @@
               <p class="pb-2 text-danger" v-text="errors.message"></p>
             </div>
 
-        <div class="row justify-center text-sm" >
+        <div class="row justify-center " >
 
 <!--recently viewed-->
                 <div class="row col-sm-12 col-lg-4 col-md-4"><form>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <label for="exampleInputEmail1" class="form-label text-dark font-weight-bold">Email address</label>
                   <input
                     class="form-control"
                     name="email"
@@ -42,7 +42,7 @@
     <div id="emailHelp" class="form-text"><p class="text-danger" v-text="errors.email"></p></div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <label for="exampleInputPassword1" class="form-labeltext-dark font-weight-bold">Password</label>
                   <input
                     class="form-control"
                     name="password"

@@ -3,7 +3,7 @@
 
   <!-- main content -->
   
-  <div class="text-sm">
+  <div class="">
     <p class="pb-4 pr-4 text-dark text-right">
       Already a member?
 
@@ -36,16 +36,16 @@
           >
         </p>
 
-        <div class="row justify-center text-sm" >
+        <div class="row justify-center " >
 
 <!--recently viewed-->
-                <div class="col-sm-12 col-lg-4 col-md-4">
+                <div class="col-sm-12 col-lg-6 col-md-4">
 
 <div ref="form1">
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">First name</label>
+    <label for="exampleInputEmail1" class="form-label text-dark font-weight-bold">First name</label>
                       <input
-                        class="form-control text-sm"
+                        class="form-control "
                         name="First_Name"
                         type="text"
                         value=""
@@ -55,9 +55,9 @@
     <div id="emailHelp" class="form-text"><p class="text-danger text-left" v-text="errors.first_name"></p></div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Last name</label>
+    <label for="exampleInputEmail1" class="form-label text-dark font-weight-bold">Last name</label>
                       <input
-                        class="form-control text-sm"
+                        class="form-control "
                         name="Last_name"
                         type="text"
                         value=""
@@ -67,9 +67,9 @@
     <div id="emailHelp" class="form-text"><p class="text-danger text-left" v-text="errors.last_name"></p></div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputEmail1" class="form-label">Email address</label>
+    <label for="exampleInputEmail1" class="form-label text-dark font-weight-bold">Email address</label>
                       <input
-                        class="form-control text-sm"
+                        class="form-control "
                         name="Email"
                         type="email"
                         value=""
@@ -79,9 +79,9 @@
     <div id="emailHelp" class="form-text"><p class="text-danger text-left" v-text="errors.email"></p></div>
   </div>
   <div class="mb-3">
-    <label for="exampleInputPassword1" class="form-label">Password</label>
+    <label for="exampleInputPassword1" class="form-label text-dark font-weight-bold">Password</label>
                       <input
-                        class="form-control text-sm"
+                        class="form-control "
                         name="Pass_word"
                         type="password"
                         value=""
@@ -90,31 +90,31 @@
                       />
     <div id="emailHelp" class="form-text"><p class="text-danger text-left" v-text="errors.password"></p></div>
     <div class="text-center text-danger" ref="err1" style="display: none">*All fields are mandatory</div>
-    <div class="text-center"><a class="btn btn-info" style="color:#fff;" @click="goNext">next --></a></div>
+<div class="d-grid gap-2 p-2">
+  <button class="btn btn-secondary bg-gradient" type="button" @click="goNext">next <i class="fa fa-angle-double-right"></i></button>
+</div>
   </div>
   
 </div>
-<div ref="form2" style="display:none">
-   <div> 
-                                
+<div ref="form2" style="display:none" class="p-2">
                                 <div class="form-group row">
                                   <label class="title text-dark font-weight-bold">Phone number
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.phonenumber">*</span>
                                   </label>
                                   <input
-                                    class="form-control text-sm border"
+                                    class="form-control  border"
                                     name="tel"
                                     type="tel"
                                     placeholder=""
                                     v-model="formData.phonenumber"
                                   />
                                 </div>
-                                <div class="form-group row">
+                                <div class="form-group col-lg-4 col-6 row">
                                   <label class="title text-dark font-weight-bold">Postcode
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.postal_code">*</span>
                                   </label>
                                   <input
-                                    class="form-control text-sm border"
+                                    class="form-control text-sm  border"
                                     name="firstname"
                                     type="text"
                                     placeholder="Enter your area postcode"
@@ -126,7 +126,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.address_line1">*</span>
                                   </label>
                                   <input
-                                    class="form-control text-sm border"
+                                    class="form-control  border"
                                     name="firstname"
                                     type="text"
                                     placeholder="type your address"
@@ -136,7 +136,7 @@
                                 <div class="form-group row">
                                   <label class="title text-dark font-weight-bold">Address line 2 (optional)</label>
                                   <input
-                                    class="form-control text-sm border"
+                                    class="form-control  border"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -148,7 +148,7 @@
                                     <span style="color:red; font-size: 11px;" class="required" v-text="errors.town_city">*</span>
                                   </label>
                                   <input
-                                    class="form-control text-sm border"
+                                    class="form-control  border"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -158,7 +158,7 @@
                                 <div class="form-group row">
                                   <label class="title text-dark font-weight-bold">County (if applicable)</label>
                                   <input
-                                    class="form-control text-sm border"
+                                    class="form-control  border"
                                     name="firstname"
                                     type="text"
                                     placeholder=""
@@ -169,7 +169,7 @@
                               <label class="title text-dark font-weight-bold">Country/Region</label>
                               <select id="country" 
                               name="country" 
-                              class="border text-sm form-control"
+                              class="border  form-control"
                               @change="countryChange($event)"
                               v-model="formData.country"
                               disabled>
@@ -421,15 +421,15 @@
                             </select>
                                 </div>
                                 <div class="form-group row">
-                                    <p class="text-dark text-sm font-weight-bold"
+                                    <p class="text-dark  font-weight-bold"
                                       > Add delivery instructions (optional)
                                     </p>
-                                      <p class="text-dark text-sm"
+                                      <p class="text-dark "
                                         >Do we need additional instructions to find this address?
                                       </p>
 
                                   <textarea
-                                    class="form-control text-sm border text-xs"
+                                    class="form-control  border text-xs"
                                     name="firstname"
                                     type="text"
                                     row="10"
@@ -438,17 +438,19 @@
                                   ></textarea>
                                 </div>
                                 <div class="form-group row">
-                                      <p class="text-dark text-sm"
+                                      <p class="text-dark "
                                         >Do we need a security code or a call box number to access this building?
                                       </p>
 
                                   <input
-                                    class="form-control text-sm border"
+                                    class="form-control  border"
                                     type="text"
                                     placeholder="1234"
                                     v-model="formData.securitycode"
                                   />
                                 </div>
+   <div> 
+                                
                               </div>
                              
 <div class="text-center text-danger" ref="err2" style="display: none">*Required fields are mandatory</div>
@@ -478,12 +480,14 @@
                     ></label>
   </div><div class="d-grid gap-2">
                     <button
-                    class="btn btn-warning bg-gradient border"
+                    class="btn btn-warning bg-gradient btn-blocked border"
                       @click='userRegister'>
                       Create account
                     </button>
-</div><br>
-<div class="text-center"><a class="btn btn-danger" style="color:#fff;" @click="goPrev"> Prev</a></div>
+</div>
+<div class="d-grid gap-2 pt-2 pb-4">
+  <button class="btn btn-secondary bg-gradient" type="button" @click="goPrev"><i class="fa fa-angle-double-left"></i> Prev</button>
+</div>
 </div>
                 </div>
 
