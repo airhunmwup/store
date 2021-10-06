@@ -209,30 +209,6 @@
 </div>
 </div>
 
-<div class="p-2">
-  <div  class="row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xs-6 g-4">
-  <div v-for="listings of newListings"
-            :key="listings.id"
-            v-bind:data-id="listings.id" class="col">
-         <router-link         
-          :to="{ name: 'productDetails_1', params: { pid: listings.id, pname: listings.product_name}}"
-          class="dropright"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-        >
-            
-    <div class="card h-100">
-      <div v-for="img in listings.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" style="height:180px; width: 100%;" alt="Product" v-bind:data-id="img.id" /></div>
-      <div class="card-body">
-    <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
-    <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
-      </div>
-    </div>
-            </router-link>
-  </div>
-</div>
-</div>
-
     <div class="appion">
 
       <div class="col-12" v-if="this.$store.state.myRecentViews">
