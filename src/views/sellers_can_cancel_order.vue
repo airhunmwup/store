@@ -184,6 +184,6 @@ You can cancel an order up to 30 days after a sale, even if your buyer has alrea
                             </div>
                           </div>
                         </section>
-            <div class="pb-4"></div>
+            <div class="pb-5 pt-5"></div>
     </div>
 </template>
