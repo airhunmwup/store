@@ -15,7 +15,7 @@
           <a href="index.html">
           <img  class="pt-2 pl-2"
             src="img/home/logo2.png"
-            width="70%"
+            width="80%"
             alt="REJEE COMPANY"
           />
            </a>
