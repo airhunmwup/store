@@ -22,6 +22,16 @@ class CategoryController extends Controller
         //
         return Categories::where('id', $id)->with('subcategories')->get();
     }
+    public function getcats()
+    {
+        //
+        return Categories::where('cat_name', 'Vehicles')->with('subcategories')->get();
+    }
+    public function getcats2()
+    {
+        //
+        return Categories::where('cat_name', 'Properties')->with('subcategories')->get();
+    }
     /**
      * Show the form for creating a new resource.
      *

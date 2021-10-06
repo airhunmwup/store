@@ -42,6 +42,8 @@ Route::post('/getSimilarItems3', [PropertiesController::class, 'similarItems']);
 
 Route::get('/newlistings', [ProductsController::class, 'newlisting']);
 Route::get('/newvehicles', [VehiclesController::class, 'newvehicles']);
+Route::get('/getVehicles', [VehiclesController::class, 'vehicles']);
+Route::get('/getProperties', [PropertiesController::class, 'properties']);
 Route::get('/newproperties', [PropertiesController::class, 'newproperties']);
 Route::get('/vehicle/{id}', [VehiclesController::class, 'show']);
 Route::get('/property/{id}', [PropertiesController::class, 'show']);
@@ -54,6 +56,8 @@ Route::get('/sortListings/{id}', [ProductsController::class, 'sortListings']);
 //Static Public Routes
 Route::get('/category', [CategoryController::class, 'index']);
 Route::get('/categorie/{id}', [CategoryController::class, 'getcat']);
+Route::get('/cats', [CategoryController::class, 'getcats']);
+Route::get('/cats2', [CategoryController::class, 'getcats2']);
 Route::get('/sub_category', [SubcategoryController::class, 'index']);
 Route::get('/subcategory/{id}', [SubcategoryController::class, 'fetch']);
 Route::post('/getsubcategories', [SubcategoryController::class, 'load']);

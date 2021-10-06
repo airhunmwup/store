@@ -120,7 +120,7 @@
           <span class="text-dark">
               <router-link
                 class="text-dark"
-                to="/ProductPage"
+                to="/vehicles"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 >see all
@@ -162,7 +162,7 @@
           <span class="text-dark">
               <router-link
                 class="text-dark"
-                to="/ProductPage"
+                to="/properties"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 >see all

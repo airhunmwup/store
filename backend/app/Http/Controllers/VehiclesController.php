@@ -87,7 +87,11 @@ class VehiclesController extends Controller
         //
         return Vehicles::with('vehicle_images')->orderBy('id', 'desc')->take(6)->get();
     }
-
+    public function vehicles()
+    {
+        //
+        return Vehicles::with('vehicle_images')->orderBy('id', 'desc')->get();
+    }
     /**
      * Display the specified resource.
      *

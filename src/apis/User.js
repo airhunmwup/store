@@ -24,6 +24,12 @@ export default{
     getCategory(id){
         return Api().get("/categorie/" + id);
     },
+    getCats(){
+        return Api().get("/cats");
+    },
+    getCats2(){
+        return Api().get("/cats2");
+    },
     getListing(id){
         return Api().get("/getlisting/" + id);
     },
@@ -57,6 +63,12 @@ export default{
     },
     getNewVehicles(){
         return Api().get("/newvehicles");
+    },
+    getVehicles(){
+        return Api().get("/getVehicles");
+    },
+    getProperties(){
+        return Api().get("/getProperties");
     },
     getNewProperties(){
         return Api().get("/newproperties");

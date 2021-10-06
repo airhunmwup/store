@@ -13,6 +13,8 @@ import userCategoriePage from '../views/buyers/userCategoriePage.vue'
 import productPage from '../views/buyers/productPage.vue'
 import propertyPage from '../views/buyers/propertyPage.vue'
 import vehiclePage from '../views/buyers/vehiclePage.vue'
+import vehicles from '../views/buyers/vehicles.vue'
+import properties from '../views/buyers/properties.vue'
 import productDetails from '../views/buyers/productDetails.vue'
 import productDetails_1 from '../views/buyers/productDetails_1.vue'
 import checkOutPage from '../views/buyers/checkOutPage.vue'
@@ -174,6 +176,16 @@ const routes = [{
          name: 'vehiclepage',
          component: vehiclePage,
          props: true,
+     },
+     {
+         path: '/vehicles',
+         name: 'vehicles',
+         component: vehicles,
+     },
+     {
+         path: '/properties',
+         name: 'properties',
+         component: properties,
      },
     {
         path: '/processorder',

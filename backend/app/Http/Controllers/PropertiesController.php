@@ -85,6 +85,11 @@ class PropertiesController extends Controller
         //
         return Properties::with('property_images')->orderBy('id', 'desc')->take(6)->get();
     }
+    public function properties()
+    {
+        //
+        return Properties::with('property_images')->orderBy('id', 'desc')->get();
+    }
     /**
      * Display the specified resource.
      *

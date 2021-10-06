@@ -22,7 +22,7 @@
                               :to="{ name: 'UserCategoriePage', params: { cid: category.id, catname: category.cat_name}}"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
-                            ><a @click="doThis(category.id,category.cat_name)" class="cateItem" href="#">{{ category.cat_name }}</a>
+                            ><a class="cateItem" href="#">{{ category.cat_name }}</a>
                            </router-link>
                             
                           </div>
@@ -74,10 +74,10 @@
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                             >
-                                <div v-for="img in listing.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:200px; width: 100%;" v-bind:data-id="img.id" /></div>
+                                <div v-for="img in listing.vehicle_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:200px; width: 100%;" v-bind:data-id="img.id" /></div>
                             <div class="card-body">
-                                <p class="text-dark h6 text-sm">{{ listing.product_name }}</p>
-                                <p class="font-weight-bold text-sm text-dark">£{{ listing.product_price }}</p>
+                                <p class="text-dark h6 text-sm">{{ listing.vehicle_make + ' ' + listing.vehicle_model }}</p>
+                                <p class="font-weight-bold text-sm text-dark">£{{ listing.vehicle_price }}</p>
                             </div>
 
                             </router-link>
@@ -110,8 +110,7 @@ export default {
   name: "landingPage",
   data() {
     return {
-      cid: this.$route.params.cid,
-      catname: this.$route.params.catname,
+      cid: '',
       categorie: [],
       categoryList: [],
       newListings:[],
@@ -133,7 +132,7 @@ export default {
       })
     },
     getCategory() {
-      User.getCategory(this.cid).then(response => {
+      User.getCats().then(response => {
       this.categorie = response.data[0];
     }).catch(error => {
         if (!error.response) {
@@ -141,34 +140,21 @@ export default {
             this.errorStatus = 'Error: Network Error';
         } else {
             this.errorStatus = error.response.data.message;
-           // document.getElementById("alat").innerHTML = error.response.data.message;
+           document.getElementById("alat").innerHTML = error.response.data.message;
         }
       })
     },
     getNewListings() {
-    if(this.catname == 'Vehicles'){
-      this.$router.push("/vehicles");
-     }else{
-      if(this.catname == 'Properties'){
-       this.$router.push("/properties");
-     }else{
-       User.getNewLists(this.cid).then(response => {
+      User.getVehicles().then(response => {
       this.newListings = response.data;
+      console.log(this.newListings);
     }).catch((errors) => {
         console.log(errors);
         console.log("new listing api call error");
       });
-       }
-     }
     },
-    doThis(id,catname){
-    if(catname == 'Vehicles'){
-     this.$router.push("/vehicles");
-    }else{
-      if(catname == 'Properties'){
-      this.$router.push("/properties");
-      }else{
-       User.getCategory(id).then(response => {
+    doThis(id){
+    User.getCategory(id).then(response => {
       this.categorie = response.data[0];
     }).catch(error => {
         if (!error.response) {
@@ -185,9 +171,6 @@ export default {
         console.log(errors);
         console.log("new listing api call error");
       });
-       }
-     }
-    
     },
     product_detail_link(event){
       var id = event.target.getAttribute("data-id");
