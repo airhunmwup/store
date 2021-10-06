@@ -1,5 +1,5 @@
 const Constants = (function () {
-    const BASE_URL_IMAGES = 'https://rejee.co.uk/images/';
+    const BASE_URL_IMAGES = 'http://localhost:8000/images/';
     // const BASE_URL = '';
     // const BASE_URL = '';
   
