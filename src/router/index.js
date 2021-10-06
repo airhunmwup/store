@@ -87,6 +87,7 @@ import resolving_unpaid_item from '../views/resolving_unpaid_item.vue'
 import resolving_with_seller from '../views/resolving_with_seller.vue'
 import Subscription from '../views/subscription.vue'
 import Subscription_select from '../views/subscription_select.vue'
+import subscription_pay from '../views/sellers/subscription_pay.vue'
 import Signout from '../views/signout.vue'
 
 
@@ -106,6 +107,11 @@ const routes = [{
         path: '/editloginname',
         name: 'editloginname',
         component: edit_login_name,
+    },
+    {
+        path: '/subscriptionpay',
+        name: 'subscriptionpay',
+        component: subscription_pay,
     },
 
     {

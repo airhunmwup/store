@@ -104,7 +104,6 @@
 <script>
 
 import User from "../../apis/User";
-import { mapState } from 'vuex';
 import Constants from "../../common/constants";
 export default {
   name: "landingPage",

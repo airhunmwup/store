@@ -483,7 +483,7 @@
                       Create account
                     </button>
 </div><br>
-<div class="text-center"><a class="btn btn-danger" style="color:#fff;" @click="goPrev"> <--Prev</a></div>
+<div class="text-center"><a class="btn btn-danger" style="color:#fff;" @click="goPrev"> Prev</a></div>
 </div>
                 </div>
 

@@ -3,13 +3,8 @@
     <footer class="justify-content-center footer-one d-md-none d-lg-none fixed-bottom"><div class="card container">
   <div class="row">
     <div class="col center ">
-<a href="index.html"  class="btn p-2 text-dark font-weight-bold ">
-  <span  class="fa fa-lg fa-home"></span>
-</a> 
-    </div>
-    <div class="col center ">
 <a v-if="this.$store.state.isLoggedIn"  class="btn p-2 text-dark font-weight-bold " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
-  <span  class="fa fa-lg fa-user"></span>
+  <span  class="fa fa-lg fa-ellipsis-v"></span>
 </a> 
       <router-link v-else 
             to="/login"
