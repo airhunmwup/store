@@ -16,7 +16,7 @@
                       <!-- ###category menu### -->
                       <div class="sidebar-block">
                         <div class="h6">Shop by Categories</div>
-                        <div class="text-sm block-content text-dark">
+                        <div class=" block-content text-dark">
                           <div v-for="category in categoryList" v-bind:key="category.id" class="cateTitle hasSubCategory open level1">
                             <router-link 
                               :to="{ name: 'UserCategoriePage', params: { cid: category.id, catname: category.cat_name}}"
@@ -47,7 +47,7 @@
                               col-sm-6 p-2 col-md-4 col-lg-4
                             "
                           >
-                              <p class="underline text-sm  text-dark">
+                              <p class="underline   text-dark">
                                 <router-link
                                     class="text-dark"
                                     :to="{ name: 'ProductPage', params: { cid: subcategory.id, subcatname: subcategory.sub_catname}}"
@@ -62,6 +62,7 @@
                         </div>
                       <!-- spot light'any random product under the selected category -->
                       
+      <li class="border-top my-3"></li>
                       <!-- FEATURED Listings -->
                       <div class="title-product">
                         <div class="row">
@@ -76,8 +77,8 @@
                             >
                                 <div v-for="img in listing.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" alt="Product" style="height:200px; width: 100%;" v-bind:data-id="img.id" /></div>
                             <div class="card-body">
-                                <p class="text-dark h6 text-sm">{{ listing.product_name }}</p>
-                                <p class="font-weight-bold text-sm text-dark">£{{ listing.product_price }}</p>
+                                <p class="text-dark h6 ">{{ listing.product_name }}</p>
+                                <p class="font-weight-bold  text-dark">£{{ listing.product_price }}</p>
                             </div>
 
                             </router-link>

@@ -39,7 +39,7 @@
       </ul>
     </div></router-link>
                       <router-link  v-else  
-                        to="/registertosell"
+                        to="/login"
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
                         title="tart Selling."
@@ -89,7 +89,7 @@
     </div>
 </nav>
 <div class="p-2">
-  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div  class="row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xs-6 g-4">
   <div v-for="listings of newListings"
             :key="listings.id"
             v-bind:data-id="listings.id" class="col">
@@ -131,7 +131,7 @@
     </div>
 </nav>
 <div class="p-2">
-  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div  class="row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xs-6 g-4">
   <div v-for="listings of newVehicles"
             :key="listings.id"
             v-bind:data-id="listings.id" class="col">
@@ -173,7 +173,7 @@
     </div>
 </nav>
 <div class="p-2">
-  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
+  <div  class="row row-cols-2 row-cols-md-3 row-cols-lg-6 row-cols-xs-6 g-4">
   <div v-for="listings of newProperties"
             :key="listings.id"
             v-bind:data-id="listings.id" class="col">
@@ -209,31 +209,7 @@
 </div>
 </div>
 
-<div class="p-2">
-  <div  class="row row-cols-2 row-cols-md-6 row-cols-xs-6 g-4">
-  <div v-for="listings of newListings"
-            :key="listings.id"
-            v-bind:data-id="listings.id" class="col">
-         <router-link         
-          :to="{ name: 'productDetails_1', params: { pid: listings.id, pname: listings.product_name}}"
-          class="dropright"
-          data-toggle="collapse"
-          data-target=".navbar-collapse"
-        >
-            
-    <div class="card h-100">
-      <div v-for="img in listings.product_images.slice(0,1)" v-bind:key="img.id"><img v-bind:src="API_BASE_URL + img.product_image_path" class="card-img-top" style="height:180px; width: 100%;" alt="Product" v-bind:data-id="img.id" /></div>
-      <div class="card-body">
-    <p class="title text-dark" v-bind:data-id="listings.id">{{ listings.product_name }}</p>
-    <p class="font-weight-bold text-dark" v-bind:data-id="listings.id">£{{ listings.product_price }}</p>
-      </div>
-    </div>
-            </router-link>
-  </div>
-</div>
-</div>
-
-    <div class="appion">
+    <div class="appion"  v-if="this.$store.state.isLoggedIn">
 
       <div class="col-12" v-if="this.$store.state.myRecentViews">
         <p class="text-dark">Recently viewed</p>
@@ -357,7 +333,7 @@
                       <ul>
                         <li class="underline">
                           <router-link
-                            to="/Resolut Center"
+                            to="/help"
                             class="text-light"
                             data-toggle="collapse"
                             data-target=".navbar-collapse"

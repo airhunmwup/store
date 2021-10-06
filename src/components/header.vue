@@ -15,7 +15,7 @@
           <a href="index.html">
           <img  class="pt-2 pl-2"
             src="img/home/logo2.png"
-            width="70%"
+            width="80%"
             alt="REJEE COMPANY"
           />
            </a>
@@ -189,7 +189,7 @@
       </li>
       <li class="mb-1">
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
-          <p class="text-dark font-weight-bold"><i class="fa fa-user "></i><span class="h5"> Account</span></p>
+          <p class="text-dark font-weight-bold"><i class="fa fa-user pr-2"></i><span class="h5"> Account</span></p>
         </button>
         <div class="collapse" id="account-collapse">
           <ul class="btn-toggle-nav list-unstyled fw-normal pb-1 small">
@@ -217,18 +217,32 @@
           </ul>
         </div>
       </li>
+      <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded" >
+                <router-link
+                  to="/Overview"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Sellers Hub"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+                      <p class="text-dark"><i class="fa fa-dashboard pr-2"></i><span class="h5"> Sellers Hub</span></p>
+                </router-link>
+        </button>
+      </li>
       <li class="border-top my-3"></li>
             <li class="p-2">
         <button class="btn btn-toggle align-items-center rounded" >
-        <a
-              class="font-weight-bold"
-              data-toggle="collapse"
-              title="sign out"
-              @click="signOut"
-            data-bs-dismiss="offcanvas" aria-label="Close"
-            ><i class="fa fa-question-circle-o "></i>
+                <router-link
+                  to="/help"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                ><i class="fa fa-question-circle-o "></i>
               <span class="h5"> Help</span>
-         </a></button></li>
+                </router-link></button></li>
       
             <li class="p-2">
         <button class="btn btn-toggle align-items-center rounded" >

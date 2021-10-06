@@ -97,6 +97,6 @@ You can exclude certain buyers from having orders canceled automatically when yo
                           </div>
                         </section>
     </div>
-                        <hr>
+            <div class="pb-5 pt-5"></div>
   </div>
 </template>

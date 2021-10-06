@@ -4,10 +4,10 @@
 
     <!--All-Orders-->
 
-        <div class="row justify-center text-sm" >
+        <div class="row justify-center " >
 
 <!--recently viewed-->
-                <div class="row col-sm-12 col-lg-6 col-md-6">
+                <div class="row col-sm-12 col-lg-8 col-md-8">
                   <span class="text p-4 text-dark h4 font-weight-bold">
                    New Property Listing
                   </span>
@@ -28,7 +28,7 @@
               ></router-link>
   </div>
   <div class="col-auto">
-              <p class="text-sm underline">{{cat_name}} , {{category}}</p>
+              <p class=" underline">{{cat_name}} , {{category}}</p>
               <span class="text-xs" v-text="errors.product_subcat"></span>
   </div>
   <div class="col-12">
@@ -98,7 +98,7 @@
                 <select
                   class="
                     form-control
-                    text-sm
+                    
                     select-auto
                     border
                   "
@@ -121,7 +121,7 @@
                 <select
                   class="
                     form-control
-                    text-sm
+                    
                     select-auto
                     border
                   "
@@ -150,7 +150,7 @@
                 <select
                   class="
                     form-control
-                    text-sm
+                    
                     select-auto
                     border
                   "
