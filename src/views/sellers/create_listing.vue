@@ -4,7 +4,7 @@
 
     <!--All-Orders-->
 
-        <div class="row justify-center text-sm" >
+        <div class="row justify-center " >
 
 <!--recently viewed-->
                 <div class="row col-sm-12 col-lg-6 col-md-6">
@@ -28,7 +28,7 @@
               ></router-link>
   </div>
   <div class="col-auto">
-              <p class="text-sm underline">{{cat_name}} , {{category}}</p>
+              <p class=" underline">{{cat_name}} , {{category}}</p>
               <span class="text-xs" v-text="errors.product_subcat"></span>
   </div>
   <div class="col-12">
@@ -76,7 +76,7 @@
                 <select
                   class="
                     form-control
-                    text-sm
+                    
                     select-auto
                     border
                   "
@@ -158,7 +158,7 @@
             <span style="color: red; font-size: 12px;" v-text="errors.product_shipping_type"></span>
             <label class="font-weight-bold">Domestic shipping</label>
               <select
-                class="border-2 form-control text-sm select-auto"
+                class="border-2 form-control  select-auto"
                 type="text"
                 name=""
                 @change="shippingtypeOption($event)"
@@ -182,7 +182,7 @@
               
               <div class="input-group input-group-sm mb-3">
                 <select
-                  class="border form-control text-sm select-auto"
+                  class="border form-control  select-auto"
                   type="text"
                   name=""
                   @change="shippingRateOption($event)"
@@ -252,7 +252,7 @@
               <label class="font-weight-bold">Type</label>
               <span style="color: red; font-size: 12px;" v-text="errors.product_package_type"></span>
               <select
-                class="form-control text-sm select-auto border"
+                class="form-control  select-auto border"
                 type="text"
                 name=""
                 @change="packageTypeOption($event)"
@@ -348,7 +348,7 @@
             <div class="col-12 col-lg-6">
               <span style="color: red; font-size: 12px;"></span>
               <select
-                class="form-control text-sm select-auto border"
+                class="form-control  select-auto border"
                 type="text"
                 name=""
               >
@@ -361,7 +361,7 @@
             </div>
         </div>
       </div>
-      <div class="card-footer text-sm">
+      <div class="card-footer ">
         <div class="row p-2 col-lg-12 col-md-12 col-sm-12">
           <div class="col-6 col-lg-2">
             <p class="pt-3 h6 text-dark">Total:</p>
