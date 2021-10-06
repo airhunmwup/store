@@ -8,7 +8,7 @@ let Api = function () {
     let token = localStorage.getItem("token");
 
     if (token) {
-        BaseApi.defaults.headers.common["Authorization"] = 'Bearer ${token}';
+        BaseApi.defaults.headers.common["Authorization"] = `Bearer ${token}`;
     }
 
     return BaseApi;
