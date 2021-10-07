@@ -675,7 +675,6 @@
 
       <!-- end col-md-9-1 -->
     </div>
-  </div>
 
 </template>
 <script>
