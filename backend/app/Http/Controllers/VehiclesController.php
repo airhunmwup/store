@@ -49,6 +49,9 @@ class VehiclesController extends Controller
             'vehicle_owner_no' => 'required|string',
             'vehicle_price' => 'required|string',
             'vehicle_millage' => 'required|string',
+            'vehicle_engine_type' => 'required|string',
+            'vehicle_fuel_type' => 'required|string',
+            'vehicle_engine_size' => 'required|string',
             'vehicle_desc' => 'required|string',
         ]);
 
@@ -64,6 +67,9 @@ class VehiclesController extends Controller
             'vehicle_owner_no' => $fields['vehicle_owner_no'],
             'vehicle_price' => $fields['vehicle_price'],
             'vehicle_millage' => $fields['vehicle_millage'],
+            'vehicle_enginetype' => $fields['vehicle_engine_type'],
+            'vehicle_fueltype' => $fields['vehicle_fuel_type'],
+            'vehicle_enginesize' => $fields['vehicle_engine_size'],
             'vehicle_desc' => $fields['vehicle_desc'],
         ]);
         

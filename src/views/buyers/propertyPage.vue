@@ -24,7 +24,7 @@
                   class="tab-pane fade show"
                   v-bind:key="img.id"
                 >
-                  <img v-bind:src="API_BASE_URL + img.vehicle_image_path" alt="Product" style="max-height:300px; width:100%; margin: 5px;" v-bind:data-id="img.id" />
+                  <img v-bind:src="API_BASE_URL + img.product_image_path" alt="Product" style="max-height:300px; width:100%; margin: 5px;" v-bind:data-id="img.id" />
                 </div>
                  </div>
 

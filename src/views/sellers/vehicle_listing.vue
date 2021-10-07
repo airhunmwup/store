@@ -192,7 +192,7 @@
               <div class="form-group">
                 <label class="font-weight-bold">Millage</label>
                 <span style="color: red; font-size: 12px;" v-text="errors.vehicle_millage"></span>
-                <input type="number" class="form-control" v-model="formData.vehicle_mmillage" />
+                <input type="number" class="form-control" v-model="formData.vehicle_millage" />
               </div>
             </div>
             <div class="col-12 col-lg-3">
@@ -201,11 +201,11 @@
                 <span style="color: red; font-size: 12px;"></span>
                 <select
                   class="
-                    form-control
-                    
+                    form-control                    
                     select-auto
                     border
                   "
+                  @change="vehicle_engine_type($event)"
                   type="text"
                   name=""
                 >
@@ -222,11 +222,11 @@
                 <span style="color: red; font-size: 12px;"></span>
                 <select
                   class="
-                    form-control
-                    
+                    form-control                    
                     select-auto
                     border
                   "
+                  @change="vehicle_fuel_type($event)"
                   type="text"
                   name=""
                 >
@@ -243,11 +243,11 @@
                 <span style="color: red; font-size: 12px;"></span>
                 <select
                   class="
-                    form-control
-                    
+                    form-control                   
                     select-auto
                     border
                   "
+                  @change="vehicle_engine_size($event)"
                   type="text"
                   name=""
                 >
@@ -350,6 +350,9 @@ export default {
         vehicle_owner_no: "",
         vehicle_price: "",
         vehicle_millage: "",
+        vehicle_engine_type: "",
+        vehicle_fuel_type: "",
+        vehicle_engine_size: "",
         vehicle_desc: "",
         imageData: [],
       },
@@ -420,6 +423,9 @@ export default {
                formData2.append('vehicle_owner_no', this.formData.vehicle_owner_no);
                formData2.append('vehicle_price', this.formData.vehicle_price);
                formData2.append('vehicle_millage', this.formData.vehicle_millage);
+               formData2.append('vehicle_engine_type', this.formData.vehicle_engine_type);
+               formData2.append('vehicle_fuel_type', this.formData.vehicle_fuel_type);
+               formData2.append('vehicle_engine_size', this.formData.vehicle_engine_size);  
                formData2.append('vehicle_desc', this.formData.vehicle_desc);              
                $.each(this.image, function (key, image) {
                   formData2.append(`images[${key}]`, image)
@@ -458,6 +464,15 @@ export default {
     },
     vehicle_year(event){
       this.formData.vehicle_year = event.target.value;
+    },
+    vehicle_engine_type(event){
+      this.formData.vehicle_engine_type = event.target.value;
+    },
+    vehicle_engine_size(event){
+      this.formData.vehicle_engine_size = event.target.value;
+    },
+    vehicle_fuel_type(event){
+      this.formData.vehicle_fuel_type = event.target.value;
     },
     errorStyle(err){
       if(err){
