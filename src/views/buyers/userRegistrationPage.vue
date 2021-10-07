@@ -538,7 +538,7 @@ export default {
       if(this.formData.phonenumber !='' && this.formData.postal_code !='' && this.formData.address_line1 !='' && this.formData.town_city !=''){
       this.loading = true;
       this.$http
-      .post('http://localhost:8000/api/register', this.formData).then((response) =>{
+      .post('https://rejee.co.uk/api/register', this.formData).then((response) =>{
           console.log(response.data);
           this.formData.first_name = this.formData.last_name = this.formData.email = this.formData.password = ''
           this.errors = {}
