@@ -39,13 +39,13 @@
         </div>
 
         <div class="row col-xs-12 pt-3 col-lg-4 col-md-4 col-sm-12">
-          <p class="lead text-dark mt-4">
+          <p class="lead text-dark mt-4 font-weight-bold">
             {{ productDetails.vehicle_make }} {{ productDetails.vehicle_model}} 
           </p>
 
           <div class="dropdown-divider"></div>
 
-          <p class="font-weight-bold mt-2 text-sm text-dark">
+          <p class="font-weight-bold mt-2 text-dark">
             Price:<span class=""> {{ productDetails.vehicle_price }}</span><span class="text-secondary">/month</span>
           </p>
 

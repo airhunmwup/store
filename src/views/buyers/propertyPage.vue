@@ -40,13 +40,13 @@
         </div>
 
         <div class="row col-xs-12 pt-3 col-lg-4 col-md-4 col-sm-12">
-          <p class="lead text-dark mt-4">
+          <p class="lead text-dark mt-4 font-weight-bold">
             {{ productDetails.property_name }} For RENT or SELL
           </p>
 
           <div class="dropdown-divider"></div>
 
-          <p class="font-weight-bold mt-2 text-sm text-dark">
+          <p class="font-weight-bold mt-2 text-dark">
             Price:<span class=""> £{{ productDetails.property_price }}</span><span class="text-secondary"></span>
           </p>
 

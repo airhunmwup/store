@@ -98,7 +98,7 @@
                   </div>
 
                   <div class="col">
-                    <p class="">30-day return</p>
+                    <p class="">7-day return</p>
                   </div>
                 </div>
               </div>
