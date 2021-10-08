@@ -176,12 +176,18 @@
 
                     <div class="row">
                       <div class="col">
-                        <p class="">Sellers name here</p>
+                        <p class="">{{productDetails.user.first_name}} {{productDetails.user.last_name}}</p>
 
                         <p class="mt-2">Sellers description here:</p>
 
                         <p class="text-xs underline text-primary">
-                          See other items from this seller
+                          <router-link 
+                              :to="{ name: 'seller', params: { uid: productDetails.user.id, username: productDetails.user.first_name + ' ' + productDetails.user.last_name}}"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                            >
+                          Other items by {{productDetails.user.first_name}}
+                           </router-link>
                         </p>
                       </div>
                     </div>

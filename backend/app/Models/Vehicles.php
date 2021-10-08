@@ -30,4 +30,8 @@ class Vehicles extends Model
     {
         return $this->hasMany('App\Models\VehicleImages','product_id');
     }
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User', 'product_userid');
+    }
 }

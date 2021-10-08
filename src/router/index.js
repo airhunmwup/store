@@ -11,6 +11,7 @@ import userRegistrationPage from '../views/buyers/userRegistrationPage.vue'
 import userLogin from '../views/buyers/userLogin.vue'
 import userCategoriePage from '../views/buyers/userCategoriePage.vue'
 import productPage from '../views/buyers/productPage.vue'
+import seller from '../views/buyers/seller.vue'
 import propertyPage from '../views/buyers/propertyPage.vue'
 import vehiclePage from '../views/buyers/vehiclePage.vue'
 import vehicles from '../views/buyers/vehicles.vue'
@@ -304,6 +305,11 @@ const routes = [{
         path: '/ProductPage',
         name: 'ProductPage',
         component: productPage,
+    },
+    {
+        path: '/seller/:username',
+        name: 'seller',
+        component: seller,
     },
     {
         path: '/productDetail',

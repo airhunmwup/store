@@ -107,7 +107,7 @@ class VehiclesController extends Controller
     public function show($id)
     {
         //
-        return Vehicles::where('id', $id)->with('vehicle_images')->get();
+        return Vehicles::where('id', $id)->with('vehicle_images')->with('user')->get();
     }
     public function getmyvehicles($userid)
     {

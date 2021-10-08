@@ -42,4 +42,8 @@ class Products extends Model
     {
         return $this->hasMany('App\Models\recentViews','product_id');
     }
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User', 'product_userid');
+    }
 }

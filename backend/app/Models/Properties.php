@@ -26,4 +26,8 @@ class Properties extends Model
     {
         return $this->hasMany('App\Models\PropertyImages','product_id');
     }
+    public function user()
+    {
+        return $this->belongsTo('App\Models\User', 'product_userid');
+    }
 }

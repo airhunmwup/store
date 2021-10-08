@@ -99,7 +99,7 @@ class PropertiesController extends Controller
     public function show($id)
     {
         //
-        return Properties::where('id', $id)->with('property_images')->get();
+        return Properties::where('id', $id)->with('property_images')->with('user')->get();
     }
     public function getmyproperties($userid)
     {

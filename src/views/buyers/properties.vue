@@ -70,7 +70,7 @@
                             >
                             <router-link
                                 class=""
-                                :to="{ name: 'productDetails_1', params: { pid: listing.id, pname: listing.product_name}}"
+                                :to="{ name: 'propertyPage', params: { pid: listing.id, pname: listing.property_name}}"
                                 data-toggle="collapse"
                                 data-target=".navbar-collapse"
                             >

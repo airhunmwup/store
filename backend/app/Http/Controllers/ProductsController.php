@@ -9,6 +9,8 @@ use Carbon\Carbon;
 use App\Models\Categories;
 use App\Models\Subcategories;
 use App\Models\ProductImages;
+use App\Models\Vehicles;
+use App\Models\Properties;
 use Intervention\Image\Facades\Image;
 
 class ProductsController extends Controller
@@ -144,7 +146,7 @@ class ProductsController extends Controller
     public function show($id)
     {
         //
-        return Products::where('id', $id)->with('product_images')->get();
+        return Products::where('id', $id)->with('product_images')->with('user')->get();
     }
 
 
@@ -250,6 +252,18 @@ class ProductsController extends Controller
     {
         //
         return Products::where('product_subcat_id', $id)->with('product_images')->orderBy('id', 'desc')->get();
+    }
+    public function getListingBySeller($id)
+    {
+        //
+        $products = Products::where('product_userid', $id)->with('product_images')->orderBy('id', 'desc')->get();
+        $properties = Properties::where('product_userid', $id)->with('property_images')->orderBy('id', 'desc')->get();
+        $vehicles = Vehicles::where('product_userid', $id)->with('vehicle_images')->orderBy('id', 'desc')->get();
+        return $response = [
+            'products' => $products,
+            'properties' => $properties,
+            'vehicles' => $vehicles
+        ];
     }
     public function newlists($id)
     {

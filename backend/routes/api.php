@@ -48,6 +48,7 @@ Route::get('/newproperties', [PropertiesController::class, 'newproperties']);
 Route::get('/vehicle/{id}', [VehiclesController::class, 'show']);
 Route::get('/property/{id}', [PropertiesController::class, 'show']);
 Route::get('/newlistings2/{id}', [ProductsController::class, 'newlisting2']);
+Route::get('/getListingBySeller/{id}', [ProductsController::class, 'getListingBySeller']);
 Route::get('/newlists/{id}', [ProductsController::class, 'newlists']);
 Route::get('/sortListings/{id}', [ProductsController::class, 'sortListings']);
 
