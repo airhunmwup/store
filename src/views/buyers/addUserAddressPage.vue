@@ -456,7 +456,7 @@ export default {
           err.forEach((key)=>{
             var strError = errors.response.data.errors[key][0];
             this.errors[key] = strError;
-          })
+          }).finally(() => this.loading = false);
           console.log(err);
       });
     },

@@ -9,20 +9,19 @@
                 <!-- main content -->
                       <section class="">
                         <div class="container">
-                          <div class="row pb-5 ">
+                          <div class="row pb-5 justify-content-center">
                             <div
-                              class="col-lg-10 col-md-10 col-sm-10"
+                              class="col-lg-10 col-md-10 col-sm-12"
                             >
                               <p class="text-dark  text-left h5 font-weight-bold">
                                 Subscriptions
                               </p>
-                            </div>
                             <div class="row card pb-5  pt-3">
                               <p class="text-dark  text-left h6 font-weight-bold">
                                     Recommended
                               </p>
-                              <div class="row p-2 border col-lg-12 col-md-12 col-sm-12">
-                              <div class="col-lg-3 col-md-3 col-sm-8">
+                              <div class="row p-2">
+                              <div class="col-lg-3 col-md-6 col-sm-8">
                               <div class="">
                                 <p class="h4 text-primary">
                                   REJEE Store
@@ -34,15 +33,14 @@
                               </div>
 
                               <div class="col-lg-6 col-md-6 col-sm-8">
-                              <div class="border-r-2 ">
+                              <div class="">
                                 <p class="text text-dark font-weight-bold">
                                   What you'll get when you subscribe to a Store:
                                 </p>
                                 <ul class="p-3 text-dark">
                                 <li style="list-style-type: disc;"><b>Save!</b> Get free listings and lower final value fees.*</li>
                                 <li style="list-style-type: disc;"><b>Boost traffic!</b> Drive buyers to your listings and Store.</li>
-                                <li style="list-style-type: disc;"><b>Brand yourself!</b> Design a custom homepage to bring in new and repeat buyers.</li>
-                                <li style="list-style-type: disc;"><b>Optimize listings!</b> Use exclusive, powerful tools to optimize your listings.</li>
+                                <li style="list-style-type: disc;"><b>Brand yourself!</b> Sellers lisings page to bring in new and repeat buyers.</li>
                                 <li style="list-style-type: disc;"><b>Enjoy dedicated customer service!</b> REJEE Stores Anchor and Enterprise Store subscribers have access to white-glove customer service.*</li>
                                 </ul>
                               </div>
@@ -63,6 +61,7 @@
                               </div>
                               </div>
                               </div>
+                            </div>
                             </div>
                           </div>
                         </div>

@@ -386,14 +386,21 @@
 </div>
     <div class="row">
       <div class="col-lg-6 col-12 p-2">
-        <button type="button" class="form-control btn-sm btn btn-light border">
+                <router-link
+                  to="/listings"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+        <button type="button" class="form-control btn btn-light border">
           Cancel
-        </button>
+        </button></router-link>
       </div>
       <div class="col-lg-6 col-12 p-2">
         <button
           type="button"
-          class="form-control btn-sm btn btn-success border"
+          class="form-control  btn btn-success border"
           @click="createListing"
         >
           Save
@@ -405,6 +412,13 @@
 
           <div class="pb-5"></div>
       <!-- end col-md-9-1 -->
+    <div v-if="loading" id="page-preloader" class="redit">
+        <div class="page-loading">
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+        </div>
+    </div>
     </div>
   </div>
 </template>
@@ -537,7 +551,7 @@ export default {
             this.errorStatus = error.response.data.message;
              console.log(error.response.data.message);
         }
-      })
+      }).finally(() => this.loading = false);
       }else{
         console.log('no image');
       }
