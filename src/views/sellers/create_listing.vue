@@ -346,12 +346,11 @@
         </div>
         <div class="row">
             <div class="col-12 col-lg-6">
-              <span style="color: red; font-size: 12px;" v-text="errors.product_retun"></span>
+              <span style="color: red; font-size: 12px;"></span>
               <select
                 class="form-control  select-auto border"
                 type="text"
                 name=""
-                @change="retunOption($event)"
               >
                 <option value="">Select return option</option>
                 <option value="Letter">7 days</option>
@@ -456,7 +455,6 @@ export default {
         product_package_weight: "",
         product_package_length: "",
         product_package_width: "",
-        product_retun: "",
         product_total: "0.00",
         testImage: "",
       },
@@ -533,7 +531,6 @@ export default {
                formData2.append('product_package_weight', this.formData.product_package_weight);
                formData2.append('product_package_length', this.formData.product_package_length);
                formData2.append('product_package_width', this.formData.product_package_width);
-               formData2.append('product_return', this.formData.product_return);
                formData2.append('product_total', this.formData.product_total);
                $.each(this.image, function (key, image) {
                   formData2.append(`images[${key}]`, image)
@@ -572,9 +569,6 @@ export default {
     },
     packageTypeOption(event){
       this.formData.product_package_type = event.target.value;
-    },
-    returnOption(event){
-      this.formData.product_return = event.target.value;
     },
     errorStyle(err){
       if(err){
