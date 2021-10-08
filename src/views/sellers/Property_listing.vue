@@ -199,14 +199,21 @@
 </div>
     <div class="row">
       <div class="col-lg-6 col-12 p-2">
-        <button type="button" class="form-control btn-sm btn btn-light border">
+                <router-link
+                  to="/listings"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+        <button type="button" class="form-control btn btn-light border">
           Cancel
-        </button>
+        </button></router-link>
       </div>
       <div class="col-lg-6 col-12 p-2">
         <button
           type="button"
-          class="form-control btn-sm btn btn-success border"
+          class="form-control btn btn-success border"
           @click="createPropertyListing"
         >
           Save

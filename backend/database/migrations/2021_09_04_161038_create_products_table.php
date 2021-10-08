@@ -37,6 +37,7 @@ class CreateProductsTable extends Migration
             $table->string("product_package_weight");
             $table->string("product_package_length");
             $table->string("product_package_width");
+            $table->string("product_return");
             $table->string("product_total");
         });
     }

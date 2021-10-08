@@ -209,7 +209,7 @@
                   <p class="">£{{prods.product_price}}</p>
                 </div>
                 <div class="col text-center">
-                  <p class="">16</p>
+                  <p class="">{{prods.product_quantity}}</p>
                 </div>
                 <div class="col text-center">
                   <span
@@ -282,9 +282,6 @@
                   <p class="">£{{listing.vehicle_price}}</p>
                 </div>
                 <div class="col text-center">
-                  <p class="">16</p>
-                </div>
-                <div class="col text-center">
                   <span
                     class="alert-xs p-1 mt-4 rounded alert-success"
                     style="height: 2rem"
@@ -294,7 +291,7 @@
                   </span>
                 </div>
                 <div class="col text-center">
-                  <p class="">160</p>
+                  <p class="">0</p>
                 </div>
                 <div class="col text-right">
                  
@@ -353,9 +350,6 @@
                   <p class="">£{{listing.property_price}}</p>
                 </div>
                 <div class="col text-center">
-                  <p class="">16</p>
-                </div>
-                <div class="col text-center">
                   <span
                     class="alert-xs p-1 mt-4 rounded alert-success"
                     style="height: 2rem"
@@ -365,7 +359,7 @@
                   </span>
                 </div>
                 <div class="col text-center">
-                  <p class="">160</p>
+                  <p class="">0</p>
                 </div>
                 <div class="col text-right">
                  
@@ -536,12 +530,6 @@
                 </p>
               </div>
               <div class="col-4">
-                <p class="m-1">In-stock:</p>
-              </div>
-              <div class="col-8 text-right">
-                <p class="m-1 text-dark font-weight-bold">16</p>
-              </div>
-              <div class="col-4">
                 <p class="m-1">Price:</p>
               </div>
               <div class="col-8 text-right">
@@ -551,7 +539,7 @@
                 <p class="m-1">Watches</p>
               </div>
               <div class="col-8 text-right">
-                <p class="text-dark">160</p>
+                <p class="text-dark">0</p>
               </div>
             </div>
           </div>
@@ -619,12 +607,6 @@
                 </p>
               </div>
               <div class="col-4">
-                <p class="m-1">In-stock:</p>
-              </div>
-              <div class="col-8 text-right">
-                <p class="m-1 text-dark font-weight-bold">16</p>
-              </div>
-              <div class="col-4">
                 <p class="m-1">Price:</p>
               </div>
               <div class="col-8 text-right">
@@ -634,7 +616,7 @@
                 <p class="m-1">Watches</p>
               </div>
               <div class="col-8 text-right">
-                <p class="text-dark">160</p>
+                <p class="text-dark">0</p>
               </div>
             </div>
           </div>
