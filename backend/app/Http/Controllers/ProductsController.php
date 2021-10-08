@@ -96,6 +96,7 @@ class ProductsController extends Controller
             'product_package_weight' => 'required|integer',
             'product_package_length' => 'required|integer',
             'product_package_width' => 'required|integer',
+            'product_return' => 'required|integer',
         ]);
 
         $product = Products::create([
@@ -116,6 +117,7 @@ class ProductsController extends Controller
             'product_package_weight' => $fields['product_package_weight'],
             'product_package_length' => $fields['product_package_length'],
             'product_package_width' => $fields['product_package_width'],
+            'product_return' => $fields['product_return'],
             'product_total' => $request->product_total,
         ]);
         
