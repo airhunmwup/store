@@ -218,6 +218,13 @@
 
           <div class="pb-5"></div>
       <!-- end col-md-9-1 -->
+    <div v-if="loading" id="page-preloader" class="redit">
+        <div class="page-loading">
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+        </div>
+    </div>
     </div>
   </div>
 </template>
@@ -335,7 +342,7 @@ export default {
             this.errorStatus = error.response.data.message;
              console.log(error.response.data.message);
         }
-      })
+      }).finally(() => this.loading = false);
       }else{
         console.log('no image');
       }

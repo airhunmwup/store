@@ -255,7 +255,9 @@
         </div>
         
         <div class="card m-2 border d-xs-none">
+        <div class="p-2 card-header">
         <h3><b>Vehicles</b></h3>
+        </div>
         <div class="card-body border-b-2 text-dark" v-for="listing in this.$store.state.myvehicles" :key="listing.id" >
             
               <div class="row text-xs">
@@ -325,7 +327,9 @@
             
           </div>
         <div class="card m-2 border d-xs-none">
+        <div class="p-2 card-header">
             <h3><b>Properties</b></h3>
+        </div>
             <div class="card-body border-b-2 text-dark" v-for="listing in this.$store.state.myproperties" :key="listing.id" >
                 <div class="row text-xs">
                     <div class="col-1">

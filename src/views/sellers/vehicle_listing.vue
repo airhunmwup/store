@@ -321,6 +321,13 @@
 
           <div class="pb-5"></div>
       <!-- end col-md-9-1 -->
+    <div v-if="loading" id="page-preloader" class="redit">
+        <div class="page-loading">
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+            <div class="dot text-center text-danger font-italic font-extrabold"></div>
+        </div>
+    </div>
     </div>
   </div>
 </template>
@@ -426,7 +433,7 @@ export default {
                formData2.append('vehicle_engine_type', this.formData.vehicle_engine_type);
                formData2.append('vehicle_fuel_type', this.formData.vehicle_fuel_type);
                formData2.append('vehicle_engine_size', this.formData.vehicle_engine_size);  
-               formData2.append('vehicle_desc', this.formData.vehicle_desc);              
+               formData2.append('vehicle_desc', this.formData.vehicle_desc); 
                $.each(this.image, function (key, image) {
                   formData2.append(`images[${key}]`, image)
                 })
@@ -446,7 +453,7 @@ export default {
             this.errorStatus = error.response.data.message;
              console.log(error.response.data.message);
         }
-      })
+      }).finally(() => this.loading = false);
       }else{
         console.log('no image');
       }
@@ -485,7 +492,7 @@ export default {
   },
   computed: {
     product_total(){
-      return this.formData.product_total = this.formData.product_price + this.formData.product_shipping_cost;
+      return this.formData.product_price;
     }
   }
 }
