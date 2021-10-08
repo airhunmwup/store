@@ -457,7 +457,7 @@
                 <p class="m-1">Price:</p>
               </div>
               <div class="col-8 text-right">
-                <p class="m-1 text-dark font-weight-bold">{{prods.product_price}}</p>
+                <p class="m-1 text-dark font-weight-bold">£{{prods.product_price}}</p>
               </div>
               <div class="col-4">
                 <p class="m-1">Watches</p>
@@ -533,7 +533,7 @@
                 <p class="m-1">Price:</p>
               </div>
               <div class="col-8 text-right">
-                <p class="m-1 text-dark font-weight-bold">{{listing.vehicle_price}}</p>
+                <p class="m-1 text-dark font-weight-bold">£{{listing.vehicle_price}}</p>
               </div>
               <div class="col-4">
                 <p class="m-1">Watches</p>
@@ -610,7 +610,7 @@
                 <p class="m-1">Price:</p>
               </div>
               <div class="col-8 text-right">
-                <p class="m-1 text-dark font-weight-bold">{{listing.property_price}}</p>
+                <p class="m-1 text-dark font-weight-bold">£{{listing.property_price}}</p>
               </div>
               <div class="col-4">
                 <p class="m-1">Watches</p>
