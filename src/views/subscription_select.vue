@@ -335,7 +335,7 @@
                             </div>
                               </div>
                             </div>
-<div class="">
+<div class="p-3">
     <router-link
           class="text-dark font-weight-bold text-sm text-right pr-4"
           to="/Subscription"
@@ -347,6 +347,8 @@
     </router-link>
 </div>
                             </div>
+<div class="pb-5">
+</div>
 
                           </div>
                         </section>
