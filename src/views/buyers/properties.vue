@@ -125,7 +125,7 @@
     </div>
     <div class="col">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Type</label>
-    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
+    <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
                   <option value=""></option>
                   <option value="Flat">Flat</option>
                   <option value="House">House</option>
@@ -135,7 +135,7 @@
     </div>
     <div class="col">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Bedroom</label>
-    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
+    <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
                   <option value=""></option>
                   <option value="1">1</option>
                   <option value="2">2</option>
@@ -151,7 +151,7 @@
     </div>
     <div class="col">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Bathroom</label>
-    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
+    <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
                   <option value=""></option>
                   <option value="1">1</option>
                   <option value="2">2</option>
