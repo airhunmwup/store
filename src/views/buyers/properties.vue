@@ -123,6 +123,7 @@
     <input type="number" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
+    <div class="col-12 col-md-4">
     <div class="col-12 col-md-2">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Type</label>
     <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
@@ -164,6 +165,7 @@
                   <option value="4">9</option>
                   <option value="4">10</option>
     </select>
+    </div>
     </div>
     <div class="col-12 col-md-4 m-2 pt-4 center">
 <button type="button" class="btn btn-warning text-sm btn-sm border btn-block">See Listings</button>
