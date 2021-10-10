@@ -79,8 +79,21 @@
             </div>
           </div>
           <div class="card-body">
-            <router-link
+            <router-link  v-if="this.$store.state.isLoggedIn" 
               to="/checkoutAddress"
+              data-toggle="collapse"
+              data-target=".navbar-collapse"
+              title="Process to Checkout"
+            >
+              <button
+                type="button"
+                class="col-12 text-sm border btn btn-warning btn-block"
+              >
+                Process to Checkout
+              </button>
+            </router-link>
+            <router-link v-else 
+              to="/login"
               data-toggle="collapse"
               data-target=".navbar-collapse"
               title="Process to Checkout"
