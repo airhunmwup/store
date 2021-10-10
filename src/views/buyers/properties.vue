@@ -123,7 +123,7 @@
     <input type="number" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
-    <div class="col">
+    <div class="col-12 col-md-2">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Type</label>
     <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
                   <option value=""></option>
@@ -133,7 +133,7 @@
                   <option value="Town house">Town house</option>
     </select>
     </div>
-    <div class="col">
+    <div class="col-12 col-md-2">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Bedroom</label>
     <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
                   <option value=""></option>
@@ -149,7 +149,7 @@
                   <option value="4">10</option>
     </select>
     </div>
-    <div class="col">
+    <div class="col-12 col-md-2">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Bathroom</label>
     <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
                   <option value=""></option>
