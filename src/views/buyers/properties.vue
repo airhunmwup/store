@@ -116,15 +116,15 @@
   <div class="row">
     <div class="col-12 col-md-4 row">
     <label for="inputminprice" class="m-1 font-weight-bold text-xs">Price</label>
-  <div class="col-12 col-md-5">
+  <div class="col-5">
     <input type="number" class="form-control m-1 text-xs" placeholder="min">
   </div>
-  <div class="ol-12 col-md-5">
+  <div class="col-5">
     <input type="number" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
     <div class="row col-12 col-md-4">
-    <div class="col-12 col-md-4">
+    <div class="col-4">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Type</label>
     <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
                   <option value=""></option>
@@ -134,7 +134,7 @@
                   <option value="Town house">Town house</option>
     </select>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-4">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Bedroom</label>
     <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
                   <option value=""></option>
@@ -150,7 +150,7 @@
                   <option value="4">10</option>
     </select>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="col-4">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Bathroom</label>
     <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
                   <option value=""></option>
