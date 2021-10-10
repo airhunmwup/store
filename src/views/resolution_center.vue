@@ -71,7 +71,7 @@
                               <div class="col-lg-6 col-md-6 col-sm-8">
                               <div class="card border p-3">
           <router-link
-                              to="/Resolution Center"
+                              to="/resolutioncenter"
                               data-toggle="collapse"
                               data-target=".navbar-collapse"
                               title="Resolution Center"
