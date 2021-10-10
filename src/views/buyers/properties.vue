@@ -41,6 +41,28 @@
                         {{ categorie.cat_name }}
                       </p>
                       <!-- FEATURED CATEGORIES -->
+                        <div class="row m-1 pb-4">
+                          <div v-for="subcategory in categorie.subcategories" v-bind:key="subcategory.id" 
+                            class="
+                              col-sm-6 p-2 col-md-4 col-lg-4
+                            "
+                          >
+                              <p class="underline text-sm  text-dark">
+                                <router-link
+                                    class="text-dark"
+                                    :to="{ name: 'ProductPage', params: { cid: subcategory.id, subcatname: subcategory.sub_catname}}"
+                                    data-toggle="collapse"
+                                    data-target=".navbar-collapse"
+                                    >{{ subcategory.sub_catname }}
+                                </router-link>
+                                
+                              </p>
+                          </div>
+                          
+                        </div>
+                      <!-- spot light'any random product under the selected category -->
+                      
+                      <!-- FEATURED CATEGORIES -->
   <div class="row">
     <nav class="navbar navbar-expand-lg navbar-light">
   <div class="container-fluid">
@@ -73,72 +95,6 @@
     <div class="col">
     </div>
   </div>
-                      <div
-                        class="
-                          cateTitle
-                          pb-3
-                          hasSubCategory
-                          open
-                          level1
-                          text-dark
-                        "
-                      >
-                        <!--filter section-->
-                        <div
-                          class="pt-2 collapse"
-                          id="filter"
-                          aria-expanded="true"
-                          role="status"
-                        >
-                            <div class="row product-container border-b">
-  <div class="row">
-    <div class="col-12 col-md-4 row">
-    <label for="inputminprice" class="m-1 font-weight-bold text-xs">Price</label>
-  <div class="col-5">
-    <input type="number" class="form-control m-1 text-xs" placeholder="min">
-  </div>
-  <div class="col-5">
-    <input type="number" class="form-control m-1 text-xs" placeholder="max">
-  </div>
-    </div>
-    <div class="col-12 col-md-4">
-    <label for="inputcondition" class="m-1 font-weight-bold text-xs">Items condition</label>
-    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
-      <option>Any</option>
-      <option>New</option>
-      <option>Used</option>
-    </select>
-    </div>
-    <div class="col-12 col-md-4 m-2 pt-4 center">
-<button type="button" class="btn btn-warning text-sm btn-sm border btn-block">See Listings</button>
-    </div>
-    
-</div>
-                            </div>
-                        </div>
-                      </div>
-                      <!-- FEATURED Listings -->
-                        <div class="row m-1 pb-4">
-                          <div v-for="subcategory in categorie.subcategories" v-bind:key="subcategory.id" 
-                            class="
-                              col-sm-6 p-2 col-md-4 col-lg-4
-                            "
-                          >
-                              <p class="underline text-sm  text-dark">
-                                <router-link
-                                    class="text-dark"
-                                    :to="{ name: 'ProductPage', params: { cid: subcategory.id, subcatname: subcategory.sub_catname}}"
-                                    data-toggle="collapse"
-                                    data-target=".navbar-collapse"
-                                    >{{ subcategory.sub_catname }}
-                                </router-link>
-                                
-                              </p>
-                          </div>
-                          
-                        </div>
-                      <!-- spot light'any random product under the selected category -->
-                      
                       <!-- FEATURED Listings -->
                       <div class="title-product">
                         <div class="row">
