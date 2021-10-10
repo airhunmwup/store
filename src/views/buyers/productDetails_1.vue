@@ -178,9 +178,8 @@
                       <div class="col">
                         <p class=""><i class="zmdi zmdi-store"></i> {{productDetails.user.first_name}}</p>
 
-                        <p class="mt-2">Sellers description here:</p>
 
-                        <p class="text-xs underline text-primary">
+                        <p class=" underline text-primary">
                           <router-link 
                               :to="{ name: 'seller', params: { uid: productDetails.user.id, username: productDetails.user.first_name + ' ' + productDetails.user.last_name}}"
                               data-toggle="collapse"
@@ -206,7 +205,7 @@
                         <p class="text-sm font-weight-bold">Postage:</p>
                       </div>
 
-                      <div class="col-9 text-xs">
+                      <div class="col-9 ">
                         <p class="text-success underline">{{productDetails.product_shipping_rate}}</p>
 
                         <p>{{productDetails.product_shipping_type}}.</p>

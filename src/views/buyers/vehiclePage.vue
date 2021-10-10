@@ -52,9 +52,9 @@
           <p class="font-weight-bold text-dark mt-2">About this vehicle</p>
   <div class="row pt-2">
     <div class="col">
-          <p class="text-sm"><i class="fa fa-tachometer"></i> <span class="text-xs"> Driven {{ productDetails.vehicle_millage }} kilometers</span></p>
-          <p class="text-sm"><i class="fa fa-steam"></i><span class="text-xs"> {{ productDetails.vehicle_enginetype }} </span> </p>
-          <p class="text-sm"><i class="zmdi zmdi-gas-station"></i> <span class="text-xs"> {{ productDetails.vehicle_fueltype }} </span></p>
+          <p class="text-sm"><i class="fa fa-tachometer"></i> <span class=""> Driven {{ productDetails.vehicle_millage }} kilometers</span></p>
+          <p class="text-sm"><i class="fa fa-steam"></i><span class=""> {{ productDetails.vehicle_enginetype }} </span> </p>
+          <p class="text-sm"><i class="zmdi zmdi-gas-station"></i> <span class=""> {{ productDetails.vehicle_fueltype }} </span></p>
     </div>
   </div>
 
@@ -155,7 +155,7 @@
                         <p class=""><i class="zmdi zmdi-store"></i> {{productDetails.user.first_name}}</p>
 
 
-                        <p class="text-xs pt-4 underline text-primary">
+                        <p class=" pt-4 underline text-primary">
                           <router-link 
                               :to="{ name: 'seller', params: { uid: productDetails.user.id, username: productDetails.user.first_name + ' ' + productDetails.user.last_name}}"
                               data-toggle="collapse"
