@@ -71,7 +71,13 @@
 <div class="m-2 text-sm">
 <nav class="navbar card-footer bg-light navbar-expand-sm navbar-light bg-gradient">
     <div class="col">
+              <router-link
+                to="/ProductPage"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                >
   <a class="navbar-brand text-sm font-weight-bold text-dark" href="#">New Listing</a>
+              </router-link>
     </div>
     <div class="col text-right">
     <p class="navbar-text">
@@ -113,7 +119,13 @@
 </div>
 <nav v-if="newVehicles" class="navbar card-footer bg-light navbar-expand-sm navbar-light bg-gradient">
     <div class="col">
+              <router-link
+                to="/vehicles"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                >
   <a class="navbar-brand text-sm font-weight-bold text-dark" href="#">Vehicles</a>
+              </router-link>
     </div>
     <div class="col text-right">
     <p class="navbar-text">
@@ -155,7 +167,13 @@
 </div>
 <nav class="navbar card-footer bg-light navbar-expand-sm navbar-light bg-gradient">
     <div class="col">
+              <router-link
+                to="/properties"
+                data-toggle="collapse"
+                data-target=".navbar-collapse"
+                >
   <a class="navbar-brand text-sm font-weight-bold text-dark" href="#">Properties</a>
+              </router-link>
     </div>
     <div class="col text-right">
     <p class="navbar-text">
