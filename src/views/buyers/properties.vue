@@ -95,6 +95,84 @@
     <div class="col">
     </div>
   </div>
+                      <div
+                        class="
+                          cateTitle
+                          pb-3
+                          hasSubCategory
+                          open
+                          level1
+                          text-dark
+                        "
+                      >
+                        <!--filter section-->
+                        <div
+                          class="pt-2 collapse"
+                          id="filter"
+                          aria-expanded="true"
+                          role="status"
+                        >
+                            <div class="row product-container border-b">
+  <div class="row">
+    <div class="col-12 col-md-4 row">
+    <label for="inputminprice" class="m-1 font-weight-bold text-xs">Price</label>
+  <div class="col-5">
+    <input type="number" class="form-control m-1 text-xs" placeholder="min">
+  </div>
+  <div class="col-5">
+    <input type="number" class="form-control m-1 text-xs" placeholder="max">
+  </div>
+    </div>
+    <div class="col-12 col-md-4">
+    <label for="inputcondition" class="m-1 font-weight-bold text-xs">Type</label>
+    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
+                  <option value=""></option>
+                  <option value="Flat">Flat</option>
+                  <option value="House">House</option>
+                  <option value="Room only">Room only</option>
+                  <option value="Town house">Town house</option>
+    </select>
+    </div>
+    <div class="col-12 col-md-4">
+    <label for="inputcondition" class="m-1 font-weight-bold text-xs">Bedroom</label>
+    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="4">5</option>
+                  <option value="4">6</option>
+                  <option value="4">7</option>
+                  <option value="4">8</option>
+                  <option value="4">9</option>
+                  <option value="4">10</option>
+    </select>
+    </div>
+    <div class="col-12 col-md-4">
+    <label for="inputcondition" class="m-1 font-weight-bold text-xs">Bathroom</label>
+    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
+                  <option value=""></option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="4">5</option>
+                  <option value="4">6</option>
+                  <option value="4">7</option>
+                  <option value="4">8</option>
+                  <option value="4">9</option>
+                  <option value="4">10</option>
+    </select>
+    </div>
+    <div class="col-12 col-md-4 m-2 pt-4 center">
+<button type="button" class="btn btn-warning text-sm btn-sm border btn-block">See Listings</button>
+    </div>
+    
+</div>
+                            </div>
+                        </div>
+                      </div>
                       <!-- FEATURED Listings -->
                       <div class="title-product">
                         <div class="row">
