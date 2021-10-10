@@ -2,7 +2,6 @@
   <!-- main content -->
 
   <section class="justify-content-center">
-    <div class="container">
       <!-- main content -->
 
       <div class="row justify-content-center pt-3">
@@ -212,7 +211,6 @@
       </div>
 
       <div class="dropdown-divider"></div>
-    </div>
 
     <section class="appion">
       <div class="col-12">
