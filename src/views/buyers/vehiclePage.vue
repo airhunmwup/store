@@ -147,12 +147,12 @@
                     <div class="dropdown-divider"></div>
 
                     <p class="text-md m-2 font-weight-bold">
-                      Sellers Information
+                      Sellers Info
                     </p>
 
                     <div class="row">
                       <div class="col">
-                        <p class="">{{productDetails.user.first_name}} {{productDetails.user.last_name}}</p>
+                        <p class=""><i class="zmdi zmdi-store"></i> {{productDetails.user.first_name}}</p>
 
 
                         <p class="text-xs pt-4 underline text-primary">
