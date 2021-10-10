@@ -180,6 +180,8 @@
                   <input
                     type="number"
                     class="form-control"
+                    min="0.20"
+                    max="10,000,000.00"
                     aria-label="Small"
                     placeholder="0.00"
                     aria-describedby="inputGroup-sizing-sm"
