@@ -1,11 +1,11 @@
 <template>
   <!-- main content -->
-  <div class="container text-sm">
+  <div class="text-sm">
     <nav aria-label="breadcrumb">
     </nav>
     <div class="row pb-4 justify-content-center">
         <div class="col-12 col-lg-10">
-      <div class="container pl-2">
+      <div class="pl-2">
         <div class="row">
           <div class="col-lg-6 col-xs-12">
             <p class="text p-4  font-weight-bold">
