@@ -154,9 +154,8 @@
                       <div class="col">
                         <p class="">{{productDetails.user.first_name}} {{productDetails.user.last_name}}</p>
 
-                        <p class="mt-2">Sellers description here:</p>
 
-                        <p class="text-xs underline text-primary">
+                        <p class="text-xs pt-4 underline text-primary">
                           <router-link 
                               :to="{ name: 'seller', params: { uid: productDetails.user.id, username: productDetails.user.first_name + ' ' + productDetails.user.last_name}}"
                               data-toggle="collapse"
@@ -179,29 +178,13 @@
                   <div class="container text-dark">
                     <div class="row mt-2 text-sm">
                       <div class="col-3">
-                        <p class="text-sm font-weight-bold">Postage:</p>
+                        <p class="text-sm font-weight-bold">Postage: not available</p>
                       </div>
 
-                      <div class="col-9 text-xs">
-                        <p class="text-success underline">{{productDetails.product_shipping_rate}}</p>
-
-                        <p>{{productDetails.product_shipping_type}}.</p>
-                        <p><span class="font-weight-bold">Shipping cost:</span> <span class="font-weight-bold"> £{{productDetails.product_shipping_cost}}.</span></p>
-
-                      </div>
                     </div>
 
                     <div class="dropdown-divider"></div>
 
-                    <div class="row text-sm">
-                      <div class="col-3">
-                        <p class="text-sm font-weight-bold">Payment:</p>
-                      </div>
-
-                      <div class="col-9">
-                        <p>Credit/debit card <span class="fa fa-credit-card"></span></p>
-                      </div>
-                    </div>
                   </div>
                 </div>
               </div>

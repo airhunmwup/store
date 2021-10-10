@@ -370,10 +370,10 @@ export default {
         vehicle_desc: "",
         imageData: [],
       },
-      errors: {
-
-      }
-    }
+      
+      errors: {},
+      loading: false
+    };
   },
   methods: {
     uploadImage(event) {
