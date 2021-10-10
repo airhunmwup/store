@@ -123,7 +123,7 @@
     <input type="number" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
-    <div class="col-12 col-md-4">
+    <div class="row col-12 col-md-4">
     <div class="col-12 col-md-4">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Type</label>
     <select type="number" id="inputcondition" class="form-control m-1 text-xs" placeholder="max">
