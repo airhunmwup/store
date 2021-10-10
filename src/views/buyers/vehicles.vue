@@ -123,7 +123,7 @@
     <input type="number" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
-    <div class="col-12 col-md-4 row">
+    <div class="col-12 col-md-8 row">
     <label for="inputminprice" class="m-1 font-weight-bold text-xs">Year</label>
   <div class="col-5">
     <select class="form-control m-1 text-xs" >
