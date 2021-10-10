@@ -116,16 +116,16 @@
   <div class="row">
     <div class="col-12 col-md-4 row">
     <label for="inputminprice" class="m-1 font-weight-bold text-xs">Price</label>
-  <div class="ol-12 col-md-5">
+  <div class="col-12 col-md-5">
     <input type="number" class="form-control m-1 text-xs" placeholder="min">
   </div>
-  <div class="ol-12 col-md-5">
+  <div class="col-12 col-md-5">
     <input type="number" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
     <div class="col-12 col-md-4 row">
     <label for="inputminprice" class="m-1 font-weight-bold text-xs">Year</label>
-  <div class="col-5">
+  <div class="col-12 col-md-5">
     <select class="form-control m-1 text-xs" >
                   <option value="">min</option>
                   <option value="2022">2022</option>
@@ -179,7 +179,7 @@
                   <option value="1976">1976</option>
                 </select>
   </div>
-  <div class="col-5">
+  <div class="col-12 col-md-5">
     <select class="form-control m-1 text-xs" >
                   <option value="">max</option>
                   <option value="2022">2022</option>
