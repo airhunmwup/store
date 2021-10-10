@@ -116,10 +116,10 @@
   <div class="row">
     <div class="col-12 col-md-4 row">
     <label for="inputminprice" class="m-1 font-weight-bold text-xs">Price</label>
-  <div class="col-5">
+  <div class="ol-12 col-md-5">
     <input type="number" class="form-control m-1 text-xs" placeholder="min">
   </div>
-  <div class="col-5">
+  <div class="ol-12 col-md-5">
     <input type="number" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
