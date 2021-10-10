@@ -61,7 +61,7 @@
 
           <div class="form-group mt-2 p-2">
               <div class="pb-2">
-            <button class="btn btn-warning btn-sm btn-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fa fa-commenting"></i> Message Seller</button>
+            <button class="btn btn-warning  btn-block" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom"><i class="fa fa-commenting"></i> Message Seller</button>
 
               </div>
 <div class="offcanvas offcanvas-bottom" tabindex="5" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
@@ -80,7 +80,7 @@
 </div>
             <button
               @click="addToWatchlist(productDetails['id'])"
-              class="btn btn-secondary btn-sm btn-block"
+              class="btn btn-secondary  btn-block"
               type="submit"
             >
               <i class="fa fa-bookmark"></i> Add to watchlist
