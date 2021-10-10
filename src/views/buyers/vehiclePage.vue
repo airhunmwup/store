@@ -5,7 +5,7 @@
       <!-- main content -->
 
       <div class="row justify-content-center pt-3">
-        <div class="product-detail col-xs-12 col-lg-4 col-md-4 col-sm-12">
+        <div class="product-detail col-xs-12 col-lg-5 col-md-5 col-sm-12">
           <div class="page-content" id="content">
             <div class="images-container">
               <div class="js-qv-mask tab-content">
@@ -97,7 +97,7 @@
           </div>
         </div>
 
-        <div class="col-sm-12 col-lg-4 col-md-4">
+        <div class="col-sm-12 col-lg-3 col-md-3">
           <div class="mt-2">
             <div class="text-sm">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
