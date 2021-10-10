@@ -5,7 +5,7 @@
       <!-- main content -->
 
       <div class="row justify-content-center pt-3">
-        <div class="product-detail col-xs-12 col-lg-5 col-md-5 col-sm-12">
+        <div class="col-xs-12 col-lg-5 col-md-5 col-sm-12">
           <div class="page-content" id="content">
             <div class="images-container">
               <div class="js-qv-mask tab-content">
