@@ -123,7 +123,7 @@
     <input type="number" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
-    <div class="col-12 col-md-8 row">
+    <div class="col-12 col-md-4 row">
     <label for="inputminprice" class="m-1 font-weight-bold text-xs">Year</label>
   <div class="col-5">
     <select class="form-control m-1 text-xs" >
@@ -233,23 +233,21 @@
                   <option value="1976">1976</option>
                 </select>
   </div>
-    <div class="col-12 col-md-4">
+    </div>
+    <div class="col-12 col-md-4 row">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Items condition</label>
-    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="">
+    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
       <option>Any</option>
       <option>New</option>
       <option>Used</option>
     </select>
-    </div>
-    <div class="col-12 col-md-4">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Engine type</label>
-    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="">
+    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
                   <option value=""></option>
                   <option value="Manual transmission">Manual transmission</option>
                   <option value="Automatic transmission">Automatic transmission</option>
                   <option value="Hybrid">Hybrid</option>
     </select>
-    </div>
     </div>
     <div class="col-12 col-md-4 m-2 pt-4 center">
 <button type="button" class="btn btn-warning text-sm btn-sm border btn-block">See Listings</button>
