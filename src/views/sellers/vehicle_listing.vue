@@ -23,7 +23,7 @@
                 data-target=".navbar-collapse"
                 title="Select category"
               >
-                <p class="btn btn-sm border btn-light">
+                <p class="btn  border btn-light">
                   <span class="fa fa-angle-double-right rounded"></span></p
               ></router-link>
   </div>
@@ -35,12 +35,12 @@
               <div class="form-group">
                 <div class="p-2 shadow-inner rounded">
                   <div class="pt-3 pb-3">
-                    <input type="file" class="rounded btn-sm btn"
+                    <input type="file" class="rounded  btn"
                     style="display:none"
                     @change="uploadImage($event)"
                     ref="imageupload"/>
                     <a
-                      class="btn btn-sm btn-light border rounded"
+                      class="btn  btn-light border rounded"
                       @click="$refs.imageupload.click()">
                       <span class="fa fa-plus"></span>
                     </a>
@@ -55,7 +55,7 @@
                   <div class="col-6 col-lg-3" >
                     <img :src="imgreq" style="width: 10rem" />
                   </div>
-                  <!-- <button class="btn btn-sm btn-primary" 
+                  <!-- <button class="btn  btn-primary" 
                   >Delete</button>
                 </div> -->
               </div>
@@ -316,7 +316,7 @@
       <div class="col-lg-6 col-12 p-2">
         <button
           type="button"
-          class="form-control btn-sm btn btn-success border"
+          class="form-control  btn btn-success border"
           @click="createVehicleListing"
         >
           Save

@@ -45,7 +45,7 @@
           <div class="dropdown-divider"></div>
 
           <p class="font-weight-bold mt-2 text-dark">
-            Price:<span class=""> {{ productDetails.vehicle_price }}</span><span class="text-secondary">/month</span>
+            Price:<span class=""> £{{ productDetails.vehicle_price }}</span>
           </p>
 
 
