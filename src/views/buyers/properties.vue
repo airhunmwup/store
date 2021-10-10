@@ -41,6 +41,83 @@
                         {{ categorie.cat_name }}
                       </p>
                       <!-- FEATURED CATEGORIES -->
+  <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <div class="">
+    <select class=" mr-4 text-center text-xs" @change="sort_by($event)">
+                                <option value="0">Sort by</option>
+                                <option value="1">Name, A to Z</option>
+                                <option value="2">Name, Z to A</option>
+                                <option value="3">Price, low to high</option>
+                                <option value="4">Price, high to low</option>
+                              </select>
+                            <a
+                              class="ml-1 cateItem"
+                              data-toggle="collapse"
+                              data-target="#filter"
+                              href="#"
+                            >
+                              <span class="pr-2 text-xs"
+                                ><b>filter <i class="fa fa-sliders"></i></b></span
+                            ></a>
+    </div>
+  </div>
+</nav>
+    <div class="col justify-content-end">
+  <div class="form-group mx-sm-3 mb-2 ">
+                            <form class="form-inline">
+</form>
+                          </div>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+                      <div
+                        class="
+                          cateTitle
+                          pb-3
+                          hasSubCategory
+                          open
+                          level1
+                          text-dark
+                        "
+                      >
+                        <!--filter section-->
+                        <div
+                          class="pt-2 collapse"
+                          id="filter"
+                          aria-expanded="true"
+                          role="status"
+                        >
+                            <div class="row product-container border-b">
+  <div class="row">
+    <div class="col-12 col-md-4 row">
+    <label for="inputminprice" class="m-1 font-weight-bold text-xs">Price</label>
+  <div class="col-5">
+    <input type="number" class="form-control m-1 text-xs" placeholder="min">
+  </div>
+  <div class="col-5">
+    <input type="number" class="form-control m-1 text-xs" placeholder="max">
+  </div>
+    </div>
+    <div class="col-12 col-md-4">
+    <label for="inputcondition" class="m-1 font-weight-bold text-xs">Items condition</label>
+    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
+      <option>Any</option>
+      <option>New</option>
+      <option>Used</option>
+    </select>
+    </div>
+    <div class="col-12 col-md-4 m-2 pt-4 center">
+<button type="button" class="btn btn-warning text-sm btn-sm border btn-block">See Listings</button>
+    </div>
+    
+</div>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- FEATURED Listings -->
                         <div class="row m-1 pb-4">
                           <div v-for="subcategory in categorie.subcategories" v-bind:key="subcategory.id" 
                             class="

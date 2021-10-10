@@ -41,6 +41,39 @@
                         {{ categorie.cat_name }}
                       </p>
                       <!-- FEATURED CATEGORIES -->
+  <div class="row">
+    <nav class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <div class="">
+    <select class=" mr-4 text-center text-xs" @change="sort_by($event)">
+                                <option value="0">Sort by</option>
+                                <option value="1">Name, A to Z</option>
+                                <option value="2">Name, Z to A</option>
+                                <option value="3">Price, low to high</option>
+                                <option value="4">Price, high to low</option>
+                              </select>
+                            <a
+                              class="ml-1 cateItem"
+                              data-toggle="collapse"
+                              data-target="#filter"
+                              href="#"
+                            >
+                              <span class="pr-2 text-xs"
+                                ><b>filter <i class="fa fa-sliders"></i></b></span
+                            ></a>
+    </div>
+  </div>
+</nav>
+    <div class="col justify-content-end">
+  <div class="form-group mx-sm-3 mb-2 ">
+                            <form class="form-inline">
+</form>
+                          </div>
+    </div>
+    <div class="col">
+    </div>
+  </div>
+                      <!-- FEATURED CATEGORIES -->
                         <div class="row m-1 pb-4">
                           <div v-for="subcategory in categorie.subcategories" v-bind:key="subcategory.id" 
                             class="
