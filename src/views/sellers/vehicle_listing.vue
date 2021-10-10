@@ -181,6 +181,7 @@
                     type="text"
                     class="form-control"
                     min="0.20"
+                    id="currency-field" 
                     data-type="currency"
                     max="10,000,000.00"
                     pattern="^\$\d{1,3}(,\d{3})*(\.\d+)?$"
