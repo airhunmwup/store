@@ -39,7 +39,7 @@
           </div>
         </div>
 
-        <div class="row col-xs-12 pt-3 col-lg-4 col-md-3 col-sm-12">
+        <div class="row col-xs-12 pt-3 col-lg-4 col-md-6 col-sm-12">
           <p class="lead text-dark mt-4 font-weight-bold">
             {{ productDetails.product_name }}
           </p>
@@ -106,7 +106,7 @@
           </div>
         </div>
 
-        <div class="col-sm-12 col-lg-4 col-md-3">
+        <div class="col-sm-12 col-lg-4 col-md-12">
           <div class="mt-2">
             <div class="text-sm">
               <ul class="nav nav-tabs" id="myTab" role="tablist">
