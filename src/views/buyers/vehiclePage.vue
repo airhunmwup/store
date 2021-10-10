@@ -198,12 +198,6 @@
     <section class="appion">
       <div class="col-12">
         <p class="h3 text-dark">Similar Items</p>
-
-        <span class="text-dark text-right">
-          <b class=""> see all </b>
-
-          <b class="fa fa-caret-square-o-right"></b>
-        </span>
       </div>
 
       <!-- breadcrumb -->
