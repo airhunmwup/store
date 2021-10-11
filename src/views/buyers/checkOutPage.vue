@@ -125,7 +125,10 @@ export default {
             },
           },
         }
-      );
+      ).then(function(result) {
+
+                console.log(result);
+            });
 
       if (error) {
         this.paymentProcessing = false;
@@ -164,5 +167,3 @@ export default {
   }
 };
 </script>
-
-        
