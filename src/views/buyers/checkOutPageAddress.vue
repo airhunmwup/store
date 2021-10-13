@@ -6,7 +6,7 @@
 
     <!-- main -->
 
-    <div class="row p-3">
+    <div class="row p-4">
         <div class="col-md-6 col-12 pt-2 col-xs-12">
             <p class="text-dark h4">Ordered Items</p>
             {{ this.$store.state.basket.length }} Item(s)
@@ -22,8 +22,8 @@
             <b class="text-dark">Shipping: £{{this.$store.state.basket.product_shipping_cost }}</b> <hr>
             <b class="text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</b>
         </div>
+        <div class="col-md-6 col-12">
           <div class="dropdown-divider p-2"></div>
-        <div class="col-md-6 col-12 pt-2 pt-xs-2">
       <div class="col-12">
         <p class="text-dark h4">Billing Details</p>
       </div>
