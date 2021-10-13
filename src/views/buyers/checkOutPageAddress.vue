@@ -11,18 +11,18 @@
             <p class="text-dark h4">Ordered Items</p>
             {{ this.$store.state.basket.length }} Item(s)
             <div
-          class="text-sm"
+          class="text-sm pb-2"
           v-for="cart in this.$store.state.basket"
           :key="cart.id"
           >
                 <p> {{ cart["product_name"] }} x {{ cart["qnty"] }} - GBP £{{ cart["qnty_price"] }}</p>
             </div>
             <hr>
-            <b>Subtotal: £{{ this.$store.state.basketTotal }}</b> <br>
-            <b>Shipping: £{{this.$store.state.basket.product_shipping_cost }}</b> <hr>
-            <b>Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</b>
+            <b class="text-dark">Subtotal: £{{ this.$store.state.basketTotal }}</b> <br>
+            <b class="text-dark">Shipping: £{{this.$store.state.basket.product_shipping_cost }}</b> <hr>
+            <b class="text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</b>
         </div>
-        <div class="col-8">
+        <div class="col-6">
       <div class="col-12">
         <p class="text-dark h4">Billing Details</p>
       </div>
@@ -71,7 +71,7 @@
       <div class="dropdown-divider"></div>
 
       <div class="row">
-        <div class="m-2 col-sm-12 col-6">
+        <div class="m-2 col-md-5 col-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title text-dark h6">{{this.$store.state.full_name}}</h5>
@@ -83,24 +83,13 @@
               <p class="card-text text-dark">{{this.$store.state.address[0].town_city}}, {{this.$store.state.address[0].postal_code}}</p>
 
               <p class="card-text text-dark">{{this.$store.state.address[0].country}}</p>
-              <button
-                type="button"
-                class="
-                  col-4
-                  text-primary text-sm
-                  underline
-                  btn-xs
-                  m-1
-                  btn 
-                "
-              >
-                Edit
-              </button>
             </div>
+          </div>
+        <div class="m-2 col-md-5 col-12">
             
             <p class="text-center">
               <router-link
-                  class="text-sm m-1 col-12 btn border btn-sm btn-warning"
+                  class="text-sm m-1  btn border bg-gradient btn-warning"
                 style="width: 90%;"  
                 to="/checkoutpayment"
                 data-toggle="collapse"
