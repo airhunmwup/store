@@ -23,7 +23,7 @@
             <b class="text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</b>
         </div>
         <div class="col-md-6 col-12">
-          <div class="dropdown-divider p-2 d-none-md"></div>
+          <div class="p-2"></div>
       <div class="col-12">
         <p class="text-dark h4">Billing Details</p>
       </div>
