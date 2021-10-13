@@ -6,7 +6,7 @@
 
     <!-- main -->
 
-    <div class="row p-2">
+    <div class="row p-3">
         <div class="col-md-6 col-12 pt-2 col-xs-12">
             <p class="text-dark h4">Ordered Items</p>
             {{ this.$store.state.basket.length }} Item(s)
@@ -22,6 +22,7 @@
             <b class="text-dark">Shipping: £{{this.$store.state.basket.product_shipping_cost }}</b> <hr>
             <b class="text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</b>
         </div>
+          <div class="dropdown-divider p-2"></div>
         <div class="col-md-6 col-12 pt-2 pt-xs-2">
       <div class="col-12">
         <p class="text-dark h4">Billing Details</p>
@@ -54,7 +55,8 @@
       </div>
             </div>
       </div>      
-      <div class="col-12 pt-2">
+          <div class="dropdown-divider p-2"></div>
+      <div class="col-12">
         <p class="text-dark h4">Select a delivery address</p>
       </div>
 
@@ -71,7 +73,7 @@
       <div class="dropdown-divider"></div>
 
       <div class="row">
-        <div class="m-1 col-md-5 col-12">
+        <div class="m-1 col-md-6 col-12">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title text-dark h6">{{this.$store.state.full_name}}</h5>
@@ -84,11 +86,8 @@
 
               <p class="card-text text-dark">{{this.$store.state.address[0].country}}</p>
             </div>
-          </div>
-        </div>
-        <div class="m-1 col-md-5 col-12">
-            
-            <p class="text-center">
+          <div class="dropdown-divider"></div>
+            <p class="text-center p-2">
               <router-link
                   class="text-sm m-1  btn border btn-blocked bg-gradient btn-warning"
                 style="width: 90%;"  
@@ -102,9 +101,10 @@
               
             </p>
           </div>
+        </div>
       </div>
 
-      <hr />
+          <div class="dropdown-divider pb-4"></div>
     </div>
   </div>
 </template>
