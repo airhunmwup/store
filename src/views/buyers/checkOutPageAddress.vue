@@ -6,7 +6,7 @@
 
     <!-- main -->
 
-    <div class="row ">
+    <div class="row p-2">
         <div class="col-md-6 col-12 pt-2 col-xs-12">
             <p class="text-dark h4">Ordered Items</p>
             {{ this.$store.state.basket.length }} Item(s)
