@@ -7,7 +7,7 @@
     <!-- main -->
 
     <div class="row p-4 text-sm">
-        <div class="col-4 m-1 col-xs-12">
+        <div class="col-md-4 col-12 m-1 col-xs-12">
             <p class="text-dark h4">Ordered Items</p>
             {{ this.$store.state.basket.length }} Item(s)
             <div
@@ -22,7 +22,7 @@
             <b class="text-dark">Shipping: £{{this.$store.state.basket.product_shipping_cost }}</b> <hr>
             <b class="text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</b>
         </div>
-        <div class="col-6 m-1">
+        <div class="col-md-6 col-12 m-1">
       <div class="col-12">
         <p class="text-dark h4">Billing Details</p>
       </div>
@@ -85,6 +85,7 @@
               <p class="card-text text-dark">{{this.$store.state.address[0].country}}</p>
             </div>
           </div>
+        </div>
         <div class="m-1 col-md-5 col-12">
             
             <p class="text-center">
@@ -101,7 +102,6 @@
               
             </p>
           </div>
-        </div>
       </div>
 
       <hr />
