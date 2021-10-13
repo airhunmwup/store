@@ -8,7 +8,7 @@
 
     <div class="row p-4 text-sm">
         <div class="col-4 col-xs-12">
-            <p class="text-dark h4">Order Items</p>
+            <p class="text-dark h4">Ordered Items</p>
             {{ this.$store.state.basket.length }} Item(s)
             <div
           class="text-sm"
@@ -71,7 +71,7 @@
       <div class="dropdown-divider"></div>
 
       <div class="row">
-        <div class="m-2 col-sm-12">
+        <div class="m-2 col-sm-12 col-6">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title text-dark h6">{{this.$store.state.full_name}}</h5>
@@ -107,7 +107,7 @@
                 data-target=".navbar-collapse"
                 title="Home"
                 >
-                  create order
+                  Proceed to payment
               </router-link>
               
             </p>
