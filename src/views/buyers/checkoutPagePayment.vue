@@ -8,6 +8,52 @@
     <!-- main -->
     <div class="row pt-4 pb-4 text-sm" style="height: 30rem;">
       <div class="">
+          <p class="text-dark h4">Order ID: {{ order.orderid }}</p><hr>
+          <div class="row">
+          <div class="col-md-6">
+              <p class="h5"><b>{{ order.firstname }} {{ order.lastname }}</b></p>
+              <p>{{ order.email }}</p>
+              <p>{{ order.phone }}</p><br>
+              <p>{{ order.address_line1 }}</p>
+              <p>{{ order.address_line2 }}</p>
+              <p>{{ order.town_city }}</p>
+              <p>{{ order.postal_code }}</p>
+              <p>{{ order.country }}</p>
+          </div>
+          <div class="col-md-6">
+              <p class="h5"><b>Status</b></p>
+              <p>Payment status: {{ order.payment_status }}</p>
+              <p>Shipment status: {{ order.shipment_status }}</p>
+          </div>
+          </div>
+          <div class="row">
+              <table class="table table-bordered order-list">
+            <thead>
+            <tr>           
+                <th width="20%">Item(s)</th>
+                <th width="10%">Quantity</th>
+                <th width="10%">Price</th>
+                <th width="10%">Total (£)</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in order.order_items" v-bind:key="item.id">
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>{{ item.price }}</td>
+                    <td>{{ item.quantity * item.price }}</td>
+                </tr>
+                <tr class="ite_tt">
+                    <td colspan="3" align="right" style="text-align:right;"><b>Shipping</b></td>
+                    <td class="items_total" align="right">{{ order.shipping }}</td>
+                </tr>
+                <tr class="ite_tt">
+                    <td colspan="3" align="right" style="text-align:right;"><b>Total</b></td>
+                    <td class="items_total" align="right">{{ order.total }}</td>
+                </tr>
+            </tbody>
+              </table>
+          </div>
         <p class="text-dark h4">Select a payment method</p>
         <hr />
         <div class="card-body">
@@ -78,3 +124,50 @@
     </div>
   </div>
 </template>
+<script>
+import User from '../../apis/User';
+export default {
+  data() {
+    return {
+      orderid: this.$route.params.orderid,
+      order: [],
+      errors: {},
+      loading: false
+    };
+  },
+  methods: {
+    getOrder() {
+      console.log(this.orderid);
+      User.getOrder(this.orderid)
+          .then((response) => {
+            this.order = response.data[0];
+            console.log(this.order);
+          })
+          .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            console.log(error.response.data.message);
+        }
+      });
+    },
+
+    errorStyle(err){
+      if(err){
+        return {
+          color: 'red',
+          fontSize: '12px'
+        }
+      }
+    }
+  },
+  mounted() {
+    this.getOrder();
+  },
+  computed: {
+
+  }
+}
+</script>

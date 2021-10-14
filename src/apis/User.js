@@ -190,7 +190,12 @@ export default{
     purchase(data){
         return Api().post("/purchase", data);
     },
-    
+    createOrder(data){
+        return Api().post("/createOrder", data);
+    },
+    getOrder(orderid){
+        return Api().get("/getOrder/" + orderid);
+    },
     myOrders(data){
         return Api().post("/myorders", data);
     },

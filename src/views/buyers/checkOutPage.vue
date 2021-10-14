@@ -136,17 +136,22 @@ export default {
         this.customer.amount = this.$store.state.basket.reduce((acc, item) => acc + (item.product_price * item.qnty), 0);
         this.customer.cart = JSON.stringify(this.$store.state.basket);
 
-        console.log(this.customer.amount);
+        console.log(this.customer);
 
         User.purchase(this.customer)
           .then((response) => {
             this.paymentProcessing = false;
             console.log(response);
           })
-          .catch((error) => {
-            this.paymentProcessing = false;
-            console.error(error);
-          });
+          .catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            console.log(error.response.data.message);
+        }
+      });
       }
     },
     

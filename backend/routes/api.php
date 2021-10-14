@@ -12,6 +12,7 @@ use App\Http\Controllers\ImageuploadController;
 use App\Http\Controllers\MessagesController;
 use App\Http\Controllers\UserPaymentController;
 use App\Http\Controllers\RecentViewsController;
+use App\Http\Controllers\Orders2Controller;
 use App\Models\Addressforbuyers;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -102,6 +103,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/getlistings/{userid}', [ProductsController::class, 'getlistings']);
     Route::delete('/deletelisting/{id}', [ProductsController::class, 'destroy']);
     Route::post('/purchase', [UserPaymentController::class, 'purchase']);
+    Route::post('/createOrder', [Orders2Controller::class, 'store']);
+    Route::get('/getOrder/{orderid}', [Orders2Controller::class, 'fetch']);
     Route::post('/sendmessage', [MessagesController::class, 'store']);
     Route::get('/fetchmessages/{id}', [MessagesController::class, 'index']);
     Route::get('/getmessage/{id}', [MessagesController::class, 'get']);
