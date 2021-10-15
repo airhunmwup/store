@@ -5,9 +5,9 @@
     <!-- breadcrumb -->
 
     <!-- main -->
-<div class="container">
+<div class="">
   <div class="row">
-    <div class="col-12 col-md-6">
+    <div class="col-12">
 <p class="h4 text-dark font-weight-bold">Order Items</p>
 <span> {{ this.$store.state.basket.length }} Item(s)</span>
             <div
@@ -24,30 +24,27 @@
       <div class="dropdown-divider"></div>
             <p class="font-weight-bold text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</p>
     </div>
-    <div class="col">
-      Column
-    </div>
   </div>
 </div>
     <div class="row p-4 text-sm">
-        <div class="col-8">
+        <div class="col-6">
       <div class="col-12">
         <p class="text-dark h4">Billing Details</p>
       </div>
             <div class="row">
       <div class="col-6 col-xs-12">           
            <label>First Name</label>
-           <input type="text" class="form-control"  v-model="formData.order_firstname" disabled />        
+           <input type="text" class="form-control border-0"  v-model="formData.order_firstname" disabled />        
       </div>
       <div class="col-6 col-xs-12">           
            <label>Last Name</label>
-           <input type="text" class="form-control"  v-model="formData.order_lastname" disabled />        
+           <input type="text" class="form-control border-0"  v-model="formData.order_lastname" disabled />        
       </div> 
             </div>
             <div class="row">
                 <div class="col-6 col-xs-12">           
                     <label>Email</label>
-                    <input type="text" class="form-control"  v-model="formData.order_email" disabled/>        
+                    <input type="text" class="form-control border-0"  v-model="formData.order_email" disabled/>        
                 </div>
       <div class="col-6 col-xs-12">           
            <label>Phone</label>
