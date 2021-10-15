@@ -62,7 +62,7 @@
       </div>
             </div>
       </div>      
-      <div class="col-12 pt-2">
+      <div class="col-12 pt-4">
         <p class="text-dark h4">Select a delivery address</p>
       </div>
 
@@ -91,19 +91,6 @@
               <p class="card-text text-dark">{{this.$store.state.address[0].town_city}}, {{this.$store.state.address[0].postal_code}}</p>
 
               <p class="card-text text-dark">{{this.$store.state.address[0].country}}</p>
-              <button
-                type="button"
-                class="
-                  col-4
-                  text-primary text-sm
-                  underline
-                  btn-xs
-                  m-1
-                  btn 
-                "
-              >
-                Edit
-              </button>
             </div>
             
             <p class="text-center">
