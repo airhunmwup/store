@@ -6,8 +6,9 @@
     </div>
     <!-- breadcrumb -->
 
+        <div class="row justify-center text-sm" >
     <!-- main -->
-<div class="">
+<div class="row col-10">
   <div class="row">
     <div class="col-12">
 <p class="h4 text-dark font-weight-bold">Order Items</p>
@@ -27,7 +28,6 @@
             <p class="font-weight-bold text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</p>
     </div>
   </div>
-</div>
     <div class="row p-4 text-sm">
         <div class="col-6">
       <div class="col-12">
@@ -124,6 +124,8 @@
 
       <hr />
     </div>
+</div>
+        </div>
   </div>
 </template>
 <script>
