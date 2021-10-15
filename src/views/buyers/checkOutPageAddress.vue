@@ -5,22 +5,33 @@
     <!-- breadcrumb -->
 
     <!-- main -->
-
-    <div class="row p-4 text-sm">
-        <div class="col-4 col-xs-12">
-            <p class="text-dark h4">Order Items</p>
-            {{ this.$store.state.basket.length }} Item(s)
+<div class="container">
+  <div class="row">
+    <div class="col">
+<h4>hOrder Items</h4>
+<span>{{ this.$store.state.basket.length }} Item(s)</span>
             <div
           class="text-sm"
           v-for="cart in this.$store.state.basket"
           :key="cart.id"
           >
-                <p> {{ cart["product_name"] }} x {{ cart["qnty"] }} - GBP £{{ cart["qnty_price"] }}</p>
+                <p class="text-dark"> {{ cart["product_name"] }} x {{ cart["qnty"] }} - GBP £{{ cart["qnty_price"] }}</p>
             </div>
+
+            <p class="font-weight-bold text-dark">Subtotal: £{{ this.$store.state.basketTotal }}</p>
+            <p class="font-weight-bold text-dark">Shipping: £{{this.$store.state.basket.product_shipping_cost }}</p> <hr>
+            <p class="font-weight-bold text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</p>
+    </div>
+    <div class="col">
+      Column
+    </div>
+  </div>
+</div>
+    <div class="row p-4 text-sm">
+        <div class="col-4 col-xs-12">
+            <p class="text-dark h4">Order Items</p>
+            
             <hr>
-            <b>Subtotal: £{{ this.$store.state.basketTotal }}</b> <br>
-            <b>Shipping: £{{this.$store.state.basket.product_shipping_cost }}</b> <hr>
-            <b>Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</b>
         </div>
         <div class="col-8">
       <div class="col-12">
