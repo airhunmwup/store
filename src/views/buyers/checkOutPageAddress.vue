@@ -8,7 +8,7 @@
 
         <div class="row justify-center text-sm" >
     <!-- main -->
-<div class="row col-10 pt-2">
+<div class="row col-12 col-md-10 pt-2">
   <div class="row">
     <div class="col-12">
 <p class="h4 text-dark font-weight-bold">Order Items</p>
