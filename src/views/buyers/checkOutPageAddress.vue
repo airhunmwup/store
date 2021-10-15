@@ -29,7 +29,7 @@
     </div>
   </div>
     <div class="row p-4 text-sm">
-        <div class="col-6 pt-2">
+        <div class="col-12 col-md-6 pt-2">
       <div class="col-12">
         <p class="text-dark h4">Billing Details</p>
       </div>
