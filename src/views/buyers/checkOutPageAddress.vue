@@ -70,9 +70,17 @@
         <p class="text-dark text-xs">
           Is the address you'd like to use displayed below? If so, click the
           corresponding "Deliver to this address" button. Or you can
-          <a href="#AddAddress" class="text-primary underline"
-            >enter a new delivery address.
-          </a>
+                      <router-link
+                        class=""
+                        v-bind:to="'/editaddress/' + this.$store.state.address[0].id"
+                       
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                        :pid="this.$store.state.address[0].id"
+                      >
+            change to a new delivery address.
+                      </router-link>
         </p>
       </div>
 
