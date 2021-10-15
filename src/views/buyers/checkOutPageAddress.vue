@@ -1,7 +1,9 @@
 <template>
-  <div class="container">
-    <!-- main content -->
 
+  <div class="justify-content-center">
+    <div class="row">
+      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left"></div>
+    </div>
     <!-- breadcrumb -->
 
     <!-- main -->
@@ -77,7 +79,7 @@
       <div class="dropdown-divider"></div>
 
       <div class="row">
-        <div class="m-2 col-sm-12">
+        <div class="m-2 col-12 col-md-6">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title text-dark h6">{{this.$store.state.full_name}}</h5>
