@@ -71,7 +71,7 @@
           Is the address you'd like to use displayed below? If so, click the
           corresponding "Deliver to this address" button. Or you can
                       <router-link
-                        class=""
+                        class="text-primary m-1"
                         v-bind:to="'/editaddress/' + this.$store.state.address[0].id"
                        
                         data-toggle="collapse"
