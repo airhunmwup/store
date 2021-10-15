@@ -7,19 +7,21 @@
     <!-- main -->
 <div class="container">
   <div class="row">
-    <div class="col">
-<h4>hOrder Items</h4>
-<span>{{ this.$store.state.basket.length }} Item(s)</span>
+    <div class="col-12 col-md-6">
+<p class="h4 text-dark font-weight-bold">Order Items</p>
+<span> {{ this.$store.state.basket.length }} Item(s)</span>
             <div
           class="text-sm"
           v-for="cart in this.$store.state.basket"
           :key="cart.id"
           >
                 <p class="text-dark"> {{ cart["product_name"] }} x {{ cart["qnty"] }} - GBP £{{ cart["qnty_price"] }}</p>
+      <div class="dropdown-divider"></div>
             </div>
 
             <p class="font-weight-bold text-dark">Subtotal: £{{ this.$store.state.basketTotal }}</p>
-            <p class="font-weight-bold text-dark">Shipping: £{{this.$store.state.basket.product_shipping_cost }}</p> <hr>
+            <p class="font-weight-bold text-dark">Shipping: £{{this.$store.state.basket.product_shipping_cost }}</p> 
+      <div class="dropdown-divider"></div>
             <p class="font-weight-bold text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</p>
     </div>
     <div class="col">
@@ -28,11 +30,6 @@
   </div>
 </div>
     <div class="row p-4 text-sm">
-        <div class="col-4 col-xs-12">
-            <p class="text-dark h4">Order Items</p>
-            
-            <hr>
-        </div>
         <div class="col-8">
       <div class="col-12">
         <p class="text-dark h4">Billing Details</p>
