@@ -6,7 +6,7 @@
     </div>
     <!-- breadcrumb -->
 
-        <div class="row justify-center text-sm" >
+        <div class="row justify-center text-sm pb-4" >
     <!-- main -->
 <div class="row col-12 col-md-10 pt-2">
   <div class="row">
