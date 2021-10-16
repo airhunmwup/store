@@ -12,7 +12,7 @@
       <div class="row col-sm-12 col-xs-12 p-3 col-lg-6 col-md-6">
         <div class="content">
           <p class="text-center text-dark font-weight-bold h5 text-lg">
-            Checkout
+            Checkout: £{{ order_total }}
           </p>
 
           <div class="tab-content">
@@ -91,10 +91,13 @@ export default {
         state: "",
         zip_code: "533416",
       },
+      orderid: this.$route.params.orderid,
+      order_total: this.$route.params.order_total,
       paymentProcessing: false,
     };
   },
   async mounted() {
+      console.log(this.order_total)
     this.getCurrentUser;
     this.stripe = await loadStripe(
       "pk_test_51JSfU7ED6G9gw43fSzGj5UjJH8cvfKlZVrGi5FQ3EqYlHIlxw8EpeMJWjbbd7waAQoSvdagHvsNYAnf3lpCGp56j00t9EsvJji"
@@ -135,13 +138,17 @@ export default {
         this.customer.payment_method_id = paymentMethod.id;
         this.customer.amount = this.$store.state.basket.reduce((acc, item) => acc + (item.product_price * item.qnty), 0);
         this.customer.cart = JSON.stringify(this.$store.state.basket);
-
+        this.customer.orderid = this.orderid;
         console.log(this.customer);
 
         User.purchase(this.customer)
           .then((response) => {
             this.paymentProcessing = false;
             console.log(response);
+            this.$router.push({
+                name: 'paymentsuccess',
+                params: { orderid: this.orderid }
+            }).catch(()=>{});
           })
           .catch(error => {
         if (!error.response) {
@@ -166,7 +173,8 @@ export default {
       this.customer.city = this.$store.getters.getAddress[0].town_city;
       this.customer.state = this.$store.getters.getAddress[0].county;
     },
-  }
+  },
+
 };
 </script>
 

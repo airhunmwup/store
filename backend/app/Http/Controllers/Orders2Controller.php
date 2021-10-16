@@ -67,6 +67,7 @@ class Orders2Controller extends Controller
             'name' => $item['product_name'],
             'quantity' => $item['qnty'],
             'price' => $item['product_price'],
+            'seller_id' => $item['product_userid'],        
             
         ]);
             }

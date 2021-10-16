@@ -13,5 +13,6 @@ class OrderItems extends Model
         'name',
         'quantity',
         'price',
+        'seller_id',
     ];
 }

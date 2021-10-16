@@ -6,6 +6,7 @@ use App\Models\UserPayment;
 use App\Models\OrderProduct;
 use App\Models\Products;
 use App\Models\ManageOrder;
+use App\Models\Orders2;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Str;
@@ -16,7 +17,8 @@ class UserPaymentController extends Controller
 {
     //
     public function purchase(Request $request){
-
+        $orderid = $request->orderid;
+        $update = Orders2::where('orderid', $orderid)->update(array('payment_status' => 'paid','shipment_status' => 'awaiting shipment'));
         $user = UserPayment::firstOrCreate(
             [
                 'email' => $request->input('email')

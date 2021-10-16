@@ -66,7 +66,7 @@
 
         <p class="card bg-light border">
           <router-link
-            to="/Checkout"
+            :to="{ name: 'CheckOut', params: { orderid: order.orderid, order_total: order.total}}" 
             data-toggle="collapse"
             data-target=".navbar-collapse"
             title="Home"

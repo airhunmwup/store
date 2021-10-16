@@ -20,6 +20,7 @@ class CreateOrderItemsTable extends Migration
             $table->string('name');
             $table->string('quantity');
             $table->string('price');
+            $table->string('seller_id');
         });
     }
 
