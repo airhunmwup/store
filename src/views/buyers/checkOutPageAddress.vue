@@ -1,45 +1,52 @@
 <template>
-  <div class="container">
-    <!-- main content -->
 
+  <div class="justify-content-center">
+    <div class="row">
+      <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left"></div>
+    </div>
     <!-- breadcrumb -->
 
+        <div class="row justify-center text-sm pb-4" >
     <!-- main -->
-
-    <div class="row p-4 text-sm">
-        <div class="col-4 col-xs-12">
-            <p class="text-dark h4">Order Items</p>
-            {{ this.$store.state.basket.length }} Item(s)
+<div class="row col-12 col-md-10 pt-2">
+  <div class="row">
+    <div class="col-12">
+<p class="h4 text-dark font-weight-bold">Order Items</p>
+<span> {{ this.$store.state.basket.length }} Item(s)</span>
             <div
           class="text-sm"
           v-for="cart in this.$store.state.basket"
           :key="cart.id"
           >
-                <p> {{ cart["product_name"] }} x {{ cart["qnty"] }} - GBP £{{ cart["qnty_price"] }}</p>
+                <p class="text-dark"> {{ cart["product_name"] }} x {{ cart["qnty"] }} - GBP £{{ cart["qnty_price"] }}</p>
+      <div class="dropdown-divider"></div>
             </div>
-            <hr>
-            <b>Subtotal: £{{ this.$store.state.basketTotal }}</b> <br>
-            <b>Shipping: £{{this.$store.state.basket.product_shipping_cost }}</b> <hr>
-            <b>Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</b>
-        </div>
-        <div class="col-8">
+
+            <p class="font-weight-bold text-dark">Subtotal: £{{ this.$store.state.basketTotal }}</p>
+            <p class="font-weight-bold text-dark">Shipping: £{{this.$store.state.basket.product_shipping_cost }}</p> 
+      <div class="dropdown-divider"></div>
+            <p class="font-weight-bold text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</p>
+    </div>
+  </div>
+    <div class="row p-4 text-sm">
+        <div class="col-12 col-md-6 pt-2">
       <div class="col-12">
         <p class="text-dark h4">Billing Details</p>
       </div>
             <div class="row">
       <div class="col-6 col-xs-12">           
            <label>First Name</label>
-           <input type="text" class="form-control"  v-model="formData.order_firstname" disabled />        
+           <input type="text" class="form-control border-0"  v-model="formData.order_firstname" disabled />        
       </div>
       <div class="col-6 col-xs-12">           
            <label>Last Name</label>
-           <input type="text" class="form-control"  v-model="formData.order_lastname" disabled />        
+           <input type="text" class="form-control border-0"  v-model="formData.order_lastname" disabled />        
       </div> 
             </div>
             <div class="row">
                 <div class="col-6 col-xs-12">           
                     <label>Email</label>
-                    <input type="text" class="form-control"  v-model="formData.order_email" disabled/>        
+                    <input type="text" class="form-control border-0"  v-model="formData.order_email" disabled/>        
                 </div>
       <div class="col-6 col-xs-12">           
            <label>Phone</label>
@@ -55,7 +62,7 @@
       </div>
             </div>
       </div>      
-      <div class="col-12">
+      <div class="col-12 pt-4">
         <p class="text-dark h4">Select a delivery address</p>
       </div>
 
@@ -63,16 +70,24 @@
         <p class="text-dark text-xs">
           Is the address you'd like to use displayed below? If so, click the
           corresponding "Deliver to this address" button. Or you can
-          <a href="#AddAddress" class="text-primary underline"
-            >enter a new delivery address.
-          </a>
+                      <router-link
+                        class="text-primary m-1 underline"
+                        v-bind:to="'/editaddress/' + this.$store.state.address[0].id"
+                       
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Home"
+                        :pid="this.$store.state.address[0].id"
+                      >
+            change to a new delivery address.
+                      </router-link>
         </p>
       </div>
 
       <div class="dropdown-divider"></div>
 
-      <div class="row">
-        <div class="m-2 col-sm-12">
+      <div class="row pb-4">
+        <div class="m-2 col-12 col-md-6">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title text-dark h6">{{this.$store.state.full_name}}</h5>
@@ -84,19 +99,6 @@
               <p class="card-text text-dark">{{this.$store.state.address[0].town_city}}, {{this.$store.state.address[0].postal_code}}</p>
 
               <p class="card-text text-dark">{{this.$store.state.address[0].country}}</p>
-              <button
-                type="button"
-                class="
-                  col-4
-                  text-primary text-sm
-                  underline
-                  btn-xs
-                  m-1
-                  btn 
-                "
-              >
-                Edit
-              </button>
             </div>
             
             <p class="text-center">
@@ -117,6 +119,8 @@
 
       <hr />
     </div>
+</div>
+        </div>
   </div>
 </template>
 <script>
