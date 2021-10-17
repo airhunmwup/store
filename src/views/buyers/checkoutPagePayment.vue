@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="container pb-4">
     <p class="h6 p-3"><span class="text-primary"></span> <span class=" "></span>
 </p>
     <!-- main content -->
