@@ -52,12 +52,12 @@
         <div class="p-2 card">
           <div class="card-body">
             <div class="row text-sm text-dark">
-              <div class="col">
-                <p class="">
-                  Subtotal:
                   <span class="text-xs"
                     > {{ this.$store.state.basket.length }} Item(s)
                   </span>
+              <div class="col">
+                <p class="">
+                  Subtotal:
                 </p>
               </div>
               <div class="col text-right">
