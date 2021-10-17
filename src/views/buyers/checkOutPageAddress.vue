@@ -109,7 +109,7 @@
                 to="/checkoutpayment"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
-                title="Home"
+                @click="createOrder"
                 >
                   Continue to checkout
               </router-link>
