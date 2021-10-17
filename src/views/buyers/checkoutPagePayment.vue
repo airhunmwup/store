@@ -12,13 +12,13 @@
           <div class="row">
           <div class="col-md-6">
               <p class="h5"><b>{{ order.firstname }} {{ order.lastname }}</b></p>
-              <p>{{ order.email }}</p>
-              <p>{{ order.phone }}</p><br>
-              <p>{{ order.address_line1 }}</p>
-              <p>{{ order.address_line2 }}</p>
-              <p>{{ order.town_city }}</p>
-              <p>{{ order.postal_code }}</p>
-              <p>{{ order.country }}</p>
+              <p  class="">{{ order.email }}</p>
+              <p  class="">{{ order.phone }}</p><br>
+              <p class="">{{ order.address_line1 }}</p>
+              <p class="">{{ order.address_line2 }}</p>
+              <p class="">{{ order.town_city }}</p>
+              <p class="">{{ order.postal_code }}</p>
+              <p class="">{{ order.country }}</p>
           </div>
           <div class="col-md-6">
               <p class="h5"><b>Status</b></p>
@@ -85,7 +85,7 @@
         </div>
 
         <hr />
-        <div class="card-body">
+        <div class="card-body pb-4">
           <div class="row">
             <div class="col-8">
               <p class="text-dark h6">Gift Cards & Promotional Codes</p><p>
@@ -120,7 +120,7 @@
         </div>
       </div>
 
-      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12"></div>
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 pb-4"></div>
     </div>
   </div>
 </template>
