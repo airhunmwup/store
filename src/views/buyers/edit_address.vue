@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="justify-content-center">
+  <div class="justify-content-center pb-4">
     <div class="row">
       <div class="col-6 d-lg-none h6 d-md-none text-lg pl-3 text-left">
         
@@ -15,8 +15,8 @@
                   Add a new address
                   </span>
                   
-                      <div class="content">
-                        <div class="tab-content">
+                      <div class="content pb-4">
+                        <div class="tab-content pb-4">
                           <div
                             class="tab-pane fade in active show col-md-8 col-lg-8 col-sm-8"
                             id="checkout-guest-form"
@@ -410,7 +410,8 @@
           <!-- end col-md-9-1 -->
         </div>
 
-    <hr>
+    <div class=" mb-2">
+    </div>
   </div>
 </template>
 <script>
