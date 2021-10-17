@@ -79,7 +79,7 @@
               data-toggle="collapse"
               data-target=".navbar-collapse"
             >
-              Message (2)
+              Message
             </router-link>
             <router-link
               class="dropdown-item text-left text-dark pl-4 pb-2 font-weight-bold"
