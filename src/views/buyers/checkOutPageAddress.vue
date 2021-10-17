@@ -103,16 +103,14 @@
             
             <p class="text-center">
               
-              <router-link
+              <button
+                type="button"
+                style="width: 90%;" 
                 class="text-sm m-1 col-12 btn border btn-sm btn-warning"
-                style="width: 90%;"  
-                to="/checkoutpayment"
-                data-toggle="collapse"
-                data-target=".navbar-collapse"
                 @click="createOrder"
                 >
                   Continue to checkout
-              </router-link>
+              </button>  
               
             </p>
           </div>

@@ -15,7 +15,7 @@
             Checkout: £{{ order_total }}
           </p>
 
-          <div class="tab-content">
+          <div class="tab-content pb-4">
             <div
               class="
                 tab-pane
