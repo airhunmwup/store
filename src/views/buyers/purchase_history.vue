@@ -231,7 +231,7 @@ export default {
   data() {
     return {
       user: {
-        email: "alfredgreemie@gmail.com",
+        email: "airhunmwup@icloud.com",
       },
       data: "",
       order_info: '',
