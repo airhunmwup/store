@@ -10,7 +10,7 @@
         <div class="row justify-center">
 
 <!--recently viewed-->
-                <div class="row col-sm-12 p-3 col-lg-8 col-md-8">
+                <div class="row col-sm-12 p-3 col-lg-8 mb-4 col-md-8">
                   <span class="text text-dark h4 font-weight-bold p-3 font-weight-normal">
                   Add a new address
                   </span>
@@ -390,7 +390,7 @@
                                   />
                                 </div>
                               </div>
-                                            <div class="">
+                                            <div class="mb-5">
                                             <router-link
                                 to="/checkoutpayment"
                                 data-toggle="collapse"
