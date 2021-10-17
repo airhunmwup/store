@@ -85,7 +85,7 @@
         </div>
 
         <hr />
-        <div class="card-body pb-4">
+        <div class="card-body mb-10">
           <div class="row">
             <div class="col-8">
               <p class="text-dark h6">Gift Cards & Promotional Codes</p><p>
@@ -120,7 +120,9 @@
         </div>
       </div>
 
-      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 pb-4"></div>
+      <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12 mb-4">
+        <hr>
+      </div>
     </div>
   </div>
 </template>

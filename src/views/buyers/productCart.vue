@@ -56,7 +56,7 @@
                 <p class="">
                   Subtotal:
                   <span class="text-xs"
-                    >( {{ this.$store.state.basket.length }} ) Item
+                    > {{ this.$store.state.basket.length }} Item(s)
                   </span>
                 </p>
               </div>
