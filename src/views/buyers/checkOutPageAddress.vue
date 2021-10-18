@@ -87,7 +87,7 @@
       <div class="dropdown-divider"></div>
 
       <div class="row pb-4">
-        <div class="m-2 col-12 col-md-6">
+        <div class="m-2 col-12 pb-4 col-md-6">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title text-dark h6">{{this.$store.state.full_name}}</h5>
@@ -102,15 +102,15 @@
             </div>
             
             <p class="text-center">
+              
               <button
                 type="button"
                 style="width: 90%;" 
                 class="text-sm m-1 col-12 btn border btn-sm btn-warning"
                 @click="createOrder"
                 >
-               create order
+                  Continue to checkout
               </button>  
-              
               
             </p>
           </div>

@@ -33,7 +33,13 @@
                             </div>
                             </div>
                               <div>
-
+<router-link
+            to="/purchasehistory"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            >
+<button type="button" class="btn btn-link">View Orders</button>
+</router-link>
                             
                               </div>
                           </div>

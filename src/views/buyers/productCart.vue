@@ -50,14 +50,14 @@
       </div>
       <div class="col">
         <div class="p-2 card">
+                  <p class="font-weight-bold p-2"
+                    > {{ this.$store.state.basket.length }} Item(s)
+                  </p>
           <div class="card-body">
             <div class="row text-sm text-dark">
               <div class="col">
                 <p class="">
                   Subtotal:
-                  <span class="text-xs"
-                    >( {{ this.$store.state.basket.length }} ) Item
-                  </span>
                 </p>
               </div>
               <div class="col text-right">

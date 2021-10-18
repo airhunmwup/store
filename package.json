@@ -9,6 +9,7 @@
     "build-css": "tailwindcss build src/assets/tailwind.css -o public/css/styles.css"
   },
   "dependencies": {
+    "@vue-stripe/vue-stripe": "^4.2.5",
     "axios": "^0.21.1",
     "core-js": "^3.6.5",
     "moment": "^2.29.1",
