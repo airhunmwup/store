@@ -197,7 +197,7 @@ export default{
         return Api().get("/getOrder/" + orderid);
     },
     myOrders(data){
-        return Api().post("/myorders", data);
+        return Api().get("/myorders/" + data);
     },
 
     manageorders(data){

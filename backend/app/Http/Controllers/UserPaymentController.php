@@ -75,9 +75,9 @@ class UserPaymentController extends Controller
 
     }
 
-    public function myorders(Request $request){
+    public function myorders($request){
         
-        $user = UserPayment::where('email', "alfredgreemie@gmail.com")->first();
+        $user = UserPayment::where('email', $request)->first();
 
         if(!$user){
             throw validationException::withMessages([

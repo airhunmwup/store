@@ -109,7 +109,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/fetchmessages/{id}', [MessagesController::class, 'index']);
     Route::get('/getmessage/{id}', [MessagesController::class, 'get']);
     Route::get('/listings/{id}', [productsController::class, 'get']);
-    Route::post('/myorders', [UserPaymentController::class, 'myorders']);
+    Route::get('/myorders/{data}', [UserPaymentController::class, 'myorders']);
     Route::post('/manageorders/{id}', [UserPaymentController::class, 'manageorders']);
 
 });

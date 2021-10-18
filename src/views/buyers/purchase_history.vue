@@ -231,8 +231,9 @@ export default {
   data() {
     return {
       user: {
-        email: "alfredgreemie@gmail.com",
+        email: this.$store.state.currentUser.email,
       },
+      email: this.$store.state.currentUser.email,
       data: "",
       order_info: '',
       myproducts: '',
@@ -248,15 +249,21 @@ export default {
   computed: mapState(['currentUser']),
   methods:{
     getMyOrders(){
-      User.myOrders(this.user).then(res => {
+      User.myOrders(this.email).then(res => {
         this.data = res.data.products;
         this.order_info = res.data.myorders;
         this.myproducts = res.data.myproducts;
         this.fullname = res.data.user;
         this.productHistory = res.data.productHistory;
         this.products();
-      }).catch(errors => {
-        console.log(errors);
+      }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            console.log(error.response.data.message);
+        }
       });
     },
     orderDetails(id) {
