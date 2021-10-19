@@ -68,25 +68,25 @@
             </form>
 </nav>
           <div class="p-4">
-            <div class="card" v-for="(products, index) in orders" :key="index">
+            <div class="card" v-for="ord in order" :key="ord.id">
               <div class="border card-header">
                 <div class="text-dark row text-xs">
                   <div class="m-1 col-2 col-xs-12">
                     <p class="font-weight-bold">ORDER PLACED</p>
-                    <p class="text-dark">{{order_info[index].created_at.substring(0,10)}}</p>
+                    <p class="text-dark">{{ord['created_at'].substring(0,10)}}</p>
                   </div>
                   <div class="m-1 col-2 col-xs-12">
                     <p class="font-weight-bold">TOTAL</p>
-                    <p class="text-dark">£{{order_info[index].total}}</p>
+                    <p class="text-dark">£{{ord['total']}}</p>
                   </div>
                   <div class="m-1 col-3 col-xs-12">
                     <p class="font-weight-bold">DISPATCH TO</p>
                     <p class="text-dark" title="Tooltip on bottom">
-                      {{ fullname.name }}
+                      {{ord['firstname']}} {{ord['lastname']}}
                     </p>
                   </div>
                   <div class="m-1 col-4 col-xs-12">
-                    <p class="font-weight-bold">ORDER # 202-0274579-1617107</p>
+                    <p class="font-weight-bold">ORDER # {{ord['orderid']}}</p>
                     <p>
                       <a
                         data-toggle="collapse"
@@ -105,43 +105,21 @@
                 </div>
               </div>
               <div class="card-body">
-                <div class="row">
+                <div v-for="items in ord.order_items" :key="items.id" class="row">
                   <div class="row ml-2 col-8 col-xs-12">
                     <p class="text-dark h6">Expected by 10 Aug</p>
                     <div class="col-12 m-1 p-2">
                       <div class="row">
                         <div class="col-5 col-lg-4 center">
-                          <img
-                            v-bind:src="API_BASE_URL + products.product_image1"
-                            class="mt-3"
-                            alt="Product"
-                          />
+                          <img v-bind:src="API_BASE_URL + items.product_image" class="card-img-top" alt="Product" style="height:180px; width: 100%;" />
                         </div>
                         <div class="p-3 text-dark col-7 col-md-7 col-lg-8">
                           <p class="pt-3 mt-2 text-info text-sm h6 underline">
-                            {{products.product_name}}
+                            {{items.name}}
                           </p>
-                          <div class="input-group mb-3">
-                            <div class="input-group-prepend">
-                              <span
-                                class="input-group-text text-dark"
-                                id="basic-addon1"
-                                ><i class="fa fa-refresh"></i
-                              ></span>
-                              <button
-                                type="button"
-                                class="
-                                  btn
-                                  border
-                                  underline
-                                  text-dark text-xs
-                                  p-2
-                                  btn-sm
-                                "
-                              >
-                                Buy it again
-                              </button>
-                            </div>
+                          <div class="mb-3">
+                              <p>Quantity : {{items.quantity}}</p>
+                              <p>Price : £{{items.price}}</p>
                           </div>
                         </div>
                       </div>
@@ -234,9 +212,11 @@ export default {
         email: this.$store.state.currentUser.email,
       },
       email: this.$store.state.currentUser.email,
+      userid: this.$store.state.currentUser.id,
       data: "",
       order_info: '',
       myproducts: '',
+      order: '',
       fullname: "",
       productHistory: "",
       myorders_id: "",
@@ -248,6 +228,20 @@ export default {
   },
   computed: mapState(['currentUser']),
   methods:{
+    getOrders(){
+      User.getOrders(this.userid).then(res => {
+        this.order = res.data;
+        console.log(res);
+      }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+            console.log(error.response.data.message);
+        }
+      });
+    },  
     getMyOrders(){
       User.myOrders(this.email).then(res => {
         this.data = res.data.products;
@@ -255,6 +249,7 @@ export default {
         this.myproducts = res.data.myproducts;
         this.fullname = res.data.user;
         this.productHistory = res.data.productHistory;
+        console.log(this.myproducts);
         this.products();
       }).catch(error => {
         if (!error.response) {
@@ -289,6 +284,7 @@ export default {
   },
   async mounted() {
     this.getMyOrders(); 
+    this.getOrders();
   },
 };
 </script>

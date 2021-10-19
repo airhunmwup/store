@@ -1,3 +1,4 @@
+/* eslint-disable */
 <template>
   <!-- main content -->
   <div class="container">

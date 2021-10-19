@@ -38,6 +38,10 @@ class Orders2Controller extends Controller
     {
         return Orders2::where('orderid', $orderid)->with('order_items')->get();
     }
+    public function getorders($id)
+    {
+        return Orders2::where('userid', $id)->with('order_items')->get();
+    }
     public function store(Request $request)
     {
         $orderid = time();
@@ -62,12 +66,15 @@ class Orders2Controller extends Controller
         ]);
         
         foreach (json_decode($request->input('cart'), true) as $item) {
+            $image = $item['product_images'][0];
                 $order_items = OrderItems::create([           
             'orderid' => $orderid,
             'name' => $item['product_name'],
             'quantity' => $item['qnty'],
             'price' => $item['product_price'],
-            'seller_id' => $item['product_userid'],        
+            'seller_id' => $item['product_userid'], 
+            'product_id' => $item['id'],   
+            'product_image' => $image['product_image_path'],        
             
         ]);
             }

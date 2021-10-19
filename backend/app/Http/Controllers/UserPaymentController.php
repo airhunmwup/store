@@ -106,7 +106,7 @@ class UserPaymentController extends Controller
 
         $products = [];
         foreach($myproduct_id as $id){
-            array_push($products, Products::where('id',$id)->get());
+            array_push($products, Products::where('id',$id)->with('product_images')->get());
         }
 
         $products_main = [];
