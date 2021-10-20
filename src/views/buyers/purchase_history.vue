@@ -89,7 +89,7 @@
                     <p class="font-weight-bold">ORDER # {{ord['orderid']}}</p>
                     <p>
                       <a
-                      href="#"
+                      href=""
                         data-toggle="collapse"
                         data-target=".navbar-collapse"
                         @click.prevent="orderDetails(order_id[index])"
