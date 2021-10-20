@@ -28,9 +28,9 @@
         </div>
       </div>
 
-      <div class="col-12">
+      <div class="col-12 pb-4">
         <!--Purchase History-->
-        <div class="row">
+        <div class="row pb-4">
 <nav class="navbar navbar-expand-lg navbar-light">
             <form method="post" class="std" id="customer-form">
               <div class="input-group">
@@ -67,7 +67,7 @@
               </div>
             </form>
 </nav>
-          <div class="p-4">
+          <div class="m-2 pb-4">
             <div class="card" v-for="ord in order" :key="ord.id">
               <div class="border card-header">
                 <div class="text-dark row text-xs">
@@ -88,20 +88,15 @@
                   <div class="m-1 col-4 col-xs-12">
                     <p class="font-weight-bold">ORDER # {{ord['orderid']}}</p>
                     <p>
-                   <router-link         
-                   :to="{ name: 'orderdetails', params: { orderid: ord.orderid}}"
-                   class="dropright"
-                   data-toggle="collapse"
-                   data-target=".navbar-collapse"
-                   >
-                      <span 
+                      <a
+                      href="#"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        @click.prevent="orderDetails(order_id[index])"
+                        ><span 
                         
                         class="text-primary text-sm"
-                          >View order details </span>|
-                          <span class="text-primary text-sm">
-                          Invoice</span
-                        >
-                    </router-link>
+                          >View order details </span></a>
                     </p>
                     <button> </button>
                   </div>
@@ -117,7 +112,7 @@
                           <img v-bind:src="API_BASE_URL + items.product_image" class="card-img-top" alt="Product" style="height:180px; width: 100%;" />
                         </div>
                         <div class="p-3 text-dark col-7 col-md-7 col-lg-8">
-                          <p class="pt-3 mt-2 text-info text-sm h6 underline">
+                          <p class="pt-3 mt-2 text-primary text-sm h6 underline">
                             {{items.name}}
                           </p>
                           <div class="mb-3">
@@ -147,12 +142,6 @@
                         Problem with order
                       </button>
                       <button
-                        type="button"
-                        class="text-xs btn-sm btn-light border btn-block"
-                      >
-                        Return
-                      </button>
-                      <button
                         class="text-xs btn-sm btn-light border btn-block"
                         type="button"
                         data-toggle="collapse"
@@ -162,31 +151,6 @@
                       >
                         Leave seller feedback
                       </button>
-                      <div class="collapse" id="productfeedback-1">
-                        <div class="form-group m-2">
-                          <form>
-                            <textarea
-                              class="form-control"
-                              id="exampleFormControlTextarea1"
-                              
-                              rows="3"
-                              required
-                            ></textarea>
-                            <router-link
-                              to="purchase_history"
-                              title="send message"
-                            >
-                              <button
-                                class="btn btn-sm m-1 btn-success"
-                                
-                                type="submit"
-                              >
-                                send
-                              </button>
-                            </router-link>
-                          </form>
-                        </div>
-                      </div>
                     </div>
                   </div>
                 </div>
@@ -201,7 +165,6 @@
 
       <!-- end col-md-9-1 -->
     </div>
-    <hr />
   </div>
 </template>
 <script>
