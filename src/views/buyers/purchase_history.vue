@@ -67,7 +67,7 @@
               </div>
             </form>
 </nav>
-          <div class="m-2 pb-4">
+          <div class="pb-4">
             <div class="card" v-for="ord in order" :key="ord.id">
               <div class="border card-header">
                 <div class="text-dark row text-xs">
