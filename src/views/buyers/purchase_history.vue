@@ -88,17 +88,20 @@
                   <div class="m-1 col-4 col-xs-12">
                     <p class="font-weight-bold">ORDER # {{ord['orderid']}}</p>
                     <p>
-                      <a
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        @click.prevent="orderDetails(order_id[index])"
-                        ><span 
+                   <router-link         
+                   :to="{ name: 'orderdetails', params: { orderid: ord.orderid}}"
+                   class="dropright"
+                   data-toggle="collapse"
+                   data-target=".navbar-collapse"
+                   >
+                      <span 
                         
                         class="text-primary text-sm"
                           >View order details </span>|
                           <span class="text-primary text-sm">
                           Invoice</span
-                        ></a>
+                        >
+                    </router-link>
                     </p>
                     <button> </button>
                   </div>

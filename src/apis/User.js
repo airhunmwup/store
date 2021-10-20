@@ -202,7 +202,7 @@ export default{
     getOrders(id){
         return Api().get("/getorders/" + id);
     },
-
+    
     manageorders(data){
         return Api().post("/manageorders/" + data);
     }
