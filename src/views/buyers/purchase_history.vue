@@ -28,9 +28,9 @@
         </div>
       </div>
 
-      <div class="col-12 pb-4">
+      <div class="col-12">
         <!--Purchase History-->
-        <div class="row pb-4">
+        <div class="row">
 <nav class="navbar navbar-expand-lg navbar-light">
             <form method="post" class="std" id="customer-form">
               <div class="input-group">
@@ -67,7 +67,7 @@
               </div>
             </form>
 </nav>
-          <div class="pb-4">
+          <div class="p-4">
             <div class="card" v-for="ord in order" :key="ord.id">
               <div class="border card-header">
                 <div class="text-dark row text-xs">
@@ -88,15 +88,20 @@
                   <div class="m-1 col-4 col-xs-12">
                     <p class="font-weight-bold">ORDER # {{ord['orderid']}}</p>
                     <p>
-                      <a
-                      href=""
-                        data-toggle="collapse"
-                        data-target=".navbar-collapse"
-                        @click.prevent="orderDetails(order_id[index])"
-                        ><span 
+                   <router-link         
+                   :to="{ name: 'orderdetails', params: { orderid: ord.orderid}}"
+                   class="dropright"
+                   data-toggle="collapse"
+                   data-target=".navbar-collapse"
+                   >
+                      <span 
                         
                         class="text-primary text-sm"
-                          >View order details </span></a>
+                          >View order details </span>|
+                          <span class="text-primary text-sm">
+                          Invoice</span
+                        >
+                    </router-link>
                     </p>
                     <button> </button>
                   </div>
@@ -112,7 +117,7 @@
                           <img v-bind:src="API_BASE_URL + items.product_image" class="card-img-top" alt="Product" style="height:180px; width: 100%;" />
                         </div>
                         <div class="p-3 text-dark col-7 col-md-7 col-lg-8">
-                          <p class="pt-3 mt-2 text-primary text-sm h6 underline">
+                          <p class="pt-3 mt-2 text-info text-sm h6 underline">
                             {{items.name}}
                           </p>
                           <div class="mb-3">
@@ -165,6 +170,7 @@
 
       <!-- end col-md-9-1 -->
     </div>
+    <hr />
   </div>
 </template>
 <script>
