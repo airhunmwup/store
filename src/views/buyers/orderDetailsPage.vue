@@ -3,7 +3,7 @@
     <div class="card pb-4">
       <div class="card-header">
         <div class="row">
-          <div class="mb-2 col-sm">
+          <div class="mb-2 col-10">
         <p class="h5 text-dark">Order Details</p>
           </div>
           <div class="mb-2 col-sm">

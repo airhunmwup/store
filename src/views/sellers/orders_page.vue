@@ -36,43 +36,6 @@
         </div>
       </div>
 
-      <div class="col-lg-12 col-xs-12">
-        <form method="post" class="std" id="customer-form">
-          <div
-            class="
-              justify-content-center
-              text-center
-              input-group
-              pt-2
-              pb-2
-              col-lg-6 col-xs-12
-            "
-          >
-            <div class="input-group-prepend">
-              <div class="input-group-text bg-light" id="btnGroupAddon">
-                <i class="fa fa-search"></i>
-              </div>
-            </div>
-            <input
-              type="text"
-              id="name"
-              name="name"
-              placeholder="Search all Orders"
-              class="form-control border"
-              value=""
-            />
-            <button
-              class="btn-light btn text-primary text-sm border"
-              type="submit"
-              data-action="show-password"
-              data-text-show="Show"
-              data-text-hide="Hide"
-            >
-              Search
-            </button>
-          </div>
-        </form>
-      </div>
       <div class="pb-2 col-12">
         <!--Purchase History-->
         <div class="row">
@@ -172,7 +135,7 @@
                   <div class="row text-xs">
                     <div class="col">
                       <div class="input-group">
-                        <span class="ml-2 font-weight-bold"> #76343</span>
+                        <span class="ml-2 font-weight-bold"> #{{order.orderid}}</span>
                       </div>
                     </div>
                     <div class="col">
