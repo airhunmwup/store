@@ -146,7 +146,7 @@
                     </div>
                     <div class="col">
                       <span
-                        class="alert-xs p-1 mt-4 rounded alert-{{order.status_color}}"
+                        class="alert-xs p-1 mt-4 rounded {{order.status_color}}"
                         style="height: 2rem"
                         role="alert"
                       >
