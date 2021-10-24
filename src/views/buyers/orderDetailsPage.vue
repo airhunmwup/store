@@ -1,9 +1,20 @@
 <template>
-  <div class="container">
     <!-- main content -->
-    <div class="card">
+    <div class="card pb-4">
       <div class="card-header">
+        <div class="row">
+          <div class="mb-2 col-sm">
         <p class="h5 text-dark">Order Details</p>
+          </div>
+          <div class="mb-2 col-sm">
+            <button type="button" class="btn m-1 underline btn-light btn-sm ">
+              Problem with Order?
+            </button>
+            <button type="button" class="btn m-1 btn-sm border">
+              <i class="zmdi zmdi-print"></i>
+            </button>
+          </div>
+        </div>
       </div>
       <div class="card-body text-sm text-dark">
         <p class="">Order number: <span class="text-sm">#{{order.orderid}}</span></p>
@@ -163,19 +174,8 @@
         </div>
       </div>
       <div class="card-body text-sm text-dark">
-        <div class="row">
-          <div class="mb-2 col-sm">
-            <button type="button" class="btn m-1 btn-light btn-sm border">
-              Cancel
-            </button>
-            <button type="button" class="btn m-1 btn-warning btn-sm border">
-              Print
-            </button>
-          </div>
-        </div>
       </div>
     </div>
-  </div>
 </template>
 <script>
 import { mapState } from 'vuex';

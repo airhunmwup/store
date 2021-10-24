@@ -149,9 +149,6 @@
                     <p class="">CUSTOMER</p>
                   </div>
                   <div class="col">
-                    <p class="">PRODUCT</p>
-                  </div>
-                  <div class="col">
                     <p class="">STATUS</p>
                   </div>
                   <div class="col">
@@ -183,9 +180,6 @@
                     </div>
                     <div class="col">
                       <p class="">{{order.customername}}</p>
-                    </div>
-                    <div class="col">
-                      <p class="">The first product name...</p>
                     </div>
                     <div class="col">
                       <span
