@@ -100,11 +100,11 @@
             <div class="m-2 border d-xs-none">
               <div class="card-header font-weight-bold">
                 <div class="row text-xs">
-                  <div class="col">
+                  <!--<div class="col">
                     <div class="input-group">
                       <span class="ml-2"> #ORDER ID</span>
                     </div>
-                  </div>
+                  </div>-->
                   <div class="col">
                     <p class="">CREATED</p>
                   </div>
@@ -132,12 +132,12 @@
                 @click.prevent="orderDetails(order.transaction_id)"
               >
                 <div class="card-body border-b-2 text-dark">
-                  <div class="row text-xs">
+                  <!--<div class="row text-xs">
                     <div class="col">
                       <div class="input-group">
-                        <span class="ml-2 font-weight-bold"> #{{order.transaction_id}}</span>
+                        <span class="ml-2 font-weight-bold"> #{{order.orderid}}</span>
                       </div>
-                    </div>
+                    </div>-->
                     <div class="col">
                       <p class="">{{order.created_at.substring(0,10)}}</p>
                     </div>
