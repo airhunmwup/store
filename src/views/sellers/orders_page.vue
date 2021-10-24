@@ -135,7 +135,7 @@
                   <div class="row text-xs">
                     <div class="col">
                       <div class="input-group">
-                        <span class="ml-2 font-weight-bold"> #{{order.orderid}}</span>
+                        <span class="ml-2 font-weight-bold"> #{{order.transaction_id}}</span>
                       </div>
                     </div>
                     <div class="col">
