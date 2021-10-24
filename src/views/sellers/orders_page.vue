@@ -146,15 +146,15 @@
                     </div>
                     <div class="col">
                       <span
-                        class="alert-xs p-1 mt-4 rounded alert-danger"
+                        class="alert-xs p-1 mt-4 rounded alert-{{order.status_color}}"
                         style="height: 2rem"
                         role="alert"
                       >
-                        Pending
+                      <p class="">{{order.status}}</p>
                       </span>
                     </div>
                     <div class="col">
-                      <p class="">{{order.status}}</p>
+                      <p class="">{{order.delivery_status}}</p>
                     </div>
                     <div class="col">
                       <p class="text-right">£{{order.price}}</p>
