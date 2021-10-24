@@ -132,8 +132,8 @@
                 @click.prevent="orderDetails(order.transaction_id)"
               >
                 <div class="card-body border-b-2 text-dark">
-                  <!--<div class="row text-xs">
-                    <div class="col">
+                  <div class="row text-xs">
+                    <!--<div class="col">
                       <div class="input-group">
                         <span class="ml-2 font-weight-bold"> #{{order.orderid}}</span>
                       </div>
