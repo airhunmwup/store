@@ -60,7 +60,7 @@
   </div>
 </nav> 
 <div class="m-1">
-      <div class="row d-xs-none">
+      <div class="row">
             <div class="col-md-12 mb-2">
               <div class="card">
                 <img class="" style="height: 19rem" src="img/mainbanner.png" alt="courses" />

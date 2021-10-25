@@ -35,7 +35,8 @@
         </div>
 
       <div class="col-lg-12 m-1 col-xs-12">
-        <form method="post" class="std" id="customer-form">
+       
+            <!--  <form method="post" class="std" id="customer-form">
           <div
             class="
               justify-content-center
@@ -69,8 +70,7 @@
               Search
             </button>
           </div>
-        </form>
-            <!-- Example single danger button -->
+        </form>Example single danger button -->
             <div class="btn-group">
               <!-- Example split danger button -->
               <button

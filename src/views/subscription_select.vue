@@ -32,11 +32,11 @@
                                       Starter
                                     </p>
                                     <p class="h4 font-weight-bold">
-                                      $4.95 /mo
+                                      £4.95 /mo
                                     </p>
                                     <p class="text-xs font-weight-bold">
                                       with 1-yr plan* or
-                                    $7.95/mo without
+                                    £7.95/mo without
                                     </p>
                                     <p class="text-sm pt-3 text-dark  font-weight-bold">
                                       For sellers who want an entry level solution.
@@ -46,11 +46,11 @@
   <tbody>
     <tr>
       <th scope="row">Yearly subscription</th>
-      <td class="border text-center">$4.95</td>
+      <td class="border text-center">£4.95</td>
     </tr>
     <tr>
       <th scope="row">Monthly subscription</th>
-      <td class="border text-center">$4.95</td>
+      <td class="border text-center">£4.95</td>
     </tr>
   </tbody>
   <p class="h5 text-dark pt-4">Fees</p>
@@ -65,15 +65,15 @@
     </tr>
     <tr>
       <th scope="row">Additional fixed price insertion</th>
-      <td class="border text-center">$0.30</td>
+      <td class="border text-center">£0.30</td>
     </tr>
     <tr>
       <th scope="row">Additional auction insertion</th>
-      <td class="border text-center">$0.30</td>
+      <td class="border text-center">£0.30</td>
     </tr>
     <tr>
       <th scope="row">Final value fee cap</th>
-      <td class="border text-center">$750.00</td>
+      <td class="border text-center">£750.00</td>
     </tr>
     <tr>
       <th scope="row">Final value fee</th>
@@ -135,11 +135,11 @@
                                       Basic
                                     </p>
                                     <p class="h4 font-weight-bold">
-                                      $21.95 /mo
+                                      £21.95 /mo
                                     </p>
                                     <p class="text-xs font-weight-bold">
                                      with 1-yr plan* or
-                                     $27.95/mo without
+                                     £27.95/mo without
                                     </p>
                                     <p class="text-sm text-dark  font-weight-bold">
                                       For sellers who want lower selling fees.
@@ -149,11 +149,11 @@
   <tbody>
     <tr>
       <th scope="row">Yearly subscription</th>
-      <td class="border text-center">$21.95</td>
+      <td class="border text-center">£21.95</td>
     </tr>
     <tr>
       <th scope="row">Monthly subscription</th>
-      <td class="border text-center">$27.95</td>
+      <td class="border text-center">£27.95</td>
     </tr>
   </tbody>
   <p class="h5 text-dark pt-4">Fees</p>
@@ -168,15 +168,15 @@
     </tr>
     <tr>
       <th scope="row">Additional fixed price insertion</th>
-      <td class="border text-center">$0.25</td>
+      <td class="border text-center">£0.25</td>
     </tr>
     <tr>
       <th scope="row">Additional auction insertion</th>
-      <td class="border text-center">$0.25</td>
+      <td class="border text-center">£0.25</td>
     </tr>
     <tr>
       <th scope="row">Final value fee cap</th>
-      <td class="border text-center">$350.00</td>
+      <td class="border text-center">£350.00</td>
     </tr>
     <tr>
       <th scope="row">Final value fee</th>
@@ -238,11 +238,11 @@
                                       Premium
                                     </p>
                                     <p class="h4 p-2 font-weight-bold">
-                                      $59.95 /mo
+                                      £59.95 /mo
                                     </p>
                                     <p class="text-xs p-2 font-weight-bold">
                                       with 1-yr plan* or
-                                      $74.95/mo without
+                                      £74.95/mo without
                                     </p>
                                     <p class="text-sm pt-3 text-dark  font-weight-bold">
                                       For sellers wanting lower listing fees and more business tools.
@@ -252,11 +252,11 @@
   <tbody>
     <tr>
       <th scope="row">Yearly subscription</th>
-      <td class="border text-center">$59.95</td>
+      <td class="border text-center">£59.95</td>
     </tr>
     <tr>
       <th scope="row">Monthly subscription</th>
-      <td class="border text-center">$74.95</td>
+      <td class="border text-center">£74.95</td>
     </tr>
   </tbody>
   <p class="h5 text-dark pt-4">Fees</p>
@@ -271,15 +271,15 @@
     </tr>
     <tr>
       <th scope="row">Additional fixed price insertion</th>
-      <td class="border text-center">$0.10</td>
+      <td class="border text-center">£0.10</td>
     </tr>
     <tr>
       <th scope="row">Additional auction insertion</th>
-      <td class="border text-center">$0.15</td>
+      <td class="border text-center">£0.15</td>
     </tr>
     <tr>
       <th scope="row">Final value fee cap</th>
-      <td class="border text-center">$350.00</td>
+      <td class="border text-center">£350.00</td>
     </tr>
     <tr>
       <th scope="row">Final value fee</th>
