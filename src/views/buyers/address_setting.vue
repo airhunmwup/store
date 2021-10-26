@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="container text-sm">
+  <div class="text-sm">
 <nav aria-label="breadcrumb ">
   <ol class="breadcrumb d-xs-none">
         <li class="breadcrumb-item text-primary"> <router-link

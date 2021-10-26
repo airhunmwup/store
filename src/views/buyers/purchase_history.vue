@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="m-4">
+  <div class="m-3">
     <nav aria-label="breadcrumb" class="d-xs-none">
       <ol class="breadcrumb text-xs">
         <li class="breadcrumb-item text-primary"> <router-link
@@ -31,13 +31,14 @@
       <div class="col-12">
         <!--Purchase History-->
         <div class="row">
+          <div class="p-2">
 <nav class="navbar navbar-expand-lg navbar-light">
             <form method="post" class="std" id="customer-form">
               <div class="input-group">
                 <select
                   class="
                     form-control-sm
-                    border
+                    
                     mr-2
                     text-sn 
                     btn
@@ -52,7 +53,7 @@
                   class="
                     form-control-sm
                     shadow-inner
-                    border
+                    
                     text-xs text-primary
                     btn
                     select
@@ -67,25 +68,24 @@
               </div>
             </form>
 </nav>
-          <div class="p-4">
-            <div class="card" v-for="ord in order" :key="ord.id">
-              <div class="border card-header">
+            <div class="card mb-4" v-for="ord in order" :key="ord.id">
+              <div class=" card-header">
                 <div class="text-dark row text-xs">
-                  <div class="m-1 col-2 col-xs-12">
+                  <div class="col-8 col-md-2 p-2">
                     <p class="font-weight-bold">ORDER PLACED</p>
                     <p class="text-dark">{{ord['created_at'].substring(0,10)}}</p>
                   </div>
-                  <div class="m-1 col-2 col-xs-12">
+                  <div class="col-2 col-md-2 p-2">
                     <p class="font-weight-bold">TOTAL</p>
                     <p class="text-dark">£{{ord['total']}}</p>
                   </div>
-                  <div class="m-1 col-3 col-xs-12">
+                  <div class="col-12 col-md-4 p-2">
                     <p class="font-weight-bold">DISPATCH TO</p>
                     <p class="text-dark" title="Tooltip on bottom">
                       {{ord['firstname']}} {{ord['lastname']}}
                     </p>
                   </div>
-                  <div class="m-1 col-4 col-xs-12">
+                  <div class="col-12 col-md-4 text-md-right p-2">
                     <p class="font-weight-bold">ORDER # {{ord['orderid']}}</p>
                     <p>
                    <router-link         
@@ -96,21 +96,18 @@
                    >
                       <span 
                         
-                        class="text-primary text-sm"
-                          >View order details </span>|
-                          <span class="text-primary text-sm">
-                          Invoice</span
-                        >
+                        class="text-primary text-sm underline"
+                          >View order details </span>
                     </router-link>
                     </p>
                     <button> </button>
                   </div>
                 </div>
               </div>
-              <div class="card-body">
-                <div v-for="items in ord.order_items" :key="items.id" class="row">
-                  <div class="row ml-2 col-8 col-xs-12">
-                    <p class="text-dark h6">Expected by 10 Aug</p>
+              <div class="card-body row">
+                <div v-for="items in ord.order_items" :key="items.id" class="col-12 col-md-6">
+                  <div class="row col-12">
+                    <p class="text-dark h6 ">Expected by 10 Aug</p>
                     <div class="col-12 m-1 p-2">
                       <div class="row">
                         <div class="col-5 col-lg-4 center">
@@ -128,32 +125,26 @@
                       </div>
                     </div>
                   </div>
-                  <div class="row col-4 col-xs-12 justify-content-center">
+                 <!-- <div class="row col-4 col-xs-12 justify-content-center">
                     <div class="content ml-4 mt-3">
                       <a
                         href="https://www.royalmail.com/track-your-item/"
                         class="p-1"
                         ><button
                           type="button"
-                          class="text-xs btn-sm border btn-warning btn-block"
+                          class="text-xs btn-sm  btn-warning btn-block"
                         >
                           Track package
                         </button></a
                       >
                       <button
                         type="button"
-                        class="text-xs btn-sm btn-light border btn-block"
+                        class="text-xs btn-sm btn-light  btn-block"
                       >
                         Problem with order
                       </button>
                       <button
-                        type="button"
-                        class="text-xs btn-sm btn-light border btn-block"
-                      >
-                        Return
-                      </button>
-                      <button
-                        class="text-xs btn-sm btn-light border btn-block"
+                        class="text-xs btn-sm btn-light  btn-block"
                         type="button"
                         data-toggle="collapse"
                         data-target="#productfeedback-1"
@@ -162,33 +153,8 @@
                       >
                         Leave seller feedback
                       </button>
-                      <div class="collapse" id="productfeedback-1">
-                        <div class="form-group m-2">
-                          <form>
-                            <textarea
-                              class="form-control"
-                              id="exampleFormControlTextarea1"
-                              
-                              rows="3"
-                              required
-                            ></textarea>
-                            <router-link
-                              to="purchase_history"
-                              title="send message"
-                            >
-                              <button
-                                class="btn btn-sm m-1 btn-success"
-                                
-                                type="submit"
-                              >
-                                send
-                              </button>
-                            </router-link>
-                          </form>
-                        </div>
-                      </div>
                     </div>
-                  </div>
+                  </div> -->
                 </div>
               </div>
             </div>

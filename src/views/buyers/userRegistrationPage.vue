@@ -23,7 +23,7 @@
           <p class="h1 text-dark">Create an account</p>
         </div>
 
-        <p class="pb-4 text-dark text-center">
+      <!--  <p class="pb-4 text-dark text-center">
           Are you a business or nonprofit? <br />
 
           <router-link
@@ -34,12 +34,12 @@
             title="Create Business Account"
             >Create sellers account</router-link
           >
-        </p>
+        </p>-->
 
         <div class="row justify-center " >
 
 <!--recently viewed-->
-                <div class="col-sm-12 col-lg-6 col-md-4">
+                <div class="col-sm-12 col-lg-6 col-md-6">
 
 <div ref="form1">
   <div class="mb-3">

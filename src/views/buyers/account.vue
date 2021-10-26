@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="container justify-content-center text-sm"> 
+  <div class="justify-content-center text-sm"> 
     <div class="justify-content-center">
           <!--Sigin-and-security-->
             <p class="text text-dark h4 p-3 font-weight-bold">
