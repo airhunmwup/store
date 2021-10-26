@@ -124,7 +124,14 @@
   </tbody>
 </table>
   <div class="d-grid gap-2 col-6 mx-auto">
+      <router-link
+          :to="{name: 'subscriptionpay', params: { amount: 4.95, price_id: 'price_1JgvWhED6G9gw43fZq7qpuuY', name: 'Starter'}}"
+          class="dropright"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
   <button class="btn btn-success btn-blocked" type="button">Pay</button>
+      </router-link>
 </div>
                             </div>
                               </div>
@@ -227,7 +234,14 @@
   </tbody>
 </table>
   <div class="d-grid gap-2 col-6 mx-auto">
+      <router-link
+          :to="{name: 'subscriptionpay', params: { amount: 21.95, price_id: 'price_1JoQi3ED6G9gw43f1GEvC2Np', name: 'Basic'}}"
+          class="dropright"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
   <button class="btn btn-success btn-blocked" type="button">Pay</button>
+          </router-link>
 </div>
                             </div>
                               </div>
@@ -330,7 +344,14 @@
   </tbody>
 </table>
   <div class="d-grid gap-2 col-6 mx-auto">
+      <router-link
+          :to="{name: 'subscriptionpay', params: { amount: 59.95, price_id: 'price_1JoQjeED6G9gw43fctFQHOaM', name: 'premium'}}"
+          class="dropright"
+          data-toggle="collapse"
+          data-target=".navbar-collapse"
+        >
   <button class="btn btn-success btn-blocked" type="button">Pay</button>
+      </router-link>
 </div>
                             </div>
                               </div>

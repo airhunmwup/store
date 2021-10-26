@@ -205,6 +205,9 @@ export default{
     
     manageorders(data){
         return Api().post("/manageorders/" + data);
+    },
+    suscribe(data){
+        return Api().post("/suscribe", data);
     }
 
 };

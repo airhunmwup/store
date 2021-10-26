@@ -29,11 +29,13 @@
                                 </div>
 
 
-              <p class="text-center m-4 text-dark font-weight-bold h6 text-md">Your Order has been placed</p>
+              <p v-if="this.orderid" class="text-center m-4 text-dark font-weight-bold h6 text-md">Your Order has been placed</p>
+              <p v-else class="text-center m-4 text-dark font-weight-bold h6 text-md">You have been subscribed</p>
                             </div>
                             </div>
                               <div>
 <router-link
+            v-if="this.orderid"
             to="/purchasehistory"
             data-toggle="collapse"
             data-target=".navbar-collapse"
@@ -54,4 +56,24 @@
     <hr>
   </div>
 </template>
-        
+<script>
+import User from "../../apis/User";
+export default {
+  data() {
+    return {
+      orderid: this.$route.params.orderid,
+    };
+  },
+  async mounted() {
+     
+  },
+  methods: {
+
+    
+  },
+  computed: {
+
+  },
+
+};
+</script>        
