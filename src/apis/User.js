@@ -208,6 +208,11 @@ export default{
     },
     suscribe(data){
         return Api().post("/suscribe", data);
+    },
+    savePayout(data){
+        return Api().post("/savePayout", data);
+    },
+    checkPayout(data){
+        return Api().post("/checkPayout", data);
     }
-
 };

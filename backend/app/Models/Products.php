@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Model;
 class Products extends Model
 {
     use HasFactory;
-
+    
     protected $fillable = [
         'product_subcat',
         'product_catname',
@@ -34,6 +34,7 @@ class Products extends Model
         'product_total',
 
     ];
+    
     public function product_images()
     {
         return $this->hasMany('App\Models\ProductImages','product_id');

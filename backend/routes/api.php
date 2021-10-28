@@ -14,6 +14,7 @@ use App\Http\Controllers\UserPaymentController;
 use App\Http\Controllers\RecentViewsController;
 use App\Http\Controllers\Orders2Controller;
 use App\Http\Controllers\SubscriptionsController;
+use App\Http\Controllers\PayoutController;
 use App\Models\Addressforbuyers;
 use GuzzleHttp\Middleware;
 use Illuminate\Http\Request;
@@ -114,6 +115,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/getorders/{id}', [Orders2Controller::class, 'getorders']);
     Route::post('/manageorders/{id}', [UserPaymentController::class, 'manageorders']);
     Route::post('/suscribe', [SubscriptionsController::class, 'store']);
+    Route::post('/savePayout', [PayoutController::class, 'store']);
+    Route::post('/checkPayout', [PayoutController::class, 'checkPayout']);
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

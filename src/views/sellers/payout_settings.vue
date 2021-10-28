@@ -42,7 +42,7 @@
   <div class="row">
     <div class="col-8 col-xs-12">
 <div class="m-1">
-    <div class="row">
+    <div v-if="payout" class="row">
                   <p class="text-dark text-sm text-left">Add Bank details</p>
               <div class="p-2 col-4 col-xs-12">
                 <div class="card border-dashed border-secondary">
@@ -62,7 +62,7 @@
                 </div>
               </div>
     </div>
-    <div class="row">
+    <div v-if="payoutData" class="row">
               <div class="p-2 col-6 col-xs-12">
                 <div class="card backdrop-brightness-100 shadow text-sm">
                   <div class="card-body">
@@ -74,13 +74,13 @@
                         </div>
                         <div class="col-8">
                     <p class="text-grey">
-                      Lloyds Bank
+                      {{payoutData.bank_name}}
                     </p>
                     <p class="text-grey">
-                      6118293018
+                      {{payoutData.account_number}}
                     </p>
                     <p class="text-grey">
-                      30-03-01
+                      {{payoutData.sort_code}}
                     </p>
                     <p>
                         <span class="alert-xs text-xs rounded-3 p-1 mt-4 alert-success" style="height: 2rem;" role="alert">
@@ -108,4 +108,68 @@
 
   </div>
 </template>
+<script>
+import User from '../../apis/User';
+export default {
+  data() {
+    return {
+      formData: {
+        currency: "GBP",
+        account_name: "",
+        bank_name: "",
+        sort_code: "",
+        account_number : "",
+        user_id : this.$store.state.currentUser.id,
+      },
+      payout: "",
+      payoutData: "",
+      errors: {
+
+      }
+    }
+  },
+  methods: {
+    checkPayout(){         
+          User.checkPayout(this.formData,{             
+          }).then(res =>{
+              if (res.data.length > 0){
+              this.payoutData = res.data[0];
+              console.log(this.payoutData);
+        }else{
+            this.payout = "1"; 
+            
+        }
+            
+            
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
+  },
+    errorStyle(err){
+      if(err){
+        return {
+          color: 'red',
+          fontSize: '12px'
+        }
+      }
+    }
+  },
+  beforeMount() {
+    this.checkPayout();
+  },
+  mounted() {   
+    
+    
+  },
+  computed: {
+
+  }
+}
+</script>
         
