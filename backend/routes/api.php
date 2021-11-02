@@ -112,11 +112,12 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::get('/getmessage/{id}', [MessagesController::class, 'get']);
     Route::get('/listings/{id}', [productsController::class, 'get']);
     Route::get('/myorders/{data}', [UserPaymentController::class, 'myorders']);
-    Route::get('/getorders/{id}', [Orders2Controller::class, 'getorders']);
+    Route::post('/getorders', [Orders2Controller::class, 'getorders']);
     Route::post('/manageorders/{id}', [UserPaymentController::class, 'manageorders']);
     Route::post('/suscribe', [SubscriptionsController::class, 'store']);
     Route::post('/savePayout', [PayoutController::class, 'store']);
     Route::post('/checkPayout', [PayoutController::class, 'checkPayout']);
+    Route::post('/getmyOrders', [Orders2Controller::class, 'getmyOrders']);
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

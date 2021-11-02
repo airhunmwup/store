@@ -199,8 +199,8 @@ export default{
     myOrders(data){
         return Api().get("/myorders/" + data);
     },
-    getOrders(id){
-        return Api().get("/getorders/" + id);
+    getOrders(data){
+        return Api().post("/getorders", data);
     },
     
     manageorders(data){
@@ -214,5 +214,8 @@ export default{
     },
     checkPayout(data){
         return Api().post("/checkPayout", data);
+    },
+    getmyOrders(data){
+        return Api().post("/getmyOrders", data);
     }
 };

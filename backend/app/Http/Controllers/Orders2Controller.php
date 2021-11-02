@@ -38,8 +38,8 @@ class Orders2Controller extends Controller
     {
         return Orders2::where('orderid', $orderid)->with('order_items')->get();
     }
-    public function getorders($id)
-    {
+    public function getorders(Request $request)
+    {   $id = $request->user()->id;
         return Orders2::where('userid', $id)->with('order_items')->get();
     }
     public function store(Request $request)
@@ -80,7 +80,20 @@ class Orders2Controller extends Controller
             }
         return $orders;
     }
-
+    public function getmyOrders(Request $request)
+    {
+        $id = $request->user()->id;
+        $data = array();
+        $order_items = OrderItems::where('seller_id', $id)->groupBy('orderid')->orderBy('id', 'desc')->pluck('orderid')->toArray();
+        foreach ($order_items as $oid) {
+            $results = Orders2::where('orderid', $oid)->with(['order_items' => function($query) use ($id) {
+            $query->where('seller_id',$id);
+    }])->get();
+            
+            array_push($data, $results[0]);
+        }
+        return $data;
+    }
     /**
      * Display the specified resource.
      *

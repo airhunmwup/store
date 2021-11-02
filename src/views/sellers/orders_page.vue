@@ -95,8 +95,52 @@
               </div>
             </div>
           </div>
-
-            <!--start Web view-->
+          <div class="card mb-4" v-for="ord in orders" :key="ord.id">
+              <div class=" card-header">
+                <div class="text-dark row text-xs">
+                  <div class="col-8 col-md-2 p-2">
+                    <p class="font-weight-bold">ORDER CREATED</p>
+                    <p class="text-dark">{{ord['created_at'].substring(0,10)}}</p>
+                  </div>
+                  
+                  <div class="col-12 col-md-4 p-2">
+                    <p class="font-weight-bold">Buyer</p>
+                    <p class="text-dark" title="Tooltip on bottom">
+                      {{ord['firstname']}} {{ord['lastname']}}
+                    </p>
+                  </div>
+                  <div class="col-12 col-md-4 text-md-right p-2">
+                    <p class="font-weight-bold">ORDER # {{ord['orderid']}}</p>
+                    
+                  </div>
+                </div>
+              </div>
+              <div class="card-body row">
+                <div class="row table-responsive">
+              <table class="table table-bordered order-list">
+            <thead>
+            <tr>           
+                <th width="20%">Item(s)</th>
+                <th width="10%">Quantity</th>
+                <th width="10%">Price</th>
+                <th width="10%">Total (£)</th>
+            </tr>
+            </thead>
+            <tbody>
+                <tr v-for="item in ord.order_items" v-bind:key="item.id">
+                    <td>{{ item.name }}</td>
+                    <td>{{ item.quantity }}</td>
+                    <td>{{ item.price }}</td>
+                    <td>{{ item.quantity * item.price }}</td>
+                </tr>
+                
+            </tbody>
+              </table>
+          </div>
+              </div>
+            </div>
+            
+            <!--
             <div class="m-2 border d-xs-none">
               <div class="card-header font-weight-bold">
                 <div class="row text-xs">
@@ -104,7 +148,7 @@
                     <div class="input-group">
                       <span class="ml-2"> #ORDER ID</span>
                     </div>
-                  </div>-->
+                  </div>
                   <div class="col">
                     <p class="">CREATED</p>
                   </div>
@@ -137,7 +181,7 @@
                       <div class="input-group">
                         <span class="ml-2 font-weight-bold"> #{{order.orderid}}</span>
                       </div>
-                    </div>-->
+                    </div>
                     <div class="col">
                       <p class="">{{order.created_at.substring(0,10)}}</p>
                     </div>
@@ -167,7 +211,7 @@
 
             <!--end Web view-->
 
-            <!--start mobile view-->
+            <!--start mobile view
             <div class="m-2 d-md-none border"
                 v-for="(order, index) in manageorders"
                 :key="index"
@@ -249,7 +293,7 @@
               </div>
             </div>
 
-            <!--end mobile view-->
+            <!--end mobile view
 
             <p class="text-dark p-4 text-center" v-show="!manageorders">
               You do not have any orders to display in this view.
@@ -275,7 +319,7 @@
                   </li>
                 </ul>
               </nav>
-            </div>
+            </div>-->
         </div>
       </div>
 
@@ -289,12 +333,31 @@ import User from "../../apis/User";
 export default {
   data() {
     return {
+      formData: {
+        user_id : this.$store.state.currentUser.id,
+      },
+      orders: '',
       manageorders: '',
       orderdetails: '',
       data: '',
     }
   },
   methods: {
+    getOrders(){         
+          User.getmyOrders(this.formData,{             
+          }).then(res =>{              
+              this.orders = res.data;
+              console.log(res.data);                   
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
+  },    
     async getMyOrders(id){
         if(id){
           console.log(id);
@@ -329,7 +392,10 @@ export default {
   computed: mapState(['setCategoryList','setSubCategoryList','getCurrentUser']),
   created() {
     this.getuser();
-  }
+  },
+  beforeMount() {
+    this.getOrders();
+  },
 }
 </script>
         
