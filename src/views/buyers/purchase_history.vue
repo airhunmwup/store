@@ -105,36 +105,8 @@
                 </div>
               </div>
               <div class="card-body row">
-                <div class="row">
-              <table class="table table-bordered order-list">
-            <thead>
-            <tr>           
-                <th width="20%">Item(s)</th>
-                <th width="10%">Quantity</th>
-                <th width="10%">Price</th>
-                <th width="10%">Total (£)</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr v-for="item in ord.order_items" v-bind:key="item.id">
-                    <td>{{ item.name }}</td>
-                    <td>{{ item.quantity }}</td>
-                    <td>{{ item.price }}</td>
-                    <td>{{ item.quantity * item.price }}</td>
-                </tr>
-                <tr class="ite_tt">
-                    <td colspan="3" align="right" style="text-align:right;"><b>Shipping</b></td>
-                    <td class="items_total" align="right">{{ ord.shipping }}</td>
-                </tr>
-                <tr class="ite_tt">
-                    <td colspan="3" align="right" style="text-align:right;"><b>Total</b></td>
-                    <td class="items_total" align="right">{{ ord.total }}</td>
-                </tr>
-            </tbody>
-              </table>
-          </div>  
-                <!--<div v-for="items in ord.order_items" :key="items.id" class="col-12 col-md-6">
-                  <!--<div class="row col-12">
+                <div v-for="items in ord.order_items" :key="items.id" class="col-12 col-md-6">
+                  <div class="row col-12">
                     <p class="text-dark h6 ">Expected by 10 Aug</p>
                     <div class="col-12 m-1 p-2">
                       <div class="row">
@@ -182,8 +154,8 @@
                         Leave seller feedback
                       </button>
                     </div>
-                  </div> 
-                </div>-->
+                  </div> -->
+                </div>
               </div>
             </div>
             <p class="text-dark text-center" v-show="!orders">
@@ -208,9 +180,6 @@ export default {
       user: {
         email: this.$store.state.currentUser.email,
       },
-      formData: {
-        user_id : this.$store.state.currentUser.id,
-      },
       email: this.$store.state.currentUser.email,
       userid: this.$store.state.currentUser.id,
       data: "",
@@ -229,8 +198,7 @@ export default {
   computed: mapState(['currentUser']),
   methods:{
     getOrders(){
-      User.getOrders(this.formData,{             
-          }).then(res => {
+      User.getOrders(this.userid).then(res => {
         this.order = res.data;
         console.log(res);
       }).catch(error => {
@@ -283,11 +251,9 @@ export default {
       });
     }
   },
-  beforeMount() {
-    this.getOrders();
-  },
   async mounted() {
-    this.getMyOrders();
+    this.getMyOrders(); 
+    this.getOrders();
   },
 };
 </script>
