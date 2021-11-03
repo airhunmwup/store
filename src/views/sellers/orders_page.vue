@@ -147,10 +147,8 @@
                     <div class="col">
                       <span
                         class="alert-xs p-1 mt-4 rounded alert-danger"
-                        style="height: 2rem"
                         role="alert"
-                      >
-                      <p class="">{{order.payment_status}}</p>
+                      >{{order.payment_status}}
                       </span>
                     </div>
                     <div class="col">

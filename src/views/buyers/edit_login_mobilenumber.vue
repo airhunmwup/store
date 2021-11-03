@@ -30,8 +30,8 @@
   <div class="form-group row mb-2 pt-3">
       <p class="font-weight-bold text-dark mb-2">Mobile number:</p>
   <div class="col-2">
-    <select type="text" class="form-control form-control-sm border-dark" placeholder="John">
-        <option></option>
+    <select type="text" class="form-control form-control-sm border-dark" placeholder="John" disabled>
+        <option>+44</option>
     </select>
   </div>
   <div class="col-6">
