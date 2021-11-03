@@ -45,7 +45,7 @@
                 <p class="mb-2 mt-2">
                   <router-link
                     class=""
-                    to="/buyersigninsecsetting"
+                    to="/"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
                     ><button type="button" class="form-control btn border-dark btn-sm btn-warning">
@@ -56,7 +56,7 @@
                 <p class="mb-2 mt-2">
                   <router-link
                     class=""
-                    to="/"
+                    to="/buyersigninsecsetting"
                     data-toggle="collapse"
                     data-target=".navbar-collapse"
                     ><button type="button" class="form-control btn border-dark btn-sm btn-light">
