@@ -6,9 +6,9 @@
         <p class="h5 text-dark">Order Details</p>
       </div>
       <div class="card-body text-sm text-dark">
-        <p class="">Order number: <span class="text-sm">#2534262</span></p>
+        <p class="">Order number: <span class="text-sm">#{{order.orderid}}</span></p>
         <p class="">
-          Order date: <span class="text-sm">25 August, 2020.</span>
+          Order date: <span class="text-sm">{{order.created_at.substring(0,10)}}</span>
         </p>
       </div>
       <!--for webview -->
@@ -17,12 +17,7 @@
           <div class="col-4">
             <p class="h5 text-dark">Product</p>
           </div>
-          <div class="col-2">
-            <p class="">Requested shipping date:</p>
-          </div>
-          <div class="col-2">
-            <p class="">status</p>
-          </div>
+          
           <div class="col-2 text-center">
             <p class="">Qty</p>
           </div>
@@ -34,34 +29,28 @@
           </div>
         </div>
       </div>
-      <div class="card-body text-xs text-dark d-xs-none" v-for="(orders,index) in data" :key="index">
+      <div class="card-body text-xs text-dark d-xs-none" v-for="(orders,index) in order.order_items" :key="index">
         <div class="row">
           <div class="col-4">
             <div class="row">
               <div class="col-6">
-                <img v-bind:src="API_BASE_URL + orders.product_image1" class="" alt="Product" />
+                <img v-bind:src="API_BASE_URL + orders.product_image" class="" alt="Product" style="height:50px;"/>
               </div>
               <div class="col-6">
-                <p class="text-dark">{{orders.product_name}}</p>
-                <p class="text-dark">SKU: CTZ086DT</p>
-                <p class="text-dark">Brand: basket</p>
+                <p class="text-dark">{{orders.name}}</p>
+                
               </div>
             </div>
           </div>
-          <div class="col-2">
-            <p class="">29 August, 2020</p>
-          </div>
-          <div class="col-2">
-            <p class="">Order processing</p>
-          </div>
+          
           <div class="col-2 text-center">
-            <p class="">4</p>
+            <p class="">{{orders.quantity}}</p>
           </div>
           <div class="col-1">
-            <p class="text-right">£50</p>
+            <p class="text-right">£{{orders.price}}</p>
           </div>
           <div class="col-1 t">
-            <p class="text-right">£200</p>
+            <p class="text-right">£{{ orders.quantity * orders.price }}</p>
           </div>
         </div>
       </div>
@@ -75,18 +64,16 @@
           </div>
         </div>
       </div>
-      <div class="card-body text-xs text-dark d-md-none d-lg-none" v-for="(orders,index) in data" :key="index">
+      <div class="card-body text-xs text-dark d-md-none d-lg-none" v-for="(orders,index) in order.order_items" :key="index">
         <div class="row">
           <div class="col-6 col-sm-6">
-                <img v-bind:src="API_BASE_URL + orders.product_image1" class="" alt="Product" />
+                <img v-bind:src="API_BASE_URL + orders.product_image" class="" alt="Product" style="height:100px;/>
           </div>
           <div class="col-6 col-sm-6">
-            <p class="h6 text-dark">{{orders.product_name}}</p>
-            <p class="">Requested shipping date:</p>
-            <p class="">status: Order processing</p>
-            <p class="">Qty: 4</p>
-            <p class="">Each: £50</p>
-            <p class="">Total:<span class="text-right"> £200</span></p>
+            <p class="h6 text-dark">{{orders.name}}</p>
+            <p class="">Qty: {{orders.quantity}}</p>
+            <p class="">Each: £{{orders.price }}</p>
+            <p class="">Total:<span class="text-right"> £{{ orders.quantity * orders.price }}</span></p>
           </div>
         </div>
       </div>
@@ -99,10 +86,10 @@
             <p class="">Order Total:</p>
           </div>
           <div class="col">
-            <p class="">£200</p>
-            <p class="">£2</p>
-            <p class="">£5.9</p>
-            <p class="text-danger">£207.9</p>
+            <p class="">£{{order.total}}</p>
+            <p class="">£</p>
+            <p class="">£</p>
+            <p class="text-danger">£{{order.total}}</p>
           </div>
         </div>
       </div>
@@ -182,6 +169,7 @@ export default {
     return {
       data: '',
       API_BASE_URL: Constants.API_BASE_URL,
+      order: this.$route.params.order,
     }
   },
   methods: {
@@ -191,11 +179,16 @@ export default {
         this.data = this.$route.params.orderdetails[key];
       });
       console.log(this.data);
-    }
-    
+    },
+    getItems(){
+      console.log(this.order);  
+    },   
   },
   mounted() {
-    this.products();
-  }
+    //this.products();
+  },
+  beforeMount() {
+    this.getItems();
+  },
 }
 </script>

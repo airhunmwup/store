@@ -100,11 +100,11 @@
             <div class="m-2 border d-xs-none">
               <div class="card-header font-weight-bold">
                 <div class="row text-xs">
-                  <!--<div class="col">
+                  <div class="col">
                     <div class="input-group">
                       <span class="ml-2"> #ORDER ID</span>
                     </div>
-                  </div>-->
+                  </div>
                   <div class="col">
                     <p class="">CREATED</p>
                   </div>
@@ -112,7 +112,7 @@
                     <p class="">CUSTOMER</p>
                   </div>
                   <div class="col">
-                    <p class="">STATUS</p>
+                    <p class="">PAYMENT STATUS</p>
                   </div>
                   <div class="col">
                     <p class="">DELIVERY STATUS</p>
@@ -127,22 +127,22 @@
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="View Order details"
-                v-for="(order, index) in manageorders"
+                v-for="(order, index) in orders"
                 :key="index"
-                @click.prevent="orderDetails(order.transaction_id)"
+                @click.prevent="orderDetails(order)"
               >
                 <div class="card-body border-b-2 text-dark">
                   <div class="row text-xs">
-                    <!--<div class="col">
+                    <div class="col">
                       <div class="input-group">
                         <span class="ml-2 font-weight-bold"> #{{order.orderid}}</span>
                       </div>
-                    </div>-->
+                    </div>
                     <div class="col">
                       <p class="">{{order.created_at.substring(0,10)}}</p>
                     </div>
                     <div class="col">
-                      <p class="">{{order.customername}}</p>
+                      <p class="">{{order.firstname}} {{order.lastname}}</p>
                     </div>
                     <div class="col">
                       <span
@@ -150,14 +150,14 @@
                         style="height: 2rem"
                         role="alert"
                       >
-                      <p class="">{{order.status}}</p>
+                      <p class="">{{order.payment_status}}</p>
                       </span>
                     </div>
                     <div class="col">
-                      <p class="">{{order.delivery_status}}</p>
+                      <p class="">{{order.shipment_status}}</p>
                     </div>
                     <div class="col">
-                      <p class="text-right">£{{order.price}}</p>
+                      <p class="text-right">£{{order.total}}</p>
                     </div>
                   </div>
                 </div>
@@ -169,16 +169,16 @@
 
             <!--start mobile view-->
             <div class="m-2 d-md-none border"
-                v-for="(order, index) in manageorders"
+                v-for="(order, index) in orders"
                 :key="index"
-                @click.prevent="orderDetails(order.transaction_id)">
+                @click.prevent="orderDetails(order)">
               <div class="card-header">
                 <div class="row text-xs">
                   <div class="col">
                     <p class="text-left">{{order.created_at.substring(0,10)}}</p>
                   </div>
                   <div class="col">
-                    <p class="text-right">Order ID: <b>425251</b></p>
+                    <p class="text-right">Order ID: <b>{{order.orderid}}</b></p>
                   </div>
                 </div>
               </div>
@@ -190,7 +190,7 @@
                       style="height: 2rem"
                       role="alert"
                     >
-                      Pending
+                      {{order.payment_status}}
                     </span>
                   </div>
                   <div class="col">
@@ -200,9 +200,9 @@
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="View Order details"
-                v-for="(order, index) in manageorders"
+                v-for="(order, index) in orders"
                 :key="index"
-                @click.prevent="orderDetails(order.transaction_id)"
+                @click.prevent="orderDetails(order)"
               ><b
                           class="
                             fa fa-angle-right fa-lg
@@ -221,28 +221,21 @@
                     <p class="m-1">Customer:</p>
                   </div>
                   <div class="col-8 text-right">
-                    <p class="m-1 text-dark font-weight-bold">{{order.customername}}</p>
+                    <p class="m-1 text-dark font-weight-bold">{{order.firstname}} {{order.lastname}}</p>
                   </div>
-                  <div class="col-4">
-                    <p class="m-1">Product:</p>
-                  </div>
-                  <div class="col-8 text-right">
-                    <p class="m-1 text-dark font-weight-bold">
-                      Door opening stuff na him be the product names
-                    </p>
-                  </div>
+                  
                   <div class="col-4">
                     <p class="m-1">Price:</p>
                   </div>
                   <div class="col-8 text-right">
-                    <p class="m-1 text-dark font-weight-bold">£{{order.price}}</p>
+                    <p class="m-1 text-dark font-weight-bold">£{{order.total}}</p>
                   </div>
                   <div class="col-6">
                     <p class="m-1">Delivery status:</p>
                   </div>
                   <div class="col-6 text-right">
                     <p class="m-1 text-dark font-weight-bold">
-                      {{order.status}}
+                      {{order.shipment_status}}
                     </p>
                   </div>
                 </div>
@@ -289,12 +282,31 @@ import User from "../../apis/User";
 export default {
   data() {
     return {
+      formData: {
+        user_id : this.$store.state.currentUser.id,
+      },  
       manageorders: '',
       orderdetails: '',
       data: '',
+      orders: '',
     }
   },
   methods: {
+    getOrders(){         
+          User.getmyOrders(this.formData,{             
+          }).then(res =>{              
+              this.orders = res.data;
+              console.log(res.data);                   
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
+  },  
     async getMyOrders(id){
         if(id){
           console.log(id);
@@ -313,7 +325,7 @@ export default {
         this.$router.push({
         name: 'processorder',
         params: {
-          data: this.data, orderdetails: this.orderdetails,
+          order: data,
           }
       });
     },
@@ -329,7 +341,10 @@ export default {
   computed: mapState(['setCategoryList','setSubCategoryList','getCurrentUser']),
   created() {
     this.getuser();
-  }
+  },
+  beforeMount() {
+    this.getOrders();
+  },
 }
 </script>
         
