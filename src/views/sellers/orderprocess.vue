@@ -67,7 +67,7 @@
       <div class="card-body text-xs text-dark d-md-none d-lg-none" v-for="(orders,index) in order.order_items" :key="index">
         <div class="row">
           <div class="col-6 col-sm-6">
-                <img v-bind:src="API_BASE_URL + orders.product_image" class="" alt="Product" style="height:100px;/>
+                <img v-bind:src="API_BASE_URL + orders.product_image" class="" alt="Product" style="height:100px;"/>
           </div>
           <div class="col-6 col-sm-6">
             <p class="h6 text-dark">{{orders.name}}</p>
