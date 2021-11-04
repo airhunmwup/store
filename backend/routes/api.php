@@ -118,6 +118,8 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/savePayout', [PayoutController::class, 'store']);
     Route::post('/checkPayout', [PayoutController::class, 'checkPayout']);
     Route::post('/getmyOrders', [Orders2Controller::class, 'getmyOrders']);
+    Route::post('/saveMobile', [AuthController::class, 'saveMobile']);
+    Route::post('/getMobile', [AuthController::class, 'getMobile']);
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

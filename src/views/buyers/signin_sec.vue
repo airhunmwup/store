@@ -52,7 +52,7 @@
             <div class="row">
               <div class="col-8">
                 <p class="font-weight-bold text-dark">Mobile Phone Number:</p>
-                <p class="text-dark">+447823038483</p>
+                <p class="text-dark">{{mobile}}</p>
               </div>
               <div class="col-4 text-end">
                 <router-link
@@ -115,4 +115,40 @@
 
   </div>
 </template>
-        
+<script>
+import { mapState } from 'vuex';
+import User from "../../apis/User";
+export default {
+  data() {
+    return {
+      mobile : this.$store.state.currentUser.first_name,
+    }
+  },
+  methods: {
+    
+   getMobile(){
+          User.getMobile(this.formData,{             
+          }).then(res =>{                          
+              console.log(res);
+              this.mobile = res.data.phonenumber;
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
+                    
+  },
+
+
+  },
+ 
+
+  beforeMount() {
+     this.getMobile();
+  },
+}
+</script>        

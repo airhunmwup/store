@@ -217,5 +217,11 @@ export default{
     },
     getmyOrders(data){
         return Api().post("/getmyOrders", data);
-    }
+    },
+    saveMobile(data){
+        return Api().post("/saveMobile", data);
+    },
+    getMobile(data){
+        return Api().post("/getMobile", data);
+    },
 };

@@ -153,6 +153,26 @@ class AuthController extends Controller
         return response($response, 200); 
     }
 
-    
+    public function saveMobile(Request $request){
+      $id =  $request->user()->id;
+      $code = $request->code;
+      $mobile = $request->mobile;
+      $num = $code."".$mobile;
+      
+      $upd = User::where('id', $id)->update([
+            'mobile' => $num,           
+        ]);
+      $info = Addressforbuyers::where('user_id', $id)->update([
+            'phonenumber' => $num,           
+        ]);
+        return $upd;
+    }
+        public function getMobile(Request $request){
+      $id =  $request->user()->id;
+      
+      $info = Addressforbuyers::where('user_id', $id)->first();
+
+        return $info;
+    }
     
 }
