@@ -229,9 +229,6 @@
 
     <div class="appion"  v-if="this.$store.state.isLoggedIn">
 
-      <div class="col-12" v-if="this.$store.state.myRecentViews">
-        <p class="text-dark">Recently viewed</p>
-      </div>
 
       <div v-if="this.$store.state.myRecentViews" class="ul gs full">
         <li class="li itemi" v-for="listings of this.$store.state.myRecentViews" :key="listings.id">

@@ -21,9 +21,6 @@
       <p class="font-weight-bold text-dark">Old mobile phone number:</p>
       <p class="text-dark">{{mobile}}</p>
   </div>
-  <div class="col-4 text-end">
-      <p class="text-primary pt-2 underline text-sm">Delete</p>
-  </div>
 </div>
     <div class="row">
   <div class="col-12">
