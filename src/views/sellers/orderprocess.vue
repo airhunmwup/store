@@ -108,11 +108,6 @@
           </div>
           <div class="col-sm">
             <p class="font-weight-bold">Shipping method:</p>
-            <p class="">Flat: Same cost to all buyers:</p>
-            <p class="">
-              {{product.product_shipping_cost}}
-            </p>
-            <p class="">Price: £{{product.product_shipping_cost}}</p>
             <p class="">
               Status:<span class="alert-danger m-2 rounded">
                 {{order.payment_status}}</span
