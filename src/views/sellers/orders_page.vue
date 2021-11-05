@@ -115,7 +115,7 @@
                     <p class="">PAYMENT STATUS</p>
                   </div>
                   <div class="col">
-                    <p class="">DELIVERY STATUS</p>
+                    <p class="">SHIPMENT STATUS</p>
                   </div>
                   <div class="col">
                     <p class="text-right">PRICE</p>

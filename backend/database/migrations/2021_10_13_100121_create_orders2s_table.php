@@ -29,6 +29,9 @@ class CreateOrders2sTable extends Migration
             $table->string('postal_code');
             $table->string('country');
             $table->string('shipping')->nullable();
+            $table->string('shipping_agent_name')->nullable();
+            $table->string('shipping_agent_url')->nullable();
+            $table->string('tracking_id')->nullable();
             $table->string('total');
             $table->string('payment_status');
             $table->string('shipment_status');

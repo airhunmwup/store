@@ -101,10 +101,10 @@
         <div class="row">
           <div class="col-sm">
             <p class="font-weight-bold">Shipping information:</p>
-            <p class="">Full name</p>
-            <p class="">Address line 1</p>
-            <p class="">city/town</p>
-            <p class="">Country , postcode</p>
+            <p class="">{{order.firstname}} {{order.lastname}}</p>
+            <p class="">{{order.address_line1}}</p>
+            <p class="">{{order.town_city}}</p>
+            <p class="">{{order.country}} , {{order.postal_code}}</p>
           </div>
           <div class="col-sm">
             <p class="font-weight-bold">Shipping method:</p>
@@ -124,21 +124,22 @@
                 type="text"
                 class="form-control col-lg-6 col-12"
                 placeholder=""
+                v-model="formData.tracking_id"
               />
             </div>
             <div class="form-group m-2">
               <label class="font-weight-bold">Shipping agent:</label>
-              <select class="form-control col-lg-6 col-12">
-                <option value="https://www.royalmail.com/track-your-item">
+              <select class="form-control col-lg-6 col-12" v-model="shipping_agent">
+                <option :value="{url: 'https://www.royalmail.com/track-your-item', name: 'Royal mail'}">
                   Royal mail
                 </option>
-                <option value="https://www.dhl.com/us-en/home/tracking.html">
+                <option :value="{url: 'https://www.dhl.com/us-en/home/tracking.html', name: 'DHL'}">
                   DHL
                 </option>
-                <option value="https://www.myhermes.co.uk/track#/">
+                <option  :value="{url: 'https://www.myhermes.co.uk/track#/', name: 'Hermes'}">
                   Hermes
                 </option>
-                <option value="https://www.parcelforce.com/track-trace">
+                <option  :value="{url: 'https://www.parcelforce.com/track-trace', name: 'Parcel Force'}">
                   Parcel Force
                 </option>
               </select>
@@ -148,7 +149,7 @@
                 <button type="button" class="btn m-1 btn-light btn-sm border">
                   Cancel
                 </button>
-                <button type="button" class="btn m-1 btn-success btn-sm border">
+                <button type="button" class="btn m-1 btn-success btn-sm border" @click="processOrder(order.orderid)">
                   Process
                 </button>
               </div>
@@ -164,12 +165,17 @@
 
 <script>
 import Constants from "../../common/constants";
+import User from "../../apis/User";
 export default {
   data() {
     return {
       data: '',
       API_BASE_URL: Constants.API_BASE_URL,
       order: this.$route.params.order,
+      formData: {
+        tracking_id : '',         
+      },
+      shipping_agent : '',
     }
   },
   methods: {
@@ -182,7 +188,28 @@ export default {
     },
     getItems(){
       console.log(this.order);  
-    },   
+    },
+    processOrder(orderid){
+        this.formData.orderid = orderid;
+        this.formData.shipping_agent_name = this.shipping_agent.name;
+        this.formData.shipping_agent_url = this.shipping_agent.url;
+        console.log(this.formData);
+        if (this.formData.tracking_id !== ""){
+        User.processOrder(this.formData,{             
+          }).then(res =>{
+              console.log(res);    
+              this.$router.push("/Orders");
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
+  }
+    },
   },
   mounted() {
     //this.products();

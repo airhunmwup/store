@@ -224,4 +224,10 @@ export default{
     getMobile(data){
         return Api().post("/getMobile", data);
     },
+    processOrder(data){
+        return Api().post("/processOrder", data);
+    },
+    checkStatus(data){
+        return Api().post("/checkStatus", data);
+    },
 };

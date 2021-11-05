@@ -42,6 +42,17 @@ class Orders2Controller extends Controller
     {   $id = $request->user()->id;
         return Orders2::where('userid', $id)->with('order_items')->get();
     }
+    public function processOrder(Request $request)
+    {   
+        $orderid = $request->orderid;
+        $query = Orders2::where('orderid', $orderid)->update([
+            'shipping_agent_name' => $request->shipping_agent_name, 
+            'shipping_agent_url' => $request->shipping_agent_url,
+            'tracking_id' => $request->tracking_id,
+            'shipment_status' => 'processed for shipment',
+        ]);
+        return $request;
+    }
     public function store(Request $request)
     {
         $orderid = time();

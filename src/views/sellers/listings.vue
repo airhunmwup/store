@@ -122,6 +122,7 @@
               class="btn-group btn-group-sm"
             >
               <router-link
+                v-if="!inactive"  
                 to="/newlisting"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
@@ -132,14 +133,15 @@
                 </button>
               </router-link>
               <router-link
-                to="/newlisting"
+                v-else 
+                to="/Subscriptions"
                 data-toggle="collapse"
                 data-target=".navbar-collapse"
                 title="add new listings"
               >
                 <button type="button" class="btn border btn-xs">
-                <span class="zmdi zmdi-delete"></span> 
-              </button>
+                  <span class="zmdi zmdi-plus-square"></span> 
+                </button>
               </router-link>
               
             </div>
@@ -671,6 +673,7 @@ export default {
     return {
       API_BASE_URL: Constants.API_BASE_URL,
       prodIncrement: 1,
+      inactive: '',
     };
   },
   methods: {
@@ -681,7 +684,27 @@ export default {
       }).catch(error => {
         console.log(error);
       });
+    },
+    checkStatus(){
+        User.checkStatus(this.status,{             
+          }).then(res =>{                          
+              console.log(res); 
+              if (res.data.length === 0){
+                  this.inactive = 1;
+              }
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
     }
+  },
+  beforeMount() {
+     this.checkStatus();
   },
 };
 </script>

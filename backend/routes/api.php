@@ -106,6 +106,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::delete('/deletelisting/{id}', [ProductsController::class, 'destroy']);
     Route::post('/purchase', [UserPaymentController::class, 'purchase']);
     Route::post('/createOrder', [Orders2Controller::class, 'store']);
+    Route::post('/processOrder', [Orders2Controller::class, 'processOrder']);
     Route::get('/getOrder/{orderid}', [Orders2Controller::class, 'fetch']);
     Route::post('/sendmessage', [MessagesController::class, 'store']);
     Route::get('/fetchmessages/{id}', [MessagesController::class, 'index']);
@@ -119,6 +120,7 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/checkPayout', [PayoutController::class, 'checkPayout']);
     Route::post('/getmyOrders', [Orders2Controller::class, 'getmyOrders']);
     Route::post('/saveMobile', [AuthController::class, 'saveMobile']);
+    Route::post('/checkStatus', [AuthController::class, 'checkStatus']);
     Route::post('/getMobile', [AuthController::class, 'getMobile']);
 });
 

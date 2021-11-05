@@ -458,6 +458,9 @@ export default {
         product_total: "0.00",
         testImage: "",
       },
+      status: {
+          userid: this.$store.state.currentUser.id,
+      },
       errors: {
 
       }
@@ -577,12 +580,32 @@ export default {
           fontSize: '12px'
         }
       }
+    },
+    checkStatus(){
+        User.checkStatus(this.status,{             
+          }).then(res =>{                          
+              console.log(res); 
+              if (res.data.length === 0){
+                  this.$router.push("/Subscriptions");
+              }
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
     }
   },
   computed: {
     product_total(){
       return this.formData.product_total = this.formData.product_price + this.formData.product_shipping_cost;
     }
-  }
+  },
+  beforeMount() {
+     this.checkStatus();
+  },
 }
 </script>

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\User;
 use App\Models\Addressforbuyers;
+use App\Models\Subscriptions;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\ValidationException;
@@ -167,12 +168,19 @@ class AuthController extends Controller
         ]);
         return $upd;
     }
-        public function getMobile(Request $request){
+    public function getMobile(Request $request){
       $id =  $request->user()->id;
       
       $info = Addressforbuyers::where('user_id', $id)->first();
 
         return $info;
+    }
+    public function checkStatus(Request $request){
+      $id =  $request->user()->id;
+      
+      $user = Subscriptions::where(['user_id' =>  $id, 'stripe_status' =>  'active'])->get();
+
+        return $user;
     }
     
 }

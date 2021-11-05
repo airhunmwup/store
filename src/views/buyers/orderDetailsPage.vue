@@ -41,14 +41,14 @@
             </p>
             <p class="">
               Status:<span class="alert-info m-2 rounded">
-                out for delivery</span
+                {{order['shipment_status']}}</span
               >
             </p>
             <div class="form-group m-2">
-              <p class="font-weight-bold">Tracking ID: 8374626263273723</p>
+              <p class="font-weight-bold">Tracking ID: {{order['tracking_id']}}</p>
               <p>
                 <a
-                  href="https://www.royalmail.com/track-your-item"
+                  :href="order['shipping_agent_url']"
                   class="text-primary underline"
                   >track your shipment</a
                 >
@@ -66,9 +66,7 @@
           <div class="col-2">
             <p class="">Requested shipping date:</p>
           </div>
-          <div class="col-2">
-            <p class="">status</p>
-          </div>
+          
           <div class="col-2 text-center">
             <p class="">Qty</p>
           </div>
@@ -89,17 +87,14 @@
               </div>
               <div class="col-6">
                 <p class="text-dark">{{items.name}}</p>
-                <p class="text-dark">SKU: CTZ086DT</p>
-                <p class="text-dark">Brand: basket</p>
+                
               </div>
             </div>
           </div>
           <div class="col-2">
             <p class="">{{items.created_at.substring(0,10)}}</p>
           </div>
-          <div class="col-2">
-            <p class="">Order processing</p>
-          </div>
+          
           <div class="col-2 text-center">
             <p class="">{{items.quantity}}</p>
           </div>
@@ -129,7 +124,6 @@
           <div class="col-6 col-sm-6">
             <p class="h6 text-dark">{{items.name}}</p>
             <p class="">Requested shipping date: {{items.created_at.substring(0,10)}}</p>
-            <p class="">status: Order processing</p>
             <p class="">Qty: {{items.quantity}}</p>
             <p class="">Each: £{{items.price}}</p>
             <p class="">Total:<span class="text-right"> £{{items.quantity * items.price}}</span></p>
