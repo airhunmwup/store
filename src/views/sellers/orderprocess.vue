@@ -110,12 +110,12 @@
             <p class="font-weight-bold">Shipping method:</p>
             <p class="">Flat: Same cost to all buyers:</p>
             <p class="">
-              Shipping rate table: Economy Service (2 to 9 business days)
+              {{product.product_shipping_cost}}
             </p>
-            <p class="">Price: £5.23</p>
+            <p class="">Price: £{{product.product_shipping_cost}}</p>
             <p class="">
               Status:<span class="alert-danger m-2 rounded">
-                Pending delivery</span
+                {{order.payment_status}}</span
               >
             </p>
             <div class="form-group m-2">
