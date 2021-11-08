@@ -1,6 +1,6 @@
 <template>
   <!-- main content -->
-  <div class="m-4">
+  <div class="m-2">
     <nav aria-label="breadcrumb" class="d-xs-none">
       <ol class="breadcrumb text-xs">
         <li class="breadcrumb-item text-primary"> <router-link
@@ -36,10 +36,10 @@
         </div>
       </div>
 
-      <div class="pb-2 col-12">
+      <div class="pb-4">
         <!--Purchase History-->
         <div class="row">
-          <div class="pb-2 pt-2 col-lg-6 col-xs-12">
+          <div class="pb-4 pt-2 col-lg-12 col-xs-12">
             <!-- Example single danger button -->
             <div class="btn-group">
               <!-- Example split danger button -->
@@ -97,9 +97,8 @@
           </div>
 
             <!--start Web view-->
-            <div class="m-2 border d-xs-none">
-              <div class="card-header font-weight-bold">
-                <div class="row text-xs">
+            <div class="card d-xs-none">
+              <div class="card-header font-weight-bold row text-xs">
                   <div class="col">
                     <div class="input-group">
                       <span class="ml-2"> #ORDER ID</span>
@@ -120,7 +119,6 @@
                   <div class="col">
                     <p class="text-right">PRICE</p>
                   </div>
-                </div>
               </div>
               <a
                 href="#"
@@ -166,22 +164,19 @@
             <!--end Web view-->
 
             <!--start mobile view-->
-            <div class="m-2 d-md-none border"
+            <div class="d-md-none card"
                 v-for="(order, index) in orders"
                 :key="index"
                 @click.prevent="orderDetails(order)">
-              <div class="card-header">
-                <div class="row text-xs">
-                  <div class="col">
+              <div class="card-header row text-xs">
+                  <div class="col-4">
                     <p class="text-left">{{order.created_at.substring(0,10)}}</p>
                   </div>
-                  <div class="col">
-                    <p class="text-right">Order ID: <b>{{order.orderid}}</b></p>
+                  <div class="col-8 text-right">
+                    <p class="text"><span>Order ID: </span><span class="">#{{order.orderid}}</span></p>
                   </div>
-                </div>
               </div>
-              <div class="card-header">
-                <div class="row text-xs">
+              <div class="card-header row text-xs">
                   <div class="col pt-2">
                     <span
                       class="alert-xs p-1 mt-4 rounded alert-danger"
@@ -203,7 +198,7 @@
                 @click.prevent="orderDetails(order)"
               ><b
                           class="
-                            fa fa-angle-right fa-lg
+                            zmdi zmdi-more-vert fa-lg
                             text-dark
                             font-weight-bold
                           "
@@ -211,7 +206,6 @@
               </a>
                     </p>
                   </div>
-                </div>
               </div>
               <div class="card-body text-xs">
                 <div class="row">

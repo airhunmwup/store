@@ -71,50 +71,25 @@
             <div class="card mb-4" v-for="ord in order" :key="ord.id">
               <div class=" card-header">
                 <div class="text-dark row text-xs">
-                  <div class="col-8 col-md-2 p-2">
-                    <p class="font-weight-bold">ORDER PLACED</p>
-                    <p class="text-dark">{{ord['created_at'].substring(0,10)}}</p>
+                  <div class="col-12 col-md-6 p-2">
+                    <p class="text"><span class="font-weight-bold">ORDER # </span><span class="text-dark underline dashed"> {{ord['orderid']}}</span></p>
                   </div>
-                  <div class="col-2 col-md-2 p-2">
-                    <p class="font-weight-bold">TOTAL</p>
-                    <p class="text-dark">£{{ord['total']}}</p>
-                  </div>
-                  <div class="col-12 col-md-4 p-2">
-                    <p class="font-weight-bold">DISPATCH TO</p>
-                    <p class="text-dark" title="Tooltip on bottom">
-                      {{ord['firstname']}} {{ord['lastname']}}
-                    </p>
-                  </div>
-                  <div class="col-12 col-md-4 text-md-right p-2">
-                    <p class="font-weight-bold">ORDER # {{ord['orderid']}}</p>
-                    <p>
-                   <router-link         
-                   :to="{ name: 'orderdetails', params: { orderid: ord.orderid}}"
-                   class="dropright"
-                   data-toggle="collapse"
-                   data-target=".navbar-collapse"
-                   >
-                      <span 
-                        
-                        class="text-primary text-sm underline"
-                          >View order details </span>
-                    </router-link>
-                    </p>
-                    <button> </button>
+                  <div class="col-12 col-md-6 text-md-right p-2">
+                    <span class="font-weight-bold">ORDER PLACED </span>
+                    <span class="text-dark underline"> {{ord['created_at'].substring(0,10)}}</span>
                   </div>
                 </div>
               </div>
               <div class="card-body row">
                 <div v-for="items in ord.order_items" :key="items.id" class="col-12 col-md-6">
                   <div class="row col-12">
-                    <p class="text-dark h6 ">Expected by 10 Aug</p>
                     <div class="col-12 m-1 p-2">
                       <div class="row">
-                        <div class="col-5 col-lg-4 center">
+                        <div class="col-6 col-lg-4 center">
                           <img v-bind:src="API_BASE_URL + items.product_image" class="card-img-top" alt="Product" style="height:180px; width: 100%;" />
                         </div>
-                        <div class="p-3 text-dark col-7 col-md-7 col-lg-8">
-                          <p class="pt-3 mt-2 text-info text-sm h6 underline">
+                        <div class="text-dark col-6 col-md-7 col-lg-8">
+                          <p class="pt-3 mt-2 text-dark h6 ">
                             {{items.name}}
                           </p>
                           <div class="mb-3">
@@ -156,6 +131,19 @@
                     </div>
                   </div> -->
                 </div>
+                    <p>
+                   <router-link         
+                   :to="{ name: 'orderdetails', params: { orderid: ord.orderid}}"
+                   class="dropright"
+                   data-toggle="collapse"
+                   data-target=".navbar-collapse"
+                   >
+                      <span 
+                        
+                        class="text-primary text-sm underline"
+                          >View order details </span>
+                    </router-link>
+                    </p>
               </div>
             </div>
             <p class="text-dark text-center" v-show="!orders">

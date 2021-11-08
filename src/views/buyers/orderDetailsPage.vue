@@ -1,9 +1,10 @@
 <template>
     <!-- main content -->
+    <div class="">
     <div class="card pb-4">
       <div class="card-header">
         <div class="row">
-          <div class="mb-2 col-10">
+          <div class="mb-2 col-8">
         <p class="h5 text-dark">Order Details</p>
           </div>
           <div class="mb-2 col-sm">
@@ -60,7 +61,7 @@
       <!--for webview -->
       <div class="card-footer text-xs d-xs-none">
         <div class="row">
-          <div class="col-4">
+          <div class="col-6">
             <p class="h5 text-dark">Product</p>
           </div>
           <div class="col-2">
@@ -80,13 +81,13 @@
       </div>
       <div class="card-body text-xs text-dark d-xs-none" v-for="items in order.order_items" :key="items.id">
         <div class="row">
-          <div class="col-4">
+          <div class="col-6">
             <div class="row">
-              <div class="col-6">
-                <img v-bind:src="API_BASE_URL + items.product_image" class="card-img-top" alt="Product" style="height:80px; width: 100%;" />
+              <div class="col-4">
+                <img v-bind:src="API_BASE_URL + items.product_image" class="card-img-top" alt="Product" style="width: 80%;" />
               </div>
-              <div class="col-6">
-                <p class="text-dark">{{items.name}}</p>
+              <div class="col-8">
+                <p class="text-dark font-weight-bold pt-3">{{items.name}}</p>
                 
               </div>
             </div>
@@ -133,13 +134,13 @@
       
       <div class="card-body border text-sm text-dark">
         <div class="row">
-          <div class="col text-left font-weight-bold">
+          <div class="col-6 col-md-2 text-left font-weight-bold">
             <p class="">Order Subtotal:</p>
             <p class="">Tax:</p>
             <p class="">Shipping:</p>
             <p class="">Order Total:</p>
           </div>
-          <div class="col">
+          <div class="col-6 col-md-10">
               <p class="">£{{order.total}}</p>
             <p class="">£</p>
             <p class="">£{{order.shipping}}</p>
@@ -159,6 +160,9 @@
             <p class="">{{order['firstname']}}</p>
             <p class="">{{order['town_city']}}</p>
             <p class="">{{order['country']}}, {{order['postal_code']}}</p>
+        <p class="pt-2">
+          <span class="text-dark font-weight-bold">Payment status: </span><span class="text-sm">{{order.payment_status}}</span>
+        </p>
           </div>
           <!-- <div class="mb-2 col-sm">
             <p class="font-weight-bold">Payment method: card</p>
@@ -169,6 +173,7 @@
       </div>
       <div class="card-body text-sm text-dark">
       </div>
+    </div>
     </div>
 </template>
 <script>
