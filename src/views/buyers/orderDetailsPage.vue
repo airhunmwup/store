@@ -140,10 +140,10 @@
             <p class="">Order Total:</p>
           </div>
           <div class="col">
-            <p class="">£{{order.total}}</p>
+              <p class="">£{{order.total}}</p>
             <p class="">£</p>
-            <p class="">£</p>
-            <p class="text-danger">£{{order.total}}</p>
+            <p class="">£{{order.shipping}}</p>
+            <p class="text-danger">£{{+order.total + +order.shipping}}</p>
           </div>
         </div>
       </div>

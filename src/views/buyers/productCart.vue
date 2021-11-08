@@ -67,14 +67,14 @@
             <div class="row text-sm text-dark">
               <div class="col">Shipping:</div>
               <div class="col text-right">
-                £{{this.$store.state.basket.product_shipping_cost}}
+                £{{this.$store.state.basketShippingCost}}
               </div>
             </div>
             <div class="dropdown-divider"></div>
             <div class="row m-1 text-dark font-weight-bold h6">
               <div class="col">Total:</div>
               <div class="col text-right">
-                £{{ this.$store.state.basketTotal }}
+                £{{ parseInt(+this.$store.state.basketTotal + +this.$store.state.basketShippingCost)}}
               </div>
             </div>
           </div>
@@ -130,6 +130,9 @@ export default {
   mounted() {
     console.log("productCart");
     console.log(this.$store.state.basket);
+    console.log(this.$store.state.basketShippingCost);
+    //localStorage.setItem('basketShippingCost', 0);
+    //this.$store.state.basketShippingCost = 0;
   },
 };
 </script>

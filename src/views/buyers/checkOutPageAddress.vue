@@ -23,9 +23,9 @@
             </div>
 
             <p class="font-weight-bold text-dark">Subtotal: £{{ this.$store.state.basketTotal }}</p>
-            <p class="font-weight-bold text-dark">Shipping: £{{this.$store.state.basket.product_shipping_cost }}</p> 
+            <p class="font-weight-bold text-dark">Shipping: £{{this.$store.state.basketShippingCost }}</p> 
       <div class="dropdown-divider"></div>
-            <p class="font-weight-bold text-dark">Total: £{{ parseInt(this.$store.state.basketTotal + this.$store.state.basket.product_shipping_cost)}}</p>
+            <p class="font-weight-bold text-dark">Total: £{{ parseInt(+this.$store.state.basketTotal + +this.$store.state.basketShippingCost)}}</p>
     </div>
   </div>
     <div class="row p-4 text-sm">
@@ -136,7 +136,7 @@ export default {
         order_email: this.$store.state.currentUser.email,
         order_notes: "",
         order_total: this.$store.state.basketTotal,
-        order_shipping: this.$store.state.basket.product_shipping_cost,
+        order_shipping: this.$store.state.basketShippingCost,
         address_line1: this.$store.state.address[0].address_line1,
         address_line2: this.$store.state.address[0].address_line2,
         town_city: this.$store.state.address[0].town_city,

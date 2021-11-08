@@ -49,7 +49,7 @@
                 </tr>
                 <tr class="ite_tt">
                     <td colspan="3" align="right" style="text-align:right;"><b>Total</b></td>
-                    <td class="items_total" align="right">{{ order.total }}</td>
+                    <td class="items_total" align="right">{{ parseInt(+order.total + +order.shipping)}}</td>
                 </tr>
             </tbody>
               </table>
@@ -66,7 +66,7 @@
 
         <p class="card bg-light border">
           <router-link
-            :to="{ name: 'CheckOut', params: { orderid: order.orderid, order_total: order.total}}" 
+            :to="{ name: 'CheckOut', params: { orderid: order.orderid, order_total: +order.total + +order.shipping}}" 
             data-toggle="collapse"
             data-target=".navbar-collapse"
             title="Home"

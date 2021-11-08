@@ -88,8 +88,8 @@
           <div class="col">
             <p class="">£{{order.total}}</p>
             <p class="">£</p>
-            <p class="">£</p>
-            <p class="text-danger">£{{order.total}}</p>
+            <p class="">£{{order.shipping}}</p>
+            <p class="text-danger">£{{+order.total + +order.shipping}}</p>
           </div>
         </div>
       </div>
@@ -112,7 +112,7 @@
             <p class="">
               Shipping rate table: Economy Service (2 to 9 business days)
             </p>
-            <p class="">Price: £5.23</p>
+            <p class="">Price: £{{order.shipping}}</p>
             <p class="">
               Status:<span class="alert-danger m-2 rounded">
                 Pending delivery</span
