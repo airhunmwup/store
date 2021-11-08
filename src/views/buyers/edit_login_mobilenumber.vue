@@ -19,7 +19,7 @@
     <div class="row">
   <div class="col-8">
       <p class="font-weight-bold text-dark">Old mobile phone number:</p>
-      <p class="text-dark">{{mobile}}</p>
+      <p class="text-primary underline">{{mobile}}</p>
   </div>
 </div>
     <div class="row">
