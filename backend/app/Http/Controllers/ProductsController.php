@@ -270,6 +270,33 @@ class ProductsController extends Controller
         //
         return Products::where('product_cat_id', $id)->with('product_images')->orderBy('id', 'desc')->get();
     }
+    public function sortLists(Request $request)
+    { 
+        $data = $request->sort;
+        $userid = $request->user()->id;
+        if ($data == 1){
+        $date = Carbon::now()->subDays(30);
+        $orders = Products::where('product_userid','=',$userid)->where('created_at', '>=', $date)->with('product_images')->get();
+        }
+        if ($data == 2){
+        $date = Carbon::now()->subDays(90);
+        $orders = Products::where('product_userid','=',$userid)->where('created_at', '>=', $date)->with('product_images')->get();
+        }
+        if ($data == 3){
+        $orders = Products::where('product_userid','=',$userid)->whereBetween('created_at', [
+        Carbon::now()->startOfYear(),
+        Carbon::now()->endOfYear(),
+        ])->with('product_images')->get();        
+        }
+        if ($data == 4){
+        $orders = Products::where('product_userid','=',$userid)->where('created_at','>', Carbon::now()->year-1)->with('product_images')->get();        
+        }
+        if ($data == 5){
+        $orders = Products::where('product_userid','=',$userid)->where('created_at','>', Carbon::now()->year-2)->with('product_images')->get();        
+        }
+        return $orders;
+        
+    }
     public function sortListings($id)
     {
         if ($id == "0") {

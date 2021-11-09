@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Orders2;
 use App\Models\OrderItems;
 use Illuminate\Http\Request;
+use Carbon\Carbon;
 
 class Orders2Controller extends Controller
 {
@@ -37,6 +38,33 @@ class Orders2Controller extends Controller
     public function fetch($orderid)
     {
         return Orders2::where('orderid', $orderid)->with('order_items')->get();
+    }
+    public function sortOrders(Request $request)
+    { 
+        $data = $request->sort;
+        $userid = $request->user()->id;
+        if ($data == 1){
+        $date = Carbon::now()->subDays(30);
+        $orders = Orders2::where('userid','=',$userid)->where('created_at', '>=', $date)->get();
+        }
+        if ($data == 2){
+        $date = Carbon::now()->subDays(90);
+        $orders = Orders2::where('userid','=',$userid)->where('created_at', '>=', $date)->get();
+        }
+        if ($data == 3){
+        $orders = Orders2::where('userid','=',$userid)->whereBetween('created_at', [
+        Carbon::now()->startOfYear(),
+        Carbon::now()->endOfYear(),
+        ])->get();        
+        }
+        if ($data == 4){
+        $orders = Orders2::where('userid','=',$userid)->where('created_at','>', Carbon::now()->year-1)->get();        
+        }
+        if ($data == 5){
+        $orders = Orders2::where('userid','=',$userid)->where('created_at','>', Carbon::now()->year-2)->get();        
+        }
+        return $orders;
+        
     }
     public function getorders(Request $request)
     {   $id = $request->user()->id;

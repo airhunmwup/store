@@ -230,4 +230,16 @@ export default{
     checkStatus(data){
         return Api().post("/checkStatus", data);
     },
+    sortOrders(data){
+        return Api().post("/sortOrders", data);
+    },
+    sortLists(data){
+        return Api().post("/sortLists", data);
+    },
+    sortVehicles(data){
+        return Api().post("/sortVehicles", data);
+    },
+    sortProperties(data){
+        return Api().post("/sortProperties", data);
+    },
 };

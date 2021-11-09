@@ -87,11 +87,11 @@
                 Sort
               </button>
               <div class="dropdown-menu text-xs">
-                <a class="dropdown-item">Last 30 Days</a>
-                <a class="dropdown-item">Past three months</a>
-                <a class="dropdown-item">2021</a>
-                <a class="dropdown-item">2020</a>
-                <a class="dropdown-item">2019</a>
+                <a class="dropdown-item" @click="sort(1)">Last 30 Days</a>
+                <a class="dropdown-item" @click="sort(2)">Past three months</a>
+                <a class="dropdown-item" @click="sort(3)">2021</a>
+                <a class="dropdown-item" @click="sort(4)">2020</a>
+                <a class="dropdown-item" @click="sort(5)">2019</a>
               </div>
             </div>
           </div>
@@ -333,6 +333,22 @@ export default {
         this.getMyOrders(response.data.id);
       }).catch((errors) => {
         console.log(errors);
+      });
+    },
+    sort(ord) {
+        this.formData.sort = ord;
+      User.sortOrders(this.formData,{             
+          }).then(res =>{              
+              this.orders = res.data;
+              console.log(res.data);                   
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
       });
     }
   },

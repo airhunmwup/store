@@ -111,11 +111,11 @@
                 Sort
               </button>
               <div class="dropdown-menu text-xs">
-                <a class="dropdown-item">Last 30 Days</a>
-                <a class="dropdown-item">Past three months</a>
-                <a class="dropdown-item">2021</a>
-                <a class="dropdown-item">2020</a>
-                <a class="dropdown-item">2019</a>
+                <a class="dropdown-item" @click="sort(1)">Last 30 Days</a>
+                <a class="dropdown-item" @click="sort(2)">Past three months</a>
+                <a class="dropdown-item" @click="sort(3)">2021</a>
+                <a class="dropdown-item" @click="sort(4)">2020</a>
+                <a class="dropdown-item" @click="sort(5)">2019</a>
               </div>
             </div>
             <div
@@ -674,6 +674,9 @@ export default {
       API_BASE_URL: Constants.API_BASE_URL,
       prodIncrement: 1,
       inactive: '',
+      formData: {
+        user_id : this.$store.state.currentUser.id,
+      },
     };
   },
   methods: {
@@ -701,8 +704,51 @@ export default {
              console.log(error.response.data.message);
         }
       });
+    },
+    sort(ord) {
+        this.formData.sort = ord;
+      User.sortLists(this.formData,{             
+          }).then(res =>{              
+              this.$store.state.mylistings = res.data;
+              console.log(res.data);                   
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
+      User.sortVehicles(this.formData,{             
+          }).then(res =>{              
+              this.$store.state.myvehicles = res.data;
+              console.log(res.data);                   
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
+      User.sortProperties(this.formData,{             
+          }).then(res =>{              
+              this.$store.state.myproperties = res.data;
+              console.log(res.data);                   
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+      });
     }
   },
+
   beforeMount() {
      this.checkStatus();
   },

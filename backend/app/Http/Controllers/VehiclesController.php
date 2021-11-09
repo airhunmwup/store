@@ -7,6 +7,7 @@ use App\Models\VehicleImages;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
+use Carbon\Carbon;
 
 class VehiclesController extends Controller
 {
@@ -97,6 +98,33 @@ class VehiclesController extends Controller
     {
         //
         return Vehicles::with('vehicle_images')->orderBy('id', 'desc')->get();
+    }
+     public function sortVehicles(Request $request)
+    { 
+        $data = $request->sort;
+        $userid = $request->user()->id;
+        if ($data == 1){
+        $date = Carbon::now()->subDays(30);
+        $orders = Vehicles::where('product_userid','=',$userid)->where('created_at', '>=', $date)->with('vehicle_images')->get();
+        }
+        if ($data == 2){
+        $date = Carbon::now()->subDays(90);
+        $orders = Vehicles::where('product_userid','=',$userid)->where('created_at', '>=', $date)->with('vehicle_images')->get();
+        }
+        if ($data == 3){
+        $orders = Vehicles::where('product_userid','=',$userid)->whereBetween('created_at', [
+        Carbon::now()->startOfYear(),
+        Carbon::now()->endOfYear(),
+        ])->with('vehicle_images')->get();        
+        }
+        if ($data == 4){
+        $orders = Vehicles::where('product_userid','=',$userid)->where('created_at','>', Carbon::now()->year-1)->with('vehicle_images')->get();        
+        }
+        if ($data == 5){
+        $orders = Vehicles::where('product_userid','=',$userid)->where('created_at','>', Carbon::now()->year-2)->with('vehicle_images')->get();        
+        }
+        return $orders;
+        
     }
     /**
      * Display the specified resource.

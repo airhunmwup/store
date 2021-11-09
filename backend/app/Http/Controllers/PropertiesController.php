@@ -7,6 +7,7 @@ use App\Models\PropertyImages;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
 use Intervention\Image\Facades\Image;
+use Carbon\Carbon;
 
 class PropertiesController extends Controller
 {
@@ -89,6 +90,33 @@ class PropertiesController extends Controller
     {
         //
         return Properties::with('property_images')->orderBy('id', 'desc')->get();
+    }
+    public function sortProperties(Request $request)
+    { 
+        $data = $request->sort;
+        $userid = $request->user()->id;
+        if ($data == 1){
+        $date = Carbon::now()->subDays(30);
+        $orders = Properties::where('product_userid','=',$userid)->where('created_at', '>=', $date)->with('property_images')->get();
+        }
+        if ($data == 2){
+        $date = Carbon::now()->subDays(90);
+        $orders = Properties::where('product_userid','=',$userid)->where('created_at', '>=', $date)->with('property_images')->get();
+        }
+        if ($data == 3){
+        $orders = Properties::where('product_userid','=',$userid)->whereBetween('created_at', [
+        Carbon::now()->startOfYear(),
+        Carbon::now()->endOfYear(),
+        ])->with('property_images')->get();        
+        }
+        if ($data == 4){
+        $orders = Properties::where('product_userid','=',$userid)->where('created_at','>', Carbon::now()->year-1)->with('property_images')->get();        
+        }
+        if ($data == 5){
+        $orders = Properties::where('product_userid','=',$userid)->where('created_at','>', Carbon::now()->year-2)->with('property_images')->get();        
+        }
+        return $orders;
+        
     }
     /**
      * Display the specified resource.
