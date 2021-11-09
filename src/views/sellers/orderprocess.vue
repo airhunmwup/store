@@ -1,5 +1,5 @@
 <template>
-  <div class="container">
+  <div class="">
     <!-- main content -->
     <div class="card">
       <div class="card-header">
@@ -14,7 +14,7 @@
       <!--for webview -->
       <div class="card-footer text-xs d-xs-none">
         <div class="row">
-          <div class="col-4">
+          <div class="col-8">
             <p class="h5 text-dark">Product</p>
           </div>
           
@@ -31,13 +31,13 @@
       </div>
       <div class="card-body text-xs text-dark d-xs-none" v-for="(orders,index) in order.order_items" :key="index">
         <div class="row">
-          <div class="col-4">
+          <div class="col-8">
             <div class="row">
-              <div class="col-6">
-                <img v-bind:src="API_BASE_URL + orders.product_image" class="" alt="Product" style="height:50px;"/>
+              <div class="col-4">
+                <img v-bind:src="API_BASE_URL + orders.product_image" class="" alt="Product" style="width:100px;"/>
               </div>
-              <div class="col-6">
-                <p class="text-dark">{{orders.name}}</p>
+              <div class="col-8">
+                <p class="text-dark font-weight-bold">{{orders.name}}</p>
                 
               </div>
             </div>
@@ -79,13 +79,13 @@
       </div>
       <div class="card-body border text-sm text-dark">
         <div class="row">
-          <div class="col text-left font-weight-bold">
+          <div class="col-6 col-md-2 text-left font-weight-bold">
             <p class="">Order Subtotal:</p> 
             <p class="">Tax:</p>
             <p class="">Shipping:</p>
             <p class="">Order Total:</p>
           </div>
-          <div class="col">
+          <div class="col-6 col-md-10">
             <p class="">£{{order.total}}</p>
             <p class="">£</p>
             <p class="">£{{order.shipping}}</p>
