@@ -94,22 +94,22 @@
     <div class="col-12 col-md-4 row">
     <label for="inputminprice" class="m-1 font-weight-bold text-xs">Price</label>
   <div class="col-5">
-    <input type="number" class="form-control m-1 text-xs" placeholder="min">
+    <input type="number" v-model="formData.min_price" class="form-control m-1 text-xs" placeholder="min">
   </div>
   <div class="col-5">
-    <input type="number" class="form-control m-1 text-xs" placeholder="max">
+    <input type="number" v-model="formData.max_price" class="form-control m-1 text-xs" placeholder="max">
   </div>
     </div>
     <div class="col-12 col-md-4">
     <label for="inputcondition" class="m-1 font-weight-bold text-xs">Items condition</label>
-    <select type="number" id="inputcondition" class="form-control m-1 col-5 text-xs" placeholder="max">
+    <select type="number" id="inputcondition" v-model="formData.condition" class="form-control m-1 col-5 text-xs" placeholder="max">
       <option>Any</option>
       <option>New</option>
       <option>Used</option>
     </select>
     </div>
     <div class="col-12 col-md-4 m-2 pt-4 center">
-<button type="button" class="btn btn-warning text-sm btn-sm border btn-block">See Listings</button>
+<button type="button" class="btn btn-warning text-sm btn-sm border btn-block" @click="filter">See Listings</button>
     </div>
     
 </div>
@@ -168,6 +168,12 @@ export default {
       newListings:[],
       subcat: '',
       API_BASE_URL: Constants.API_BASE_URL,
+      formData: {
+        user_id : this.$store.state.currentUser.id,
+        min_price: "",
+        max_price: "",
+        condition: "",
+      },
     };
   },
   methods: {
@@ -228,7 +234,27 @@ export default {
     product_detail_link(event){
       var id = event.target.getAttribute("data-id");
       this.$store.dispatch("product_detail_page", id);
-    }
+    },
+    filter(){
+        console.log(this.formData);
+        if (this.formData.min_price > 0 || this.formData.max_price > 0 || this.formData.condition !== ""){
+        User.filterListings(this.formData,{             
+          }).then(res =>{              
+              this.newListings = res.data;
+              console.log(res.data);                   
+          }).catch(error => {
+        if (!error.response) {
+            // network error
+            this.errorStatus = 'Error: Network Error';
+        } else {
+            this.errorStatus = error.response.data.message;
+             console.log(error.response.data.message);
+        }
+        });
+        }else{
+            console.log("all fields are empty");
+        }
+    },
 
   },
   mounted() {

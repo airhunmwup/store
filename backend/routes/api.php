@@ -126,6 +126,9 @@ Route::group(['middleware' => ['auth:sanctum']], function () {
     Route::post('/sortLists', [ProductsController::class, 'sortLists']);
     Route::post('/sortVehicles', [VehiclesController::class, 'sortVehicles']);
     Route::post('/sortProperties', [PropertiesController::class, 'sortProperties']);
+    Route::post('/filterListings', [ProductsController::class, 'filterListings']);
+    Route::post('/filterVehicles', [VehiclesController::class, 'filterVehicles']);
+    Route::post('/filterProperties', [PropertiesController::class, 'filterProperties']);
 });
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {

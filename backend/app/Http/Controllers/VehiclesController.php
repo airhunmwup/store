@@ -126,6 +126,34 @@ class VehiclesController extends Controller
         return $orders;
         
     }
+    public function filterVehicles(Request $request)
+    { 
+        $min_price = $request->min_price;
+        $max_price = $request->max_price;
+        $min_year = $request->min_year;
+        $max_year = $request->max_year;
+        $engine_type = $request->engine_type;
+        $owners = $request->owners;
+        $userid = $request->user()->id;
+        
+        $query = Vehicles::where('product_userid','=',$userid);
+        if ($owners){
+            $query->where('vehicle_owner_no','=',$owners );
+        }
+        if ($engine_type){
+            $query->where('vehicle_enginetype','=',$engine_type );
+        }
+        if ($max_year && $min_year){
+            $query->whereBetween('vehicle_year', [$min_year,$max_year,]);
+        }
+        if ($min_price && $max_price){
+            $query->whereBetween('vehicle_price', [$min_price,$max_price,]);
+        }
+        $vehicles = $query->with('vehicle_images')->get();
+        
+        return $vehicles;
+        
+    }
     /**
      * Display the specified resource.
      *

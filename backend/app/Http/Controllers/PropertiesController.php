@@ -118,6 +118,33 @@ class PropertiesController extends Controller
         return $orders;
         
     }
+    public function filterProperties(Request $request)
+    { 
+        $min_price = $request->min_price;
+        $max_price = $request->max_price;
+        $type = $request->type;
+        $bedroom = $request->bedroom;
+        $bathroom = $request->bathroom;
+        $userid = $request->user()->id;
+        
+        $query = Properties::where('product_userid','=',$userid);
+        if ($type){
+            $query->where('property_type','=',$type );
+        }
+        if ($bedroom){
+            $query->where('property_bedroom_no','=',$bedroom );
+        }
+        if ($bathroom){
+            $query->where('property_bathroom_no','=',$bathroom );
+        }
+        if ($min_price && $max_price){
+            $query->whereBetween('property_price', [$min_price,$max_price,]);
+        }
+        $properties = $query->with('property_images')->get();
+        
+        return $properties;
+        
+    }
     /**
      * Display the specified resource.
      *

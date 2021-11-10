@@ -242,4 +242,13 @@ export default{
     sortProperties(data){
         return Api().post("/sortProperties", data);
     },
+    filterListings(data){
+        return Api().post("/filterListings", data);
+    },
+    filterVehicles(data){
+        return Api().post("/filterVehicles", data);
+    },
+    filterProperties(data){
+        return Api().post("/filterProperties", data);
+    },
 };

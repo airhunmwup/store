@@ -297,6 +297,41 @@ class ProductsController extends Controller
         return $orders;
         
     }
+    public function filterListings(Request $request)
+    { 
+        $min_price = $request->min_price;
+        $max_price = $request->max_price;
+        $condition = $request->condition;
+        $userid = $request->user()->id;
+        if (!empty($condition)){
+            if ($min_price > 0 && $max_price > 0){
+        if ($condition == 'Any'){
+        $products = Products::where('product_userid','=',$userid)->whereBetween('product_price', [
+        $min_price,
+        $max_price,
+        ])->with('product_images')->get();        
+        }else{
+        $products = Products::where('product_userid','=',$userid)->where('product_condition','=',$condition )->whereBetween('product_price', [
+        $min_price,
+        $max_price,
+        ])->with('product_images')->get();
+        }
+            }else{
+                if ($condition == 'Any'){
+                    $products = Products::where('product_userid','=',$userid)->with('product_images')->get();
+                }else{
+                  $products = Products::where('product_userid','=',$userid)->where('product_condition','=',$condition )->with('product_images')->get();              
+                }
+                }
+        }else{
+          $products = Products::where('product_userid','=',$userid)->whereBetween('product_price', [
+        $min_price,
+        $max_price,
+        ])->with('product_images')->get();  
+        }
+        return $products;
+        
+    }
     public function sortListings($id)
     {
         if ($id == "0") {
