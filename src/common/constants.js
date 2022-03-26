@@ -1,5 +1,5 @@
 const Constants = (function () {
-    const BASE_URL_IMAGES = 'https://rejeeltd.com/images/';
+    const BASE_URL_IMAGES = 'http://rejeeltd.com/images/';
     // const BASE_URL = '';
     // const BASE_URL = '';
   
