@@ -1,7 +1,7 @@
 <template>
     <!-- footer -->
     <footer class="justify-content-center footer-one d-md-none d-lg-none fixed-bottom"><div class="card ">
-  <div class="row">
+  <!-- <div class="row">
     <div class="col center ">
 <a v-if="this.$store.state.isLoggedIn"  class="btn p-2 text-dark font-weight-bold " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
   <span  class="fa fa-lg fa-ellipsis-v"></span>
@@ -66,7 +66,7 @@
                 </router-link>
 </button>
     </div>
-  </div>
+  </div> -->
 </div>
         
     </footer>

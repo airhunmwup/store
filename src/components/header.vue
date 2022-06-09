@@ -5,22 +5,66 @@
           <a href="index.html">
           <img
             src="img/home/logo.png"
-            width="200px"
+            width="50%"
             alt="REJEE COMPANY"
           /></a>
       </div>
-      <div class="col-12 d-md-none">
+      <div class="d-md-none">
   <div class="row">
-    <div class="col justify-center">
+    <div class="justify-center">
           <a href="index.html">
-          <img  class="pt-2 pl-2"
+          <img  class="pl-2"
             src="img/home/logo2.png"
-            width="80%"
+            width="20%"
             alt="REJEE COMPANY"
           />
            </a>
+    <div class="text-right">
+      <router-link v-if="this.$store.state.isLoggedIn" 
+                      class="d-md-none d-lg-none"
+                        to="/newlisting"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Start Selling."
+                      >
+          <p class="btn p-2 text-dark"><img src="img/myaccount/sellershub.png" style="width: 1.3rem; height: 1.3rem" />
+          
+  </p></router-link>
+                      <router-link  v-else  
+                      class="d-md-none d-lg-none"
+                        to="/login"
+                        data-toggle="collapse"
+                        data-target=".navbar-collapse"
+                        title="Start Selling."
+                      >
+          <p class="btn text-dark p-2"><img src="img/myaccount/sellershub.png" style="width: 1.3rem; height: 1.3rem" />
+          
+  </p></router-link>
+<a v-if="this.$store.state.isLoggedIn"  class="btn p-2 text-dark font-weight-bold " data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+  <span  class="fa fa-lg fa-user"></span>
+</a> 
+      <router-link v-else 
+            to="/login"
+            data-toggle="collapse"
+            data-target=".navbar-collapse"
+            title="login"
+            >
+        <a class="btn p-2 text-dark font-weight-bold" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          <i class="fa fa-lg fa-sign-in"></i> 
+        </a></router-link>
+          <router-link
+                              to="/ViewCart"
+                              data-toggle="collapse"
+                              data-target=".navbar-collapse"
+                              title="view Shopping basket"
+                            >
+                            <button type="button" class="text-dark btn">
+  <i
+                  class="fa fa-lg m-1 fa-shopping-cart"
+                  aria-hidden="true"
+                ></i><span class="badge badge-danger">{{basketState}}</span>
+</button></router-link>
     </div>
-    <div class="col-9">
     </div>
   </div>
       </div>
@@ -188,6 +232,20 @@
         </button>
       </li>
       <li class="mb-1">
+        <button class="btn btn-toggle align-items-center rounded" >
+                <router-link
+                  to="/watchingpage"
+                  data-toggle="collapse"
+                  data-target=".navbar-collapse"
+                  title="Watchlist"
+                  aria-label="Close"
+                  data-bs-dismiss="offcanvas"
+                >
+                      <p class="text-dark"><i class="fa fa-bookmark pr-2"></i> <span class="h5"> Watchlist</span></p>
+                </router-link>
+        </button>
+      </li>
+      <li class="mb-1">
         <button class="btn btn-toggle align-items-center rounded collapsed" data-bs-toggle="collapse" data-bs-target="#account-collapse" aria-expanded="false">
           <p class="text-dark font-weight-bold"><i class="fa fa-user pr-2"></i><span class="h5"> Account</span></p>
         </button>
@@ -336,4 +394,3 @@ export default {
   },
 };
 </script>
-
